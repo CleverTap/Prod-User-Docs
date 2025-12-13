@@ -18,77 +18,24 @@ To set the timezone of the users, you will have to push it via the Tz key in the
 
 When setting up a campaign to be delivered in the User’s Timezone you’ll need to distinguish between the timezone of your Account (Account Timezone) and the local timezone of your users receiving the campaign.
 
+<Image title="Campaign_Notification_Delivery_options.png" alt={903} className="border" width="100%" border={true} src="https://files.readme.io/b4dbc67-Campaign_Notification_Delivery_options.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b4dbc67-Campaign_Notification_Delivery_options.png",
-        "Campaign_Notification_Delivery_options.png",
-        903,
-        1405,
-        "#fafafc"
-      ],
-      "border": true,
-      "sizing": "full"
-    }
-  ]
-}
-[/block]
 Let’s assume a marketer in San Francisco (Pacific Time) creates a campaign at 4:14pm in their CleverTap Dashboard. The campaign is scheduled to deliver messages to users at 8:00pm in their local timezone.
 
 At 5:00pm Pacific Time (Account’s Timezone) the first set of messages will deliver to users in the East Coast Timezone (8:00pm in the Eastern Timezone). One hour later (6:00pm Pacific or 8:00pm Central time) the second set of messages will be delivered to anyone qualifying in this timezone. Two hours after that (8:00pm Pacific) the next set of messages are delivered to users on the West Coast, and so forth. A typical campaign will execute for every timezone around the globe, delivering messages to any user who qualifies in each timezone.
 
 After the marketer finishes creating the above campaign, it will move into a Scheduled State as shown here.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a4cba74-Screenshot_2020-06-09_at_8.40.26_PM.png",
-        "Screenshot 2020-06-09 at 8.40.26 PM.png",
-        1366,
-        463,
-        "#f7f9f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1366](https://files.readme.io/a4cba74-Screenshot_2020-06-09_at_8.40.26_PM.png "Screenshot 2020-06-09 at 8.40.26 PM.png")
+
 Once the campaign starts executing it will move into the Running State and you’ll be able to see exactly which timezone was last delivered to and which timezone is next.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba972ee-n3.png",
-        "n3.png",
-        1280,
-        560,
-        "#d1d4d6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1280](https://files.readme.io/ba972ee-n3.png "n3.png")
+
 There are two additional delivery options: drop the campaign or hold the campaign for delivery the next day.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a85fe79-Screenshot_2020-06-09_at_8.55.29_PM.png",
-        "Screenshot 2020-06-09 at 8.55.29 PM.png",
-        742,
-        229,
-        "#fbfbfb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screenshot 2020-06-09 at 8.55.29 PM.png" alt={742} className="border" border={true} src="https://files.readme.io/a85fe79-Screenshot_2020-06-09_at_8.55.29_PM.png" />
+
 How these delivery options work:
 
 Consider the above marketer to be located in the Midwest (Central Time). At 11:30am, a lunchtime campaign has been scheduled to be delivered in each user’s local time. As above, the Campaign Start Time is set to 12:00pm and the first set of messages will go out at noon Central Time. Two hours later, West Coast users receive the campaign.
@@ -122,40 +69,13 @@ If you have multiple marketing campaigns running simultaneously for any one chan
 Frequency are channel specific. Frequency Caps allows you to limit the total notifications received in a given timeframe for one delivery channel and not across all the channel as a whole.
 
 Frequency Caps are set under Campaign Limits in Settings > Setup:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/564c098-Screenshot_2020-06-09_at_9.01.49_PM.png",
-        "Screenshot 2020-06-09 at 9.01.49 PM.png",
-        1232,
-        790,
-        "#f6f7f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screenshot 2020-06-09 at 9.01.49 PM.png" alt={1232} className="border" border={true} src="https://files.readme.io/564c098-Screenshot_2020-06-09_at_9.01.49_PM.png" />
+
 For more information about frequency caps, please visit [this page](doc:messaging-frequency-caps).
 
 ## Error Reporting with Frequency Caps
 
 In the Error Reporting section of the campaign report, you can find the number of users that did not receive the campaign because of this frequency cap setting.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/160274c-find3.png",
-        "find3.png",
-        2256,
-        936,
-        "#f7f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="find3.png" alt={2256} className="border" border={true} src="https://files.readme.io/160274c-find3.png" />

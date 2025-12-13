@@ -37,94 +37,47 @@ You can create live user segments for a single activity (booked a movie ticket),
 ## System User Segments
 
 The following are system-defined user segments that are available for your use: 
-  * **All Users**: This user segment contains all the users available to your account.
-  * **Test Users**: This user segment contains the users who you can test for your campaign response. A campaign or journey can now be tested on this *Test Users* segment before it is sent to an actual segment. The *Test User* segment is available by default for engagement and UI experiences. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eb9b8b9-1a9589c-Segment_System.png",
-        "1a9589c-Segment_System.png",
-        1208,
-        672,
-        "#f0f4f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+* **All Users**: This user segment contains all the users available to your account.
+* **Test Users**: This user segment contains the users who you can test for your campaign response. A campaign or journey can now be tested on this *Test Users* segment before it is sent to an actual segment. The *Test User* segment is available by default for engagement and UI experiences. 
+
+<Image title="1a9589c-Segment_System.png" alt={1208} className="border" border={true} src="https://files.readme.io/eb9b8b9-1a9589c-Segment_System.png" />
+
 # Create Segments
 
 To create new segments, navigate to *Segments* under the *Segmentation* tab on the dashboard.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/809321d-d99e397-Screenshot_2020-06-08_at_12.12.29_PM.png",
-        "d99e397-Screenshot_2020-06-08_at_12.12.29_PM.png",
-        2278,
-        1430,
-        "#f8f9f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="d99e397-Screenshot_2020-06-08_at_12.12.29_PM.png" alt={2278} className="border" border={true} src="https://files.readme.io/809321d-d99e397-Screenshot_2020-06-08_at_12.12.29_PM.png" />
+
 Click the **+ Segment** button.
 
 The main segment creation page displays a list of options for types of past behavior and live user segments. Select an option based on the required segment.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c3a09b1-Segments_Select_Segment.gif",
-        "Segments_Select_Segment.gif",
-        1218,
-        658,
-        "#fcfcfd"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Segments_Select_Segment.gif" alt={1218} className="border" border={true} src="https://files.readme.io/c3a09b1-Segments_Select_Segment.gif" />
+
 Past Behavior segments can be based on:
-  * Past user actions  ( for example, users who added a product to the cart in the past 30 days)
-  * Past user action/inaction combination (for example, users who added a product to the cart but didn’t purchase in the last 30 days)
-  * Past user action/inaction combination along with common user properties (for example, platinum-level users who added a product to the cart but didn’t purchase in the last 30 days)
+
+* Past user actions  ( for example, users who added a product to the cart in the past 30 days)
+* Past user action/inaction combination (for example, users who added a product to the cart but didn’t purchase in the last 30 days)
+* Past user action/inaction combination along with common user properties (for example, platinum-level users who added a product to the cart but didn’t purchase in the last 30 days)
 
 Live User segments can add users to the segment as soon as users qualify based on the following:
-  * Single action (for example, users who have added a product to the cart)
-  * Inaction within time (for example, users who have added a product to the cart but did not purchase within 10 minutes of adding product to the cart)
-  * On a date/time, (for example, users who have an appointment five days from today)
-  * Page visit (for example, users who have visited a certain URL on your website)
- * Referrer entry (for example, users who have visited your website via a certain external referrer URL)
- * Page count (for example, users who have visited a certain number of pages on your website)
+
+* Single action (for example, users who have added a product to the cart)
+* Inaction within time (for example, users who have added a product to the cart but did not purchase within 10 minutes of adding product to the cart)
+* On a date/time, (for example, users who have an appointment five days from today)
+* Page visit (for example, users who have visited a certain URL on your website)
+* Referrer entry (for example, users who have visited your website via a certain external referrer URL)
+* Page count (for example, users who have visited a certain number of pages on your website)
 
 # Segment List Page
 
 The *Segments* list page shows all existing segments available for you. You can choose to do various tasks with these listed segments. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4e1fcdb-Segments_all_operations.png",
-        "Segments_all_operations.png",
-        1221,
-        732,
-        "#ecebe8"
-      ],
-      "caption": "Segment list page"
-    }
-  ]
-}
-[/block]
+
+<Image title="Segments_all_operations.png" alt={1221} src="https://files.readme.io/4e1fcdb-Segments_all_operations.png">
+  Segment list page
+</Image>
+
 ## Create Live User Segments
 
 To create a live segment with CleverTap, choose any of the options underneath *Live user segments* from the main segment creation page.
@@ -132,70 +85,30 @@ To create a live segment with CleverTap, choose any of the options underneath *L
 For instance, in the current example, we will create an *Inaction within time* segment for which users will qualify in realtime, as soon as they add a product to cart but do not purchase the product within 10 minutes (the golden window within which most users transact on our iOS and Android app platforms).
 
 Select the *Inaction within time* box, which displays the following page where you can set up the segment as follows.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c9213f-Segments_Inaction_with_Time.png",
-        "Segments_Inaction_with_Time.png",
-        1197,
-        439,
-        "#fbfbfc"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Segments_Inaction_with_Time.png" alt={1197} className="border" border={true} src="https://files.readme.io/2c9213f-Segments_Inaction_with_Time.png" />
+
 The user can choose to check the *Filter on past user behavior and common properties* checkbox to apply past action, inaction, or common user property filters.
 
-The next step would be to click** Save segment**, name the segment, and then see it show up in the main *Segments* menu by its name, which in this case is “Added to cart but no charge 10 mins.”  
-[block:callout]
-{
-  "type": "info",
-  "title": "Segment Naming Best Practices",
-  "body": "Convey the core meaning of the segment while keeping the name brief."
-}
-[/block]
+The next step would be to click **Save segment**, name the segment, and then see it show up in the main *Segments* menu by its name, which in this case is “Added to cart but no charge 10 mins.”  
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ccf346b-Segments_Created_Segment.png",
-        "Segments_Created_Segment.png",
-        788,
-        505,
-        "#f4f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+> 📘 Segment Naming Best Practices
+>
+> Convey the core meaning of the segment while keeping the name brief.
+
+![788](https://files.readme.io/ccf346b-Segments_Created_Segment.png "Segments_Created_Segment.png")
+
 ### View Live User Segment Report
 
 The top portion of the live user segment report consists of a way to first *Show segment definition* to understand its underlying query. 
 
 There are also two graphs: 
-  * One on the left-hand side showing the plot of the number of users who qualified for the segment going forward from the first complete day post-segment creation.
-  * One on the right-hand side showing the real-time rate at which users are qualifying for the segment (vs. all user activity on your app/website). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2b9ceec-Segment_Live_Segment_Report.gif",
-        "Segment_Live_Segment_Report.gif",
-        1218,
-        658,
-        "#faf9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+* One on the left-hand side showing the plot of the number of users who qualified for the segment going forward from the first complete day post-segment creation.
+* One on the right-hand side showing the real-time rate at which users are qualifying for the segment (vs. all user activity on your app/website). 
+
+![1218](https://files.readme.io/2b9ceec-Segment_Live_Segment_Report.gif "Segment_Live_Segment_Report.gif")
+
 The lower portion of the live user segment report consists of a list of sample users trickling into your segment in real-time on the right-hand side. 
 
 It also shows the reachability percentages for these users within each messaging channel on the left-hand side. 
@@ -204,63 +117,24 @@ The lower-most part of the report shows you how to do more with this segment by 
 
 ## Create Past Behavior Segments
 
-To create a Past Behavior segment with CleverTap, choose any of the options underneath *Past behavior user segments *from the main segment creation page.
+To create a Past Behavior segment with CleverTap, choose any of the options underneath *Past behavior user segments* from the main segment creation page.
 
 For example, we will create an *Action* based segment where users will qualify if they have applied a payment offer at least one time in the past 30 days.
 
 Select the box *Action*, which takes you to the page where you can set up our segment as follows.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6f6d353-Segments_PSB_Create_New.png",
-        "Segments_PSB_Create_New.png",
-        1228,
-        682,
-        "#fbfcfc"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Segments_PSB_Create_New.png" alt={1228} className="border" border={true} src="https://files.readme.io/6f6d353-Segments_PSB_Create_New.png" />
+
 The next step would be to click **Save segment**, name the segment, and then see it show up in the main *Segments* menu by its name, which in this case is *Frequent Buyers*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1a1ce2-Segments_PSB_Created_Segment.png",
-        "Segments_PSB_Created_Segment.png",
-        800,
-        494,
-        "#f3f5f6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Segments_PSB_Created_Segment.png" alt={800} className="border" border={true} src="https://files.readme.io/f1a1ce2-Segments_PSB_Created_Segment.png" />
+
 ### View a Past Behavior Segment Report
 
 The top portion of the past behavior user segment report consists of a way to first *Show segment definition* to understand its underlying query. There are graphs on the left-hand side showing the plot of the number of users who qualified for the segment going forward from the first complete day post-segment creation. The list on the right-hand side shows the sample list of users who qualified for the segment on this day.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/77138b9-Segment_PSB_Report.gif",
-        "Segment_PSB_Report.gif",
-        1218,
-        658,
-        "#f7f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Segment_PSB_Report.gif" alt={1218} className="border" border={true} src="https://files.readme.io/77138b9-Segment_PSB_Report.gif" />
+
 The lower portion of the live user segment report consists of reachability percentages for these users within each messaging channel. The lower-most part of the report shows you how to do more with this segment by either filtering relevant analytics dashboard views by this particular user segment or reaching out to this segment via relevant messaging channels.
 
 # View Analytics Filtered by Segment
@@ -268,22 +142,9 @@ The lower portion of the live user segment report consists of reachability perce
 Under the *Do more with this segment section,* you have the option to view an analytics report. This will be for the chosen segment alone and not your entire user base. 
 
 Analysis dashboard views have the following filter at the top to enable this:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a8df120-321ce60-Screenshot_2020-06-08_at_1.18.47_PM.png",
-        "321ce60-Screenshot_2020-06-08_at_1.18.47_PM.png",
-        2310,
-        1552,
-        "#fbfbfb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="321ce60-Screenshot_2020-06-08_at_1.18.47_PM.png" alt={2310} className="border" border={true} src="https://files.readme.io/a8df120-321ce60-Screenshot_2020-06-08_at_1.18.47_PM.png" />
+
 Realtime dashboard views such as the Today dashboard only enables filtering by Live User segments. Analytics based on past behavior such as Mobile App, Revenue, Funnels, Cohorts, Trends, and Events will only enable filtering their stats by Past Behavior segments.
 
 # Create Campaigns for a Chosen Segment
@@ -291,192 +152,85 @@ Realtime dashboard views such as the Today dashboard only enables filtering by L
 Under the *Do more with this segment* section, under *Engage*, you have the option to create a campaign to message a specific segment.
 
 This immediately takes you to the messaging channel with your segment criteria pre-populated in the target.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3c7905e-Segments_Do_More_Campaign.png",
-        "Segments_Do_More_Campaign.png",
-        617,
-        292,
-        "#fcfcfd"
-      ],
-      "border": true,
-      "caption": ""
-    }
-  ]
-}
-[/block]
-#Include/Exclude Segments
+
+<Image title="Segments_Do_More_Campaign.png" alt={617} className="border" border={true} src="https://files.readme.io/3c7905e-Segments_Do_More_Campaign.png" />
+
+# Include/Exclude Segments
 
 You can simplify complex queries by including or excluding the existing user segments. Create segments with complex conditions once and then reuse them in different scenarios. 
 
 You can create powerful segmentation that is valid for a variety of scenarios. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/30d054b-0fd3c96-Find_people_include_exclude_segments.png",
-        "0fd3c96-Find_people_include_exclude_segments.png",
-        715,
-        382,
-        "#f6f7fb"
-      ]
-    }
-  ]
-}
-[/block]
-##Exclude Segments
+
+![715](https://files.readme.io/30d054b-0fd3c96-Find_people_include_exclude_segments.png "0fd3c96-Find_people_include_exclude_segments.png")
+
+## Exclude Segments
 
 There may be instances when you want to exclude some users based on specific criteria. 
 
-For example, you want to offer discounts to all the users who have expressed interest by adding the product to the cart in the past 30 days; however, you want to save your engagement dollars by excluding the power users. 
+For example, you want to offer discounts to all the users who have expressed interest by adding the product to the cart in the past 30 days; however, you want to save your engagement dollars by excluding the power users.\
 The parameters for these power users can be the following:
-  * Users who have charged three times in the past three months, and 
-  * Users who have launched the app 15 times in the past month, and
-  * Users who rated a product 10 times in the past year
+
+* Users who have charged three times in the past three months, and 
+* Users who have launched the app 15 times in the past month, and
+* Users who rated a product 10 times in the past year
 
 Now you can create a segment with these criteria called *Power Users* and use it every time rather than creating a complex query each time. You can save all these parameters in a segment called *Power Users* and exclude them from the discount message. 
 
 The following is a campaign query for an e-commerce app that excludes the *Power Users* segment.
 
+<Image title="exclude_segments_campaign.png" alt={1050} className="border" width="100%" border={true} src="https://files.readme.io/2fb7f6a-exclude_segments_campaign.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2fb7f6a-exclude_segments_campaign.png",
-        "exclude_segments_campaign.png",
-        1050,
-        1506,
-        "#fafaf9"
-      ],
-      "sizing": "full",
-      "border": true
-    }
-  ]
-}
-[/block]
-##Include Segments
+## Include Segments
 
 There may be instances when you want to include some users based on specific criteria. 
 
 Consider the example of a ride-hailing app. You want to nudge your users to enroll for a monthly pass as soon as they open the app. The parameters for these users can be the following:
-  * The users must be power users, and
-  * The users have booked more than five rides in a month, and
-  * They belong to select cities in the country
- 
+
+* The users must be power users, and
+* The users have booked more than five rides in a month, and
+* They belong to select cities in the country
+
 Now you can create a segment with these criteria called *Power Users* and using it repeatedly rather than creating a complex query each time. 
 
 The following is a campaign query for a ride-hailing app that includes the *Power Users* segment.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f9f341a-include_segments_campaign.png",
-        "include_segments_campaign.png",
-        1067,
-        1270,
-        "#fbfbfc"
-      ],
-      "sizing": "full",
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "info",
-  "body": "  * You can include and exclude segments in the same query. It is considered as an AND condition between the two segments.\n  * The include and exclude segments are currently unavailable for bulletins and A/B Testing.\n  * The segments available for including or excluding users can only be of the type [PBS](https://docs.clevertap.com/docs/segments#section-past-behavior-segments) segment. ",
-  "title": "Include and Exclude Segments"
-}
-[/block]
+<Image title="include_segments_campaign.png" alt={1067} className="border" width="100%" border={true} src="https://files.readme.io/f9f341a-include_segments_campaign.png" />
+
+> 📘 Include and Exclude Segments
+>
+> * You can include and exclude segments in the same query. It is considered as an AND condition between the two segments.
+> * The include and exclude segments are currently unavailable for bulletins and A/B Testing.
+> * The segments available for including or excluding users can only be of the type [PBS](https://docs.clevertap.com/docs/segments#section-past-behavior-segments) segment. 
+
 # Additional AND By Behavior Filters
+
 *AND By behavior* filters provide customers the ability to segment users based on the count, average, or total sum of a property value.
 
 ### Count
+
 The *Count* filter allows customers to filter users by event count. The query finds all users who performed a *Charged* event greater than five (5) times in the past 30 days. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0678593-2020-11-24_17-51-01_Count.png",
-        "2020-11-24_17-51-01_Count.png",
-        1192,
-        378,
-        "#fafbfd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1192](https://files.readme.io/0678593-2020-11-24_17-51-01_Count.png "2020-11-24_17-51-01_Count.png")
+
 ### Average of Property Filter
-The *Average of property *filter allows customers to filter users by the average of a chosen event property. The query finds all users who performed a *Charged* event such that the average *Revenue* event property per event is greater than $10. 
+
+The *Average of property* filter allows customers to filter users by the average of a chosen event property. The query finds all users who performed a *Charged* event such that the average *Revenue* event property per event is greater than $10. 
 
 The Average of property filter allows averaging the value of the selected event property. For example, you can find out the average revenue earned from all users who performed purchases worth $10 or less. Let us assume that 5 users charged for each for $3, $5, $7, $2, and $8. The average value of all the purchases lower than $10 is ($ 3+ 5 +7+2+8)/5 events = 25/5= $5 per event. 
 
-Let us assume that the value for 2 charged events is missing. The charged event values received are $3, $5, and $7. The value of the missing events will be considered as “0”. The average of property is now ($3 + 5 +7 +0 +0)/5 events = 15/5 =$3 per event. 
+Let us assume that the value for 2 charged events is missing. The charged event values received are $3, $5, and $7. The value of the missing events will be considered as “0”. The average of property is now ($3 + 5 +7 +0 +0)/5 events = 15/5 =$3 per event.\
 If you want to exclude all the events that do not have event properties, you can select the property exists condition in the Filter by section.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09c3239-2020-11-24_17-52-22_Average_of_property.png",
-        "2020-11-24_17-52-22_Average of property.png",
-        1192,
-        382,
-        "#fafbfd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1192](https://files.readme.io/09c3239-2020-11-24_17-52-22_Average_of_property.png "2020-11-24_17-52-22_Average of property.png")
+
 ### Total Sum of Property
+
 The *Total sum of property* filter allows customers to filter users by the sum of a chosen event property. The query finds all users who performed a *Charged* event such that the *Revenue* event property is greater than $10.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d973ab4-2020-11-24_17-53-50_Total_sum_of_property.png",
-        "2020-11-24_17-53-50_Total sum of property.png",
-        1194,
-        382,
-        "#fafbfd"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Include users who did not do the event",
-  "body": "If the query is to find people who performed the charged event fewer than five times, by default, the users who have not performed the charged event are not included in the result set. Only the users who did the charged event but did it fewer than five times are included; however, if the checkbox for *Include users who didn’t do the event* is selected, those users are also included in the result set. The same is true for sum and average."
-}
-[/block]
+![1194](https://files.readme.io/d973ab4-2020-11-24_17-53-50_Total_sum_of_property.png "2020-11-24_17-53-50_Total sum of property.png")
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/db44a26-2020-11-24_17-56-46_Checkbox_message.png",
-        "2020-11-24_17-56-46_Checkbox message.png",
-        1187,
-        412,
-        "#fdfdfd"
-      ]
-    }
-  ]
-}
-[/block]
+> 📘 Include users who did not do the event
+>
+> If the query is to find people who performed the charged event fewer than five times, by default, the users who have not performed the charged event are not included in the result set. Only the users who did the charged event but did it fewer than five times are included; however, if the checkbox for *Include users who didn’t do the event* is selected, those users are also included in the result set. The same is true for sum and average.
+
+![1187](https://files.readme.io/db44a26-2020-11-24_17-56-46_Checkbox_message.png "2020-11-24_17-56-46_Checkbox message.png")

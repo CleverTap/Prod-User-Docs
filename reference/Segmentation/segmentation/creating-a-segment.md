@@ -10,8 +10,12 @@ metadata:
 next:
   description: ''
 ---
-#Create an Adhoc Segment
-#Create with PSB
-#Create with Live
-#Types of Segments - Comparison
-#Future changes as per selection
+# Create an Adhoc Segment
+
+# Create with PSB
+
+# Create with Live
+
+# Types of Segments - Comparison
+
+# Future changes as per selection

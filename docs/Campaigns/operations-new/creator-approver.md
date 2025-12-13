@@ -21,22 +21,9 @@ As part of this feature, we introduced a new system role called Approver. Users 
 # Enable Approver Role
 
 This feature is a part of our advanced role-based access control. You will have access to the feature if you have opted-in for [CleverTap for Enterprises](https://clevertap.com/pricing).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c0a4296-Approver.png",
-        "Approver.png",
-        1248,
-        709,
-        "#f8f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Approver.png" alt={1248} className="border" border={true} src="https://files.readme.io/c0a4296-Approver.png" />
+
 # Campaign Workflow with Creator Approver Enabled
 
 After the Approver Creator feature is enabled in your account, there will be a new workflow to send campaigns using the following steps:

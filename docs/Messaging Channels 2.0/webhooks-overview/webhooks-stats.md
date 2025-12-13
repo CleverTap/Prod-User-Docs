@@ -10,24 +10,10 @@ metadata:
 next:
   description: ''
 ---
-[/block]
-#View Statistics
+\[/block]
+
+# View Statistics
 
 You can view the statistics of your webhook from the *Campaign* list page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8a47af5-Campaign_Webhooks_Statistics.png",
-        "Campaign_Webhooks_Statistics.png",
-        1381,
-        1345,
-        "#fafbfb"
-      ],
-      "sizing": "full",
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaign_Webhooks_Statistics.png" alt={1381} className="border" width="100%" border={true} src="https://files.readme.io/8a47af5-Campaign_Webhooks_Statistics.png" />

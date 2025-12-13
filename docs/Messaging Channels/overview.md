@@ -10,24 +10,34 @@ metadata:
 next:
   description: ''
 ---
-#Mobile Channels
-##Mobile In-App
-##SMS
-##App Inbox
+# Mobile Channels
 
-#Email Channels
+## Mobile In-App
 
-#Desktop/Mobile Web Channels
-##Web Push
-##Web Pop-up
-##Web Exit Intent
+## SMS
 
-#Social Channels
-##WhatsApp
+## App Inbox
 
-#Remarketing Channels
-##Facebook Audiences
-##Google Ads
+# Email Channels
 
-#Server Channels
-##Webhooks
+# Desktop/Mobile Web Channels
+
+## Web Push
+
+## Web Pop-up
+
+## Web Exit Intent
+
+# Social Channels
+
+## WhatsApp
+
+# Remarketing Channels
+
+## Facebook Audiences
+
+## Google Ads
+
+# Server Channels
+
+## Webhooks

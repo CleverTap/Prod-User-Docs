@@ -18,23 +18,10 @@ Using the Dashboard → Analyze → User Actions View, you can filter and segmen
 
 You accomplish this by:
 
-Selecting the event to segment by – you can also filter that event by the properties recorded for that event.
-Optionally applying filters based on user attributes, including specific geographic, demographic data, or device information.
+Selecting the event to segment by – you can also filter that event by the properties recorded for that event.\
+Optionally applying filters based on user attributes, including specific geographic, demographic data, or device information.\
 Once constructed, the Dashboard provides deep insights into the user group defined by your event query, including geographic, demographic and device information.
 
 You can then save this event query and use it later to send targeted messages to those users.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6fbdb2e-ua1.gif",
-        "ua1.gif",
-        960,
-        540,
-        "#d5d5d7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![960](https://files.readme.io/6fbdb2e-ua1.gif "ua1.gif")

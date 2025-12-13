@@ -10,5 +10,5 @@ metadata:
 next:
   description: ''
 ---
-<<ASDK>> 
-<<OSDK>>
+{user.ASDK}\
+{user.OSDK}

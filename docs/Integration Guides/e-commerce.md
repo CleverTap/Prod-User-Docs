@@ -11,6 +11,7 @@ next:
   description: ''
 ---
 CleverTap supports integrations with popular e-commerce platforms including:
-  * [Magento](doc:magento) 
-  * [Shopify](doc:shopify) 
-  * [WooCommerce](doc:woocommerce)
+
+* [Magento](doc:magento) 
+* [Shopify](doc:shopify) 
+* [WooCommerce](doc:woocommerce)

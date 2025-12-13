@@ -10,9 +10,9 @@ metadata:
 next:
   description: ''
 ---
-iOS
-APNS Bad Device Token 
-SMS
-SMS Errors
-Whatsapp
+iOS\
+APNS Bad Device Token\
+SMS\
+SMS Errors\
+Whatsapp\
 Cannot add whatsapp template

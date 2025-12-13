@@ -10,11 +10,8 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 WhatsApp is a channel that enables secure and trustworthy peer-to-peer communications. The most attractive value that WhatsApp provides is that unlike other channels, it is advertisement and spam free. 
 
 WhatsApp now lets businesses engage with their users in the same manner that users talk to their friends and families.

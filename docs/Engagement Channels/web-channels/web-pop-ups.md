@@ -15,8 +15,9 @@ next:
 Web notifications are popup messages that can be displayed on desktop or mobile websites.
 
 CleverTap web notifications come in two types:
-  * Those displayed in a footer of your site. These are available for desktop and mobile websites.
-  * Those displayed just before the user exits your website, known as exit intent web-popups. These are available for desktop only.
+
+* Those displayed in a footer of your site. These are available for desktop and mobile websites.
+* Those displayed just before the user exits your website, known as exit intent web-popups. These are available for desktop only.
 
 ## Web Pop-Up
 
@@ -32,116 +33,39 @@ These segments can be created on the basis of user action on one of your webpage
 
 Once a campaign has been sent, you can view detailed reports on how many messages were sent, how many users converted as a result, and more.
 
-#  Web Pop-Up Campaign Creation
+# Web Pop-Up Campaign Creation
 
 ## Step 1: Create a New Campaign
 
 To start creating an web pop-up campaign, first go into “Web” → “Pop Ups”/”Exit Intent” under “Campaigns” on the CleverTap dashboard, then click on “Create New +” on the top-right.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c60431-image4.png",
-        "image4.png",
-        1301,
-        394,
-        "#f2f3f5"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image4.png" alt={1301} className="border" border={true} src="https://files.readme.io/2c60431-image4.png" />
+
 ## Step 2: Define the Who
 
 The next step would be to indicate the target audience for your web pop-up campaign. You can target your web pop-up campaign to a user segment you create on the fly (by clicking on “Create ad-hoc segment”) or use a previously saved user segment (from the list of pre-saved segments shown in the table), as shown below. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2c2ee7-image10.png",
-        "image10.png",
-        1297,
-        292,
-        "#f0f2f4"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image10.png" alt={1297} className="border" border={true} src="https://files.readme.io/f2c2ee7-image10.png" />
+
 If you choose to create an ad-hoc segment, you can now select a type of segment on which to base your web pop-up campaign. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41b94e9-image8.png",
-        "image8.png",
-        1297,
-        625,
-        "#e2efeb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image8.png" alt={1297} className="border" border={true} src="https://files.readme.io/41b94e9-image8.png" />
+
 The target can be created either on the basis of the following triggers:
-  * User action on one of your webpages (Single action).
-  * User visits to a specific webpage URL of yours (Page visit).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/148bc5d-image2.png",
-        "image2.png",
-        1299,
-        335,
-        "#f1f3f6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
-  * User visits to your website via external ad referrer URL (Referrer entry)
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aaca28b-image14.png",
-        "image14.png",
-        1299,
-        643,
-        "#f6f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
-  * Number of webpages of yours a user has visited so far in their session (Page count)
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/08b8491-image3.png",
-        "image3.png",
-        379,
-        307,
-        "#e9edf2"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+* User action on one of your webpages (Single action).
+* User visits to a specific webpage URL of yours (Page visit).
+
+<Image title="image2.png" alt={1299} className="border" border={true} src="https://files.readme.io/148bc5d-image2.png" />
+
+* User visits to your website via external ad referrer URL (Referrer entry)
+
+<Image title="image14.png" alt={1299} className="border" border={true} src="https://files.readme.io/aaca28b-image14.png" />
+
+* Number of webpages of yours a user has visited so far in their session (Page count)
+
+<Image title="image3.png" alt={379} className="border" border={true} src="https://files.readme.io/08b8491-image3.png" />
+
 For instance, we can choose to create a live “Single action” campaign that will target users as soon as they apply a payment offer on your desktop or mobile website.
 
 On this basis, in the next step, here is how we would set up the “WHO”. You can also further check the “Filter this stream based on these users’ past behavior/user properties” checkbox to filter by any past user behavior or user properties.
@@ -155,142 +79,45 @@ If it is a limited-time incentive, you might want to end the web pop-up at a par
 Additionally, you can even specify a minor delay so that the web pop-up is displayed, say, a few minutes after the user does the trigger action for the campaign to give them time to, say, apply the payment offer. You can set campaign frequency here, as well, by specifying any specific days of the week and times of the day you would like for it to display. 
 
 Finally, you can specify how often users receive the campaign: Bypass global campaign limits by checking the ‘Exclude from campaign limits’ radio button, or send once per session.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f8907a4-image13.png",
-        "image13.png",
-        748,
-        626,
-        "#f3f6f7"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image13.png" alt={748} className="border" border={true} src="https://files.readme.io/f8907a4-image13.png" />
+
 ## Step 4: Define the What
 
-Finally, you can go on the next step that involves setting up web pop-up campaign content (“WHAT”). 
+Finally, you can go on the next step that involves setting up web pop-up campaign content (“WHAT”).\
 You can use the in-built editor to type out your message title and body, or use our “Custom” HTML editor to paste your own custom HTML templates. 
 
 Our in-built web pop-up campaign creator enables you to customize the look of your web pop-up: Choose from “Box”, “Banner”, or “Interstitial” layouts for your pop-up, specify whether to show on Desktop, Tablet, Mobile, select pop-up background color and text color, pop-up position, and even specify a pop-up icon (choose from our default icon images, or provide your own publicly-hosted icon URL) with look (with rounded corners, if preferred) and a close icon if you would like.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09c19ea-image5.png",
-        "image5.png",
-        788,
-        792,
-        "#fbfbfb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/956fb36-image12.png",
-        "image12.png",
-        281,
-        220,
-        "#e9e5e5"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="image5.png" alt={788} className="border" border={true} src="https://files.readme.io/09c19ea-image5.png" />
+
+<Image title="image12.png" alt={281} className="border" border={true} src="https://files.readme.io/956fb36-image12.png" />
+
 For exit intent web pop-ups, you can specify a button with text, customize button background and text color, and even include an image (with a publicly-hosted image URL) within our in-built web pop-up builder.
 
+<Image title="image7.png" alt={640} className="border" border={true} src="https://files.readme.io/7a003c4-image7.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a003c4-image7.png",
-        "image7.png",
-        640,
-        685,
-        "#f9fafc"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 Upon web pop-up click, you can either do nothing, open a web URL, or invoke your custom JavaScript.
 
-**Personalization**
+**Personalization**\
 The web pop-up message can be personalized for every user based on specific user property or event property values. See User Profiles to learn more about user profile properties and events (dynamic replacements).
 
 To invoke the personalization menu, type “@” in the text fields while typing out the web pop-up message.
 
 Emojis can be included in your web pop-up messages, just like regular text. You can use the CleverTap emoji picker, or copy-paste emojis from Emoji keyboards online.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2aaf38a-image1.png",
-        "image1.png",
-        388,
-        263,
-        "#eaedf3"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image1.png" alt={388} className="border" border={true} src="https://files.readme.io/2aaf38a-image1.png" />
+
 ## Step 5: Test & Schedule Campaign
 
 Once you are all done setting up the content of your campaign in “WHAT”, you can easily preview your notification in a sample webpage we serve up by clicking on “Preview notification”.
 
+<Image title="image6.png" alt={143} className="border" border={true} src="https://files.readme.io/17c3296-image6.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17c3296-image6.png",
-        "image6.png",
-        143,
-        104,
-        "#beddf5"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 Post-testing, when you are satisfied with the appearance of your campaign, you can “Continue to Overview” to view your campaign summary, the hit “Schedule notification”.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e7d281-image15.png",
-        "image15.png",
-        138,
-        35,
-        "#51a8ea"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="image15.png" alt={138} className="border" border={true} src="https://files.readme.io/2e7d281-image15.png" />
+
 # Define a Custom Callback
 
 Using the following custom callback functions, you will be able to control the look, feel, and location of your web pop-up.
@@ -298,27 +125,35 @@ Using the following custom callback functions, you will be able to control the l
 You will need to explicitly call clevertap.raiseNotificationViewed(); & clevertap.raiseNotificationClicked(); to ensure that notification views and clicks are tracked on CleverTap.
 
 To define the callback and raise the clicked and viewed events, you will need to add the following snippet to the JavaScript embed code comprising your CleverTap web integration.
-[block:code]
-{
-  "codes": [
-    {
-      "code": "clevertap.notificationCallback = function(msg){\n      // Raise the notification viewed and clicked events in the callback\n      clevertap.raiseNotificationViewed();\n      console.log(JSON.stringify(msg));// Your custom rendering implementation here\n      var $button = jQuery(\"<button></button>\");// Element on whose click you want to raise the notification clicked event\n      $button.click(function(){\n         clevertap.raiseNotificationClicked();\n      });\n};",
-      "language": "javascript"
-    }
-  ]
-}
-[/block]
+
+```javascript
+clevertap.notificationCallback = function(msg){
+      // Raise the notification viewed and clicked events in the callback
+      clevertap.raiseNotificationViewed();
+      console.log(JSON.stringify(msg));// Your custom rendering implementation here
+      var $button = jQuery("<button></button>");// Element on whose click you want to raise the notification clicked event
+      $button.click(function(){
+         clevertap.raiseNotificationClicked();
+      });
+};
+```
+
 The message will be in the following format.
-[block:code]
+
+```json
 {
-  "codes": [
-    {
-      "code": "{\n    \"msgContent\": {\n        \"title\": \"hello title!\",\n        \"description\": “hello message!\"\n    },\n    \"msgId\": \"1439796272_20160219\",\n    \"kv\": {\n        \"key1\":\"value1\",\n        \"key2\":\"value2\"\n    }\n}",
-      "language": "json"
+    "msgContent": {
+        "title": "hello title!",
+        "description": “hello message!"
+    },
+    "msgId": "1439796272_20160219",
+    "kv": {
+        "key1":"value1",
+        "key2":"value2"
     }
-  ]
 }
-[/block]
+```
+
 msgId contains the campaign ID and the date-stamp so that you can programmatically decide whether to display the notification. kv contains the custom key-value pairs.
 
 # Viewing Web Pop-up Campaign Stats

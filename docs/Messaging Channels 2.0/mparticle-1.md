@@ -10,6 +10,6 @@ metadata:
 next:
   description: ''
 ---
-#Overview
+# Overview
 
 You can integrate mParticle with CleverTap to start receiving data from the app SDK. This requires integrating a CleverTap kit with the mParticle SDK.

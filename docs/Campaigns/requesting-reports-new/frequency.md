@@ -11,8 +11,13 @@ next:
   description: ''
 ---
 # Daily
+
 # Weekly
+
 ## Day selection
+
 ## When will I receive my reports ?
+
 ## Daily ( Nodewise)
+
 ## Weekly (Nodewise)

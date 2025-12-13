@@ -13,7 +13,8 @@ next:
 CleverTap can help you track your app installs, measure attribution with third-party sources, and view reports in the CleverTap Dashboard.
 
 CleverTap supports integrations with popular third-party attribution providers including:
-  * [AppsFlyer](doc:appsflyer) 
-  * [Apsalar](doc:apsalar) 
-  * [Branch](doc:branch) 
-  * [Tune](doc:tune)
+
+* [AppsFlyer](doc:appsflyer) 
+* [Apsalar](doc:apsalar) 
+* [Branch](doc:branch) 
+* [Tune](doc:tune)

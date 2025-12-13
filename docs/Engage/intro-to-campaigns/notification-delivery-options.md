@@ -18,76 +18,24 @@ To set the timezone of the users, you will have to push it via the Tz key in the
 
 When setting up a campaign to be delivered in the User’s Timezone you’ll need to distinguish between the timezone of your Account (Account Timezone) and the local timezone of your users receiving the campaign.
 
+<Image title="n1.png" alt={1280} className="border" border={true} src="https://files.readme.io/4e7cef0-n1.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4e7cef0-n1.png",
-        "n1.png",
-        1280,
-        851,
-        "#d4d7d9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 Let’s assume a marketer in San Francisco (Pacific Time) creates a campaign at 4:14pm in their CleverTap Dashboard. The campaign is scheduled to deliver messages to users at 8:00pm in their local timezone.
 
 At 5:00pm Pacific Time (Account’s Timezone) the first set of messages will deliver to users in the East Coast Timezone (8:00pm in the Eastern Timezone). One hour later (6:00pm Pacific or 8:00pm Central time) the second set of messages will be delivered to anyone qualifying in this timezone. Two hours after that (8:00pm Pacific) the next set of messages are delivered to users on the West Coast, and so forth. A typical campaign will execute for every timezone around the globe, delivering messages to any user who qualifies in each timezone.
 
 After the marketer finishes creating the above campaign, it will move into a Scheduled State as shown here.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75e6d28-n2.png",
-        "n2.png",
-        1280,
-        642,
-        "#c8cdcf"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1280](https://files.readme.io/75e6d28-n2.png "n2.png")
+
 Once the campaign starts executing it will move into the Running State and you’ll be able to see exactly which timezone was last delivered to and which timezone is next.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba972ee-n3.png",
-        "n3.png",
-        1280,
-        560,
-        "#d1d4d6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1280](https://files.readme.io/ba972ee-n3.png "n3.png")
+
 There are two additional delivery options: drop messages or hold for delivery the next day.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/046b648-find1.png",
-        "find1.png",
-        1280,
-        787,
-        "#d7dadd"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="find1.png" alt={1280} className="border" border={true} src="https://files.readme.io/046b648-find1.png" />
+
 How these delivery options work:
 
 Consider the above marketer to be located in the Midwest (Central Time). At 11:30am, a lunchtime campaign has been scheduled to be delivered in each user’s local time. As above, the Campaign Start Time is set to 12:00pm and the first set of messages will go out at noon Central Time. Two hours later, West Coast users receive the campaign.
@@ -121,40 +69,13 @@ If you have multiple marketing campaigns running simultaneously for any one chan
 Frequency are channel specific. Frequency Caps allows you to limit the total notifications received in a given timeframe for one delivery channel and not across all the channel as a whole.
 
 Frequency Caps are set under Campaign Limits in Settings:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a6021a7-find2.png",
-        "find2.png",
-        1058,
-        346,
-        "#f8faf8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="find2.png" alt={1058} className="border" border={true} src="https://files.readme.io/a6021a7-find2.png" />
+
 For more information about frequency caps, please visit [this page](doc:messaging-frequency-caps).
 
 ## Error Reporting with Frequency Caps
 
 In the Error Reporting section of the campaign report, you can find the number of users that did not receive the campaign because of this frequency cap setting.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/160274c-find3.png",
-        "find3.png",
-        2256,
-        936,
-        "#f7f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="find3.png" alt={2256} className="border" border={true} src="https://files.readme.io/160274c-find3.png" />

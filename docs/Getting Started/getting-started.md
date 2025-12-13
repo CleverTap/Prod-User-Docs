@@ -10,17 +10,15 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
-CleverTap is a customer engagement and retention platform that provides the functionality to integrate app analytics and marketing. The platform helps customers increase user engagement in three ways: 
-  * Tracks actions users are taking and analyzes how people use the product. 
-  * [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
-  * [Analyze](doc:intro-to-reports) each campaign to understand their effect on user engagement and business metrics.
+## Overview
 
-#Platform Features
+CleverTap is a customer engagement and retention platform that provides the functionality to integrate app analytics and marketing. The platform helps customers increase user engagement in three ways: 
+
+* Tracks actions users are taking and analyzes how people use the product. 
+* [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
+* [Analyze](doc:intro-to-reports) each campaign to understand their effect on user engagement and business metrics.
+
+# Platform Features
 
 The CleverTap platform has five parts: 
 
@@ -30,7 +28,7 @@ The CleverTap platform has five parts:
 * Integrations with communication platforms such as [SendGrid](doc:sendgrid) and [Twilio](doc:twilio), attributions providers like [Branch](doc:branch) and [Tune](doc:tune), and remarketing platforms such as [Facebook Audience Network](doc:facebook-audience-network-1).
 * [Webhooks](doc:webhooks) trigger workflows in backend systems as soon as qualifying events occur.
 
-#Core Concepts
+# Core Concepts
 
 Users, events, segments, campaigns, and reports are central to CleverTap, so it is important to understand each role. 
 
@@ -40,7 +38,7 @@ Users, events, segments, campaigns, and reports are central to CleverTap, so it 
 * **Campaigns:** CleverTap [campaigns](doc:intro-to-campaigns) communicate with your users at scale. CleverTap offers 13 different messaging channels to reach your users on the optimal channel.
 * **Reports:** CleverTap provides the ability to build [reports](doc:intro-to-reports) to understand the effect of campaigns on your users. You can use these reports to analyze your user engagement and guide product decisions.
 
-##Example Use Case
+## Example Use Case
 
 The following is an example of how a CleverTap customer in the retail industry is using our platform to increase sales:
 
@@ -52,7 +50,7 @@ Now, the marketer at the company wants to reward its most loyal users and incent
 
 To close this loop, the marketer can create a [report](doc:intro-to-reports) in the CleverTap dashboard to measure the campaign's impact in terms of both user engagement and product sales. 
 
-#Getting Started
+# Getting Started
 
 The best place to get started with CleverTap is the [Quick Start Guide](doc:quickstart-guide) which shows how to create a segment, build a campaign, and run a report in ten minutes.
 

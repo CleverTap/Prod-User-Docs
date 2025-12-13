@@ -10,11 +10,16 @@ metadata:
 next:
   description: ''
 ---
-#Event Overview
-#Best Practices for naming events
-#Types of events
+# Event Overview
 
-##Sent
-##Delivered
-##Click
-##Counts
+# Best Practices for naming events
+
+# Types of events
+
+## Sent
+
+## Delivered
+
+## Click
+
+## Counts

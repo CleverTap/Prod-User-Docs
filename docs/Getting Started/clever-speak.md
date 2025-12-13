@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-#Terms use - CleverTap/Marketing Jargon - MAU, DAU, etc.
+# Terms use - CleverTap/Marketing Jargon - MAU, DAU, etc.

@@ -10,12 +10,11 @@ metadata:
 next:
   description: ''
 ---
-# Overview 
+# Overview
 
 You can personalize the Segment export for users based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](doc:events).
 
-
-# Catalog 
+# Catalog
 
 Click the gear icon in the editor to open personalization options. 
 
@@ -26,7 +25,6 @@ A catalog provides the ability to personalize campaigns with dynamic information
 Click the gear icon in the editor to open personalization options. 
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. Imagine having a rolling carousel displayed to your customers based on their personal likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
-
 
 # Linked Content
 

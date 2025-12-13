@@ -24,7 +24,6 @@ Multiple opens means that the recipient opened your email multiple times.  Howev
 
 * Email Groups - If a user signs up for your service with a group address then all the opens are attributed to a single profile or email address that qualified for the email campaign.
 
-
 # Unusually High Clicks
 
 * Email Forwards - CleverTap adds unique tracking info to each URL in an email campaign. The forwarded email is an exact copy of the original email. All the clicks are attributed to the original recipient even if the email is clicked by the recipient of the email forward. There is no way to distinguish between the original recipient and the forwarded email recipient.

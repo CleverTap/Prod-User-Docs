@@ -10,336 +10,143 @@ metadata:
 next:
   description: ''
 ---
-@DOCS: EDIT THIS HACKATHON DOC TO ADHERE TO STYLE GUIDE LATER AND UNPUBLISH (OR DLETE) EXISTING PAGE https://docs.clevertap.com/docs/predictive-segments LATER
+@DOCS: EDIT THIS HACKATHON DOC TO ADHERE TO STYLE GUIDE LATER AND UNPUBLISH (OR DLETE) EXISTING PAGE [https://docs.clevertap.com/docs/predictive-segments](https://docs.clevertap.com/docs/predictive-segments) LATER
 
 # Overview
-  * Intent-Based Segments is a CleverTap capability that enables you to define future goals and get instant predictions on the likelihood of achieving them. 
-  * A goal can be defined on any CleverTap Past Behavior Segment including 'All Users'
-  * After creating a new goal, you can track how you are progressing towards that goal with intuitive graphs and metrics, and also optimally engage users based on how likely they are to achieve the goal.
+
+* Intent-Based Segments is a CleverTap capability that enables you to define future goals and get instant predictions on the likelihood of achieving them. 
+* A goal can be defined on any CleverTap Past Behavior Segment including 'All Users'
+* After creating a new goal, you can track how you are progressing towards that goal with intuitive graphs and metrics, and also optimally engage users based on how likely they are to achieve the goal.
 
 *Example:* For a Segment "Users living in San Francisco," you can create a goal on Dec 01 to "Sell concert tickets" by Dec 31. CleverTap provides a forecast of how many users are likely to meet the said goal.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4837f26-ps3.png",
-        "ps3.png",
-        632,
-        492,
-        "#f5f6f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ps3.png" alt={632} className="border" border={true} src="https://files.readme.io/4837f26-ps3.png" />
+
 As part of Intent-Based Segments, you can further sub-segment and engage users with intent-based micro-segments. This new segmentation splits users into three buckets based on how likely users are to achieve a goal. The three buckets are *Most Likely*, *Moderately Likely*, and *Least Likely*. 
-  * Most likely users are those who are closest to meeting your goal. They may not be sent an engagement to get them to convert.
-  * Moderately likely users are those who are fence-sitters. They may or may not convert depending on the engagement and offers sent to them
-  * Least likely users are those who are unlikely to convert to your goal. Sending them any campaigns may lead to increased spam and unoptimized marketing effort 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ee3a8f3-Screen_Shot_2018-10-17_at_4.23.22_PM.png",
-        "Screen Shot 2018-10-17 at 4.23.22 PM.png",
-        551,
-        327,
-        "#f7f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+* Most likely users are those who are closest to meeting your goal. They may not be sent an engagement to get them to convert.
+* Moderately likely users are those who are fence-sitters. They may or may not convert depending on the engagement and offers sent to them
+* Least likely users are those who are unlikely to convert to your goal. Sending them any campaigns may lead to increased spam and unoptimized marketing effort 
+
+<Image title="Screen Shot 2018-10-17 at 4.23.22 PM.png" alt={551} className="border" border={true} src="https://files.readme.io/ee3a8f3-Screen_Shot_2018-10-17_at_4.23.22_PM.png" />
+
 # Create Your First Goal and Intent Segment
 
 ## Step 1: Select a Segment
 
 In the CleverTap dashboard, click the **Segment** tab and then click the **Segments page** button. On the Segments page, you will see a list of your existing segments. Click on the **Segment** name to navigate to the Segment details page. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bc284c3-predictive_segments_1.png",
-        "predictive_segments_1.png",
-        1225,
-        720,
-        "#f1f4f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="predictive_segments_1.png" alt={1225} className="border" border={true} src="https://files.readme.io/bc284c3-predictive_segments_1.png" />
+
 Alternatively, you can create a new **Past Behavior segment** here, and use this new segment in the next steps.
-[block:callout]
-{
-  "type": "warning",
-  "title": "Past Behavior Segment",
-  "body": "This feature only works with Past Behavior segments."
-}
-[/block]
+
+> 🚧 Past Behavior Segment
+>
+> This feature only works with Past Behavior segments.
+
 ## Step 2: Create Segment Goal
 
 Click the **+ New Segment Goal** button. 
 
 This will create a new *Segment Goal* with a *Target Group*, which is a snapshot of users who are a part of the segment when the goal is created. The performance of the goal will be tracked for this snapshot of users.
-[block:callout]
-{
-  "type": "info",
-  "title": "Note",
-  "body": "During the time that the goal is live, the segment size may change. The goal will not reflect this updated segment of users. The goal will be based on the snapshot of users when the segment was created"
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f06dadc-ps62.png",
-        "ps62.png",
-        534,
-        588,
-        "#f4f5f7"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+> 📘 Note
+>
+> During the time that the goal is live, the segment size may change. The goal will not reflect this updated segment of users. The goal will be based on the snapshot of users when the segment was created
+
+<Image title="ps62.png" alt={534} className="border" border={true} src="https://files.readme.io/f06dadc-ps62.png" />
+
 ## Step 3: Select Prediction Inputs
 
 To generate a prediction, you have to define three things:
 
 1. Select if you want to **minimize** OR **maximize** the set of events picked.
-[block:callout]
-{
-  "type": "info",
-  "title": "When to use Minimize",
-  "body": "Use maximize if you want to maximize your goal (for example, Maximize video watched). This can be used for your conversion goals\n\nUse minimize if you want to minimize your goal (for example, Minimize uninstalls). This can be used for your churn goals"
-}
-[/block]
+
+> 📘 When to use Minimize
+>
+> Use maximize if you want to maximize your goal (for example, Maximize video watched). This can be used for your conversion goals
+>
+> Use minimize if you want to minimize your goal (for example, Minimize uninstalls). This can be used for your churn goals
+
 2. Select the length of the goal by selecting the **goal end date**. The goal expires after the goal end date.
 3. Select the set of events that you want to create the goal with. CleverTap will analyze these past events, and *based* on this analysis generate a prediction on how many users will achieve your goal. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5f97ca7-ps2c.png",
-        "ps2c.png",
-        801,
-        590,
-        "#f7f6f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ps2c.png" alt={801} className="border" border={true} src="https://files.readme.io/5f97ca7-ps2c.png" />
+
 ## Step 4: Predict Outcome
 
 Click **Predict Outcome**. Our Machine Learning algorithm provides a prediction for how many users are likely to perform the set of events in the selected timeframe.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e25a629-ps2b.png",
-        "ps2b.png",
-        801,
-        590,
-        "#f6f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ps2b.png" alt={801} className="border" border={true} src="https://files.readme.io/e25a629-ps2b.png" />
+
 ## Step 5: Save & Track Goal
 
 You can choose to save and track the goal. This will count to your Goal creation limits. When the goal is saved, you will be able to track its performance by comparing the predicted versus actual results on a daily basis.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8b1f50-p12.png",
-        "p12.png",
-        801,
-        590,
-        "#f6f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Goal Limits",
-  "body": "All customers can create up to 5 goals across the account. Goal creation is open for all customer plan types:\n* Growth\n* Advanced\n* Enterprise"
-}
-[/block]
+<Image title="p12.png" alt={801} className="border" border={true} src="https://files.readme.io/d8b1f50-p12.png" />
+
+> 📘 Goal Limits
+>
+> All customers can create up to 5 goals across the account. Goal creation is open for all customer plan types:
+>
+> * Growth
+> * Advanced
+> * Enterprise
+
 ## Step 6: View Goal Stats
 
 On the *Segment Details* page, you can see the goal stats and trends by clicking **View Details**. You can also track how any campaigns are impacting the actual results versus the prediction. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0137ad4-ps222.png",
-        "ps222.png",
-        632,
-        492,
-        "#f5f5f7"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1a30113-predictive_segments_62.png",
-        "predictive_segments_6(2).png",
-        1243,
-        745,
-        "#fafbfd"
-      ],
-      "border": true,
-      "caption": ""
-    }
-  ]
-}
-[/block]
+<Image title="ps222.png" alt={632} className="border" border={true} src="https://files.readme.io/0137ad4-ps222.png" />
+
+<Image title="predictive_segments_6(2).png" alt={1243} className="border" border={true} src="https://files.readme.io/1a30113-predictive_segments_62.png" />
+
 ## Step 7 a: Engage All Users who are a part of the goal
 
 On the Segment Details page, click the **Engage** button.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4908cde-ps223.png",
-        "ps223.png",
-        632,
-        492,
-        "#f5f5f7"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bcc1465-Screen_Shot_2018-10-17_at_4.27.01_PM.png",
-        "Screen Shot 2018-10-17 at 4.27.01 PM.png",
-        808,
-        416,
-        "#edeef6"
-      ],
-      "border": true,
-      "caption": ""
-    }
-  ]
-}
-[/block]
-After completing this step, you will complete the regular process for setting up a [Journey](doc:journeys) or a [Campaign](doc:intro-to-campaigns). If you repeat Step 6 again, you can see how the journey or campaign is impacting the actual results versus the prediction
+<Image title="ps223.png" alt={632} className="border" border={true} src="https://files.readme.io/4908cde-ps223.png" />
+
+<Image title="Screen Shot 2018-10-17 at 4.27.01 PM.png" alt={808} className="border" border={true} src="https://files.readme.io/bcc1465-Screen_Shot_2018-10-17_at_4.27.01_PM.png" />
+
+After completing this step, you will complete the regular process for setting up a [Journey](doc:journeys) or a [Campaign](doc:intro-to-campaigns). If you repeat Step 6 again, you can see how the journey or campaign is impacting the actual results versus the prediction\
 Note: You will not be allowed to change the Who section (users who are a part of the campaign or Journey)
 
 ## Step 7 b: Create Intent Based Segments
 
 On the Segment Details page, click the **Intent Based segments**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/82d7f9e-Screen_Shot_2018-10-17_at_2.17.35_PM.png",
-        "Screen Shot 2018-10-17 at 2.17.35 PM.png",
-        575,
-        428,
-        "#f5f5f7"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screen Shot 2018-10-17 at 2.17.35 PM.png" alt={575} className="border" border={true} src="https://files.readme.io/82d7f9e-Screen_Shot_2018-10-17_at_2.17.35_PM.png" />
+
 This will allow you to create an intent based segment. It will take upto 24 hours to create the intent based segments. You can come back the next day to track and engage with the intent based segments.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f86afc7-Screen_Shot_2018-10-17_at_2.21.33_PM.png",
-        "Screen Shot 2018-10-17 at 2.21.33 PM.png",
-        571,
-        363,
-        "#fdfdfd"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screen Shot 2018-10-17 at 2.21.33 PM.png" alt={571} className="border" border={true} src="https://files.readme.io/f86afc7-Screen_Shot_2018-10-17_at_2.21.33_PM.png" />
+
 The intent segment will create 3 segments of users:-
-  * Most Likely
-  * Moderately Likely
-  * Least Likely 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4500d5f-Screen_Shot_2018-10-17_at_2.38.41_PM.png",
-        "Screen Shot 2018-10-17 at 2.38.41 PM.png",
-        552,
-        599,
-        "#f8f9fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+* Most Likely
+* Moderately Likely
+* Least Likely 
+
+<Image title="Screen Shot 2018-10-17 at 2.38.41 PM.png" alt={552} className="border" border={true} src="https://files.readme.io/4500d5f-Screen_Shot_2018-10-17_at_2.38.41_PM.png" />
+
 You can choose to engage any one of the above micro segment. This will open the Campaign/Journey flow.  
-[block:callout]
-{
-  "type": "info",
-  "title": "Control Group",
-  "body": "A 5% control group will be created by default to track the performance of the Campaign/Journey."
-}
-[/block]
-**Goal Performance**
+
+> 📘 Control Group
+>
+> A 5% control group will be created by default to track the performance of the Campaign/Journey.
+
+**Goal Performance**\
 You can track the performance of the goal from the graph above. If a campaign/journey has been created, the performance of the test group will be compared to that of the control group. If the campaign had a positive impact, there will be an uplift
 
-
 ## Step 8: Track Goal Until Expiry
-When the goal ends, you will see the performance of the goal via 2 stats:-
-1. Actual vs. Predicted
-If actual is above predicted (and campaigns have been run on the goal), then you have improved the forecast by acting on your goal
-2. Test Group vs. Control Group
-Based on the campaigns run, the performance of the campaign will be attributed to the difference in the conversion of the Control Group and the Test Group
 
+When the goal ends, you will see the performance of the goal via 2 stats:-
+
+1. Actual vs. Predicted\
+   If actual is above predicted (and campaigns have been run on the goal), then you have improved the forecast by acting on your goal
+2. Test Group vs. Control Group\
+   Based on the campaigns run, the performance of the campaign will be attributed to the difference in the conversion of the Control Group and the Test Group
 
 # Example
 
@@ -349,129 +156,64 @@ You have an app where you sell tickets. For an upcoming concert, you want to sel
 
 First, navigate to the CleverTap dashboard, and click the **Segments** tab where you can see a list of your existing segments. In this list, you already have a segment of 500k users based in San Francisco. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d108bd3-predictive_segment_example.png",
-        "predictive_segment_example.png",
-        1226,
-        718,
-        "#f1f4f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="predictive_segment_example.png" alt={1226} className="border" border={true} src="https://files.readme.io/d108bd3-predictive_segment_example.png" />
+
 You click into the segment details for the Users from the San Francisco segment, and you are presented with the new Intent-Based Segments feature on the right-side of your screen.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f91a920-ps5.png",
-        "ps5.png",
-        537,
-        577,
-        "#f4f2f4"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ps5.png" alt={537} className="border" border={true} src="https://files.readme.io/f91a920-ps5.png" />
+
 Next, you define your Segment Goal by specifying an event or multiple events that are similar to your ticket sales goal. CleverTap will analyze these past events with our machine learning algorithm, and based on this analysis, generate a prediction on how many users will achieve your goal. 
 
 In the below example, an instant prediction is that you will sell 127k tickets.
 
+<Image title="ps2b.png" alt={801} className="border" border={true} src="https://files.readme.io/1937826-ps2b.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1937826-ps2b.png",
-        "ps2b.png",
-        801,
-        590,
-        "#f6f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+> 📘 Historical data requirement for Forecasting
+>
+> There needs to be significant historical data available to be able to make an accurate prediction. If historical data is not sufficient, CleverTap will provide a message to change the events when setting the goal
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Historical data requirement for Forecasting",
-  "body": "There needs to be significant historical data available to be able to make an accurate prediction. If historical data is not sufficient, CleverTap will provide a message to change the events when setting the goal"
-}
-[/block]
 You can then track how you are progressing towards your ticket sales goal on a daily basis by comparing actual versus predicted sales. 
 
 You can now choose to engage the users of the goal or create intent segments or archive the goal
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Intent Based Segments",
-  "body": "Creating Intent Segments is available only to enterprise users who have opted in for the 'AI pack'. For all other customers wanting to use Intent Based Segments, please contact us on sales@clevertap.com"
-}
-[/block]
+> 📘 Intent Based Segments
+>
+> Creating Intent Segments is available only to enterprise users who have opted in for the 'AI pack'. For all other customers wanting to use Intent Based Segments, please contact us on [sales@clevertap.com](mailto:sales@clevertap.com)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f73ed4-Screen_Shot_2018-10-17_at_1.48.16_PM.png",
-        "Screen Shot 2018-10-17 at 1.48.16 PM.png",
-        1228,
-        743,
-        "#f5f7f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screen Shot 2018-10-17 at 1.48.16 PM.png" alt={1228} className="border" border={true} src="https://files.readme.io/1f73ed4-Screen_Shot_2018-10-17_at_1.48.16_PM.png" />
 
 # Concepts
 
 ## Segment Goal
+
 A Segment Goal is the number of events for a specific user segment that you want to achieve in a selected timeframe. This could be either maximizing or minimizing those events. 
-[block:callout]
-{
-  "type": "success",
-  "title": "Segment Goal Example",
-  "body": "You probably want to maximize charged events but you most likely want to minimize app uninstall events."
-}
-[/block]
+
+> 👍 Segment Goal Example
+>
+> You probably want to maximize charged events but you most likely want to minimize app uninstall events.
+
 ## Target Group
+
 A Target group is a snapshot of users who are a part of the segment when the goal is created. The performance of the goal will be tracked for this snapshot of users.
 
 ## Prediction
+
 Our Machine Learning algorithm will provide a prediction for how many users are likely to perform the set of events you defined in the selected timeframe.
 
 ## Intent-Based Micro-Segments
+
 Intent-based micro-segments are a new segmentation that splits users into three buckets based on how likely users are to achieve that goal. The three buckets are Most Likely, Moderately Likely, and Least Likely.
 
-# Best Practices 
+# Best Practices
 
 ## Prediction
-* To generate a more accurate prediction when creating a Segment Goal, select events that are similar to your goal. 
-[block:callout]
-{
-  "type": "success",
-  "body": "If you are selling tickets, then select *Charged* or *Add to Cart* events. CleverTap will analyze these past events with our machine learning algorithm and based on this analysis, a prediction will be generated based on how many users will likely achieve your goal.",
-  "title": "Prediction Example"
-}
-[/block]
 
+* To generate a more accurate prediction when creating a Segment Goal, select events that are similar to your goal. 
+
+> 👍 Prediction Example
+>
+> If you are selling tickets, then select *Charged* or *Add to Cart* events. CleverTap will analyze these past events with our machine learning algorithm and based on this analysis, a prediction will be generated based on how many users will likely achieve your goal.
 
 ## Engagement
-*  If you are tracking under your goal, you can engage the *Moderately Likely* micro-segment with an offer to nudge them to complete your goal.
+
+* If you are tracking under your goal, you can engage the *Moderately Likely* micro-segment with an offer to nudge them to complete your goal.

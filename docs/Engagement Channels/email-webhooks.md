@@ -12,7 +12,7 @@ next:
 ---
 # Additional Channels
 
-**[Email](doc:email) **
+**[Email](doc:email)**
 
 In CleverTap, you create the content for the email, specify the target audience, and determine when the campaign will be sent. CleverTap delivers the email messages to the third-party [email service provider](doc:email-partners) of your choosing via a simple configuration in the Dashboard.
 

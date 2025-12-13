@@ -10,14 +10,12 @@ metadata:
 next:
   description: ''
 ---
-#Creating Rich Notifications for iOS
+# Creating Rich Notifications for iOS
 
-##Image carousel
-##Single Media
-##Media URL
+## Image carousel
 
+## Single Media
 
+## Media URL
 
-
-
-#Creating Rich Notifications for Android
+# Creating Rich Notifications for Android

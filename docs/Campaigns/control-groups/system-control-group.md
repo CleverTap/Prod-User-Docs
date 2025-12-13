@@ -11,6 +11,9 @@ next:
   description: ''
 ---
 # Create system control group
+
 ## Size
+
 ## Apply system control group to current campaigns and journeys
+
 # Delete

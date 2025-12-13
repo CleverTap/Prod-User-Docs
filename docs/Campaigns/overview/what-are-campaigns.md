@@ -12,5 +12,5 @@ next:
 ---
 TO EDIT HACKATHON COPY LATER
 
-What are Campaigns?
+What are Campaigns?\
 A campaign in general is a series of steps intended to achieve a particular goal. At CleverTap, this means, targeting users via multiple communication channels through user segmentation and other features that help you achieve your campaign goal.

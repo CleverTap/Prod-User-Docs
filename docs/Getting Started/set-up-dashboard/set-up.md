@@ -10,135 +10,74 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 This section covers various information on the setup including the project ID and token, account passcode, timezone, two-factor authentication, and inviting other team members.
 
-#Project ID and Project Token
+# Project ID and Project Token
+
 A project ID and a project token are randomly generated alphanumeric numbers after the account creation process. The project ID and token details are required during the CleverTap SDK integration phase. 
 
-#Account Passcode
+# Account Passcode
+
 An account passcode is required for pushing data to CleverTap via APIs or to fetch data from CleverTap. Only admins can see the account passcode details and have the ability to reset it. 
 
-##Reset a Passcode
+## Reset a Passcode
+
 Admins should only reset a passcode only under extreme circumstances (e.g., credentials have been compromised).
-[block:callout]
-{
-  "type": "warning",
-  "body": "When the passcode is reset, all data exports and imports from CleverTap will stop. You will need to use the new passcode to ensure data exports and imports can continue.",
-  "title": "Effects on Data Exports or Imports"
-}
-[/block]
+
+> 🚧 Effects on Data Exports or Imports
+>
+> When the passcode is reset, all data exports and imports from CleverTap will stop. You will need to use the new passcode to ensure data exports and imports can continue.
+
 To reset the account passcode, perform the following steps:
 
 1. From the CleverTap dashboard, navigate to *Settings* > *Project*.
 2. Click on the circular arrows on the right of *Passcode*.
 
+![528](https://files.readme.io/064a95e-Chunk_1_-_Setup.png "Chunk 1 - Setup.png")
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/064a95e-Chunk_1_-_Setup.png",
-        "Chunk 1 - Setup.png",
-        528,
-        242,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
 3. Click **Reset**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/81eade6-Reset_account_passcode.png",
-        "Reset account passcode.png",
-        395,
-        189,
-        "#f7f2f3"
-      ]
-    }
-  ]
-}
-[/block]
-#Timezone 
+
+![395](https://files.readme.io/81eade6-Reset_account_passcode.png "Reset account passcode.png")
+
+# Timezone 
+
 During the setup, ensure you select the correct timezone for your business.
-[block:callout]
-{
-  "type": "info",
-  "body": "The timezone selection should be based on the timezone where the majority of your user base is available. Campaign delivery, journeys, and scheduled data exports are based on account timezones.",
-  "title": "What Affects Timezones"
-}
-[/block]
+
+> 📘 What Affects Timezones
+>
+> The timezone selection should be based on the timezone where the majority of your user base is available. Campaign delivery, journeys, and scheduled data exports are based on account timezones.
+
 To define the account timezone, perform the following steps:
+
 1. From the CleverTap dashboard, navigate to *Settings* > *Project*.
 2. Click on the pencil icon on the right of *Timezone*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/064a95e-Chunk_1_-_Setup.png",
-        "Chunk 1 - Setup.png",
-        528,
-        242,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![528](https://files.readme.io/064a95e-Chunk_1_-_Setup.png "Chunk 1 - Setup.png")
+
 3. Use the dropdown to select the correct timezone.
 4. Click **Change**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4ef41c3-Change_timezone.png",
-        "Change timezone.png",
-        390,
-        232,
-        "#eff3f9"
-      ]
-    }
-  ]
-}
-[/block]
 
-#Two-factor Authentication
+![390](https://files.readme.io/4ef41c3-Change_timezone.png "Change timezone.png")
+
+# Two-factor Authentication
+
 At the moment, CleverTap supports two-factor authentication (2FA) via Google Authenticator as an added security measure.
 
-##Admin View
+## Admin View
+
 To set up 2FA as an admin, perform the following steps:
+
 1. From the dashboard, navigate to *Settings* > *Project*.
 2. Enable two-factor authentication. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/49b2f33-e63c944-Invite_team_members_1.png",
-        "e63c944-Invite_team_members_1.png",
-        1411,
-        458,
-        "#fbfbfc"
-      ]
-    }
-  ]
-}
-[/block]
-##User View
+![1411](https://files.readme.io/49b2f33-e63c944-Invite_team_members_1.png "e63c944-Invite_team_members_1.png")
+
+## User View
+
 To set up 2FA as a user, perform the following steps:
+
 1. From the dashboard, click on your avatar, then **View profile**.
 2. Enable two-factor authentication. 
 3. Download the Google Authenticator app.
@@ -146,44 +85,17 @@ To set up 2FA as a user, perform the following steps:
 
 Once you have enabled 2FA, you need to enter the one-time password generated by the Google Authenticator app each time you try to log into your CleverTap account.
 
-#Invite Team Members
+# Invite Team Members
 
 To invite team members within your organization to a project, perform the following steps:
+
 1. From the dashboard, navigate to *Settings* > *Users*. 
 2. Click **+ User**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/387c604-2020-05-13_16-08-43_Create_User.png",
-        "2020-05-13_16-08-43_Create User.png",
-        1219,
-        603,
-        "#f7f8f9"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="2020-05-13_16-08-43_Create User.png" alt={1219} className="border" border={true} src="https://files.readme.io/387c604-2020-05-13_16-08-43_Create_User.png" />
 
 3. Enter the email address and assign the role. For more information, refer to [Roles](https://docs.clevertap.com/docs/roles).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ce5e89c-Screenshot_2019-04-08_at_1.21.17_PM.png",
-        "Screenshot 2019-04-08 at 1.21.17 PM.png",
-        1064,
-        616,
-        "#919193"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screenshot 2019-04-08 at 1.21.17 PM.png" alt={1064} className="border" border={true} src="https://files.readme.io/ce5e89c-Screenshot_2019-04-08_at_1.21.17_PM.png" />
 
 4. Click **Invite**.

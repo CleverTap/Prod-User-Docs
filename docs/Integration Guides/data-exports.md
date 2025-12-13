@@ -13,7 +13,7 @@ next:
 CleverTap supports exporting data via our partners:
 
 * [Amazon EventBridge](doc:amazon-eventbridge) 
-* [Segments](doc:segments) ](doc:segmentcom)
+* [Segments](doc:segments) ]\(doc:segmentcom)
 
 CleverTap supports importing data via our partners:
 

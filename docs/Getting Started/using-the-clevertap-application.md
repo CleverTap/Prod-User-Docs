@@ -10,38 +10,76 @@ metadata:
 next:
   description: ''
 ---
-#Intended Users - Split functions by Users
+# Intended Users - Split functions by Users
 
+# Beginner
 
-#Beginner
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Order
+      </th>
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Order",
-    "h-1": "Topic",
-    "h-2": "What to expect",
-    "0-1": "How to log on",
-    "0-2": "Keep your username and password handy.",
-    "0-0": "1"
-  },
-  "cols": 3,
-  "rows": 1
-}
-[/block]
-#Admin 
+      <th style={{ textAlign: "left" }}>
+        Topic
+      </th>
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Order",
-    "h-1": "Topic",
-    "h-2": "What to expect",
-    "0-1": "Add/remove users",
-    "0-2": "Admin rights on the server",
-    "0-0": "1"
-  },
-  "cols": 3,
-  "rows": 1
-}
-[/block]
+      <th style={{ textAlign: "left" }}>
+        What to expect
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        1
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        How to log on
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Keep your username and password handy.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+# Admin 
+
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Order
+      </th>
+
+      <th>
+        Topic
+      </th>
+
+      <th>
+        What to expect
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+
+      <td>
+        Add/remove users
+      </td>
+
+      <td>
+        Admin rights on the server
+      </td>
+    </tr>
+  </tbody>
+</Table>

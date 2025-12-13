@@ -10,33 +10,18 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 Facebook Audiences are a great way to re-engage with users outside of your app or website, via ads on Facebook. The *Facebook Audiences* module on the CleverTap dashboard (under *Campaigns*) makes it easy to set up Facebook Audiences ads to all your users or specific user segments. These segments can be created on the basis of past user behavior, user properties, or a combination of past user behavior and properties. 
 
 Perform the following steps the create a Facebook Audiences campaign.
 
 # Create a New Campaign
+
 To start creating a Facebook Audiences campaign, select the *Campaigns* > click **+ Campaign** button and then select *Facebook Audiences* from the *Messaging channels* list.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d52ae80-654b90c-Screenshot_2020-04-24_at_5.54.44_PM.png",
-        "654b90c-Screenshot_2020-04-24_at_5.54.44_PM.png",
-        2792,
-        1234,
-        "#f8f9fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="654b90c-Screenshot_2020-04-24_at_5.54.44_PM.png" alt={2792} className="border" border={true} src="https://files.readme.io/d52ae80-654b90c-Screenshot_2020-04-24_at_5.54.44_PM.png" />
+
 # Setup the campaign
 
 Check that your *Facebook Audiences* account is linked. Click the **Change settings** link to change the linked account. 
@@ -44,111 +29,49 @@ Check that your *Facebook Audiences* account is linked. Click the **Change setti
 Set a goal with a conversion event. 
 
 # Define the Who
+
 If you choose to create an ad-hoc segment, you can now select a type of segment on which to base your Facebook Audiences campaign. The target can be created on the basis of past user behavior and/or user properties, as shown above. You can also choose from a list of pre-defined segments.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09453a8-cbd4ae6-Screenshot_2020-04-24_at_5.58.04_PM.png",
-        "cbd4ae6-Screenshot_2020-04-24_at_5.58.04_PM.png",
-        2792,
-        1168,
-        "#f8f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="cbd4ae6-Screenshot_2020-04-24_at_5.58.04_PM.png" alt={2792} className="border" border={true} src="https://files.readme.io/09453a8-cbd4ae6-Screenshot_2020-04-24_at_5.58.04_PM.png" />
+
 # Select the What
+
 Choose which adset you want to export this campaign to. This ensures we can get the stats for this adset back into CleverTap for you to view in the CleverTap dashboard.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3b82616-06948ce-Screenshot_2020-04-24_at_5.58.12_PM.png",
-        "06948ce-Screenshot_2020-04-24_at_5.58.12_PM.png",
-        2794,
-        468,
-        "#f4f6fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="06948ce-Screenshot_2020-04-24_at_5.58.12_PM.png" alt={2794} className="border" border={true} src="https://files.readme.io/3b82616-06948ce-Screenshot_2020-04-24_at_5.58.12_PM.png" />
+
 # Define Labels for Your Campaign
+
 You can add specific labels for your campaign from a list or create new labels.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4350fb8-bbfeb2b-Screenshot_2020-04-24_at_5.58.17_PM.png",
-        "bbfeb2b-Screenshot_2020-04-24_at_5.58.17_PM.png",
-        2784,
-        502,
-        "#f4f6fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="bbfeb2b-Screenshot_2020-04-24_at_5.58.17_PM.png" alt={2784} className="border" border={true} src="https://files.readme.io/4350fb8-bbfeb2b-Screenshot_2020-04-24_at_5.58.17_PM.png" />
+
 Then, you can continue to overview and schedule the Facebook Audiences ad to go out to your selected segment of users.
 
 # Define the When
+
 You can set up the *When* to schedule the campaign start and end, as shown below.
 
 Past behavior campaigns can be scheduled to run:
-  * On a specific date and time.
-  * On multiple specified dates and times.
-  * Recurring at a periodicity you set.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/abd7662-02f80fb-Screenshot_2020-04-24_at_5.57.55_PM.png",
-        "02f80fb-Screenshot_2020-04-24_at_5.57.55_PM.png",
-        2798,
-        948,
-        "#f8f9fb"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Recurring Day for a Campaign",
-  "body": "If you specify a recurring day for a campaign, such as the 7th of each month, then the campaign will start for the specified day and ignore the creation date. This is a precaution to avoid sending a campaign unintentionally on a prior date."
-}
-[/block]
+* On a specific date and time.
+* On multiple specified dates and times.
+* Recurring at a periodicity you set.
+
+![2798](https://files.readme.io/abd7662-02f80fb-Screenshot_2020-04-24_at_5.57.55_PM.png "02f80fb-Screenshot_2020-04-24_at_5.57.55_PM.png")
+
+> 📘 Recurring Day for a Campaign
+>
+> If you specify a recurring day for a campaign, such as the 7th of each month, then the campaign will start for the specified day and ignore the creation date. This is a precaution to avoid sending a campaign unintentionally on a prior date.
 
 # Campaign Stats
+
 When you have created some ads for this audience in Facebook ads, you will be able to view the stats for the adset and filter for respective ads in CleverTap.
 
 You can view the following stats:
+
 * Impressions
 * Clicked
 * Amount Spent
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9922d7d-16ce8ac-Screenshot_2020-04-24_at_6.08.40_PM.png",
-        "16ce8ac-Screenshot_2020-04-24_at_6.08.40_PM.png",
-        2740,
-        432,
-        "#f6f7f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![2740](https://files.readme.io/9922d7d-16ce8ac-Screenshot_2020-04-24_at_6.08.40_PM.png "16ce8ac-Screenshot_2020-04-24_at_6.08.40_PM.png")

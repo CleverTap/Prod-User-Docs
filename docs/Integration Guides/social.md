@@ -12,4 +12,4 @@ next:
 ---
 CleverTap allows you to send messages to WhatsApp via Nexmo and Gupshup.
 
-To get started with WhatsApp, please contact sales@clevertap.com.
+To get started with WhatsApp, please contact [sales@clevertap.com](mailto:sales@clevertap.com).

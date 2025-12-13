@@ -18,7 +18,7 @@ Skills required: Well versed with CleverTap server APIs and confident with the c
 
 Steps:
 
--- One time reminder
+\-- One time reminder
 
 Example: a simple reminder before a particular show or an event. Example: Remind me 25 minutes before the Manchester United vs. Arsenal match this Saturday.
 
@@ -26,18 +26,18 @@ You need to send an event to CleverTap, one of the properties of said event need
 
 Set up a live user segment campaign that triggers, before the date/time property
 
-Link to the segment in your account - https://dashboard.clevertap.com/x/segments/date-time.html6
+Link to the segment in your account - [https://dashboard.clevertap.com/x/segments/date-time.html6](https://dashboard.clevertap.com/x/segments/date-time.html6)
 
--- Recurring reminder
+\-- Recurring reminder
 
 Example: a reminder that triggers before every show or event. Example: Remind me 25 mins before every EPL match
 
-Telling CleverTap which shows or events the user is setting an alarm for:
+Telling CleverTap which shows or events the user is setting an alarm for:\
 Everytime the user subscribes to a show, or an event in your app, you will update a profile variable against that user. The variable will read something like "Current Subscriptions" -- SUBs ID 1, SUBs ID2 etc.
 
-Setting an event against people whenever a new episode releases:
-Every Time a new episode comes out in your arsenal of titles, you will query CleverTap to ask for the people who are currently subscribed to said title. 
-API to download profiels - https://support.clevertap.com/docs/api/working-with-user-profiles.html#download-user-profiles3
+Setting an event against people whenever a new episode releases:\
+Every Time a new episode comes out in your arsenal of titles, you will query CleverTap to ask for the people who are currently subscribed to said title.\
+API to download profiels - [https://support.clevertap.com/docs/api/working-with-user-profiles.html#download-user-profiles3](https://support.clevertap.com/docs/api/working-with-user-profiles.html#download-user-profiles3)
 
-Then you will upload an event against those people. A sample event would be of the type
-API to upload events - https://support.clevertap.com/docs/api/working-with-events.html#upload-events5
+Then you will upload an event against those people. A sample event would be of the type\
+API to upload events - [https://support.clevertap.com/docs/api/working-with-events.html#upload-events5](https://support.clevertap.com/docs/api/working-with-events.html#upload-events5)

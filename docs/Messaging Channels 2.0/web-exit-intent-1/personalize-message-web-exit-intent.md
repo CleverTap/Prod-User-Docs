@@ -26,10 +26,10 @@ Click the gear icon in the editor to open personalization options.
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. Imagine having a rolling carousel displayed to your customers based on their personal likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
 
-# Constant event property 
+# Constant event property
 
 Engage the user on multiple actions and inactions. For example, person A added to cart white coat and person B added to cart blue jeans, but they both did not purchase the items. 
 
 You can create a campaign for each product added to the cart or you can use a *constant event property* to personalize the campaign to each user that did not purchase the item. 
 
-For example, you can map the *prod_name* property of the *charged* event to the *product_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. Imagine having to create a campaign for each product added to the cart instead.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
+For example, you can map the *prod\_name* property of the *charged* event to the *product\_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. Imagine having to create a campaign for each product added to the cart instead.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).

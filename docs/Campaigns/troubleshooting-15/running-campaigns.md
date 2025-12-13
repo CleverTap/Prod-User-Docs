@@ -10,13 +10,22 @@ metadata:
 next:
   description: ''
 ---
-# Qualification 
-## User movement 
+# Qualification
+
+## User movement
+
 ## Inactive users -
-#Delivery
-## Simultaneous running campaigns 
-## Campaign Limit Reached 
-## Is there any way to withdraw a notification sent to users ? 
+
+# Delivery
+
+## Simultaneous running campaigns
+
+## Campaign Limit Reached
+
+## Is there any way to withdraw a notification sent to users ?
+
 ## Create a campaign by identities -
-## Underqualification 
+
+## Underqualification
+
 ## Users not receiving push notifications

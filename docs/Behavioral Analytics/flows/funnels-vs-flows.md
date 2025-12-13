@@ -22,43 +22,12 @@ Funnels are useful to check the number of users that are progressing towards the
 
 # Event in Funnels or Flows
 
-Flows can have repeated steps because it provides the order of events performed by the user. For example, a user performed *App Launched* event three times in quick succession and the *Product Viewed * event two times, then the Flows are displayed as:
+Flows can have repeated steps because it provides the order of events performed by the user. For example, a user performed *App Launched* event three times in quick succession and the *Product Viewed* event two times, then the Flows are displayed as:
 
 *App Launched > App Launched > App Launched > Product Viewed > Product Viewed*
 
+<Image title="Flows_events.png" alt={896} className="border" border={true} src="https://files.readme.io/b49f3c9-Flows_events.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b49f3c9-Flows_events.png",
-        "Flows_events.png",
-        896,
-        680,
-        "#eff5fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 Funnels display the movement of users. Therefore, a user event is counted only once even if it is repeated. For example, *App Launched* and *Product Viewed* will be two steps even if the user repeats one or both events.
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f24c87-Funnel_Dropoff.png",
-        "Funnel_Dropoff.png",
-        1168,
-        617,
-        "#e4e4fc"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Funnel_Dropoff.png" alt={1168} className="border" border={true} src="https://files.readme.io/1f24c87-Funnel_Dropoff.png" />

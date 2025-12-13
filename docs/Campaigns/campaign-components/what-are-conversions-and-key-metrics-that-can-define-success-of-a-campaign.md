@@ -12,36 +12,13 @@ next:
 ---
 TO EDIT HACKATHON COPY LATER
 
-Conversions and Key Metrics:
+Conversions and Key Metrics:\
 The stats page on a campaign showcases the key metrics that define the impact of a campaign so marketers can document what works and what doesn’t. 
 
-Below listed are the sections under the stats page.
-Viewed
-Clicked 
-CTR
+Below listed are the sections under the stats page.\
+Viewed\
+Clicked\
+CTR\
 Control group stats
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": []
-    }
-  ]
-}
-[/block]
 Apart from these stats, the stats page also shows conversion funnels. 
-
-
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": []
-    }
-  ]
-}
-[/block]

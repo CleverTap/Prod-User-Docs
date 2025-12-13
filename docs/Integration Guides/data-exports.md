@@ -17,7 +17,6 @@ CleverTap supports exporting data via our partners:
 * [Segment.com](doc:segmentcom)
 * [Google Cloud Platform](doc:data-export-to-gcp) 
 
-
 CleverTap supports importing data via our partners:
 
 * [Imports via SFTP](https://developer.clevertap.com/docs/imports-via-sftp)

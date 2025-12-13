@@ -16,28 +16,13 @@ Snapshot view is a combination of the Today, Mobile App, and Uninstall board. It
 
 This is the default view. 
 
+<Image title="Snapshot_Main.png" alt={959} className="border" width="80%" border={true} src="https://files.readme.io/eb6d886-Snapshot_Main.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eb6d886-Snapshot_Main.png",
-        "Snapshot_Main.png",
-        959,
-        1052,
-        "#f9f9fb"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
 For this view, navigate to *Boards* > *Snapshot*.
 
 This view shows:
-  * *Daily Active Users*, *Weekly Active Users*, and *Monthly Active Users* represent users who have launched your mobile application at least once the respective *Daily*, *Weekly*, and *Monthly* time period.
+
+* *Daily Active Users*, *Weekly Active Users*, and *Monthly Active Users* represent users who have launched your mobile application at least once the respective *Daily*, *Weekly*, and *Monthly* time period.
 
 * It also shows, *Total Active Users*, *Total New Activations*, and *Total Uninstalls* for your mobile application. 
 
@@ -47,40 +32,10 @@ This view shows detailed metrics for *Active Users* and *New vs Returning Users*
 
 The *Active Users* represent users that have launched the application on a selected date.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/abb54e3-Snapshot_Active_Users.png",
-        "Snapshot_Active Users.png",
-        568,
-        514,
-        "#fbfbfb"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+<Image title="Snapshot_Active Users.png" alt={568} className="border" width="80%" border={true} src="https://files.readme.io/abb54e3-Snapshot_Active_Users.png" />
+
 # New vs Returning Users
 
 The *New Users* represent first-time users in your application or Website on that day. The *Existing Users* represent users returning to your application or Website on that day.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46dca54-Snapshot_New_vs_Returning_Users.png",
-        "Snapshot_New vs Returning Users.png",
-        581,
-        522,
-        "#fafbfb"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+
+<Image title="Snapshot_New vs Returning Users.png" alt={581} className="border" width="80%" border={true} src="https://files.readme.io/46dca54-Snapshot_New_vs_Returning_Users.png" />

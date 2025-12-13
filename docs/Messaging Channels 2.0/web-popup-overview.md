@@ -15,15 +15,14 @@ next:
 Web notifications are pop-up messages that can be displayed on desktop or mobile websites.
 
 CleverTap web notifications get displayed in two ways:
-  * In a footer of your site; available for desktop and mobile websites.
-  * Before the user exits your website, known as exit intent web pop-ups; only available for desktop.
-[block:callout]
-{
-  "type": "warning",
-  "body": "The prerequisite to set up web pop-up campaigns is to integrate your website with the CleverTap JavaScript plugin. For more information, refer to [Web](https://developer.clevertap.com/docs/web) in the developer documentation.",
-  "title": "Prerequisite"
-}
-[/block]
+
+* In a footer of your site; available for desktop and mobile websites.
+* Before the user exits your website, known as exit intent web pop-ups; only available for desktop.
+
+> 🚧 Prerequisite
+>
+> The prerequisite to set up web pop-up campaigns is to integrate your website with the CleverTap JavaScript plugin. For more information, refer to [Web](https://developer.clevertap.com/docs/web) in the developer documentation.
+
 # Web Pop-up
 
 Web pop-ups provide the capability to send quick alerts, offers, or even how-to tidbits to your users using our built-in web pop-up builder or your own custom HTML templates. The *Web Pop-up* feature makes it easy to set up web pop-up campaigns for all your users or specific user segments. 

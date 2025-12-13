@@ -15,9 +15,10 @@ next:
 [![](https://files.readme.io/6df4aa6-Demo_CTA_for_Docs.png)](https://clevertap.com/live-product-demo/)
 
 CleverTap enables you to integrate app analytics and marketing, and our platform helps you increase user engagement in three ways: 
-  * Track actions users are taking in your app to analyze how people use your product. 
-  * [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
-  * [Analyze](doc:intro-to-reports) each of your campaigns to understand their effect on user engagement and your business metrics.
+
+* Track actions users are taking in your app to analyze how people use your product. 
+* [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
+* [Analyze](doc:intro-to-reports) each of your campaigns to understand their effect on user engagement and your business metrics.
 
 # Platform Features
 
@@ -55,4 +56,4 @@ To close this loop, the marketer can create a [report](doc:intro-to-reports) in 
 
 The best place to get started with CleverTap is our **[quickstart guide](doc:quickstart-guide)**, which shows you how to create a segment, build a campaign, and run a report in ten minutes.
 
-** [Quickstart Guide](doc:quickstart-guide) **
+**[Quickstart Guide](doc:quickstart-guide)**

@@ -12,15 +12,5 @@ next:
 ---
 TO EDIT HACKATHON COPY LATER
 
-Change Conversion Event
+Change Conversion Event\
 A conversion event is necessary to analyse the impact of any campaign. You can set/change conversion event for the account from the events page on the dashboard.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": []
-    }
-  ]
-}
-[/block]

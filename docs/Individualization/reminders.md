@@ -1,0 +1,297 @@
+---
+title: Reminders
+excerpt: ''
+deprecated: false
+hidden: true
+metadata:
+  title: ''
+  description: ''
+  robots: noindex
+next:
+  description: ''
+---
+[block:api-header]
+{
+  "title": "Overview"
+}
+[/block]
+Reminders provide the ability to send personalized reminder messages or notifications to users, so they can take certain actions before or after a certain date. 
+
+##User Scenario
+An eCommerce company wants to remind their users of an upcoming subscription renewal date. By using reminders, they can engage users before or after their subscription date to remind them to pay and avoid any service interruption, so users never miss a due date. The reminders can be personalized depending on the user's actions.
+
+#Create a Reminder
+Before creating a new campaign using reminders, the first step is to create a reminder.
+
+1. From the dashboard, click **Reminders**.
+2. Click on the **+ Reminder Type** button.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/19658dd-Plus_Reminder_Type.png",
+        "Plus Reminder Type.png",
+        1146,
+        362,
+        "#f8f9fb"
+      ]
+    }
+  ]
+}
+[/block]
+3. Click on the **+ Reminder** button. (@DK TO CONFIRM. NOT SURE.)
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+
+4. Name the reminder.
+5. Select the reminder by either:
+  * Selecting or clearing a date.
+  * Canceling for when a user cancels service.
+  * Snoozing for when a user wants to ignore the notification reminder.
+
+Example: You can decide to clear a date once a customer pays their utility bill, so you would set the event property for when the customer makes that payment.
+
+NOTE ON NATIVE DISPLAY (@DK: DO WE NEED TO ADD A CALLOUT NOTE?)
+Unlike push campaigns, native display campaigns are always on.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+
+5. Choose an event and a reminder ID. (@DK: DO WE NEED TO MENTION THE UNIQUE ID?)
+6. Select a date.
+7. Click **Save**.
+
+#Create Campaigns Using Reminders
+
+To create a campaign using reminders, perform the following steps:
+
+1. From the dashboard, click **Reminders**.
+2. Click on the **+ Reminder Type** button.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/3d7fa65-1_Plus_Reminder_Type.png",
+        "1 Plus Reminder Type.png",
+        1146,
+        362,
+        "#f8f9fb"
+      ]
+    }
+  ]
+}
+[/block]
+3. Click on the **+ Reminder Campaign** button.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/fd7c24a-2_Plus_Reminder_Campaign.png",
+        "2 Plus Reminder Campaign.png",
+        1130,
+        413,
+        "#f2f5fb"
+      ]
+    }
+  ]
+}
+[/block]
+3. Select a channel.
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/15a31da-3_Select_a_channel.png",
+        "3 Select a channel.png",
+        712,
+        441,
+        "#f8f9fb"
+      ]
+    }
+  ]
+}
+[/block]
+4. Select when you want to deliver your campaign.
+5. Click **Continue**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/b2b9541-The_When.png",
+        "The When.png",
+        1175,
+        578,
+        "#fafaf9"
+      ]
+    }
+  ]
+}
+[/block]
+6. Select the due date by choosing *Before* or *After* and the number of days. 
+7. Click **Continue**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/4e9c705-1_The_Who.png",
+        "1 The Who.png",
+        1184,
+        575,
+        "#fbfbfc"
+      ]
+    }
+  ]
+}
+[/block]
+8. Click on the **+ DAY** button.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/89bff6f-3_Plus_Day.png",
+        "3 Plus Day.png",
+        354,
+        251,
+        "#f4f5fa"
+      ]
+    }
+  ]
+}
+[/block]
+9. Select days by choosing *Between specific days* and/or *On specified days* and the dates.
+10. Click **Select**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/db0eccb-4_Send_reminders_on.png",
+        "4 Send reminders on.png",
+        952,
+        488,
+        "#a3a3a4"
+      ]
+    }
+  ]
+}
+[/block]
+11. Select the day ranges or dates you created in the last step.
+12. Enter a title and a message. Repeat this step as necessary. You can personalize these messages using liquid tags. For more information, refer to [Liquid Tags](https://docs.clevertap.com/docs/liquid-tags).
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/c125d71-5_Write_first_message_with_liquid_tags.png",
+        "5 Write first message with liquid tags.png",
+        1165,
+        508,
+        "#f2f3f6"
+      ]
+    }
+  ]
+}
+[/block]
+13. Select a notification channel.
+14. Click **Continue**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/05d313a-6_Choose_notification_channels.png",
+        "6 Choose notification channels.png",
+        1174,
+        516,
+        "#fbfbfd"
+      ]
+    }
+  ]
+}
+[/block]
+15. Enter a number under *Android push time to live*.
+16. Click **Continue**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/db27a2a-7_Push_time_to_live.png",
+        "7 Push time to live.png",
+        1167,
+        546,
+        "#f7f7f8"
+      ]
+    }
+  ]
+}
+[/block]
+17. After reviewing your campaign, click **Schedule notification**.
+18. Enter a name and click **Save**.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/a126c3b-8_Schedule_and_save.png",
+        "8 Schedule and save.png",
+        1172,
+        536,
+        "#b9babc"
+      ]
+    }
+  ]
+}
+[/block]
+#View Reminder Reports
+
+To view a reminder report, perform the following steps:
+1. Navigate to *Reminders*.
+2. Select the campaign you want to view from the *Reminders*.
+
+The report shows the number of reminders, all the actions that you have set, and performance by channels.
+
+________________ DK TO PROVIDE NEW SCREENSHOT BELOW ________________
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/f5d71da-Report.png",
+        "Report.png",
+        1144,
+        493,
+        "#fbfbfc"
+      ]
+    }
+  ]
+}
+[/block]

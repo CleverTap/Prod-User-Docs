@@ -25,13 +25,11 @@ It will help you have the following information in that system - The product nam
 # Step 2: Creating a Business Logic to Trigger the Campaign
 
 You need to create the logic around which this campaign should run, which are the rules that will make this campaign tick. 
-[block:callout]
-{
-  "type": "success",
-  "body": "The price of Red Nike Shoes has dropped from $75 to $50. You now want to notify any users who saw those Red Nikes in the past 30 days, and have not bought those Red Nike Shoes and to people who have seen other Nike shoes in the past 30 days and have not bought shoes.",
-  "title": "Price Alert Example"
-}
-[/block]
+
+> 👍 Price Alert Example
+>
+> The price of Red Nike Shoes has dropped from $75 to $50. You now want to notify any users who saw those Red Nikes in the past 30 days, and have not bought those Red Nike Shoes and to people who have seen other Nike shoes in the past 30 days and have not bought shoes.
+
 # Step 3: Send the Campaign using the CleverTap Create Campaign API
 
 Using the [Create Campaign API](https://clevertap-developer-docs.readme.io/v1.0/docs/create-campaign-api), you can query CleverTap for the folks who match your business logic and send them a notification. You can repeat this process for any/all products.

@@ -10,12 +10,16 @@ metadata:
 next:
   description: ''
 ---
-#What are segments?
+# What are segments?
 
-#What is the use of segments?
+# What is the use of segments?
+
 # Types of segments
-##Past Behavior Segments
 
-##Live segments
-##Upload CSV
-##Control Groups
+## Past Behavior Segments
+
+## Live segments
+
+## Upload CSV
+
+## Control Groups

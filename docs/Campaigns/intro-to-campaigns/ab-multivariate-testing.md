@@ -10,17 +10,15 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 Optimizing messages and campaigns is a crucial activity for any app marketer. 
 
 We offer three ways to optimize everything you deliver:
-  * A/B & Multivariate Testing
-  * Split Message Delivery 
-  * Sending Campaigns to an Audience Subset
+
+* A/B & Multivariate Testing
+* Split Message Delivery 
+* Sending Campaigns to an Audience Subset
 
 # A/B Testing
 
@@ -29,103 +27,48 @@ A/B Testing lets you compare up to three different versions of a message for any
 You can try different copy, creatives calls to action, or any combination of these to make sure you have designed the best message for each campaign. 
 
 Pick the size of the test audience to run and we will do the rest. We will determine the winner based on the number of click-throughs, and then deliver the winning message to the rest of your target audience.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e5353df-ab1.gif",
-        "ab1.gif",
-        1280,
-        642,
-        "#cdd3d1"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ab1.gif" alt={1280} className="border" border={true} src="https://files.readme.io/e5353df-ab1.gif" />
+
 For any campaign, you’ll need the content and creatives for each message. When creating a Push Notification campaign, you’ll now see an option to add up to three variants of any message to test which one performs best.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d2212c4-Campaigns_multivariate_AB_What_example.png",
-        "Campaigns_multivariate_AB_What_example.png",
-        1003,
-        1208,
-        "#f4f6f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaigns_multivariate_AB_What_example.png" alt={1003} className="border" border={true} src="https://files.readme.io/d2212c4-Campaigns_multivariate_AB_What_example.png" />
+
 After you have added the desired number of variants you are ready to determine how big of a test to run.
 
 ## Campaigns Sent to Past Behavior Segments
 
 For campaigns sent to Past Behavior Segments (grouping of users based on their actions in the past) you have two options: launch the A/B test to a percentage of your target audience or send out an absolute number of messages. In either case, we’ll deliver the variants equally to the test audience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bb7e63f-Campaigns_multivariate_AB_message_AB_test.png",
-        "Campaigns_multivariate_AB_message_AB_test.png",
-        1026,
-        684,
-        "#f8f8fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_multivariate_AB_message_AB_test.png" alt={1026} className="border" border={true} src="https://files.readme.io/bb7e63f-Campaigns_multivariate_AB_message_AB_test.png" />
+
 For example:
-  * You are testing three messages (Variant A, Variant B, Variant C)
-  * Your Campaign Reach is 2,000,000 users
-  * You choose a Test Population of 15% of Campaign Reach (300,000 users)
+
+* You are testing three messages (Variant A, Variant B, Variant C)
+* Your Campaign Reach is 2,000,000 users
+* You choose a Test Population of 15% of Campaign Reach (300,000 users)
 
 Then we will send:
-  * Variant A to 100,000 users
-  * Variant B to 100,000 users
-  * Variant C to 100,000 users
-  
+
+* Variant A to 100,000 users
+* Variant B to 100,000 users
+* Variant C to 100,000 users
+
 After the 300,000 messages have been delivered, we will calculate the winning message over this test group based on the number of click-throughs. 
 
 We’ll then automatically send the winning message to the remainder of your target audience, which in this example is 1,700,000 users.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75f0487-Screenshot_2020-06-10_at_12.34.51_AM.png",
-        "Screenshot 2020-06-10 at 12.34.51 AM.png",
-        1439,
-        685,
-        "#f8f9f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "success",
-  "body": "We ensure there are always an equal number of messages sent for each variant. This ensures there is no bias introduced during the test phase and that the best performing message is always declared the winner.",
-  "title": "Note"
-}
-[/block]
+<Image title="Screenshot 2020-06-10 at 12.34.51 AM.png" alt={1439} className="border" border={true} src="https://files.readme.io/75f0487-Screenshot_2020-06-10_at_12.34.51_AM.png" />
+
+> 👍 Note
+>
+> We ensure there are always an equal number of messages sent for each variant. This ensures there is no bias introduced during the test phase and that the best performing message is always declared the winner.
+
 ## Campaigns Sent to Live User Segments
 
 With campaigns sent to Live User Segments, campaign (triggered) messages are delivered immediately when a user’s activity matches the criteria that you have selected. 
 
-**Example**
+**Example**\
 In this scenario, you want to send a message when the user has completed a booking or purchase. Because it’s not possible to determine the reach of triggered campaigns upfront, you must decide how many of the total messages to send for A/B testing before a winner is declared.
 
 If you select 500 users as your test audience, we will alternate delivery of Variant A and Variant B as users qualify for the campaign. After 500 total messages are sent (Variant A – 250 and Variant B – 250), we will decide the *Winner* based on the number of clicks and continue only with this winning message for the duration of the campaign.
@@ -137,41 +80,15 @@ If your test group size exceeds the total number of users who ultimately qualify
 # Split Delivery
 
 For some campaigns, you want to send multiple variants of a message to your entire target audience without selecting a winner. With *Split Delivery*, you choose what percentage of your target audience receives each variant and we’ll deliver them accordingly.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a1a774-ab5.png",
-        "ab5.png",
-        1200,
-        525,
-        "#b8c1be"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ab5.png" alt={1200} className="border" border={true} src="https://files.readme.io/7a1a774-ab5.png" />
+
 Here’s how it works:
 
 As with A/B testing, when creating the message for a campaign you can add up to three variants. With *Split Delivery* you can decide what percentage of your audience receives each message variant. We will deliver the messages in exactly this proportion for the duration of the campaign.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4107e24-Campaigns_multivariate_AB_message_split_test.png",
-        "Campaigns_multivariate_AB_message_split_test.png",
-        1028,
-        535,
-        "#f4f6f6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaigns_multivariate_AB_message_split_test.png" alt={1028} className="border" border={true} src="https://files.readme.io/4107e24-Campaigns_multivariate_AB_message_split_test.png" />
+
 After the campaign is completed, navigate to the campaign stats to compare how each message performed.
 
 # Deliver to a Subset of the Target Audience
@@ -179,52 +96,25 @@ After the campaign is completed, navigate to the campaign stats to compare how e
 Sometimes you want to send a message to only a subset of the qualifying audience (Target Reach) for a campaign or avoid sending it if the number of qualified users exceeds the specified number.
 
 A great use case for this is a limited offer. You want to send a fixed number of coupon codes that you want to distribute. If the total reach for your campaign exceeds the available number of coupon codes,  you can simply limit the number of users who will receive the message to the available number of coupons. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8f35a4d-ab7.png",
-        "ab7.png",
-        406,
-        87,
-        "#5faeb1"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="ab7.png" alt={406} className="border" border={true} src="https://files.readme.io/8f35a4d-ab7.png" />
+
 Here’s how it works:
 
-In the campaign creation flow, when you are determining who to send your message to, under the *Campaign Reach *section, select the option to limit delivery of the messages to the number you want.
+In the campaign creation flow, when you are determining who to send your message to, under the *Campaign Reach* section, select the option to limit delivery of the messages to the number you want.
 
 For triggered campaigns (based on Live User Segments), as users qualify, they will receive the message until the total specified quantity is delivered, after which the campaign ends. For campaigns based on *Past Behavior Segments*, we will randomly select the users who receive the message.
 
 The campaign limits can also be configured as follows: 
 
-  * Daily Limit - Limit the number of users for *each day*, for* Best Time*, *User-Timezone*, and *Triggered* campaigns.
-   
-  * Campaign Run Limit - Limit the number of users for each run of a campaign, for Fixed Time or Recurring campaigns.
+* Daily Limit - Limit the number of users for *each day*, for *Best Time*, *User-Timezone*, and *Triggered* campaigns.
 
-  * Safety check - Prevent sending out unwanted campaigns. A campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action. For example, a customer has a budget for distributing 1000 discount coupons but the qualified user count is 10,000. If you select the safety check, the campaign does not run and prevents the sender from spending over budget. 
+* Campaign Run Limit - Limit the number of users for each run of a campaign, for Fixed Time or Recurring campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/72a74a3-Campaign_Campaign_reach_annotated.png",
-        "Campaign_Campaign_reach_annotated.png",
-        1360,
-        793,
-        "#fbf9fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+* Safety check - Prevent sending out unwanted campaigns. A campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action. For example, a customer has a budget for distributing 1000 discount coupons but the qualified user count is 10,000. If you select the safety check, the campaign does not run and prevents the sender from spending over budget. 
+
+<Image title="Campaign_Campaign_reach_annotated.png" alt={1360} className="border" border={true} src="https://files.readme.io/72a74a3-Campaign_Campaign_reach_annotated.png" />
+
 # Email A/B Testing
 
 CleverTap's Email A/B Testing feature lets you compare up to three different versions of an email to find the best-performing one. You decide the size of the test audience for the A/B test, we will determine the winner based on the number of clicks, and then deliver the winning message to the rest of your target audience.
@@ -234,119 +124,47 @@ CleverTap's Email A/B Testing feature lets you compare up to three different ver
 Creating an email campaign using the A/B testing feature follows a similar pattern to creating a normal email campaign. After choosing the segment to target and frequency of communication, you will be given an option to run the campaign as an A/B test. 
 
 Click **Select** in the A/B test box to set up the email A/B test.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/00b3a8f-Campaigns_multivariate_AB_test_Email.png",
-        "Campaigns_multivariate_AB_test_Email.png",
-        1281,
-        1329,
-        "#e7e7e9"
-      ],
-      "border": true,
-      "sizing": "full"
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaigns_multivariate_AB_test_Email.png" alt={1281} className="border" width="100%" border={true} src="https://files.readme.io/00b3a8f-Campaigns_multivariate_AB_test_Email.png" />
+
 On the next page, build two or three different variations of the email you want to send. You can modify the email template, content, subject line, and sender name. 
 
 Click **Continue** after you are finished building the email variations.
 
 Select the sample size and wait time until the winning message is decided. Then click **Continue**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6c6dc2c-Campaigns_multivariate_message_Email_AB.png",
-        "Campaigns_multivariate_message_Email_AB.png",
-        1146,
-        672,
-        "#f8f9fb"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:callout]
-{
-  "type": "success",
-  "body": "We will determine the winner based on the number of clicks, and then deliver the winning message to the rest of your target audience. \n\nIn the above image, we are sending the A/B test to a sample size of 10% who will receive either Variant A or B. In other words, 5% of the target segment will receive email Variant A and another 5% will receive email Variant B. We will wait for 45 minutes to evaluate the winner based on the number of clicks. The winner variant is then automatically sent to the remaining 90% of the target segment.\n\nIf there is a tie between Variant A and B, we will send the email Variant A to the remaining 90% of the audience.",
-  "title": "Winner Evaluation"
-}
-[/block]
+![1146](https://files.readme.io/6c6dc2c-Campaigns_multivariate_message_Email_AB.png "Campaigns_multivariate_message_Email_AB.png")
+
+> 👍 Winner Evaluation
+>
+> We will determine the winner based on the number of clicks, and then deliver the winning message to the rest of your target audience. 
+>
+> In the above image, we are sending the A/B test to a sample size of 10% who will receive either Variant A or B. In other words, 5% of the target segment will receive email Variant A and another 5% will receive email Variant B. We will wait for 45 minutes to evaluate the winner based on the number of clicks. The winner variant is then automatically sent to the remaining 90% of the target segment.
+>
+> If there is a tie between Variant A and B, we will send the email Variant A to the remaining 90% of the audience.
+
 You are finished with setting up the A/B test portion of building your email campaign. Now, you can complete the rest of steps similar to a normal campaign. Clicking **Schedule Notification** will finalize your email campaign.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dc04e04-Campaigns_multivariate_Email_Setup.png",
-        "Campaigns_multivariate_Email_Setup.png",
-        1143,
-        720,
-        "#f7f8fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaigns_multivariate_Email_Setup.png" alt={1143} className="border" border={true} src="https://files.readme.io/dc04e04-Campaigns_multivariate_Email_Setup.png" />
+
 Check the **overview** and schedule the campaign.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a90fb0b-Campaigns_multivariate_AB_test_Email_Overview.png",
-        "Campaigns_multivariate_AB_test_Email_Overview.png",
-        1137,
-        1535,
-        "#f9fafc"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Campaigns_multivariate_AB_test_Email_Overview.png" alt={1137} className="border" border={true} src="https://files.readme.io/a90fb0b-Campaigns_multivariate_AB_test_Email_Overview.png" />
+
 # Multivariate Campaigns
-Using the* Message on user property *type, you can create the multivariate campaigns.
+
+Using the *Message on user property*type, you can create the multivariate campaigns.\
 You can send a campaign based on the user property to your user base. 
 
-For example, if you have users segregated based on languages. You can send campaign content in different languages based on their user property. You can select the *language* as the user property for the multivariate campaign
+For example, if you have users segregated based on languages. You can send campaign content in different languages based on their user property. You can select the *language* as the user property for the multivariate campaign\
 This will allow you to create multiple messages in the same campaign, each reaching out to users based on their language preference.
 
 You can create up to 50 such variants in the same message. The default variant will engage the users who have no value against the profile property
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7de494d-Screenshot_2019-01-29_at_4.21.57_PM.png",
-        "Screenshot 2019-01-29 at 4.21.57 PM.png",
-        1008,
-        600,
-        "#f7f8fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2019-01-29 at 4.21.57 PM.png" alt={1008} className="border" border={true} src="https://files.readme.io/7de494d-Screenshot_2019-01-29_at_4.21.57_PM.png" />
 
-#Video Tutorial
+# Video Tutorial
+
 For further information, you can watch the following video on A/B tests:
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FnVN6eEzLzRk%3Flist%3DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnVN6eEzLzRk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnVN6eEzLzRk%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=nVN6eEzLzRk&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=19",
-  "title": "Product Demo: Message A/B Tests",
-  "favicon": "https://www.youtube.com/s/desktop/006e516c/img/favicon.ico",
-  "image": "https://i.ytimg.com/vi/nVN6eEzLzRk/hqdefault.jpg"
-}
-[/block]
+
+<Embed url="https://www.youtube.com/watch?v=nVN6eEzLzRk&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=19" title="Product Demo: Message A/B Tests" favicon="https://www.youtube.com/s/desktop/006e516c/img/favicon.ico" image="https://i.ytimg.com/vi/nVN6eEzLzRk/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=nVN6eEzLzRk&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=19" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FnVN6eEzLzRk%253Flist%253DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DnVN6eEzLzRk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FnVN6eEzLzRk%252Fhqdefault.jpg%26key%3Df2aa6fc3595946d0afc3d76cbbd25dc3%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />

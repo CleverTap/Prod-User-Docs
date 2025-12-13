@@ -13,6 +13,7 @@ next:
 CleverTap supports sending emails through *Amazon SES*. 
 
 # Integrating Amazon SES with CleverTap
+
 To integrate Amazon SES with CleverTap, follow the steps below:
 
 1. In the dashboard, navigate to *Settings* and click on **Integrate Email**.
@@ -28,62 +29,27 @@ To integrate Amazon SES with CleverTap, follow the steps below:
 When an email is classified as bounced, CleverTap needs to be notified so that no further deliveries to that mailbox are attempted. This is considered a good practice and helps improve your sender reputation.
 
 To enable support for bounce processing, follow the steps below:
+
 1. Navigate to *Amazon SNS*.
 2. Create a *Topic*.
 3. Select the *Topic* and navigate to *Actions* > *Subscribe to Topic*.
 4. Select *HTTPS* as the *Protocol*.
 5. As the *Endpoint* value, add the *Callback URL* as shown in your CleverTap *Email* page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b7d933a-Callback_URL_v1_CLEVER-4714.png",
-        "Callback_URL_v1_CLEVER-4714.png",
-        1900,
-        1260,
-        "#fafbfb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1900](https://files.readme.io/b7d933a-Callback_URL_v1_CLEVER-4714.png "Callback_URL_v1_CLEVER-4714.png")
+
 6. Save your settings by clicking on **Create Subscription**.
 7. Navigate to *Amazon SES*.
 8. Select the *Email Address* you had previously added to the CleverTap Dashboard.
 9. Click on *View Details*.
 10. Click on *Notifications* > *Edit Configuration*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e5ae062-AWS_Domains_Notifications__v1_-_CLEVER-4714.png",
-        "AWS Domains_Notifications__v1_-_CLEVER-4714.png",
-        2862,
-        1428,
-        "#f7f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![2862](https://files.readme.io/e5ae062-AWS_Domains_Notifications__v1_-_CLEVER-4714.png "AWS Domains_Notifications__v1_-_CLEVER-4714.png")
+
 11. Under *SNS Topic Configuration*, select the topics you created earlier such as *Bounces*, *Complaints*, and *Deliveries* by clicking on the **Include original headers** checkboxes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc1da78-Edit_Notification_Configuration.png",
-        "Edit Notification Configuration.png",
-        2785,
-        1407,
-        "#cccfd1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![2785](https://files.readme.io/cc1da78-Edit_Notification_Configuration.png "Edit Notification Configuration.png")
+
 12. Save the configuration.
 
 # Handling Unsubscribe Requests
@@ -94,6 +60,6 @@ To handle unsubscribed requests from users, refer to the steps in [Handling Unsu
 
 The following explains some troubleshooting scenarios: 
 
-  * Sandbox mode: If you’re getting an *Invalid Credentials* message when saving your settings, it could be that your *Amazon SES* account is a sandboxed one. You need a valid production-ready *Amazon SES* account to save your credentials. 
-  * Spam: Check your *Spam* folder to see if the message has been classified as *Spam* by your email provider.
-  * Email rendering: If your email does not render properly, check the subject line for newline characters or too many additional spaces. *Amazon SES* email converts data from UTF-8 format to a 7-bit ASCII format before sending it out. The next line characters or additional spaces may interfere with this conversion.
+* Sandbox mode: If you’re getting an *Invalid Credentials* message when saving your settings, it could be that your *Amazon SES* account is a sandboxed one. You need a valid production-ready *Amazon SES* account to save your credentials. 
+* Spam: Check your *Spam* folder to see if the message has been classified as *Spam* by your email provider.
+* Email rendering: If your email does not render properly, check the subject line for newline characters or too many additional spaces. *Amazon SES* email converts data from UTF-8 format to a 7-bit ASCII format before sending it out. The next line characters or additional spaces may interfere with this conversion.

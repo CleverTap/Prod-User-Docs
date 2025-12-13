@@ -38,74 +38,31 @@ You can include emojis in your push notifications as you would in a regular text
 
 You can also add dynamic replacements in the push title and body. Notice a preview of the available push notification as displayed below.
 
+<Image title="campaign_push_personalization.png" alt={1095} className="border" border={true} src="https://files.readme.io/281aede-campaign_push_personalization.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/281aede-campaign_push_personalization.png",
-        "campaign_push_personalization.png",
-        1095,
-        624,
-        "#d9d6e0"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
 You can add emojis using CleverTap’s built-in emoji picker by clicking on the smiley face icon.
-[block:image]
-{
-  "images": [
-    {
-      "image": [],
-      "border": true
-    }
-  ]
-}
-[/block]
+
 In the *Advanced* section, you can add rich media such as images/image carousels, GIFs, and even videos using publicly hosted media URLs. A preview displays on the right-hand side as you add your media. 
 
-
-#Liquid Tags
+# Liquid Tags
 
 Click the gear icon in the editor to open personalization options. 
 
 Liquid tags offer great flexibility in composing your message. You can have fixed or variable values and change the look and feel of your message by using liquid tags.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ed642bf-campaigns_liquid_tags_common_example.png",
-        "campaigns_liquid_tags_common_example.png",
-        1357,
-        470,
-        "#fafafb"
-      ],
-      "caption": ""
-    }
-  ]
-}
-[/block]
+
+![1357](https://files.readme.io/ed642bf-campaigns_liquid_tags_common_example.png "campaigns_liquid_tags_common_example.png")
+
 Each notification is personalized to the receiver. 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "Hello John!\n\nHere is a special coupon for you: Gold4All\n",
-      "language": "html",
-      "name": "Output - Liquid"
-    }
-  ]
-}
-[/block]
+
+```html Output - Liquid
+Hello John!
+
+Here is a special coupon for you: Gold4All
+```
+
 For more information on using tags, refer to [Liquid Tags](doc:liquid-tags).
 
-# Catalog 
+# Catalog
 
 Click the gear icon in the editor to open personalization options. 
 
@@ -117,14 +74,13 @@ Click the gear icon in the editor to open personalization options.
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. Imagine having a rolling carousel displayed to your customers based on their personal likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
 
-# Constant event property 
+# Constant event property
 
 Engage the user on multiple actions and inactions. For example, person A added to cart white coat and person B added to cart blue jeans, but they both did not purchase the items. 
 
 You can create a campaign for each product added to the cart or you can use a *constant event property* to personalize the campaign to each user that did not purchase the item. 
 
-For example, you can map the *prod_name* property of the *charged* event to the *product_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. Imagine having to create a campaign for each product added to the cart instead.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
-
+For example, you can map the *prod\_name* property of the *charged* event to the *product\_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. Imagine having to create a campaign for each product added to the cart instead.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
 
 # Linked Content
 

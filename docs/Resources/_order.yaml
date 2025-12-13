@@ -5,3 +5,4 @@
 - managing-dashboard-access
 - csv-upload
 - data-export-to-gcp
+- data-export-to-aws-s3

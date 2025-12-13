@@ -10,14 +10,15 @@ metadata:
 next:
   description: ''
 ---
-DOCS NOTE: BEFORE PUBLISHING THIS DOC, ENSURE THAT THE EXISTING PAGE IS UNPUBLISHED (OR DELETED) AND THAT ALL ITEMS FROM THE EXISTING PAGE ARE COVERED IN THE NEW (HACKATHON) SUBPAGES: https://docs.clevertap.com/docs/getting-started
+DOCS NOTE: BEFORE PUBLISHING THIS DOC, ENSURE THAT THE EXISTING PAGE IS UNPUBLISHED (OR DELETED) AND THAT ALL ITEMS FROM THE EXISTING PAGE ARE COVERED IN THE NEW (HACKATHON) SUBPAGES: [https://docs.clevertap.com/docs/getting-started](https://docs.clevertap.com/docs/getting-started)
 
 CleverTap is a smart, all-in-one platform packed with engagement and real-time analytics tools that helps brands maximize their user lifetime value. The platform empowers marketers to build an amazing mobile experience in three ways: 
-  * Tracks actions users are taking and analyzes how people use the product. 
-  * [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
-  * [Analyze](doc:intro-to-reports) each campaign to understand their effect on user engagement and business metrics.
 
-#Use Case
+* Tracks actions users are taking and analyzes how people use the product. 
+* [Segment](doc:segments) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
+* [Analyze](doc:intro-to-reports) each campaign to understand their effect on user engagement and business metrics.
+
+# Use Case
 
 The following is an example of how a CleverTap customer in the retail industry is using our platform to increase sales:
 
@@ -29,7 +30,7 @@ Now, the marketer at the company wants to reward its most loyal users and incent
 
 To close this loop, the marketer can create a [report](doc:intro-to-reports) in the CleverTap dashboard to measure the campaign's impact in terms of both user engagement and product sales. 
 
-#Getting Started
+# Getting Started
 
 The best place to get started with CleverTap is the [Quick Start Guide](doc:quickstart-guide) which shows how to create a segment, build a campaign, and run a report in ten minutes.
 

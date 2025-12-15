@@ -1498,7 +1498,7 @@ When you use the Google Ad ID for creating a Clevertap ID/Profile, they display 
 
 By default, the CleverTap Android SDK will not use the Google Ad ID to generate CleverTap IDs. In this case, you can set your own custom identifiers or let the CleverTap ID handle the ID creation to create user profiles.
 
-If the app needs to be GDPR compliant or if you do not want to use the Google AdID, you can use the \_\_<Random Alphanumeric String> notation to generate the CleverTap ID. 
+If the app needs to be GDPR compliant or if you do not want to use the Google AdID, you can use the `\_\_<Random Alphanumeric String>` notation to generate the CleverTap ID. 
 
 When creating the CleverTap ID using the custom identifier, the following format is: 
 
@@ -1515,7 +1515,7 @@ You can use IDFV to collect data of users from CleverTap SDK versions 3.9 and ab
 
 # Identity Generation 
 
-{user.PER PM HARSH ON THE FOLLOWING SENTENCE: This language/title is inaccurate.  We don't “generate” identities. }
+{/* user.PER PM HARSH ON THE FOLLOWING SENTENCE: This language/title is inaccurate.  We don't “generate” identities. */}
 CleverTap uses two methods to generate identities for users, thus creating user profiles through: 
 
 * OnUserLogin 
@@ -1524,7 +1524,7 @@ CleverTap uses two methods to generate identities for users, thus creating user 
 
 ## OnUserLogin
 
-{user.DOCS NOTE: SUNIL (OR PM) TO ADVISE ON MISSING INFO IN THIS SECTION }
+{/* user.DOCS NOTE: SUNIL (OR PM) TO ADVISE ON MISSING INFO IN THIS SECTION */}
 OnUserLogin is a CleverTap method to differentiate multiple users on the same device.
 > 👍 OnUserLogin Example
 >
@@ -1570,9 +1570,9 @@ After the custom setup, an anonymous user profile will be created tracking all t
 After the integration of CleverTap SDK, two types of scenarios occur:
 
 * If the app does not need to be GDPR compliant, create the CleverTap ID on the basis of IDFA which displays as: -g&lt;IDFA&gt;
-* If the app needs to be GDPR compliant, use -v<Random Alphanumeric String>
+* If the app needs to be GDPR compliant, use `-v<Random Alphanumeric String>`
 
-In addition, you have the option to set up a custom CleverTap ID which displays as: -h<unique id>
+In addition, you have the option to set up a custom CleverTap ID which displays as: `-h<unique id>`
 After the custom setup, an anonymous user profile will be created tracking all the user activity until a user signs up or logs in. Then, the following occurs:
 
 * On signup or login, the identity is passed from the user end to CleverTap.

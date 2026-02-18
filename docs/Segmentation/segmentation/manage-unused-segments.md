@@ -85,53 +85,11 @@ Since inactive segments remain available until you delete them, you can keep, re
 
 You can manage inactive segments from the _Segments_ page. You can perform the following actions individually or in bulk:
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Action
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Clone**
-      </td>
-
-      <td>
-        Create a duplicate of the segment for modification or reuse.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Resume**
-      </td>
-
-      <td>
-        Reactivate the segment to make it active again for Campaigns or Journeys.
-
-        \{@Sanskriti- Does reactivating a segment requires user action (for example, selecting “Resume computation”) or if it occurs automatically when reused in a campaign?}
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Delete**
-      </td>
-
-      <td>
-        Permanently remove the segment if it's no longer needed.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Action     | Description                                                               |
+| ---------- | ------------------------------------------------------------------------- |
+| **Clone**  | Create a duplicate of the segment for modification or reuse.              |
+| **Resume** | Reactivate the segment to make it active again for Campaigns or Journeys. |
+| **Delete** | Permanently remove the segment if it's no longer needed.                  |
 
 The following image shows the Resume computation option:
 

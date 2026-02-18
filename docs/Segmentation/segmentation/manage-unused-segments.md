@@ -22,7 +22,7 @@ Over time, your account may accumulate unused segments, cluttering your workspac
 
 By automatically identifying unused segments, this feature provides the following advantages:
 
-* Clearly view which segments are active and which are unused.
+* View which segments are active and which are unused.
 * Review old segments to decide whether to reuse or delete them.
 * Keep your segment list organized and clutter-free.
 
@@ -70,10 +70,10 @@ When you resume or reuse an inactive segment, it becomes _Active_ again.
 
 Once a segment becomes inactive, it stays accessible but stops participating in active processes. Here’s how inactive segments behave in your workspace:
 
-* Inactive segments remain visible in the list and can be filtered by status.
-* You can resume them anytime.
-* When resumed, the system recalculates the segment and marks it Active.
-* Inactive segments do not affect reports or historical data.
+* Remain visible in the list, with filtering available by status.
+* Support resuming at any time.
+* Recalculate and switch to Active status when resumed, automatically.
+* Keep reports and historical data unchanged.
 
 Since inactive segments remain available until you delete them, you can keep, reuse, or remove them without impacting live campaigns.
 

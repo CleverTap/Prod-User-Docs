@@ -20,7 +20,7 @@ This guide explains how segments become inactive, how to view and manage them, a
 
 Over time, your account may accumulate unused segments, cluttering your workspace and slowing navigation. Managing unused segments helps you focus on segments that drive active campaigns.
 
-By automatically identifying unused segments, this feature helps you with the following advantages:
+By automatically identifying unused segments, this feature provides the following advantages:
 
 * Clearly view which segments are active and which are unused.
 * Review old segments to decide whether to reuse or delete them.
@@ -33,7 +33,7 @@ Inactive segments remain available for reference and can be reactivated at any t
 Understanding when a segment becomes inactive helps you manage and maintain your data effectively. A segment is marked as inactive under the following conditions:
 
 * It is not used in any live Campaign or Journey.
-* It is no longer recalculated or refreshed for active use cases.
+* It is no longer recalculated or refreshed for active Campaigns or Journeys.
 
 Even if a segment’s rules continue to support historical reports such as Funnels or Cohorts, it becomes inactive when it is no longer linked to any active Campaign or Journey.
 

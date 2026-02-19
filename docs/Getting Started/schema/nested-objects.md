@@ -24,7 +24,7 @@ For more information on implementation, including schema definitions and JSON ex
 
 ## Advantages
 
-When you use Nested Objects in CleverTap, you can do the following:
+Nested Objects in CleverTap offers the following advantages:
 
 * **Model complex entities naturally:** Store structured data as it exists in your business system.  
   For example: Save multiple insurance policies owned by a single user under one parent user property.

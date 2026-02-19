@@ -91,7 +91,7 @@ Follow these practices to maintain data quality:
 
 ### Can I use Nested Objects in SDK, CSV, or SFTP uploads?
 
-No. Nested Objects are supported only through the REST API. For more information, refer to [Ingesting Nested Objects via CleverTap APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
+Nested Objects are supported through the REST API and SDK. Nested Objects are not supported through CSV or SFTP uploads. For more information, refer to [Ingesting Nested Objects via CleverTap APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 
 ### Can I query deeply nested fields in segmentation?
 

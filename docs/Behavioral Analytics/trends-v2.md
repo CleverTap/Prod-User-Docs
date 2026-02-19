@@ -24,7 +24,7 @@ CleverTap's Trends feature provides advanced tools for analyzing and visualizing
 
 These capabilities give users a powerful way to optimize platform usage and enable them to make informed decisions to drive business outcomes.
 
-> 📘 Private Beta
+> 📘 Public Beta
 >
 > Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
 

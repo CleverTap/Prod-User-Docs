@@ -81,7 +81,7 @@ To measure the event count:
 
 ### View Event Count
 
-To view the event count, hover over any trendline.  For example, the number of _App Launched_ events that occurred in the selected period. (This is repeated information - we have already stated earlier - hovering on the data point gives this information.)
+To view the event count, hover over any trendline.  For example, the number of _App Launched_ events that occurred in the selected period.
 
 <Image align="center" alt="Event Count in Trend" border={true} caption="Trend Event Count" title="View Trends Stats Event Count" src="https://files.readme.io/70480afa9d9015cab6214c0125afc565dce5e92374cb17b13880b8da5cc70079-View_Trends_Main.jpg" />
 

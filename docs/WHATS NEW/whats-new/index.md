@@ -155,6 +155,74 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="nested-objects-in-custom-event-properties">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#nested-objects-in-custom-event-properties"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/5d60d7c-Segments.svg" alt="Data & Integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Nested Objects in Custom Event Properties</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now model complex event data using Nested Objects in Custom Event properties, eliminating the need to flatten structured JSON into multiple fields. This simplifies event ingestion while improving targeting accuracy and personalization.</p>
+
+    <p>With Nested Objects in Custom Event Properties, you can:</p>
+    <p>
+      <ul>
+        <li>Store structured entities such as subscriptions, cart items, booking details, and transaction metadata.</li>
+        <li>Build precise segments using nested properties in the Segmentation Builder.</li>
+        <li>Personalize campaigns dynamically using Liquid Tags.</li>
+        <li>Support up to three levels of nesting.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nested-objects-for-user-properties-and-custom-event-properties" target="_blank">Nested Objects for User Properties and Custom Event Properties</a> and <a href="https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis" target="_blank">Ingesting Nested Objects via CleverTap APIs</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="nested-objects-in-custom-event-properties">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#nested-objects-in-custom-event-properties"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Nested Objects in Custom Event Properties</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now model complex event data using Nested Objects in Custom Event Properties, eliminating the need to flatten structured JSON into multiple fields. This simplifies event ingestion while improving targeting accuracy and personalization.</p>
+
+    <p>With Nested Objects in Custom Event Properties, you can:</p>
+    <p>
+      <ul>
+        <li>Store structured entities such as subscriptions, cart items, booking details, and transaction metadata.</li>
+        <li>Build precise segments using nested properties in the Segmentation Builder.</li>
+        <li>Personalize campaigns dynamically using Liquid Tags.</li>
+        <li>Support up to three levels of nesting.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nested-objects" target="_blank">Nested Objects</a> and <a href="https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis" target="_blank">Ingesting Nested Objects via CleverTap APIs</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<br />
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="pivots-v2">
   <div class="release-note-header">
     <div class="anchor-link-icon">

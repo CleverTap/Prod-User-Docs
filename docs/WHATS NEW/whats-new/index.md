@@ -170,11 +170,11 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <div class="release-note-body">
     <p>You can now model complex event data using Nested Objects in Custom Event Properties, eliminating the need to flatten structured JSON into multiple fields. This simplifies event ingestion while improving targeting accuracy and personalization.</p>
 
-    <p>With Nested Objects in Custom Event Properties, you can:</p>
+    <p>With Nested Objects in custom event properties, you can:</p>
     <p>
       <ul>
         <li>Store structured entities such as subscriptions, cart items, booking details, and transaction metadata.</li>
-        <li>Build precise segments using nested properties in the Segmentation Builder.</li>
+        <li>Build precise segments using nested properties in the Segment Builder.</li>
         <li>Personalize campaigns dynamically using Liquid Tags.</li>
         <li>Support up to three levels of nesting.</li>
       </ul>

@@ -1,5 +1,5 @@
 ---
-title: Nested Objects
+title: Nested Objects for User Properties and Custom Event Properties
 excerpt: >-
   Learn how to view and use Nested Objects in CleverTap to model complex user
   data and build precise segments.

@@ -180,7 +180,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nested-objects" target="_blank">Nested Objects</a> and <a href="https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis" target="_blank">Ingesting Nested Objects via CleverTap APIs</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nested-objects-for-user-properties-and-custom-event-properties" target="_blank">Nested Objects</a> and <a href="https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis" target="_blank">Ingesting Nested Objects via CleverTap APIs</a>.</p>
   </div>
 
   <hr/>

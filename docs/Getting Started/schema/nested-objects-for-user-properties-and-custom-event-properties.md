@@ -36,10 +36,6 @@ The following example shows how nesting levels are structured inside a user prof
 
 For more information on implementation, including JSON examples, refer to [Ingesting Nested Objects via CleverTap APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 
-> 📘 Public Beta
->
-> This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or CleverTap Support.
-
 ## Advantages
 
 When you use Nested Objects in CleverTap, you have the following advantages:

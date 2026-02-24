@@ -18,7 +18,7 @@ You can send test campaigns with personalized values using the _Preview & Test_ 
 <Callout icon="📘" theme="info">
   #### Personalize _From_ and _Reply-to_ Fields
 
-  You can also [personalize From and Reply-to fields](doc:doc:create-message-sender-details#sender-details), a feature released in Private Beta, for the following providers: SendGrid, Amazon SES, and Generic SMTP setup. If you want access to this feature, contact your Customer Success Manager.
+  You can also [personalize From and Reply-to fields](doc:create-message-sender-details#sender-details), a feature released in Private Beta, for the following providers: SendGrid, Amazon SES, and Generic SMTP setup. If you want access to this feature, contact your Customer Success Manager.
 </Callout>
 
 # Send Personalized Test Message

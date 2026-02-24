@@ -90,6 +90,211 @@ The stats available are:
 * Total events: Sum of events in the selected period.
 * Daily change: The change in percentage from the previous time period, that is, day, or month.
 
+# Measure a Trend
+
+The Measure section defines how the selected event is quantified in your trend analysis. While the event determines what user action you are analyzing, the Measure determines how that action is calculated and displayed over time. It gives you the flexibility to switch between volume, participation, intensity, value, penetration, and derived metrics, allowing you to explore trends from multiple analytical perspectives without changing the underlying event selection.
+
+In Trends 2.0, you can choose from the following measurement options:
+
+* [Total Events](doc:trends-v2#total-events)
+* [Unique Users](doc:trends-v2#unique-users)
+* [Average per User](doc:trends-v2#average-per-user)
+* [Summarize By (Event Property)](doc:trends-v2#summarize-by-event-property)
+* [Active Percentage (%)](doc:trends-v2#active-percentage-%)
+* [Formula](doc:trends-v2#formula)
+
+Each option changes both the trend visualization and the summary statistics displayed in the table.
+
+## Total Events
+
+Total Events displays the sum of event occurrences during the selected time period. Every occurrence of the event is counted, even if the same user performs the event multiple times.
+
+For example, if a user places 3 orders in one day, all 3 `Order Placed` events are counted.
+
+<Image align="center" border={true} caption="Measure by Total Events" src="https://files.readme.io/f14752741c967e3d7f9e740f64e96d85d060a272c2ad46344219f8e61c13e0aa-image.png" />
+
+Use this measure when you want to understand overall activity volume, such as:
+
+* Total number of orders placed
+* Total number of restaurants viewed
+* Total number of app launches
+
+## Unique Users
+
+Unique Users displays the number of distinct users who performed the selected event in the specified time period. Each user is counted once per time interval, regardless of how many times they performed the event.
+
+For example, if a user places multiple orders in a single day, they are counted once for that day in the trend.
+
+<Image align="center" border={true} caption="Measure by Unique Users" src="https://files.readme.io/b61527e787f0b50129a68a77dfa97bcff0de733c64ebe199a1add2aba983814c-image.png" />
+
+Use this measure when you want to understand user participation, such as:
+
+* How many users placed at least one order
+* How many users viewed a restaurant
+* How many users added items to cart
+
+## Average per User
+
+Average per User displays the average number of times each unique user performed the selected event in the specified time period. It is calculated as `Total Events / Unique Users`
+
+For example, if 1,000 users placed 5,000 orders during the selected period, the average per user is 5 orders.
+
+<Image align="center" border={true} caption="Measure by Average per Users" src="https://files.readme.io/1de717c723d5f607e9aa52b7819d41629d88889bf2530d4743b89fcda638d279-image.png" />
+
+Use this measure when you want to analyze engagement intensity, such as:
+
+* Average number of orders per user
+* Average number of app launches per user
+* Average number of items added to cart per user
+
+## Summarize By (Event Property)
+
+Summarize By allows you to aggregate trends using a numeric event property rather than simply counting events or users. Use Summarize By when analyzing value-based metrics such as revenue, order size, watch time, or duration.
+
+This option becomes available when the selected event contains a numeric property, such as, `order_amount`, `delivery_time`, `discount_value`, `duration` and so on.
+
+<Image align="center" border={true} caption="Measure by Summarize by (Event Porperty)" src="https://files.readme.io/9a79d96f6ea417505a373e038eee7a6ef80ac7ed2fcfeafae5e937728bd4992f-image.png" />
+
+You can summarize the trend using:
+
+* [Sum of Property Value](doc:trends-v2#sum-of-property-value)
+* [Average of Property Value](doc:trends-v2#average-of-property-value)
+
+### Sum of Property Value
+
+Displays the total value of the selected numeric property across all event occurrences.
+
+For example, summarizing `Order Placed` by `order_amount` shows total revenue over time.
+
+### Average of Property Value
+
+Displays the average value of the selected property per event occurrence.
+
+For example, summarizing `Order Placed` by `order_amount` using average shows average order value over time.
+
+<Image align="center" border={true} src="https://files.readme.io/a15a0fc8337db2823db99c2bdac8f07d754e8bb2509e629da22ba3cf84bdcdb7-image.png" className="border" />
+
+## Active Percentage (%)
+
+Active Percentage displays the proportion of users who performed the selected event out of the total active users during the selected period.
+
+For example, if 10,000 users launched the app (qualifying event) and 4,000 users placed an order, the Active Percentage for `Order Placed` is 40%.
+
+<Image align="center" border={true} caption="Measure by Active Percentage (%)" src="https://files.readme.io/21bf244d0982952c0be416bbef173e699fc8bfb7d86e9e258c1a4411ef5be98f-image.png" />
+
+Use this measure to understand behavioral penetration among active users, such as:
+
+* What percentage of active users placed an order?
+* What percentage of active users added items to cart?
+* What percentage of active users completed checkout?
+
+<Callout icon="📘" theme="info">
+  #### Configure Qualifying Events
+
+  Active users are defined based on a qualifying event configured in the Schema settings. To configure the qualifying event, refer to [Qualifying Events](doc:schema#qualifying-event).
+</Callout>
+
+## Formula
+
+The Formula option allows you to create custom metrics by combining event-level and property-level functions using mathematical expressions. Use Formula when you want to calculate derived business metrics that are not directly available through standard measures, such as Total Events or Unique Users.
+
+For example, in a food delivery app, you may want to:
+
+* Measure revenue per active user
+* Compare total orders vs total users
+* Track average order value alongside total revenue
+* Analyze order conversion relative to app launches
+
+### How Formulas Work?
+
+When you select Formula as the measurement, you define a formula using supported functions. The system then computes the result for each time interval, and the computed values are plotted as a trend line. The same values appear in the table view as well.
+
+You can use predefined event-level and property-level functions to create meaningful business trends. These functions must always be written in uppercase.
+
+<Tabs>
+  <Tab title="Event-Level Functions">
+    These functions operate on the selected event and measure its frequency or user participation:
+
+    * **TOTALS**: Counts every occurrence of the selected event during the chosen time period. For example, if an event such as Video Played occurred 12,000 times, TOTALS returns 12,000 even if the same user triggered the event multiple times.
+    * **UNIQUES**: Counts the number of distinct users who performed the selected event. For example, if 2,000 unique users triggered the event, UNIQUES returns 2,000; each user is counted only once, regardless of how many times they performed the event.
+    * **AVERAGE**: Shows the average number of times each unique user performed the selected event. For example, if 3,000 users triggered the event 15,000 times in total, AVERAGE returns 5 events per user. This can also be derived using TOTALS / UNIQUES.
+    * **ACTIVE**: Counts users who were active by performing the selected event within the chosen time period. For example, if 800 users triggered the event during the selected range, ACTIVE returns 800 active users.
+  </Tab>
+
+  <Tab title="Property-Level Functions">
+    Property-level functions operate on numeric event properties such as revenue amount, duration, quantity, or price. These functions are available only when a numeric event property is selected.
+
+    * **PROPSUM**: Adds up the total value of the selected numeric event property across all event occurrences. For example, if you select the amount property for a purchase event, PROPSUM returns the total revenue generated in the selected period.
+    * **PROPAVG**: Calculates the average value of the selected numeric event property per event occurrence. For example, if you select the duration property for a video event, PROPAVG returns the average watch time per video play. This can also be derived using PROPSUM / TOTALS.
+  </Tab>
+</Tabs>
+
+### Formula Guidelines
+
+When creating a custom metric, keep the following in mind:
+
+* You can combine available metrics using operators such as +, -, *, /, and parentheses ().
+* You can compare up to four formulas in the same configuration by separating them with a semicolon (;).
+* The formula must be mathematically valid.
+
+### Example Formula: Average Order Value
+
+Consider an example where you want to measure how much revenue each purchasing user generates (i.e., Average Order Value) over time.
+
+You can define the following formula as:
+
+`PROPSUM ( Charged.Amount) / TOTALS ( Charged )`
+
+<Image align="center" border={true} caption="Measure by Formula" src="https://files.readme.io/950fd5560b351627bc469a195d0ce630ad318bb8933f3ea63c042ce98f73eb80-image.png" />
+
+### Using Multiple Formulas in One Analysis
+
+Trends 2.0 allows you to compare up to four formulas in a single chart. Each formula is calculated independently and plotted as its own series on the same chart. This allows you to visually compare related business metrics without creating multiple analyses. Keep formulas logically related to avoid clutter and improve interpretability.
+
+<Image align="center" border={true} caption="Multiple Formulas in One Analysis" src="https://files.readme.io/efbd2f5b3aa77f09d8d86b48791b61159e1be6b908441f7683bb092cc1426fdf-image.png" />
+
+Use multiple formulas when you want to:
+
+* Compare volume vs value (for example, orders vs revenue)
+* Compare totals vs averages
+* Analyze both numerator and denominator of a ratio
+* Identify what is driving growth (more users vs higher spend per user)
+
+To add multiple formulas, separate each formula using a semicolon (;).
+
+For example, `PROPSUM ( Charged.Amount ); UNIQUES ( Charged ); PROPSUM ( Charged.Amount ) / UNIQUES ( Charged )`
+
+This will display the following three separate trend lines:
+
+* Total Revenue
+* Total Purchasing Users
+* Revenue per Purchasing User
+
+<Image align="center" border={true} caption="Measure by Multiple Formulas in One Trend" src="https://files.readme.io/d8faa03164c0e2cdde28a3cad4999a844d4a0b0e61b0918fcc887f6fd0f2e809-image.png" />
+
+### Using the Y-Axis Title Field Effectively
+
+When using formulas, especially ratio or derived metrics, the Y-axis may no longer represent simple counts. The Y-axis Title field allows you to clearly describe what the chart is measuring. The axis title should reflect the metric being calculated, not the underlying event. Using clear axis titles ensures that anyone viewing the chart can immediately understand what the trend represents without needing to interpret the formula itself.
+
+The following examples illustrate how to translate formulas into stakeholder-friendly axis titles:
+
+| Formula                                             | Recommended Y-axis Title    |
+| :-------------------------------------------------- | :-------------------------- |
+| PROPSUM ( order.amount ) / UNIQUES ( Order Placed ) | Revenue per Purchasing User |
+| PROPSUM ( Order Placed ) / TOTALS ( App Launched )  | Orders per App Launch       |
+
+### Best Practices for Y-Axis Titles
+
+Follow these best practices when writing Y-Axis Titles for your formulas::
+
+* Use business-friendly language instead of function names
+* Avoid technical terms like PROPSUM or UNIQUES
+* Clearly indicate if the metric is a percentage or ratio
+* Keep titles concise but descriptive
+* If comparing multiple formulas, choose a neutral but descriptive title such as:
+  * Revenue & User Metrics
+  * Order Performance Ratios
+
 # Compare Trends for Events
 
 You can compare trends for multiple events. For example, you can understand the correlation between two events, such as App Launched and Notification Viewed.

@@ -16,9 +16,11 @@ next:
 
 The Push Editor allows you to create and edit relevant and timely messages for your push campaign. This section explains the different pre-built Push templates designed to cater to your various push-campaigning needs. You can create your push message by selecting the appropriate push template for your campaign.
 
-> 📘 Public Beta
->
-> This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
+<Callout icon="📘" theme="info">
+  #### Public Beta
+
+  This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
+</Callout>
 
 From the _What_ section, select the [Message Type ](doc:create-message-push#message-types)for your push notification and click **Go To Editor**. You can see the various push templates to help you create a contextual and timely message.
 
@@ -36,19 +38,19 @@ You can select from the following template types:
 
 * **Advanced**: Supports rich media, deep links, and enhanced customization for more engaging messages. It is great for interactive, visually appealing messages. For example, businesses can use it to build excitement for new product drops, early access offers, or feature rollouts that benefit from strong visuals and clear Call to Action (CTAs).
 
-<Image align="center" alt="Advanced Template" border={false} caption="Advanced Template" src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" width="35% " />
+<Image align="center" alt="Advanced Template" caption="Advanced Template" src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" width="35% " />
 
 * **Auto Carousel**: Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can utilize it to promote new product collections, travel packages, and content recommendations, among other offerings.
 
-<Image align="center" alt="Auto Carousel Template" border={false} caption="Auto Carousel Template" src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" width="35% " />
+<Image align="center" alt="Auto Carousel Template" caption="Auto Carousel Template" src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" width="35% " />
 
 * **Timer**: Adds a countdown timer to your template to enable immediate action from the user, ideal for time-sensitive campaigns. For example, businesses can utilize it for flash sales, limited-time discounts, and other promotional offers.
 
-<Image align="center" alt="Timer Template" border={false} caption="Timer Template" src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" width="35% " />
+<Image align="center" alt="Timer Template" caption="Timer Template" src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" width="35% " />
 
 * **Text over Image**: Places bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and other relevant content.
 
-<Image align="center" alt="Text over Image Push Template" border={false} caption="Text over Image Push Template" src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" width="35% " />
+<Image align="center" alt="Text over Image Push Template" caption="Text over Image Push Template" src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" width="35% " />
 
 **Manual Carousel Template**
 
@@ -94,37 +96,353 @@ This section includes the core elements of your push notification, applicable ac
 
 <Image align="center" alt="Content Section" border={true} caption="Content Section" src="https://files.readme.io/bc77b4776c512b19f495b2df17b6656687f3a6cf173da2555407256f63a23353-image.png" />
 
-> 📘 Recommended Character Limits
->
-> While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
->
-> | Platform | Recommended Title Length | Recommended Message Length |
-> | :------- | :----------------------- | :------------------------- |
-> | iOS      | 25-50 characters         | 150 characters             |
-> | Android  | 65 characters            | 240 character              |
+<Callout icon="📘" theme="info">
+  #### Recommended Character Limits
+
+  While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
+
+  | Platform | Recommended Title Length | Recommended Message Length |
+  | :------- | :----------------------- | :------------------------- |
+  | iOS      | 25-50 characters         | 150 characters             |
+  | Android  | 65 characters            | 240 character              |
+</Callout>
 
 ## Android Options
 
 You can use this section to customize Android-specific behavior for your push using the following fields:
 
-| Field                                                                                                     | Description                                                                                                                                                                                                                                                                                                                        | Required/Optional | Available for Template |
-| :-------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------- | :--------------------- |
-| Notification Channel                                                                                      | Starting from Android version 8.0, all notifications must be assigned to a channel. For each channel, you can customize the visual and auditory behavior.  Select the Android notification channel that defines the sound and visual behavior of your notification.                                                                | Required          | All                    |
-| Summary Text                                                                                              | Summary shown when notifications are grouped or collapsed (especially on Android 7.0 and above). It provides a quick overview of the message content.                                                                                                                                                                              | Required          | All                    |
-| Subtitle                                                                                                  | An optional line of text that appears next ti the app name and provides additional context for the message.                                                                                                                                                                                                                        | Optional          | All                    |
-| Expanded Image                                                                                            | A larger image displayed when the user expands the notification. Supports image URL or upload. You can add a fixed or dynamically generated URL to include rich media in your push notifications—images for Android, and both images and videos for iOS.                                                                           | Optional          | All                    |
-| Large Icon                                                                                                | A small icon displayed on the left of the notification, usually used for logos or symbols. Supports image URL or upload.                                                                                                                                                                                                           | Optional          | All                    |
-| Action Buttons                                                                                            | Add up to two buttons that users can click to take immediate action (for example, _Shop Now_, _View Cart_, and so on).                                                                                                                                                                                                             | Optional          | All                    |
-| Deeplink URL                                                                                              | A link that navigates users to a specific screen inside the app when the notification or button is clicked. The OpenURL method for your app is called with the deep link specified here. If you want to use external URLs, you have to whitelist the IPs or provide HTTP/https before the URL so the SDK can handle them properly. | Optional          | All                    |
-| Small Icon Background                                                                                     | HEX color code for the background behind the small icon, matching your brand palette.                                                                                                                                                                                                                                              | Optional          | All                    |
-| Badge icon                                                                                                | Choose whether to show the app icon or a notification-specific icon on the status bar.                                                                                                                                                                                                                                             | Optional          | All                    |
-| Badge ID                                                                                                  | Custom badge ID used for badge counts or grouping, based on app-specific logic.                                                                                                                                                                                                                                                    | Optional          | All                    |
-| Sound                                                                                                     | Defines the notification sound. Choose from the following options: _None_, _Default OS_, or _Custom_ sound.                                                                                                                                                                                                                        | Optional          | All                    |
-| [Tray priority](https://docs.clevertap.com/docs/best-time?isFramePreview=true#notification-tray-priority) | Determines the prominence of the notification in the tray. Choose from the following options: _Default_, _High_, or _Maximum_. For more information, refer to []().                                                                                                                                                                | Optional          | All                    |
-| [Delivery priority](doc:push-editor#notification-delivery-priority)                                       | Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may affect the battery. For more information, refer to []().                                                                                                                      | Optional          | All                    |
-| Render max                                                                                                | Ensures standard rendering on battery-optimized devices. Also, disables custom key values and certain visuals. For more information, refer to [RenderMax](doc:rendermax).                                                                                                                                                          | Optional          | All                    |
-| Notification behavior                                                                                     | Defines how the notification behaves when users clear all notifications from their tray. Use this option to keep important alerts accessible even after bulk dismissal. For more information, refer to [Notification Behavior](doc:push-editor#notification-behavior).                                                             | Optional          | All                    |
-| Dismiss notification                                                                                      | Specifies how and when a notification is dismissed. Use this option for time-sensitive messages such as flash sales, daily updates, or event reminders. For more information, refer to [Dismiss Notification](doc:push-editor#dismiss-notification).                                                                               | Optional          | All                    |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Required/Optional
+      </th>
+
+      <th>
+        Available for Template
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Notification Channel
+      </td>
+
+      <td>
+        Starting from Android version 8.0, all notifications must be assigned to a channel. For each channel, you can customize the visual and auditory behavior.  Select the Android notification channel that defines the sound and visual behavior of your notification.
+      </td>
+
+      <td>
+        Required
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Summary Text
+      </td>
+
+      <td>
+        Summary shown when notifications are grouped or collapsed (especially on Android 7.0 and above). It provides a quick overview of the message content.
+      </td>
+
+      <td>
+        Required
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Subtitle
+      </td>
+
+      <td>
+        An optional line of text that appears next ti the app name and provides additional context for the message.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Expanded Image
+      </td>
+
+      <td>
+        A larger image displayed when the user expands the notification. Supports image URL or upload. You can add a fixed or dynamically generated URL to include rich media in your push notifications—images for Android, and both images and videos for iOS.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Large Icon
+      </td>
+
+      <td>
+        A small icon displayed on the left of the notification, usually used for logos or symbols. Supports image URL or upload.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Action Buttons
+      </td>
+
+      <td>
+        Add up to two buttons that users can click to take immediate action (for example, _Shop Now_, _View Cart_, and so on).
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Deeplink URL
+      </td>
+
+      <td>
+        A link that navigates users to a specific screen inside the app when the notification or button is clicked. The OpenURL method for your app is called with the deep link specified here. If you want to use external URLs, you have to whitelist the IPs or provide HTTP/https before the URL so the SDK can handle them properly.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Small Icon Background
+      </td>
+
+      <td>
+        HEX color code for the background behind the small icon, matching your brand palette.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Badge icon
+      </td>
+
+      <td>
+        Choose whether to show the app icon or a notification-specific icon on the status bar.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Badge ID
+      </td>
+
+      <td>
+        Custom badge ID used for badge counts or grouping, based on app-specific logic.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sound
+      </td>
+
+      <td>
+        Defines the notification sound. Choose from the following options: _None_, _Default OS_, or _Custom_ sound.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Tray priority](https://docs.clevertap.com/docs/best-time?isFramePreview=true#notification-tray-priority)
+      </td>
+
+      <td>
+        Determines the prominence of the notification in the tray. Choose from the following options: _Default_, _High_, or _Maximum_. For more information, refer to []().
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Delivery priority](doc:push-editor#notification-delivery-priority)
+      </td>
+
+      <td>
+        Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may affect the battery. For more information, refer to []().
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Render max
+      </td>
+
+      <td>
+        Ensures standard rendering on battery-optimized devices. Also, disables custom key values and certain visuals. For more information, refer to [RenderMax](doc:rendermax).
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Skip active users
+      </td>
+
+      <td>
+        Choose whether to mute the push notification when the user is currently using the app (app in foreground).
+
+        * Yes: If the app is open, the notification is not sent.
+        * No (default): The notification is sent even if the app is open.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Notification behavior
+      </td>
+
+      <td>
+        Defines how the notification behaves when users clear all notifications from their tray. Use this option to keep important alerts accessible even after bulk dismissal. For more information, refer to [Notification Behavior](doc:push-editor#notification-behavior).
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dismiss notification
+      </td>
+
+      <td>
+        Specifies how and when a notification is dismissed. Use this option for time-sensitive messages such as flash sales, daily updates, or event reminders. For more information, refer to [Dismiss Notification](doc:push-editor#dismiss-notification).
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## iOS Options
 
@@ -188,11 +506,9 @@ Use this section to send a payload to your designated endpoint after a push noti
   <tbody>
     <tr>
       <td>
-        Webhook URL	
+        Webhook URL
 
         <br />
-
-        	
       </td>
 
       <td>

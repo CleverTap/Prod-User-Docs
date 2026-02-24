@@ -100,7 +100,7 @@ In Trends 2.0, you can choose from the following measurement options:
 * [Unique Users](doc:trends-v2#unique-users)
 * [Average per User](doc:trends-v2#average-per-user)
 * [Summarize By (Event Property)](doc:trends-v2#summarize-by-event-property)
-* [Active Percentage (%)](doc:trends-v2#active-percentage-%)
+* [Active Percentage (%)](doc:trends-v2#active-percentage-)
 * [Formula](doc:trends-v2#formula)
 
 Each option changes both the trend visualization and the summary statistics displayed in the table.

@@ -430,7 +430,7 @@ Nested profile and event personalization are supported up to 3 levels. Use the f
 When using nested personalization, you must use the Preview & Test option to validate your message before publishing the campaign.
 
 <Callout icon="📘" theme="info">
-  #### Nested Personalization
+  #### Supported Channels
 
   You can use Nested Personalization with the following channels: Email, Mobile Push, SMS, Webhooks, and WhatsApp.
 </Callout>

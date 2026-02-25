@@ -254,7 +254,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#trends-v2#formula"><i class="fa-light fa-anchor"></i></a>
-      </a>
     </div>
 
     <div>

@@ -143,7 +143,7 @@ The Copywriter Agent relies heavily on the clarity of your prompt. Follow these 
 * All generated copies must be reviewed by your internal brand and legal teams before use in public campaigns.
 * Avoid including any personal or confidential information in AI prompts. Keep descriptions focused on creative intent.
 
-You can refine the output by adjusting the prompt, changing Content Settings (emotion, tone, personalization), or regenerating content multiple times. Each variation helps you explore different angles until the copy matches your intent. Refer to the table below for difference between vague and effective prompts:
+You can refine the output by adjusting the prompt, changing Content Settings (emotion, tone, personalization), or regenerating content multiple times. Each variation helps you explore different angles until the copy matches your intent. Refer to the table below for the difference between vague and effective prompts:
 
 <Table>
   <thead>

@@ -112,7 +112,7 @@ Once you start generating copy, CleverTap automatically saves your sessions unde
 
 <Image align="center" caption="All Threads" src="https://files.readme.io/7cbea7cbf4e0d258a535a8feeb9c1ef2c4e4a0dc6f4298a9a89f4f1f97000205-2026-01-21_16-00-17.png" />
 
-## Thread Functionality
+## Learn about Thread Functionality
 
 Threads are scoped to your _Account, Agent, and User,_ ensuring that your history remains personalized and relevant. All threads for your account appear in the _All Threads_ popup. A thread becomes the context for your next generation, allowing Clever.AI to remember your prior brand preferences or edits. They are not tied to specific campaigns; they persist across multiple campaigns for seamless continuity.
 

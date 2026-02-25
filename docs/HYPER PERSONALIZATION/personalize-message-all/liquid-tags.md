@@ -416,8 +416,6 @@ You can use the following operators to evaluate conditions in your tags.
 | **and**      | logical and. Choose conditions 1 and condition 2       |
 | **contains** | check for a string within a string                     |
 
-<br />
-
 # Liquid Personalization with Nested Objects
 
 You can personalize campaign messages using nested objects within profile-based and event-based personalization for deeper data granularity in your campaigns. To use nested personalization, ensure that **Nested Object Personalization** is enabled for your account.

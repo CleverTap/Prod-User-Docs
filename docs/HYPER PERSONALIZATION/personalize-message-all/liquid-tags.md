@@ -61,22 +61,20 @@ The liquid terms are adapted from [shopify's documentation](https://shopify.gith
 
 You can start creating your message by declaring tags in the campaign editor. You can declare the tags in the following ways:
 
-* For creating message conditions, Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
-* For displaying output from a variable, use output tags. For example, if customer_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
+* For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
+* For displaying output from a variable - Output tags display the output of a variable. For example, if customer_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
 
 You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor and we will list all the corresponding properties automatically.
 
-<Callout icon="📘" theme="info">
-  #### Note
-
-  When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
-</Callout>
+> 📘 Note
+>
+> When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
 
 ## Conditional Tags
 
 You can use conditional tags for creating simple or complex conditional statements.  For example, If condition A, then send message 1, else send message 2, else-if message 3. If we were to express this in tags, we can use the user's preferred language as an example.
 
-Following are the conditional tags:
+The following are the conditional tags:
 
 * if
 * else

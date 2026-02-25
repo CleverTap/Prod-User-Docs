@@ -23,7 +23,7 @@ Liquid tags offer tremendous flexibility and personalization for your messages. 
 * Native Display
 * WhatsApp
 
-Here is a simple example of personalization with a liquid tag: 
+Here is a simple example of personalization with a liquid tag:
 
 ```Text Liquid Tag
 {% if Profile.Language == "Spanish" %} 
@@ -33,13 +33,13 @@ Hello!
 {% endif %}
 ```
 
-If the user's preferred language is Spanish, the greeting will appear in Spanish.  
+If the user's preferred language is Spanish, the greeting will appear in Spanish.
 
 ```text Output - Liquid Tag
 Hola!
 ```
 
-If the user's preferred language is English, the greeting will appear in English.  
+If the user's preferred language is English, the greeting will appear in English.
 
 ```text Output - Liquid Tag
 Hello!
@@ -49,32 +49,32 @@ Hello!
 
 You can personalize your messages for [Events](doc:events) and [User Profiles](doc:user-profiles). For example, a user whose language is English (Profile property), or someone who has purchased (Event property) a new shirt.
 
-Let us create a Liquid tag in an email campaign. To create a tag, select the "New email with rich media" template when you create an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps). You can use Liquid Tags within this template. 
+Let us create a Liquid tag in an email campaign. To create a tag, select the "New email with rich media" template when you create an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps). You can use Liquid Tags within this template.
 
-<Image title="Select a Rich Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png">
-  Select a Rich Media Template
-</Image>
+<Image align="center" alt={2878} border={true} caption="Select a Rich Media Template" title="Select a Rich Media Template" src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png" />
 
-The Liquid Tags work within the email editor. However, you can also combine the power of HTML with Liquid Tags.  You can paste your HTML code directly in the HTML editor by clicking the Source button and then personalize it with Liquid Tags. For more information, see [Liquid Tags with HTML](https://docs.clevertap.com/docs/liquid-tags#section-liquid-tags-with-htmll) 
+The Liquid Tags work within the email editor. However, you can also combine the power of HTML with Liquid Tags.  You can paste your HTML code directly in the HTML editor by clicking the Source button and then personalize it with Liquid Tags. For more information, see [Liquid Tags with HTML](https://docs.clevertap.com/docs/liquid-tags#section-liquid-tags-with-htmll)
 
 The liquid terms are adapted from [shopify's documentation](https://shopify.github.io/liquid/basics/introduction/) to  CleverTap. We support only the terms identified in our documentation for a seamless experience.
 
 # Using Tags
 
-You can start creating your message by declaring tags in the campaign editor. You can declare the tags in the following ways: 
+You can start creating your message by declaring tags in the campaign editor. You can declare the tags in the following ways:
 
-* For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
-* For displaying output from a variable - Output tags display the output of a variable. For example, if customer\_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
+* For creating message conditions, Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
+* For displaying output from a variable, use output tags. For example, if customer_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
 
-You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor and we will list all the corresponding properties automatically. 
+You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor and we will list all the corresponding properties automatically.
 
-> 📘 Note
->
-> When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
+</Callout>
 
 ## Conditional Tags
 
-You can use conditional tags for creating simple or complex conditional statements.  For example, If condition A, then send message 1, else send message 2, else-if message 3. If we were to express this in tags, we can use the user's preferred language as an example. 
+You can use conditional tags for creating simple or complex conditional statements.  For example, If condition A, then send message 1, else send message 2, else-if message 3. If we were to express this in tags, we can use the user's preferred language as an example.
 
 Following are the conditional tags:
 
@@ -105,7 +105,7 @@ Bonjour !
 
 ### Else/Elseif
 
-You can send messages conditionally to each recipient. 
+You can send messages conditionally to each recipient.
 
 ```liquid Else/Elseif Tag
 {% if Profile.Language  == "French"%} 
@@ -123,7 +123,7 @@ Hello!
 {% endif %}
 ```
 
-If the user's preferred language is French, the greeting will appear in French.  If the user's preferred language is Spanish the greeting will appear in Spanish. However, if the preferred language is anything other than French and Spanish, then the greeting will appear in English. 
+If the user's preferred language is French, the greeting will appear in French.  If the user's preferred language is Spanish the greeting will appear in Spanish. However, if the preferred language is anything other than French and Spanish, then the greeting will appear in English.
 
 ```text Output - Else/Elseif
 Hello!
@@ -145,7 +145,7 @@ It seems like we couldn't determine your requested product. Please try again.
 
 ### Unless
 
-You can use this tag if a condition is not true. For example, if a user's language is "not" French, then greet with "Hello" in English. 
+You can use this tag if a condition is not true. For example, if a user's language is "not" French, then greet with "Hello" in English.
 
 ```liquid Unless Tag
 {% unless Profile.Language  == "French"%} 
@@ -163,8 +163,8 @@ Hello!
 
 ### Switch case
 
-You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.\
-For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer\_type".  You can change the displayed message based on the type of customers. 
+You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.  
+For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer_type".  You can change the displayed message based on the type of customers.
 
 ```liquid Switch case Tag
 {% case Profile.customer_type %}
@@ -224,7 +224,7 @@ You can divide a string into an array using the argument as a separator. It conv
 {% endfor %}
 ```
 
-`split` displays the following output: 
+`split` displays the following output:
 
 ```text Output - split
 Customer 1
@@ -275,7 +275,7 @@ COUPON
 
 ### limit
 
-You can specify the limit of the for loop with this tag. 
+You can specify the limit of the for loop with this tag.
 
 ```liquid limit - Tag
 <!-- if array = [1,2,3,4,5,6] -->
@@ -305,7 +305,7 @@ You can begin the loop at a specified index.
 
 ### tablerow
 
-You can generate an HTML table with this tag. It must be wrapped in opening `<table>` and closing `</table>` HTML tags. 
+You can generate an HTML table with this tag. It must be wrapped in opening `<table>` and closing `</table>` HTML tags.
 
 ```liquid tablerow - Tag
 <table>
@@ -352,9 +352,9 @@ Using this tag, you can insert the current date and time in the specified format
 
 ### Assign
 
-You can use the `assign` tag to assign value to a variable. The value of this variable can change based on the defined condition or a range. You can then reuse this variable across your message. 
+You can use the `assign` tag to assign value to a variable. The value of this variable can change based on the defined condition or a range. You can then reuse this variable across your message.
 
-For example, you want to greet a user in French. You create a variable called `LANG`. Now, you can use this variable for all available languages. If the value of the `LANG` variable is French, the greeting is "Bonjour!". The greeting is "Hello!" for all other languages. 
+For example, you want to greet a user in French. You create a variable called `LANG`. Now, you can use this variable for all available languages. If the value of the `LANG` variable is French, the greeting is "Bonjour!". The greeting is "Hello!" for all other languages.
 
 ```liquid Assign Variable Tag
 {% assign LANG = PROFILE.Language %}
@@ -369,7 +369,7 @@ Hello!
 
 ### Raw
 
-You can use the raw tag to display characters used by the tag syntax. 
+You can use the raw tag to display characters used by the tag syntax.
 
 ```liquid Raw Tag
 {% raw %}{{ 5 | plus: 6 }}{% endraw %} equals 11.
@@ -381,7 +381,7 @@ You can use the raw tag to display characters used by the tag syntax.
 
 ### Comment
 
-You can comment on your code with this tag. It can be notes or description that you want to add to make your code more understandable. 
+You can comment on your code with this tag. It can be notes or description that you want to add to make your code more understandable.
 
 ```liquid Comment Tag
 {% if Profile.Language  == "French"%} 
@@ -400,7 +400,7 @@ Bonjour!
 
 ## Operators
 
-You can use the following operators to evaluate conditions in your tags. 
+You can use the following operators to evaluate conditions in your tags.
 
 | Operator     | Description                                            |
 | :----------- | :----------------------------------------------------- |
@@ -416,16 +416,14 @@ You can use the following operators to evaluate conditions in your tags.
 
 # Liquid Tags with HTML
 
-This section applies only to the email channel. 
+This section applies only to the email channel.
 
 You can combine your HTML code with Liquid Tags to create beautiful and personalized messages for your users. To do so:
 
-1. Open the message editor and paste your HTML code. 
-2. Click the ![](https://files.readme.io/651c228-Liquid_tag_icon.png) icon and add your Liquid Tags. 
+1. Open the message editor and paste your HTML code.
+2. Click the ![](https://files.readme.io/651c228-Liquid_tag_icon.png) icon and add your Liquid Tags.
 
-<Image title="Add Liquid Tags" alt={2876} align="center" border={true} src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png">
-  Add Liquid Tags
-</Image>
+<Image align="center" alt={2876} border={true} caption="Add Liquid Tags" title="Add Liquid Tags" src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" />
 
 # Linked Content and Liquid Tags in Drag and Drop Editor
 
@@ -435,27 +433,19 @@ Perform the following steps to personalize drag and drop editor templates with l
 
 1. Select a template.
 
-<Image title="Select Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/0fc50d2-Select_Media_Template.png">
-  Select Media Template
-</Image>
+<Image align="center" alt={2878} border={true} caption="Select Media Template" title="Select Media Template" src="https://files.readme.io/0fc50d2-Select_Media_Template.png" />
 
-2. Click the Row item in *Preview*.
+2. Click the Row item in _Preview_.
 
-<Image title="Select the Row Tab" alt={1047} align="center" border={true} src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png">
-  Select the Row Tab
-</Image>
+<Image align="center" alt={1047} border={true} caption="Select the Row Tab" title="Select the Row Tab" src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png" />
 
-3. Click *More* dropdown and select **Customize with Liquid Tags**. The *Personalize messages with Liquid tags and Linked Content* popup displays.
+3. Click _More_ dropdown and select **Customize with Liquid Tags**. The _Personalize messages with Liquid tags and Linked Content_ popup displays.
 
-<Image title="Select Customize with Liquid Tags" alt={2862} align="center" border={true} src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png">
-  Customize with Liquid Tags
-</Image>
+<Image align="center" alt={2862} border={true} caption="Customize with Liquid Tags" title="Select Customize with Liquid Tags" src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png" />
 
 4. Add the liquid script inside the popup.
 
-<Image title="Add Liquid Script" alt={2856} align="center" border={true} src="https://files.readme.io/57f0cf4-Add_liquid_script.png">
-  Add Liquid Script
-</Image>
+<Image align="center" alt={2856} border={true} caption="Add Liquid Script" title="Add Liquid Script" src="https://files.readme.io/57f0cf4-Add_liquid_script.png" />
 
 5. Click **Add**.
 
@@ -465,15 +455,11 @@ When creating a campaign message with Liquid tags, errors appear in real time if
 
 Here is an example of how to add Liquid Tags in the message editor:
 
-<Image alt="Add Liquid Tags" align="center" border={true} src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png">
-  Message Editor
-</Image>
+<Image align="center" alt="Add Liquid Tags" border={true} caption="Message Editor" src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" />
 
 Here is an example of how CleverTap validates the Liquid Tag syntax from the campaign creation page:
 
-<Image alt="Validating the Liquid Tag Syntax" align="center" border={true} src="https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png">
-  Validating the Liquid Tag Syntax
-</Image>
+<Image align="center" alt="Validating the Liquid Tag Syntax" border={true} caption="Validating the Liquid Tag Syntax" src="https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png" />
 
 # Video Tutorial
 

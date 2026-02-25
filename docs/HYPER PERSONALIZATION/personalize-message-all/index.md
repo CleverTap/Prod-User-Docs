@@ -16,65 +16,55 @@ You can personalize the message for every user based on specific user identity, 
 
 # Inline Personalization
 
-To invoke the personalization menu, type the *@* or the \_\{\{}}\_symbol in the title or the text fields while creating a message.
+To invoke the personalization menu, type the _@_ or the _\{\{}}_symbol in the title or the text fields while creating a message.
 
 You can also add dynamic replacements in the title and body. Notice a preview as displayed below.
 
-<Image title="campaign_push_personalization.png" alt={1095} align="center" border={true} src="https://files.readme.io/006da83-Inline_Personalization.png">
-  Personalize Messages using Dynamic Text
-</Image>
+<Image align="center" alt={1095} border={true} caption="Personalize Messages using Dynamic Text" title="campaign_push_personalization.png" src="https://files.readme.io/006da83-Inline_Personalization.png" />
 
-In addition to the title and body, you can personalize many other things, such as media URLs, deep links, or button text. An *@* icon in a box indicates that it can be personalized. 
+In addition to the title and body, you can personalize many other things, such as media URLs, deep links, or button text. An _@_ icon in a box indicates that it can be personalized.
 
 <br />
 
-<Image title="Personalization_@.png" alt={748} align="center" border={true} src="https://files.readme.io/51be44068b21589f9266a8903e0b16c705c707e0a83018d193bc2377cc255255-Personaliza_Media_URL.png">
-  Add Media URLs, Deep Links or Button Text
-</Image>
+<Image align="center" alt={748} border={true} caption="Add Media URLs, Deep Links or Button Text" title="Personalization_@.png" src="https://files.readme.io/51be44068b21589f9266a8903e0b16c705c707e0a83018d193bc2377cc255255-Personaliza_Media_URL.png" />
 
 # Identity Personalization
 
-Identity personalization in CleverTap enables you to tailor user experiences and messaging based on individual user identities, such as email ID, identity, and phone number. For example, if you are a streaming platform and you want to send a campaign offering a 50% discount on the first-month subscription to users who have registered with a mobile number but have not subscribed to premium content. In this case, you can use the identity personalization as follows:  
+Identity personalization in CleverTap enables you to tailor user experiences and messaging based on individual user identities, such as email ID, identity, and phone number. For example, if you are a streaming platform and you want to send a campaign offering a 50% discount on the first-month subscription to users who have registered with a mobile number but have not subscribed to premium content. In this case, you can use identity personalization as follows:
 
-<Image alt="Identity Personalization Example" align="center" border={true} src="https://files.readme.io/699d610-Identity_Personalization_Example.png">
-  Identity Personalization Example
-</Image>
+<Image align="center" alt="Identity Personalization Example" border={true} caption="Identity Personalization Example" src="https://files.readme.io/699d610-Identity_Personalization_Example.png" />
 
-You can also target a segment through a multi-channel marketing approach. This strategy involves utilizing various channels, such as email and personalized landing pages. For a personalized experience, communications via email can be personalized with details such as the user’s name. Users can also be directed to personalized URLs (\<[https://demoapp.com/\{\{Profile.Identity](https://demoapp.com/\{\{Profile.Identity) | default: "Default User"}}>) to further engage them with the campaign. The microsites associated with these URLs can mirror the content in the email and can be used as a redirection link across different channels, such as Push Notification, WhatsApp, etc., to maintain a consistent and personal experience for the audience.
+You can also target a segment through a multi-channel marketing approach. This strategy involves utilizing various channels, such as email and personalized landing pages. For a personalized experience, email communications can include details such as the user’s name. Users can also be directed to personalized URLs (\<[https://demoapp.com/\{\{Profile.Identity](https://demoapp.com/\{\{Profile.Identity) | default: "Default User"}}>) to further engage them with the campaign. The microsites associated with these URLs can mirror the email content and serve as redirection links across different channels, such as Push Notification and WhatsApp, to maintain a consistent, personal experience for the audience.
 
-<Image alt="Identity Personalization Using Personalized URLs" align="center" border={true} src="https://files.readme.io/04c801c-Identity_Personalization_Example_-_Email.png">
-  Identity Personalization Using Personalized URL
-</Image>
+<Image align="center" alt="Identity Personalization Using Personalized URLs" border={true} caption="Identity Personalization Using Personalized URL" src="https://files.readme.io/04c801c-Identity_Personalization_Example_-_Email.png" />
 
-> 📘 Key Points to Remember
->
-> In the cases where mulitple identiites are present, the most recent identity value is used and the notification is sent with those values.
+<Callout icon="📘" theme="info">
+  #### Key Points to Remember
+
+  In the cases where mulitple identities are present, the most recent identity value is used and the notification is sent with those values.
+</Callout>
 
 When crafting any campaign message, you can leverage identity personalization by typing @ or the \{\{}} symbol in the title or text fields (refer to the following images).
 
-<Image alt="Identity Personalization Using @Personalization" align="center" width="75% " border={true} src="https://files.readme.io/ad0cf22d11b905aa6f1baeb47e9516e1cec82151a5a97b561acbe13e56462b1d-Identity_Personalization_Using_Personalization.png">
-  Identity Personalization Using @Personalization
-</Image>
+<Image align="center" alt="Identity Personalization Using @Personalization" border={true} caption="Identity Personalization Using @Personalization" src="https://files.readme.io/ad0cf22d11b905aa6f1baeb47e9516e1cec82151a5a97b561acbe13e56462b1d-Identity_Personalization_Using_Personalization.png" width="75% " />
 
-<Image alt="Identity Personalization Using Liquid Tags" align="center" width="75% " border={true} src="https://files.readme.io/201345db3e709ee65faf25b8c365870e9979e641dd12e21dc5fcd87fb04aea42-Identity_Personalization_Using_Liquid_Tags.png">
-  Identity Personalization Using Liquid Tags
-</Image>
+<Image align="center" alt="Identity Personalization Using Liquid Tags" border={true} caption="Identity Personalization Using Liquid Tags" src="https://files.readme.io/201345db3e709ee65faf25b8c365870e9979e641dd12e21dc5fcd87fb04aea42-Identity_Personalization_Using_Liquid_Tags.png" width="75% " />
 
-> 📘 Key Points to Remember
->
-> In the cases where multiple identities are present, the most recent identity value is used and the notification is with that value.
+<Callout icon="📘" theme="info">
+  #### Key Points to Remember
+
+  In the cases where multiple identities are present, the most recent identity value is used and the notification is with that value.
+</Callout>
 
 # Liquid Tags
 
-Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options. 
+Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.
 
-Liquid tags offer great flexibility while composing personalized messages. Liquid tags allow adding logic using a scripting language, which can be leveraged to change the look and feel of your message. Following is an example to send personalized coupon codes based on the type of membership:
+Liquid tags offer great flexibility while composing personalized messages. Liquid tags allow you to add logic using a scripting language, which you can use to change the look and feel of your message. Following is an example to send personalized coupon codes based on the type of membership:
 
-<Image title="campaigns_liquid_tags_common_example.png" alt={1357} align="center" border={true} src="https://files.readme.io/ed642bf-campaigns_liquid_tags_common_example.png">
-  Personalized Messages using Liquid Tags
-</Image>
+<Image align="center" alt={1357} border={true} caption="Personalized Messages using Liquid Tags" title="campaigns_liquid_tags_common_example.png" src="https://files.readme.io/ed642bf-campaigns_liquid_tags_common_example.png" />
 
-Each notification is personalized to the receiver. 
+Each notification is personalized to the receiver.
 
 ```html Output - Liquid
 Hello John!
@@ -84,14 +74,35 @@ Here is a special coupon for you: Gold4All
 
 For more information on using tags, refer to [Liquid Tags](doc:liquid-tags).
 
-> 📘 Personalize Date Property
->
-> When customizing event or profile properties that involve dates, CleverTap transforms them into different formats for liquid tags and @ personalization.
->
-> For instance:
->
-> * For Liquid Tags personalization, CleverTap transforms the expression \{\{ Event.date | default: "DEFAULT" }} into "2023-05-29 15:55:00" to display both the date and time.
-> * For @ Personalization, CleverTap transforms the expression into \{\{ @Charged - date | default: "DEFAULT " }} into "May 29, 2023" to display only the date.
+<Callout icon="📘" theme="info">
+  #### Personalize Date Property
+
+  When customizing event or profile properties that involve dates, we transform them into different formats for liquid tags and @ personalization.
+
+  For instance:
+
+  * For Liquid Tags personalization, CleverTap transforms the expression \{\{ Event["Primary Traveler DOB"] | default: "Default" }}\ into "2023-05-29 15:55:00" to display both the date and time.
+  * For @ Personalization, CleverTap transforms the expression into @Charged - Date | default: "Default" }} into "May 29, 2023" to display only the date.
+</Callout>
+
+## Liquid Personalization with Nested Objects
+
+You can use nested profile and event properties with Liquid tags to personalize messages using structured data stored within user profiles or events. Nested Object personalization is supported up to three levels.
+
+This allows you to reference specific attributes within complex data structures without restructuring or duplicating data, keeping your campaigns precise, scalable, and highly relevant.
+
+For example, if your user profile stores subscription details inside a `subscription` object, you can dynamically insert it into your message:
+`{{ Profile.subscription.planName | default: "your plan" }}`
+
+**Sample Campaign**:
+
+```Text Campaign Message
+“Enjoy exclusive benefits with your {{ Profile.subscription.planName | default: "current" }} plan.”
+```
+
+In this case, the message dynamically inserts the user’s exact plan name, making the communication more contextual and personalized. If the value is unavailable, the fallback value (in this case, `current`) ensures the message still reads naturally.
+
+For more information on prerequisites, syntax, and validation, refer to [Liquid Personalization with Nested Objects](doc:liquid-tags#liquid-personalization-with-nested-objects).
 
 # Linked Content
 
@@ -137,29 +148,23 @@ For more information, refer to [Linked Content](https://docs.clevertap.com/docs/
 
 # Recommendations
 
-Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options. 
+Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. For example, you can display a sliding carousel based on their personal likes! For more information on recommendations, see [Recommendations](doc:recommendations).
 
-<Image title="Recommendation_Sample.png" alt={1752} align="center" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png">
-  Create Personalized Recommendations
-</Image>
+<Image align="center" alt={1752} border={true} caption="Create Personalized Recommendations" title="Recommendation_Sample.png" src="https://files.readme.io/6264702-Recommendation_Sample.png" />
 
 # Catalog
 
-Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.  Select a catalog from the list. 
+Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.  Select a catalog from the list.
 
-A *Catalog* provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A *Catalog* can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on *Catalogs*, see [Catalogs](doc:catalog).
+A _Catalog_ provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A _Catalog_ can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on _Catalogs_, see [Catalogs](doc:catalog).
 
-<Image title="catalog_sample.png" alt={1560} align="center" border={true} src="https://files.readme.io/5077276-catalog_sample.png">
-  Create a Catalog
-</Image>
-
-<br />
+<Image align="center" alt={1560} border={true} caption="Create a Catalog" title="catalog_sample.png" src="https://files.readme.io/5077276-catalog_sample.png" />
 
 # Campaign ID Personalization
 
-To invoke the personalization menu, type the *@* or the *\{\{}}* symbol in the title, message, and Deep link/Open URL fields when creating a message.
+To invoke the personalization menu, type the _@_ or the _\{\{}}_ symbol in the title, message, and Deep link/Open URL fields when creating a message.
 
 Campaign ID Personalization allows you to customize and personalize your marketing campaigns based on specific campaign IDs. For example, you can send a follow-up email with personalized recommendations related to the products or services featured in the user's previous campaign interaction.
 
@@ -167,14 +172,12 @@ For more information, refer to [Campaign ID Personalization](doc:campaign-id-per
 
 # Constant event property
 
-Constant Event Property allows you to engage the user on multiple actions and inactions. For example, person A added to cart a white coat and person B added to cart a pair of blue jeans, but they both did not purchase the items. 
+Constant Event Property allows you to engage the user on multiple actions and inactions. For example, person A added to cart a white coat and person B added to cart a pair of blue jeans, but they both did not purchase the items.
 
-You can either create a campaign for each product that was added to the cart or you can use a *constant event property* to personalize the campaign to each user that did not purchase the item. 
+You can either create a campaign for each product that was added to the cart or you can use a _constant event property_ to personalize the campaign to each user that did not purchase the item.
 
-For example, you can map the *prod\_name* property of the *charged* event to the *product\_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. 
+For example, you can map the _prod_name_ property of the _charged_ event to the _product_name_ property of the _added to cart_ event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user.
 
-<Image title="Constant_property_sample.png" alt={1374} align="center" border={true} src="https://files.readme.io/790bd5c-Constant_property_sample.png">
-  Constant Event Property
-</Image>
+<Image align="center" alt={1374} border={true} caption="Constant Event Property" title="Constant_property_sample.png" src="https://files.readme.io/790bd5c-Constant_property_sample.png" />
 
- For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
+For more information on using a constant event property, see [Constant Event Property](doc:constant-property).

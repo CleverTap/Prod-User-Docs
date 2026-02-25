@@ -121,7 +121,7 @@ Hello!
 {% endif %}
 ```
 
-If the user's preferred language is French, the greeting will appear in French.  If the user's preferred language is Spanish the greeting will appear in Spanish. However, if the preferred language is anything other than French and Spanish, then the greeting will appear in English.
+If the user's preferred language is French, the greeting will appear in French.  If the user's preferred language is Spanish, the greeting will appear in Spanish. However, if the preferred language is not French or Spanish, the greeting will appear in English.
 
 ```text Output - Else/Elseif
 Hello!

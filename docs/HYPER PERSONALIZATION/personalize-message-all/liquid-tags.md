@@ -45,7 +45,7 @@ If the user's preferred language is English, the greeting will appear in English
 Hello!
 ```
 
-Liquid tags also support nested object personalization, allowing you to access structured profile and event data (for example, subscription.plan.name) for deeper personalization. For more information, refer to []().
+Liquid tags also support nested object personalization, allowing you to access structured profile and event data (for example, subscription.plan.name) for deeper personalization. For more information, refer to [Liquid Personalization with Nested Objects](liquid-tags#liquid-personalization-with-nested-objects).
 
 # Getting Started
 

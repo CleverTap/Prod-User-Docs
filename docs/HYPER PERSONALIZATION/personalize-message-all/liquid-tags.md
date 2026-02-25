@@ -45,6 +45,8 @@ If the user's preferred language is English, the greeting will appear in English
 Hello!
 ```
 
+Liquid tags also support nested object personalization, allowing you to access structured profile and event data (for example, subscription.plan.name) for deeper personalization. For more information, refer to []().
+
 # Getting Started
 
 You can personalize your messages for [Events](doc:events) and [User Profiles](doc:user-profiles). For example, a user whose language is English (Profile property), or someone who has purchased (Event property) a new shirt.
@@ -414,6 +416,44 @@ You can use the following operators to evaluate conditions in your tags.
 | **and**      | logical and. Choose conditions 1 and condition 2       |
 | **contains** | check for a string within a string                     |
 
+<br />
+
+# Liquid Personalization with Nested Objects
+
+You can personalize campaign messages using nested objects within profile-based and event-based personalization for deeper data granularity in your campaigns. To use nested personalization, ensure that **Nested Object Personalization** is enabled for your account.
+
+**Syntax**
+
+Nested profile and event personalization are supported up to 3 levels. Use the following syntax to configure personalization placeholders:
+
+* Nested Profile Personalization: `{{ Profile.<property_name>.<level_1>.<level_2>.<level_3> | default: "Default" }}`
+* Nested Event Personalization: `{{ Event.<property_name>.<level_1>.<level_2>.<level_3> | default: "Default" }}`
+
+When using nested personalization, you must use the Preview & Test option to validate your message before publishing the campaign.
+
+<Callout icon="📘" theme="info">
+  #### Nested Personalization
+
+  You can use Nested Personalization with the following channels: Email, Mobile Push, SMS, Webhooks, and WhatsApp.
+</Callout>
+
+#### Example
+
+Nested personalization is especially useful when your profile or event data is stored in structured objects such as subscription details, order information, travel bookings, or product metadata.
+
+For example, suppose your profile stores subscription information in the following structure:  
+subscription > plan > name
+
+You can reference the plan name using`{{ Profile.subscription.plan.name | default: "your current plan" }}`
+
+**Sample Campaign**
+
+```liquid
+Thanks for being a {{ Profile.subscription.plan.name | default: "valued" }} member! Unlock your exclusive benefits today.
+```
+
+In this case, the campaign dynamically inserts the exact plan name (for example, Gold or Premium), making the message more contextual and relevant. If the value is unavailable, the default value ensures the message remains natural.
+
 # Liquid Tags with HTML
 
 This section applies only to the email channel.
@@ -483,3 +523,5 @@ You can watch the following video to learn more about Liquid Tags personalizatio
               allow="autoplay; fullscreen"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
+
+<br />

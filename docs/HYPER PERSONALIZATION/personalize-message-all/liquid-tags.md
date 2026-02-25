@@ -66,9 +66,11 @@ You can start creating your message by declaring tags in the campaign editor. Yo
 
 You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor and we will list all the corresponding properties automatically.
 
-> 📘 Note
->
-> When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
+</Callout>
 
 ## Conditional Tags
 

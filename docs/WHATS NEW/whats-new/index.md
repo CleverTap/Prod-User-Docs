@@ -250,6 +250,45 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="analytics" id="advanced-formula-based-measurement-in-trends-20">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#trends-v2#formula">
+        <i class="fa-light fa-anchor" />
+      </a>
+    </div>
+
+    <div>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon" />
+    </div>
+
+    <h3 class="release-note-heading">Advanced Formula-Based Measurement in Trends 2.0</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>Trends 2.0 now offers powerful formula-based measurement, allowing you to create custom business metrics directly within your trend analysis. Beyond standard measures like Total Events, Unique Users, and Average Per User, you can combine event and property-level functions using mathematical expressions to track derived KPIs over time. 
+</p>
+    <p>With the Formula option, you can:</p>
+
+    <p>
+      <ul>
+        <li>Build custom metrics such as revenue per user, conversion ratios, or value per event.</li>
+        <li>Combine functions like TOTALS, UNIQUES, and PROPSUM using mathematical operators.</li>
+        <li>Compare up to four formulas in a single chart for side-by-side KPI analysis.</li>
+        <li>Use clear Y-axis titles to present stakeholder-friendly metrics.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/trends-v2#formula" target="_blank">Formula</a>.</p>
+  </div>
+
+  <hr />
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="journey-tracking-with-multiple-campaign-ids">
   <div class="release-note-header">
     <div class="anchor-link-icon">

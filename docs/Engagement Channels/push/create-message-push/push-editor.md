@@ -391,10 +391,10 @@ You can use this section to customize Android-specific behavior for your push us
       </td>
 
       <td>
-        Choose whether to mute the push notification when the user is currently using the app (app in foreground).
+        Choose whether to mute the push notification when the user is currently using the app (app in foreground).  
 
-        * Yes: If the app is open, the notification is not sent.
-        * No (default): The notification is sent even if the app is open.
+        * Yes: If the app is open, the notification is only added to the tray, and a popup is not shown to the user.
+        * No (default): The notification is added to the tray, and a popup is shown to the user, even if the app is open.
       </td>
 
       <td>

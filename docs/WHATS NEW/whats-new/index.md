@@ -188,10 +188,10 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="analytics" id="pivots-v2">
+<div class="release-note article" data-category="analytics" id="pivots-20">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#pivots-v2"><i class="fa-light fa-anchor"></i></a>
+      <a href="#pivots-20"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>

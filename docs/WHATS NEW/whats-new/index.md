@@ -188,6 +188,41 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="estimated-reach-for-live-campaigns">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#estimated-reach-for-live-campaigns"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Estimated Reach for Live Campaigns</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now view Estimated Reach while configuring Live channel campaigns that include at least one past behavior condition. This gives you visibility into the projected audience size before launch, helping you refine targeting and plan campaigns more effectively.</p>
+
+    <p>Estimated Reach is calculated only for audiences with historical event or property filters (Mini Who criteria) and is not displayed for real-time-only audiences.</p>
+
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Preview audience size before activating Live channel campaigns</li>
+        <li>Validate historical filters using Mini Who criteria</li>
+        <li>Refine segments based on projected campaign scale</li>
+        <li>Plan campaigns with greater transparency and confidence</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="In-App" target="_blank">In-App</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="pivots-20">
   <div class="release-note-header">
     <div class="anchor-link-icon">

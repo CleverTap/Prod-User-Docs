@@ -215,7 +215,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 
-    <p>For more information, refer to <a href="In-App" target="_blank">https://docs.clevertap.com/docs/create-message-inapp#calculate-estimated-reach</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-inapp#calculate-estimated-reach" target="_blank">In-App</a>.</p>
   </div>
 
   <hr/>

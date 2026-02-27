@@ -16,10 +16,6 @@ next:
 
 When a new user profile is created in CleverTap, a random bucket number between 0 and 999 is automatically assigned. This unique system user property allows you to create uniformly distributed segments of random users, effective for testing the long-term impact of various campaigns on groups of users over time. By evaluating the results from these segments over multiple campaigns, you can determine whether to retain the same bucket numbers for future campaigns or adjust your strategy based on the insights gained. This approach ensures a balanced assessment of your campaign's effectiveness over time, enabling continuous optimization and improvement.
 
-> 📘 Private Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
-
 # Use Cases
 
 Here are some use cases where CleverTap's random bucket number assignment can be helpful:
@@ -33,12 +29,10 @@ Thus, you gain actionable insights into what works best by applying distinct str
 
 # Segment Users Based on User Buckets
 
-When creating a segment, add the User Bucket filter. Then, you can specify a number or range of numbers to include in your segment.\
-For example, create a segment of users who *Added to Cart* but did not do a *Charged* event in the *last 30 days* and belong to user buckets from 0 to 100.
+When creating a segment, add the User Bucket filter. Then, you can specify a number or range of numbers to include in your segment.  
+For example, create a segment of users who _Added to Cart_ but did not do a _Charged_ event in the _last 30 days_ and belong to user buckets from 0 to 100.
 
-<Image alt="Segmenting on Random Bucket Users" align="center" border={true} src="https://files.readme.io/d3ef701-Random_User_Buckets.png">
-  Segmenting on Random Bucket Users
-</Image>
+<Image align="center" alt="Segmenting on Random Bucket Users" border={true} caption="Segmenting on Random Bucket Users" src="https://files.readme.io/d3ef701-Random_User_Buckets.png" />
 
 You can now include these types of segments if you want to run multiple variants of your campaigns. After running these campaigns for the required period, you can use the campaign statistics to decide whether to continue using the same bucket numbers or adjust your segmentation to optimize performance.
 
@@ -54,7 +48,7 @@ Find answers to the following common questions about using ̉User Buckets:
 
 No, while all three tools assist with testing and experimentation, they serve different purposes and are utilized at various stages of your campaign planning in CleverTap.
 
-<Table>
+<Table align={["left","left","left"]}>
   <thead>
     <tr>
       <th>
@@ -96,7 +90,7 @@ No, while all three tools assist with testing and experimentation, they serve di
       </td>
 
       <td>
-        Splits your campaign audience into different versions (A and B) to test different creatives, messages, or strategies. CleverTap automatically distributes users and tracks performance for each variant.\
+        Splits your campaign audience into different versions (A and B) to test different creatives, messages, or strategies. CleverTap automatically distributes users and tracks performance for each variant.  
         For example, out of 10,000 users, 5,000 get Variant A and 5,000 get Variant B.
       </td>
     </tr>
@@ -111,14 +105,14 @@ No, while all three tools assist with testing and experimentation, they serve di
       </td>
 
       <td>
-        Holds back a percentage of users from receiving the campaign, so you can compare results against users not exposed to the campaign and measure the actual lift or impact.\
+        Holds back a percentage of users from receiving the campaign, so you can compare results against users not exposed to the campaign and measure the actual lift or impact.  
         For example, out of 10000 users, 1000 (10%) are held back.
       </td>
     </tr>
   </tbody>
 </Table>
 
-User Buckets help define *who* gets included in a test group before campaign creation, while A/B Testing and Control Groups determine *how* the test is carried out during the campaign setup.
+User Buckets help define _who_ gets included in a test group before campaign creation, while A/B Testing and Control Groups determine _how_ the test is carried out during the campaign setup.
 
 ### How does User Bucket work in practice?
 

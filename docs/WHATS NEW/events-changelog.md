@@ -68,7 +68,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       <td>
         This event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
 
-        *Note**: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
+        _Note_: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
       </td>
     </tr>
   </tbody>
@@ -122,7 +122,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       <td>
         This event also captures errors that occur in email campaigns. For more information, refer to [Events](doc:events).
 
-        *Note*: This event is currently in Private Beta. Contact your account manager to enable this event.
+        _Note_: This event is currently in Private Beta. Contact your account manager to enable this event.
       </td>
     </tr>
   </tbody>

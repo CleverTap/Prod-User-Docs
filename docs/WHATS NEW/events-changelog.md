@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-Welcome to the Events changelog document for CleverTap. This changelog provides insights about the system event updates in CleverTap, ensuring you use CleverTap effectively and monitor your metrics with greater accuracy.
+Welcome to the Events changelog document for CleverTap. This changelog provides insights into system event updates in CleverTap, ensuring you use CleverTap effectively and monitor your metrics with greater accuracy.
 
 We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we update this changelog regularly, informing our customers about any changes to existing system events or the introduction of new ones.
 

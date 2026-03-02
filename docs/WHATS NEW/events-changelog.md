@@ -66,7 +66,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        Now, this event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
+        This event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
 
         *Note**: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
       </td>
@@ -120,9 +120,9 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        Now, this event also captures the errors that occur in email campaigns. For more information, refer to [Events](doc:events).
+        This event also captures errors that occur in email campaigns. For more information, refer to [Events](doc:events).
 
-        * *Note**: This event is currently in Private Beta. Contact your account manager to enable this event.
+        *Note*: This event is currently in Private Beta. Contact your account manager to enable this event.
       </td>
     </tr>
   </tbody>
@@ -220,7 +220,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        The property indicates the type of campaign (e.g., WhatsApp, SMS).
+        The property indicates the type of campaign (for example, WhatsApp, SMS).
       </td>
     </tr>
 

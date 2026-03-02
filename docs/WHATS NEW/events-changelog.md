@@ -14,30 +14,34 @@ Welcome to the Events changelog document for CleverTap. This changelog provides 
 
 We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we update this changelog regularly, informing our customers about any changes to existing system events or the introduction of new ones.
 
-<br />
+# February 2026
+
+| Change Release Date | Event Name                            | Property Name | Update Type          | Description                                                                                                                                                                                                |
+| :------------------ | :------------------------------------ | :------------ | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| February 26, 2026   | Push Impression, Notification Clicked | wzrk_sif      | Event Property Added | Boolean property that indicates whether the push notification was delivered silently (no popup shown when the app is open). For more information, refer to [Push Editor](doc:push-editor#android-options). |
 
 # February 2025
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Change Release Date
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Event Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Property Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Update Type
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Description
       </th>
     </tr>
@@ -45,26 +49,26 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         February 5th, 2025
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Notification Delivered
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Others
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Now, this event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).  
+      <td>
+        Now, this event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
 
-        * \*Note\*\*: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
+        *Note**: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
       </td>
     </tr>
   </tbody>
@@ -116,9 +120,9 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        Now, this event also captures the errors that occur in email campaigns. For more information, refer to [Events](doc:events).  
+        Now, this event also captures the errors that occur in email campaigns. For more information, refer to [Events](doc:events).
 
-        * \*Note\*\*: This event is currently in Private Beta. Contact your account manager to enable this event.
+        * *Note**: This event is currently in Private Beta. Contact your account manager to enable this event.
       </td>
     </tr>
   </tbody>
@@ -170,7 +174,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        This event captures the errors that occurred in the campaign.  
+        This event captures the errors that occurred in the campaign.
 
         This event is currently in private beta and can be enabled upon request. Contact your account manager if you need access to this event.
       </td>
@@ -290,13 +294,13 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
 
 # May
 
-| Change Release Date | Event Name        | Property Name | Update Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| :------------------ | :---------------- | :------------ | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| May 15, 2024        | Push Unregistered |               | Properties Added |                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|                     |                   | Source        |                  | <ul><li> **CT\_Push**: Indicating that the event is raised via silent Push. In this case, FCM returns a [404 Unregistered error]() for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app. </li> <li> **CT\_SDK**: Indicating that the event is raised via OnUserLogin() method.</li> <li> **CT\_Target**: Indicating that the event is raised via campaigns or journeys. </li></ul> |
-|                     |                   | Token Value   |                  | The property contains the actual value of the token.                                                                                                                                                                                                                                                                                                                                                                                              |
-|                     |                   | Token Type    |                  | <ul><li> FCM </li> <li> Baidu </li> <li> Huawei </li></ul>                                                                                                                                                                                                                                                                                                                                                                                        |
-|                     |                   | targetId      |                  | The property denotes the ID of the campaign or journey.                                                                                                                                                                                                                                                                                                                                                                                           |
+| Change Release Date | Event Name        | Property Name | Update Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| :------------------ | :---------------- | :------------ | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| May 15, 2024        | Push Unregistered |               | Properties Added |                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                     |                   | Source        |                  | <ul><li> **CT_Push**: Indicating that the event is raised via silent Push. In this case, FCM returns a [404 Unregistered error]() for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app. </li> <li> **CT_SDK**: Indicating that the event is raised via OnUserLogin() method.</li> <li> **CT_Target**: Indicating that the event is raised via campaigns or journeys. </li></ul> |
+|                     |                   | Token Value   |                  | The property contains the actual value of the token.                                                                                                                                                                                                                                                                                                                                                                                           |
+|                     |                   | Token Type    |                  | <ul><li> FCM </li> <li> Baidu </li> <li> Huawei </li></ul>                                                                                                                                                                                                                                                                                                                                                                                     |
+|                     |                   | targetId      |                  | The property denotes the ID of the campaign or journey.                                                                                                                                                                                                                                                                                                                                                                                        |
 
 # April
 
@@ -358,7 +362,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        button\_id
+        button_id
       </td>
 
       <td>
@@ -366,7 +370,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        The property is visible for the event if the *Notification Clicked* event is tracked for button clicks associated with the new Image Interstitial template. Therefore, the customers adopting this template will see this new property.  
+        The property is visible for the event if the _Notification Clicked_ event is tracked for button clicks associated with the new Image Interstitial template. Therefore, the customers adopting this template will see this new property.
 
         For more information, refer to [In-App Image Interstitial Template](doc:in-app-editor#image-interstitial).
       </td>

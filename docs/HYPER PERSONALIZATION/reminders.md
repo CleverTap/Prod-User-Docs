@@ -56,7 +56,7 @@ The following are some of the use cases for the Reminders feature:
 
 ### FinTech
 
-You can send a reminder before or after the due date for different utility bill payments, such as electricity, credit card, postpaid bills, broadband, gas, and so on. The reminder can include personalization parameters, such as Bill Amount, Bill ID, Bill Due Date, and so on. 
+You can send a reminder before or after the due date for different utility bill payments, such as electricity, credit card, postpaid bills, broadband, gas, and so on. The reminder can include personalization parameters, such as Bill Amount, Bill ID, Bill Due Date, and so on.
 
 In the case of pre-due date reminders, you can prompt your customers to make the payment before the due date to avoid penalties. For post-due date reminder notifications, inform your customers about the penalty incurred due to late payment and encourage them to settle the outstanding amount promptly.
 
@@ -74,30 +74,26 @@ In this case, the Reminders feature helps customers stay informed and organized 
 
 ### E-Commerce
 
-In this case, the Reminders feature helps drive voucher redemption by nudging users to use their allocated coupons before they expire. You can send reminders after a voucher is issued, such as during a festive sale, personalized campaign, or loyalty reward. The reminder can include personalization parameters such as Voucher Code, Discount Value, Expiry Date, and Eligible Products.\
+In this case, the Reminders feature helps drive voucher redemption by nudging users to use their allocated coupons before they expire. You can send reminders after a voucher is issued, such as during a festive sale, personalized campaign, or loyalty reward. The reminder can include personalization parameters such as Voucher Code, Discount Value, Expiry Date, and Eligible Products.  
 For pre-expiry reminders, you can create urgency by highlighting the upcoming expiry date and encouraging redemption. Post-expiry reminders can inform users that the voucher has expired and optionally share alternate offers to retain engagement.
 
 # Set Up Reminder
 
-Consider the example where you want to remind your customers about their upcoming Credit Card bill due date. To ensure timely payment, you can define the trigger event under the *Setup* section.
+Consider the example where you want to remind your customers about their upcoming Credit Card bill due date. To ensure timely payment, you can define the trigger event under the _Setup_ section.
 
 > 📘 Prerequisite for Tracking Reminder Interactions
 >
-> Reminder-related events such as *Set Reminder*, *Reminder Cleared*, *Reminder Canceled*, and *Reminder Snoozed*, are tracked only after the Reminder setup is created and made live on the CleverTap dashboard. Events triggered before the setup goes live are not tracked.
+> Reminder-related events such as _Set Reminder_, _Reminder Cleared_, _Reminder Canceled_, and _Reminder Snoozed_, are tracked only after the Reminder setup is created and made live on the CleverTap dashboard. Events triggered before the setup goes live are not tracked.
 
 To set up a Reminder, perform the following steps:
 
-1. Go to *Reminders* page from the CleverTap dashboard and click **Create Reminder**. The *Setup* page opens.
+1. Go to _Reminders_ page from the CleverTap dashboard and click **Create Reminder**. The _Setup_ page opens.
 
-<Image alt="Navigating to Reminders Page" align="center" border={true} src="https://files.readme.io/6be41bb-Create_a_Reminder.gif">
-  Navigating to Reminders Page
-</Image>
+<Image align="center" alt="Navigating to Reminders Page" border={true} caption="Navigating to Reminders Page" src="https://files.readme.io/6be41bb-Create_a_Reminder.gif" />
 
 2. Enter the following details:
 
-<Image alt="Set Up a Reminder" align="center" width="75% " border={true} src="https://files.readme.io/07f757a392e2fb894c04d2666991fe749b2be65f16ec6faa5092b0d53c959ede-Set_Up_Reminder.png">
-  Set Up a Reminder
-</Image>
+<Image align="center" alt="Set Up a Reminder" border={true} caption="Set Up a Reminder" src="https://files.readme.io/07f757a392e2fb894c04d2666991fe749b2be65f16ec6faa5092b0d53c959ede-Set_Up_Reminder.png" width="75% " />
 
 <Table align={["left","left"]}>
   <thead>
@@ -149,9 +145,9 @@ To set up a Reminder, perform the following steps:
       </td>
 
       <td>
-        Refers to the action taken by a user or an administrator to deactivate or stop a scheduled reminder from being sent to a particular recipient.\
-        Select the event that will be raised when the customer stops the scheduled reminder.\
-        Reminder ID: Select the property that uniquely identifies the reminder. For this example, the Reminder ID  can be *Bill ID*, uniquely identifying the bill for which you are setting up a reminder.
+        Refers to the action taken by a user or an administrator to deactivate or stop a scheduled reminder from being sent to a particular recipient.  
+        Select the event that will be raised when the customer stops the scheduled reminder.  
+        Reminder ID: Select the property that uniquely identifies the reminder. For this example, the Reminder ID  can be _Bill ID_, uniquely identifying the bill for which you are setting up a reminder.
       </td>
     </tr>
 
@@ -175,75 +171,59 @@ Consider the same example where you want to remind your customers about their up
 
 After setting up the reminder, you can create a campaign using reminders:
 
-1. From the *Setup* page, click **Create Campaign**. The *Select the channels for your Reminder campaigns* popup opens.
+1. From the _Setup_ page, click **Create Campaign**. The _Select the channels for your Reminder campaigns_ popup opens.
 
-<Image alt="Select Channels for Reminder Campaign" align="center" border={true} src="https://files.readme.io/d34811692d7c954797d4f7bc316594cfad9c1a5c84acae4bace03a3faa07d2cc-Select_Channels_for_Reminder_Campaigns.png">
-  Select Channels for Reminder Campaign
-</Image>
+<Image align="center" border={true} caption="Select Channels for Reminder Campaign" src="https://files.readme.io/c900f389c864f7d505e4b22f11c49189cfdf9dbb5ae1f0b1980c0f55bfa64fe3-image.png" />
 
-2. Select the channel for your Reminder campaign. For this example, we are selecting Push Notification. The *New Push Notification Reminder* popup opens.
+2. Select the channel for your Reminder campaign. For this example, we are selecting Push Notification. The _New Push Notification Reminder_ popup opens.
 
-<Image alt="New Push Notification Reminder" align="center" width="90% " border={true} src="https://files.readme.io/c44c59a-New_Push_Notification_Reminder.png">
-  New Push Notification Reminder
-</Image>
+<Image align="center" alt="New Push Notification Reminder" border={true} caption="New Push Notification Reminder" src="https://files.readme.io/c44c59a-New_Push_Notification_Reminder.png" width="90% " />
 
-2. Define the *Start here* section for the campaign.
-3. Define the *Who* section. Here, you must define the duration for which engagements need to be sent. You can also filter your target audience.
+2. Define the _Start here_ section for the campaign.
+3. Define the _Who_ section. Here, you must define the duration for which engagements need to be sent. You can also filter your target audience.
 
-<Image alt="Define Target Segment for Reminder Segment" align="center" width="75% " border={true} src="https://files.readme.io/2955c85-image.png">
-  Define Target Segment for Reminder Campaign
-</Image>
+<Image align="center" alt="Define Target Segment for Reminder Segment" border={true} caption="Define Target Segment for Reminder Campaign" src="https://files.readme.io/2955c85-image.png" width="75% " />
 
 4. [Define the content for your Reminder campaigns](doc:reminders#define-message-for-reminder-campaigns).
-5. [Define the *Date and time* to send the reminder campaign and also define the *Delivery preferences*](doc:reminders#define-schedule-and-delivery-preferences).
+5. [Define the _Date and time_ to send the reminder campaign and also define the _Delivery preferences_](doc:reminders#define-schedule-and-delivery-preferences).
 
 ## Define Message for Reminder Campaigns
 
 Consider the same example where you want to remind your customers about their upcoming Credit Card bill due date. When defining the target audience, we chose to send reminders two days before the due date, one reminder on the due date, and one reminder one day after the due date. Here, you can create different message variants for each day, that is, a different reminder message copy for -2 day, -1 day, due date, and +1 day. This customization allows for targeted messaging that aligns with the evolving context or objectives of each day.
 
-<Image alt="Create Reminder Message for Each Day " align="center" width="65% " border={true} src="https://files.readme.io/679b331-Create_Reminder_Notification_for_Each_Day.png">
-  Create Reminder Message for Each Day 
-</Image>
+<Image align="center" alt="Create Reminder Message for Each Day " border={true} caption="Create Reminder Message for Each Day" src="https://files.readme.io/679b331-Create_Reminder_Notification_for_Each_Day.png" width="65% " />
 
 You also have the option to define a common message for multiple days. In our example, you may want to send the same reminder copy before the due date (in this case, -2 days to -1 day), a different copy for the reminder to be sent on the due date, and a different reminder message copy to be sent one day after the due date (+1 day).
 
-<Image alt="Define Common Reminder Copy For Date Range" align="center" width="75% " border={true} src="https://files.readme.io/1cfe543-Create_Common_Reminder_Copy_for_Date_Range.gif">
-  Define Common Reminder Copy For Date Range
-</Image>
+<Image align="center" alt="Define Common Reminder Copy For Date Range" border={true} caption="Define Common Reminder Copy For Date Range" src="https://files.readme.io/1cfe543-Create_Common_Reminder_Copy_for_Date_Range.gif" width="75% " />
 
 You also have the option to copy a particular message and reuse it with minor or no changes, as shown in the following image:
 
-<Image alt="Copy Message from a Particular Variant" align="center" border={true} src="https://files.readme.io/48a4863-Copy_Message_from_a_Particular_Variant.png">
-  Copy Message from a Particular Variant
-</Image>
+<Image align="center" alt="Copy Message from a Particular Variant" border={true} caption="Copy Message from a Particular Variant" src="https://files.readme.io/48a4863-Copy_Message_from_a_Particular_Variant.png" />
 
 ## Define Schedule and Delivery Preferences
 
-You can set up the *When* section to schedule the reminder campaign based on the following available options:
+You can set up the _When_ section to schedule the reminder campaign based on the following available options:
 
 ### Data and Time
 
 You can deliver the Reminder campaigns at the following times:
 
-* *Per the due date time*: Selecting this option allows you to deliver the reminder campaign on and around the due date, ensuring timely delivery of notifications.
-* *Best time for every user*: Selecting this option allows you to send the reminder campaign to every customer based on their most active time throughout the day. For more information, refer to [Best Time Campaigns](doc:best-time).
-* *A fixed time*: Selecting this option allows you to send the reminder campaign to the customers at a fixed time during the day.
+* _Per the due date time_: Selecting this option allows you to deliver the reminder campaign on and around the due date, ensuring timely delivery of notifications.
+* _Best time for every user_: Selecting this option allows you to send the reminder campaign to every customer based on their most active time throughout the day. For more information, refer to [Best Time Campaigns](doc:best-time).
+* _A fixed time_: Selecting this option allows you to send the reminder campaign to the customers at a fixed time during the day.
 
-<Image alt="Select Delivery Option for Reminder Campaigns " align="center" width="75% " border={true} src="https://files.readme.io/88a07fb-Date_and_Time_for_Reminder_Campaigns.png">
-  Select Delivery Option for Reminder Campaigns 
-</Image>
+<Image align="center" alt="Select Delivery Option for Reminder Campaigns " border={true} caption="Select Delivery Option for Reminder Campaigns" src="https://files.readme.io/88a07fb-Date_and_Time_for_Reminder_Campaigns.png" width="75% " />
 
 ### Delivery Preferences
 
-You can apply global campaign limits to determine how many notifications each app user receives per day. If you want to override these settings for an important campaign, you can select the *Don’t apply global campaign limits to this campaign* option.
+You can apply global campaign limits to determine how many notifications each app user receives per day. If you want to override these settings for an important campaign, you can select the _Don’t apply global campaign limits to this campaign_ option.
 
-You can also select the *Advanced* checkbox to specify Do Not Disturb (DND) hours during which notifications from this campaign are prevented from going out, either by discarding them or delaying delivery after DND hours, such as 9 PM to 9 AM.
+You can also select the _Advanced_ checkbox to specify Do Not Disturb (DND) hours during which notifications from this campaign are prevented from going out, either by discarding them or delaying delivery after DND hours, such as 9 PM to 9 AM.
 
 Since past behavior campaigns can have scheduled times, you have the option to stop a campaign delivery after a certain cut-off time or even deliver at the specified time in the user’s timezone. For more information, refer to [Delivery in User’s Timezone](doc:notification-delivery-options).
 
-<Image alt="Set Up Delivery Preferences for Reminder Campaign" align="center" width="65% " border={true} src="https://files.readme.io/d5c96d8-image.png">
-  Set Up Delivery Preferences for Reminder Campaign
-</Image>
+<Image align="center" alt="Set Up Delivery Preferences for Reminder Campaign" border={true} caption="Set Up Delivery Preferences for Reminder Campaign" src="https://files.readme.io/d5c96d8-image.png" width="65% " />
 
 > 📘 Recurring Day
 >
@@ -255,12 +235,12 @@ Time to Live is the persistence of a notification sent to an end user. Push serv
 
 #### Do Not Disturb (DND)
 
-Select this option to avoid sending messages during certain times of the day. By default, DND limits are based on the user's time zone. 
+Select this option to avoid sending messages during certain times of the day. By default, DND limits are based on the user's time zone.
 
 #### Cut-off
 
-The campaign cut-off time ensures no notifications are sent after the specified time. Clevertap does not send notifications to the push services after the cut-off. This is useful if the campaign is time-sensitive and a later time makes the notification irrelevant.\
-Select *Cut-off*  and specify the time to stop sending the notification when the target audience is large. This will cause a significant delay in processing the user queue, ensuring that no notification is sent after the set time.
+The campaign cut-off time ensures no notifications are sent after the specified time. Clevertap does not send notifications to the push services after the cut-off. This is useful if the campaign is time-sensitive and a later time makes the notification irrelevant.  
+Select _Cut-off_  and specify the time to stop sending the notification when the target audience is large. This will cause a significant delay in processing the user queue, ensuring that no notification is sent after the set time.
 
 # Reminder Stats
 
@@ -275,33 +255,29 @@ Each reminder is evaluated based on various factors, including the number of mes
 
 ## User Engagement and Insights
 
-This section offers an in-depth analysis of customer interactions with reminder campaigns, enabling you to measure engagement, identify trends, and optimize future campaigns for better performance. 
+This section offers an in-depth analysis of customer interactions with reminder campaigns, enabling you to measure engagement, identify trends, and optimize future campaigns for better performance.
 
-<Image alt="User Engagement Stats for Reminder" align="center" border={true} src="https://files.readme.io/160626711a09a381e46e976c60ffdb9a837182ed0d1629deee7d498d6f8919cb-Reminder_Setup_Stats_-_Final.png">
-  User Engagement Stats for Reminder
-</Image>
+<Image align="center" alt="User Engagement Stats for Reminder" border={true} caption="User Engagement Stats for Reminder" src="https://files.readme.io/160626711a09a381e46e976c60ffdb9a837182ed0d1629deee7d498d6f8919cb-Reminder_Setup_Stats_-_Final.png" />
 
 The key metrics analyzed include the following:
 
 * **Actions Trend**
-  * *Set*: Total number of reminders sent to users. This indicates the campaign reach.
-  * *Clear*: Number of customers who manually dismissed or marked the reminder as completed. A high number suggests reminders are acknowledged but may also indicate your customers prefer fewer notifications.
-  * *Cancel*: Number of customers who opted out of receiving further reminders. A high cancellation rate may indicate irrelevance or excessive notifications.
-  * *Snooze*: Number of customers who postponed the reminder for a later time. This shows how many customers engage but prefer flexibility.
+  * _Set_: Total number of reminders sent to users. This indicates the campaign reach.
+  * _Clear_: Number of customers who manually dismissed or marked the reminder as completed. A high number suggests reminders are acknowledged but may also indicate your customers prefer fewer notifications.
+  * _Cancel_: Number of customers who opted out of receiving further reminders. A high cancellation rate may indicate irrelevance or excessive notifications.
+  * _Snooze_: Number of customers who postponed the reminder for a later time. This shows how many customers engage but prefer flexibility.
 * **Performance By Channels**
-  * *Channel Type*: The messaging channel used to deliver the reminder, such as push notifications, email, SMS, or InApp messages. The effectiveness of each channel varies based on user preferences and engagement patterns.
-  * *Number of Campaigns*: The total campaigns executed through each channel. This helps analyze the distribution of reminders across different channels.
-  * *Sent*: The total number of reminders sent through a particular channel. A higher number indicates a broader reach.
-  * *Impressions*: The number of times a reminder was displayed to customers (applicable to certain channels such as InApp messages). 
-  * *Clicked*: The number of customers who engaged with the reminder by clicking on it. A high click count suggests strong user interest and engagement.
+  * _Channel Type_: The messaging channel used to deliver the reminder, such as push notifications, email, SMS, or InApp messages. The effectiveness of each channel varies based on user preferences and engagement patterns.
+  * _Number of Campaigns_: The total campaigns executed through each channel. This helps analyze the distribution of reminders across different channels.
+  * _Sent_: The total number of reminders sent through a particular channel. A higher number indicates a broader reach.
+  * _Impressions_: The number of times a reminder was displayed to customers (applicable to certain channels such as InApp messages).
+  * _Clicked_: The number of customers who engaged with the reminder by clicking on it. A high click count suggests strong user interest and engagement.
 
 ## Individual Campaign Performance
 
-You can view the performance of each campaign by clicking it from the *Performance By Channels* section. This section offers a detailed breakdown of each reminder campaign's performance, enabling you to measure engagement and refine future campaigns for improved results. For more information, refer to the Campaign Stats document for the respective messaging channel.
+You can view the performance of each campaign by clicking it from the _Performance By Channels_ section. This section offers a detailed breakdown of each reminder campaign's performance, enabling you to measure engagement and refine future campaigns for improved results. For more information, refer to the Campaign Stats document for the respective messaging channel.
 
-<Image alt="Individual Campaign Performance" align="center" width="75% " border={true} src="https://files.readme.io/f1625f525c065cdb361e60ff2cef4bf2a6dfd5c10874ac80859e54ccb23b1bc2-Reminder_Campaign_Stats.png">
-  Individual Reminder Campaign Performance
-</Image>
+<Image align="center" alt="Individual Campaign Performance" border={true} caption="Individual Reminder Campaign Performance" src="https://files.readme.io/f1625f525c065cdb361e60ff2cef4bf2a6dfd5c10874ac80859e54ccb23b1bc2-Reminder_Campaign_Stats.png" width="75% " />
 
 # FAQs
 
@@ -321,10 +297,10 @@ Set up predefined triggers to notify customers about key actions such as bill pa
 
 ### How early can I schedule a Reminder?
 
-You can schedule Reminders from: 
+You can schedule Reminders from:
 
-* 90 days before the action date 
-* 60 days after the action date. 
+* 90 days before the action date
+* 60 days after the action date.
 
 For added flexibility, you can even schedule them up to 370 days in advance or 60 days post-deadline.
 

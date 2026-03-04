@@ -95,8 +95,6 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
   Refer to Google Cloud’s official guidance on [managing service account keys](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys).
 </Callout>
 
-This will render correctly in GitHub README, GitLab, Azure DevOps, and most Markdown-supported documentation platforms.
-
 ### Assign BigQuery Permissions
 
 Assign the required roles to the service account:

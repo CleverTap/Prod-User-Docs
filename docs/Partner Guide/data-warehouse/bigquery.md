@@ -51,7 +51,7 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
 If you are setting up Snowflake for the first time, ensure you have the following before proceeding with the CleverTap configuration:
 
 * **CleverTap Access** to configure BigQuery
-* A **Google Cloud Project** with [BigQuery enabled](https://cloud.google.com/bigquery/docs/enable-bigquery)
+* A **Google Cloud Project** with [BigQuery enabled](https://docs.cloud.google.com/bigquery/docs/enable-transfer-service)
 * A **BigQuery Project ID and dataset**
 * A **Service Account JSON key** with required permissions
 

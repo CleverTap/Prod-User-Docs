@@ -171,6 +171,8 @@ To configure the integration, you need your BigQuery project identifier. Follow 
 
 ### Find Existing Dataset ID
 
+To configure the integration, identify the dataset that CleverTap will use to read or write data in BigQuery.
+
 1. Go to _BigQuery_.
 2. Expand your project to view datasets.
 3. Select the dataset you intend to use with CleverTap.
@@ -183,6 +185,8 @@ SELECT schema_name FROM 'projectID'.INFORMATION_SCHEMA.SCHEMA;
 
 ### Find a Service Account
 
+Locate an existing service account with the required permissions, or create one if needed.
+
 1. Navigate to _IAM & Admin > Service Accounts_.
 2. Select an existing service account with sufficient permissions, or create a new one with the following permissions.
 
@@ -192,6 +196,8 @@ SELECT schema_name FROM 'projectID'.INFORMATION_SCHEMA.SCHEMA;
    | BigQuery Data Editor | Allows read/write access to datasets  |
 
 ### Download or Create a Service Account JSON Key
+
+To authenticate the integration, download an existing service account JSON key or create a new one from the Google Cloud Console.
 
 1. Select the service account.
 2. Go to the **Keys** tab.
@@ -221,6 +227,8 @@ After preparing your BigQuery project, dataset, and service account, connect Big
 4. After saving the connection, navigate to _[Create Import](doc:data-warehouse-import)_ in the _Import Connections_ dashboard.
 
 # FAQs
+
+This section answers common questions related to managing BigQuery connections and imports within CleverTap.
 
 ### How can I delete a connection that has running imports?
 

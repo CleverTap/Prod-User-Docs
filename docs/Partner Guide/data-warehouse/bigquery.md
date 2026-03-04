@@ -48,7 +48,7 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
 
 # Prerequisites for Integration
 
-If you are setting up Snowflake for the first time, ensure you have the following before proceeding with the CleverTap configuration:
+Before configuring BigQuery in CleverTap, ensure that the required Google Cloud resources and access permissions are available.
 
 * **CleverTap Access** to configure BigQuery
 * A **Google Cloud Project** with [BigQuery enabled](https://docs.cloud.google.com/bigquery/docs/enable-transfer-service)
@@ -68,28 +68,10 @@ If you do not already have a dataset, service account, or JSON key configured in
 
 To create each resource, perform the following steps:
 
-1. [Create a Dataset](#create-dataset)
-2. [Create a Service Account](#create-service-account)
-3. [Assign BigQuery Permissions](#assign-bigquery-permissions)
+1. [Create a Service Account](#create-service-account)
+2. [Assign BigQuery Permissions](#assign-bigquery-permissions)
+3. [Create a Dataset](#create-dataset)
 4. [Create a Service Account JSON Key](#create-service-account-json-key)
-
-### Create Dataset
-
-Create a dataset for CleverTap to store and query data:
-
-1. Go to _BigQuery_ in the Google Cloud Console.
-2. Select your project and click **Create dataset**.
-3. Enter:
-
-   * **Dataset ID** (for example, `clevertap_dataset`)
-   * **Location** (must remain unchanged)
-4. Click **Create dataset**.
-
-Or use SQL:
-
-```sql
-CREATE SCHEMA IF NOT EXISTS `[ProjectID].[DatasetID]`;
-```
 
 ### Create Service Account
 
@@ -136,6 +118,24 @@ Assign the required roles to the service account:
 * <Image align="center" border={true} caption="Add Roles" src="https://files.readme.io/2fb32a730950cf71532b5a3d7b8feb42df8c4c5d753b69ca8cb8e3b3b3642a82-big_query_6.png" />
 
 5. Click **Save**. To learn more, see [BigQuery IAM roles](https://cloud.google.com/bigquery/docs/access-control).
+
+### Create Dataset
+
+Create a dataset for CleverTap to store and query data:
+
+1. Go to _BigQuery_ in the Google Cloud Console.
+2. Select your project and click **Create dataset**.
+3. Enter:
+
+   * **Dataset ID** (for example, `clevertap_dataset`)
+   * **Location** (must remain unchanged)
+4. Click **Create dataset**.
+
+Or use SQL:
+
+```sql
+CREATE SCHEMA IF NOT EXISTS `[ProjectID].[DatasetID]`;
+```
 
 ### Create Service Account JSON Key
 

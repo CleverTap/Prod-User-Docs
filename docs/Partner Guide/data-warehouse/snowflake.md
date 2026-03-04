@@ -274,6 +274,7 @@ To find existing schemas in a specific database that are needed for CleverTap ex
 4. Alternatively, run the following SQL command to retrieve the schema names:
 
 ```sql
+SHOW SCHEMAS IN DATABASE CLEVERTAP_DB;
 ```
 
 # Set Up CleverTap Dashboard for Integration

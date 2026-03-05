@@ -1,5 +1,5 @@
 ---
-title: Custom Boards Beta
+title: Custom Boards 2.0
 excerpt: Understand what are custom boards in CleverTap.
 deprecated: false
 hidden: true

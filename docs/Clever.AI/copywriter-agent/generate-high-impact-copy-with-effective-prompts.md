@@ -51,7 +51,7 @@ _Example: "Mention 40% off. Include a fire emoji and a clear CTA to 'Shop the Sa
 
 **Result**
 
-Screenshot to be added
+<Image align="center" border={true} caption="Generated Copy" src="https://files.readme.io/77de9961adee78579c4498ee04deb51ebd7ad78a5468413950b1ba64b21ed8fb-image.png" />
 
 ## Prompt Tips
 

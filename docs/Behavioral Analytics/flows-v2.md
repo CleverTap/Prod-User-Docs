@@ -44,9 +44,11 @@ To get started with flows:
 
 3. Select the event, such as _Added to Cart_. You can filter it by a specific event property, such as _Nike_ shoes. The flow will show all the user paths after this event, such as the user selecting a product category, making a purchase, or simply dropping off.
 4. Select the user segment. For example, users who engage with the app a minimum of 4 times in the past week.
-5. Define the _Look ahead window_. The look-ahead window is the specified time period after which the subsequent events that follow the main event are recorded. For example, if the look-ahead window is set to 1 day and the selected event is the App launch, then any event after the App Launch within 1 day will be part of the Flow. For more details about the Look Ahead window, refer to the [Look Ahead Window](doc:flows-v2#look-ahead-window).
-6. Specify the From and To Date from the right pane. This is the specified time period for the flow.
-7. Click **View Analysis**.  The flow for the selected event appears.
+5. (Optional) Use _Split by Property_ option to break down the flow results by an event property. Splitting helps you compare how user journeys differ across categories. For example, you can split the _Added to Cart_ event by the brand property to compare how users who add Nike, Adidas, or Puma products move through the purchase journey. Each property value appears as a separate path in the flow visualization.
+6. (Optional) Use _Exclude Events_ option to remove specific events from the flow analysis. This helps simplify the flow and focus on the most relevant user actions. For example, you can exclude events such as _App Launched_ or _Notification Viewed_ if they are not meaningful for understanding the purchase journey. Excluding such events prevents them from appearing as intermediate steps in the flow.
+7. Define the _Look ahead window_. The look-ahead window is the specified time period after which the subsequent events that follow the main event are recorded. For example, if the look-ahead window is set to 1 day and the selected event is the App launch, then any event after the App Launch within 1 day will be part of the Flow. For more details about the Look Ahead window, refer to the [Look Ahead Window](doc:flows-v2#look-ahead-window).
+8. Specify the From and To Date from the right pane. This is the specified time period for the flow.
+9. Click **View Analysis**.  The flow for the selected event appears.
 
 # Flow Analysis
 

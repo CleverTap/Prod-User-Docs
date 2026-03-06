@@ -163,7 +163,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     <div>
       <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
     </div>
-    <h3 class="release-note-heading">Multi-Value Arrays in Custom Event Properties</h3>
+    <h3 class="release-note-heading">Multi-Value Arrays for Custom Event Properties</h3>
     <div class="badge new-feature">NEW FEATURE</div>
   </div>
 
@@ -180,7 +180,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/events#multi-value-array-for-custom-event-properties" target="_blank">Multi-Value Array for Custom Event Properties</a> and <a href="https://developer.clevertap.com/docs/events#adding-multi-value-arrays-to-custom-event-properties" target="_blank">Adding Multi-Value Arrays to Custom Event Properties</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/events#multi-value-array-for-custom-event-properties" target="_blank">Multi-Value Arrays for Custom Event Properties</a> and <a href="https://developer.clevertap.com/docs/events#adding-multi-value-arrays-to-custom-event-properties" target="_blank">Adding Multi-Value Arrays to Custom Event Properties</a>.</p>
   </div>
 
   <hr/>

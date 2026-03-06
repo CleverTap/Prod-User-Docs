@@ -152,6 +152,41 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## March
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="multi-value-arrays-in-custom-event-properties">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#multi-value-arrays-in-custom-event-properties"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="ICON_URL" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Multi-Value Arrays in Custom Event Properties</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now send multiple values within a single custom event property using Multi-Value arrays. This helps in modelling richer event data without sending multiple events.</p>
+
+    <p>With a Multi-Value array, you can:</p>
+    <p>
+      <ul>
+        <li>Capture multiple values within a single event property</li>
+        <li>Segment audiences using contains and does not contain operators in NextGen Segment Builder</li>
+        <li>Personalize campaigns and journeys using Liquid Tags and conditional messaging</li>
+        <li>Include up to 100 values per event property</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/events#multi-value-array-for-custom-event-properties" target="_blank">Multi-Value Array for Custom Event Properties/a> and <a href="https://developer.clevertap.com/docs/events#adding-multi-value-arrays-to-custom-event-properties" target="_blank">Adding Multi-Value Arrays to Custom Event Properties</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## February
 
 <HTMLBlock>{`

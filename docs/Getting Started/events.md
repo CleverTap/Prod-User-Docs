@@ -148,7 +148,73 @@ CleverTap supports the following data types:
 * Boolean
 * Mixed
 
-You can use an array only with the Charged event. All others will return an incorrect data type if using an array.
+# Multi-Value Array for Custom Event Properties
+
+Multi-value arrays allow brands to capture multiple related values within a single event property. Instead of sending separate events for each item, brands can send a single event containing an array of values. This helps represent actions that involve multiple items while keeping event tracking simpler and more efficient.
+
+CleverTap supports Multi-value arrays to help brands model richer event data. Arrays in the `eventData` payload can contain strings or integers. However, CleverTap stores all Multi-value array entries internally as strings.
+
+## Use Cases
+
+**E-Commerce Orders**
+Multi-value arrays are beneficial in scenarios where a single purchase contains multiple items. For example, an `Order Confirmation` can include an array of product IDs or categories purchased in that transaction. This allows brands to analyze purchase patterns and create segments based on items included in past orders.
+
+**Media and Entertainment Consumption**
+Streaming platforms can capture multiple genres, tags, or content IDs associated with a user session. For example, a `Content Watched` event can include an array of genres such as Action, Thriller, Drama. This enables better audience segmentation and personalized content recommendations based on viewing preferences.
+
+<Callout icon="📘" theme="info">
+  **`Charged -> Items` is Reserved**
+
+  Multi-value arrays do not apply to the `Charged` event’s `Items` key. The `Charged → Items` field is a reserved implementation and supports an array of objects by design.
+
+  For more information, refer to [Charged as a Special Event](https://developer.clevertap.com/docs/events#what-makes-charged-a-special-event).
+</Callout>
+
+The following is a sample JSON showing the Multi-value array:
+
+```json
+{
+  "eventName": "Order Confirmation",
+  "eventData": {
+    "Category Name": [
+      "Milk Products",
+      "Milk Products",
+      "Vegetable",
+      "Vegetable",
+      "Vegetable"
+    ],
+    "Cart value": 1054.5,
+    "Currency": "INR",
+    "Cart items": [
+      "Yogurt",
+      "Ghee",
+      "Cucumber",
+      "Onion",
+      "Green Chilli"
+    ],
+    "Cart items id": [78, 288, 150, 319, 109],
+    "Category ID": [39, 39, 41, 41, 41]
+  }
+}
+```
+
+The following table summarizes the limits and ingestion behavior for Multi-value arrays in event properties
+
+| Constraint                            | Limit          | Behavior if Limit is Exceeded                                 |
+| ------------------------------------- | -------------- | ------------------------------------------------------------- |
+| Maximum values per event property key | 100 items      | Additional values beyond 100 are dropped using FIFO logic     |
+| Maximum length per array value        | 512 characters | Values exceeding 512 characters are dropped during ingestion. |
+| Empty array after processing          | Not allowed    | The event property is removed during ingestion                |
+
+You can use Multi-value arrays for event properties across platforms, including filtering in [NextGen Segment Builder](doc:segmentation), personalization, and conditional messaging.
+
+The following image shows the Multi-value array in the NextGen Segment Builder:
+
+<Image align="center" border={true} caption="Multi-Value Array in Segment Builder" src="https://files.readme.io/503b9237448b8b0fec72d319a7ca0c37e37aa2a52f642534e8c37fb7362f2649-image.png" />
+
+The following image shows the Multi-value array for Personalization:
+
+<Image align="center" border={true} caption="Using Multi-Value Array for Personalization" src="https://files.readme.io/5d22d18bed80e329e68567bb594016072fb40c0e3cb5e4146e72890921dad00d-image_7.png" />
 
 # Event Metadata Recorded Automatically
 

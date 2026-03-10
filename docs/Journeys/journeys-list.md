@@ -54,7 +54,7 @@ The following details are displayed for each journey:
       </td>
 
       <td>
-        Displays the Journey name and the name of the version that is on the list. It also displays the unique identifier for the Journey. This ID remains the same across versions.
+        Displays the Journey name and version name present on the list page. It also displays the unique Journey identifier. This ID remains the same across versions.
       </td>
     </tr>
 
@@ -64,7 +64,7 @@ The following details are displayed for each journey:
       </td>
 
       <td>
-        Displays the date and time when the Journey state changed to _Running_ and users started entering the Journey.
+        Displays the date and time when the Journey state changed to _Running_, and users started entering the Journey.
       </td>
     </tr>
 

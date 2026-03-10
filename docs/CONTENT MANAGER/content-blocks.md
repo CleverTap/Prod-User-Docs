@@ -309,7 +309,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
   </tbody>
 </Table>
 
-# Personalize Content Blocks Using Event Personalization
+### Personalize Content Blocks Using Event Personalization
 
 You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data.
 
@@ -349,7 +349,7 @@ Hello User,
 You watched your favorite series
 ```
 
-# Personalize Content Blocks Using Reminder Personalization
+### Personalize Content Blocks Using Reminder Personalization
 
 To add reminder-based personalization in a Content Block:
 

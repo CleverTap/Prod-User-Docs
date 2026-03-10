@@ -289,7 +289,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
 
@@ -303,7 +303,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
   </tbody>

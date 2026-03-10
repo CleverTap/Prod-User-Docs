@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-The _Journeys List_ page on the CleverTap Dashboard provides a comprehensive overview of all the Journeys created on the dashboard with detailed performance statistics. 
+The _Journeys List_ page on the CleverTap Dashboard provides a comprehensive overview of all the Journeys created on the dashboard with detailed performance statistics.
 
 This section also lets you easily search for and filter specific Journeys.
 
@@ -136,7 +136,7 @@ The following details are displayed for each journey:
       </td>
 
       <td>
-        Indicates the percentage of Goal Met.<li> If the goal exists, it is calculated as [(Number of users who met the goal/Total number of qualified users) * 100].</li><li>If the goal does not exist, it is calculated as [(Number of users who exited last node/Total number of qualified users) * 100.</li>
+        Indicates the percentage of Goal Met. <ul><li> If the goal exists, it is calculated as [(Number of users who met the goal/Total number of qualified users) * 100].</li><li>If the goal does not exist, it is calculated as [(Number of users who exited last node/Total number of qualified users) * 100.</li></ul>
       </td>
     </tr>
 

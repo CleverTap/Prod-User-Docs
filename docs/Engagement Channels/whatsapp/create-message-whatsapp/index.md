@@ -286,7 +286,7 @@ Now, you need to set up the _What_ section where you have to define the content 
 
 Select from the approved templates.
 
-<Image align="center" alt="Select any template from the list of Approved Templates" border={true} caption="Select a Template" title="Whatsapp Templates" src="https://files.readme.io/b4f4fbf-whatsapp_editor.png" />
+<Image align="center" border={true} caption="Select a Template" src="https://files.readme.io/95deed88d021bfbfeb1c8f9c63f27276e946ef14e028cae678af0af7482fa033-select_a_template.png" />
 
 Fill in the details and click **Done**. For information about using WhatsApp editor, refer to [WhatsApp editor](https://docs.clevertap.com/docs/whatsapp-message-templates).
 

@@ -294,7 +294,7 @@ To create a carousel template, follow these steps:
 
 4. Select the _Templates_ tab and click **+Template**.
 
-   <Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/c4ddc53-temp.png" />
+<Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/ed0154b94d2af90d160785c8e12848eeca78f6a50930a08a9982bfa4f6e77c0b-create_template.png" />
 
 5. Select the _Carousel Template_.
 
@@ -335,7 +335,7 @@ To edit or delete an existing template:
 2. Select any template and click the ellipsis icon adjacent to it.
 3. Click **Overview** and then perform the desired operation.
 
-<Image align="center" alt="Template Overview" border={true} caption="Template Overview" src="https://files.readme.io/7a3fd5009c604579074bea635ccbc8cb67a189db737bc48b55bf964bc5f75cb7-Template_operations_-_WhatsApp.png" width="45% " />
+<Image align="center" alt="Template Overview" border={true} caption="Template Overview" src="https://files.readme.io/d3d9f9e48704a227e442a9bcc267240dcedda8944873e6776f0d1cb842e53206-overview.png" width="45% " />
 
 4. Similarly, select **Refresh Status** from the ellipsis menu to refresh the approval status of an existing template.
 
@@ -369,7 +369,7 @@ CleverTap allows you to easily import templates from your WhatsApp Business Mana
 2. From the list of available providers, select the appropriate provider's nickname.
 3. Click the **Templates** tab and select **Import Templates**. The _Import Template_ button is visible only for CleverTap BSP. Clicking it will open a window for importing templates.
 
-<Image align="center" alt="Import Template " border={true} caption="Import Template" src="https://files.readme.io/8afb1f1-import_temp.png" />
+<Image align="center" alt="Import Template " border={true} caption="Import Template" src="https://files.readme.io/ca3870bd545767af14a5833622c8133e7cc52178bdefc31f41aa8e882a736a04-create_template.png" />
 
 The _Import Template_ window opens.
 
@@ -399,7 +399,7 @@ You can send a test message using the saved templates from the CleverTap dashboa
 
 1. From the Templates tab, click the ellipsis below the required template and click **Send Test**.
 
-<Image align="center" alt="Select Send Test!" border={true} caption="Select Send Test!" src="https://files.readme.io/983d0c3db08032192f20811606b8bf5d142a3b901ceb7651c180af0a154af8c6-Template_operations_-_WhatsApp.png" width="40% " />
+<Image align="center" alt="Select Send Test!" border={true} caption="Select Send Test" src="https://files.readme.io/30e94225e48e3f4120643d16af7ce367f9bfc211aa2bf19b9759d865810e4d9e-overview.png" width="40% " />
 
 2. Select the test profiles or manually enter the mobile number to whom you want to send the message and click **Send Test**.
 

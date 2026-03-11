@@ -1,5 +1,8 @@
 ---
 title: Partner Segments
+excerpt: >-
+  Learn how to import and refresh audience segments from your data warehouse in
+  CleverTap.
 deprecated: false
 hidden: true
 metadata:

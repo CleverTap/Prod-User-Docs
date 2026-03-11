@@ -209,7 +209,7 @@ The following steps explain how to create and configure a segment import:
 
 ### Start Import
 
-@Krishna, Add leading statement
+To start importing partner segments, perform the following steps:
 
 1. Navigate to the _Segment Imports_ tab and click **Create Import**.
 2. Select the _Warehouse connection_ you want to use from the dropdown list.

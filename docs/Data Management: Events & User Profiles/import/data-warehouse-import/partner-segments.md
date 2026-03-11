@@ -174,17 +174,11 @@ Create a connection to allow CleverTap to securely access your data warehouse an
 2. Choose a partner to import the segment.
 3. Click the _Connections_ tab, then click **Add Connection**.
 4. Select Google **BigQuery** as the warehouse type.
-5. Enter the required [BigQuery configuration details](doc:bigquery#use-existing-bigquery-credentials):
-
-| Field                          | Description                                                                                    |
-| ------------------------------ | ---------------------------------------------------------------------------------------------- |
-| **Connection Name**            | A descriptive name for this connection (for example, "Marketing Warehouse - BigQuery").        |
-| **Project ID**                 | Your Google Cloud project ID where BigQuery is enabled.                                        |
-| **Dataset ID**                 | The BigQuery dataset that contains the tables or views you want to query.                      |
-| **Service Account Key (JSON)** | Upload or paste the JSON key file for the service account that has read access to the dataset. |
-
-5. Click **Test Connection** to verify that CleverTap can reach your warehouse. If the test succeeds, a _Connected_ status is displayed. If it fails, review the error message (for example,_Invalid credentials_ or _Network timeout_) and correct the configuration.
-6. Click **Save** to store the connection.
+5. Enter the required configuration details based on your warehouse:
+   * For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
+   * For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).
+6. Click **Test Connection** to verify that CleverTap can reach your warehouse. If the test succeeds, a _Connected_ status is displayed. If it fails, review the error message (for example, _Invalid credentials_ or _Network timeout_) and correct the configuration.
+7. Click **Save** to store the connection.
 
 <Callout icon="📘" theme="info">
   #### Note
@@ -211,9 +205,9 @@ The following steps explain how to create and configure a segment import:
 
 ### Start Import
 
-To start importing partner segments, perform the following steps:
+Create a segment import to fetch audience data from your connected warehouse and build Partner Segments in CleverTap.
 
-1. Navigate to the _Segment Imports_ tab and click **Create Import**.
+1. Go to the _Segment Imports_ tab and click **Create Import**.
 2. Select the _Warehouse connection_ you want to use from the dropdown list.
 3. Select **Partner segments**.
 

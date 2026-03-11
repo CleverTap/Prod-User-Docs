@@ -8,24 +8,26 @@ hidden: true
 metadata:
   robots: index
 ---
+<br />
+
 # Overview
 
 Partner Segments enable you to import audience segments from your external data warehouse directly into CleverTap. Instead of manually exporting user lists and uploading them as CSV files, you can connect your warehouse, define segments using SQL queries or table selections, and synchronize the resulting audiences into CleverTap on a configurable schedule.
 
-Once imported, these Partner Segments work alongside CleverTap’s native segments. You can use them to target or exclude users in Campaigns and Journeys across all messaging channels, including [Push](doc:push), [Email](doc:email), [SMS](doc:sms), [In-App](doc:in-app), [WhatsApp](doc:whatsapp), and [App Inbox](doc:app-inbox).
+Once imported, these Partner Segments work alongside CleverTap’s native segments. You can use them to target or exclude users in Campaigns and Journeys across all messaging channels, including [Push](doc:push), [Email](doc:email), [SMS](doc:sms), [In-App](doc:app), [WhatsApp](doc:whatsapp), and [App Inbox](doc:app-inbox).
 
 The following are some of the key benefits of setting up Partner Segments:
 
 * **Automate data imports**: Connect your warehouse once and schedule automatic refreshes. This removes the need to manually export CSV files or move data between systems.
-* **Keep segments up to date**: Set refresh frequencies from every 15 minutes to weekly so your campaigns always target the latest audience data. 
+* **Keep segments up to date**: Set refresh frequencies from every 15 minutes to weekly so your campaigns always target the latest audience data. (update this sentence frequency refresh and campaign refresh explain)
 * **Use insights from your warehouse**: Activate audiences based on attributes already calculated in your warehouse, such as purchase likelihood, loyalty tiers, or churn risk.
-* **Maintain security and compliance**: Your data remains in the warehouse; only the segment results are updated in CleverTap. Credentials are encrypted, and all activities are tracked in audit logs.
-* **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like any standard [CleverTap segments](doc:segmentation).
+* **Maintain security and compliance**: Your data remains in the warehouse, only the segments get updated (write this better). Credentials are encrypted, and all activities are tracked in audit logs.
+* **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like standard [CleverTap segments](doc:segmentation).
 
 <Callout icon="📘" theme="info">
   #### Supported Data Warehouse
 
-  Currently, CleverTap supports [Snowflake](doc:snowflake) and [Google BigQuery](doc:bigquery) as the warehouse connector. Support for Databricks, Amazon Redshift, and Microsoft Fabric will be added in upcoming releases.
+  Currently, CleverTap supports Snowflake (add link) and [Google BigQuery](doc:bigquery) as the warehouse connector. Support for Databricks, Amazon Redshift, and Microsoft Fabric will be added in upcoming releases.
 </Callout>
 
 # Use Cases
@@ -34,19 +36,19 @@ The following examples show how Partner Segments can be used to create audiences
 
 ### E-Commerce: Retarget High-Value Cart Abandoners
 
-A retail company computes a propensity-to-purchase score in the warehouse using ML models. They create a segment of "High-value cart abandoners in the last week" using a BigQuery query. The segment is refreshed daily. Marketers use it in CleverTap to run retargeting campaigns with special offers while excluding these users from generic broadcasts.
+A retail company computes a propensity-to-purchase score in the warehouse using ML models. They create a segment of "high-value cart abandoners in the last week" using a BigQuery query. The segment is refreshed daily. Marketers use it in CleverTap to run retargeting campaigns with special offers while excluding these users from generic broadcasts.
 
 ### FinTech: Nurture New Account Holders
 
-A FinTech company identifies "New account holders who haven’t made their first deposit in 14 days" from their warehouse, combining onboarding data with core banking records. Users flagged by the fraud system are excluded via the SQL query. The imported segment powers a nurturing journey that encourages first-time depositors.
+A FinTech company identifies "new account holders who haven’t made their first deposit in 14 days" from their warehouse, combining onboarding data with core banking records. Users flagged by the fraud system are excluded via the SQL query. The imported segment powers a nurturing journey that encourages the first deposit.
 
 ### Food & Delivery: Personalize by Cuisine Preference
 
-A food delivery platform builds segments based on order history, such as "Users who prefer Italian cuisine with average order value above $50." These segments, derived from complex joins across order, restaurant, and user tables, are refreshed weekly and used for personalized partnership promotions.
+A food delivery platform builds segments based on order history, such as "users who prefer Italian cuisine with average order value above $50." These segments, derived from complex joins across order, restaurant, and user tables, are refreshed weekly and used for personalized partnership promotions.
 
 ### Gaming: Re-engage High-Potential Spenders
 
-A gaming company segments players by in-game events and spend, for example, "Players who reached level 10 but haven’t made an in-app purchase". These segments are calculated in the analytics warehouse of the game and synced to CleverTap for targeted in-game promotions via push and in-app messaging.
+A gaming company segments players by in-game events and spend (for example, "players who reached level 10 but haven’t made an in-app purchase"). These segments are calculated in the game’s analytics warehouse and synced to CleverTap for targeted in-game promotions via push and in-app messaging.
 
 ### Subscriptions: Prevent Churn
 
@@ -135,19 +137,19 @@ Before setting up Partner Segments, ensure the following requirements are met:
 * **BigQuery/Snowflake access**: You need a Google Cloud project with BigQuery enabled and a [service account created](doc:bigquery#create-service-account) with read access to the datasets and tables you want to query.
 * **User identifier column**: Your SQL query results or selected table must contain a column that maps to a CleverTap Identity field (such as email, phone number, or customer identity).
 * **CleverTap dashboard access**: You need appropriate permissions in CleverTap to create connections and segment imports. Contact your CleverTap admin if you do not have the required access.
-* **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.
+* **Feature enablement**: Partner Segments (Data Warehouse) must be enabled for your account. Contact your Account Manager to activate this feature.
 
 <Callout icon="🚧" theme="warn">
   #### Important
 
-  Running queries on your data warehouse (for example, BigQuery or Snowflake)  may incur charges according to your warehouse provider pricing. These costs are billed directly by the provider.
+  Warehouse query costs are borne by your organization. Running queries against your BigQuery OR Snowflake instance may incur charges on your Google Cloud account.
 </Callout>
 
 # Set Up Partner Segments
 
 Setting up Partner Segments consists of the following five main steps:
 
-1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery/Snowflake credentials and configuration details.
+1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery/ Snowflake credentials and configuration details.
 2. [Create a segment](doc:partner-segments#create-segment-import) import by writing an SQL query or selecting a table. Map a result column to a CleverTap user identifier.
 3. [Map the Identity Column](do:cpartner-segments#map-identity-column).
 4. [(Optional) Enable Partner Sync Event](doc:partner-segments#enable-partner-sync-event).
@@ -209,7 +211,7 @@ The following steps explain how to create and configure a segment import:
 
 ### Start Import
 
-To start importing partner segments, perform the following steps:
+@Krishna, Add leading statement
 
 1. Navigate to the _Segment Imports_ tab and click **Create Import**.
 2. Select the _Warehouse connection_ you want to use from the dropdown list.
@@ -395,8 +397,7 @@ Partner Segments work with all messaging channels: Push, Email, SMS, In-App, Wha
 If the Partner Sync event is enabled on the segment import, you can create live behavior campaigns using the _Partner Sync_ event. The event includes the following properties:
 
 * **Segment Name**: The name of the Partner Segment.
-* **Action**: Whether the user was Added or Removed from the segment.
-  This allows you to trigger real-time messaging when users enter or exit a warehouse-defined audience.
+* **Action**: Whether the user was Added or Removed from the segment. This allows you to trigger real-time messaging when users enter or exit a warehouse-defined audience.
 
 If the Partner Sync event is disabled on the segment import, you can create live behavior campaigns using the Include/Exclude segments in _Past behaviour_.
 

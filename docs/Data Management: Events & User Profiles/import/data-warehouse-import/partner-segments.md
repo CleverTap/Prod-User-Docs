@@ -12,7 +12,7 @@ metadata:
 
 Partner Segments enable you to import audience segments from your external data warehouse directly into CleverTap. Instead of manually exporting user lists and uploading them as CSV files, you can connect your warehouse, define segments using SQL queries or table selections, and synchronize the resulting audiences into CleverTap on a configurable schedule.
 
-Once imported, these Partner Segments work alongside CleverTap’s native segments. You can use them to target or exclude users in Campaigns and Journeys across all messaging channels, including [Push](doc:push), [Email](doc:email), [SMS](doc:sms), [In-App](doc:app), [WhatsApp](doc:whatsapp), and [App Inbox](doc:app-inbox).
+Once imported, these Partner Segments work alongside CleverTap’s native segments. You can use them to target or exclude users in Campaigns and Journeys across all messaging channels, including [Push](doc:push), [Email](doc:email), [SMS](doc:sms), [In-App](doc:in-app), [WhatsApp](doc:whatsapp), and [App Inbox](doc:app-inbox).
 
 The following are some of the key benefits of setting up Partner Segments:
 

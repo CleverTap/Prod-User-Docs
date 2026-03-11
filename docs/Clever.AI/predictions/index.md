@@ -18,15 +18,36 @@ next:
 >
 > The feature is currently released in Private Beta for select CleverTap customers. For early access to this feature, contact your Account Manager.
 
-In a world driven by user data, staying ahead is not just an advantage—it is a necessity. CleverTap’s Predictions feature **leverages advanced machine learning to forecast user actions**, enabling you to make strategic decisions that propel your engagement efforts and drive growth. Imagine you are a part of a marketing team gearing up for the Black Friday Sale. And, you want to identify the users who have the most likelihood of making a purchase. This is where Predictions come into play. Predictions **identify how likely your target segment is to perform a specific action within a defined time frame, enabling you to tailor your strategies for maximum impact**.
+In a world driven by user data, staying ahead is not just an advantage—it is a necessity. CleverTap’s Predictions feature **leverages advanced machine learning to forecast user actions**, enabling you to make strategic decisions that propel your engagement efforts and drive growth. Imagine you are a part of a marketing team gearing up for the Black Friday Sale. And you want to identify the users who have the most likelihood of making a purchase. This is where Predictions come into play. Predictions **identify how likely your target segment is to perform a specific action within a defined time frame, enabling you to tailor your strategies for maximum impact**.
 
-### Power of Predictions
+# Video Tutorial
+
+You can watch the following video to learn more about Predictions.
+
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+                                                    src="https://clevertap.portal.trainn.co/share/3isk1RYtOZqVI8zPSZZJLg/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
+
+# Power of Predictions
 
 Conventional campaign targeting typically involves creating a campaign for predefined target segments based on past behavior. Meanwhile, Predictions **analyze current and historical data to estimate the likelihood of specific future actions**. This allows you to target users more effectively by tailoring incentives and communication strategy while **maximizing marketing ROI** based on anticipated actions.
 
-<Image alt="Categorizing Users into Low, Medium, or High Likelihood Groups" align="center" border={true} src="https://files.readme.io/9ab1c4c6f11c32b17a7da7287c63b1dbffd470329e9192b052ba1d8ebbc61544-first_run_experience.svg">
-  Maximizing Marketing ROI
-</Image>
+<Image align="center" alt="Categorizing Users into Low, Medium, or High Likelihood Groups" border={true} caption="Maximizing Marketing ROI" src="https://files.readme.io/9ab1c4c6f11c32b17a7da7287c63b1dbffd470329e9192b052ba1d8ebbc61544-first_run_experience.svg" />
 
 Additionally, it also offers several significant benefits:
 
@@ -36,7 +57,7 @@ Additionally, it also offers several significant benefits:
 * **Personalized User Experiences**: Predictions help you customize user experiences based on their likelihood to engage or convert, enhancing satisfaction and loyalty.
 * **Data-Driven Decisions**: Predictive analytics provide actionable insights based on historical data, enabling you to make informed decisions and strategize more effectively.
 
-### Getting Started
+# Getting Started
 
 Here are some of the essential steps to get started:
 
@@ -46,7 +67,7 @@ Here are some of the essential steps to get started:
 
 For instance, you are running a marketing campaign targeting users who have high likelihood to watch a video. By leveraging this feature, you can effectively prioritize your marketing efforts and ensure your engagement strategies are data-driven.
 
-### How Does It Work?
+# How Does It Work?
 
 Here is a quick look at how CleverTap's Predictions feature works:
 

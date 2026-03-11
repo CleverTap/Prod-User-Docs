@@ -432,7 +432,7 @@ Find answers to the following common questions about Partner Segments:
 
 ### Can I use complex SQL queries with JOINs or subqueries?
 
-Yes. Any valid BigQuery SQL query is supported, as long as the final result set includes a column that can be mapped to a CleverTap user identifier. Performance depends on your warehouse configuration and query complexity.
+Yes. Any valid BigQuery/Snowflake SQL query is supported, as long as the final result set includes a column that can be mapped to a CleverTap user identifier. Performance depends on your warehouse configuration and query complexity.
 
 ### What happens if a refresh run fails?
 

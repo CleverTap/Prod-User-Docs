@@ -168,12 +168,12 @@ Use the following options to configure and manage your connections:
 
 ### Create Connection
 
-Create a connection to allow CleverTap to securely access your data warehouse and run queries for Partner Segments. Once configured, the connection can be used to define and refresh segment imports. (remove this part and link bogquery and snowflake docs)
+Create a connection to allow CleverTap to securely access your data warehouse and run queries for Partner Segments. Once configured, the connection can be used to define and refresh segment imports.
 
-1. Go to the  _Segments_ > _Create Segments_ and select **Partner Segments** in your CleverTap dashboard.
+1. Go to the  _Segments_ > _Create Segments_ and select **Partner Segments** from your CleverTap dashboard.
 2. Choose a partner to import the segment.
 3. Click the _Connections_ tab, then click **Add Connection**.
-4. Select Google **BigQuery** as the warehouse type.
+4. Select your warehouse type (**BigQuery** or **Snowflake**).
 5. Enter the required configuration details based on your warehouse:
    * For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
    * For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).

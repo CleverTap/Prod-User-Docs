@@ -1,6 +1,5 @@
 ---
 title: Generic SMTP
-excerpt: Email Partner
 deprecated: false
 hidden: true
 link:

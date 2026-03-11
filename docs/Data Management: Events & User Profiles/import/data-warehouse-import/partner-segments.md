@@ -352,7 +352,9 @@ Each import displays a color-coded health indicator based on the most recent ref
 
 ## Manual Refresh
 
-To trigger an immediate refresh for any partner segments, click the **Run** button on the Import Listing page. The import status changes to Running while data is being fetched.
+Partner segments are refreshed according to the configured sync schedule (for example, every 3 days). If the segment is updated at the partner’s end and you want to use the latest data before the next scheduled sync, you can trigger a manual refresh.
+
+To trigger an immediate refresh for any partner segments, click **Run** on the _Import Listing_ page. The import status changes to Running while data is being fetched.
 
 ## Edit Import
 

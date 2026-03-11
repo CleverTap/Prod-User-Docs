@@ -19,13 +19,13 @@ The following are some of the key benefits of setting up Partner Segments:
 * **Automate data imports**: Connect your warehouse once and schedule automatic refreshes. This removes the need to manually export CSV files or move data between systems.
 * **Keep segments up to date**: Set refresh frequencies from every 15 minutes to weekly so your campaigns always target the latest audience data. 
 * **Use insights from your warehouse**: Activate audiences based on attributes already calculated in your warehouse, such as purchase likelihood, loyalty tiers, or churn risk.
-* **Maintain security and compliance**: Your data remains in the warehouse, only the segments get updated (write this better). Credentials are encrypted, and all activities are tracked in audit logs.
-* **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like standard [CleverTap segments](doc:segmentation).
+* **Maintain security and compliance**: Your data remains in the warehouse; only the segment results are updated in CleverTap. Credentials are encrypted, and all activities are tracked in audit logs.
+* **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like any standard [CleverTap segments](doc:segmentation).
 
 <Callout icon="📘" theme="info">
   #### Supported Data Warehouse
 
-  Currently, CleverTap supports Snowflake (add link) and [Google BigQuery](doc:bigquery) as the warehouse connector. Support for Databricks, Amazon Redshift, and Microsoft Fabric will be added in upcoming releases.
+  Currently, CleverTap supports [Snowflake](doc:snowflake) and [Google BigQuery](doc:bigquery) as the warehouse connector. Support for Databricks, Amazon Redshift, and Microsoft Fabric will be added in upcoming releases.
 </Callout>
 
 # Use Cases
@@ -34,19 +34,19 @@ The following examples show how Partner Segments can be used to create audiences
 
 ### E-Commerce: Retarget High-Value Cart Abandoners
 
-A retail company computes a propensity-to-purchase score in the warehouse using ML models. They create a segment of "high-value cart abandoners in the last week" using a BigQuery query. The segment is refreshed daily. Marketers use it in CleverTap to run retargeting campaigns with special offers while excluding these users from generic broadcasts.
+A retail company computes a propensity-to-purchase score in the warehouse using ML models. They create a segment of "High-value cart abandoners in the last week" using a BigQuery query. The segment is refreshed daily. Marketers use it in CleverTap to run retargeting campaigns with special offers while excluding these users from generic broadcasts.
 
 ### FinTech: Nurture New Account Holders
 
-A FinTech company identifies "new account holders who haven’t made their first deposit in 14 days" from their warehouse, combining onboarding data with core banking records. Users flagged by the fraud system are excluded via the SQL query. The imported segment powers a nurturing journey that encourages the first deposit.
+A FinTech company identifies "New account holders who haven’t made their first deposit in 14 days" from their warehouse, combining onboarding data with core banking records. Users flagged by the fraud system are excluded via the SQL query. The imported segment powers a nurturing journey that encourages first-time depositors.
 
 ### Food & Delivery: Personalize by Cuisine Preference
 
-A food delivery platform builds segments based on order history, such as "users who prefer Italian cuisine with average order value above $50." These segments, derived from complex joins across order, restaurant, and user tables, are refreshed weekly and used for personalized partnership promotions.
+A food delivery platform builds segments based on order history, such as "Users who prefer Italian cuisine with average order value above $50." These segments, derived from complex joins across order, restaurant, and user tables, are refreshed weekly and used for personalized partnership promotions.
 
 ### Gaming: Re-engage High-Potential Spenders
 
-A gaming company segments players by in-game events and spend (for example, "players who reached level 10 but haven’t made an in-app purchase"). These segments are calculated in the game’s analytics warehouse and synced to CleverTap for targeted in-game promotions via push and in-app messaging.
+A gaming company segments players by in-game events and spend, for example, "Players who reached level 10 but haven’t made an in-app purchase". These segments are calculated in the analytics warehouse of the game and synced to CleverTap for targeted in-game promotions via push and in-app messaging.
 
 ### Subscriptions: Prevent Churn
 

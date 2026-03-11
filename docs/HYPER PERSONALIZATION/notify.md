@@ -44,8 +44,6 @@ You can watch the following video to learn more about Notify.
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
 
-#
-
 # Use Cases
 
 Notify is ideal for delivering critical transactional messages across multiple touchpoints. The following use cases show how Notify enables real-time communication to enhance user experience, strengthen security, and ensure operational clarity:

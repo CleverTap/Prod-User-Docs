@@ -250,7 +250,7 @@ To create a Limited-Time Offer template in CleverTap, follow these steps:
 
 4. Select the _Templates_ tab and click **+Template**.
 
-   <Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/fb10d89-temp.png" />
+   <Image align="center" border={true} caption="Create a Template" src="https://files.readme.io/33da56f8406f438fe9fe23392a86eb8e900bd46c4fbfebb8544b86130a678d1a-create_template.png" />
 
 5. Select the _Limited Time Offer_ template. **_Limited Time Offer_ templates are only available with Marketing category.**
 

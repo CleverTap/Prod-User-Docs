@@ -17,7 +17,7 @@ Once imported, these Partner Segments work alongside CleverTap’s native segmen
 The following are some of the key benefits of setting up Partner Segments:
 
 * **Automate data imports**: Connect your warehouse once and schedule automatic refreshes. This removes the need to manually export CSV files or move data between systems.
-* **Keep segments up to date**: Set refresh frequencies from every 15 minutes to weekly so your campaigns always target the latest audience data. (update this sentence frequency refresh and campaign refresh explain)
+* **Keep segments up to date**: Set refresh frequencies from every 15 minutes to weekly so your campaigns always target the latest audience data. 
 * **Use insights from your warehouse**: Activate audiences based on attributes already calculated in your warehouse, such as purchase likelihood, loyalty tiers, or churn risk.
 * **Maintain security and compliance**: Your data remains in the warehouse, only the segments get updated (write this better). Credentials are encrypted, and all activities are tracked in audit logs.
 * **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like standard [CleverTap segments](doc:segmentation).

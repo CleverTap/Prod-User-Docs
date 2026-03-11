@@ -135,19 +135,19 @@ Before setting up Partner Segments, ensure the following requirements are met:
 * **BigQuery/Snowflake access**: You need a Google Cloud project with BigQuery enabled and a [service account created](doc:bigquery#create-service-account) with read access to the datasets and tables you want to query.
 * **User identifier column**: Your SQL query results or selected table must contain a column that maps to a CleverTap Identity field (such as email, phone number, or customer identity).
 * **CleverTap dashboard access**: You need appropriate permissions in CleverTap to create connections and segment imports. Contact your CleverTap admin if you do not have the required access.
-* **Feature enablement**: Partner Segments (Data Warehouse) must be enabled for your account. Contact your Account Manager to activate this feature.
+* **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.
 
 <Callout icon="🚧" theme="warn">
   #### Important
 
-  Warehouse query costs are borne by your organization. Running queries against your BigQuery OR Snowflake instance may incur charges on your Google Cloud account.
+  Running queries on your data warehouse (for example, BigQuery or Snowflake)  may incur charges according to your warehouse provider pricing. These costs are billed directly by the provider.
 </Callout>
 
 # Set Up Partner Segments
 
 Setting up Partner Segments consists of the following five main steps:
 
-1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery/ Snowflake credentials and configuration details.
+1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery/Snowflake credentials and configuration details.
 2. [Create a segment](doc:partner-segments#create-segment-import) import by writing an SQL query or selecting a table. Map a result column to a CleverTap user identifier.
 3. [Map the Identity Column](do:cpartner-segments#map-identity-column).
 4. [(Optional) Enable Partner Sync Event](doc:partner-segments#enable-partner-sync-event).

@@ -14,11 +14,11 @@ next:
 ---
 # Overview
 
+In a world driven by user data, staying ahead is not just an advantage, it is a necessity. CleverTap’s Predictions feature **leverages advanced machine learning to forecast user actions**, enabling you to make strategic decisions that propel your engagement efforts and drive growth. Imagine you are a part of a marketing team gearing up for the Black Friday Sale. And you want to identify the users most likely to make a purchase. This is where Predictions come into play. Predictions **identify how likely your target segment is to perform a specific action within a defined time frame, enabling you to tailor your strategies for maximum impact**.
+
 > 📘 Private Beta
 >
 > The feature is currently released in Private Beta for select CleverTap customers. For early access to this feature, contact your Account Manager.
-
-In a world driven by user data, staying ahead is not just an advantage—it is a necessity. CleverTap’s Predictions feature **leverages advanced machine learning to forecast user actions**, enabling you to make strategic decisions that propel your engagement efforts and drive growth. Imagine you are a part of a marketing team gearing up for the Black Friday Sale. And you want to identify the users who have the most likelihood of making a purchase. This is where Predictions come into play. Predictions **identify how likely your target segment is to perform a specific action within a defined time frame, enabling you to tailor your strategies for maximum impact**.
 
 # Video Tutorial
 

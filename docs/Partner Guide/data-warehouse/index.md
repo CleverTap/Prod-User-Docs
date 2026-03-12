@@ -28,15 +28,15 @@ The following sections are the benefits of integrating CleverTap with a data war
 
   Use your data warehouse as the primary source of customer and business data, and import only engagement-ready data into CleverTap. This ensures consistent definitions across analytics, reporting, and marketing execution while reducing data duplication.
 
-* **Unified Customer Profiles**  
+* **Unified Customer Profiles**
 
   Enrich CleverTap user profiles with attributes, transactional history, and analytical outputs stored in your data warehouse to maintain a consistent customer view across systems.
 
-* **Advanced Segmentation Using Warehouse Data**  
+* **Advanced Segmentation Using Warehouse Data**
 
   Create audience segments in CleverTap using historical, aggregated, or model-driven data from the warehouse to enable more precise targeting.
 
-* **Activation of Business and Analytical Insights**  
+* **Activation of Business and Analytical Insights**
 
   Use BI and Machine Learning Insights by importing data, such as customer tiers, propensity scores, or lifecycle states generated in the warehouse as inputs for campaigns and journeys in CleverTap.
 
@@ -90,6 +90,8 @@ CleverTap supports importing data from the following data warehouses. Use the li
 	<a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
     <div class="name">BigQuery</div>
   </a>
+<a href="https://docs.clevertap.com/docs/databricks" class="integration-card">
+    <div class="name">Databricks</div>
   <a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
     <div class="name">Snowflake</div>
   </a>
@@ -163,21 +165,21 @@ The following steps provide a high-level flow for importing data from a data war
 
 Exporting CleverTap data to a data warehouse enables deeper analysis of engagement, behavioral, and campaign performance alongside business metrics such as revenue, retention, and support outcomes. Use this for long-term reporting, attribution, and cross-team analytics access.
 
-## Key Benefits 
+## Key Benefits
 
-* **Centralized Engagement and Campaign Data**  
+* **Centralized Engagement and Campaign Data**
 
   Export CleverTap user events, profile updates, and campaign interactions into your data warehouse to unify engagement data with CRM, revenue, and support datasets for holistic analysis.
 
-* **Deeper Analysis and Reporting**  
+* **Deeper Analysis and Reporting**
 
   Combine CleverTap campaign and engagement data with downstream business outcomes stored in your data warehouse to measure lifecycle impact and improve attribution and ROI accuracy.
 
-* **Consistent and Warehouse-Ready Structured Data**  
+* **Consistent and Warehouse-Ready Structured Data**
 
   Export data in a consistent, predictable structure optimized for ingestion, transformation, and scalable analytics workflows in your data warehouse.
 
-* **Cross-Team Data Accessibility**  
+* **Cross-Team Data Accessibility**
 
   Make CleverTap engagement data available to analytics, data science, and reporting teams directly from the data warehouse, without requiring access to the CleverTap dashboard.
 

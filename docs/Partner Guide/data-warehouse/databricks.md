@@ -1,5 +1,8 @@
 ---
 title: Databricks
+excerpt: >-
+  Learn how configuring Databricks with CleverTap enables data sync for
+  personalized engagement and growth.
 deprecated: false
 hidden: false
 metadata:

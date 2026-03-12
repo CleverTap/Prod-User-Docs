@@ -170,7 +170,7 @@ Use the following options to configure and manage your connections:
 
 Create a connection to allow CleverTap to securely access your data warehouse and run queries for Partner Segments. Once configured, the connection can be used to define and refresh segment imports.
 
-1. Go to _Partners_ > _Select Partner_ [Snowflake or BigQuery] from your CleverTap dashboard
+1. Go to _Partners_ > _Select Partner_ (Snowflake or BigQuery) from your CleverTap dashboard
 2. Enter the required configuration details based on your warehouse:
    * For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
    * For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).

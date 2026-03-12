@@ -155,6 +155,26 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="journeys" id="improved-conditional-split-for-smarter-journey-routing">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#improved-conditional-split-for-smarter-journey-routing"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div><img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" /></div>
+    <h3 class="release-note-heading">Improved Conditional Split for Smarter Journey Routing</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Conditional Split now supports more flexible routing and improved journey discoverability, helping you build advanced decisioning logic and manage journeys more efficiently.</p>
+    <p>The enhancements include: <ul><li><b>Routing Users with User Buckets User Property</b><br>
+Split users across different paths using User Buckets, enabling split logic based on predefined user segments.</li><li><b>Filtering Journeys by Conditional Split</b><br>Quickly find journeys that use Conditional Split directly from the Journeys list page to audit and manage them easily.</li><li><b>Routing Users with Preferred Channel User Property</b><br>Branch journeys using Preferred Channel, routing users to Push, Email, SMS, or WhatsApp based on their AI-determined best-performing channel. The Preferred Channel feature is currently released in Private Beta. To enable this feature, contact your Customer Success Manager.</li><li><b>Using Nested User Properties</b><br>Use nested user properties when defining Conditional Split conditions to create more advanced routing logic.</li></ul></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/conditional-split-node" target="_blank">Conditional Split</a>.
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="multi-value-arrays-in-custom-event-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -374,6 +394,8 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <hr/>
 </div>
 `}</HTMLBlock>
+
+<br />
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="api-encryption">

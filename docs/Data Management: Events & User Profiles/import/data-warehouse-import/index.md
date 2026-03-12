@@ -73,8 +73,10 @@ This section lists the data warehouse platforms that CleverTap supports for data
     <div class="name">Snowflake</div>
   </a>
 <a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
-    <div class="name">BigQuery</div>
+  <div class="name">BigQuery</div>
   </a>
+<a href="https://docs.clevertap.com/docs/databricks" class="integration-card">
+    <div class="name">Databricks</div></a>
 </div>
 `}</HTMLBlock>
 

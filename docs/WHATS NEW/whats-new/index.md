@@ -168,7 +168,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     <p>Conditional Split now supports more flexible routing and improved journey discoverability, helping you build advanced decisioning logic and manage journeys more efficiently.</p>
     <p>The enhancements include: <ul><li><b>Routing Users with User Buckets User Property</b><br>
 Split users across different paths using User Buckets, enabling split logic based on predefined user segments.</li><li><b>Filtering Journeys by Conditional Split</b><br>Quickly find journeys that use Conditional Split directly from the Journeys list page to audit and manage them easily.</li><li><b>Routing Users with Preferred Channel User Property</b><br>Branch journeys using Preferred Channel, routing users to Push, Email, SMS, or WhatsApp based on their AI-determined best-performing channel. The Preferred Channel feature is currently released in Private Beta. To enable this feature, contact your Customer Success Manager.</li><li><b>Using Nested User Properties</b><br>Use nested user properties when defining Conditional Split conditions to create more advanced routing logic.</li></ul></p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/conditional-split-node" target="_blank">Conditional Split</a>.
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/conditional-split-node" target="_blank">Conditional Split Node</a>.
   </div>
   <hr/>
 </div>

@@ -155,6 +155,39 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="nested-objects-in-user-properties">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#nested-objects-in-user-properties"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+   <h3 class="release-note-heading">Nested Objects in User Properties</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now use Nested Objects in User Properties for ingesting via SDK, profile updates, and campaign personalization. This enhancement expands how nested user data can be managed and referenced across CleverTap, enabling richer data structures and more flexible campaign personalization.</p>
+
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Enable apps to send structured nested profile data directly through SDK integrations.</li>
+        <li>Use pre-built profile update functions such as setMultiValues, addMultiValues, and removeMultiValues for multi-value properties.</li>
+        <li>Update numeric values using profileIncrementValue and profileDecrementValue.</li>
+        <li>Recognize date objects in nested fields, which appear as date pickers on the dashboard.</li>
+        <li>Ensure backward compatibility by using existing user property ingestion and usage patterns.</li>
+      </ul>
+    </p>
+<p>For more information, refer to <a href="https://docs.clevertap.com/docs/nested-objects-in-user-properties"target="_blank">Nested Objects in User Properties</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="improved-conditional-split-for-smarter-journey-routing">
   <div class="release-note-header">
     <div class="anchor-link-icon">

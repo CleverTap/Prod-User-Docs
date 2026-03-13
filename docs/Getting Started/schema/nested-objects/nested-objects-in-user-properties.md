@@ -101,7 +101,7 @@ CleverTap enforces some system limits to maintain performance and stability. The
 
 ### Can I update a single field inside a Nested Object?
 
-Yes. You can update individual terminal fields within a Nested Object without overwriting the entire structure.
+Yes. You can update individual fields within a Nested Object without overwriting the entire structure.
 
 ### Can Nested Object fields be used for segmentation and personalization?
 

@@ -76,7 +76,7 @@ The following image shows how nested fields appear within profile data and can b
 
 <Image align="center" alt="Nested Objects in Segment Builder" border={true} caption="Nested Objects for User Properties in Segment Builder" src="https://files.readme.io/c5aeec5eff621d610e90bf75239fe8ef3369a52cff95bf00997f85291cc005d0-image.png" />
 
-* **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in user properties and custom event properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
+* **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in user properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
 
 The following image shows the Liquid Tags for Nested Objects in user properties:
 

@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Nested Objects allow you to group related information together in a clean, structured way, instead of spreading it across many separate properties. This keeps your data organized, easier to manage, and simpler to understand.
+Nested Objects allow you to group related information in a clean, structured way instead of spreading it across many separate properties. This keeps your data organized, easier to manage, and simpler to understand.
 
 With Nested Objects, you can send rich, structured [user](doc:nested-objects-in-user-properties) and [event](doc:nested-objects-in-custom-event-properties) properties to CleverTap in JSON format. Instead of creating multiple flat properties for related information, you bundle them into a single logical structure.
 
@@ -44,18 +44,18 @@ Using nested objects in CleverTap provides the following advantages:
 
 # Using Nested Objects
 
-Use nested objects when storing related attributes that logically belong together.
+Use nested objects when storing related attributes that belong together logically.
 
 Common examples include the following:
 
 * **User Properties**
   * Profile information
   * Subscriptions
-  * Insurance policies and more
+  * Insurance policies
 * **Custom Event Properties**
   * Shopping cart content
   * Product line items
-  * Transaction details and so on
+  * Transaction details
 
 # Best Practices
 
@@ -80,7 +80,7 @@ Yes, you can query up to three levels in supported segmentation workflows.
 
 ### What happens if I exceed the payload size or nesting limits?
 
-CleverTap drops extra elements or returns an error if a payload exceeds size or maximum nesting limits.
+CleverTap drops extra elements or returns an error if the payload exceeds size or nesting limits.
 
 ### Are Nested Objects included in exports?
 
@@ -88,4 +88,4 @@ No. Nested Objects are not included in API-based exports.
 
 ### Does this feature affect performance?
 
-Queries on Nested Objects may take longer when segmentation conditions include multiple nested filters or when nested arrays contain many elements. To maintain performance, avoid using large arrays in frequently queried fields and limit segmentation rules to essential nested attributes.
+Queries on Nested Objects may take longer when segmentation includes multiple nested filters or when nested arrays contain many elements.

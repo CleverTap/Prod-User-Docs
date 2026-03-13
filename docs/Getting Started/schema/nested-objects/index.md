@@ -27,8 +27,8 @@ This approach helps you do the following:
 
 ## References
 
-* To learn how to use nested objects within user properties, refer to[Nested Objects for User Properties]().
-* To understand how to implement nested objects in custom event properties, refer to[Nested Objects for Custom Event Properties]().
+* To learn how to use nested objects within user properties, refer to [Nested Objects for User Properties]().
+* To understand how to implement nested objects in custom event properties, refer to [Nested Objects for Custom Event Properties]().
 * To view SDK-specific implementation details and platform limits for nested objects, refer to [Ingesting Nested Objects using SDK](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-sdks).
 * To learn how to send nested objects using the CleverTap API, refer to [Ingesting Nested Objects using API](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 

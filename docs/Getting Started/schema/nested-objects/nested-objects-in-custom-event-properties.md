@@ -11,9 +11,9 @@ metadata:
 ---
 # Overview
 
-Nested objects allow you to send structured metadata within custom events.
+Nested objects allow you to send structured metadata within custom event properties.
 
-For more information, refer to [Nested Objects]().
+For more information, refer to [Nested Objects](doc:nested-objects).
 
 ## Use Cases
 

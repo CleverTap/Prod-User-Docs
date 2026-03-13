@@ -17,21 +17,21 @@ For more information, refer to [Nested Objects](doc:nested-objects).
 
 ## Use Cases
 
-Nested event properties are beneficial for capturing structured event data.
+Nested event properties help capture structured event data.
 
 **Healthcare**
 
-Send medication reminders or follow-up test notifications based on nested appointment details. This helps reduce missed follow-ups and improves patient compliance. For example, trigger a reminder when `Appointment.Prescription.MedicationName` exists and `Appointment.Prescription.NextDoseTime` is approaching, or send a follow-up notification when `Appointment.Tests.FollowUpDate` is scheduled.
+Send medication reminders or follow-up test notifications based on nested appointment details. This reduces missed follow-ups and improves patient compliance. For example, trigger a reminder when `Appointment.Prescription.MedicationName` exists and `Appointment.Prescription.NextDoseTime` is approaching, or send a follow-up notification when `Appointment.Tests.FollowUpDate` is scheduled.
 
 **Travel & Hospitality**
 
-Trigger personalized follow-ups based on booking preferences such as room type, meal plan, or service requests. This improves guest experience and reduces booking cancellations by confirming preferences proactively. For example, send a confirmation message when `Booking.Preferences.RoomType` is Suite, and remind guests of selected services when `Booking.Preferences.Services.Spa` is true.
+Trigger personalized follow-ups based on booking preferences such as room type, meal plan, or service requests. This improves the guest experience and reduces booking cancellations by confirming preferences proactively. For example, send a confirmation message when `Booking.Preferences.RoomType` is Suite, and remind guests of selected services when `Booking.Preferences.Services.Spa` is true.
 
-# Sending Nested Event Properties
+# Send Nested Event Properties
 
-Nested Objects in custom event properties follow the same structure and validation rules as [Nested Objects in user properties](). Event properties follow the same schema enforcement rules to ensure consistent ingestion and prevent failures. You can send nested user properties through CleverTap [SDKs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-sdks) or [APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
+Nested Objects in custom event properties follow the same structure and validation rules as [Nested Objects in user properties](). Event properties follow the same schema enforcement rules to ensure consistent ingestion and prevent failures. You can send nested event properties through CleverTap [SDKs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-sdks) or [APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 
-The following sample payload sends an event with nested booking preferences:
+The following sample payload sends an event with nested course selection data:
 
 ```json
 {
@@ -70,7 +70,7 @@ The following sample payload sends an event with nested booking preferences:
 
 When you send nested event properties, CleverTap processes the structure and stores nested attributes within the event schema.
 
-These properties can then be used in analytics and campaign targeting.
+These properties can then be used in analytics and campaign targeting workflows.
 
 # Use Nested Objects across Platforms
 
@@ -80,11 +80,11 @@ After ingestion, Nested Objects for custom event properties are available across
 
 Nested fields from events can also be used as filters inside segmentation conditions.
 
-The following image shows how nested fields appear for event properties and can be used to create filters in the Segmentation Builder:
+The following image shows how nested fields appear for event properties and can be used to create filters in the Segment Builder:
 
 <Image align="center" border={true} caption="Nested Objects for Event Properties in Segment Builder" src="https://files.readme.io/8cc3b92e6b20288cae3ad3cd23078c8912244e907c56f3d436ce564300cfaff5-image.png" />
 
-* **Liquid Tags**: Use Liquid Tags to personalize Campaign content using attributes stored inside Nested Objects in user properties and custom event properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
+* **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in custom event properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
 
 The following image shows the Liquid Tags for Nested Objects in custom event properties:
 
@@ -101,7 +101,7 @@ CleverTap enforces some system limits to maintain performance and stability. The
 | Limit Type                                  | Maximum Value                                                                              |
 | :------------------------------------------ | :----------------------------------------------------------------------------------------- |
 | Nesting depth                               | 3 levels                                                                                   |
-| Payload size                                | 32 KB; Applies to the total size of evtData (event uploads), including all nested content. |
+| Payload size                                | 32 KB. Applies to the total size of evtData (event uploads), including all nested content. |
 | Root-level keys (objects or arrays)         | Maximum 5                                                                                  |
 | Nested elements inside an array             | Maximum 100                                                                                |
 | Nested keys inside an object                | Maximum 100                                                                                |

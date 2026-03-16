@@ -1,0 +1,49 @@
+name: Forward Prod-User-Docs PR to Staging-User-Docs repo
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  forward:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Push branch to staging repo
+        env:
+          TOKEN: ${{ secrets.STAGING_REPO_TOKEN }}
+        run: |
+          git remote add staging https://$TOKEN@github.com/CleverTap/Staging-User-Docs.git
+          git push staging HEAD:external-${{ github.event.pull_request.number }}-${{ github.head_ref }}
+
+      - name: Create PR in staging repo
+        env:
+          GH_TOKEN: ${{ secrets.STAGING_REPO_TOKEN }}
+        run: |
+          gh pr create \
+          --repo CleverTap/Staging-User-Docs \
+          --base develop \
+          --head external-${{ github.event.pull_request.number }}-${{ github.head_ref }} \
+          --title "External PR: ${{ github.event.pull_request.title }}" \
+          --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}"
+
+      - name: Comment on public PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+          --body "Thank you for your contribution! Your suggestion has been forwarded to our internal review repository and will be reviewed by the team."
+
+      - name: Close public PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr close ${{ github.event.pull_request.number }}

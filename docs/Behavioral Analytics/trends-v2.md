@@ -24,9 +24,11 @@ CleverTap's Trends feature provides advanced tools for analyzing and visualizing
 
 These capabilities give users a powerful way to optimize platform usage and enable them to make informed decisions to drive business outcomes.
 
-> 📘 Public Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
+<Callout icon="📘" theme="info">
+  #### Public Beta
+
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+</Callout>
 
 Using the _Trends_ dashboard, users can:
 
@@ -69,27 +71,6 @@ You can change the view period of the trend on a daily or monthly basis:
 * _Daily_: The trend and data points are plotted on a daily basis.
 * _Monthly_: The trend and data points are plotted on a daily basis.
 
-## Event Count
-
-To measure the event count:
-
-1. Go to _Analytics_ > _Trends_ and select an event to analyze and view a trend.
-2. From the _MEASURE_ section, select any one of the following:
-   * _Total Events_: This measure displays the sum of events in the specified period. If an event is performed multiple times, each occurrence is accounted for separately in the total count. For example, if user A performs an event on Day 1 and again on Day 2, the _Total Events_ count will be cumulative, showing 2 for those two days combined.
-   * _Unique Users_: This measure displays the trend for the number of unique users who performed the chosen events in the selected period. The _Unique Users_ column in the table shows the unique users that have performed the event, property, and segment combination in the entire period selected from the date picker. For example, if user A has done the event on Day 1 and Day 2, the user is counted once each day. However, user  A is counted only once in the _Unique User_ column.
-3. Click **View Analysis**.
-
-### View Event Count
-
-To view the event count, hover over any trendline.  For example, the number of _App Launched_ events that occurred in the selected period.
-
-<Image align="center" alt="Event Count in Trend" border={true} caption="Trend Event Count" title="View Trends Stats Event Count" src="https://files.readme.io/70480afa9d9015cab6214c0125afc565dce5e92374cb17b13880b8da5cc70079-View_Trends_Main.jpg" />
-
-The stats available are:
-
-* Total events: Sum of events in the selected period.
-* Daily change: The change in percentage from the previous time period, that is, day, or month.
-
 # Measure a Trend
 
 The Measure section defines how the selected event is quantified in your trend analysis. While the event determines what user action you are analyzing, the Measure determines how that action is calculated and displayed over time. It gives you the flexibility to switch between volume, participation, intensity, value, penetration, and derived metrics, allowing you to explore trends from multiple analytical perspectives without changing the underlying event selection.
@@ -107,7 +88,7 @@ Each option changes both the trend visualization and the summary statistics disp
 
 ## Total Events
 
-Total Events displays the sum of event occurrences during the selected time period. Every occurrence of the event is counted, even if the same user performs the event multiple times.
+_Total Events_ displays the sum of event occurrences during the selected time period. Every occurrence of the event is counted, even if the same user performs the event multiple times.
 
 For example, if a user places 3 orders in one day, all 3 `Order Placed` events are counted.
 
@@ -121,7 +102,7 @@ Use this measure when you want to understand overall activity volume, such as:
 
 ## Unique Users
 
-Unique Users displays the number of distinct users who performed the selected event in the specified time period. Each user is counted once per time interval, regardless of how many times they performed the event.
+_Unique Users_ displays the number of distinct users who performed the selected event in the specified time period. Each user is counted once per time interval, regardless of how many times they performed the event.
 
 For example, if a user places multiple orders in a single day, they are counted once for that day in the trend.
 
@@ -135,7 +116,7 @@ Use this measure when you want to understand user participation, such as:
 
 ## Average per User
 
-Average per User displays the average number of times each unique user performed the selected event in the specified time period. It is calculated as `Total Events / Unique Users`
+_Average per User_ displays the average number of times each unique user performed the selected event in the specified time period. It is calculated as `Total Events / Unique Users`.
 
 For example, if 1,000 users placed 5,000 orders during the selected period, the average per user is 5 orders.
 
@@ -149,11 +130,11 @@ Use this measure when you want to analyze engagement intensity, such as:
 
 ## Summarize By (Event Property)
 
-Summarize By allows you to aggregate trends using a numeric event property rather than simply counting events or users. Use Summarize By when analyzing value-based metrics such as revenue, order size, watch time, or duration.
+_Summarize By_ allows you to aggregate trends using a numeric event property rather than simply counting events or users. Use Summarize By when analyzing value-based metrics such as revenue, order size, watch time, or duration.
 
 This option becomes available when the selected event contains a numeric property, such as, `order_amount`, `delivery_time`, `discount_value`, `duration` and so on.
 
-<Image align="center" border={true} caption="Measure by Summarize by (Event Porperty)" src="https://files.readme.io/9a79d96f6ea417505a373e038eee7a6ef80ac7ed2fcfeafae5e937728bd4992f-image.png" />
+<Image align="center" border={true} caption="Measure by Summarize by (Event Property)" src="https://files.readme.io/9a79d96f6ea417505a373e038eee7a6ef80ac7ed2fcfeafae5e937728bd4992f-image.png" />
 
 You can summarize the trend using:
 
@@ -170,7 +151,7 @@ For example, summarizing `Order Placed` by `order_amount` shows total revenue ov
 
 Displays the average value of the selected property per event occurrence.
 
-For example, summarizing `Order Placed` by `order_amount` using average shows average order value over time.
+For example, summarizing `Order Placed` by `order_amount` using average shows the average order value over time.
 
 <Image align="center" border={true} src="https://files.readme.io/a15a0fc8337db2823db99c2bdac8f07d754e8bb2509e629da22ba3cf84bdcdb7-image.png" className="border" />
 
@@ -196,7 +177,7 @@ Use this measure to understand behavioral penetration among active users, such a
 
 ## Formula
 
-The Formula option allows you to create custom metrics by combining event-level and property-level functions using mathematical expressions. Use Formula when you want to calculate derived business metrics that are not directly available through standard measures, such as Total Events or Unique Users.
+The Formula option allows you to create custom metrics. You can do so by combining event-level and property-level functions using mathematical expressions. Use Formula when you want to calculate derived business metrics that are not directly available through standard measures, such as Total Events or Unique Users.
 
 For example, in a food delivery app, you may want to:
 
@@ -213,7 +194,7 @@ You can use predefined event-level and property-level functions to create meanin
 
 <Tabs>
   <Tab title="Event-Level Functions">
-    These functions operate on the selected event and measure its frequency or user participation:
+    These functions use the selected event and measure its frequency or user participation:
 
     * **TOTALS**: Counts every occurrence of the selected event during the chosen time period. For example, if an event such as Video Played occurred 12,000 times, TOTALS returns 12,000 even if the same user triggered the event multiple times.
     * **UNIQUES**: Counts the number of distinct users who performed the selected event. For example, if 2,000 unique users triggered the event, UNIQUES returns 2,000; each user is counted only once, regardless of how many times they performed the event.
@@ -222,7 +203,7 @@ You can use predefined event-level and property-level functions to create meanin
   </Tab>
 
   <Tab title="Property-Level Functions">
-    Property-level functions operate on numeric event properties such as revenue amount, duration, quantity, or price. These functions are available only when a numeric event property is selected.
+    Property-level functions use a numeric event properties such as revenue amount, duration, quantity, or price. These functions are available only when a numeric event property is selected.
 
     * **PROPSUM**: Adds up the total value of the selected numeric event property across all event occurrences. For example, if you select the amount property for a purchase event, PROPSUM returns the total revenue generated in the selected period.
     * **PROPAVG**: Calculates the average value of the selected numeric event property per event occurrence. For example, if you select the duration property for a video event, PROPAVG returns the average watch time per video play. This can also be derived using PROPSUM / TOTALS.
@@ -231,7 +212,7 @@ You can use predefined event-level and property-level functions to create meanin
 
 ### Formula Guidelines
 
-When creating a custom metric, keep the following in mind:
+When creating a custom metric, follow these guidelines:
 
 * You can combine available metrics using operators such as +, -, *, /, and parentheses ().
 * You can compare up to four formulas in the same configuration by separating them with a semicolon (;).
@@ -239,7 +220,7 @@ When creating a custom metric, keep the following in mind:
 
 ### Example Formula: Average Order Value
 
-Consider an example where you want to measure how much revenue each purchasing user generates (i.e., Average Order Value) over time.
+Consider an example where you want to measure how much revenue each purchasing user generates (that is, Average Order Value) over time.
 
 You can define the following formula as:
 
@@ -367,7 +348,7 @@ To compare trends across segments:
 
 1. Go to _Analytics_ > _Trends_ and select an event to analyze and view a trend. You can also filter your analysis further by the event property.
 2. Click **Add Segment** from the _SEGMENT_ section.
-3. Select a segment from the list or create an ad hoc segment. For more information, refer to [Segments](doc:segmentation) .
+3. Select a segment from the list or create an Ad hoc segment.
 4. Click **View Analysis**.
 
 <Image align="center" alt="Compare Trends Across Segments" border={true} caption="Compare Trends Across Segments" src="https://files.readme.io/372d2522452f6264308263ee5c232a65feca2aef22f238c82cb8e5c4433993ba-image.png" />
@@ -380,15 +361,15 @@ To compare trends across segments:
 > * You can compare a maximum of five segments.
 > * You cannot split the trend by user property and compare it by segments simultaneously.
 
-## Adhoc Segments
+## Ad hoc Segments
 
-When performing a trend analysis, you can use available user segments or create ad-hoc segments in run time. To create adhoc segments:
+When performing a trend analysis, you can use available user segments or create ad-hoc segments at run time. To create ad hoc segments:
 
 1. From the _SEGMENT_ section, click the edit icon.
 
 <Image align="center" alt="Create Adhoc Segment" border={true} caption="Create Adhoc Segment" src="https://files.readme.io/3eb2702d462e999b6155fa3b76bce5ff4dd9efb5e9265c676f5ef8bb7d452046-image.png" width="40% " />
 
-2. Click **Add Rule** to add a condition or click **[Add Rule Group](https://docs.clevertap.com/docs/segmentation-rules)** to add multiple conditions.
+2. Click **Add Rule** to add a condition or click [Add Rule Group](doc:segmentation-rules) to add multiple conditions.
 
 <Image align="center" alt="Add Rules" border={true} caption="Add Rules" src="https://files.readme.io/0f6c55c2577f3d86d157776fcb521eff4938a783049e90261cd57c621105ee11-image.png" width="70% " />
 
@@ -418,20 +399,141 @@ The trend for each user property displays.  All the split user properties are li
 >
 > You can split by a maximum of two user properties. Split by properties is not available when comparing two or more segments.
 
-# Bookmark a Trend Analysis
+# Operations
 
-You can bookmark any Trend analysis to quickly revisit it later. Bookmarks are user-specific; only the logged-in user can view their saved bookmarks on the CleverTap dashboard.
+Once you generate a trend analysis, you can perform several actions from the Analysis pane to compare results, change visualizations, save the analysis, and take follow-up actions based on the chart data.
 
-Bookmarks are especially useful for tracking frequently accessed trends. For example, if you regularly monitor a trend such as Charged split by Payment Method, bookmarking it lets you instantly return to the same setup without recreating the analysis each time.
+The available operations help you move from analysis to action without rebuilding the query.
 
-To bookmark a Trend, perform the following steps
+## Compare with Previous Period
 
-1. Click **Bookmark** in the top-right corner of the dashboard after generating the Trend analysis.
-2. Enter a descriptive name to help you easily identify the analysis later.
-3. Click **Save**.
+You can compare the selected trend against a previous time period to understand whether the metric is increasing, decreasing, or remaining stable.
 
-You can save up to 50 bookmarks.
+From the **Compare** list, you can compare the current analysis with:
 
-> 📘 Note
->
-> Bookmarked Trends are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Trends_ section.
+* Previous Day
+* Previous Week
+* Previous Month
+* Previous Year
+
+<Image align="center" border={true} caption="Compare Trends with Previous Period" src="https://files.readme.io/20f0e7b4063f57f2b83fe2c10285b82346729a5c8f819b732953ddf6ff7727c9-image.png" />
+
+When a comparison is selected, the chart displays an additional comparison series for each event, for example, two trend lines denoting different weeks. It allows you to visually compare how the selected metric has changed relative to the earlier period.
+
+Use comparison when you want to:
+
+* Measure week-over-week or month-over-month changes
+* Identify growth or decline trends
+* Evaluate the impact of launches, campaigns, or seasonality
+
+## Change Chart Type
+
+You can switch the analysis view to a different chart type to interpret the data differently.
+
+The available chart types are:
+
+* [Line](doc:trends-v2#line)
+* [Bar](doc:trends-v2#bar)
+* [Pie](doc:trends-v2#pie)
+* [Number](doc:trends-v2#number)
+
+<Image align="center" border={true} caption="View Trend Types" src="https://files.readme.io/176733ea271f70bf590c0233bfb9a73d74bbf0503d3bc62acc05feb20ca8f95f-image.png" />
+
+### Line
+
+Use the line chart to analyze how the selected metric changes over time. This is the default view for most trend analyses.
+
+<Image align="center" border={true} caption="View Trend in Line Chart" src="https://files.readme.io/0cb962f9b78703ad8162a873ba119def4544d5024930ad043e29a29dc71f82f0-image.png" />
+
+### Bar
+
+Use the bar chart to clearly compare metric values across selected events or time buckets.
+
+<Image align="center" border={true} caption="View Trend in Bar Chart" src="https://files.readme.io/d0fce7cdd59a06cf9707586781d1ce3c63a87971596dec0d9d46f635434456db-image.png" />
+
+### Pie
+
+Use the pie chart to understand the contribution to the total value across selected events or categories.
+
+<Image align="center" border={true} caption="View Trend in Pie Chart" src="https://files.readme.io/fa7d097d372f350aaab73ee299f1f59a57091c04f01ef1d6bba944477d3556b5-image.png" />
+
+### Number
+
+Use the number view when you want to display the selected metric as a single summarized value rather than as a time-series chart.
+
+<Image align="center" border={true} caption="View Trend in Number Chart" src="https://files.readme.io/09a86c3584af383e55aaee28467fe7317a6254e4b2640878a8f4ade5c3569cdf-image.png" />
+
+## Inspect Data Points
+
+Hover over any point or bar in the chart to view detailed values for that time bucket. This helps you inspect outliers, spikes, and dips without switching to the table view.
+
+The tooltip can show information such as:
+
+* Event name
+* Date or time bucket
+* Metric value
+* Split-by value, if applicable
+
+<Image align="center" border={true} caption="Inspect Data Points from a Trend" src="https://files.readme.io/d9d8608d1145f67105e821f4846f3e0c962ffacb41917adf6c26f590dd480453-image.png" />
+
+## Save as Segment
+
+Creates a segment based on the selected event, filters, and the specific chart value you clicked. Use this option when you want to retarget or analyze that audience further in another analytics feature.
+
+<Image align="center" border={true} caption="Save as Segment" src="https://files.readme.io/ede8326f92de86fee80bef29dd969edfba28ab927c2905ff80eed0de10ed5040-image.png" />
+
+## Add to Board
+
+You can add a Trends analysis to a Board to monitor it alongside other saved analyses.
+
+To add a trend to a board:
+
+1. Click **Add to Board** from the top-right corner of the dashboard after generating the trend analysis.
+2. Enter the Trend Analysis name in _Chart name_ and select an existing board or create a new one.
+3. Click **Add to board**.
+
+<Image align="center" border={true} caption="Add a Trend Analysis to the Board" src="https://files.readme.io/e8c2b75e4edea678d552504241a8bc32a1904441e7183f11c011af9e93ebfc40-2026-03-09_11-00-18_1.gif" />
+
+Use boards when you want to:
+
+* Track the same trend regularly
+* Combine Trends with Funnels, Flows, Cohorts, or Pivots
+* Share a monitoring dashboard with your team
+
+## Bookmark a Trend Analysis
+
+You can bookmark any Trend analysis to quickly revisit it later. Bookmarks are user-specific, meaning only the logged-in user can view their saved bookmarks on the CleverTap dashboard. You can save up to 50 bookmarks.
+
+Bookmarks are especially useful for tracking frequently accessed trends. For example, if you regularly monitor a trend such as `Charged` split by `Payment Method`, bookmarking it lets you instantly return to the same setup without recreating the analysis each time.
+
+To bookmark a Trend:
+
+1. Click **Bookmark** in the top-right corner of the dashboard after generating the trend analysis.
+2. Enter a descriptive name to help you identify the analysis later.
+3. Click **Bookmark**.
+
+<Image align="center" border={true} caption="Bookmark a Trend Analysis" src="https://files.readme.io/995c8821d9737cb62e89dd0f456fd44fbbc254178a0b7b84bb36296b1e3ca1ef-2026-03-09_11-06-23_1.gif" />
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  You can save up to 50 bookmarks and access all your saved bookmarks from the bookmark list under the _Trends_ section.
+</Callout>
+
+## Export Trend Analysis
+
+You can export the generated trend analysis for reporting or offline analysis.
+
+<Image align="center" border={true} caption="Export a Trend Analysis" src="https://files.readme.io/876685f7bb8d6ea2a8796f2009e3d7aa66b34b4c14e5ef7b85ce8f78de852fb4-image.png" />
+
+Depending on the selected view, Trends supports export options such as:
+
+* PNG image
+* PDF document
+* CSV file
+
+Use exports when you want to:
+
+* Share the chart in presentations or documents
+* Download the raw tabular values for further analysis
+* Archive analysis snapshots for reporting

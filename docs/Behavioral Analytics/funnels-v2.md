@@ -307,7 +307,7 @@ Use boards when you want to:
 
 You can bookmark any Funnel analysis to quickly revisit it later. Bookmarks are user-specific, meaning only the logged-in user can view their saved funnel analyses on the CleverTap dashboard.
 
-Bookmarks are especially useful for tracking frequently accessed conversion journeys(@bajrang, journeys or funnels?). For example, if you regularly monitor a funnel such as _App Launched > Product Viewed > Added to Card > Charged_, bookmarking it lets you instantly return to the same setup without recreating the analysis each time.
+Bookmarks are especially useful for tracking frequently accessed conversion funnels. For example, if you regularly monitor a funnel such as _App Launched > Product Viewed > Added to Card > Charged_, bookmarking it lets you instantly return to the same setup without recreating the analysis each time.
 
 To bookmark a Funnel:
 

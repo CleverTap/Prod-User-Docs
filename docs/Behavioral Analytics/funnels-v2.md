@@ -341,6 +341,30 @@ Use exports when you want to:
 * Download the raw tabular values for further analysis
 * Archive analysis snapshots for reporting
 
+## Save as Segment
+
+You can create a user segment directly from a funnel step to analyze or engage users who reached a specific stage of the funnel.
+
+Click on a funnel step in the chart, and an action menu with _Save as Segment_ appears. Selecting _Save as Segment_ opens the Segment Builder, where the system automatically generates a segment query based on the users who qualified for the selected funnel step.
+
+For example, if you click the Added to Cart step in the funnel, the segment builder will pre-populate a query representing users who reached the Added to Cart step in the funnel within the selected time range.
+
+<Image align="center" border={true} src="https://files.readme.io/597e61a450036465e3529d805bc81a9db1068185e0860677985d80929593226d-image.png" className="border" />
+
+You can then:
+
+* Review or refine the generated segment conditions
+* Add additional filters or rules
+* Save the segment for future analysis or campaign targeting
+
+This feature is useful when you want to:
+
+* Retarget users who dropped off at a specific funnel step
+* Build campaigns for users who completed or partially completed a funnel
+* Perform deeper analysis on users who reached a particular stage of a journey
+
+Once you save a segement from a Funnel Analysis, it becomes available across the CleverTap dashboard and can be used in campaign targeting, analytics, or further segmentation analysis.
+
 # FAQ
 
 Find answers to the following common questions about using ̉Funnels:

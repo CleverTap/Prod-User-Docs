@@ -154,30 +154,27 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 ## March
 
-```
-<div class="release-note article" data-category="campaigns" id="Event-Reminder-Personalization-Content-Blocks">
+<HTMLBlock>{`
+<div class="release-note article" data-category="content-manager" id="Event-Reminder-Personalization-Content-Blocks">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#Event-Reminder-Personalization-Content-Blocks"><i class="fa-light fa-anchor"></i></a>
     </div>
-    <div>
-      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">Event and Reminder Personalization Support in Content Blocks</h3>
+    <div><img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" /></div>
+    <div><h3>Event and Reminder Personalization Support in Content Blocks</h3></div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
     <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge private-beta">PRIVATE BETA</div>
   </div>
   <div class="release-note-body">
-    <p>You can now use <strong>Event</strong> and <strong>Reminder personalization</strong> inside <strong>Content Blocks</strong>, making it easier to reuse dynamic email content across multiple campaigns.</p>
+   <p>You can now use <strong>Event</strong> and <strong>Reminder personalization</strong> inside <strong>Content Blocks</strong>, making it easier to reuse dynamic email content across multiple campaigns.</p>
     <p>Previously, updating reused HTML required editing each campaign individually. With this enhancement, Content Blocks now support Event and Reminder personalization syntax in addition to existing user property personalization. Any updates made to a Content Block automatically reflect across all campaigns where it is used. Content Blocks are currently supported only for Email.</p>
     <p>With this update, you can reuse dynamic email content across multiple campaigns, update content once and apply changes instantly, and add Event and Reminder personalization directly in Content Blocks using HTML syntax.</p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/content-blocks" target="_blank">Content Blocks</a>.</p>
-  </div>
-  <hr/>
-</div>
-```
 
-<br />
+  </div>
+  <hr>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="nested-objects-in-user-properties">

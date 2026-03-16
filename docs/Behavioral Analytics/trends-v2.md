@@ -478,9 +478,27 @@ The tooltip can show information such as:
 
 ## Save as Segment
 
-Creates a segment based on the selected event, filters, and the specific chart value you clicked. Use this option when you want to retarget or analyze that audience further in another analytics feature.
+You can create a user segment directly from a data point in the Trend chart to analyze or target users who performed a specific action during a selected time interval.
+
+Click a data point (for example, a point on a line chart or a bar in a bar chart), and an action menu with _Save as Segment_ appears. Selecting _Save as Segment_ opens the Segment Builder, where the system automatically generates a segment query based on the event, filters, segment conditions, and the specific data point you selected.
+
+For example, if you click a data point representing the Charged event on a specific date, the segment builder generates a query for users who perfomed the Charged event during that selected time range.
 
 <Image align="center" border={true} caption="Save as Segment" src="https://files.readme.io/ede8326f92de86fee80bef29dd969edfba28ab927c2905ff80eed0de10ed5040-image.png" />
+
+You can then:
+
+* Review the automatically generated segment query
+* Modify the conditions or add additional filters
+* Save the segment for future analysis or campaign targeting
+
+This feature is useful when you want to:
+
+* Identify users responsible for spikes or drops in a trend
+* Retarget users who performed a specific event within a time window
+* Build campaigns based on behavioral insights discovered in the trend analysis
+
+Once save a segment from Trend Analysis, it becomes available across the CleverTap dashboard and can be used in campaign targeting, analytics, segmentation, and other product features.
 
 ## Add to Board
 

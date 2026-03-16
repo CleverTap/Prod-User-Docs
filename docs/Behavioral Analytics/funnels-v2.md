@@ -226,42 +226,120 @@ Chart View offers a visual representation of how users progress through each ste
 
 The default chart shows cumulative conversions per step for the selected time range. You can view the data either as an absolute count of users completing each step or as a percentage.
 
-<Image align="center" border={true} caption="Chart View of Funnel Analysis" src="https://files.readme.io/cfa94110676c19e93c60cc3dc28393b2198e29518d30250053c2e069e8be9010-image.png" />
+<Image align="center" border={true} caption="Chart View of a Funnel Analysis" src="https://files.readme.io/3d93f703a9b1eb34a4b44f5a095c20c8fce60e8d1f13d44a89433f98e747e97b-image.png" />
 
 ## Table View
 
-Table View presents the same funnel data in a structured, tabular format, making it easier to compare conversions across segments or property-based splits.
+Table View presents the funnel results in a structured tabular format, allowing you to inspect detailed step-level metrics alongside the visual funnel chart.
 
-Each row in the table represents a funnel categorization, such as a user or event property used to split the funnel. You can sort the table by any column to quickly identify patterns or outliers.
+Each row in the table represents a funnel breakdown, such as a selected segment or a property-based split used in the funnel analysis. The table helps you compare conversion performance across segments and understand where users drop off between steps.
 
-The table includes the following metrics for each row:
+<Image align="center" border={true} caption="Table View of a Funnel Analysis" src="https://files.readme.io/1cefb782acd019f84eeb7f86f0417356404f6eb977e2c0bea6d9b1c897788136-image.png" />
 
-* Overall conversion percentage from the first step to the last step
-* Conversion number and percentage between consecutive steps
+The table includes the following columns:
 
-In the example shown below, sorting the table reveals that English speakers have the highest overall conversion rate.
+* **Segment**: The segment or split value used in the funnel analysis. For example, _All Users_ or different property-based groups when the funnel is split by a property.
+* **Total Conversion**: The overall conversion rate from the first step to the final step of the funnel.
+* **Step Conversion Columns**: Each funnel step shows the number of users who reached that step, along with the corresponding percentage relative to the first step.
+* **Median Time Between Steps**: Displays the median time (in minutes/seconds) it takes users to move from one funnel step to the next. For example, if the median time between _App Launched > Product Viewed_ is _4 minutes_, the table displays _4 minutes_.
 
-<Image align="center" border={true} caption="Table View of Funnel Analysis" src="https://files.readme.io/9aeb7ed709958f6ef3ce3ffa1cb23d594a84466a827bd6ae1586f7752da823d5-image.png" />
+You can also use the _Search_ field in the table to quickly find specific segments or split values in large funnel analyses.
 
-# Bookmark a Funnel Analysis
+# Operations
 
-You can bookmark any Funnel analysis to quickly revisit it later. Bookmarks are user-specific; only the logged-in user can view their saved bookmarks on the CleverTap dashboard.
+Once you generate a funnel analysis, you can perform several actions from the Analysis pane to compare results, switch views, save the analysis, and take follow-up actions based on the funnel data.
 
-Bookmarks are especially useful for tracking frequently accessed conversion journeys. For example, if you regularly monitor funnel steps such as _App Launched_ > _Product Viewed_ > _Charged_, bookmarking it allows you to instantly return to the same setup without recreating the funnel each time.
+The available operations help you move from analysis to action without rebuilding the query.
+
+## Change Display Format
+
+You can change how funnel results are displayed in the chart using the display controls.
+
+Depending on the analysis, you can view results as:
+
+* [Percentage](doc:funnels-v2#percentage)
+* [Count](doc:funnels-v2#count)
+
+### Percentage
+
+Use percentage when you want to understand relative conversion performance across steps.
+
+<Image align="center" border={true} caption="View Funnel in Percentage" src="https://files.readme.io/4878ea2125d5bed6c3a039ab2637cc3d1abe63751233f48c03c75c17933459ad-image.png" />
+
+### Count
+
+Use count when you want to inspect the actual number of users progressing through each step.
+
+<Image align="center" border={true} caption="View Funnel in Count" src="https://files.readme.io/09429a9fd6a7137bfb00a0946c29a721e38b9acea60ba6542bf46f43884ac33f-image.png" />
+
+## Inspect Funnel Data
+
+Hover over any bar, step, or chart element in the funnel view to inspect detailed values for that stage of the funnel. This helps you inspect conversion values and drop-offs without switching to the table view.
+
+<Image align="center" border={true} caption="Inspect Funnel Data" src="https://files.readme.io/775412a5339bcb8618623b6389449c9ce04205831addf527d903923dcd243f40-image.png" />
+
+The tooltip can show information such as:
+
+* Step name
+* User count
+* Conversion percentage
+* Segment or split-by value, if applicable
+
+## Add to Board
+
+You can add a Funnel analysis to a Board to monitor it alongside other saved analyses.
+
+To add a funnel to a board:
+
+1. Click **Add to Board** from the top-right corner of the dashboard after generating the funnel analysis.
+2. Enter the name of the current analysis in _Chart name_ and select an existing board or create a new one.
+3. Click **Add to board**.
+
+<Image align="center" border={true} caption="Add a Funnel Analysis to Board" src="https://files.readme.io/f609cd8b17f85e13df6d916e00b8088028bd9e1b0f1c73bd1f3ad566282a5505-2026-03-09_11-44-59_1.gif" />
+
+Use boards when you want to:
+
+* Track the same funnel regularly
+* Combine Funnels with Trends, Flows, Cohorts, or Pivots
+* Share a monitoring dashboard with your team
+
+## Bookmark a Funnel Analysis
+
+You can bookmark any Funnel analysis to quickly revisit it later. Bookmarks are user-specific, meaning only the logged-in user can view their saved funnel analyses on the CleverTap dashboard.
+
+Bookmarks are especially useful for tracking frequently accessed conversion journeys(@bajrang, journeys or funnels?). For example, if you regularly monitor a funnel such as _App Launched > Product Viewed > Added to Card > Charged_, bookmarking it lets you instantly return to the same setup without recreating the analysis each time.
 
 To bookmark a Funnel:
 
-1. Click **Bookmark** in the top-right corner of the dashboard after generating the Funnel analysis.
-2. Enter a descriptive name to help you easily identify the analysis later.
+1. Click **Bookmark** in the top-right corner of the dashboard after generating the funnel analysis.
+2. Enter a descriptive name to help you identify the analysis later.
 3. Click **Bookmark**.
 
-<Image align="center" border={true} caption="Bookmark a Funnel Analysis" src="https://files.readme.io/0a95c2524453a5d5e5b88f4d133534cefadfa02b54ced32746f4b63b34aa6eb7-2026-01-02_15-18-05_1.gif" />
+<Image align="center" border={true} caption="Bookmark a Funnel Analysis" src="https://files.readme.io/1093ede9c7152d18e96241b58b66a878d80b3d5a0ee74e4581126361289ede2d-2026-03-09_11-46-06_1.gif" />
 
 <Callout icon="📘" theme="info">
   #### Note
 
-  You can add up to 50 bookmarks. Funnels are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Funnels_ section.
+  You can save up to 50 bookmarks and access all your saved bookmarks from the bookmark list under the _Funnels_ section.
 </Callout>
+
+## Export Funnel Analysis
+
+You can export the generated funnel analysis for reporting or offline analysis.
+
+<Image align="center" border={true} caption="Export a Funnel Analysis" src="https://files.readme.io/d397fccb96f3acc67c71b777946dfb06a50b26dd04a4561d360d57751528703c-image.png" />
+
+Depending on the selected view, Funnels supports export options such as:
+
+* PNG image
+* PDF document
+* CSV file
+
+Use exports when you want to:
+
+* Share the chart in presentations or documents
+* Download the raw tabular values for further analysis
+* Archive analysis snapshots for reporting
 
 # FAQ
 

@@ -61,7 +61,7 @@ Before configuring BigQuery in CleverTap, ensure that the required Google Cloud 
 
 You can set up BigQuery using one of the following options:
 
-* For new users who need to provision BigQuery resources from scratch: [Create a Service Account](https://docs.clevertap.com/docs/bigquery#create-service-account), [assign BigQuery permission](https://docs.clevertap.com/docs/bigquery#assign-bigquery-permissions), [create or select a Dataset](https://docs.clevertap.com/docs/bigquery#create-dataset), and [create a Service Account JSON key](https://docs.clevertap.com/docs/bigquery#create-service-account-json-key).
+* For new users who need to provision BigQuery resources from scratch: [Create a Service Account](doc:bigquery#create-service-account), [Assign BigQuery permission](doc:bigquery#assign-bigquery-permissions), [Create or select a Dataset](doc:bigquery#create-dataset), and [Create a Service Account JSON key](doc:bigquery#create-service-account-json-key).
 
 * For users who already have configured resources in BigQuery: [Use Existing BigQuery Credentials](doc:bigquery#use-existing-bigquery-credentials)
 

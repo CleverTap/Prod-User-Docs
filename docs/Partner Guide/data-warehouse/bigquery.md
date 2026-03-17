@@ -10,6 +10,8 @@ metadata:
 next:
   description: ''
 ---
+<br />
+
 # Overview
 
 Configuring Google BigQuery with CleverTap enables seamless data import, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
@@ -111,7 +113,7 @@ Assign the required roles to the service account:
    | BigQuery Job User    | Allows CleverTap to run BigQuery jobs |
    | BigQuery Data Editor | Allows read/write access to datasets  |
 
-<br />
+<Image align="center" border={true} caption="Add Roles" src="https://files.readme.io/2fb32a730950cf71532b5a3d7b8feb42df8c4c5d753b69ca8cb8e3b3b3642a82-big_query_6.png" />
 
 5. Click **Save**. To learn more, see [BigQuery IAM roles](https://cloud.google.com/bigquery/docs/access-control).
 

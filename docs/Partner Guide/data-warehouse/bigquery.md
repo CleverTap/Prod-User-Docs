@@ -24,6 +24,7 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
   <summary>Expand for quick setup if you have previously configured a BigQuery workspace and are familiar with the CleverTap dashboard. If you are setting up BigQuery for the first time, skip to Prerequisites for Integration below.</summary>
 
   <hr />
+
   ## Prerequisites
 
   Before you begin, ensure you already have the following details:
@@ -58,11 +59,11 @@ You can set up BigQuery using one of the following options:
 
 * For new users who need to provision BigQuery resources from scratch: [Create a Service Account](https://docs.clevertap.com/docs/bigquery#create-service-account), [assign BigQuery permission](https://docs.clevertap.com/docs/bigquery#assign-bigquery-permissions), [create or select a Dataset](https://docs.clevertap.com/docs/bigquery#create-dataset), and [create a Service Account JSON key](https://docs.clevertap.com/docs/bigquery#create-service-account-json-key).
 
-* For users who already have configured resources in BigQuery: [Use Existing BigQuery Credentials](https://docs.clevertap.com/docs/snowflake#use-existing-snowflake-credentials)
+* For users who already have configured resources in BigQuery: [Use Existing BigQuery Credentials](doc:bigquery#use-existing-bigquery-credentials)
 
 ## Create New BigQuery Setup
 
-If you do not already have a dataset, service account, or JSON key configured in Google Cloud, you must create them before connecting to CleverTap.
+If you do not already have a Service Account, Project ID, Dataset, and Service Account JSON key configured in Google Cloud, you must create them before proceeding. These components are required to ensure CleverTap can securely access, store, and process your data.
 
 To create each resource, perform the following steps:
 
@@ -75,7 +76,7 @@ To create each resource, perform the following steps:
 
 To allow CleverTap to access your BigQuery environment, first create a dedicated service account:
 
-1. In the Google Cloud Console, click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  navigate to _IAM & Admin > Service Accounts_.
+1. In the [Google Cloud Console](https://console.cloud.google.com/iam-admin/serviceaccounts), click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  to navigate to _IAM & Admin > Service Accounts_.
 2. Click **Create Service Account**.
 
    <Image align="center" border={true} caption="Create Service Account" src="https://files.readme.io/ebdda5aa27f331774b22fc80c051edcfc30150b4971c511f27b1c69d13decc38-big_query_2.png" />
@@ -88,7 +89,6 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
   **Best Practices**
 
   * Use a dedicated service account for each CleverTap workspace to maintain clear access boundaries.
-  * Avoid long-lived service account keys. Rotate or revoke keys regularly to immediately remove CleverTap access when required.
 
   Refer to Google Cloud’s official guidance on [managing service account keys](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys).
 </Callout>
@@ -146,6 +146,12 @@ Generate a JSON key that CleverTap will use for authentication:
 
    <Image align="center" border={true} width="75% " src="https://files.readme.io/cda52a9b26d122363c1a73efc4f23abed6480d2cd9832fd76908b4a03d8113dc-Big_Query_9.png" className="border" />
 5. Download and securely store the JSON file.
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Avoid long-lived service account keys. Rotate or revoke keys regularly to immediately remove CleverTap access when required.
+</Callout>
 
 ## Use Existing BigQuery Credentials
 

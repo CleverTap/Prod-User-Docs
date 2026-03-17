@@ -146,7 +146,7 @@ Generate a JSON key that CleverTap will use for authentication:
    <Image align="center" border={true} caption="Create New key" src="https://files.readme.io/493ab42bf9ecd411c3441c09c35d3f30ab2484ff50331c97639a072ea116f334-Big_query_8.png" />
 4. Select **JSON** and click **Create**.
 
-   <Image align="center" border={true} caption="Create JSON k" src="https://files.readme.io/cda52a9b26d122363c1a73efc4f23abed6480d2cd9832fd76908b4a03d8113dc-Big_Query_9.png" width="50% " />
+   <Image align="center" border={true} caption="Create JSON Key" src="https://files.readme.io/cda52a9b26d122363c1a73efc4f23abed6480d2cd9832fd76908b4a03d8113dc-Big_Query_9.png" width="50% " />
 5. Download and securely store the JSON file.
 
 <Callout icon="📘" theme="info">
@@ -213,11 +213,7 @@ After preparing your BigQuery project, dataset, and service account, connect Big
 
 <Image align="center" border={true} caption="Integrate BigQuery with CleverTap" src="https://files.readme.io/90a4cea28203917d02cabc0c6ea3483bd5344657ba5d867f4446f0b1b1d5d9ac-image_74.png" />
 
-<br />
-
-1. <br />
-
-<br />
+To set up CleverTap dashboard for intergration, perform the following steps:
 
 1. Go to _Settings > Partners > BigQuery_ and select **Add Database**.
 2. Enter the following details:
@@ -238,7 +234,7 @@ After preparing your BigQuery project, dataset, and service account, connect Big
 
 # FAQs
 
-This section answers common questions related to managing BigQuery connections and imports within CleverTap.
+This section addresses common questions about managing BigQuery connections and imports in CleverTap.
 
 ### How can I delete a connection that has running imports?
 

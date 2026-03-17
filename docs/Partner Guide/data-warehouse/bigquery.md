@@ -152,7 +152,7 @@ Generate a JSON key that CleverTap will use for authentication:
 <Callout icon="📘" theme="info">
   #### Note
 
-  Google Cloud discourages long-lived keys. Rotate or revoke this key anytime to remove CleverTap’s access. Refer to [Key management best practices](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys) for more information.
+  Google Cloud discourages long-lived keys. Rotate or revoke this key anytime to remove CleverTap’s access. Refer to [Key Management Best Practices](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys) for more information.
 </Callout>
 
 ## Use Existing BigQuery Credentials

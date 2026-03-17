@@ -404,7 +404,7 @@ To generate a Key for Key Pair Authentication, perform the following steps:
 
 ### How can I delete a connection that has running imports?
 
-Go to _Import Connections_, select the connection, click _Delete_, review the list of running imports, and confirm **Delete**.  This will stop all running imports before deleting the connection.
+Go to _Import Connections_ and select the connection. Click on **Delete** and review any active imports. If there are any imports in _Ready_, _Schedule_, _paused_, or _running_ states, stop all active imports associated with that connection. Ensuring all imports are stopped, click **Delete** again and confirm your action.
 
 ### How can I filter import connections?
 

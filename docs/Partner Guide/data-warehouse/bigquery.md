@@ -230,7 +230,7 @@ To set up CleverTap dashboard for intergration, perform the following steps:
    * **Test Connection:** Verifies project access, dataset validity, and service account permissions.
    * **Save:** Stores the connection for use with imports.
 
-4. After saving the connection, navigate to _[Create Import](doc:data-warehouse-import)_ in the _Import Connections_ dashboard.
+4. After saving the connection, navigate to _[Create Import](doc:data-warehouse-import#quick-start-guide-for-data-warehouse-import)_ in the _Import Connections_ dashboard.
 
 # FAQs
 

@@ -111,7 +111,7 @@ Assign the required roles to the service account:
    | BigQuery Job User    | Allows CleverTap to run BigQuery jobs |
    | BigQuery Data Editor | Allows read/write access to datasets  |
 
-*
+<br />
 
 5. Click **Save**. To learn more, see [BigQuery IAM roles](https://cloud.google.com/bigquery/docs/access-control).
 

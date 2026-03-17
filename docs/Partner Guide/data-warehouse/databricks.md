@@ -162,7 +162,7 @@ The following table explains each Databricks component and its role in the integ
 To create each resource, perform the following steps:
 
 1. [Create a Catalog](doc:databricks#create-catalog)
-2. [Create a SQL Warehouse](doc:databricks#create-sql-warehouse)
+2. [Create SQL Warehouse](doc:databricks#create-sql-warehouse)
 3. [Create Personal Access Token](doc:databricks#create-personal-access-token)
 4. [Create a Schema](doc:databricks#create-schema)
 5. [Configure Permissions](doc:databricks#configure-permissions)
@@ -296,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                              clevertap_user`
+                                clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 

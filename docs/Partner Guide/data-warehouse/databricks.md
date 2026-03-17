@@ -296,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                                clevertap_user`
+                                  clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 
@@ -622,3 +622,9 @@ Databricks and all active imports will fail. To resolve this, generate a new PAT
 ### Can I use the same Databricks connection for multiple imports?
 
 Yes. A single Databricks connection in CleverTap can be used to create multiple import configurations, each reading from different tables within the same catalog and schema
+
+# Next Steps
+
+<Cards>
+  <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
+</Cards>

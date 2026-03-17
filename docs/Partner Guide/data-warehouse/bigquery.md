@@ -73,7 +73,7 @@ To create each resource, perform the following steps:
 
 1. [Create a Service Account](doc:bigquery#create-service-account)
 2. [Assign BigQuery Permissions](doc:bigquery#assign-bigquery-permissions)
-3. [Create a Dataset](doc:bigquery#create-or-select-bigquery-dataset)
+3. [Create or select a Dataset](doc:bigquery#create-or-select-bigquery-dataset)
 4. [Create a Service Account JSON Key](doc:bigquery#create-service-account-json-key)
 
 ### Create Service Account

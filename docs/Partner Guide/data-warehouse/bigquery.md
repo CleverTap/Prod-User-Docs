@@ -92,9 +92,7 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
 <Callout icon="📘" theme="info">
   **Best Practices**
 
-  * Use a dedicated service account for each CleverTap workspace to maintain clear access boundaries.
-
-  Refer to Google Cloud’s official guidance on [managing service account keys](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys).
+  Use a dedicated service account for each CleverTap workspace to maintain clear access boundaries. Refer to Google Cloud’s official guidance on [managing service account keys](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys).
 </Callout>
 
 ### Assign BigQuery Permissions

@@ -253,4 +253,14 @@ Use the filters on _Import Connections_ to refine the list:
 
 To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](https://staging.docs.user.clevertap.net/docs/import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
 
+# Next Steps
+
+<br />
+
+<Cards>
+  <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
+
+  <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/snowflake-export" />
+</Cards>
+
 <br />

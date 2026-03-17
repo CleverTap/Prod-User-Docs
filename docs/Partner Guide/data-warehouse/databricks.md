@@ -84,7 +84,7 @@ If you are setting up Databricks for the first time, ensure you have the followi
 
 <Callout icon="📘" theme="info">
   **IP Whitelisting**  
-  To ensure seamless communication between CleverTap and your Databricks workspace, whitelist the required CleverTap IP ranges in your network and Databricks workspace settings. Refer to [CleverTap IP Ranges](doc:imports-faqs#how-can-i-whitelist-ips-for-clevertap-integration) for the complete list.
+  To ensure seamless communication between CleverTap and your Databricks workspace, whitelist the required CleverTap IP ranges in your network and Databricks workspace settings. For the complete list, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges).
 </Callout>
 
 # Set Up Databricks for Integration
@@ -296,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                            clevertap_user`
+                              clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 

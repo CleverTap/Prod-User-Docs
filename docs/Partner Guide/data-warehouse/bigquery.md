@@ -117,7 +117,7 @@ Assign the required roles to the service account:
 
 5. Click **Save**. To learn more, see [BigQuery IAM roles](https://cloud.google.com/bigquery/docs/access-control).
 
-### Create Dataset
+### Create or Select BigQuery Dataset
 
 Create a dataset for CleverTap to store and query data:
 

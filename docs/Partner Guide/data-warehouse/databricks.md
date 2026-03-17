@@ -92,7 +92,7 @@ If you are setting up Databricks for the first time, ensure you have the followi
 You can set up Databricks using one of the following ways:
 
 * For new users who need to provision Databricks resources from scratch: [Create New Databricks Setup](doc:databricks#create-new-databricks-setup)
-* For users who already have configured resources in Databricks: [Use existing Databricks Credentials](doc:databricks#use-existing-databricks-credentials)
+* For users who already have configured resources in Databricks: [Use Existing Databricks Credentials](doc:databricks#use-existing-databricks-credentials)
 
 ## Create New Databricks Setup
 
@@ -296,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                        clevertap_user`
+                          clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 

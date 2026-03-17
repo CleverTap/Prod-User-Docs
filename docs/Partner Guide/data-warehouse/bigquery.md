@@ -218,12 +218,12 @@ To set up CleverTap dashboard for intergration, perform the following steps:
 1. Go to _Settings > Partners > BigQuery_ and select **Add Database**.
 2. Enter the following details:
 
-| Field                          | Description                                                                                                                                                                  |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Connection name**            | A unique name for this BigQuery connection.                                                                                                                                  |
-| **Project ID**                 | The Google Cloud project ID.                                                                                                                                                 |
-| **Dataset ID**                 | The dataset where CleverTap will read and write data.                                                                                                                        |
-| **Google Service Account Key** | In the Upload JSON file tab, upload the JSON key generated during Create Service Account JSON Key. Alternatively, use the Custom key tab to paste the JSON content directly. |
+| Field                          | Description                                                                                                                                                                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Connection name**            | A unique name for this BigQuery connection.                                                                                                                                                                                  |
+| **Project ID**                 | The Google Cloud project ID.                                                                                                                                                                                                 |
+| **Dataset ID**                 | The dataset where CleverTap will read and write data.                                                                                                                                                                        |
+| **Google Service Account Key** | In the Upload JSON file tab, upload the JSON key generated during [Create Service Account JSON Key](doc:bigquery#create-service-account-json-key). Alternatively, use the Custom key tab to paste the JSON content directly. |
 
 3. Click **Test Connection** or **Save**:
 

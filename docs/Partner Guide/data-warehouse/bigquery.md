@@ -260,5 +260,3 @@ To ensure seamless communication between CleverTap and your systems, whitelist t
 
   <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/snowflake-export" />
 </Cards>
-
-<br />

@@ -241,9 +241,10 @@ The table includes the following columns:
 * **Segment**: The segment or split value used in the funnel analysis. For example, _All Users_ or different property-based groups when the funnel is split by a property.
 * **Total Conversion**: The overall conversion rate from the first step to the final step of the funnel.
 * **Step Conversion Columns**: Each funnel step shows the number of users who reached that step, along with the corresponding percentage relative to the first step.
-* **Median Time Between Steps**: Displays the median time (in minutes/seconds) it takes users to move from one funnel step to the next. For example, if the median time between _App Launched > Product Viewed_ is _4 minutes_, the table displays _4 minutes_.
-
-You can also use the _Search_ field in the table to quickly find specific segments or split values in large funnel analyses.
+* **Median Time Between Steps**: Displays the median time it takes users to move from one funnel step to the next. The time is shown based on the duration in the following way:
+  * If the time is under a minute, it is displayed as less than 1 minute. For example, if the median time between _App Launched_ > _Product Viewed_ is 45 seconds, it will appear as less than 1 minute.
+  * If the time exceeds 60 minutes, it is displayed in hours and minutes. For example, if the median time between _App Launched_ > _Product Viewed_ is 90 minutes, it will appear as 2 hours.
+  You can also use the _Search_ field in the table to quickly find specific segments or split values in large funnel analyses.
 
 # Operations
 

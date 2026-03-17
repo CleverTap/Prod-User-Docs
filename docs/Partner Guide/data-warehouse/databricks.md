@@ -25,20 +25,18 @@ Configuring Databricks with CleverTap enables seamless data import, ensuring syn
 
   <hr />
 
-  This section is intended for users who already have a configured Databricks workspace and are familiar with the CleverTap dashboard.
-
   ## Prerequisites
 
   Before you begin, ensure you have the following details:
 
-  * Connection Name: A unique name to identify this configuration in CleverTap.
-  * Host: Databricks workspace domain (found under *SQL* > *Warehouses* > *Connection Details*).
-  * HTTP Path: HTTP path of the target SQL Warehouse (found under *SQL* > *Warehouses* >
+  * **Connection Name**: A unique name to identify this configuration in CleverTap.
+  * **Host**: Databricks workspace domain (found under *SQL* > *Warehouses* > *Connection Details*).
+  * **HTTP Path**: HTTP path of the target SQL Warehouse (found under *SQL* > *Warehouses* >
     *Connection Details*).
-  * Personal Access Token (PAT): Token authorized to access the SQL Warehouse.
-  * Catalog: The Unity Catalog for CleverTap data operations.
-  * Schema: The specific schema within the catalog for CleverTap tables.
-  * Port: HTTPS port (defaults to 443 if not specified)
+  * **Personal Access Token (PAT)**: Token authorized to access the SQL Warehouse.
+  * **Catalog**: The Unity Catalog for CleverTap data operations.
+  * **Schema**: The specific schema within the catalog for CleverTap tables.
+  * **Port**: HTTPS port (defaults to 443 if not specified)
 
     ## Configure Databricks Credentials in CleverTap
 
@@ -94,11 +92,11 @@ If you are setting up Databricks for the first time, ensure you have the followi
 You can set up Databricks using one of the following ways:
 
 * For new users who need to provision Databricks resources from scratch: [Create New Databricks Setup](doc:databricks#create-new-databricks-setup)
-* For users who already have configured resources in Databricks: [Use existing Databricks Credentials](doc:databricks-configuration#use-existing-databricks-credentials)
+* For users who already have configured resources in Databricks: [Use existing Databricks Credentials](doc:databricks#use-existing-databricks-credentials)
 
 ## Create New Databricks Setup
 
-If you do not already have a Catalog, SQL Warehouse, User/Service Principal, and Schema configured in Databricks, you must create them before proceeding. These components are required to ensure CleverTap can securely access, store, and process your data.
+If you do not already have a Catalog, SQL Warehouse, Personal Access Token, and Schema configured in Databricks, you must create them before proceeding. These components are required to ensure CleverTap can securely access, store, and process your data.
 
 The following table explains each Databricks component and its role in the integration:
 
@@ -163,10 +161,10 @@ The following table explains each Databricks component and its role in the integ
 
 To create each resource, perform the following steps:
 
-1. [Create a Catalog](doc:databricks-configuration#create-catalog)
-2. [Create a SQL Warehouse](doc:databricks-configuration#create-sql-warehouse)
-3. [Create Personal Access Token](doc:databricks-configuration#create-personal-access-token)
-4. [Create a Schema](doc:databricks-configuration#create-schema)
+1. [Create a Catalog](doc:databricks#create-catalog)
+2. [Create a SQL Warehouse](doc:databricks#create-sql-warehouse)
+3. [Create Personal Access Token](doc:databricks#create-personal-access-token)
+4. [Create a Schema](doc:databricks#create-schema)
 5. [Configure Permissions](doc:databricks#configure-permissions)
 
 ### Create Catalog
@@ -273,7 +271,6 @@ After creating the catalog, you must create a schema to organize CleverTap-relat
 | schema_name |
 +--------------------+
 | clevertap_schema |
-Databricks | CleverTap Documentation
 +--------------------+
 ```
 
@@ -299,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                    clevertap_user`
+                        clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 
@@ -322,9 +319,9 @@ SHOW GRANTS ON SCHEMA clevertap_catalog.clevertap_schema;
 If you already have Databricks set up, perform the following steps to find each detail on the Databricks workspace.
 
 * [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse)
-* [Create or Retrieve a PAT](doc:databricks-configuration#create-or-retrieve-a-pat)
-* [Find Existing Catalog](doc:databricks-configuration#find-existing-catalog)
-* [Find Existing Schema](doc:databricks-configuration#find-existing-schema)
+* [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat)
+* [Find Existing Catalog](doc:databricks#find-existing-catalog)
+* [Find Existing Schema](doc:databricks#find-existing-schema)
 * [Verify Existing Permissions](doc:databricks#verify-existing-permissions)
 
 ### Obtain Host and HTTP Path from SQL Warehouse
@@ -389,7 +386,7 @@ SHOW GRANTS ON CATALOG <catalog_name>;
 SHOW GRANTS ON SCHEMA <catalog_name>.<schema_name>;
 ```
 
-If the required permissions (USAGE and SELECT) are not present, refer to the [Configure Permissions](/3122619d5aed80b6b5f6fda83e7ad5c9?pvs=25#3132619d5aed8086b47ec33bd13395ed) section above to grant them.
+If the required permissions (USAGE and SELECT) are not present, refer to the [Configure Permissions](doc:databricks#configure-permissions) section above to grant them.
 
 # Set Up CleverTap Dashboard for Integration
 
@@ -399,7 +396,7 @@ You have already prepared your Databricks environment and gathered the required 
 
 ## Connection Details for Databricks
 
-To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog, SQL Warehouse, User/Principal, and Schema](doc:databricks-integration#create-new-databricks-setup) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:
+To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog](doc:databricks-integration#create-new-databricks-setup), [SQL Warehouse](doc:databricks#create-sql-warehouse), [Personal Access Token](doc:databricks#create-personal-access-token), and [Schema](doc:databricks#create-schema) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:
 
 <Table>
   <thead>
@@ -431,7 +428,7 @@ To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ a
       </td>
 
       <td>
-        The Databricks workspace host (domain only; do not include the protocol). For example: `adb-1234567890123456.17.azuredatabricks.net`. Refer to [Obtain Host and HTTP Path from SQL Warehouse](https://staging.docs.user.clevertap.net/docs/databricks-integration#obtain-your-databricks-host).
+        The Databricks workspace host (domain only; do not include the protocol). For example: `adb-1234567890123456.17.azuredatabricks.net`. Refer to [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse).
       </td>
     </tr>
 
@@ -463,7 +460,7 @@ To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ a
       </td>
 
       <td>
-        The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT](https://staging.docs.user.clevertap.net/docs/databricks-integration#create-or-retrieve-a-pat). Ensure the token has not expired.
+        The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat). Ensure the token has not expired.
       </td>
     </tr>
 
@@ -604,7 +601,7 @@ This section answers common questions related to managing BigQuery connections a
 
 ### How can I delete a connection that has running imports?
 
-Go to _Import Connections_ and select the connection. Click on **Delete** and review any active imports. If there are any imports in _Ready_, _Schedule_, _paused_, or _running_ states, stop all active imports associated with that connection. Ensuring all imports are stopped, click **Delete** again and confirm your action.
+Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in ready, scheduled, paused, or running state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
 
 ### How can I filter import connections?
 

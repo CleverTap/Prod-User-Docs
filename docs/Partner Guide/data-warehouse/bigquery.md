@@ -1,6 +1,8 @@
 ---
 title: BigQuery
-excerpt: ''
+excerpt: >-
+  Learn how configuring BigQuery with CleverTap enables data sync for
+  personalized engagement and growth.
 deprecated: false
 hidden: true
 metadata:

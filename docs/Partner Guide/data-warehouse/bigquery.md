@@ -24,9 +24,6 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
   <summary>Expand for quick setup if you have previously configured a BigQuery workspace and are familiar with the CleverTap dashboard. If you are setting up BigQuery for the first time, skip to Prerequisites for Integration below.</summary>
 
   <hr />
-
-  This section is intended for users who already have a configured BigQuery account and are familiar with the CleverTap dashboard.
-
   ## Prerequisites
 
   Before you begin, ensure you already have the following details:

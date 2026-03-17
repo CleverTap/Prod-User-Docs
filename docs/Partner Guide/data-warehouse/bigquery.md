@@ -238,7 +238,7 @@ This section addresses common questions about managing BigQuery connections and 
 
 ### How can I delete a connection that has running imports?
 
-Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in ready, scheduled, paused, or running state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
+Go to _Import Connections_ and select the connection. Click on **Delete** and review any active imports. If there are any imports in _Ready_, _Schedule_, _paused_, or _running_ states, stop all active imports associated with that connection. Ensuring all imports are stopped, click **Delete** again and confirm your action.
 
 ### How can I filter import connections?
 

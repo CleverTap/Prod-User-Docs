@@ -460,7 +460,7 @@ To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ a
       </td>
 
       <td>
-        The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat). Ensure the token has not expired.
+        The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve PAT](doc:databricks#create-or-retrieve-pat). Ensure the token has not expired.
       </td>
     </tr>
 
@@ -492,12 +492,12 @@ After entering all connection details, complete the setup:
 
 1. Click Test Connection to verify that the workspace, HTTP Path, token, and privileges are
    correct.
-   1. A successful test confirms that CleverTap can reach your Databricks workspace and access the specified catalog and schema.
-   2. A failed test indicates an issue with one or more parameters. Refer to the [Troubleshooting](doc:databricks#troubleshooting) section below for common errors.
-2. Click Save to store the connection details.
+   * A successful test confirms that CleverTap can reach your Databricks workspace and access the specified catalog and schema.
+   * A failed test indicates an issue with one or more parameters. For common errors, refer to [Troubleshooting](doc:databricks#troubleshooting).
+2. Click **Save** to store the connection details.
 3. After saving, navigate to the Import Connections dashboard and click [Create Import](doc:data-warehouse-import) to set up your first data import.
 
-## Troubleshooting
+# Troubleshooting
 
 If the Test Connection fails, use the following table to identify and resolve common issues:
 
@@ -597,7 +597,7 @@ If the Test Connection fails, use the following table to identify and resolve co
 
 # FAQs
 
-This section answers common questions related to managing BigQuery connections and imports within CleverTap.
+This section answers common questions related to managing BigQuery connections and imports in CleverTap.
 
 ### How can I delete a connection that has running imports?
 
@@ -612,7 +612,7 @@ Use the filters on _Import Connections_ to refine the list:
 
 ### How can I whitelist IPs for CleverTap integration?
 
-To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
+To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges).
 
 ### What happens when my PAT expires?
 

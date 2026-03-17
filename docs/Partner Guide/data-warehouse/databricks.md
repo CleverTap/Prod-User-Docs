@@ -172,7 +172,7 @@ To create each resource, perform the following steps:
 To get your Databricks data in CleverTap, you first need to create a Unity Catalog.
 
 <Callout icon="📘" theme="info">
-  **Prerequisite**
+  #### Prerequisite
 
   Creating a catalog requires metastore admin privileges or the CREATE CATALOG permission. Contact your Databricks workspace administrator if you do not have this permission.
 </Callout>
@@ -238,7 +238,7 @@ Create or identify the Databricks identity you will use with CleverTap, then gen
 9. Copy the token value immediately and store it securely. **The token is displayed only once**. You will paste it in the Personal Access Token (PAT) field in CleverTap.
 
 <Callout icon="🚧" theme="warn">
-  **Token Expiration**
+  #### Token Expiration
 
   PATs expire based on the lifetime you set during creation. When a token expires, the CleverTap connection will fail, and imports will stop. Monitor token expiration dates and regenerate tokens before they expire. Consider setting a calendar reminder.
 </Callout>
@@ -292,7 +292,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 ```
 
 <Callout icon="📘" theme="info">
-  **Granular Table Permissions**
+  #### Granular Table Permissions
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
@@ -316,10 +316,10 @@ SHOW GRANTS ON SCHEMA clevertap_catalog.clevertap_schema;
 
 ## Use Existing Databricks Credentials
 
-If you already have Databricks set up, perform the following steps to find each detail on the Databricks workspace.
+If you already have Databricks set up, perform the following steps to find each detail in the Databricks workspace.
 
 * [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse)
-* [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat)
+* [Create or Retrieve PAT](doc:databricks#create-or-retrieve-pat)
 * [Find Existing Catalog](doc:databricks#find-existing-catalog)
 * [Find Existing Schema](doc:databricks#find-existing-schema)
 * [Verify Existing Permissions](doc:databricks#verify-existing-permissions)
@@ -336,7 +336,7 @@ Both values are available from the same location. Follow these steps:
 5. Copy the Host value (for example, `adb-1234567890123456.17.azuredatabricks.net`).
 6. Copy the HTTP Path value (for example, `/sql/1.0/warehouses/abc123def456`).
 
-### Create or Retrieve a PAT
+### Create or Retrieve PAT
 
 To authenticate CleverTap with Databricks, generate a Personal Access Token:
 
@@ -346,7 +346,7 @@ To authenticate CleverTap with Databricks, generate a Personal Access Token:
 4. Copy the token value immediately and store it securely. **The token is displayed only once.**
 
 <Callout icon="📘" theme="info">
-  **Token Rotation**
+  #### Token Rotation
 
   If your organization requires periodic credential rotation, generate a new PAT before the current one expires. Update the CleverTap connection with the new token to avoid import interruptions. Refer to Databricks documentation on Personal Access Tokens for detailed guidance.
 </Callout>
@@ -396,7 +396,7 @@ You have already prepared your Databricks environment and gathered the required 
 
 ## Connection Details for Databricks
 
-To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog](doc:databricks-integration#create-new-databricks-setup), [SQL Warehouse](doc:databricks#create-sql-warehouse), [Personal Access Token](doc:databricks#create-personal-access-token), and [Schema](doc:databricks#create-schema) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:
+To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog](doc:databricks#create-new-databricks-setup), [SQL Warehouse](doc:databricks#create-sql-warehouse), [Personal Access Token](doc:databricks#create-personal-access-token), and [Schema](doc:databricks#create-schema) or [Use existing Databricks credentials](doc:databricks#use-existing-databricks-credentials) and configure the following:
 
 <Table>
   <thead>

@@ -252,3 +252,5 @@ Use the filters on _Import Connections_ to refine the list:
 ### How can I whitelist IPs for CleverTap integration?
 
 To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](https://staging.docs.user.clevertap.net/docs/import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
+
+<br />

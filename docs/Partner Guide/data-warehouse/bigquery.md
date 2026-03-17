@@ -12,15 +12,15 @@ metadata:
 next:
   description: ''
 ---
-<br />
-
 # Overview
 
 Configuring Google BigQuery with CleverTap enables seamless data import, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
 
-> 📘 Note
->
-> BigQuery is a private beta release. Contact your Customer Success Manager for access. This document covers importing data from BigQuery into CleverTap. For exporting data from CleverTap to BigQuery, refer to [BigQuery Export](https://docs.clevertap.com/docs/bigquery-export).
+<Callout icon="📘" theme="info">
+  #### Note
+
+  BigQuery is a private beta release. Contact your Customer Success Manager for access. This document covers importing data from BigQuery into CleverTap. For exporting data from CleverTap to BigQuery, refer to [BigQuery Export](https://docs.clevertap.com/docs/bigquery-export).
+</Callout>
 
 # Quick Start Guide for Existing Users
 

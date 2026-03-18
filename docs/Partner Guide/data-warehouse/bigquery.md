@@ -92,7 +92,7 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
 <Callout icon="📘" theme="info">
   **Best Practices**
 
-  Use a dedicated service account for each CleverTap workspace to maintain clear access boundaries. Refer to Google Cloud’s official guidance on [managing service account keys](https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys).
+  Use a dedicated service account for each CleverTap workspace to maintain clear access boundaries.
 </Callout>
 
 ### Assign BigQuery Permissions
@@ -255,6 +255,4 @@ To ensure seamless communication between CleverTap and your systems, whitelist t
 
 <Cards>
   <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
-
-  <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/bigquery-export" />
 </Cards>

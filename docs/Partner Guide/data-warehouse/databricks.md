@@ -296,7 +296,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                                  clevertap_user`
+                                    clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 
@@ -601,7 +601,7 @@ This section answers common questions related to managing BigQuery connections a
 
 ### How can I delete a connection that has running imports?
 
-Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in ready, scheduled, paused, or running state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
+Go to _Import Connections_ and select the connection. Click on **Delete** and review any active imports. If there are any imports in _Ready_, _Schedule_, _paused_, or _running_ states, stop all active imports associated with that connection. Ensuring all imports are stopped, click **Delete** again and confirm your action.
 
 ### How can I filter import connections?
 

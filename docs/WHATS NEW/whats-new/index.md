@@ -155,10 +155,10 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="content-manager" id="Event-Reminder-Personalization-Content-Blocks">
+<div class="release-note article" data-category="content-manager" id="event-reminder-personalization-content-blocks">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#Event-Reminder-Personalization-Content-Blocks"><i class="fa-light fa-anchor"></i></a>
+      <a href="#event-reminder-personalization-content-blocks"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div><img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" /></div>
     <div><h3>Event and Reminder Personalization Support in Content Blocks</h3></div>

@@ -155,6 +155,40 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="cleverai-predictions-agent">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#cleverai-predictions-agent"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/8d4c3b1-Group_1.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">CleverAI Predictions Agent</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now use CleverAI Predictions Agent to anticipate user behavior and take proactive action. It predicts conversions, churn, uninstalls, and other key outcomes in real time, so you can engage users before opportunities are lost. You also get visibility into the factors driving each prediction, enabling more informed decision-making.</p>
+
+    <p>With CleverAI Predictions Agent, you can:</p>
+    <p>
+      <ul>
+        <li>Build dynamic segments that update continuously based on behavior.</li>
+        <li>Understand what drives each prediction with explainable insights.</li>
+        <li>Target users precisely using predictive and behavioral filters.</li>
+        <li>Measure campaign impact across different likelihood segments.</li>
+        <li>Plan and execute engagements with greater confidence.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to CleverAI Predictions Agent.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="content-manager" id="event-reminder-personalization-content-blocks">
   <div class="release-note-header">
     <div class="anchor-link-icon">

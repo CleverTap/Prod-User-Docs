@@ -1,4 +1,4 @@
-name: Forward Prod-User-Docs PR to Staging-User-Docs repo
+name: Forward PR to Staging Repo
 
 on:
   pull_request:
@@ -11,6 +11,14 @@ jobs:
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Create safe branch name
+        id: vars
+        run: |
+          SAFE_BRANCH=$(echo "${{ github.head_ref }}" | tr '/' '-' | tr ' ' '-')
+          echo "BRANCH=external-${{ github.event.pull_request.number }}-$SAFE_BRANCH" >> $GITHUB_OUTPUT
 
       - name: Configure Git
         run: |
@@ -21,26 +29,28 @@ jobs:
         env:
           TOKEN: ${{ secrets.STAGING_REPO_TOKEN }}
         run: |
-          git remote add staging https://$TOKEN@github.com/CleverTap/Staging-User-Docs.git
-          git push staging HEAD:external-${{ github.event.pull_request.number }}-${{ github.head_ref }}
+          git remote add staging https://x-access-token:$TOKEN@github.com/CleverTap/Staging-User-Docs.git
+          git push staging HEAD:${{ steps.vars.outputs.BRANCH }} --force
 
-      - name: Create PR in staging repo
+      - name: Create PR in staging repo (if not exists)
         env:
           GH_TOKEN: ${{ secrets.STAGING_REPO_TOKEN }}
         run: |
+          gh pr view ${{ steps.vars.outputs.BRANCH }} --repo CleverTap/Staging-User-Docs || \
           gh pr create \
-          --repo CleverTap/Staging-User-Docs \
-          --base develop \
-          --head external-${{ github.event.pull_request.number }}-${{ github.head_ref }} \
-          --title "External PR: ${{ github.event.pull_request.title }}" \
-          --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}"
+            --repo CleverTap/Staging-User-Docs \
+            --base develop \
+            --head ${{ steps.vars.outputs.BRANCH }} \
+            --title "External PR: ${{ github.event.pull_request.title }}" \
+            --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}"
 
       - name: Comment on public PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr comment ${{ github.event.pull_request.number }} \
-          --body "Thank you for your contribution! Your suggestion has been forwarded to our internal review repository and will be reviewed by the team."
+          --body "Thank you for your contribution! 🚀  
+          Your changes have been forwarded to our internal review system."
 
       - name: Close public PR
         env:

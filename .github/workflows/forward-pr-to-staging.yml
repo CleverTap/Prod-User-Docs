@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   forward:
     runs-on: ubuntu-latest
@@ -29,7 +33,12 @@ jobs:
       - name: Push branch to staging repo
         run: |
           git remote add staging https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git
-          git push staging HEAD:external-${{ github.event.pull_request.number }}-${{ github.head_ref }}
+          git push staging HEAD:external-${{ github.event.pull_request.number }}-${{ github.head_ref }} --force
+
+      - name: Authenticate gh
+        run: gh auth status
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
       - name: Create PR in staging repo
         env:

@@ -4,7 +4,7 @@ excerpt: >-
   CleverTap's AI-powered feature designed to amplifiy your growth and maximize
   ROI.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

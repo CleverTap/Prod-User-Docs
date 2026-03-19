@@ -14,27 +14,23 @@ next:
 ---
 # Overview
 
-Once a prediction model is set up in CleverTap, **Clever.AI** processes user data to provide insights about their likelihood to perform specific goal events within a set timeframe. These insights, presented through various metrics and visualizations, help you take targeted actions to boost user engagement and drive higher conversions.
+Once a prediction model is set up in CleverTap, _Clever.AI_ processes user data to provide insights into their likelihood of performing specific goal events within a set timeframe. These insights, presented through various metrics and visualizations, help you take targeted actions to boost user engagement and drive higher conversions.
 
 # View Prediction Insights
 
-The CleverTap dashboard provides a detailed overview of all your predictions, including performance metrics and segmented user insights. When a prediction is initiated for the first time, the state changes to *Processing*. Opening a prediction while it is still in the *Processing* state does not show any insights. Once processing is completed, the prediction status changes to *Active*, and you can access the detailed analysis results.
+The CleverTap dashboard provides a detailed overview of all your predictions, including performance metrics and segmented user insights. When a prediction is initiated for the first time, the state changes to _Processing_. Opening a prediction while it is still in the _Processing_ state does not show any insights. Once processing is completed, the prediction status changes to _Active_, and you can access the detailed analysis results.
 
-<Image alt="View a Processing Prediction" align="center" border={true} src="https://files.readme.io/c9c522922ca445aff8e488c648886a7669a42a3bbaa0613fd2ae3534b8c106ad-Processing_Prediction.png">
-  Viewing a Prediction in Processing State
-</Image>
+<Image align="center" alt="View a Processing Prediction" border={true} caption="Viewing a Prediction in Processing State" src="https://files.readme.io/c9c522922ca445aff8e488c648886a7669a42a3bbaa0613fd2ae3534b8c106ad-Processing_Prediction.png" />
 
-During the *Processing* state, the system calculates the likelihood of your target users achieving the defined goal and assigns a custom user property in CleverTap. This property is named after the Prediction itself (For example, if your Prediction is named *Purchase Likelihood*, the custom user property will be **Purchase Likelihood**. 
+During the _Processing_ state, the system calculates the likelihood of your target users achieving the defined goal and assigns a custom user property in CleverTap. This property is named after the Prediction itself (For example, if your Prediction is named _Purchase Likelihood_, the custom user property will be **Purchase Likelihood**.
 
-Each user is then categorized based on their likelihood of achieving the goal, with values set to *High*, *Medium*, or *Low*. These values help you quickly identify users who are more or less likely to complete the desired action, as shown in the illustration below.
+Each user is then categorized based on their likelihood of achieving the goal, with values set to _High_, _Medium_, or _Low_. These values help you quickly identify users who are more or less likely to complete the desired action, as shown in the illustration below.
 
-<Image alt="Custom User Property to Denote Likelihood of User" align="center" border={true} src="https://files.readme.io/092df4cb5a2f0e5b9571e5756f64e7f0d427fbf217550e71c612990d21b78f58-Custom_User_Property_for_Likelihood.png">
-  Custom User Property to Denote Likelihood of User
-</Image>
+<Image align="center" alt="Custom User Property to Denote Likelihood of User" border={true} caption="Custom User Property to Denote Likelihood of User" src="https://files.readme.io/092df4cb5a2f0e5b9571e5756f64e7f0d427fbf217550e71c612990d21b78f58-Custom_User_Property_for_Likelihood.png" />
 
-Clever.AI processes and refreshes the entire Prediction model every 15 days and the likelihood for your target users every 24 hours. When a user's likelihood changes, an event called *Likelihood Change* is triggered, capturing the transition. 
+Clever.AI processes and refreshes the entire Prediction model every 15 days and the likelihood for your target users every 24 hours. When a user's likelihood changes, an event called _Likelihood Change_ is triggered, capturing the transition.
 
-The *Likelihood Change* event includes the following properties:
+The _Likelihood Change_ event includes the following properties:
 
 * New Prediction Value
 * Old Prediction Value
@@ -54,31 +50,25 @@ Click the prediction of your interest. A new window displaying the following det
 
 ## Definition
 
-The *Definition* tab offers comprehensive details about prediction scope and setup, helping you understand the context of the results.
+The _Definition_ tab offers comprehensive details about prediction scope and setup, helping you understand the context of the results.
 
 * **Model Accuracy**: Displays the accuracy score of the prediction model, such as the AUC score, which indicates how effectively the model predicts user behavior. The accuracy is displayed based on the data available on the last model refresh. You can also view the underlying logic and rationale behind the predictions and [edit the prediction](doc:create-predictions#edit-or-clone-prediction) directly from this section.
 
-<Image alt="View Model Accuracy" align="center" border={true} src="https://files.readme.io/d9956d7854f556c4cab0797e3163e33d0ea754cfd1483e1999cd1eced4272092-Model_Accuracy.png">
-  View Model Accuracy and Prediction Details 
-</Image>
+<Image align="center" alt="View Model Accuracy" border={true} caption="View Model Accuracy and Prediction Details" src="https://files.readme.io/d9956d7854f556c4cab0797e3163e33d0ea754cfd1483e1999cd1eced4272092-Model_Accuracy.png" />
 
-* **Prediction Setup**: Provides an overview of the initial prediction setup, including the goal event, additional intelligence added to enhance the model's accuracy, and the target segment. 
+* **Prediction Setup**: Provides an overview of the initial prediction setup, including the goal event, additional intelligence added to enhance the model's accuracy, and the target segment.
 
-<Image alt="View Prediction Setup" align="center" border={true} src="https://files.readme.io/88d96fc588e583aa7e667fe45a6b9dc8cb851b5cfbc439dfa5d9aee6b376c15c-Prediction_Setup.png">
-  Prediction Setup
-</Image>
+<Image align="center" alt="View Prediction Setup" border={true} caption="Prediction Setup" src="https://files.readme.io/88d96fc588e583aa7e667fe45a6b9dc8cb851b5cfbc439dfa5d9aee6b376c15c-Prediction_Setup.png" />
 
 ### View Reasoning
 
 This section shows how the prediction model arrived at its conclusions, detailing the key factors and logic behind the results. It provides transparency into the model’s decision-making process, helping you understand the basis of the predictions.
 
-<Image alt="View Prediction Reasoning" align="center" border={true} src="https://files.readme.io/5a643b1704d053f3823979bc0f68747dfe02f3721603bc7906a539cdf5d82ee1-Prediction_Reasoning.png">
-  View Prediction Reasoning
-</Image>
+<Image align="center" alt="View Prediction Reasoning" border={true} caption="View Prediction Reasoning" src="https://files.readme.io/5a643b1704d053f3823979bc0f68747dfe02f3721603bc7906a539cdf5d82ee1-Prediction_Reasoning.png" />
 
 The Prediction Reasoning modal displays the following:
 
-* **Rules**: Lists the top rules used by the prediction model, ranked in the descending order of significance (for example, *Major, Moderate, Minor*). The significance displayed next to each rule indicates the importance of each rule in the prediction, helping you understand the factors that influence the user behavior most. You can either [engage with a rule](doc:engage-with-predictions) or view the rule. 
+* **Rules**: Lists the top rules used by the prediction model, ranked in the descending order of significance (for example, _Major, Moderate, Minor_). The significance displayed next to each rule indicates the importance of each rule in the prediction, helping you understand the factors that influence the user behavior most. You can either [engage with a rule](doc:engage-with-predictions) or view the rule.
 * **Features**: Displays insights into the recency and frequency of user events that contribute to the prediction model. It highlights how recently and how often specific events have occurred, giving you a better understanding of the factors influencing the prediction.
 
 ## Analysis
@@ -93,11 +83,9 @@ Users in the target segment are categorized into High, Medium, and Low likelihoo
 * **Medium Likelihood**: Users with a moderate chance of performing the goal event.
 * **Low Likelihood**: Users least likely to perform the goal event.
 
-<Image alt="View User Likelihoods" align="center" border={true} src="https://files.readme.io/6f69d10a17c95237deaa3885fda9928f15e8e5afae6826e4af7f7778bf8ac6bb-Likelihoods.png">
-  View User Likelihoods
-</Image>
+<Image align="center" alt="View User Likelihoods" border={true} caption="View User Likelihoods" src="https://files.readme.io/6f69d10a17c95237deaa3885fda9928f15e8e5afae6826e4af7f7778bf8ac6bb-Likelihoods.png" />
 
-For each likelihood category, the data for the *Predicted Today* metric, which represents the number of users predicted to perform the goal event, is shown.
+For each likelihood category, the data for the _Predicted Today_ metric, which represents the number of users predicted to perform the goal event, is shown.
 
 ### Engagements Using This Prediction
 
@@ -107,17 +95,13 @@ This section shows the performance comparison of the target group with a control
 * **Performance Comparison**: Provides a horizontal bar chart comparing the control group's performance against the target group, helping you understand whether the target group performed better, worse, or the same as the control group.
 * **Engagement Breakdown**: Shows the number of Campaigns and Journeys created using the prediction.
 
-<Image alt="View Engagement Data from Prediction" align="center" border={true} src="https://files.readme.io/0d43192a6fd23638c83c348d19954681936ca3a6e2c8926f6c5baec11b08e62c-Engagements_Using_This_Prediction.png">
-  View Engagement Data of a Prediction
-</Image>
+<Image align="center" alt="View Engagement Data from Prediction" border={true} caption="View Engagement Data of a Prediction" src="https://files.readme.io/0d43192a6fd23638c83c348d19954681936ca3a6e2c8926f6c5baec11b08e62c-Engagements_Using_This_Prediction.png" />
 
 ### User Distribution Trend
 
 This section presents line graphs illustrating the distribution of users in the target segment over time, shown as follows:
 
-<Image alt="View User Distribution Trend" align="center" border={true} src="https://files.readme.io/c9459c088395e697cfbe065c9d449c734bfa1171d4e2a88ef67a1a5983b7b1b3-User_Distribution.png">
-   Linear User Distribution Trend
-</Image>
+<Image align="center" alt="View User Distribution Trend" border={true} caption="Linear User Distribution Trend" src="https://files.readme.io/c9459c088395e697cfbe065c9d449c734bfa1171d4e2a88ef67a1a5983b7b1b3-User_Distribution.png" />
 
 Clicking a particular data point on the line graph displays the following information:
 
@@ -126,10 +110,8 @@ Clicking a particular data point on the line graph displays the following inform
 * Number of users with the likelihood to perform a goal event.
 * Percentage change in the number of users compared to the previous day.
 
-When you switch the trend to **Relative**, it displays the data in terms of percentage change or proportion relative to previous days rather than showing absolute values. This provides a clearer view of how user segments are changing over time relative to previous days, allowing for easier comparison across different time periods or segments. 
+When you switch the trend to **Relative**, it displays the data in terms of percentage change or proportion relative to previous days rather than showing absolute values. This provides a clearer view of how user segments are changing over time relative to previous days, allowing for easier comparison across different time periods or segments.
 
-<Image alt="Relative User Distribution Trend" align="center" border={true} src="https://files.readme.io/1bf9c4719768a16d701004310e67675ff62eade9f6534cb667c7ad8958b43e21-Relative_User_Distribution.png">
-  Relative User Distribution Trend
-</Image>
+<Image align="center" alt="Relative User Distribution Trend" border={true} caption="Relative User Distribution Trend" src="https://files.readme.io/1bf9c4719768a16d701004310e67675ff62eade9f6534cb667c7ad8958b43e21-Relative_User_Distribution.png" />
 
 In this way, you gain valuable insights into user behavior, allowing you to improve your marketing strategies. With clear metrics, visualizations, and reasoning, you can effectively target users at the right time, boosting engagement and conversions. Keep monitoring and adjusting your approach with CleverTap's prediction models to make the most of your data, optimize your engagements, and achieve better results.

@@ -155,13 +155,13 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="campaigns" id="cleverai-predictions-agent">
+<div class="release-note article" data-category="segments" id="cleverai-predictions-agent">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#cleverai-predictions-agent"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/8d4c3b1-Group_1.svg" alt="Campaigns" class="release-note-heading-icon"/>
+     <img src="https://files.readme.io/04fe24c1114cef41af4a4e0224cab88f5be4c31160eca491d67942c689cb79c0-Segmentation.svg" alt="Segments" />
     </div>
     <h3 class="release-note-heading">CleverAI Predictions Agent</h3>
     <div class="badge new-feature">NEW FEATURE</div>
@@ -181,7 +181,8 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 
-    <p>For more information, refer to CleverAI Predictions Agent.</p>
+  <p>For more information, refer to <a href="https://docs.clevertap.com/docs/predictions" target="_blank">CleverAI Predictions Agent.</p>
+
   </div>
 
   <hr/>

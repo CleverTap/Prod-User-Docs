@@ -22,7 +22,7 @@ To invoke the personalization menu, type the _@_ or the _{'{}'}_  symbol in the 
 
 You can also add dynamic replacements in the title and body. Notice a preview as displayed below.
 
-<Image align="center" alt={1095} border={true} caption="Inline Personalization" title="Inline Personalization with @ and {{}}" src="https://files.readme.io/281aede-campaign_push_personalization.png" />
+<Image align="center" alt="in-app inline personalization" border={true} caption="Inline Personlization" src="https://files.readme.io/22fa7df919cde1b2fdd88c7407e5a8bdc7f77c79ec6013b93971c6a8e61d383f-image.png" />
 
 In addition to title, body, you can also personalize many other things such as media URLs, deep links, or button text. An _@_ icon in a box indicates that it can be personalized.
 

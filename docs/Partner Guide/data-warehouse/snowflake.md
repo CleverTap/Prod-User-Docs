@@ -335,7 +335,7 @@ Enter the _Database Details_ in the integration setup form. To create or retriev
       </td>
 
       <td>
-        The Snowflake role CleverTap uses to connect to the database.
+        The Snowflake role CleverTap uses to connect to the database. This field is optional for imports but compulsory for exports.
       </td>
     </tr>
 

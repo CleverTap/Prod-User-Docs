@@ -14,36 +14,119 @@ next:
 
 After configuring, mapping, and setting the frequency for the import, select **Import** to view the _Import Listing page_. This page shows a list of all imports created for the data warehouse database and can also be accessed from _Settings > Partners > Import Center > Filter by partner._
 
-> 📘 Private Beta
->
-> SnowFlake is a private beta release. Contact your Customer Success Manager for access. 
-
 The Import Listing page will display the following:
 
-| **Header**  | **Description**                                                                                                                                                                                                                                                         |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nickname    | The unique name given to each import. This helps easily identify and differentiate between different database imports.                                                                                                                                                  |
-| Partner     | The partner integration (for example, Snowflake) used for the import.                                                                                                                                                                                                   |
-| Status      | The current state of the import <li>Running</li> <li> Scheduled </li><li>Paused </li><li>Draft </li><li>Stopped </li>                                                                                                                                                   |
-| Import Type | Indicates whether the import is for user profile data or event data.                                                                                                                                                                                                    |
-| Frequency   | Displays the frequency of the data import (for example, Repeat Intervals, Custom Schedule, or Manually Trigger).                                                                                                                                                        |
-| Health      | Indicates the health of the import:  <li>100% (Green): All data has been processed without issues. </li> <li> 50% - 99.99% (Yellow): Some errors in data processing. </li> <li>50% (Red): Less than half of the data processed, check data selection and mapping. </li> |
-| Last Run    | Shows the date and time when the import was last triggered.                                                                                                                                                                                                             |
-| Created On  | Displays the date when the import was created.                                                                                                                                                                                                                          |
-| Created By  | Shows the user who created the import.                                                                                                                                                                                                                                  |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **Header**
+      </th>
 
-The listing page can also be filtered based on the following criteria:
+      <th>
+        **Description**
+      </th>
+    </tr>
+  </thead>
 
-| **Filter Option** | **Description**                                                                                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Partner Name      | Filter imports by the name of the partner (for example, Snowflake) used for the integration.                                                 |
-| Sync Type         | Filter by **Event Data** or **User Profile Data** to view imports of a specific type of data.                                                |
-| Status            | Filter by the status of the import: <li>Running</li> <li> Scheduled </li><li>Paused </li><li>Draft </li><li>Stopped </li>                    |
-| Frequency         | Filter by the frequency of the import: <li>Repeat Intervals </li><li>Custom Schedule</li><li>Manually Trigger </li>                          |
-| Created On        | Filter by the instance (Created, Triggered, etc.) and select the date using the calendar widget to display results for a specific timeframe. |
-| Created By        | Filter by the user who created the import by selecting a user from the drop-down. This helps you view imports created by specific users.     |
+  <tbody>
+    <tr>
+      <td>
+        Nickname
+      </td>
 
-Apply these filters by selecting relevant checkboxes to refine the import listings based on your requirements.
+      <td>
+        The unique name given to each import. This helps easily identify and differentiate between different database imports.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Partner
+      </td>
+
+      <td>
+        The partner integration (for example, Snowflake) used for the import.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Status
+      </td>
+
+      <td>
+        The current state of the import <li>Running</li> <li> Scheduled </li><li>Paused </li><li>Draft </li><li>Stopped </li>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Import Type
+      </td>
+
+      <td>
+        Indicates whether the import is for user profile data or event data.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Frequency
+      </td>
+
+      <td>
+        Displays the frequency of the data import (for example, Repeat Intervals, Custom Schedule, or Manually Trigger).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Health
+      </td>
+
+      <td>
+        Indicates the health of the import:
+
+        * 100% (Green): All data has been processed without issues.
+        * 50% - 99.99% (Yellow): Some errors in data processing.
+        * 50% (Red): Less than half of the data processed, check data selection and mapping.
+        * Blank: If no data was available to process
+        * No Indication: The first run is still pending.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Last Run
+      </td>
+
+      <td>
+        Shows the date and time when the import was last triggered.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created On
+      </td>
+
+      <td>
+        Displays the date when the import was created.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created By
+      </td>
+
+      <td>
+        Shows the user who created the import.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Stats
 

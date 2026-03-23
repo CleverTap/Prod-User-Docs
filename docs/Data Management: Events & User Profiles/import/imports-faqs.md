@@ -18,49 +18,37 @@ Historical Data Import allows you to bring user profiles and past events from ol
 
 ### Can I import historical data for both profiles and events using SFTP?
 
-Yes. SFTP Import supports uploading, User Profile files, and Event files. Refer to [SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp).
+Yes. SFTP Import supports uploading(@parth uploading what?), User Profile files, and Event files. Refer to [SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp).
 
 ### Do I need to upload user profiles before events?
 
-Yes. CleverTap requires that user profiles be uploaded first, followed by historical events.  
-This ensures correct identity stitching during ingestion. Learn more: [Upload User Profiles](https://developer.clevertap.com/docs/upload-user-profiles-api)
+Yes. CleverTap requires that user profiles be uploaded first, followed by historical events. This ensures correct identity stitching during ingestion. Refer to [Upload User Profiles](https://developer.clevertap.com/docs/upload-user-profiles-api) for more information.
 
 ### What information should be included in user profile uploads?
 
-User profile uploads should include: Name, Age, Email ID, Phone number, Custom tags, Additional profile attributes
-
-You can upload these using:
-
-* [Upload User Profiles API](https://developer.clevertap.com/docs/upload-user-profiles-api)
-* [SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp)
+User profile uploads should include Name, Age, Email ID, Phone number, Custom tags, and Additional profile attributes. You can upload these using [Upload User Profiles API](https://developer.clevertap.com/docs/upload-user-profiles-api) or [SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp).
 
 ### How should I upload historical events?
 
-Once profiles are uploaded, you can send historical events—such as purchases or lifecycle actions—using:
+Once profiles are uploaded, you can send historical events, such as purchases or lifecycle actions using; [Upload Events API](https://developer.clevertap.com/docs/upload-events-api) or [Events SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp).
 
-* [Upload Events API](https://developer.clevertap.com/docs/upload-events-api)
-* [Events SFTP Import](https://docs.clevertap.com/docs/imports-via-sftp)
+### What order should I upload historical event data in?
 
-### In what order should I upload historical event data?
+Events should always be uploaded chronologically, beginning with the oldest data first and progressing to the most recent. This ensures proper sequencing and accurate behavioral timelines. Refer to [Upload User Events](https://developer.clevertap.com/docs/upload-events-api) for more information.
 
-Always upload events **chronologically**, beginning with the **oldest data first** and progressing to the most recent.  
-This ensures proper sequencing and accurate behavioral timelines. Learn more: [Upload User Events](https://developer.clevertap.com/docs/upload-events-api)
+### Can historical uploads be tested before sending them to production?
 
-### Can I test historical uploads before sending them to Production?
-
-Yes. CleverTap recommends testing with a **sample dataset** in your **Test Account** first.  
-Your Test Account can be reset, while Production cannot delete or modify imported data.
+Yes. CleverTap recommends testing with a sample dataset in your test account first. Your test account can be reset, while production cannot delete or modify imported data.
 
 ### How does CleverTap handle timestamps on historical events?
 
-Events that contain timestamps will appear in the CleverTap Dashboard based on the provided event time.  
-Import eligibility depends on your account’s **Data Retention Policy (DRP)**.
+Events that contain timestamps will appear on the CleverTap Dashboard based on the provided event time. Import eligibility depends on your account’s Data Retention Policy (DRP).
 
-### How can I delete a connection that has running imports?
+### How can a connection with running imports be deleted?
 
-Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in ready, scheduled, paused, or running state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
+Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in _Ready_, _Scheduled_, _Paused_, or _Running_ state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
 
-### How can I whitelist IPs for CleverTap integration?
+### How can IPs for CleverTap's export integration be whitelisted?
 
 To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges).
 

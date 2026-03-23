@@ -189,6 +189,15 @@ To ensure proper access control, assign a role specifically for CleverTap integr
    GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
    GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
    ```
+**Why each privilege is needed:**
+>
+> | Privilege | Required For |
+> |-----------|-------------|
+> | `USAGE ON SCHEMA` | Accessing objects within the schema |
+> | `CREATE TABLE` | CleverTap creates export destination tables at runtime |
+> | `CREATE STAGE` | CleverTap creates internal stages to upload data files before loading |
+> | `CREATE FILE FORMAT` | CleverTap creates JSON file formats to parse `.json.gz` export files |
+> | `SELECT, INSERT, UPDATE, DELETE` | Reading and writing data in export tables |
 
 > 📘 Note
 >

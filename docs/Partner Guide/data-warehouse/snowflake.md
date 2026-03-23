@@ -177,28 +177,27 @@ To ensure proper access control, assign a role specifically for CleverTap integr
    ```
    * **Using Other Schema**:  
      If you are using the `PUBLIC` schema, the permission listed above is sufficient.  
-     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:
-   ```sql
-   -- Grant required privileges
-   GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
-   GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
-   GRANT USAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT CREATE TABLE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT CREATE STAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT CREATE FILE FORMAT ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   ```
-
-**Why each privilege is needed:**
-
-> | Privilege                        | Required For                                                          |
-> | -------------------------------- | --------------------------------------------------------------------- |
-> | `USAGE ON SCHEMA`                | Accessing objects within the schema                                   |
-> | `CREATE TABLE`                   | CleverTap creates export destination tables at runtime                |
-> | `CREATE STAGE`                   | CleverTap creates internal stages to upload data files before loading |
-> | `CREATE FILE FORMAT`             | CleverTap creates JSON file formats to parse `.json.gz` export files  |
-> | `SELECT, INSERT, UPDATE, DELETE` | Reading and writing data in export tables                             |
+     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:        
+     ```sql
+     -- Grant required privileges
+     GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
+     GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
+     GRANT USAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     GRANT CREATE TABLE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     GRANT CREATE STAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     GRANT CREATE FILE FORMAT ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+     ```
+       
+     **Understand required privileges:**
+     > | Privilege                        | Required For                                                          |
+     > | -------------------------------- | --------------------------------------------------------------------- |
+     > | `USAGE ON SCHEMA`                | Accessing objects within the schema                                   |
+     > | `CREATE TABLE`                   | CleverTap creates export destination tables at runtime                |
+     > | `CREATE STAGE`                   | CleverTap creates internal stages to upload data files before loading |
+     > | `CREATE FILE FORMAT`             | CleverTap creates JSON file formats to parse `.json.gz` export files  |
+     > | `SELECT, INSERT, UPDATE, DELETE` | Reading and writing data in export tables                             |
 
 ### Create User
 
@@ -393,7 +392,6 @@ To generate a Key for Key Pair Authentication, perform the following steps:
    ```sql
    ALTER USER ClEVERTAP_USER SET RSA_PUBLIC_KEY='MIIBIjANBgkqh...';
    ```
-   <br />
 4. (Optional) Rotate keys using CleverTap's **Regenerate Key** option if your IT policies require periodic key changes. Using the _Edit_ option, go to the same section and click **Regenerate Key** on the CleverTap dashboard. Attach the newly generated public key to your Snowflake database user as an additional RSA key. For more information about this, refer to [Snowflake Key Rotation document](https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-rotation).
 
 <Callout icon="📘" theme="info">

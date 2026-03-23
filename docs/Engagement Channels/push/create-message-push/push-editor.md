@@ -34,7 +34,7 @@ You can select from the following template types:
 
 ## **Standard**
 
-Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, an e-commerce business might want to inform customers that their order is being processed. You can add GIFs to your message content using the Standard Template. For more information on GIF sizing and format, refer to 
+Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, an e-commerce business might want to inform customers that their order is being processed. You can add GIFs to your message content using the Standard Template. For more information on GIF sizing and format, refer to
 
 [GIF Support](https://developer.clevertap.com/docs/android-push-templates#gif-support-in-standard-push-template).
 
@@ -74,7 +74,7 @@ You can configure the collapsed and expanded views in the following ways:
 * Use a different image for the collapsed view.
 * Use an image in expanded view only, with no media in collapsed view.
 * Use a large icon in the collapsed view.
-* Use a large icon along with an expanded/collapsed image in the collapsed view. (supported in SDK PushTemplates `v2.3.0` and above).
+* Use a large icon along with an expanded/collapsed image in the collapsed view (supported in SDK PushTemplates `v2.3.0` and above).
 
 The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions.
 

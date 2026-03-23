@@ -101,14 +101,14 @@ This step maps data warehouse columns to CleverTap user properties, ensuring sea
 3. **Choose a Data Type**  
    Select the appropriate data type for the column. Use the table below to determine when and how each type should be used:
 
-| **Data Type** | **When to Select**                           | **Example Values**                                   | Validation                                                                                                                                    |
-| ------------- | -------------------------------------------- | ---------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| **String**    | Text values such as names, emails, or labels | `"John Doe"`, `"john@example.com"`, `"Premium User"` | No validation                                                                                                                                 |
-| **Integer**   | Whole numbers, such as age or counts         | `30`, `120`, `500`                                   | Must be numeric                                                                                                                               |
-| **Float**     | Decimals such as ratings or prices           | `4.7`, `99.99`, `15.5`                               | Must be numeric                                                                                                                               |
-| **Long**      | Large whole numbers such as IDs              | `9876543210`, `123456789012345`                      | Must be numeric                                                                                                                               |
-| **Boolean**   | True/false flags                             | `true`, `false`                                      | Only accepts: "0", "1", "true", "false"                                                                                                       |
-| **Date**      | Timestamps such as the signup or login date  | `2024-03-18`, `18/03/2024`, `03/18/2024`             | Must match selected date format. For more information, refer to [Supported Date Format](doc:map-data-for-import#define-updated-on-timestamp). |
+| **Data Type** | **When to Select**                           | **Example Values**                                   | Validation                                                                                                                              |
+| ------------- | -------------------------------------------- | ---------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| **String**    | Text values such as names, emails, or labels | `"John Doe"`, `"john@example.com"`, `"Premium User"` | No validation                                                                                                                           |
+| **Integer**   | Whole numbers, such as age or counts         | `30`, `120`, `500`                                   | Must be numeric                                                                                                                         |
+| **Float**     | Decimals such as ratings or prices           | `4.7`, `99.99`, `15.5`                               | Must be numeric                                                                                                                         |
+| **Long**      | Large whole numbers such as IDs              | `9876543210`, `123456789012345`                      | Must be numeric                                                                                                                         |
+| **Boolean**   | True/false flags                             | `true`, `false`                                      | Only accepts: "0", "1", "true", "false"                                                                                                 |
+| **Date**      | Timestamps such as the signup or login date  | `2024-03-18`, `18/03/2024`, `03/18/2024`             | Must match selected date format. For more information, refer to [Supported Date Format](doc:map-data-for-import#supported-date-format). |
 
 # Event Data
 
@@ -160,7 +160,7 @@ Use this field to track when each event occurred.
 * **Select Column**: Choose the column containing event timestamps.
 * **Date Format**: Select the format used in the timestamp.
 
-For more information, refer to [Supported Date Format](doc:map-data-for-snowflake-import#supported-date-format).
+For more information, refer to [Supported Date Format](doc:map-data-for-import#supported-date-format).
 
 > 📘 Validation Rules for Timestamp
 >
@@ -202,14 +202,14 @@ You can use existing property names or enter new ones to create custom event pro
 3. **Select Data Type**  
    Choose the appropriate data type based on your column values:
 
-| **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                              |
-| ------------- | --------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **String**    | Text values such as category or customer type | `"Jeans"`, `"Premium User"` | No validation                                                                                                                               |
-| **Integer**   | Whole numbers such as item count or balance   | `30`, `500`                 | Must be numeric                                                                                                                             |
-| **Float**     | Decimal values such as price or discount      | `4.7`, `99.99`              | Must be numeric                                                                                                                             |
-| **Long**      | Large integers such as transaction IDs        | `123456789012345`           | Must be numeric                                                                                                                             |
-| **Boolean**   | Binary flags such as order status             | `true`, `false`, `0`, `1`   | Only accepts: "0", "1", "true", "false"                                                                                                     |
-| **Date**      | Timestamps such as event or checkout time     | `2024-03-18`, `03/18/2024`  | Must match supported format. For more information, refer to [Supported Date Format](doc:map-data-for-import#define-updated-on-timestamp-1). |
+| **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                      |
+| ------------- | --------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **String**    | Text values such as category or customer type | `"Jeans"`, `"Premium User"` | No validation                                                                                                                       |
+| **Integer**   | Whole numbers such as item count or balance   | `30`, `500`                 | Must be numeric                                                                                                                     |
+| **Float**     | Decimal values such as price or discount      | `4.7`, `99.99`              | Must be numeric                                                                                                                     |
+| **Long**      | Large integers such as transaction IDs        | `123456789012345`           | Must be numeric                                                                                                                     |
+| **Boolean**   | Binary flags such as order status             | `true`, `false`, `0`, `1`   | Only accepts: "0", "1", "true", "false"                                                                                             |
+| **Date**      | Timestamps such as event or checkout time     | `2024-03-18`, `03/18/2024`  | Must match supported format. For more information, refer to [Supported Date Format](doc:map-data-for-import#supported-date-format). |
 
 # Supported Date Format
 

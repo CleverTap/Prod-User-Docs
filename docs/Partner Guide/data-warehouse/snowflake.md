@@ -38,7 +38,7 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   * Snowflake Account Identifier
   * Warehouse
   * Database
-  * Role (Optional)
+  * Role (Optional): If not provided, the Snowflake user's DEFAULT_ROLE is used. Ensure the DEFAULT_ROLE has the required privileges listed in this section.
   * Schema (Mandatory for exports)
   * Username
 

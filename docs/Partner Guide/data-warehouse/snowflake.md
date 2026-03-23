@@ -207,8 +207,6 @@ CREATE USER CleverTap_USER WITH DEFAULT_ROLE = CLEVERTAP_ROLE DEFAULT_WAREHOUSE 
 GRANT ROLE CLEVERTAP_ROLE TO USER ClEVERTAP_USER;
 ```
 
-<br />
-
 ## Use Existing Snowflake Credentials
 
 If you already have Snowflake set up, perform the following steps to find each detail on the Snowflake dashboard.

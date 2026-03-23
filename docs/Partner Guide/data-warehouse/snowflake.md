@@ -16,12 +16,6 @@ next:
 
 Configuring Snowflake with CleverTap enables seamless data import and export, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
 
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  Snowflake is a Private Beta release. Contact your Customer Success Manager for access.
-</Callout>
-
 # Quick Start Guide for Existing Users
 
 <details>
@@ -177,7 +171,8 @@ To ensure proper access control, assign a role specifically for CleverTap integr
    ```
    * **Using Other Schema**:  
      If you are using the `PUBLIC` schema, the permission listed above is sufficient.  
-     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:        
+     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:
+
      ```sql
      -- Grant required privileges
      GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
@@ -189,8 +184,9 @@ To ensure proper access control, assign a role specifically for CleverTap integr
      GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
      GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
      ```
-       
+
      **Understand required privileges:**
+
      > | Privilege                        | Required For                                                          |
      > | -------------------------------- | --------------------------------------------------------------------- |
      > | `USAGE ON SCHEMA`                | Accessing objects within the schema                                   |

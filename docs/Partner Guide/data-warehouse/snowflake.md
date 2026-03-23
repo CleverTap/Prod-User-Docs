@@ -335,7 +335,7 @@ Enter the _Database Details_ in the integration setup form. To create or retriev
       </td>
 
       <td>
-        The Snowflake role CleverTap uses to connect to the database. This field is optional for imports but compulsory for exports.
+        The Snowflake role CleverTap uses to connect to the database. This field is optional for imports and compulsory for exports. For exports, ensure the role (whether explicitly provided or the default) has `ALL PRIVILEGES` on the target schema, or at minimum, `USAGE`, `CREATE TABLE`, `CREATE STAGE`, `CREATE FILE FORMAT`, and DML privileges.
       </td>
     </tr>
 

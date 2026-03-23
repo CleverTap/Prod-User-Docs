@@ -32,27 +32,82 @@ The Push Editor in CleverTap enables you to design and edit impactful push notif
 
 You can select from the following template types:
 
-* **Standard**: Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, an e-commerce business might want to inform customers that their order is being processed. You can add GIFs to your message content using the Standard Template. For more information on GIF sizing and format, refer to [GIF Support](https://developer.clevertap.com/docs/android-push-templates#gif-support-in-standard-push-template).
+## **Standard**
+
+Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, an e-commerce business might want to inform customers that their order is being processed. You can add GIFs to your message content using the Standard Template. For more information on GIF sizing and format, refer to 
+
+[GIF Support](https://developer.clevertap.com/docs/android-push-templates#gif-support-in-standard-push-template).
 
 <Image align="center" alt="Standard Template" border={true} caption="Standard Template" src="https://files.readme.io/ed55e473b9eb0f92e91a4572766a83db96535aa90ec95492113b6d66ad782aec-image.png" width="35% " />
 
-* **Advanced**: Supports rich media, deep links, and enhanced customization for more engaging messages. It is great for interactive, visually appealing messages. For example, businesses can use it to build excitement for new product drops, early access offers, or feature rollouts that benefit from strong visuals and clear Call to Action (CTAs).
+## **Advanced**
+
+Supports rich media, deep links, and enhanced customization for more engaging messages. It is great for interactive, visually appealing messages. For example, businesses can use it to build excitement for new product drops, early access offers, or feature rollouts that benefit from strong visuals and clear Call to Action (CTAs).
 
 <Image align="center" alt="Advanced Template" caption="Advanced Template" src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" width="35% " />
 
-* **Auto Carousel**: Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can utilize it to promote new product collections, travel packages, and content recommendations, among other offerings.
+## **Auto Carousel**
+
+Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can utilize it to promote new product collections, travel packages, and content recommendations, among other offerings.
 
 <Image align="center" alt="Auto Carousel Template" caption="Auto Carousel Template" src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" width="35% " />
 
-* **Timer**: Adds a countdown timer to your template to enable immediate action from the user, ideal for time-sensitive campaigns. For example, businesses can utilize it for flash sales, limited-time discounts, and other promotional offers.
+## **Timer**
+
+Adds a countdown timer to your template to enable immediate action from the user, ideal for time-sensitive campaigns. For example, businesses can utilize it for flash sales, limited-time discounts, and other promotional offers.
 
 <Image align="center" alt="Timer Template" caption="Timer Template" src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" width="35% " />
 
-* **Text over Image**: Places bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and other relevant content.
+## **Text over Image**
+
+Places bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and other relevant content.
 
 <Image align="center" alt="Text over Image Push Template" caption="Text over Image Push Template" src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" width="35% " />
 
-**Manual Carousel Template**
+### Collapsed Media Support (Large Icon and Collapsed Image)
+
+The Text over Image push template supports flexible media configurations for the collapsed view. You can use the same image for both expanded and collapsed views, use a different image for the collapsed view, or add a large icon as required This enables multiple presentation styles depending on your campaign needs.
+
+You can configure the collapsed and expanded views in the following ways:
+
+* Use the same image for both collapsed and expanded views.
+* Use a different image for the collapsed view.
+* Use an image in expanded view only, with no media in collapsed view.
+* Use a large icon in the collapsed view.
+* Use a large icon along with an expanded/collapsed image in the collapsed view. (supported in SDK PushTemplates `v2.3.0` and above).
+
+The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions.
+
+<Image align="center" border={true} caption="Large Icon Right-aligned to the Notification" src="https://files.readme.io/144ddde8b4167abd4f1592fd3cb7e16a37dbc1f2b91786686786e0983888dfb2-image.png" />
+
+#### Configure Expanded and Collapsed Media
+
+To configure expanded and collapsed push notifications media:
+
+1. Go to **Campaigns**.
+2. Create or edit a **Push Notification campaign**.
+3. Select the **Text over Image** template.
+
+<Image align="center" border={true} caption="Push Editor" src="https://files.readme.io/562789466fe6c84b517ba4f426977d7d5b71fd04eff51e74f27d63739b84bda8-image.png" />
+
+4. To add an image or GIF for the expanded view, click **Upload** or paste the image URL in  _Expanded Media_.
+5. Toggle **Same for collapsed media** to use the same media for both collapsed and expanded views.
+6. To add a different image or GIF for the collapsed view, click **Upload** or paste the image URL in _Collapsed Media_.
+7. Upload the icon image from the _Large Icon_ section, or click **Generate with AI** to generate a new image.
+8. Preview and save your changes.
+
+#### Collapsed View Behavior Across SDK Versions
+
+For SDK versions below PushTemplates `v2.3.0`, the collapsed view supports only one visual element at a time. Depending on your setup, the notification can render in one of the following ways:
+
+* Collapsed Image + Text
+* Expanded Image + Text
+* Large Icon + Text
+* Text only
+
+The large icon is not displayed if a collapsed image is configured.
+
+## **Manual Carousel Template**
 
 Manual Carousel is an interactive push notification format that lets users scroll through a series of cards or slides at their own pace. Each card can display rich content like images, headlines, brief descriptions, and a call-to-action (CTA). Users navigate between cards manually using swipe gestures or navigation arrows.
 
@@ -73,10 +128,10 @@ Based on the selected template, the editor displays configurable fields grouped 
 
 Once you select the required push template for the _Title_ and _Message_ fields, you can use the following options to create personalized and engaging campaigns:
 
-* Use text color (icon to be added) to change the color of your text.
+* Use text color to change the color of your text.
 * Use emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
 * Use _@_ personalization or _\{\{}}_ to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
-* Use liquid scripts (icon to be added) \< to check the usage>
+* Use liquid scripts  to check the usage.
 * Use [Clever.AI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
 
 ## Content
@@ -391,7 +446,7 @@ You can use this section to customize Android-specific behavior for your push us
       </td>
 
       <td>
-        Choose whether to mute the push notification when the user is currently using the app (app in foreground).  
+        Choose whether to mute the push notification when the user is currently using the app (app in foreground).
 
         * Yes: If the app is open, the notification is only added to the tray, and a popup is not shown to the user.
         * No (default): The notification is added to the tray, and a popup is shown to the user, even if the app is open.

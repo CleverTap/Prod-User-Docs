@@ -38,7 +38,7 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   * Snowflake Account Identifier
   * Warehouse
   * Database
-  * Role (Optional): If not provided, the Snowflake user's DEFAULT_ROLE is used. Ensure the DEFAULT_ROLE has the required privileges listed in this section.
+  * Role (Optional): If not provided, the Snowflake user's DEFAULT\_ROLE is used. Ensure the DEFAULT\_ROLE has the required privileges listed in this[section](doc:snowflake#create-role).
   * Schema (Mandatory for exports)
   * Username
 
@@ -61,7 +61,7 @@ If you are setting up Snowflake for the first time, ensure you have the followin
 * **CleverTap Access** to configure Snowflake
 * **Snowflake Account Details**:
   * Account Identifier: Go to _Admin_ > _Accounts_ in Snowflake and copy the account Identifier from the URL.
-  * Role: Must include the necessary permissions for database access and query execution.
+  * Role: For exports, the necessary permissions for database access and query execution must be included.
   * Warehouse: Use an existing warehouse or create a new one.
   * Database and Schema: Ensure a database and schema are available (existing or newly created)
 * **Snowflake User Account Requirements**:

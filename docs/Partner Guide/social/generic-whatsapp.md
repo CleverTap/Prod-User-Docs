@@ -217,7 +217,7 @@ To configure the CleverTap dashboard:
 1. Navigate to _Settings_ > _Channels_ > _WhatsApp_> _WhatsApp Connect_ from the CleverTap dashboard.
 2. Click **+ Add Provider** and select Generic (Other) from the dropdown.
 
-![](https://files.readme.io/29282ee-Whatsapp_Common_Provider_Setup.png)  Add a WhatsApp Provider
+<Image border={true} src="https://files.readme.io/29282ee-Whatsapp_Common_Provider_Setup.png" className="border" />  Add a WhatsApp Provider
 
 3. Enter the following details:
 
@@ -1915,6 +1915,59 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 
 #### Sample Payload for Incoming Message Callbacks
 
+```Text Incoming message callback Payload
+{
+    "payloadVersion": $$payloadversion,
+    "from": "$$phone",
+    "wabaNumber": "$$BusinessWabaNumber",
+    "timestamp": "$$receivedTS",
+    "type": "text/location/image/video/voice/file/button",
+    //Optional(Needs to be sent if user replies to previously sent message)
+    "context": {
+        "id": "$$msg_ID"
+    },
+    //Optional (will be needed if message received is text)
+    "text": {
+        "body": "$$incomingMessage"
+    },
+    //Optional (will be needed if message received is loaction)
+    "location": {
+        "address": "$$address",
+        "latitude": "$$latitude",
+        "longitude": "$$latitude",
+        "name": "$$addressTitle",
+        "url": "$$addressUrls"
+    },
+    //Optional (will be needed if message received is image)
+    "image": {
+        "mediaURL": "$$mediaUrl",
+        "mimeType": "$$mediaMimeType", // image/jpeg
+        "caption": "$$incomingmessage"
+    },
+    //Optional (will be needed if message received is file)
+    "file": {
+        "mediaURL": "$$mediaUrl",
+        "mimeType": "$$mediaMimeType",
+        "caption": "$$incomingmessage"
+    },
+    //Optional (will be needed if message received is audio)
+    "audio": {
+        "mediaURL": "$$mediaUrl",
+        "mimeType": "$$mediaMimeType"
+    },
+    //Optional (will be needed if message received is video)
+    "video": {
+        "mediaURL": "$$mediaUrl",
+        "mimeType": "$$mediaMimeType",
+        "caption": "$$incomingmessage"
+    },
+    //Optional (will be needed if the message received is video)
+    "button": {
+        "payload": "$$buttonPayload", // same as outgoing  message
+        "text": "$$buttonText"
+    }
+}
+```
 ```json Incoming message with Document
 {
               "payloadVersion":"0.1",

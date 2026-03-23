@@ -202,14 +202,14 @@ You can use existing property names or enter new ones to create custom event pro
 3. **Select Data Type**  
    Choose the appropriate data type based on your column values:
 
-| **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                                |
-| ------------- | --------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **String**    | Text values such as category or customer type | `"Jeans"`, `"Premium User"` | No validation                                                                                                                                 |
-| **Integer**   | Whole numbers such as item count or balance   | `30`, `500`                 | Must be numeric                                                                                                                               |
-| **Float**     | Decimal values such as price or discount      | `4.7`, `99.99`              | Must be numeric                                                                                                                               |
-| **Long**      | Large integers such as transaction IDs        | `123456789012345`           | Must be numeric                                                                                                                               |
-| **Boolean**   | Binary flags such as order status             | `true`, `false`, `0`, `1`   | Only accepts: "0", "1", "true", "false"                                                                                                       |
-| **Date**      | Timestamps such as event or checkout time     | `2024-03-18`, `03/18/2024`  | Must match supported format. For more information, refer to [Supported Date Format](doc:map-data-for-snowflake-import#supported-date-format). |
+| **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                              |
+| ------------- | --------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **String**    | Text values such as category or customer type | `"Jeans"`, `"Premium User"` | No validation                                                                                                                               |
+| **Integer**   | Whole numbers such as item count or balance   | `30`, `500`                 | Must be numeric                                                                                                                             |
+| **Float**     | Decimal values such as price or discount      | `4.7`, `99.99`              | Must be numeric                                                                                                                             |
+| **Long**      | Large integers such as transaction IDs        | `123456789012345`           | Must be numeric                                                                                                                             |
+| **Boolean**   | Binary flags such as order status             | `true`, `false`, `0`, `1`   | Only accepts: "0", "1", "true", "false"                                                                                                     |
+| **Date**      | Timestamps such as event or checkout time     | `2024-03-18`, `03/18/2024`  | Must match supported format. For more information, refer to [Supported Date Format](doc:map-data-for-import#define-updated-on-timestamp-1). |
 
 # Supported Date Format
 

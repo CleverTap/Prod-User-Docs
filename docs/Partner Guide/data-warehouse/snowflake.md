@@ -183,9 +183,14 @@ To ensure proper access control, assign a role specifically for CleverTap integr
    GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
    GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
    GRANT USAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
+   GRANT CREATE TABLE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
    ```
+
+> 📘 Note
+>
+> The `CREATE TABLE` privilege is required because CleverTap creates export tables in the target schema at runtime. Without this privilege, exports will fail with`Insufficient privileges to operate on schema` errors.
 
 ### Create User
 

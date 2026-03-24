@@ -67,7 +67,7 @@ If you are setting up Amazon Redshift for the first time, ensure you have the fo
 
 You can set up Amazon Redshift using one of the following ways:
 
-* For new users who need to provision Redshift resources from scratch: [Create Database](doc:amazon-redshift#create-database), [Schema](doc:ramazon-edshift#create-schema), and [User](doc:amazon-redshift#create-user).
+* For new users who need to provision Redshift resources from scratch: [Create Database](doc:amazon-redshift#create-database), [Schema](doc:amazon-edshift#create-schema), and [User](doc:amazon-redshift#create-user).
 * For users who already have configured resources in Redshift: [Use Existing Redshift Credentials](doc:amazon-redshift#use-existing-redshift-credentials).
 
 ## Create New Redshift Setup

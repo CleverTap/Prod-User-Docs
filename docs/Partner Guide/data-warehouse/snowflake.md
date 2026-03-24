@@ -412,9 +412,9 @@ Use the **Filter** option on _Import Connections_ to refine displayed databases:
 * **Connected On**: Select a date range to view connections created within that timeframe.
 * **Connected By**: Filter by email IDs of users who created the connections.
 
-### How can I whitelist IPs for both export and import for CleverTap integration?
+### How can I whitelist IPs for export and import integrations in CleverTap?
 
-To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for export integrations, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges#ip-ranges), and for import integrations, refer to [Clevertap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
+To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges for export integrations from [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges#ip-ranges) and for import integrations from [CleverTap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
 
 # Next Steps
 

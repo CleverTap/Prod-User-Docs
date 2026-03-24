@@ -103,11 +103,11 @@ The following tables include the guidelines that you must keep in mind when crea
       </th>
 
       <th>
-        Image Type Supported
+        Media Type Supported
       </th>
 
       <th>
-        Image Sample
+        Video Preview
       </th>
     </tr>
   </thead>
@@ -127,14 +127,11 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-        Image
+        Image, GIF
       </td>
 
       <td>
-        <ul>
-          <li><a href="https://files.readme.io/c78e632fe9b547010a424ec3e302ef6e223f21fef9a05ba568a88d9d551d435b-image.png" target="_blank">Cover iPad</a></li>
-          <li><a href="https://files.readme.io/83df2ce6164cf5661c328a7af509f264a22d622fff0548b5248bb15c39a829ab-image.png" target="_blank">Cover </a></li>
-        </ul>
+        Not supported
       </td>
     </tr>
 
@@ -152,15 +149,11 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-        Image, gif, audio
+        Image, GIF, Video
       </td>
 
       <td>
-        <ul>
-          <li><a href="https://files.readme.io/ce2ad1abe590ace8a15544f43edde68db3dc776e4a515da77954404c31e652c6-image.png" target="\_blank">Interstitial iPad Pro</a></li>
-          <li><a href="https://files.readme.io/67dfb63f7ede49e0fe4bd6a76d8c7485c9bedeaf2225ea050fc1776d89af6d7d-image.png" target="\_blank">Interstitial iPad</a></li>
-          <li><a href="https://files.readme.io/7b16ea12877ce0e84db0c04adcfab015a4958ff016dfae0e38f12872c8464e9e-image.png" target="\_blank">Interstitial</a> </li>
-        </ul>
+        Supported (Play / Replay)
       </td>
     </tr>
 
@@ -178,66 +171,11 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-        Image
+        Image, GIF
       </td>
 
       <td>
-        <ul>
-          <li><a href="https://files.readme.io/bf9fa3515ee90cbc1b3a54a95ce4dd6b71914387159ac8edd6a3bca313ead010-image.png" target="\_blank">Half Interstitial iPad Pro</a></li>
-          <li><a href="https://files.readme.io/cc9b66978e7f24d593e640323c52cd0955f8a265ebc0f0cd7770628d9fe68659-image.png" target="\_blank">Half Interstitial iPad</a></li>
-          <li><a href="https://files.readme.io/521962b5be7903641d38f13b21cedadba796c6e5142d3fce7ee1f4d7c1eb8ac2-image.png" target="\_blank">Half Interstitial</a> </li>
-        </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Header
-      </td>
-
-      <td>
-        Height: 1:1  
-        Width: Fit to screen
-      </td>
-
-      <td>
-        N/A
-      </td>
-
-      <td>
-        Logo Image
-      </td>
-
-      <td>
-        Title :parameters]  
-        \{  
-        , Message \{  
-        "h-0": "C* Title e",  
-        "h-1": , Message pect Ratio",  
-        Title : "Sample Image, Message [75 Characters
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Footer
-      </td>
-
-      <td>
-        Height: 1:1  
-        Width: Fit to screen
-      </td>
-
-      <td>
-        N/A
-      </td>
-
-      <td>
-        Logo Image
-      </td>
-
-      <td>
-
+        Not supported
       </td>
     </tr>
 
@@ -259,7 +197,7 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-
+        Not supported
       </td>
     </tr>
 
@@ -269,19 +207,19 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-
+        Full Screen
       </td>
 
       <td>
-
+        Screen Resolution
       </td>
 
       <td>
-
+        Image, GIF, Video
       </td>
 
       <td>
-
+        Supported (Play / Replay)
       </td>
     </tr>
 
@@ -291,19 +229,19 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-
+        1.30:1
       </td>
 
       <td>
-
+        3:4
       </td>
 
       <td>
-
+        Image, GIF, Video
       </td>
 
       <td>
-
+        Supported (Play / Replay)
       </td>
     </tr>
 
@@ -313,29 +251,77 @@ The following tables include the guidelines that you must keep in mind when crea
       </td>
 
       <td>
-
+        1.78:1
       </td>
 
       <td>
-
+        16:9
       </td>
 
       <td>
-
+        Image, GIF, Video
       </td>
 
       <td>
+        Supported (Play / Replay)
+      </td>
+    </tr>
 
+    <tr>
+      <td>
+        Header
+      </td>
+
+      <td>
+        Height: 1:1  
+        Width: Fit to screen
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        Logo Image, GIF
+      </td>
+
+      <td>
+        Supported (Play / Replay)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Footer
+      </td>
+
+      <td>
+        Height: 1:1  
+        Width: Fit to screen
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        Logo Image, GIF
+      </td>
+
+      <td>
+        Supported (Play / Replay)
       </td>
     </tr>
   </tbody>
 </Table>
 
+<br />
+
 #### File Size Guidelines
 
-* **Image**: Less than 500 kb.
-* **Audio**: Less than 5 Mb.
-* **Video**: Less than 50 Mb.
+* **Image**: Less than 1 MB.
+* **Audio**: Less than 5 MB.
+* **Video**: Less than 50 MB.
 
 #### Message Character Limit
 
@@ -419,7 +405,7 @@ When a user submits information on your Lead Generation template:
 
 * A custom event named _Lead Submitted_ records the details submitted by the user as of event properties. Following is a sample form image:
 
-<Image align="center" alt="Form Submit Actions" border={false} caption="Form Submit Actions" src="https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png" width="50% " />
+<Image align="center" alt="Form Submit Actions" caption="Form Submit Actions" src="https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png" width="50% " />
 
 Following is a table that records the relevant properties for the fields displayed on the form:
 
@@ -523,7 +509,7 @@ This template adds a fun, gamified interaction to your In-App by letting users s
 * Pointer interaction + spin trigger
 * Shimmer effect on reveal
 
-<Image align="center" alt="Spin " border={false} caption="Spin the Wheel Template" src="https://files.readme.io/bdfae57effccaa9fa2e956e102045ef43faf8762bbd7cced7826bd60c406f820-image.png" width="25% " />
+<Image align="center" alt="Spin " caption="Spin the Wheel Template" src="https://files.readme.io/bdfae57effccaa9fa2e956e102045ef43faf8762bbd7cced7826bd60c406f820-image.png" width="25% " />
 
 <details>
   <summary><b>Expand to know more about the template.</b></summary>
@@ -699,7 +685,7 @@ This template adds a fun, gamified interaction to your In-App by letting users s
 
 This interactive template is designed to gamify the user experience by letting users "scratch" to reveal a reward, such as a coupon, discount, or points. The surprise element boosts engagement and reactivation rates while offering a delightful experience.
 
-<Image align="center" alt="Scratch the Card Template" border={false} caption="Scratch the Card Template" src="https://files.readme.io/18e7bedad81f6ebb2df2ed18065f64f4e12e11a0c151fb59338b1b7fa60e19b3-image.png" width="25% " />
+<Image align="center" alt="Scratch the Card Template" caption="Scratch the Card Template" src="https://files.readme.io/18e7bedad81f6ebb2df2ed18065f64f4e12e11a0c151fb59338b1b7fa60e19b3-image.png" width="25% " />
 
 ### Interactive Elements
 

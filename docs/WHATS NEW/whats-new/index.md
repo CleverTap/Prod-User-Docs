@@ -307,6 +307,42 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="cta-click-and-ctr-insights-for-in-app-messages-and-web-pop-ups">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#cta-click-and-ctr-insights-for-in-app-messages-and-web-pop-ups"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">CTA Click and CTR Insights for In-App Messages and Web Pop-ups</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>The Click and CTR reporting for In-App Messages and Web Pop-ups is now enhanced to provide more accurate insights into user engagement. Click and CTR metrics now exclude dismiss and close button interactions, and performance is reported at a CTA level across campaigns.</p>
+
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Identify which CTAs drive actual user engagement</li>
+        <li>Avoid inflated CTR caused by dismiss actions</li>
+        <li>Compare CTA performance within a single message</li>
+      </ul>
+    </p>
+
+    <p>This enhancement does not apply to Ratings, Lead Generation, or Custom HTML templates.</p>
+
+    <p>Clicks on the close button from February 2, 2026 onward are excluded, which may result in a visible drop in CTR trends.</p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/in-app-campaign-stats?utm_source=vision#view-in-app-campaign-stats" target="_blank">In-App Stats</a> and <a href="https://docs.clevertap.com/docs/web-popup-stats?utm_source=vision#viewing-web-pop-up-campaign-stats" target="_blank">Web Pop-up Stats</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="nested-objects-in-custom-event-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">

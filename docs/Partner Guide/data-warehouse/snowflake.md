@@ -18,13 +18,7 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
 
 # Quick Start Guide for Existing Users
 
-<details>
-  <summary>Expand for quick setup if you have previously configured a Snowflake workspace and are familiar with the CleverTap dashboard. If you are setting up Snowflake for the first time, skip to Prerequisites for Integration below.</summary>
-
-  <hr />
-
-  This section is intended for users who already have a configured Snowflake account and are familiar with the CleverTap dashboard.
-
+<Accordion title="Expand for quick setup if you have previously configured a Snowflake workspace and are familiar with the CleverTap dashboard. If you are setting up Snowflake for the first time, skip to Prerequisites for Integration below.">
   ## Prerequisites
 
   Before you begin, ensure you have the following details:
@@ -46,7 +40,8 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   4. Click **Test Connection** and **Save**
 
   After setting up the configuration, you can [import](doc:data-warehouse#quick-start-guide-for-imports) or [export](doc:snowflake-export) data from Snowflake into CleverTap.
-</details>
+</Accordion>
+
 
 # Prerequisites for Integration
 

@@ -66,7 +66,7 @@ Places bold text over a background image to deliver visually striking messages. 
 
 ### Collapsed Media Support (Large Icon and Collapsed Image)
 
-The Text over Image push template supports flexible media configurations for the collapsed view. You can use the same image for both expanded and collapsed views, use a different image for the collapsed view, or add a large icon as required This enables multiple presentation styles depending on your campaign needs.
+The Text over Image push template supports flexible media configurations for the collapsed view. You can use the same image for both expanded and collapsed views, use a different image for the collapsed view, or add a large icon as required. This enables multiple presentation styles depending on your campaign needs.
 
 You can configure the collapsed and expanded views in the following ways:
 

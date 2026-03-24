@@ -1969,8 +1969,8 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 ```Text Incoming message with Image
 {
     "payloadVersion": "0.1",
-    "from": "919999999999",
-    "wabaNumber": "9199999998888",
+    "from": "+91XXXXXXXXXX",
+    "wabaNumber": "+91XXXXXXXXXX",
     "timestamp": "1647441774",
     "type": "image",
     "context": {
@@ -1986,8 +1986,8 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 ```Text Incoming message with Audio
 {
     "payloadVersion": "0.1",
-    "from": "919999999999",
-    "wabaNumber": "9199999998888",
+    "from": "+91XXXXXXXXXX",
+    "wabaNumber": "+91XXXXXXXXXX",
     "timestamp": "1647441774",
     "type": "voice",
     "context": {
@@ -2002,8 +2002,8 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 ```Text Incoming message with Video
 {
     "payloadVersion": "0.1",
-    "from": "919999999999",
-    "wabaNumber": "9199999998888",
+    "from": "+91XXXXXXXXXX",
+    "wabaNumber": "+91XXXXXXXXXX",
     "timestamp": "1647441774",
     "type": "video",
     "context": {
@@ -2013,6 +2013,22 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
         "mediaURL": "www.example.com/video.mp4",
         "mimeType": "video/mp4",
         "caption": "This is body"
+    }
+}
+```
+```Text Incoming message with Button
+{
+    "payloadVersion": "0.1",
+    "from": "+91XXXXXXXXXX",
+    "wabaNumber": "+91XXXXXXXXXX",
+    "timestamp": "1647441774",
+    "type": "button",
+    "context": {
+        "id": "25596363|1639561857|20220227|25596363"
+    },
+    "button": {
+        "payload": "CONFIRM_ORDER",
+        "text": "Confirm Order"
     }
 }
 ```

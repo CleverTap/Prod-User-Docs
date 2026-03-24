@@ -414,7 +414,10 @@ Use the **Filter** option on _Import Connections_ to refine displayed databases:
 
 ### How can I whitelist IPs for export and import integrations in CleverTap?
 
-To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges for export integrations from [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges#ip-ranges) and for import integrations from [CleverTap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
+To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges:
+
+* **Export integrations**: Refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges#ip-ranges)
+* **Import integrations**: Refer to [CleverTap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration)
 
 # Next Steps
 

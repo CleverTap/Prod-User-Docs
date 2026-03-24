@@ -11,14 +11,23 @@ permissions:
 jobs:
   forward:
     runs-on: ubuntu-latest
+    # Skip PRs opened by the bot to prevent sync loops
+    if: github.event.pull_request.user.login != 'user-docs-bot[bot]'
 
     steps:
       - name: Generate GitHub App token
         id: app-token
-        uses: tibdex/github-app-token@v1
+        uses: tibdex/github-app-token@v2
         with:
           app_id: ${{ secrets.USER_DOCS_APP_ID }}
           private_key: ${{ secrets.USER_DOCS_APP_KEY }}
+          installation_retrieval_mode: organization
+          installation_retrieval_payload: CleverTap
+
+      - name: Debug token access
+        run: |
+          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
+            https://api.github.com/repos/CleverTap/Staging-User-Docs | jq '.full_name, .permissions'
 
       - name: Checkout PR branch
         uses: actions/checkout@v4
@@ -30,35 +39,49 @@ jobs:
           git config --global user.name "user-docs-bot"
           git config --global user.email "bot@clevertap.com"
 
-      - name: Push branch to staging repo
+      - name: Sanitize branch name and push to staging
         run: |
-          git remote add staging https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git
-          git push staging HEAD:external-${{ github.event.pull_request.number }}-${{ github.head_ref }} --force
+          SAFE_REF=$(echo "${{ github.head_ref }}" | tr -cd '[:alnum:]-_.' | cut -c1-50)
+          BRANCH_NAME="external-${{ github.event.pull_request.number }}-${SAFE_REF}"
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
-      - name: Authenticate gh
-        run: gh auth status
+          git remote add staging \
+            https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git
+          git push staging HEAD:${BRANCH_NAME} --force
+
+      - name: Create PR in staging repo (if not exists)
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-
-      - name: Create PR in staging repo
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          gh pr create \
-          --repo CleverTap/Staging-User-Docs \
-          --base develop \
-          --head external-${{ github.event.pull_request.number }}-${{ github.head_ref }} \
-          --title "External PR: ${{ github.event.pull_request.title }}" \
-          --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}"
+          EXISTING=$(gh pr list \
+            --repo CleverTap/Staging-User-Docs \
+            --head "${{ env.BRANCH_NAME }}" \
+            --json number --jq '.[0].number')
+
+          if [ -z "$EXISTING" ]; then
+            gh pr create \
+              --repo CleverTap/Staging-User-Docs \
+              --base develop \
+              --head "${{ env.BRANCH_NAME }}" \
+              --title "External PR: ${{ github.event.pull_request.title }}" \
+              --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}
+          
+          Original author: @${{ github.event.pull_request.user.login }}
+          Original PR: ${{ github.event.pull_request.html_url }}"
+          else
+            echo "Staging PR already exists (#${EXISTING}), branch updated via push."
+          fi
 
       - name: Comment on public PR
+        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr comment ${{ github.event.pull_request.number }} \
-          --body "Thank you for your contribution! Your PR has been forwarded to our internal repo for review."
+            --body "Thank you for your contribution! Your PR has been forwarded to our internal repo for review. We'll follow up here once it's been reviewed."
 
       - name: Close public PR
+        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

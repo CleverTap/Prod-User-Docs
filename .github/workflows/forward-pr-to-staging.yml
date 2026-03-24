@@ -11,21 +11,21 @@ permissions:
 jobs:
   forward:
     runs-on: ubuntu-latest
-    # Skip PRs opened by the bot to prevent sync loops
     if: github.event.pull_request.user.login != 'user-docs-bot[bot]'
 
     steps:
       - name: Generate GitHub App token
         id: app-token
-        uses: tibdex/github-app-token@v2
+        uses: actions/create-github-app-token@v1
         with:
-          app_id: ${{ secrets.USER_DOCS_APP_ID }}
-          private_key: ${{ secrets.USER_DOCS_APP_KEY }}
-          installation_retrieval_mode: organization
-          installation_retrieval_payload: CleverTap
+          app-id: ${{ secrets.USER_DOCS_APP_ID }}
+          private-key: ${{ secrets.USER_DOCS_APP_KEY }}
+          owner: CleverTap
+          repositories: "Staging-User-Docs,Prod-User-Docs"
 
       - name: Debug token access
         run: |
+          echo "Token empty check: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo EMPTY || echo OK)"
           curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
             https://api.github.com/repos/CleverTap/Staging-User-Docs | jq '.full_name, .permissions'
 
@@ -65,7 +65,7 @@ jobs:
               --head "${{ env.BRANCH_NAME }}" \
               --title "External PR: ${{ github.event.pull_request.title }}" \
               --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}
-          
+
           Original author: @${{ github.event.pull_request.user.login }}
           Original PR: ${{ github.event.pull_request.html_url }}"
           else

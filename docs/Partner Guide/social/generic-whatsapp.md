@@ -1915,56 +1915,18 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 
 #### Sample Payload for Incoming Message Callbacks
 
-```Text Incoming message callback Payload
+```Text Incoming message with Text
 {
-    "payloadVersion": $$payloadversion,
-    "from": "$$phone",
-    "wabaNumber": "$$BusinessWabaNumber",
-    "timestamp": "$$receivedTS",
-    "type": "text/location/image/video/voice/file/button",
-    //Optional(Needs to be sent if user replies to previously sent message)
+    "payloadVersion": "0.1",
+    "from": "919999999999",
+    "wabaNumber": "9199999998888",
+    "timestamp": "1647441774",
+    "type": "text",
     "context": {
-        "id": "$$msg_ID"
+        "id": "25596363|1639561857|20220227|25596363"
     },
-    //Optional (will be needed if message received is text)
     "text": {
         "body": "$$incomingMessage"
-    },
-    //Optional (will be needed if message received is loaction)
-    "location": {
-        "address": "$$address",
-        "latitude": "$$latitude",
-        "longitude": "$$latitude",
-        "name": "$$addressTitle",
-        "url": "$$addressUrls"
-    },
-    //Optional (will be needed if message received is image)
-    "image": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType", // image/jpeg
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if message received is file)
-    "file": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType",
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if message received is audio)
-    "audio": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType"
-    },
-    //Optional (will be needed if message received is video)
-    "video": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType",
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if the message received is video)
-    "button": {
-        "payload": "$$buttonPayload", // same as outgoing  message
-        "text": "$$buttonText"
     }
 }
 ```
@@ -2002,6 +1964,56 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
             "name": "Johns office", //optional
             "url": "www.johnsoffice.com" // optional
             }
+}
+```
+```Text Incoming message with Image
+{
+    "payloadVersion": "0.1",
+    "from": "919999999999",
+    "wabaNumber": "9199999998888",
+    "timestamp": "1647441774",
+    "type": "image",
+    "context": {
+        "id": "25596363|1639561857|20220227|25596363"
+    },
+    "image": {
+        "mediaURL": "www.example.com/image.png",
+        "mimeType": "image/jpeg",
+        "caption": "This is body"
+    }
+}
+```
+```Text Incoming message with Audio
+{
+    "payloadVersion": "0.1",
+    "from": "919999999999",
+    "wabaNumber": "9199999998888",
+    "timestamp": "1647441774",
+    "type": "voice",
+    "context": {
+        "id": "25596363|1639561857|20220227|25596363"
+    },
+    "audio": {
+        "mediaURL": "www.example.com/audio.mp3",
+        "mimeType": "audio/mpeg"
+    }
+}
+```
+```Text Incoming message with Video
+{
+    "payloadVersion": "0.1",
+    "from": "919999999999",
+    "wabaNumber": "9199999998888",
+    "timestamp": "1647441774",
+    "type": "video",
+    "context": {
+        "id": "25596363|1639561857|20220227|25596363"
+    },
+    "video": {
+        "mediaURL": "www.example.com/video.mp4",
+        "mimeType": "video/mp4",
+        "caption": "This is body"
+    }
 }
 ```
 

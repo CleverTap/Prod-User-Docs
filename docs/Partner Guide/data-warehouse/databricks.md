@@ -292,7 +292,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                                      clevertap_user`
+                                        clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 
@@ -608,7 +608,7 @@ Use the filters on _Import Connections_ to refine the list:
 
 ### How can I whitelist IPs for CleverTap integration?
 
-To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges).
+To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
 
 ### What happens when my PAT expires?
 

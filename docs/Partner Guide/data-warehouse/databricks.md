@@ -20,11 +20,7 @@ Configuring Databricks with CleverTap enables seamless data import, ensuring syn
 
 # Quick Start Guide for Existing Users
 
-<details>
-  <summary>Expand for quick setup if you have previously configured a Databricks workspace and are familiar with the CleverTap dashboard. If you are setting up Databricks for the first time, skip to Prerequisites for Integration below.</summary>
-
-  <hr />
-
+<Accordion title="Expand for quick setup if you have previously configured a Databricks workspace and are familiar with the CleverTap dashboard. If you are setting up Databricks for the first time, skip to Prerequisites for Integration below.">
   ## Prerequisites
 
   Before you begin, ensure you have the following details:
@@ -51,7 +47,7 @@ Configuring Databricks with CleverTap enables seamless data import, ensuring syn
   4. Click **Test Connection** to verify thev configuration and click **Save** to store the configuration.
 
   After setting up the configuration, you can [import](doc:data-warehouse-import) data between Databricks and CleverTap.
-</details>
+</Accordion>
 
 # Prerequisites for Integration
 
@@ -296,7 +292,7 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead:
   `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                                    clevertap_user`
+                                      clevertap_user`
   Repeat for each table that CleverTap needs to access.
 </Callout>
 

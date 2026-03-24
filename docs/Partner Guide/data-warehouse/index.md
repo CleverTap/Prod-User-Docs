@@ -231,10 +231,6 @@ CleverTap supports exporting data to the following data warehouses. Use the link
 </style>
 
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
-    <div class="name">Amazon Redshift</div>
-<a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
-  <div class="name">Databricks</div>
 <a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
     <div class="name">BigQuery</div>
 	<a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">

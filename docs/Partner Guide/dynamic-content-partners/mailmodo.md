@@ -1,5 +1,8 @@
 ---
 title: Mailmodo
+excerpt: >-
+  Learn how to integrate Mailmodo with CleverTap to send interactive emails and
+  track engagement.
 deprecated: false
 hidden: false
 metadata:

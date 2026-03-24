@@ -1,5 +1,8 @@
 ---
 title: Outgrow
+excerpt: >-
+  Learn how to connect Outgrow with CleverTap to sync responses and enrich user
+  profiles.
 deprecated: false
 hidden: false
 metadata:

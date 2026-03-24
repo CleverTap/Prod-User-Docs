@@ -22,6 +22,15 @@ jobs:
           private-key: ${{ secrets.USER_DOCS_APP_KEY }}
           owner: CleverTap
 
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.USER_DOCS_APP_ID }}
+          private-key: ${{ secrets.USER_DOCS_APP_KEY }}
+          owner: CleverTap
+          repositories: "Staging-User-Docs"
+
       - name: Debug token access
         run: |
           echo "Token empty check: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo EMPTY || echo OK)"

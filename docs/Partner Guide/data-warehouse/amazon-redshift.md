@@ -67,8 +67,8 @@ If you are setting up Amazon Redshift for the first time, ensure you have the fo
 
 You can set up Amazon Redshift using one of the following ways:
 
-* For new users who need to provision Redshift resources from scratch: [Create Database](doc:redshift#create-database), [Schema](doc:redshift#create-schema), and [User](doc:redshift#create-user).
-* For users who already have configured resources in Redshift: [Use Existing Redshift Credentials](doc:redshift#use-existing-redshift-credentials).
+* For new users who need to provision Redshift resources from scratch: [Create Database](doc:amazon-redshift#create-database), [Schema](doc:ramazon-edshift#create-schema), and [User](doc:amazon-redshift#create-user).
+* For users who already have configured resources in Redshift: [Use Existing Redshift Credentials](doc:amazon-redshift#use-existing-redshift-credentials).
 
 ## Create New Redshift Setup
 
@@ -76,9 +76,9 @@ If you do not already have a Database, Schema, and User configured in Redshift, 
 
 To create each resource, perform the following steps:
 
-1. [Create Database](doc:redshift#create-database)
-2. [Create Schema](doc:redshift#create-schema)
-3. [Create User](doc:redshift#create-user)
+1. [Create Database](doc:amazon-redshift#create-database)
+2. [Create Schema](doc:amazon-redshift#create-schema)
+3. [Create User](doc:amazon-redshift#create-user)
 
 ### Create Database
 
@@ -143,11 +143,11 @@ GRANT SELECT ON TABLES TO clevertap_user;
 
 If you already have Amazon Redshift set up, perform the following steps to find each detail on the AWS console.
 
-* [Obtain the Host (Cluster Endpoint)](doc:redshift#obtain-the-host-cluster-endpoint)
-* [Find Existing Port](doc:redshift#find-existing-port)
-* [Find Existing Database Name](doc:redshift#find-existing-database-name)
-* [Find Existing Schema](doc:redshift#find-existing-schema)
-* [Verify the Username and Password](doc:redshift#verify-username-and-password)
+* [Obtain the Host (Cluster Endpoint)](doc:amazon-redshift#obtain-the-host-cluster-endpoint)
+* [Find Existing Port](doc:amazon-redshift#find-existing-port)
+* [Find Existing Database Name](doc:amazon-redshift#find-existing-database-name)
+* [Find Existing Schema](doc:amazon-redshift#find-existing-schema)
+* [Verify the Username and Password](doc:amazon-redshift#verify-username-and-password)
 
 ### Obtain the Host (Cluster Endpoint)
 
@@ -239,7 +239,7 @@ ORDER BY schema_name;
 
 The username and password are the credentials used to authenticate with your Redshift cluster:
 
-* If you have created a dedicated user for CleverTap (as described in [Create a User](doc:redshift#create-user)), use those credentials.
+* If you have created a dedicated user for CleverTap (as described in [Create a User](doc:amazon-redshift#create-user)), use those credentials.
 * If you want to use an existing user, verify the username by running:
 
 ```sql
@@ -259,7 +259,7 @@ To connect Amazon Redshift with CleverTap, go to _Settings_ > _Partners_ > _Amaz
 
 ## Database Details
 
-Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Amazon Redshift account, refer to [Create New Redshift Setup](doc:redshift#create-new-redshift-setup) or [Use Existing Redshift Credentials](doc:redshift#use-existing-redshift-credentials).
+Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Amazon Redshift account, refer to [Create New Redshift Setup](doc:amazon-redshift#create-new-redshift-setup) or [Use Existing Redshift Credentials](doc:amazon-redshift#use-existing-redshift-credentials).
 
 <Image align="center" border={true} caption="Database Details" src="https://files.readme.io/da5acc7f83cb5b7832551d36bafea30c3de487ea08a31789879cda4dd9d38831-image_77.png" />
 

@@ -42,32 +42,8 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
   3. Upload a Google Service Account JSON Key file or paste the JSON under the Custom key.
   4. Click **Test Connection** and **Save**
      After setting up the configuration, you can [import](https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports) data from BigQuery into CleverTap.
-
 </Accordion>
 
-<details>
-  <summary></summary>
-
-  <hr />
-
-  ## Prerequisites
-
-  Before you begin, ensure you already have the following details:
-
-  * **Project ID**
-  * **Dataset ID**
-  * **Google Service Account JSON Key** (file or JSON text)
-
-  ## Configure BigQuery Credentials in CleverTap
-
-  To set up the Snowflake credentials in CleverTap, perform the following steps:
-
-  1. Go to *CleverTap Dashboard > Settings > Partners > BigQuery*.
-  2. Enter the following details: Project ID and Dataset ID
-  3. Upload a Google Service Account JSON Key file or paste the JSON under the Custom key.
-  4. Click **Test Connection** and **Save**
-     After setting up the configuration, you can [import](https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports) data from BigQuery into CleverTap.
-</details>
 
 # Prerequisites for Integration
 

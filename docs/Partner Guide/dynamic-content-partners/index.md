@@ -20,18 +20,21 @@ Below are the key tools and integrations that help create dynamic content:
 * [Delighted](doc:delighted)
 * [Jasper AI](doc:jasper-ai)
 * [Litmus](doc:litmus)
-* [Typeform](doc:typeform)
+* [Mailmodo](doc:surveymars)
 * [Movable Ink](doc:movable-ink)
 * [NiftyImages](doc:niftyimages)
+* [Outgrow](doc:outgrow)
 * [Playable](doc:playable)
-* [Qualtrics](doc:qualtrics)
-* [Quickads](doc:quickads) 
-* [Reignite](doc:reignite)
+* [Quickads](doc:quickads)
 * [Rocketium](doc:rocketium)
 * [Sendtric](doc:sendtric)
 * [SquareSpace](doc:squarespace)
-* [Storylane](doc:storylane)
 * [Storyly](doc:storyly)
+* [SurveyMars](doc:surveymars)
 * [SurveyMonkey](doc:surveymonkey)
 * [SurveySparrow](doc:surveysparrow)
 * [Wove](doc:wove)
+
+<br />
+
+*

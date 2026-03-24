@@ -54,6 +54,14 @@ You must indicate the target audience for your campaign. You can specify your ta
 >
 > When multiple In-App campaigns are created for a single event scheduled to run simultaneously, CleverTap delivers the first campaign that was created.
 
+You can also create the target based on past user behavior and user properties or live (ongoing) user behavior. The latter is useful to send out real-time, triggered In-App campaigns.
+
+> 🚧 In-App Delay and Inaction
+>
+> We recommend creating a Past Behavior campaign for all campaigns where the delay is lesser than 20 minutes for an In-App  campaign.
+
+For instance, you can create a live _Inaction within time_ campaign that targets users when they add a product to their cart but do not finish transacting within 10 minutes.
+
 ### Deliver Action Based Messages
 
 You can trigger a message based on an action. Users receive messages when they perform an action in the app instead of waiting for the next app launch. It makes the messages more contextual and increases conversion.

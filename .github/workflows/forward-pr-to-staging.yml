@@ -21,7 +21,6 @@ jobs:
           app-id: ${{ secrets.USER_DOCS_APP_ID }}
           private-key: ${{ secrets.USER_DOCS_APP_KEY }}
           owner: CleverTap
-          repositories: "Staging-User-Docs,Prod-User-Docs"
 
       - name: Debug token access
         run: |

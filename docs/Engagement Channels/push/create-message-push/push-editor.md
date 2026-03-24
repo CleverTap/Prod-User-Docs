@@ -90,10 +90,10 @@ To configure expanded and collapsed push notifications media:
 
 <Image align="center" border={true} caption="Push Editor" src="https://files.readme.io/562789466fe6c84b517ba4f426977d7d5b71fd04eff51e74f27d63739b84bda8-image.png" />
 
-4. To add an image or GIF for the expanded view, click **Upload** or paste the image URL in  _Expanded Media_.
+4. To add an image or GIF for the expanded view, click **Upload**, paste the image URL in  _Expanded Media_, or click **Generate with AI** to generate a new image.
 5. Toggle **Same for collapsed media** to use the same media for both collapsed and expanded views.
-6. To add a different image or GIF for the collapsed view, click **Upload** or paste the image URL in _Collapsed Media_.
-7. Upload the icon image from the _Large Icon_ section, or click **Generate with AI** to generate a new image.
+6. To add a different image or GIF for the collapsed view, click **Upload**, paste the image URL in _Collapsed Media_, or click **Generate with AI**.
+7. Upload the icon image from the _Large Icon_ section, or click **Generate with AI**.
 8. Preview and save your changes.
 
 #### Collapsed View Behavior Across SDK Versions
@@ -104,8 +104,6 @@ For SDK versions below PushTemplates `v2.3.0`, the collapsed view supports only 
 * Expanded Image + Text
 * Large Icon + Text
 * Text only
-
-The large icon is not displayed if a collapsed image is configured.
 
 ## **Manual Carousel Template**
 

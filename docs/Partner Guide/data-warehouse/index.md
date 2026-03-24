@@ -87,7 +87,10 @@ CleverTap supports importing data from the following data warehouses. Use the li
   }
 </style>
 <div class="grid">
-	<a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/amazon-redshift" class="integration-card">
+    <div class="name">Amazon Redshift</div>
+  </a>
+<a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
     <div class="name">BigQuery</div>
   </a>
 <a href="https://docs.clevertap.com/docs/databricks" class="integration-card">

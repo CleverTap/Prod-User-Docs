@@ -1,5 +1,8 @@
 ---
 title: SurveyMars
+excerpt: >-
+  Understand how to capture customer feedback using CleverTap integration with
+  SurveyMars
 deprecated: false
 hidden: false
 metadata:

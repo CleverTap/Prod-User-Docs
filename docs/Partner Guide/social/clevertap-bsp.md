@@ -14,10 +14,6 @@ next:
 
 CleverTap is an official WhatsApp Business Service Provider (BSP). You can access WhatsApp business API directly from the CleverTap dashboard and create WhatsApp campaigns within a few minutes after WhatsApp onboarding. CleverTap's WhatsApp Business API removes the dependency of having any external WhatsApp BSP integration to use the WhatsApp channel with the CleverTap dashboard.
 
-> 📘 Engagement using CleverTap as BSP
->
-> By subscribing to CleverTap's BSP, you can gain access to our Campaigns, Journey, and Conversation features. CleverTap BSP is not available for the [Essentials](https://clevertap.com/clevertap-for-startups-features/) plan. If you wish to leverage CleverTap's BSP for your user engagement, please contact our sales team at [sales@clevertap.com](mailto:sales@clevertap.com).
-
 ## Prerequisites For WhatsApp Onboarding
 
 Listed below are the prerequisites to get started with WhatsApp onboarding with CleverTap BSP.
@@ -33,7 +29,7 @@ For non-verified pages, businesses can still have restricted access for up to 30
 * Ensure you provide a dedicated WhatsApp number for long-term use, as this number can not be changed later. This number must be a new number and should not be active on personal WhatsApp or Business WhatsApp applications.
 * Ensure that your WhatsApp number is active, as you will receive an OTP for verification during the onboarding process.
 * While onboarding, ensure that you enter your display name the same as the one used on the Facebook business manager page (also known as the legal name). If the display name doesn't match the business name, you must provide a web URL showing proof of association in the header/footer.
-* Lastly, ensure that your business meets Facebook's [commerce policy](https://www.facebook.com/policies_center/commerce/). 
+* Lastly, ensure that your business meets Facebook's [commerce policy](https://www.facebook.com/policies_center/commerce/).
 
 > ❗️ Unique WhatsApp Number
 >
@@ -43,24 +39,22 @@ For non-verified pages, businesses can still have restricted access for up to 30
 
 To integrate WhatsApp using CleverTap BSP, follow the steps below:
 
-1. Navigate to *Settings* > *Channels* > *WhatsApp* > *WhatsApp Direct* from the CleverTap dashboard.
-2. Click **+ Provider** and select *CleverTap BSP* from the *Provider* dropdown.
-3. Read all the prerequisites and click **Continue with Facebook**. 
+1. Navigate to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Direct_ from the CleverTap dashboard.
+2. Click **+ Provider** and select _CleverTap BSP_ from the _Provider_ dropdown.
+3. Read all the prerequisites and click **Continue with Facebook**.
 4. To register and connect your WhatsApp business account with CleverTap:
 
-   i. Create or select your Meta and WhatsApp Business Account.\
-   ii. Create your WhatsApp Business profile.\
+   i. Create or select your Meta and WhatsApp Business Account.  
+   ii. Create your WhatsApp Business profile.  
    iii. Verify your WhatsApp Business number.
 
- After completing the registration, your business is reviewed within 24 hours for compliance with WhatsApp's commerce policy. 
+After completing the registration, your business is reviewed within 24 hours for compliance with WhatsApp's commerce policy.
 
-5. After your onboarding is successful, you must complete the setup on the CleverTap dashboard. 
+5. After your onboarding is successful, you must complete the setup on the CleverTap dashboard.
 
-<Image title="CleverTap BSP Setup" alt={1134} align="center" border={true} src="https://files.readme.io/9ee5198-bsp.png">
-  CleverTap BSP Setup
-</Image>
+<Image align="center" alt={1134} border={true} caption="CleverTap BSP Setup" title="CleverTap BSP Setup" src="https://files.readme.io/9ee5198-bsp.png" />
 
-6. Select your *WABA Name*, *Nickname*, and mobile number to complete the setup. 
+6. Select your _WABA Name_, _Nickname_, and mobile number to complete the setup.
 
 7. Click **Save and Complete Setup**
 
@@ -93,47 +87,39 @@ If you have trouble creating message templates from your CleverTap account, you 
 
 1. Log in to your [Facebook Business Manager account](https://business.facebook.com/).
 
-<Image title="Log in to your Facebook Business Manager account." alt={2868} align="center" border={true} src="https://files.readme.io/3f97347-FB_Manager.png">
-  WhatsApp Manager 
-</Image>
+<Image align="center" alt={2868} border={true} caption="WhatsApp Manager" title="Log in to your Facebook Business Manager account." src="https://files.readme.io/3f97347-FB_Manager.png" />
 
-2. Open the hamburger menu at the top of the page and select **WhatsApp Manager**. The  WhatsApp Business accounts page opens. 
-3. Click **Message templates** from the left navigation menu under *Account tools* as shown below. The list of templates is displayed, where you can see all of your existing templates, their status, and quality ratings.
+2. Open the hamburger menu at the top of the page and select **WhatsApp Manager**. The  WhatsApp Business accounts page opens.
+3. Click **Message templates** from the left navigation menu under _Account tools_ as shown below. The list of templates is displayed, where you can see all of your existing templates, their status, and quality ratings.
 
-<Image title="Navigate to Message Template" alt={2618} align="center" border={true} src="https://files.readme.io/57c5e4b-image_19.png">
-  Message Templates
-</Image>
+<Image align="center" alt={2618} border={true} caption="Message Templates" title="Navigate to Message Template" src="https://files.readme.io/57c5e4b-image_19.png" />
 
-4. Click **Create Template**. The template creation page opens. 
+4. Click **Create Template**. The template creation page opens.
 
-<Image title="Complete the Template Configuration" alt={2716} align="center" border={true} src="https://files.readme.io/be1b049-image_22.png">
-  Template Configuration
-</Image>
+<Image align="center" alt={2716} border={true} caption="Template Configuration" title="Complete the Template Configuration" src="https://files.readme.io/be1b049-image_22.png" />
 
 4. Select the Category, Name, and Language :
-   * *Category*: Select the type of template you want to create. You can hover over the template types to view details for each template.
+   * _Category_: Select the type of template you want to create. You can hover over the template types to view details for each template.
      > 📘 Unsupported Template Categories
      >
      > The **Marketing (Product Messages)** and **Authentication templates** are not supported. We recommend not creating these templates in the WhatsApp Manager Account as they can cause compatibility issues.
-   * *Name*: Enter the template's name in lowercase letters, numbers, and underscores only.    
-   * *Language*: Select the languages for your message template. You can delete or add more languages in the next step. 
+   * _Name_: Enter the template's name in lowercase letters, numbers, and underscores only.
+   * _Language_: Select the languages for your message template. You can delete or add more languages in the next step.
 5. Click **Continue** after filling up all the required details.
 6. Configure the template per your requirement and provide a contextual sample for each custom variable added to the template.
 
-<Image alt="Define Template Content" align="center" border={true} src="https://files.readme.io/1212308--92-WhatsApp-Manager.png">
-  Define Template Content
-</Image>
+<Image align="center" alt="Define Template Content" border={true} caption="Define Template Content" src="https://files.readme.io/1212308--92-WhatsApp-Manager.png" />
 
-7. (Optional) Enhance user interactions with messages by incorporating **interactive buttons**. The following information allows you to create and utilize *Call to action (CTA)* and *Quick Reply* buttons within your templates:
+7. (Optional) Enhance user interactions with messages by incorporating **interactive buttons**. The following information allows you to create and utilize _Call to action (CTA)_ and _Quick Reply_ buttons within your templates:
 
 * **Call to Action (CTA) Buttons:**
-  * Meta supports the following CTA buttons: *Call Phone* and *Visit Website*.
-  * WhatsApp supports only two CTA buttons with Templates. You can include one *Call Phone CTA* button and one *Visit Website CTA* button in your templates. 
-  * The *Visit Website CTA button* supports static and dynamic redirection URLs. 
-    * For static redirection URLs, enter the complete URL for redirection (for example, [https://www.example.com/gp/bestsellers](https://www.example.com/gp/bestsellers)). 
+  * Meta supports the following CTA buttons: _Call Phone_ and _Visit Website_.
+  * WhatsApp supports only two CTA buttons with Templates. You can include one _Call Phone CTA_ button and one _Visit Website CTA_ button in your templates.
+  * The _Visit Website CTA button_ supports static and dynamic redirection URLs.
+    * For static redirection URLs, enter the complete URL for redirection (for example, [https://www.example.com/gp/bestsellers](https://www.example.com/gp/bestsellers)).
     * For dynamic redirection URLs, enter the domain of the URL along with a variable (for example, [https://www.example.com/\{\{1}}](https://www.example.com/\{\{1}})).
 
-> 📘 Tracking Clicks With *Visit Website* CTAs
+> 📘 Tracking Clicks With _Visit Website_ CTAs
 >
 > To track clicks in the CTA, we recommend selecting dynamic URLs. Use the following URLs as the Website URL based on your CleverTap account region:
 >
@@ -147,7 +133,7 @@ If you have trouble creating message templates from your CleverTap account, you 
 
 * **Quick Reply Buttons:**
   * Quick Reply buttons allow the users to choose from predefined response options. For more information about Quick Reply buttons, refer to [WhatsApp Quick Replies](https://faq.whatsapp.com/1791149784551042/?helpref=uf_share).
-  * WhatsApp supports up to three *Quick Reply buttons* in templates, allowing users to select a suitable option quickly.
+  * WhatsApp supports up to three _Quick Reply buttons_ in templates, allowing users to select a suitable option quickly.
 
 8. (Optional) Click **Add Sample** to add an optional content example for your template. This helps in understanding the type of message you want to send during the review and approval process.
 
@@ -157,7 +143,7 @@ If you have trouble creating message templates from your CleverTap account, you 
 
 9. Click **Submit**.
 
-Your template is now sent for review. The status of your template is visible under *Message templates*. After your message is approved, you can copy the message template and paste it into the CleverTap dashboard. To learn more about the template creation process, refer to this [detailed document](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343) by Facebook.
+Your template is now sent for review. The status of your template is visible under _Message templates_. After your message is approved, you can copy the message template and paste it into the CleverTap dashboard. To learn more about the template creation process, refer to this [detailed document](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343) by Facebook.
 
 > 📘 Pre-Approved Message Templates
 >
@@ -167,110 +153,98 @@ Your template is now sent for review. The status of your template is visible und
 
 ### Onboarding
 
-**Q. What is Facebook business manager account verification?**\
+**Q. What is Facebook business manager account verification?**  
 A. As the [prerequisite](doc:clevertap-bsp#prerequisites) for WhatsApp onboarding explains, your Facebook business manager account needs to be verified to get full WABA access. Facebook business verification is the way for Facebook to know that your business is a legitimate organization. Your business must be registered as per the business registration process of your country.
 
-**Q. Do I need to verify the Facebook manager account again if it is already verified?**\
+**Q. Do I need to verify the Facebook manager account again if it is already verified?**  
 A. Facebook business verification is also required for other purposes, along with getting WABA access. Given this, there are chances that you have already verified your business manager account. You do not have to go through the verification process if your account is verified.
 
-**Q. How do I check if my Facebook business manager account is verified or not?**\
-A.  To check if your Facebook business manager account is verified, open your Facebook business manager account and navigate to *Settings*. Scroll down and click *Security Settings*. If your Business manager account is verified, the "Security Center" section displays as follows:
+**Q. How do I check if my Facebook business manager account is verified or not?**  
+A.  To check if your Facebook business manager account is verified, open your Facebook business manager account and navigate to _Settings_. Scroll down and click _Security Settings_. If your Business manager account is verified, the "Security Center" section displays as follows:
 
-**Q. What are the requirements for business verification?**\
-A. To verify the business manager account, you must fill in the business details. Ensure that the information provided aligns with the details registered with local authorities. As long as Facebook can verify your organization from the given information, there is no need to provide supporting documents for verification. To check the exact requirements for verification in your country, refer to the [detailed documentation](https://www.facebook.com/business/help/159334372093366) 
+**Q. What are the requirements for business verification?**  
+A. To verify the business manager account, you must fill in the business details. Ensure that the information provided aligns with the details registered with local authorities. As long as Facebook can verify your organization from the given information, there is no need to provide supporting documents for verification. To check the exact requirements for verification in your country, refer to the [detailed documentation](https://www.facebook.com/business/help/159334372093366)
 
-**Q. My Facebook business manager is not verified; how do I get it verified?**\
-A. Follow the steps given in this [document](https://www.facebook.com/business/help/2058515294227817?id=180505742745347) to understand the steps required for getting your Facebook business manager account verified. 
+**Q. My Facebook business manager is not verified; how do I get it verified?**  
+A. Follow the steps given in this [document](https://www.facebook.com/business/help/2058515294227817?id=180505742745347) to understand the steps required for getting your Facebook business manager account verified.
 
-**Q. How long does Facebook take to verify the business manager account?**\
-A.  Facebook takes a few weeks to verify the business manager account. This is subjective to how soon Facebook can verify your documents and can take longer in some cases. 
+**Q. How long does Facebook take to verify the business manager account?**  
+A.  Facebook takes a few weeks to verify the business manager account. This is subjective to how soon Facebook can verify your documents and can take longer in some cases.
 
-**Q. What happens if I complete WhatsApp onboarding without business verification?**\
-A. Previously, businesses could not send any messages before completing the account verification. This meant if verification took a few weeks, they had to wait that long to start using the WhatsApp Business APIs. 
+**Q. What happens if I complete WhatsApp onboarding without business verification?**  
+A. Previously, businesses could not send any messages before completing the account verification. This meant if verification took a few weeks, they had to wait that long to start using the WhatsApp Business APIs.
 
 While waiting for verification, businesses can use the unverified trial experience (sandbox) to test the functionality. During the trial experience, businesses are allowed to initiate a conversation with a limited number of users, but the business can respond to unlimited incoming chats. [Read more](https://www.facebook.com/business/help/2640149499569241).
 
-**Q. Are there any repercussions if I do not verify the Facebook business manager account?**\
+**Q. Are there any repercussions if I do not verify the Facebook business manager account?**  
 A. It is important to start your Facebook Business verification as soon as possible. In most cases, the account is verified the same day as the process starts, but in some cases, this may take some time. If the business is not verified by Facebook or approved as per WhatsApp commerce and display name policy within 30 days, the number goes offline.
 
-**Q. What are the best practices for WhatsApp display names?**\
+**Q. What are the best practices for WhatsApp display names?**  
 A. Do not add extra words, spaces, or special characters to your company or brand name used in the business display name. To learn more, refer to the [document](https://www.facebook.com/business/help/338047025165344).
 
 **Q. I have completed onboarding; how do I check if my WABA account/display name is approved?**
 
-A. Display approval happens after your business is verified, so if you have not verified your business yet, start the verification at the earliest. 
+A. Display approval happens after your business is verified, so if you have not verified your business yet, start the verification at the earliest.
 
-To check your display number approval status, open your Facebook business manager account and navigate to *WhatsApp business manager* from the hamburger icon in the left navigation bar. Now, select the WhatsApp account associated with the number for which you want to check the display name approval status, and then click *Phone numbers* from the left navigation bar under *Account tools*.
+To check your display number approval status, open your Facebook business manager account and navigate to _WhatsApp business manager_ from the hamburger icon in the left navigation bar. Now, select the WhatsApp account associated with the number for which you want to check the display name approval status, and then click _Phone numbers_ from the left navigation bar under _Account tools_.
 
-<Image title="Check the Approval Status" alt={1852} align="center" border={true} src="https://files.readme.io/f1f512a-waba.png">
-  Display Number Approval Status
-</Image>
+<Image align="center" alt={1852} border={true} caption="Display Number Approval Status" title="Check the Approval Status" src="https://files.readme.io/f1f512a-waba.png" />
 
-Now, click *View* under Certificate. If your display name is approved, the Display name has an *Approved* tag in front of it, as shown below:
+Now, click _View_ under Certificate. If your display name is approved, the Display name has an _Approved_ tag in front of it, as shown below:
 
-<Image title="Check the Approval Status Tag" alt={1358} align="center" border={true} src="https://files.readme.io/1a38601-approved.png">
-  Approval Status
-</Image>
+<Image align="center" alt={1358} border={true} caption="Approval Status" title="Check the Approval Status Tag" src="https://files.readme.io/1a38601-approved.png" />
 
-**Q. How do I check my current messaging limit?**\
-A. To check your current messaging limits, open your Facebook business manager account and navigate to WhatsApp business manager from the hamburger icon in the left navigation bar. Further, select the WhatsApp account associated with the number for which you want to check the Display name approval status and then click *Phone numbers* from the left navigation bar under *Account tools*. Your messaging limit appears under *Messaging limit* in the phone numbers table.
+**Q. How do I check my current messaging limit?**  
+A. To check your current messaging limits, open your Facebook business manager account and navigate to WhatsApp business manager from the hamburger icon in the left navigation bar. Further, select the WhatsApp account associated with the number for which you want to check the Display name approval status and then click _Phone numbers_ from the left navigation bar under _Account tools_. Your messaging limit appears under _Messaging limit_ in the phone numbers table.
 
-<Image title="Check Messaging Limit" alt={2876} align="center" border={true} src="https://files.readme.io/19a0128-mess_limit.png">
-  Check Messaging Limit
-</Image>
+<Image align="center" alt={2876} border={true} caption="Check Messaging Limit" title="Check Messaging Limit" src="https://files.readme.io/19a0128-mess_limit.png" />
 
-**Q. How do I increase the messaging limit?**\
+**Q. How do I increase the messaging limit?**  
 A. To learn about the messaging limit levels, refer to this [detailed document by Meta](https://developers.facebook.com/docs/whatsapp/messaging-limits#messaging).
 
 **Q. How do I check my Whatsapp message usage ?**
 
 A. You can check your WhatsApp usage for the current month from your Meta Business Manager account. To view your usage:
 
-1. Login to your account and select WhatsApp Manager from the Tools shortcuts or under Engage Customers > WhatsApp Manager. 
+1. Login to your account and select WhatsApp Manager from the Tools shortcuts or under Engage Customers > WhatsApp Manager.
 
-<Image alt="login to meta business account" align="center" border={true} src="https://files.readme.io/1345c2e-meta_business_login.png">
-  Meta Business Login
-</Image>
+<Image align="center" alt="login to meta business account" border={true} caption="Meta Business Login" src="https://files.readme.io/1345c2e-meta_business_login.png" />
 
 Your WhatsApp accounts and onboarded numbers are displayed.
 
-<Image alt="WhatsApp Insights View" align="center" border={true} src="https://files.readme.io/1287cd8-WhatsApp_numbers.png">
-  WhatsApp Insights View
-</Image>
+<Image align="center" alt="WhatsApp Insights View" border={true} caption="WhatsApp Insights View" src="https://files.readme.io/1287cd8-WhatsApp_numbers.png" />
 
 2. Select any of the numbers to view usage and charges.
 3. Go to Account Tools > Insights.
-4. Select the date range to display usage. 
+4. Select the date range to display usage.
 
-<Image alt="View usage by date range" align="center" border={true} src="https://files.readme.io/777c470-WhatsApp_numbers_and_their_stats.png">
-  View usage by date range
-</Image>
+<Image align="center" alt="View usage by date range" border={true} caption="View usage by date range" src="https://files.readme.io/777c470-WhatsApp_numbers_and_their_stats.png" />
 
 ### Message Templates
 
 **Q. What are message templates?**
 
-A. As explained earlier, there are two types of conversations - user-initiated and business-initiated. In the case of user-initiated conversations, you can send any text to end-users. However, if your business initiates the conversation, you can only send the message reviewed and approved by Facebook. These approved text messages are called Message templates. 
+A. As explained earlier, there are two types of conversations - user-initiated and business-initiated. In the case of user-initiated conversations, you can send any text to end-users. However, if your business initiates the conversation, you can only send the message reviewed and approved by Facebook. These approved text messages are called Message templates.
 
-**Q. How much time does Facebook take to review the templates?**\
+**Q. How much time does Facebook take to review the templates?**  
 A. It can take up to 24 hours for approval. Once approved, a notification appears in your WhatsApp Manager, and we send an email to your Business Manager admins. In addition, we also send a webhook notification if you subscribe to message template status changes. Learn more about [Monitoring Status Changes](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#monitoring-status-changes).
 
-**Q. Are there any best practices for message templates?**\
+**Q. Are there any best practices for message templates?**  
 A. Facebook expects you to create templates for genuine use cases and not violate their [policy](https://www.whatsapp.com/legal/business-policy/?fbclid=IwAR3dL90AcNa3qrmGiyDvsWjfhk0dpACCfAMzo5jUrt82CMjxPempfxYl1Dg). There is no single correct approach to creating templates but following these basic guidelines will help in getting your templates approved quickly and customers also enjoy interaction with your business.
 
 1. Templates should be short, simple, and have only the necessary text to pass on the required information to the customer.
 2. Templates must not have any grammatical or spelling mistakes. Templates that include major spelling or grammatical mistakes are likely to be rejected. Templates with minor punctuation errors or grammatical inconsistencies may be approved but should be avoided.
 3. Be mindful of formatting errors. Ensure that you are not missing any sequence in variables ie. \{\{1}},\{\{3}},\{\{4}} or used the curly braces properly in dynamic variables.
-4. Title of the template should explain how the template is going to be used. for example, if you are creating a template for sending booking information, the title should be booking\_update. Also, note that the title can not be changed later so name the templates in such a way that it is easier to identify your templates easily.
-5. If you plan to use any redirection URLs, ensure that you provide full URLs. Using short URLs in templates might cause templates to be rejected. 
+4. Title of the template should explain how the template is going to be used. for example, if you are creating a template for sending booking information, the title should be booking_update. Also, note that the title can not be changed later so name the templates in such a way that it is easier to identify your templates easily.
+5. If you plan to use any redirection URLs, ensure that you provide full URLs. Using short URLs in templates might cause templates to be rejected.
 6. Use the same language in the template content you chose in the template language field. For example, if you chose Arabic as the template language, then write template content in Arabic.
 
 Refer to these detailed documents by [Facebook](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#quality-rating-and-template-status) to learn more about the best practices for WhatsApp message templates.
 
-**Q. How do I create new templates?**\
-A. Refer to the [Add Message Template](doc:clevertap-bsp#add-message-template) section. 
+**Q. How do I create new templates?**  
+A. Refer to the [Add Message Template](doc:clevertap-bsp#add-message-template) section.
 
-**Q. What are the common reasons for template rejection?**\
+**Q. What are the common reasons for template rejection?**  
 A. Listed below are the common reasons for template rejections:
 
 * Variable parameters are missing or have mismatched curly braces. The correct format is \{\{1}}.
@@ -279,15 +253,15 @@ A. Listed below are the common reasons for template rejections:
 * The message template contains content that violates [WhatsApp's Commerce Policy](https://www.whatsapp.com/legal/commerce-policy?l=et).
 * The message template contains content that violates [WhatsApp's Business Policy](https://www.whatsapp.com/legal/business-policy/?lang=en).
 * The content contains potentially abusive or threatening content, such as threatening a customer with legal action or threatening to shame them publicly.
-* The message template is a duplicate of an existing template. If a template is submitted with the same content in the body and footer of an existing template, the duplicate template is rejected. A rejection email notification, including the rejection reason that appears in *Account Quality* on WhatsApp Manager, is sent. You may refer to the Account Quality notification to see the name and language of the existing template with the same content as the rejected duplicate template. You may also choose to edit the template and resubmit. Please note that this check does not apply to OTP templates.
+* The message template is a duplicate of an existing template. If a template is submitted with the same content in the body and footer of an existing template, the duplicate template is rejected. A rejection email notification, including the rejection reason that appears in _Account Quality_ on WhatsApp Manager, is sent. You may refer to the Account Quality notification to see the name and language of the existing template with the same content as the rejected duplicate template. You may also choose to edit the template and resubmit. Please note that this check does not apply to OTP templates.
 
-**Q. Can I edit the templates after they are approved?**\
-A. You can edit a template using the WhatsApp Manager or the [Message Template](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates#edit-a-message-template) endpoint. Note that if you edit a message template and resubmit it for approval, its status changes to *In Review* and cannot be sent to customers until its status changes to *Active*.
+**Q. Can I edit the templates after they are approved?**  
+A. You can edit a template using the WhatsApp Manager or the [Message Template](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates#edit-a-message-template) endpoint. Note that if you edit a message template and resubmit it for approval, its status changes to _In Review_ and cannot be sent to customers until its status changes to _Active_.
 
-**Q. What is template quality, and how do I check the quality of my templates?**\
-A. To check the quality rating of your templates, open your Facebook business manager account and navigate to *WhatsApp business manager* from the hamburger icon in the left navigation bar. Further, select the WhatsApp account associated with the number for which you want to check the template quality rating, and then click on *Message templates* from the left nav bar under account tools. 
+**Q. What is template quality, and how do I check the quality of my templates?**  
+A. To check the quality rating of your templates, open your Facebook business manager account and navigate to _WhatsApp business manager_ from the hamburger icon in the left navigation bar. Further, select the WhatsApp account associated with the number for which you want to check the template quality rating, and then click on _Message templates_ from the left nav bar under account tools.
 
-**Q. What are common template statuses?**\
+**Q. What are common template statuses?**  
 A. Templates can have the following statuses:
 
 * In-Review: This indicates that the template is still under review. Review can take up to 24 hours.
@@ -302,42 +276,40 @@ A. Templates can have the following statuses:
 
 ### Number Quality
 
-**Q. What is number quality and connection status?**\
+**Q. What is number quality and connection status?**  
 A. Your quality rating indicates how template messages have been received by your users in the last 24 hours. There are three different states of messaging quality:
 
 * Green: High quality
 * Yellow: Medium quality
 * Red: Low-quality
 
-If your Quality rating remains Red for seven or more days, your number's connection status changes to *Flagged* or *Restricted*.
+If your Quality rating remains Red for seven or more days, your number's connection status changes to _Flagged_ or _Restricted_.
 
-* Flagged: Indicates that the quality rating has reached a low state. Businesses can not upgrade messaging limit tiers during the Flagged phase. If the message quality improves to a high or medium state by the seventh day from when your status was moved to Flagged, the status changes to *Connected*. If the quality rating does not improve, the status still changes to Connected, but you are placed in a lower messaging limit tier.
+* Flagged: Indicates that the quality rating has reached a low state. Businesses can not upgrade messaging limit tiers during the Flagged phase. If the message quality improves to a high or medium state by the seventh day from when your status was moved to Flagged, the status changes to _Connected_. If the quality rating does not improve, the status still changes to Connected, but you are placed in a lower messaging limit tier.
 * Restricted: Indicates that you have reached your messaging limit. During a Restricted phase, you can not send any notification messages until the 24-hour window is reset. However, you can respond to any messages that customers initiate. [Learn more](https://www.facebook.com/business/help/896873687365001).
 
-**Q. How do I check my number quality?**\
-A.  Navigate to Facebook business manager and open WhatsApp business manager. Further, click *Phone number* under *Account tools*. This will show you the number quality and status of your numbers. 
+**Q. How do I check my number quality?**  
+A.  Navigate to Facebook business manager and open WhatsApp business manager. Further, click _Phone number_ under _Account tools_. This will show you the number quality and status of your numbers.
 
-<Image title="View the Number Quality" alt={1910} align="center" border={true} src="https://files.readme.io/a6f98eb-message.png">
-  Number Quality 
-</Image>
+<Image align="center" alt={1910} border={true} caption="Number Quality" title="View the Number Quality" src="https://files.readme.io/a6f98eb-message.png" />
 
-**Q. What to do if the number quality is Red? How to improve Quality Rating?**\
+**Q. What to do if the number quality is Red? How to improve Quality Rating?**  
 A. Follow the guidelines below to improve your Quality Rating:
 
 * Reduce the WhatsApp campaigns for a week and send only important notifications and target your champion user base only.
-* Ensure that your templates comply with the WhatsApp Business Policy. 
-* Ensure that your messages are clear, personalized, and useful to users. 
-* Avoid sending open-ended welcome or introductory messages. 
-* Only send template messages to users that have opted in to receive messages on that specific topic. For example, if a user opted-in for COVID updates but starts receiving other health updates, they may respond negatively because they did not opt-in for that specific communication. 
-* Be mindful of your messaging frequency. Avoid sending users too many notifications in a day. 
-* Be thoughtful of informational messages, and optimize the content and the message length. 
+* Ensure that your templates comply with the WhatsApp Business Policy.
+* Ensure that your messages are clear, personalized, and useful to users.
+* Avoid sending open-ended welcome or introductory messages.
+* Only send template messages to users that have opted in to receive messages on that specific topic. For example, if a user opted-in for COVID updates but starts receiving other health updates, they may respond negatively because they did not opt-in for that specific communication.
+* Be mindful of your messaging frequency. Avoid sending users too many notifications in a day.
+* Be thoughtful of informational messages, and optimize the content and the message length.
 * Check if your organization has added and sent a new template within the last 7 days. This may help determine a problematic template(s).
 
 ### Number Migration
 
-**Q. I want to migrate my number from CleverTap to external BSP; what is the process?**\
-A. Please contact your account manager to seek support for the migration process or raise a ticket with our support team from your CleverTap dashboard. 
+**Q. I want to migrate my number from CleverTap to external BSP; what is the process?**  
+A. Please contact your account manager to seek support for the migration process or raise a ticket with our support team from your CleverTap dashboard.
 
-**Q. I want to migrate numbers from external BSP to CleverTap BSP; how do I get this done?**\
-A. Please contact your account manager to seek support for the migration process.\
+**Q. I want to migrate numbers from external BSP to CleverTap BSP; how do I get this done?**  
+A. Please contact your account manager to seek support for the migration process.  
 Also, refer to this [document](https://developers.facebook.com/docs/whatsapp/business-management-api/guides/migrate-phone-to-different-waba/) to know more about the migration process.

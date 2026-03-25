@@ -37,7 +37,7 @@ For more information, refer to [Upload User Profiles](https://developer.cleverta
 
 To enable effective personalisation and targeting, include as much user information as possible. At a minimum, every profile upload must include a valid User Identifier (Identity). Recommended fields include:
 
-* **Mandatory**: Identity (unique user ID such as internal DB ID, CRM ID, UUID, or any unique string). (@amrita as a rule we usually expand acronyms when mentioned for the first time.)
+* **Mandatory**: Identity (unique user ID such as internal DB ID, CRM ID, UUID, or any unique string).
 * **System User Properties**: Name, Age, Email ID, Phone number (in `+[country code][number]` format). For more information, refer to [System User Properties](https://docs.clevertap.com/docs/user-profiles#system-user-properties).
 * **Custom Profile Attributes**: Any business-specific properties (e.g., membership tier, preferred language).
 * **Nested Objects**: User properties with nested structures for complex data. For more information, refer to [Nested Objects in User Properties](https://docs.clevertap.com/docs/nested-objects-in-user-properties).

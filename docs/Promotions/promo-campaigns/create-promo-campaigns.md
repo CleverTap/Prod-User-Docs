@@ -313,9 +313,9 @@ The following configuration options are available when Loyalty Points is selecte
         * **Activation**: Immediate (points instantly usable) OR Custom delay (for example, activate after 7 days).
 
         * **Expiry**: Specifies how the expiry of points is determined. You can choose one of the following options:  
-          **Never**: Points do not expire.  
-          **Fixed date**: Points expire on a specific date.  
-          **Custom duration**:  Points expire after a defined duration from when they are awarded (for example, 30 days after activation). When a custom duration is set to Calendar years, points earned in the same calendar year expire at the end of the selected year. For example, if validity is set to 3 calendar years, points earned anytime in 2025 expire on December 31, 2027
+          * **Never**: Points do not expire.  
+          * **Fixed date**: Points expire on a specific date.  
+          * **Custom duration**:  Points expire after a defined duration from when they are awarded (for example, 30 days after activation). When a custom duration is set to Calendar years, points earned in the same calendar year expire at the end of the selected year. For example, if validity is set to 3 calendar years, points earned anytime in 2025 expire on December 31, 2027
       </td>
 
       <td>

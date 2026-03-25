@@ -20,6 +20,24 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
 | :------------------ | :------------------------------------ | :------------ | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | February 26, 2026   | Push Impression, Notification Clicked | wzrk_sif      | Event Property Added | Boolean property that indicates whether the push notification was delivered silently (no popup shown when the app is open). For more information, refer to [Push Editor](doc:push-editor#android-options). |
 
+# October 2025
+
+| Change Release Date | Event Name              | Property Name | Update Type | Description                                                                                                                                                                                                                                |
+| :------------------ | :---------------------- | :------------ | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| October 8, 2026     | CT Custom Reward Issued |               | Event Added | This event is raised when a custom reward is issued to a user through a Promo campaign or API. For more information about the properties of this event, refer to CT Custom Reward Issued under [System Events](doc:events#system-events) . |
+
+# June 2025
+
+| Change Release Date | Event Name                  | Property Name | Update Type | Description                                                                                                                                                                                                                    |
+| :------------------ | :-------------------------- | :------------ | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| July 1, 2025        | Notification Failed         |               | Event Added | This event captures the errors that occurred in the WhatsApp campaign.                                                                                                                                                         |
+| June 30, 2025       | CT Coupon Rewarded          |               | Event Added | This event is raised when the coupon is issued to a user through a Promo campaign. For more information about the properties of this event, refer to CT Coupon Rewarded under [System Events](doc:events#system-events).       |
+| June 30, 2025       | CT Coupon Redeemed          |               | Event Added | This event is raised when the user redeems the coupon through the coupon redemption API. For more information about the properties of this event, refer to CT Coupon Redeemed under [System Events](doc:events#system-events). |
+| June 30, 2025       | CT Coupon Reverted          |               | Event Added | This event is raised when a redeemed coupon is reversed. For more information about the properties of this event, refer to CT Coupon Reverted under [System Events](doc:events#system-events).                                 |
+| June 30, 2025       | CT Points Credited          |               | Event Added | This event is raised when points are credited to the loyalty wallet. For more information about the properties of this event, refer to CT Points Credited under [System Events](doc:events#system-events).                     |
+| June 30, 2025       | CT Points Debited           |               | Event Added | This event is raised when points are debited from the loyalty wallet. For more information about the properties of this event, refer to CT Points Debited under [System Events](doc:events#system-events).                     |
+| June 30, 2025       | CT Partner Voucher Rewarded |               | Event Added | This event is raised when a user receives a third-party partner voucher. For more information about the properties of this event, refer to CT Partner Voucher Rewarded under [System Events](doc:events#system-events).        |
+
 # February 2025
 
 <Table align={["left","left","left","left","left"]}>

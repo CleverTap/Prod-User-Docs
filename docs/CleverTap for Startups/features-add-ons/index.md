@@ -39,7 +39,7 @@ The following channels are available for CleverTap for Startups:
 * [Push Notifications ](https://docs.clevertap.com/docs/push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 * [Web Push](https://docs.clevertap.com/docs/web-push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 * [In-App](https://docs.clevertap.com/docs/in-app?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB) 
+* [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 * [App Inbox](https://docs.clevertap.com/docs/app-inbox?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 * [SMS](https://docs.clevertap.com/docs/sms?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 * [Email ](https://docs.clevertap.com/docs/email?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
@@ -47,7 +47,7 @@ The following channels are available for CleverTap for Startups:
 * [Journey](https://docs.clevertap.com/docs/journeys?utm_source=C4S\&utm_medium=doc\&utm_id=KB)
 * [Webhooks](https://docs.clevertap.com/docs/webhooks-overview?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 
-You can integrate with Email, SMS, and WhatsApp service providers of your choice as part of the plan. CleverTap does not impose any extra charges on the plan, as the cost is directly settled between you and the service provider. You also get four additional messaging channels available as an add-on in the Essentials plan. 
+You can integrate with Email, SMS, and WhatsApp service providers of your choice as part of the plan. CleverTap does not impose any extra charges on the plan, as the cost is directly settled between you and the service provider. You also get four additional messaging channels available as an add-on in the Essentials plan.
 
 ## [Campaigns](https://docs.clevertap.com/docs/campaign-approval-workflow?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 
@@ -69,7 +69,7 @@ To access additional information, refer to the [FAQ ](https://staging.docs.user.
 
 # Add-ons
 
-As a part of the Essentials plan, a few of the features available in the Enterprise plans are available as additional add-ons. These add-ons must be added to your billing to be able to use them. 
+As a part of the Essentials plan, a few of the features available in the Enterprise plans are available as additional add-ons. These add-ons must be added to your billing to be able to use them.
 
 The add-ons are billed at 10% of your base plan, determined by your initial MAU requirements.
 
@@ -156,7 +156,7 @@ For more information about the Add-ons offered by CleverTap, refer to [CleverTap
 
     <tr>
       <td>
-        [WhatsApp Direct](https://docs.clevertap.com/docs/whatsapp-direct-add-on) 
+        [WhatsApp Direct](https://docs.clevertap.com/docs/whatsapp-direct-add-on)
       </td>
 
       <td>
@@ -214,11 +214,11 @@ For more information about the Add-ons offered by CleverTap, refer to [CleverTap
       </td>
 
       <td>
-        Data Management 
+        Data Management
       </td>
 
       <td>
-        Export event and user data through:  
+        Export event and user data through:
 
         1. [GCP Export](https://docs.clevertap.com/docs/data-export-to-gcp?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
         2. [Batch Data Export through to AWS S3](https://docs.clevertap.com/docs/data-export-to-aws-s3?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
@@ -237,7 +237,7 @@ For more information about the Add-ons offered by CleverTap, refer to [CleverTap
 
     <tr>
       <td>
-        [Custom List Segment](doc:custom-list-segments) 
+        [Custom List Segment](doc:custom-list-segments)
       </td>
 
       <td>
@@ -255,15 +255,15 @@ For more information about the Add-ons offered by CleverTap, refer to [CleverTap
 
     <tr>
       <td>
-        [Promotions](doc:promo-campaigns) 
+        [Promotions](doc:promo-campaigns)
       </td>
 
       <td>
-        Promo Campaigns
+        Loyalty Orchestration and Rewards
       </td>
 
       <td>
-        Use [Promo Campaigns](doc:promo-campaigns) to reward users based on how they engage with your brand. Distribute [Coupons](doc:coupons) to incentivize purchases. Set up [Loyalty Wallets](doc:loyalty-wallets) to distribute points for actions like purchases or referrals. Distribute [Partner Vouchers](doc:partner-vouchers) to delight existing users and attract new ones.
+        Use [Promo Campaigns](doc:promo-campaigns) to reward users based on how they engage with your brand. Distribute [Coupons](doc:coupons) to incentivize purchases. Set up [Loyalty Wallets](doc:loyalty-wallets) to distribute points for actions like purchases or referrals. Distribute [Partner Vouchers](doc:partner-vouchers) to delight existing users and attract new ones. Offer [Custom Rewards](doc:custom-rewards)  to deliver flexible or externally fulfilled benefits.
       </td>
 
       <td>
@@ -298,5 +298,5 @@ You can utilize CleverTap's Session Analytics to track user events within a sess
 
 ### What is the delivery rate for Push Notifications sent via CleverTap?
 
-Reachability of 100% is possible only for iOS for the opted-in users. In the case of Android, it is usually impossible due to the battery optimization features of Chinese OEMs like One Plus, Xiaomi, so on.\
+Reachability of 100% is possible only for iOS for the opted-in users. In the case of Android, it is usually impossible due to the battery optimization features of Chinese OEMs like One Plus, Xiaomi, so on.  
 With CleverTap, you can achieve a delivery rate of over 80%. More details regarding increasing the push delivery rate can be found [here](https://clevertap.com/blog/push-deliverability?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB).

@@ -118,7 +118,11 @@ When you select Live Behavior Segment, the _When_ section shows the following op
       </td>
 
       <td>
-        Choose when the campaign should stop.<ul><li>**Never**: Campaign keeps running until manually stopped.</li><li>**On a Date/Time**: Campaign automatically ends at a chosen date/time.</li></ul>
+        Choose when the campaign should stop.
+
+        **Never**: Campaign keeps running until manually stopped.    
+
+        * **On a Date/Time**: Campaign automatically ends at a chosen date/time.
       </td>
 
       <td>
@@ -355,7 +359,9 @@ The following configuration options are available when Loyalty Points is selecte
         Add dynamic key–value pairs to pass additional data into the wallet points payload. Each row has two modes:
 
         * **System Key**: Select from predefined system keys.
-        * **Custom Key**: Define your own key. <br />Duplicate keys are not allowed.
+        * **Custom Key**: Define your own key.  
+
+        Duplicate keys are not allowed.
       </td>
 
       <td>

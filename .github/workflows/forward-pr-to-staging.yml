@@ -14,6 +14,9 @@ jobs:
     if: github.event.pull_request.user.login != 'user-docs-bot[bot]'
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Dispatch to Staging repo
         run: |
           curl -s -X POST \
@@ -36,10 +39,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr comment ${{ github.event.pull_request.number }} \
-            --body "Your PR has been forwarded to our internal review system."
+            --repo CleverTap/Prod-User-Docs \
+            --body "Thank you for your contribution! 🚀  
+            Your PR has been forwarded to our internal review system."
 
       - name: Close public PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr close ${{ github.event.pull_request.number }}
+          gh pr close ${{ github.event.pull_request.number }} \
+            --repo CleverTap/Prod-User-Docs

@@ -11,18 +11,17 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout staging repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Configure Git
         run: |
           git config --global user.name "user-docs-bot"
           git config --global user.email "bot@clevertap.com"
 
-      - name: Push to prod master using PAT
+      - name: Clone staging and push to prod
+        env:
+          PROD_PAT: ${{ secrets.PROD_PAT }}
         run: |
-          git push https://x-access-token:${{ secrets.PROD_PAT }}@github.com/CleverTap/Prod-User-Docs.git HEAD:master --force
+          git clone https://x-access-token:${PROD_PAT}@github.com/CleverTap/Staging-User-Docs.git repo
+          cd repo
+          git remote add prod https://x-access-token:${PROD_PAT}@github.com/CleverTap/Prod-User-Docs.git
+          git push prod master:master --force

@@ -1,88 +1,44 @@
-name: Forward Prod-User-Docs PR to Staging-User-Docs
+name: Notify Staging of External PR
 
 on:
   pull_request:
     types: [opened, synchronize]
 
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
 
 jobs:
-  forward:
+  notify:
     runs-on: ubuntu-latest
     if: github.event.pull_request.user.login != 'user-docs-bot[bot]'
 
     steps:
-
-      - name: Generate GitHub App token
-        id: app-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.USER_DOCS_APP_ID }}
-          private-key: ${{ secrets.USER_DOCS_APP_KEY }}
-          owner: CleverTap
-          repositories: "Staging-User-Docs"
-
-      - name: Debug token access
+      - name: Dispatch to Staging repo
         run: |
-          echo "Token empty check: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo EMPTY || echo OK)"
-          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
-            https://api.github.com/repos/CleverTap/Staging-User-Docs | jq '.full_name, .permissions'
-
-      - name: Checkout PR branch
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Configure Git
-        run: |
-          git config --global user.name "user-docs-bot"
-          git config --global user.email "bot@clevertap.com"
-
-      - name: Sanitize branch name and push to staging
-        run: |
-          SAFE_REF=$(echo "${{ github.head_ref }}" | tr -cd '[:alnum:]-_.' | cut -c1-50)
-          BRANCH_NAME="external-${{ github.event.pull_request.number }}-${SAFE_REF}"
-          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
-
-          git remote add staging \
-            https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git
-          git push staging HEAD:${BRANCH_NAME} --force
-
-      - name: Create PR in staging repo (if not exists)
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-        run: |
-          EXISTING=$(gh pr list \
-            --repo CleverTap/Staging-User-Docs \
-            --head "${{ env.BRANCH_NAME }}" \
-            --json number --jq '.[0].number')
-
-          if [ -z "$EXISTING" ]; then
-            gh pr create \
-              --repo CleverTap/Staging-User-Docs \
-              --base develop \
-              --head "${{ env.BRANCH_NAME }}" \
-              --title "External PR: ${{ github.event.pull_request.title }}" \
-              --body "Forwarded from public repo PR #${{ github.event.pull_request.number }}
-
-          Original author: @${{ github.event.pull_request.user.login }}
-          Original PR: ${{ github.event.pull_request.html_url }}"
-          else
-            echo "Staging PR already exists (#${EXISTING}), branch updated via push."
-          fi
+          curl -s -X POST \
+            -H "Authorization: Bearer ${{ secrets.STAGING_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/CleverTap/Staging-User-Docs/dispatches \
+            -d '{
+              "event_type": "external-pr-forward",
+              "client_payload": {
+                "pr_number": "${{ github.event.pull_request.number }}",
+                "pr_title": "${{ github.event.pull_request.title }}",
+                "pr_url": "${{ github.event.pull_request.html_url }}",
+                "author": "${{ github.event.pull_request.user.login }}",
+                "head_ref": "${{ github.head_ref }}"
+              }
+            }'
 
       - name: Comment on public PR
-        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr comment ${{ github.event.pull_request.number }} \
-            --body "Thank you for your contribution! Your PR has been forwarded to our internal repo for review. We'll follow up here once it's been reviewed."
+            --body "Your PR has been forwarded to our internal review system."
 
       - name: Close public PR
-        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

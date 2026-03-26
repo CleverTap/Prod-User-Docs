@@ -1,9 +1,9 @@
-name: Sync Staging Master to Prod
+name: Sync Master to Prod Master
 
 on:
   push:
     branches:
-      - develop
+      - master
 
 permissions:
   contents: write
@@ -27,6 +27,6 @@ jobs:
         run: |
           git remote add prod https://x-access-token:${{ secrets.PROD_PAT }}@github.com/CleverTap/Prod-User-Docs.git
 
-      - name: Push to prod master
+      - name: Push master to prod master
         run: |
-          git push prod master --force
+          git push prod HEAD:master --force

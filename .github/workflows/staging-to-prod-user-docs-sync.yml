@@ -23,11 +23,6 @@ jobs:
           git config --global user.name "user-docs-bot"
           git config --global user.email "bot@clevertap.com"
 
-      - name: Add prod repo remote
+      - name: Push to prod master using PAT
         run: |
-          git remote add prod https://github.com/CleverTap/Prod-User-Docs.git
-          git config --global url."https://x-access-token:${{ secrets.PROD_PAT }}@github.com/".insteadOf "https://github.com/"
-
-      - name: Push master to prod master
-        run: |
-          git push prod HEAD:master --force
+          git push https://x-access-token:${{ secrets.PROD_PAT }}@github.com/CleverTap/Prod-User-Docs.git HEAD:master --force

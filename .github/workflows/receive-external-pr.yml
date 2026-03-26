@@ -27,18 +27,27 @@ jobs:
           BRANCH_NAME="external-${{ github.event.client_payload.pr_number }}-${SAFE_REF}"
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
-      - name: Fetch PR branch from public repo
+      - name: Create branch from develop and apply changes
         run: |
+          # Start from staging develop branch
+          git fetch origin develop
+          git checkout -b $BRANCH_NAME origin/develop
+
+          # Add public repo
           git remote add public https://github.com/CleverTap/Prod-User-Docs.git
-          git fetch public refs/heads/${{ github.event.client_payload.head_ref }}:refs/remotes/public/${{ github.event.client_payload.head_ref }}
 
-          git checkout -b $BRANCH_NAME public/${{ github.event.client_payload.head_ref }}
+          # Fetch public PR branch
+          git fetch public refs/heads/${{ github.event.client_payload.head_ref }}
 
-      - name: Remove workflow files (security fix)
-        run: |
+          # Apply changes from public branch
+          git checkout public/${{ github.event.client_payload.head_ref }} -- .
+
+          # Remove workflow files (security fix)
           rm -rf .github/workflows || true
+
+          # Commit changes
           git add .
-          git commit -m "Remove workflow files from external PR" || echo "No changes"
+          git commit -m "Sync changes from public PR #${{ github.event.client_payload.pr_number }}" || echo "No changes"
 
       - name: Push branch to staging repo
         run: |

@@ -172,7 +172,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
     <p>Enhanced Limits help marketers reduce message fatigue, enforce governance, and protect customer experience by preventing over-saturation of onboarding, promotional, or reminder messages.</p>
     
-<p>For more information, refer to <a href="https://docs.clevertap.com/docs/notification-delivery-options-1#limits-for-engagements"target="_blank">Limits for Engagements</a>.</p>
+<p>For more information, refer to <a href="https://docs.clevertap.com/docs/notification-delivery-options#limits-for-engagements"target="_blank">Limits for Engagements</a>.</p>
   </div>
 
   <hr/>

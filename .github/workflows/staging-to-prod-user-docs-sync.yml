@@ -21,7 +21,7 @@ jobs:
         env:
           PROD_PAT: ${{ secrets.PROD_PAT }}
         run: |
-          git clone https://x-access-token:${PROD_PAT}@github.com/CleverTap/Staging-User-Docs.git repo
+          git clone --branch master https://x-access-token:${PROD_PAT}@github.com/CleverTap/Staging-User-Docs.git repo
           cd repo
           git remote add prod https://x-access-token:${PROD_PAT}@github.com/CleverTap/Prod-User-Docs.git
           git push prod master:master --force

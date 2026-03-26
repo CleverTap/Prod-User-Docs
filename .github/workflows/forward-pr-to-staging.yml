@@ -43,9 +43,4 @@ jobs:
             --body "Thank you for your contribution! 🚀  
             Your PR has been forwarded to our internal review system."
 
-      - name: Close public PR
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh pr close ${{ github.event.pull_request.number }} \
-            --repo CleverTap/Prod-User-Docs
+      

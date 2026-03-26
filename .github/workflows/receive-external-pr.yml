@@ -31,7 +31,17 @@ jobs:
         run: |
           git remote add public https://github.com/CleverTap/Prod-User-Docs.git
           git fetch public refs/heads/${{ github.event.client_payload.head_ref }}:refs/remotes/public/${{ github.event.client_payload.head_ref }}
+
           git checkout -b $BRANCH_NAME public/${{ github.event.client_payload.head_ref }}
+
+      - name: Remove workflow files (security fix)
+        run: |
+          rm -rf .github/workflows || true
+          git add .
+          git commit -m "Remove workflow files from external PR" || echo "No changes"
+
+      - name: Push branch to staging repo
+        run: |
           git push origin $BRANCH_NAME --force
 
       - name: Create PR in staging repo

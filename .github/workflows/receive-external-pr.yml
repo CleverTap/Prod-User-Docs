@@ -1,0 +1,74 @@
+name: Receive External PR
+
+on:
+  repository_dispatch:
+    types: [external-pr-forward]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  forward:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout staging repo
+        uses: actions/checkout@v4
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "user-docs-bot"
+          git config --global user.email "bot@clevertap.com"
+
+      - name: Prepare branch
+        run: |
+          SAFE_REF=$(echo "${{ github.event.client_payload.head_ref }}" | tr -cd '[:alnum:]-_.' | cut -c1-50)
+          BRANCH_NAME="external-${{ github.event.client_payload.pr_number }}-${SAFE_REF}"
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+
+      - name: Create branch from develop and apply changes
+        run: |
+          # Start from staging develop branch
+          git fetch origin develop
+          git checkout -b $BRANCH_NAME origin/develop
+
+          # Add public repo
+          git remote add public https://github.com/CleverTap/Prod-User-Docs.git
+
+          # Fetch public PR branch
+          git fetch public refs/heads/${{ github.event.client_payload.head_ref }}
+
+          # Apply changes from public branch
+          git checkout public/${{ github.event.client_payload.head_ref }} -- .
+
+          # Remove workflow files (security fix)
+          rm -rf .github/workflows || true
+
+          # Commit changes
+          git add .
+          git commit -m "Sync changes from public PR #${{ github.event.client_payload.pr_number }}" || echo "No changes"
+
+      - name: Push branch to staging repo
+        run: |
+          git push origin $BRANCH_NAME --force
+
+      - name: Create PR in staging repo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh pr list \
+            --repo CleverTap/Staging-User-Docs \
+            --head "$BRANCH_NAME" \
+            --json number --jq '.[0].number')
+
+          if [ -z "$EXISTING" ]; then
+            gh pr create \
+              --repo CleverTap/Staging-User-Docs \
+              --base develop \
+              --head "$BRANCH_NAME" \
+              --title "External PR: ${{ github.event.client_payload.pr_title }}" \
+              --body "Forwarded from public PR: ${{ github.event.client_payload.pr_url }}"
+          else
+            echo "PR already exists (#$EXISTING)"
+          fi

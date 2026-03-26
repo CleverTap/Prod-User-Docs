@@ -1,0 +1,32 @@
+name: Sync Master to Prod Master
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout staging repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "user-docs-bot"
+          git config --global user.email "bot@clevertap.com"
+
+      - name: Add prod repo remote
+        run: |
+          git remote add prod https://x-access-token:${{ secrets.PROD_PAT }}@github.com/CleverTap/Prod-User-Docs.git
+
+      - name: Push master to prod master
+        run: |
+          git push prod HEAD:master --force

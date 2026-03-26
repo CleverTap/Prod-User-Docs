@@ -1,0 +1,23 @@
+name: Debug App Token
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate token
+        id: app-token
+        uses: tibdex/github-app-token@v1.8.0
+        with:
+          app_id: ${{ secrets.USER_DOCS_APP_ID }}
+          private_key: ${{ secrets.USER_DOCS_APP_KEY }}
+
+      - name: Check token and permissions
+        run: |
+          echo "Token OK: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo NO || echo YES)"
+          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
+            https://api.github.com/app/installations | jq '.[].account.login, .[].permissions'
+          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
+            https://api.github.com/repos/CleverTap/Staging-User-Docs | jq '.full_name, .permissions'

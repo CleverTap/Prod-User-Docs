@@ -155,33 +155,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="Campaigns" id="Improved-Limits-in-Campaigns-and-Journeys">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#Improved-Limits-in-Campaigns-and-Journeys">
-        <i class="fa-light fa-anchor" />
-      </a>
-    </div>
-
-    <div>
-      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon" />
-    </div>
-
-    <h3 class="release-note-heading">Improved Limits in Campaigns and Journeys</h3>
-    <div class="badge enhancement">ENHANCEMENT</div>
-  </div>
-
-  <div class="release-note-body">
-    <p>You can now cap the total number of times a user ever receives a specific Campaign or Journey message. This new lifetime limit option is available alongside existing choices to send every time or at intervals.</p>
-    <p>Enhanced Limits help marketers reduce message fatigue, enforce governance, and protect customer experience by preventing over-saturation of onboarding, promotional, or reminder messages.</p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/notification-delivery-options-1#limits-for-engagements" target="_blank">Limits for Engagements</a>.</p>
-  </div>
-
-  <hr />
-</div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
 <div class="release-note article" data-category="segments" id="cleverai-predictions-agent">
   <div class="release-note-header">
     <div class="anchor-link-icon">

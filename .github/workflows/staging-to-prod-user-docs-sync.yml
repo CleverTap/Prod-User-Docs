@@ -12,16 +12,28 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: tibdex/github-app-token@v1.8.0
+        with:
+          app_id: ${{ secrets.USER_DOCS_APP_ID }}
+          private_key: ${{ secrets.USER_DOCS_APP_KEY }}
+          installation_id: ${{ secrets.USER_DOCS_STAGING_INSTALLATION_ID }}
+
+      - name: Debug token access
+        run: |
+          echo "Token OK: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo NO || echo YES)"
+          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
+            https://api.github.com/repos/CleverTap/Prod-User-Docs | jq '.full_name, .permissions'
+
       - name: Configure Git
         run: |
           git config --global user.name "user-docs-bot"
           git config --global user.email "bot@clevertap.com"
 
       - name: Clone staging and push to prod
-        env:
-          PROD_PAT: ${{ secrets.PROD_PAT }}
         run: |
-          git clone --branch master https://x-access-token:${PROD_PAT}@github.com/CleverTap/Staging-User-Docs.git repo
+          git clone --branch master https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git repo
           cd repo
-          git remote add prod https://x-access-token:${PROD_PAT}@github.com/CleverTap/Prod-User-Docs.git
+          git remote add prod https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Prod-User-Docs.git
           git push prod master:master --force

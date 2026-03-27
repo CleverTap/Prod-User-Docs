@@ -114,6 +114,8 @@ CleverTap enforces some system limits to maintain performance and stability. The
 
 Yes. After ingestion, nested event properties can be used in _Segment Builder_ filters and _Liquid Tags_. You can reference nested attributes using dot notation to create targeted segments or personalize campaign content.
 
-### Are there any reserved fields for nested event properties?
+### Are there any reserved custom events for nested event properties?
 
-Yes. The field `Charged.Items` is reserved for CleverTap’s charged event structure and cannot be used for custom nested event properties.
+Yes. The custom event`Charged` is reserved for CleverTap’s charged event structure and cannot be used for custom nested events.
+
+<br />

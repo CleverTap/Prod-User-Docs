@@ -20,20 +20,25 @@ jobs:
           private_key: ${{ secrets.USER_DOCS_APP_KEY }}
           installation_id: ${{ secrets.USER_DOCS_STAGING_INSTALLATION_ID }}
 
-      - name: Debug token access
-        run: |
-          echo "Token OK: $([ -z '${{ steps.app-token.outputs.token }}' ] && echo NO || echo YES)"
-          curl -s -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
-            https://api.github.com/repos/CleverTap/Prod-User-Docs | jq '.full_name, .permissions'
-
       - name: Configure Git
         run: |
           git config --global user.name "user-docs-bot"
           git config --global user.email "bot@clevertap.com"
 
-      - name: Clone staging and push to prod
+      - name: Clone staging master
         run: |
           git clone --branch master https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Staging-User-Docs.git repo
-          cd repo
-          git remote add prod https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Prod-User-Docs.git
-          git push prod master:master --force
+
+      - name: Remove .github folder
+        run: |
+          rm -rf repo/.github
+
+      - name: Clone prod and sync
+        run: |
+          git clone --branch master https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/CleverTap/Prod-User-Docs.git prod-repo
+          cd prod-repo
+          find . -not -path './.git/*' -not -path './.github/*' -not -name '.git' -not -name '.github' -delete
+          cp -r ../repo/. .
+          git add -A
+          git diff --staged --quiet || git commit -m "sync: staging master to prod master [skip ci]"
+          git push origin master --force

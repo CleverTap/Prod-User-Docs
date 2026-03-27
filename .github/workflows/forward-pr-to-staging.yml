@@ -19,9 +19,10 @@ jobs:
 
       - name: Dispatch to Staging repo
         run: |
-          curl -s -X POST \
+          HTTP_CODE=$(curl -s -o /tmp/response.txt -w "%{http_code}" -X POST \
             -H "Authorization: Bearer ${{ secrets.STAGING_PAT }}" \
             -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
             https://api.github.com/repos/CleverTap/Staging-User-Docs/dispatches \
             -d '{
               "event_type": "external-pr-forward",
@@ -32,7 +33,13 @@ jobs:
                 "author": "${{ github.event.pull_request.user.login }}",
                 "head_ref": "${{ github.head_ref }}"
               }
-            }'
+            }')
+          echo "HTTP Response Code: $HTTP_CODE"
+          cat /tmp/response.txt
+          if [ "$HTTP_CODE" != "204" ]; then
+            echo "Dispatch failed"
+            exit 1
+          fi
 
       - name: Comment on public PR
         env:

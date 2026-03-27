@@ -7,3 +7,4 @@ hidden: false
 This is just a test project to test the Gitsync workflow.
 
 ABCD
+1234

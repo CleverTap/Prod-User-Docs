@@ -1,4 +1,4 @@
-name: Forward External PR to Staging Repo
+name: Notify Staging of External PR
 
 on:
   pull_request:

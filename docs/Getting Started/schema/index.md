@@ -203,6 +203,14 @@ You can discard an active event from the schema. You can still see the event row
   Only admin users can discard events.
 </Callout>
 
+### AI-Generated Descriptions for Custom Events
+
+The system now automatically generates clear and consistent descriptions using AI, whenever a description field is clicked while creating or updating a custom event. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
+
+This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+
+<Image align="center" border={true} caption="AI-Generated Descriptions for Custom Events" src="https://files.readme.io/56fe6da791b6e91a5bc71074e56b538495cdc52ed85f01e670bf1652263d6dbf-2026-03-24_12-13-17_1.gif" />
+
 ## Restore Event
 
 You can restore a previously discarded event, event property, or user property from the schema. Once restored, it becomes available again across Campaigns, Journeys, Analytics, and other features that use the schema.
@@ -246,6 +254,14 @@ You can restore a previously discarded event, event property, or user property f
   Only admin users can restore the discarded events.
 </Callout>
 
+### AI-Generated Descriptions for Event Properties
+
+The system now automatically generates clear and consistent descriptions using AI, whenever a description field is clicked while creating or updating a event property. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
+
+This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+
+<Image align="center" border={true} caption="AI-Generated Descriptions for Event Properties" src="https://files.readme.io/7382ad8ae86487a7d17b3c2cb618d1c10601d468825dcc15db8bf5b94e812e80-2026-03-24_12-23-09_1.gif" />
+
 # User Properties
 
 This section shows how to manage your user properties.
@@ -273,6 +289,16 @@ To add a user property from this page:
 3. Click the checkmark.
 
 <Image align="center" border={true} caption="Add User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
+
+### AI-Generated Descriptions for User Properties
+
+The system now automatically generates clear and consistent descriptions using AI, whenever a description field is clicked while creating or updating a user property. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
+
+This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+
+<Image align="center" border={true} caption="AI-Generated Descriptions for User Properties" src="https://files.readme.io/5d86035f9560a43cd30ada370de9b3251562b1e81432bc25cf08e0cd44188fdb-2026-03-24_12-17-12_1.gif" />
+
+##
 
 ## Edit User Property
 

@@ -14,9 +14,11 @@ next:
 
 **Designer Agent** helps you instantly create, edit, or refine images for your Push Notification campaign, all within CleverTap, without the need for external design tools. It combines advanced AI capabilities with your [Brand Kit](https://docs.clevertap.com/docs/brand-kit) to generate on-brand, campaign-ready visuals quickly and efficiently. This makes it easier for teams to design creative images directly in the campaign editor, reducing dependency on design teams and accelerating go-to-market time.
 
-> 📘 Private Beta
->
-> This feature is released in Private Beta and is enabled for select customers only. To enable this feature, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  This feature is released in Private Beta and is enabled for select customers only. To enable this feature, contact your Customer Success Manager.
+</Callout>
 
 # How Designer Agent Works
 
@@ -30,7 +32,7 @@ The Designer Agent automatically applies your Brand Kit to ensure every generate
 <Image align="center" alt="AI Image Generator for Push Notification" border={true} caption="Designer Agent for Push Notification" src="https://files.readme.io/74795935df940693c38e96dff8d6cb0cd01e89ed293312891efb74866c2cdd25-AI_Image_Generator_for_Push_Campaign.png" />
 
 <Callout icon="📘" theme="info">
-  **Brand Kit Application**
+  #### **Brand Kit Application**
 
   The latest created Brand Kit is automatically selected and applied to your image, even if you don’t manually choose one.
 
@@ -61,9 +63,11 @@ To generate an image using prompts:
 
 <Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/bea61b26c9d2065fc3f485c9a2241d97d0a0c5caaebe02f21e04f9ad3fe5dda1-2026-02-09_21-07-49_1.gif" />
 
-> 📘 Why detailed prompts matter?
->
-> The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, or mood, the better the output will align with your campaign goals. Include contextual details (like event name, offer type, or brand tone) for best results. For more information, refer [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
+<Callout icon="📘" theme="info">
+  #### Why detailed prompts matter?
+
+  The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, or mood, the better the output will align with your campaign goals. Include contextual details (like event name, offer type, or brand tone) for best results. For more information, refer [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
+</Callout>
 
 ## Generate Using Reference Image
 
@@ -157,7 +161,7 @@ For more information on setting up and using brand kits, refer to <Anchor label=
 
 # Manage Generated Images
 
-All AI Generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads)  and [AI Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-images-folder).
+All AI-generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads)  and [AI Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-images-folder).
 
 ## Threads
 
@@ -190,12 +194,12 @@ From the **All Threads** view, you can:
 
 ## AI Images Folder
 
-All AI generated images are automatically stored in your _CMS_, under the **AI Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
+All AI-generated images are automatically stored in your _CMS_, under the **AI Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
 
 <Image align="center" alt="AI Generated Images Folder" border={true} caption="AI Images Folder" src="https://files.readme.io/e11b078ebf2be9b89f11911847723625a7f51dc11bb2c7f37600a4ba7499ee22-2026-02-12_14-07-06.png" />
 
 <Callout icon="📘" theme="info">
-  **Note**
+  #### **Note**
 
   The AI Images folder is system-managed and cannot be renamed, moved, or deleted. Images stored in this folder can be download and reused in campaigns, but cannot be renamed or moved to a different folder.
 </Callout>
@@ -218,7 +222,7 @@ The Designer Agent relies on the clarity of your description to produce accurate
 For more information, refer to [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
 
 <Callout icon="📘" theme="info">
-  **Image Generation Limit**
+  #### **Image Generation Limit**
 
   AI image generation is capped at 100 images per account per month. The quota refreshes monthly and applies across all users within the account. Once the limit is reached, image generation will be disabled until the next reset.
 
@@ -237,10 +241,10 @@ You retain full ownership of all images generated using the Designer Agent. Clev
 
 ### How is my data used and shared with Nano Banana AI?
 
-CleverTap’s Designer Agent uses Nano Banana AI to create images. Your input data is transmitted securely to Nano Banana’s API for generation and returned to CleverTap for display in your campaign. Your data is never used to train Nano Banana AI models. Nano Banana deletes all input data within 30 days, in accordance with their Terms of Use. CleverTap sends only the necessary input to generate your requested image, including your text prompt, and, if applicable, metadata such as brand kit colors or style selections. No personally identifiable information (PII) about you or your users is shared unless you explicitly include it in your prompt. The generated image and related metadata are stored securely within your CleverTap account.
+CleverTap’s Designer Agent uses Nano Banana AI to create images. Your input data is transmitted securely to Nano Banana’s API for generation and returned to CleverTap for display in your campaign. Your data is never used to train Nano Banana AI models. Nano Banana deletes all input data within 30 days, in accordance with their Terms of Use. CleverTap sends only the necessary input to generate your requested image, including your text prompt, and, if applicable, metadata such as brand kit colors or style selections. No personally identifiable information (PII) about you or your users is shared unless you explicitly include it in your prompt. The generated image and related metadata are stored securely within your CleverTap account. For more information, refer to [CleverTap AI‑Enabled Feature Disclaimer & Terms](doc:clevertap-aienabled-feature-disclaimer-terms).
 
 <Callout icon="💡" theme="default">
-  **Best Practice**
+  #### **Best Practice**
 
   All generated materials should be reviewed by your internal brand and legal teams before use in public campaigns.
 
@@ -249,7 +253,7 @@ CleverTap’s Designer Agent uses Nano Banana AI to create images. Your input da
 
 ### Can I paste links or URLs (for example, Figma or design file links) in the prompt?
 
-No. The Designer Agent does not support links or URLs pasted in the prompt, as it does not fetch or render content from external URLs.
+No. The Designer Agent does not support pasting links or URLs into the prompt, as it does not fetch or render content from external URLs.
 
 ### What aspect ratios are supported?
 

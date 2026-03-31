@@ -4,7 +4,7 @@ excerpt: >-
   Understand terms governing the responsible use of Clever.AI features for
   generating and managing marketing content.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -102,7 +102,7 @@ CleverTap enforces some system limits to maintain performance and stability. The
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
 | Nesting depth                                                  | 3 levels                                                                                   |
 | Payload size                                                   | 32 KB. Applies to the total size of evtData (event uploads), including all nested content. |
-| Custom events with nested support (per account)                | Maximum 5                                                                                  |
+| Custom events with nested support (per account)                | Maximum 10                                                                                 |
 | Root-level nested keys per event (objects/arrays)              | Maximum 5                                                                                  |
 | Nested elements inside an array                                | Maximum 100                                                                                |
 | Nested keys inside an object                                   | Maximum 100                                                                                |

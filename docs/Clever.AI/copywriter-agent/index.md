@@ -12,9 +12,11 @@ Copywriter Agent helps you instantly create, edit, or refine message copy for yo
 
 Copywriter Agent reduces manual effort, speeds up campaign creation, and helps you produce consistent, on-brand copy that is aligned with your engagement goals.
 
-> 📘 **Private Beta**
->
-> This feature is currently available in Private Beta and enabled for select customers. To get access, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  #### **Private Beta**
+
+  This feature is currently available in Private Beta and enabled for select customers. To get access, contact your Customer Success Manager.
+</Callout>
 
 # Maximize Efficiency with Copywriter Agent
 
@@ -61,9 +63,11 @@ To generate copy using Copywriter Agent, follow the given steps:
 
 8. Click **Use Content** to insert the selected copy into your campaign.
 
-> 📘 Optimize Output with Detailed Prompts
->
-> The _Copywriter Agent_ relies on the clarity of your prompt to generate accurate, high-quality copies. The more specific you are about the goal, audience, tone, and so on, the better the output aligns with your campaign goals.
+<Callout icon="📘" theme="info">
+  #### Optimize Output with Detailed Prompts
+
+  The _Copywriter Agent_ relies on the clarity of your prompt to generate accurate, high-quality copies. The more specific you are about the goal, audience, tone, and so on, the better the output aligns with your campaign goals.
+</Callout>
 
 # Brand Kit and Content Settings
 
@@ -80,7 +84,7 @@ You can also configure a custom kit for the current thread. This helps align gen
 <Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/bc9c2aecf542c8a8a2dd1572ed3dd1194dc108625051a7733719b3fd8b3d508a-2026-01-21_15-41-55.png" />
 
 <Callout icon="📘" theme="info">
-  **Note**
+  #### **Note**
 
   * Locked Brand Kits cannot be edited in the campaign flow because they are meant to enforce brand consistency across teams. Locking a kit prevents campaign-level users from overriding approved brand styles.
   * Any changes made to a Brand Kit from the campaign flow apply only to the current thread. This allows you to experiment with copy variations without permanently changing your account-level Brand Kit.
@@ -231,7 +235,7 @@ No. All generated copy is unique to your prompt and campaign context. CleverTap 
 
 ### Who owns the generated content?
 
-You retain full ownership of all content generated using the Copywriter Agent. CleverTap does not claim any intellectual property rights over the generated output.
+You retain full ownership of all content generated using the Copywriter Agent. CleverTap does not claim any intellectual property rights over the generated output. For more information, refer to [CleverTap AI‑Enabled Feature Disclaimer & Terms](doc:clevertap-aienabled-feature-disclaimer-terms). 
 
 ### Is my data used to train AI models?
 

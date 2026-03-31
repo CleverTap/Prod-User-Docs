@@ -91,29 +91,25 @@ The session dashboard displays an overview of the app sessions with the followin
 
 ## Session Length Distribution Buckets
 
-The session length distribution is displayed using bucketed ranges rather than exact session durations.
-
-These buckets follow a power-of-two (2^x) scaling pattern, grouping session lengths into progressively larger ranges such as:
-
-* 0–4,096 seconds
-* 4,096–8,192 seconds
-* 8,192–16,384 seconds
-
-Each bucket represents a range of session durations, not a specific value.
-
-For example, if a session appears in the 0-4,096 seconds bucket, it does not mean the session lasted close to 4,096 seconds. The actual session duration could be much smaller (for example, a few minutes), but is grouped into this range for distribution analysis.
-
-### Why Bucketing is Used?
-
-Bucketing helps visualize how sessions are distributed across different duration ranges, especially when session lengths are highly variable. It allows you to:
+The session length distribution is displayed using ranges rather than absolute values. These ranges help visualize how sessions are distributed across different durations, especially when session lengths are highly variable. It allows you to:
 
 * Identify where most user sessions fall
-* Compare relative distribution across short vs long sessions
+* Compare the relative distribution across short vs long sessions
+
+These duration buckets follow a power-of-two (2ⁿ) scaling pattern, where each bucket doubles in size. Here, _n_ represents the exponent, meaning each range is calculated as 2 raised to the power of n (for example, 2¹² = 4,096, 2¹³ = 8,192).
+
+This results in progressively larger ranges, such as:
+
+* 0–4,096 seconds (0-68 minutes)
+* 4,096–8,192 seconds (68-136 minutes)
+* 8,192–16,384 seconds (136-273 minutes)
+
+For example, if a session appears in the 0-4,096 seconds bucket, it does not mean the session lasted close to 4,096 seconds. The actual session duration could be much shorter (for example, 5 minutes), but is grouped into this range for distribution analysis.
 
 ### Important Considerations
 
 Use the following points to correctly interpret session length buckets and avoid misreading the data:
 
-* Bucket ranges are not exact session values
-* Most sessions within a bucket are typically concentrated toward the lower end of the range
-* Higher buckets may appear large, but often contain very few sessions
+* Bucket ranges are not exact session values. Each bucket represents a range, not a precise duration.
+* Most sessions within a bucket are typically concentrated toward the lower end of the range. For example, in the 0–4,096 seconds bucket, most sessions might actually be around 2–10 minutes (120–600 seconds) rather than close to 4,000 seconds.
+* Higher buckets may appear large, but often contain very few sessions. For example, the 8,192–16,384 seconds (2–4.5 hours) bucket may only include a small number of unusually long sessions.

@@ -298,8 +298,6 @@ This AI-generated description is further leveraged in the advanced AI features s
 
 <Image align="center" border={true} caption="AI-Generated Descriptions for User Properties" src="https://files.readme.io/5d86035f9560a43cd30ada370de9b3251562b1e81432bc25cf08e0cd44188fdb-2026-03-24_12-17-12_1.gif" />
 
-##
-
 ## Edit User Property
 
 You can edit any column; however, you can only edit names for unpublished user properties. To edit a property, click the edit icon on the property row.

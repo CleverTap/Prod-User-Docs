@@ -155,13 +155,14 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="data-and-integrations" id="ai-generated-descriptions-for-data-schema">
+<div class="release-note article" data-category="security-project-settings" id="ai-generated-descriptions-for-data-schema">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#ai-generated-descriptions-for-data-schema"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="ICON_URL_FOR_DATA_AND_INTEGRATIONS" alt="Data &; Integrations" class="release-note-heading-icon"/>
+ <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" />
+    </div>
     </div>
     <h3 class="release-note-heading">AI-Generated Descriptions for Data Schema</h3>
     <div class="badge enhancement">ENHANCEMENT</div>

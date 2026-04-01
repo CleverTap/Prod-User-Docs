@@ -155,6 +155,39 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="push-templates" id="collapsed-media-control-in-text-over-image-push-template">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#collapsed-media-control-in-text-over-image-push-template"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img
+        src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg"
+        alt="Campaigns"
+        class="release-note-heading-icon"
+      />
+    </div>
+    <h3 class="release-note-heading">Collapsed Media Control in Text over Image Push Template</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now configure how media appears in the collapsed view of Text over Image push notifications directly from the dashboard. This simplifies setup and helps maintain a more consistent experience across SDK versions.</p>
+
+    <p>With this enhancement, you can:</p>
+    <ul>
+      <li>Configure the collapsed view to use the same or a different image as the expanded view.</li>
+      <li>Display media only in expanded view or add a large icon in collapsed view.</li>
+      <li>Combine a large icon and image (for SDK v2.3.0 and above) for richer notification layouts.</li>
+    </ul>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/collapsed-media-support-large-icon-and-collapsed-image" target="_blank">Collapsed Media Support (Large Icon and Collapsed Image)</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="ai-generated-descriptions-for-data-schema">
   <div class="release-note-header">
     <div class="anchor-link-icon">

@@ -155,6 +155,39 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="ai-generated-descriptions-for-data-schema">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#ai-generated-descriptions-for-data-schema"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="ICON_URL_FOR_DATA_AND_INTEGRATIONS" alt="Data &amp; Integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">AI-Generated Descriptions for Data Schema</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now generate clear, consistent descriptions for your data schema using AI. This helps you better understand and manage schema elements while enabling stronger AI-driven insights across the platform.</p>
+
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Generate descriptions automatically when creating or updating schema elements.</li>
+        <li>Accept, edit, or dismiss AI-generated descriptions.</li>
+        <li>Maintain consistency across user properties, custom events, and event properties.</li>
+        <li>Leverage enriched schema data to enable deeper insights across segmentation, analytics, and journeys.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/schema#ai-generated-descriptions-for-custom-events" target="_blank">Schema</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="improved-limits-in-campaigns-and-journeys">
   <div class="release-note-header">
     <div class="anchor-link-icon">

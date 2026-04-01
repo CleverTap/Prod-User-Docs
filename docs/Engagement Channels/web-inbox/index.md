@@ -10,23 +10,17 @@ metadata:
 next:
   description: ''
 ---
-> 📘 Private Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
-
 # Overview
 
 The Web Inbox messaging channel enables you to deliver rich, individualized, and personalized web notifications to your website users. Using the Web Inbox channel, you can stack notifications sent to your users under a  notification window on your website.
 
 An important advantage of Web Inbox is its ability to provide personalized web notifications to your site visitors in real time. These notifications are tailored according to the user's actions on your website.
 
-Web Inbox also allows users to engage with the notifications later in time from the notification window. 
+Web Inbox also allows users to engage with the notifications later in time from the notification window.
 
 Including the Web Inbox channel in your customer engagement strategy significantly increases engagement and conversion rates.
 
-<Image title="A Sample Web Inbox Campaign" alt={4002} align="center" border={true} src="https://files.readme.io/cf0de35-Web_Inbox.png">
-  Web Inbox 
-</Image>
+<Image align="center" alt={4002} border={true} caption="Web Inbox" title="A Sample Web Inbox Campaign" src="https://files.readme.io/cf0de35-Web_Inbox.png" />
 
 ## Video Tutorial: Sample Web Inbox Campaign
 

@@ -161,7 +161,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <a href="#ai-generated-descriptions-for-data-schema"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="ICON_URL_FOR_DATA_AND_INTEGRATIONS" alt="Data &amp; Integrations" class="release-note-heading-icon"/>
+      <img src="ICON_URL_FOR_DATA_AND_INTEGRATIONS" alt="Data &; Integrations" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">AI-Generated Descriptions for Data Schema</h3>
     <div class="badge enhancement">ENHANCEMENT</div>

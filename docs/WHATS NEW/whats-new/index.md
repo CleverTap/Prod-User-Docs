@@ -164,9 +164,10 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     <div>
  <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings"/>
     </div>
-    <h3 class="release-note-heading">AI-Generated Descriptions for Data Schema</h3>
+</div>
+  <h3 class="release-note-heading">AI-Generated Descriptions for Data Schema</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
-
+</div>
   <div class="release-note-body">
     <p>You can now generate clear, consistent descriptions for your data schema using AI. This helps you better understand and manage schema elements while enabling stronger AI-driven insights across the platform.</p>
 

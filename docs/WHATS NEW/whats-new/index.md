@@ -161,6 +161,12 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <a href="#ai-generated-descriptions-for-data-schema"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">API Encryption</h3>
+<div class="badge new-feature">NEW FEATURE</div>
+
+    <div>
  <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings"/>
     </div>
     </div>
@@ -586,8 +592,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <hr/>
 </div>
 `}</HTMLBlock>
-
-<br />
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="api-encryption">

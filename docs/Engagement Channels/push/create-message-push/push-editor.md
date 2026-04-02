@@ -130,7 +130,7 @@ Once you select the required push template for the _Title_ and _Message_ fields,
 * Use emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
 * Use _@_ personalization or _\{\{}}_ to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
 * Use liquid scripts  to check the usage.
-* Use [Clever.AI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
+* Use [CleverAI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
 
 ## Content
 

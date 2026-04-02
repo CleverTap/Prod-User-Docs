@@ -2,7 +2,7 @@
 title: Facebook Audiences Stats
 excerpt: >-
   Understand the statistical information available for Facebook Audiences
-  campaigns
+  campaigns.
 deprecated: false
 hidden: false
 metadata:
@@ -18,13 +18,13 @@ This guide explains the statistics available for Facebook remarketing campaigns 
 
 ## View Campaign Stats
 
-After a campaign is live, you can view the performance statistics by navigating to the *Campaigns* page and selecting the Facebook campaign you want to analyze.
+After a campaign is live, you can view the performance statistics by navigating to the _Campaigns_ page and selecting the Facebook campaign you want to analyze.
 
 You will see the following statistics: **Sent**, **Audience Size (Old)**, **Audience Size (Current)**, and **Conversions**.
 
 ### Campaign Stats Summary
 
-The following table provides a quick overview of key metrics related to your Facebook campaign. 
+The following table provides a quick overview of key metrics related to your Facebook campaign.
 
 | Metric                      | Description                                                                                                    |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------- |

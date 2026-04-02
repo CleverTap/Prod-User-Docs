@@ -1,8 +1,8 @@
 ---
 title: Setup
 excerpt: >-
-  Understand how to integrate Facebook Audiences with CleverTap to be able to
-  run marketing campaigns
+  Understand how to integrate Facebook Audiences with CleverTap for runing
+  marketing campaigns
 deprecated: false
 hidden: false
 metadata:
@@ -12,8 +12,6 @@ metadata:
 next:
   description: ''
 ---
-<br />
-
 # Overview
 
 Connect and manage Facebook Ads accounts within CleverTap for remarketing. Once integrated, you can sync segments, configure default accounts, and take administrative actions such as reconnecting or removing accounts.
@@ -71,53 +69,6 @@ To link a new account:
 5. After authorization, return to the CleverTap dashboard. The connected account will appear on the listing page.
 
    <Image align="center" alt="Connected Ad Account on CleverTap" border={true} caption="Connected Ad Account on CleverTap" src="https://files.readme.io/e83e7524184ecabc055cfa8c2b1031cbde505892ad934708456fa6103b1ad1a9-image_58.png" />
-
-## Map Properties
-
-After you connect your Facebook account, configure the mapping between Facebook’s export attributes and your CleverTap user properties. Mapping ensures that the correct profile data is exported to Facebook when creating a remarketing audience. If an attribute is not mapped to a CleverTap user property, its column will be blank in the exported audience file, and the option will appear disabled in the campaign setup flow.
-
-<Callout icon="📘" theme="info">
-  **Note**
-
-  If the _CleverTap user properties_ are not mapped in _Settings > Channels > Remarketing > Facebook Audiences > Map Properties_, these options will appear disabled and their columns will be blank in the exported audience file.
-</Callout>
-
-### Assign User Properties
-
-This section assigns CleverTap user properties to TikTok’s export attributes so that the correct data is included when creating audiences.
-
-1. Click **Map Properties**.
-2. For each export attribute, open the drop-down in the **Mapped User Property** column and select the CleverTap user property that contains the relevant data. You can choose from system properties or any custom properties already available in your CleverTap account.
-3. Click **Save**.
-
-Mapped properties will be available for selection during campaign creation. Unmapped properties will appear disabled in the campaign setup flow.
-
-### Supported Attributes for Facebook
-
-The following table lists all export attributes supported by Facebook and their descriptions. Use it as a reference when selecting which CleverTap user properties to map.
-
-| Export Attribute           | Description                                                                 |
-| -------------------------- | --------------------------------------------------------------------------- |
-| Email                      | User’s email address                                                        |
-| Phone                      | User’s phone number                                                         |
-| First Name                 | User’s first name                                                           |
-| Last Name                  | User’s last name                                                            |
-| First Name Initial         | First letter of the user’s first name                                       |
-| Gender                     | User’s gender                                                               |
-| Date of Birth (DOB)        | User’s full date of birth                                                   |
-| Birth Year                 | User’s birth year                                                           |
-| Birth Month                | User’s birth month                                                          |
-| Birthday                   | User’s birth day                                                            |
-| City                       | User’s city name                                                            |
-| State                      | User’s state name                                                           |
-| Country                    | User’s country (ISO 3166-1 alpha-2 code)                                    |
-| ZIP                        | User’s postal or ZIP code                                                   |
-| Google Advertising ID      | Unique, resettable identifier assigned to a device for advertising purposes |
-| Identifier for Advertisers | Unique identifier assigned to a device for advertising purposes             |
-
-> 📘 Note
->
-> For the complete list of supported attributes and descriptions, see [_Map Properties in Facebook Setup_]().
 
 ## Reconnecting an Account
 

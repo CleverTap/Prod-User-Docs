@@ -16,7 +16,7 @@ next:
 
 Preferred Channel identifies each user’s most effective communication channel based on their engagement across Push, Email, SMS, and WhatsApp.
 
-Clever.AI analyzes user interactions over a rolling 90-day window to determine the channel that consistently drives the highest engagement. The identified channel is stored as a system user property called _Preferred Channel_, which can be used across Segments, Campaigns, and Journeys.
+CleverAI analyzes user interactions over a rolling 90-day window to determine the channel that consistently drives the highest engagement. The identified channel is stored as a system user property called _Preferred Channel_, which can be used across Segments, Campaigns, and Journeys.
 
 With Preferred Channel, marketers can:
 
@@ -32,7 +32,7 @@ With Preferred Channel, marketers can:
 
 # Preferred Channel Functionality
 
-Clever.AI evaluates user engagement across Push, Email, SMS, and WhatsApp to identify the channel that performs best for each user. It analyzes message interactions, such as sent, viewed, and clicked over the past 90 days, and assigns the channel with the highest engagement as the user’s Preferred Channel.
+CleverAI evaluates user engagement across Push, Email, SMS, and WhatsApp to identify the channel that performs best for each user. It analyzes message interactions, such as sent, viewed, and clicked over the past 90 days, and assigns the channel with the highest engagement as the user’s Preferred Channel.
 
 This property updates automatically as users interact with new messages and is refreshed daily to ensure it reflects recent behavior. Each interaction, whether a view or a click, is treated equally to maintain consistency.
 
@@ -42,21 +42,21 @@ Preferred Channel helps deliver messages through the channel that users respond 
 
 Consider a user who regularly engages with multiple channels. Over a given period, they open and click a few Push notifications, occasionally read SMS messages, and also interact with WhatsApp updates.
 
-Clever.AI evaluates engagement trends and recency of interactions, giving greater weight to the most recent activity. When two or more channels show similar engagement patterns, the system selects the one where the user interacted most recently as the Preferred Channel.
+CleverAI evaluates engagement trends and recency of interactions, giving greater weight to the most recent activity. When two or more channels show similar engagement patterns, the system selects the one where the user interacted most recently as the Preferred Channel.
 
 This ensures that user preferences remain accurate and up to date, enabling marketers to deliver messages through the channel that offers the highest likelihood of engagement.
 
 ### Applies Recency Weighting
 
-Clever.AI gives higher weight to the most recent interactions. When two channels show identical engagement levels, the system selects the one where the user engaged most recently. For example, if Push and WhatsApp both show similar engagement, but the user’s latest interaction occurred on WhatsApp, WhatsApp becomes the Preferred Channel.
+CleverAI gives higher weight to the most recent interactions. When two channels show identical engagement levels, the system selects the one where the user engaged most recently. For example, if Push and WhatsApp both show similar engagement, but the user’s latest interaction occurred on WhatsApp, WhatsApp becomes the Preferred Channel.
 
 ### Assigns and Refreshes
 
-After identifying the most relevant channel using engagement and recency signals, Clever.AI saves that channel as the user’s Preferred Channel property. This value updates automatically as users continue to engage with messages and refreshes daily to ensure it always reflects the latest interaction trends.
+After identifying the most relevant channel using engagement and recency signals, CleverAI saves that channel as the user’s Preferred Channel property. This value updates automatically as users continue to engage with messages and refreshes daily to ensure it always reflects the latest interaction trends.
 
 > 📘 **Optimizing Preferred Channel Through Re-Engagement**
 >
-> Re-engagement campaigns for users with _Not Enough Data_ help Clever.AI gather additional behavioral data, which in turn allows the system to assign a Preferred Channel once enough interactions are recorded.
+> Re-engagement campaigns for users with _Not Enough Data_ help CleverAI gather additional behavioral data, which in turn allows the system to assign a Preferred Channel once enough interactions are recorded.
 
 ## 'Not Enough Data' Explained
 
@@ -66,7 +66,7 @@ A Preferred Channel is recorded only when all of the following conditions are me
 * The user has been reached through two or more channels within the last 90 days.
 * The user has recorded at least three total engagements during that period.
 
-If any of these conditions are not met, Clever.AI cannot determine a Preferred Channel. In such cases, the property is stored as _Not Enough Data_, ensuring that segmentation, campaign targeting, and journey-based use cases rely only on meaningful and verified engagement data.
+If any of these conditions are not met, CleverAI cannot determine a Preferred Channel. In such cases, the property is stored as _Not Enough Data_, ensuring that segmentation, campaign targeting, and journey-based use cases rely only on meaningful and verified engagement data.
 
 If you want users with a defined preference for Push to receive a Push campaign, but also want to include users whose channel preference is _Not Enough Data_, you can create a rule such as:
 
@@ -204,7 +204,7 @@ The following are the answers to common questions about how Preferred Channel wo
 
 ### What happens if a user unsubscribes from their Preferred Channel?
 
-If a user unsubscribes from their Preferred Channel, Clever.AI detects it during the next daily refresh and re-evaluates their engagement across active channels. The Preferred Channel is then updated automatically to SMS, Email, or another channel where the user has shown the highest recent engagement.
+If a user unsubscribes from their Preferred Channel, CleverAI detects it during the next daily refresh and re-evaluates their engagement across active channels. The Preferred Channel is then updated automatically to SMS, Email, or another channel where the user has shown the highest recent engagement.
 
 ### Why am I not able to see the Preferred Channel property in my Segment Builder?
 

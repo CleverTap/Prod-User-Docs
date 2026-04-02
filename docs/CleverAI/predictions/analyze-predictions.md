@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Once a prediction model is set up in CleverTap, _Clever.AI_ processes user data to provide insights into their likelihood of performing specific goal events within a set timeframe. These insights, presented through various metrics and visualizations, help you take targeted actions to boost user engagement and drive higher conversions.
+Once a prediction model is set up in CleverTap, _CleverAI_ processes user data to provide insights into their likelihood of performing specific goal events within a set timeframe. These insights, presented through various metrics and visualizations, help you take targeted actions to boost user engagement and drive higher conversions.
 
 # View Prediction Insights
 
@@ -28,7 +28,7 @@ Each user is then categorized based on their likelihood of achieving the goal, w
 
 <Image align="center" alt="Custom User Property to Denote Likelihood of User" border={true} caption="Custom User Property to Denote Likelihood of User" src="https://files.readme.io/092df4cb5a2f0e5b9571e5756f64e7f0d427fbf217550e71c612990d21b78f58-Custom_User_Property_for_Likelihood.png" />
 
-Clever.AI processes and refreshes the entire Prediction model every 15 days and the likelihood for your target users every 24 hours. When a user's likelihood changes, an event called _Likelihood Change_ is triggered, capturing the transition.
+CleverAI processes and refreshes the entire Prediction model every 15 days and the likelihood for your target users every 24 hours. When a user's likelihood changes, an event called _Likelihood Change_ is triggered, capturing the transition.
 
 The _Likelihood Change_ event includes the following properties:
 

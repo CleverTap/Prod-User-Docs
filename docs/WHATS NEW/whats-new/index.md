@@ -1117,7 +1117,7 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
   </div>
 
   <div class="release-note-body">
-    <p>You can now deliver messages through the channel each user is most likely to engage with. Powered by Clever.AI, Preferred Channel analyzes engagement data across Push, Email, SMS, and WhatsApp over the past 90 days to predict and select the best-performing communication channel for every user.</p>
+    <p>You can now deliver messages through the channel each user is most likely to engage with. Powered by CleverAI, Preferred Channel analyzes engagement data across Push, Email, SMS, and WhatsApp over the past 90 days to predict and select the best-performing communication channel for every user.</p>
 
     <p>With Preferred Channel, you can:</p>
 
@@ -1126,7 +1126,7 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
         <li><strong>Leverage AI-Powered Channel Prediction</strong>: Identify the most effective communication channel for each user based on engagement history.</li>
         <li><strong>Integrate Seamlessly Across CleverTap</strong>: Use the new Preferred Channel user property in Segmentation, Campaigns, Journeys, and Analytics.</li>
         <li><strong>Boost Conversions and Reduce Noise</strong>: Focus on the channels that drive real engagement and results.</li>
-        <li><strong>Automate Channel Selection</strong>: Let Clever.AI optimize delivery so you can focus on content and strategy.</li>
+        <li><strong>Automate Channel Selection</strong>: Let CleverAI optimize delivery so you can focus on content and strategy.</li>
       </ul>
     </p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/preferred-channel" target="_blank">Preferred Channel</a>.</p>

@@ -35,7 +35,7 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
   <tbody>
     <tr>
       <td>
-        * *Stop*![Stop](https://files.readme.io/e99e396-Stop.png)
+        * _Stop_![Stop](https://files.readme.io/e99e396-Stop.png)
       </td>
 
       <td>
@@ -43,7 +43,7 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
 
         * qualification of new users
         * movement of users within the journey
-        * delivery of campaigns.  
+        * delivery of campaigns.
 
         **NOTE**: Restarting a stopped journey is not possible. You can select more than one Journey to stop them together.
       </td>
@@ -57,7 +57,13 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
       <td>
         More actions are available from the ellipsis icon:
 
-        * **Clone**: Enables you to copy and create a new journey. You may use the cloned journey to create an edited version from the base cloned version.
+        * **Clone**: Enables you to copy an existing journey.   
+
+          You can choose to copy it within the same project by selecting Current project or to a different project by selecting Another project.   
+
+          If you select Another project, choose the destination project where the journey should be copied. The copied journey is created as a draft in the destination project.  
+
+          For more information, refer to [Copy Engagements Across Projects](doc:copy-engagements-across-projects).
         * **Edit**: Enables you to edit the journey. You cannot edit all parts of the Journey once it has been published. You can only edit the Journey content.
       </td>
     </tr>

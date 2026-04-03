@@ -142,7 +142,7 @@ You may want to stop a particular campaign after monitoring and evaluating its e
 Cloning a campaign helps to create a new campaign from an existing campaign with minor or no modifications. To do so:
 
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
-2. Select the campaign you want to clone, then click the <Image src="https://files.readme.io/68006daf054f34d82693eef99039c1ffb82ec3f1257a1619bd9cce24d06522fe-Ellipses_icon.png" width="16px" /> icon.
+2. Select the campaign you want to clone, then click the <Image border={true} width="22px" src="https://files.readme.io/68006daf054f34d82693eef99039c1ffb82ec3f1257a1619bd9cce24d06522fe-Ellipses_icon.png" className="border" /> icon.
 3. Choose where you want to copy the campaign:
    * Current project to clone within the same project
    * Another project to clone it to a different project

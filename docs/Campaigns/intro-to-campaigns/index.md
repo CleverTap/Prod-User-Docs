@@ -99,7 +99,7 @@ You can quickly search your campaigns by applying the required filters. To do so
 <Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" title="Click the Filter icon to filter campaigns" src="https://files.readme.io/fbf5087fbe1294fd42ffd5cb82fd3af9a700ac6acf9d276225ad5365e6fc93ce-Filter_Campaigns.png" />
 
 3. Select from the following filters and click **Apply**:
-   * **Channel**: Filters based on the type of the type of messaging channel used. The following are the available options: Email, SMS, Push Notifications, Mobile In-app, Web, Audiences, Web Push, Webhooks, Google Ads,  App Inbox, WhatsApp, Partner, Native Display, and Web Native Display.
+   * **Channel**: Filters based on the type of messaging channel used. The following are the available options: Email, SMS, Push Notifications, Mobile In-app, Web, Audiences, Web Push, Webhooks, Google Ads,  App Inbox, WhatsApp, Partner, Native Display, and Web Native Display.
    * **Type**: Filters based on the type of campaign. The campaign can be a Single Message, A/B Test, or Message on user property type of campaign.
    * **Status**: Filters campaign based on the current status of the campaign. The following are the possible statuses: Scheduled, Running, Stopped, Completed, Draft, Awaiting Next Run, Rejected and Approval Pending.
    * **Created by:** Filters based on the email ID of the person who created the campaign.
@@ -142,7 +142,7 @@ You may want to stop a particular campaign after monitoring and evaluating its e
 Cloning a campaign helps to create a new campaign from an existing campaign with minor or no modifications. To do so:
 
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
-2. Select the campaign you want to clone, then click the <Image border={true} width="75% " src="https://files.readme.io/68006daf054f34d82693eef99039c1ffb82ec3f1257a1619bd9cce24d06522fe-Ellipses_icon.png" className="border" />icon.
+2. Select the campaign you want to clone, then click the <Image src="https://files.readme.io/68006daf054f34d82693eef99039c1ffb82ec3f1257a1619bd9cce24d06522fe-Ellipses_icon.png" width="16px" /> icon.
 3. Choose where you want to copy the campaign:
    * Current project to clone within the same project
    * Another project to clone it to a different project

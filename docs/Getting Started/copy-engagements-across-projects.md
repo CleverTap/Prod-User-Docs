@@ -2,7 +2,7 @@
 title: Copy Engagements Across Projects
 excerpt: Learn how to copy campaigns and journeys across CleverTap projects.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

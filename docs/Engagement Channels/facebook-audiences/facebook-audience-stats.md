@@ -4,7 +4,7 @@ excerpt: >-
   Understand the statistical information available for Facebook Audiences
   campaigns.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

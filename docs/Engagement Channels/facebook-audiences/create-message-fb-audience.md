@@ -2,7 +2,7 @@
 title: Create Message
 excerpt: Understand how to create a campaign for Facebook Audiences.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

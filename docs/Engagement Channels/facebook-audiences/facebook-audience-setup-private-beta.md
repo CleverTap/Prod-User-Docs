@@ -4,7 +4,7 @@ excerpt: >-
   Understand how to integrate Facebook Audiences with CleverTap for runing
   marketing campaigns
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

@@ -2,7 +2,7 @@
 title: Facebook Audiences
 excerpt: Understand how to engage with users outside the app via Facebook Audiences
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

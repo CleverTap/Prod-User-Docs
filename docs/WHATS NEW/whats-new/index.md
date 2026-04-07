@@ -155,6 +155,38 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="snowflake-export">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#snowflake-export"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Snowflake Export</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now export CleverTap data directly to to Snowflake for deeper analysis, long-term reporting, attribution, and cross-team analytics workflows.</p>
+
+    <p>With this integration, you can:</p>
+
+    <p>
+      <ul>
+        <li>Move CleverTap data into Snowflake directly, without relying on intermediate cloud storage steps or fragmented downstream pipelines, reducing engineering dependency and operational overhead.</li>
+        <li>Control exports by selecting event scope, configuring export cadence, and setting identifier priority based on your use case, to match your team's analytical requirements.</li>
+        <li>Query CleverTap engagement data alongside internal business datasets faster, with standardized table creation and schema that reduce ambiguity for data consumers across teams.</li>
+        <li>Manage exports with built-in notifications, tracking, and auditability, to support reliable, enterprise-ready workflows.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/snowflake-export" target="_blank">Snowflake Export.</a></p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="push-templates" id="collapsed-media-control-in-text-over-image-push-template">
   <div class="release-note-header">
     <div class="anchor-link-icon">

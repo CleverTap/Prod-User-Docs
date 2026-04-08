@@ -1,5 +1,5 @@
 ---
-title: Welcome to GitHub Prod Proj
+title: Welcome to Github sync - KAB
 hidden: false
 ---
 <Callout icon="📘" theme="info">

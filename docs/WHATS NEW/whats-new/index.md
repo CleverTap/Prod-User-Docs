@@ -187,7 +187,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="push-templates" id="collapsed-media-control-in-text-over-image-push-template">
+<div class="release-note article" data-category="campaigns" id="collapsed-media-control-in-text-over-image-push-template">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#collapsed-media-control-in-text-over-image-push-template"><i class="fa-light fa-anchor"></i></a>

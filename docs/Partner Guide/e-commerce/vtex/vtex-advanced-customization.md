@@ -65,7 +65,7 @@ The following events are triggered server-side via VTEX webhooks and are capture
 
 Select Allow Events from Unknown Users to track actions from users who are not logged in on your store.
 
-<Image align="center" border={true} src="https://files.readme.io/f408b42f2e5ab685938b168f24073ff4cae9f831d4e60ccf8d372606ddd36201-image.png" className="border" />
+<Image align="center" alt="Track Unknown Users" border={true} caption="Track Unknown Users" src="https://files.readme.io/f408b42f2e5ab685938b168f24073ff4cae9f831d4e60ccf8d372606ddd36201-image.png" />
 
 #### Charged Event Configuration
 

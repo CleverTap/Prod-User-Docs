@@ -10,6 +10,8 @@ metadata:
 next:
   description: ''
 ---
+<br />
+
 # Overview
 
 This document answers common questions about importing user data into CleverTap through SFTP or data warehouses, covering sequencing, data preparation, and best practices to ensure data integrity during historical imports.
@@ -39,7 +41,7 @@ To enable effective personalisation and targeting, include as much user informat
 
 * **Mandatory**: Identity (unique user ID such as internal DB ID, CRM ID, UUID, or any unique string).
 * **System User Properties**: Name, Age, Email ID, Phone number (in `+[country code][number]` format). For more information, refer to [System User Properties](https://docs.clevertap.com/docs/user-profiles#system-user-properties).
-* **Custom Profile Attributes**: Any business-specific properties (e.g., membership tier, preferred language).
+* **Custom Profile Attributes**: Any business-specific properties (for example, membership tier, preferred language).
 * **Nested Objects**: User properties with nested structures for complex data. For more information, refer to [Nested Objects in User Properties](https://docs.clevertap.com/docs/nested-objects-in-user-properties).
 * **Communication Preferences**: Opt-in/opt-out status for channels such as Email, SMS, WhatsApp, and Push.
 
@@ -106,9 +108,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `34.250.139.131`
-        `34.249.27.35`
-        `34.240.158.5`
+        `34.250.139.131`  
+        `34.249.27.35`  
+        `34.240.158.5`  
         `3.254.126.216`
       </td>
     </tr>
@@ -119,9 +121,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `35.154.242.39`
-        `13.126.204.11`
-        `65.1.219.106`
+        `35.154.242.39`  
+        `13.126.204.11`  
+        `65.1.219.106`  
         `13.126.239.79`
       </td>
     </tr>
@@ -132,9 +134,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `3.1.111.122`
-        `52.221.166.167`
-        `13.213.186.178`
+        `3.1.111.122`  
+        `52.221.166.167`  
+        `13.213.186.178`  
         `18.141.242.16`
       </td>
     </tr>
@@ -145,9 +147,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `44.233.27.236`
-        `44.232.188.247`
-        `44.245.25.40`
+        `44.233.27.236`  
+        `44.232.188.247`  
+        `44.245.25.40`  
         `54.184.78.137`
       </td>
     </tr>
@@ -158,9 +160,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `43.218.28.119`
-        `43.218.2.244`
-        `16.79.157.29`
+        `43.218.28.119`  
+        `43.218.2.244`  
+        `16.79.157.29`  
         `108.137.137.104`
       </td>
     </tr>
@@ -171,9 +173,9 @@ To ensure seamless communication between CleverTap and your data warehouses, whi
       </td>
 
       <td>
-        `3.28.217.95`
-        `3.28.209.115`
-        `3.28.232.78`
+        `3.28.217.95`  
+        `3.28.209.115`  
+        `3.28.232.78`  
         `158.252.128.120`
       </td>
     </tr>

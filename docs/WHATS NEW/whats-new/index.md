@@ -14,7 +14,7 @@ next:
 ---
 Stay updated with CleverTap's latest feature releases, cutting-edge feature enhancements, and performance enhancements to help you optimize your experience.
 
-View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/release-notes-2024).
+View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/release-notes-2025).
 
 <ClickableTilesForWhatsNew />
 

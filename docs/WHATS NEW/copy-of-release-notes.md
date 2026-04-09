@@ -4,7 +4,7 @@ excerpt: >-
   Explore CleverTap’s newest capabilities, designed to optimize engagement and
   retention at scale.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

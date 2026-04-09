@@ -152,6 +152,27 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## April
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="journeys" id="cross-project-cloning-for-engagements">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#cross-project-cloning-for-engagements"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div><img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" /></div>
+    <h3 class="release-note-heading">Cross-Project Cloning for Engagements</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Cloning engagements across projects is now available for all CleverTap customers. You can now clone campaigns and journeys across CleverTap projects, allowing teams to move faster without rebuilding engagement logic from scratch. Cross-Project Cloning lets you reuse proven campaigns and journeys across test, production, and multiple business-unit projects, directly from the Campaigns or Journeys list page.</p>
+    <p>This enhancement is especially useful during onboarding (you can copy engagement from the test project to production) and for scaling successful engagement workflows across regions or lines of business.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/copy-engagements-across-projects" target="_blank">Copy Engagement Across Projects</a>.
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## March
 
 <HTMLBlock>{`

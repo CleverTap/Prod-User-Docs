@@ -16,9 +16,111 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
 
 # February 2026
 
-| Change Release Date | Event Name                            | Property Name | Update Type          | Description                                                                                                                                                                                                |
-| :------------------ | :------------------------------------ | :------------ | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| February 26, 2026   | Push Impression, Notification Clicked | wzrk_sif      | Event Property Added | Boolean property that indicates whether the push notification was delivered silently (no popup shown when the app is open). For more information, refer to [Push Editor](doc:push-editor#android-options). |
+<Table align={["left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Change Release Date
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Event Name
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Property Name
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Update Type
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        February 26, 2026
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Push Impression, Notification Clicked
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        wzrk_sif
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Event Property Added
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Boolean property that indicates whether the push notification was delivered silently (no popup shown when the app is open). For more information, refer to [Push Editor](doc:push-editor#android-options).
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        wzrk_dismiss
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Event Property Added
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        This property enables automatic dismissal of a push notification from the notification tray after a specified duration.
+
+        On Android 8.0 or later, you can configure the dismissal time (in seconds). Once the set duration elapses, the notification is removed from the tray even if the user has not interacted with it.
+
+        For example, setting `wzrk_dismiss` = 10 removes the notification after 10 seconds.
+
+        This is useful for time-sensitive notifications, such as flash sale alerts, which may become irrelevant after a short period.
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        wzrk_sticky
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Event Property Added
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        This property controls whether a push notification remains pinned in the notification tray and cannot be dismissed by swiping.
+
+        For Android 14 and above, you can configure a notification as sticky using `wzrk_sticky` with a value of true or false. When set to true, the notification persists in the tray and cannot be swiped away by the user.
+
+        The notification remains visible until the user interacts with it (for example, by tapping it) or it is programmatically dismissed.
+
+        This is useful for critical or ongoing updates, such as OTPs, ride status updates, or delivery tracking notifications.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # October 2025
 

@@ -184,7 +184,7 @@ You can edit, rename, and label the Content Blocks from the Content Block card. 
 * _Rename_: Select to rename the folder.
 * _Label_: Select to apply a label to the content block. It will help further identify or search the Content Block.
 
-## Supported Personalization
+# Supported Personalization
 
 Before using Content Blocks, refer to these essential guidelines for supported personalization. These help you understand which personalization types are supported and how to use them effectively in your campaigns.
 
@@ -246,7 +246,22 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add event personalization tags.
-        **Note**: Event Personalization for Content Blocks is currently in **Private Beta**.
+        **Note**: Event Personalization for Content Blocks is currently in Private Beta.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Nested Objects
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        You can use nested personalization in content blocks.
+        **Note**: Nested Personalization for Content Blocks is currently in Private Beta.
       </td>
     </tr>
 
@@ -261,7 +276,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add reminder personalization tags.  
-        **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**.
+        **Note**: Reminder personalization for Content Blocks is currently in Private Beta.
       </td>
     </tr>
 
@@ -289,7 +304,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
 
@@ -303,13 +318,13 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
   </tbody>
 </Table>
 
-### Personalize Content Blocks Using Event Personalization
+## Event Personalization
 
 You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data.
 
@@ -349,7 +364,45 @@ Hello User,
 You watched your favorite series
 ```
 
-### Personalize Content Blocks Using Reminder Personalization
+## Nested Personalization
+
+You can personalize campaign messages using nested objects within profile-based and event-based personalization for deeper data granularity in your campaigns. To use nested personalization, ensure that **Nested Object Personalization** is enabled for your account.
+
+To add event-based personalization in an email Content Block, perform the following steps:
+
+1. Open the Content Block you want to edit (HTML or Text).
+2. Type the nested object, ensuring the correct syntax is used.
+3. Preview or test send to verify the tag.
+4. Publish the campaign.
+
+<Image align="center" border={true} caption="Nested Event Personalization" src="https://files.readme.io/afc0a835a2fdb34f7fd0642f73f1a8210488b7dddf9175b31abd6809b24f3dc4-2026-02-12_12-24-04_1.gif" />
+
+Nested profile and event personalization are supported up to 3 levels. To add these to your Content Block, you can either type the Liquid tag manually or copy them from the "What" section of your campaign builder. Use the following format:
+
+* Nested Profile Personalization: `{{ Profile.<property_name>.<level_1>.<level_2>.<level_3> | default: "Default" }}`
+* Nested Event Personalization: `{{ Event.<property_name>.<level_1>.<level_2>.<level_3> | default: "Default" }}`
+
+#### Example
+
+If you are sending an event that contains a nested object for traveler details, your Liquid tags would look like this:
+
+```html Sample Nested Personalization
+{{ Event.Trip[0].Travelers[1].Email | default: "Hey there" }}
+```
+
+This example retrieves:
+
+* The first item in the Trip array (Trip[0])
+* The second traveler in the Travelers array (Travelers[1])
+* The Email property of that traveler
+
+<Callout icon="🚧" theme="warn">
+  #### Invalid Index Prevents Delivery
+
+  When referencing array elements, ensure that the specified index exists within the array. Array indexing starts at 0. For example, if an array contains 7 elements, the valid index range is 0 to 6. If you reference an index outside the available range (for example, Trip[8] when only 7 elements exist), the campaign is not delivered to any users.
+</Callout>
+
+## Reminder Personalization
 
 To add reminder-based personalization in a Content Block:
 
@@ -397,7 +450,10 @@ Seat number: to be assigned
   * **Single reminder entity**: A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block.
   * **Nested blocks**:
     * For event personalization, the event used in a nested Content Block must be the same as the event in the parent Content Block. For example, if `App Launched` is used in the parent block, it must also be used in the nested block.
-    * For reminder personalization, both the parent and nested Content Blocks must reference the same reminder entity. For example, if the parent block uses `Reminder.flight_booking`, the nested child block must also use `Reminder.flight_booking` (for example, `Reminder.flight_booking.seat_number`). Blocks with different reminder entities cannot be nested.
+    * Personalization is supported up to a maximum of 3 levels.
+    * CleverTap validates the root property (the first level after `Event`) to ensure it exists within the event schema. If the root property does not exist or is typed incorrectly, the block will fail validation. The system checks if the second level is a valid nested object.
+      * If the second level is identified as a valid nested structure, the system will not validate the contents inside. Check your property keys to prevent empty/invalid values or fallbacks.
+      * If the root or second-level structure is invalid, an error will be triggered during the saving or publishing process.
   * **Validation:**
     * While typing in the email editor, only compatible Content Blocks appear in the dropdown:
       * Blocks with matching event personalization
@@ -405,7 +461,7 @@ Seat number: to be assigned
     * In reminder campaigns, the dropdown shows:
       * Blocks with matching reminder personalization
       * Blocks without personalization
-        Blocks with event personalization or a different reminder entity are hidden.
+    * Blocks with event personalization or a different reminder entity are hidden.
 </Callout>
 
 # Use Cases for Content Block

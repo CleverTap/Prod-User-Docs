@@ -4,7 +4,7 @@ excerpt: >-
   Learn how configuring Amazon Redshift enables data sync for personalized
   engagement and growth.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

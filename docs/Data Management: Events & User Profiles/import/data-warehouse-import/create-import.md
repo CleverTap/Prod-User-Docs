@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to import data from Data warehouses into CleverTap to enable
   personalized targeting and optimized campaigns.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

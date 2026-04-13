@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to map user profile fields and event attributes from your database
   to CleverTap for accurate identity resolution and seamless data ingestion.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

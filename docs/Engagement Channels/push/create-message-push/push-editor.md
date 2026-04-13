@@ -704,7 +704,7 @@ Users can preview and render different variations of outputs for each Push templ
   * **Android 11 and below**: Use images of under 3 MB or lower is recommended for better to maintain optimal performance.
 * **CTA-based Rendition** - Notification renders based on whether CTA buttons are included in the payload.
 
-# Dark Mode
+## Dark Mode
 
 Push templates automatically adapt to the device's theme settings, rendering notifications in dark or light mode.
 

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how configuring Snowflake with CleverTap enables data sync for
   personalized engagement and growth.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

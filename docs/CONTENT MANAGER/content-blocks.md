@@ -69,7 +69,7 @@ You can create Content Blocks from the CleverTap Dashboard.
 
 > 📘 Content Blocks Via API
 >
-> You can also create and manage your Content Blocks via the CleverTap [Content Blocks API](docs:content-blocks-api) when you want to update or create Content Blocks at scale.
+> You can also create and manage your Content Blocks via the CleverTap [Content Blocks API](https://developer.clevertap.com/docs/content-blocks-api) when you want to update or create Content Blocks at scale.
 
 Follow the steps to create a content block:
 
@@ -289,7 +289,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
 
@@ -303,7 +303,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
   </tbody>

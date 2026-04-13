@@ -20,12 +20,6 @@ This document provides step-by-step instructions to help you configure and manag
 2. **[Create Export](doc:snowflake-export#create-export)**: Use the configured connection to define and initiate a data export from CleverTap to Snowflake.
 3. **[Export Table Creation](doc:snowflake-export#export-table-creation)**: CleverTap automatically creates a table in Snowflake for each export, following a standardized naming convention.
 
-   <Callout icon="📘" theme="info">
-     #### Private Beta
-
-     CleverTap's integration with Snowflake is currently in Private Beta. Contact your Customer Success Manager for access.
-   </Callout>
-
 # Create Export
 
 Once the Snowflake database is successfully connected to CleverTap, you can begin setting up data exports. To create an export, you need to select the target Snowflake connection, define the scope of the export (which includes the identity preferences and event selections), and specify the frequency at which the data should be sent.

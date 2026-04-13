@@ -77,6 +77,8 @@ This section lists the data warehouse platforms that CleverTap supports for data
 <a href="https://docs.clevertap.com/docs/databricks" class="integration-card">
     <div class="name">Databricks</div></a>
   </a>
+	<a href="https://docs.clevertap.com/docs/microsoft-fabric" class="integration-card">
+    <div class="name">Microsoft Fabric</div> 
   <a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
     <div class="name">Snowflake</div>
   </a>

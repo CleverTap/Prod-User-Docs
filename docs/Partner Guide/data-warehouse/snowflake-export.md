@@ -2,7 +2,7 @@
 title: Snowflake Export
 excerpt: Export data from CleverTap to Snowflake.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

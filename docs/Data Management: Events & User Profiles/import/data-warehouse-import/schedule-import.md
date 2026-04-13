@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to schedule your Import to ensure your data stays consistently
   updated.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

@@ -101,7 +101,7 @@ To store data for CleverTap integration, you first need to create a Fabric Wareh
 1. Log in to the [Microsoft Fabric portal](https://app.fabric.microsoft.com).
 2. Navigate to your target **Workspace** from the left sidebar.
 3. Click **+ New Item** and select **Warehouse** under the _Data Warehouse_ section.
-4. Enter a descriptive _Name_ (for example, `clevertap_warehouse`). This name will be pasted in the _Database_ field on the CleverTap dashboard. (@krishna: add link)
+4. Enter a descriptive _Name_ (for example, `clevertap_warehouse`). This name will be pasted in the _Database_ field on the CleverTap dashboard. 
 5. Click **Create**.
 
 To obtain the **Host** value:

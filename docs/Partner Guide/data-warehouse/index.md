@@ -95,7 +95,9 @@ CleverTap supports importing data from the following data warehouses. Use the li
   </a>
 <a href="https://docs.clevertap.com/docs/databricks" class="integration-card">
     <div class="name">Databricks</div>
-  <a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
+<a href="https://docs.clevertap.com/docs/microsoft-fabric" class="integration-card">
+    <div class="name">Microsoft Fabric</div>  
+<a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
     <div class="name">Snowflake</div>
   </a>
 </div>

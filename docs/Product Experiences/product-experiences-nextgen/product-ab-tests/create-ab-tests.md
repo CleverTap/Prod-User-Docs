@@ -158,25 +158,3 @@ After collecting substantial information, you can analyze the metrics, declare t
 > 🚧 Finish A/B Test
 >
 > If there is an ongoing draft for a variable in use within your A/B Test on the Remote Config page, you cannot finish the A/B Test. You must first _Publish_ or _Discard_ the draft from the _Remote Config_ page to be able to finish the A/B Test.
-
-<br />
-
-## Clone A/B Test
-
-The clone functionality allows you to replicate an existing AB test. To do so:
-
-1. Go to _Product Experiences_ > _A/B Tests_ from the CleverTap dashboard. All the A/B Tests are listed.
-2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon next to the A/B Test you want to clone and click **Clone**.
-
-<Image align="center" alt="Clone Selected A/B Test" border={true} caption="Clone Selected A/B Test" src="https://files.readme.io/6924ae11ae348896a9345c845d3ceebb41c0d7241ebc061cb55cf2147b69906c-image.png" />
-
-## Edit A/B Test
-
-All active A/B Tests except those in the _Stopped_, _Completed_, or  _Rejected_ state can be edited. To do so:
-
-1. Go to _Product Experiences_ > _A/B Tests_ from the CleverTap dashboard. All the A/B Tests are listed.
-2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon next to the A/B Test you want to edit and click **Edit**.
-
-The edit functionality gives you the ability to add/update/delete the variables in a specific AB test, along with name, goal, and description. The Segments cannot be edited to avoid discrepancies in the stats.
-
-<Image align="center" alt="Edit Selected A/B Test" border={true} caption="Edit Selected A/B Test" src="https://files.readme.io/c86a15a5f703a41fa6da8238274055bf4ab7132f3a0dcdccb537678775a10867-image.png" />

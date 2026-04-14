@@ -24,6 +24,4 @@ This is a heading 3
 
 ### Heading 7
 
-This is a heading 7
-
-<br />
+This is a heading 7   4 

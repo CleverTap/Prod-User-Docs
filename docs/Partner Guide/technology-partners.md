@@ -3467,7 +3467,18 @@ next:
             <div class="category">SMS</div>
         </div>
     </div>
-</a>      
+      </a>
+   <a href="https://docs.clevertap.com/docs/sms-gateway-center">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/f434ff3e5b9327c141dd3e8f9f0951ed054c938e77923005eb53f36a293bb83b-sms_gateway_center.png" alt="SMS Gateway Center" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">SMS Gateway Center</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+</a>   
 <a href="https://docs.clevertap.com/docs/generic-sms">
     <div class="integration-card">
         <div class="logo-container">

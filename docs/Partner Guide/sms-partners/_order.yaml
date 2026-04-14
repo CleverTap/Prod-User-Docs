@@ -1,5 +1,6 @@
 - 8x8-sms
 - bulksms
+- enablex
 - exotel
 - generic-sms
 - ics-mobile
@@ -22,4 +23,3 @@
 - times-mobile
 - twilio
 - valuefirst
-- enablex

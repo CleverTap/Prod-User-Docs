@@ -3320,7 +3320,18 @@ next:
             <div class="category">SMS</div>
         </div>
     </div>
-</a>         
+      </a>
+   <a href="https://docs.clevertap.com/docs/azmarq">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/a78a5c7b07a35c7f2a30ff78d6375445af4bd1634f8425a95a44772d9c309607-Azmarq.jpeg" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Azmarq</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+</a>      
    <a href="https://docs.clevertap.com/docs/generic-sms">
     <div class="integration-card">
         <div class="logo-container">

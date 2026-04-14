@@ -13,6 +13,7 @@
 - plivo
 - route-mobile-sms
 - sinch-sms
+- sms-gateway-center
 - smsindiahub
 - sms-provider-operations
 - sms-provider-operations-click-tracking
@@ -20,4 +21,3 @@
 - times-mobile
 - twilio
 - valuefirst
-- sms-gateway-center

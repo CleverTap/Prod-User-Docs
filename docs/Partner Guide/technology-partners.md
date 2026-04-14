@@ -3402,13 +3402,25 @@ next:
 <a href="https://docs.clevertap.com/docs/message-central">
     <div class="integration-card">
         <div class="logo-container">
-            <img src="https://files.readme.io/f6285129192afda457981b3134fb5bf7f0bcc9d6c81e84979fc81ca0a9caddb8-Message_Central_.jpeg" alt="Infobip" class="logo">
+            <img src="https://files.readme.io/f6285129192afda457981b3134fb5bf7f0bcc9d6c81e84979fc81ca0a9caddb8-Message_Central_.jpeg" alt="Message Central" class="logo">
         </div>
         <div class="content">
             <div class="name">Message Central</div>
             <div class="category">SMS</div>
         </div>
-    </div>
+  </div>
+  </a>
+<a href="https://docs.clevertap.com/docs/messagewhiz">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/2b0b5f48dd9f1db79108081998410c7c6b52cf1c9f30ccd5835a9db4b4fe0bb3-MessageWhiz.jpeg" alt="MessageWhiz" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">MessageWhiz</div>
+            <div class="category">SMS</div>
+        </div>
+  </div>
+</a>
 <a href="https://docs.clevertap.com/docs/msg91">
     <div class="integration-card">
         <div class="logo-container">

@@ -30,4 +30,8 @@ This is a heading 4<br /><br />
 
 This is a heading 5
 
+### Heading 6
+
+This is a heading 6
+
 <br />

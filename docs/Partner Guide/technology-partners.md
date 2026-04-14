@@ -3514,7 +3514,18 @@ next:
             <div class="category">SMS</div>
         </div>
     </div>
-</a>   
+      </a> 
+  <a href="https://docs.clevertap.com/docs/valuefirst">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/30a62a4262cb44c4627f25f62d6a39a458469b0c2ae1721091d9ddc5d9935323-VFirst.jpeg" alt="ValueFirst" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">ValueFirst</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+</a>
     </div>
 </body>
 </html>

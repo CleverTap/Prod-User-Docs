@@ -5,6 +5,7 @@
 - ics-mobile
 - infobip-sms
 - kaleyra-sms
+- message-central
 - msg91
 - netcore
 - nexmo
@@ -21,4 +22,3 @@
 - times-mobile
 - twilio
 - valuefirst
-- message-central

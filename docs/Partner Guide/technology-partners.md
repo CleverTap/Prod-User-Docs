@@ -3331,6 +3331,17 @@ next:
             <div class="category">SMS</div>
         </div>
     </div>
+      </a>
+<a href="https://docs.clevertap.com/docs/enablex">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/e22bd74cd415e63cdd6e09a8d196b1406acac9989b040d0973d183d7020ed045-EnableX.png" alt="EnableX" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">EnableX</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
 </a>
 <a href="https://docs.clevertap.com/docs/exotel">
     <div class="integration-card">

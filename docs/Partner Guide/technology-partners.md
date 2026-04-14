@@ -3354,17 +3354,6 @@ next:
         </div>
     </div>
 </a>
-<a href="https://docs.clevertap.com/docs/exotel">
-    <div class="integration-card">
-        <div class="logo-container">
-            <img src="https://files.readme.io/89a86c79cf4fe27f746a979545dffce12dc4292a2e42cfc3607aba2cf1315b02-Exotel.jpeg" alt="Exotel" class="logo">
-        </div>
-        <div class="content">
-            <div class="name">Exotel</div>
-            <div class="category">SMS</div>
-        </div>
-    </div>
-</a>
 <a href="https://docs.clevertap.com/docs/ics-mobile">
     <div class="integration-card">
         <div class="logo-container">

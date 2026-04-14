@@ -241,6 +241,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="revamped-facebook-audience-export">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#revamped-facebook-audience-export"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Revamped Facebook Audience Export</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now use the revamped Facebook Audience Export to gain more flexibility and control over how you manage and activate audiences for your Facebook campaigns.</p>
+
+    <p>With this enhancement, you can:</p>
+
+    <p>
+      <ul>
+        <li>Link multiple Facebook Ads accounts within CleverTap to manage audiences across accounts more efficiently.</li>
+        <li>Export audiences with improved default user property mapping for better accuracy.</li>
+        <li>Manage audience workflows more reliably with key bug fixes and stability improvements.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/setup-facebook-audiences" target="_blank">Facebook Audience Export.</a></p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="ai-generated-descriptions-for-data-schema">
   <div class="release-note-header">
     <div class="anchor-link-icon">

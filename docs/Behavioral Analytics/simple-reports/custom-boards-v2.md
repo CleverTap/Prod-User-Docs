@@ -1,6 +1,8 @@
 ---
-title: Custom Boards 2.0
-excerpt: Understand what are custom boards in CleverTap.
+title: Boards 2.0
+excerpt: >-
+  Learn how to create boards to monitor key metrics, track performance, and
+  share insights across your team, all in one place.
 deprecated: false
 hidden: false
 metadata:
@@ -12,169 +14,304 @@ next:
 ---
 # Overview
 
-The _Custom Boards_ is a feature in CleverTap that allows you to create and customize your board. CleverTap provides a set of default boards, such as the [Today View](doc:today-view), [Mobile App View](doc:mobile-app-view), [Uninstalls View](doc:uninstalls-view), [Revenue View ](doc:revenue-view), [NPS view](doc:nps-board), which you can use to analyze user activity in your application.
+A Board is a configurable view of tiles from different analyses, such as [Trends](doc:trends-v2), [Funnels](doc:funnels-v2), [Pivots](doc:pivots-v2), [Cohorts](doc:cohorts-v2), and [Flows](doc:flows-v2), bringing together multiple analyses into a single, shareable view. Instead of navigating between different reports, you can monitor key metrics as visual tiles on a Board.
 
-Each custom board you create is composed of Tiles, which are widgets you can pin to the board to track the metrics of your interest. You can pin Tiles and track the metrics using one of the following features: [Funnels](doc:funnels) and [Trends](doc:trends).
+When working with product analytics, you often end up juggling multiple reports across different tabs; a Trends chart here, a Funnel analysis there, and a Cohort table somewhere else. Boards solve this by bringing all your analyses into a single, shareable view.
 
-> 📘 Private Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Customer Success Manager.
+Boards are useful for anyone who regularly monitors performance metrics. For example, product managers tracking feature adoption, marketers reviewing campaign funnels, growth teams analyzing retention, or executives reviewing KPIs. If you are sending screenshots of charts over chat, Boards are for you.
 
-For example, if you want to track the following metrics for the last 30 days:
+With Boards 2.0, you can:
 
-* Weekly comparison of Unique users who purchased
-* Total purchases by brand
+* Create and manage multiple boards, each tailored to a specific goal or team
+* Add analysis tiles from Trends, Funnels, Pivots, Cohorts, and Flows
+* Apply date range and segment filters that dynamically update supported tiles at once
+* Share boards with configurable access levels (view-only or edit) without anyone needing to rebuild the analysis themselves.
+* Interact with tile data, hover, compare, and explore directly on the board, without switching between analysis screens
 
-As shown in the following image, you can create a custom board and add Tiles to track the above metrics. You can also pin those Tiles to the board.
+<Callout icon="📘" theme="info">
+  #### Public Beta
 
-<Image align="center" alt="Sample Custom Board" border={true} caption="Sample Custom Board" src="https://files.readme.io/021f591b447150ebc9711e8fbe07393f81110fef7680d15ba03ef12bc5c8f517-image.png" />
+  This feature is released in Public Beta. For more information or questions, contact your Customer Success Manager or the CleverTap Support.
+</Callout>
 
-After you build your custom board, you can also share the board with others in your organization.
+# Create a Board
 
-Custom boards can have the following features:
+Creating a board gives you a blank canvas to start organizing your analyses. You can create as many boards as you need, be it one per team, product area, or campaign.
 
-* [Boards](doc:custom-dashboards#boards)
-* [Tiles](doc:custom-dashboards#cards)
+For example, suppose you are a product manager for an e-commerce app. You can create a board called _Checkout Performance_ to track add-to-cart rates (Trends), checkout drop-off steps (Funnels), and repeat purchase behavior (Cohorts), all in one view that your team can access any time.
 
-# Boards
+To create a new board:
 
-The board's section provides information about different boards created for the project and the operations that can be performed on these boards. On this page, users can view a list of all boards:
-
-* Created by them,
-* Shared with them, and
-* Public boards that are available for users in their organization.
-
-To access boards on the CleveTap dashboard, go to _Analytics_ > _Boards BETA. The_All boards_ page opens.
-
-<Image align="center" alt="List of Boards" border={true} caption="List of Boards" src="https://files.readme.io/c736a32d0cae70aa89558c968d1744d0c783b08f34e27acf0970f70c31fd1c9f-image.png" />
-
-## Create a Custom Board
-
-This section covers how to create a custom board. To create a board:
-
-1. Go to _Analytics_ > _Boards BETA_ from the left navigation menu.
+1. Go to _Analytics_ > _Boards Beta_ from the CleverTap dashboard.
 2. Click **Create Board**.
-3. Enter your board name and click **Create**.
+3. Enter a descriptive _Board name_.
+4. Click **Create**.
 
-## Operations
+<Image align="center" border={true} caption="Create a Board" src="https://files.readme.io/ca1511293f0c3f5dda32180d3a3996f6e073651e3f4ca29900d887537d4706bc-2026-04-13_11-53-53_1.gif" />
 
-You can perform the following actions on a particular board:
+The board opens immediately as an empty dashboard, ready for you to add tiles.
 
-### Share
+<Callout icon="📘" theme="info">
+  #### Best Practice for Naming a Board
 
-CleverTap provides restricted board access so that the board owner can control the members who can view and contribute to the insights captured on the board. The board owner can add or remove members from the access list and can control access levels.
+  Use specific, descriptive board names from the start. A name like _July Acquisition_ is more useful than _Board 1_, especially when you have multiple boards.
+</Callout>
 
-To share a board, perform the following steps:
+# Manage Boards
 
-1. Create your custom board.
-2. Click the **Share** ![](https://files.readme.io/0710b8affc42e1398a0baf1d52f4a6c0eab19a0c4ed1ae6749f34d04e93fe6f9-Share_Me.png) icon. The _Share Board_ popup displays with restricted permissions by default. Use the search box to view and add users to this board.
+Once you have boards set up, you can perform several management operations to keep your boards page organized. These options are available from the board menu, accessed by clicking the ![](https://files.readme.io/c538b4435fb5f68ee8201296aa64c4fa97e4d6a4443aa3f3665d947a260f4e2d-Ellipsis_icon_Boards.png)icon in the top-right corner of any board.
 
-<Image align="center" alt="Share the board" border={true} caption="Share the board" src="https://files.readme.io/f78e95fdb8583e08de9093b1050aa95a1d1705fcb00c9fcb17338bcd7caa619f-image.png" width="60% " />
+<Image align="center" border={true} caption="Board Operations" src="https://files.readme.io/795c0c41a4facdc5ab3f1209efd41f0f331ee64e526b426fa0eccd59cdba3ba9-image.png" />
 
-3. Select the required users and click **Done**. The selected users can now access the board based on their permissions.
+* **Rename**: Update the name of an existing board at any time. This is useful when a board's focus evolves. For example, renaming Q2 Funnel Review to Q3 Funnel Review at the start of a new quarter.
+* **Clone**: Create an exact copy of a board, including all its tiles and configurations. Cloning is helpful when you want to reuse a board structure for a different time period, region, or audience segment without rebuilding it from scratch. The cloned board appears in your board list with a _Cloned_ prefix. You can then rename it as needed.
+* **Delete**: Permanently remove a board and all its tiles. This action cannot be undone, so use it only when the board is no longer needed.
 
-You can also copy the link and share the board. However, the user must have the required access to the board.
+<Callout icon="📘" theme="info">
+  #### Note
 
-#### Shared Access Types
+  When you clone a board, you become the owner of the cloned copy, regardless of who owned the original. You will have full edit and delete permissions on the clone.
+</Callout>
 
-There are three levels of access:
+# Share Boards
 
-* **Owner**: Full permissions to edit tiles, manage users, and delete the board.
-* **Editor**: Full permissions similar to Owner, except they cannot remove the Owner.
-* **Viewer**: Can view the board but cannot make changes.
+Sharing a board lets your teammates view or collaborate on the same set of analyses without needing to set up their own. This is especially useful for cross-functional reviews, stakeholder reporting, or async collaboration.
 
-#### Access Methods
+To share a board:
 
-There are two ways to assign access:
+1. Click the ![](https://files.readme.io/ac4b6e3242b25813de0bc371e8ab741cb8019cfc928c3ff287499a192155dce6-Share_Boards_Icon.png) icon of the board you want to share.
+2. In the _Share_ modal, either:
+   1. Add users by entering their email addresses, or
+   2. Copy the board link to share directly via chat, email, or documents.
+3. Assign an [access type](doc:boards-v2#access-type) for each invited user.
+4. Click **Done**.
 
-* **Individual Access**: The Owner or Editor manually adds users via email and assigns them _Editor_ or _Viewer_ access.
-* **General Access**: The board can be set as _Anyone can View_ or _Anyone can Edit_, granting all users in the account that level of access.
+<Image align="center" border={true} caption="Share a Board" src="https://files.readme.io/9864e3768e9a0a2d62b093580a1774195bf8295d08260c193296c4188ffd7394-image.png" width="% " />
 
-> 📘 Note
->
-> Both access types can coexist. For example, a board marked as General View can be visible to all users, while a few power users are assigned Individual Edit access to this board. In such cases, individual access overrides general access.
+## Access Type
 
-### Clone
+When inviting users to a board, you control what they can do with it using the following options:
 
-This option is used when you want to track the same metrics with minor changes. Anyone who has access to your project can clone the board by clicking the three-dot menu at the top of the board and then selecting **Clone** from the list.
+* **Viewer**: A Viewer can open the board, explore tile data, hover over data points, and apply filters for their own session. However, they cannot make any permanent changes, add, edit, rename, or delete tiles, and modify board settings. _Viewer_ access is best for stakeholders, executives, or anyone who needs to consume insights but not modify the board.
+* **Editor**: An _Editor_ has full access to modify the board. They can add and remove tiles, rename tiles, apply saved filters, and change board settings. Editors can also invite other users. Editor access is best for teammates who are actively contributing to or maintaining the analysis.
 
-### Rename
+<Image align="center" border={true} caption="Access Types on a Board" src="https://files.readme.io/f8fae4c199f6650658a658a1ff156ec2fa767c3dd80b7744488b0fb62c8dcd89-image.png" />
 
-You can rename the board clicking the three-dot menu at the top of the board and then selecting **Rename** from the list.
+## Visibility Settings
 
-### Delete
+Beyond individual invites, you can set a board's overall visibility to control who can discover and access it using the following options:
 
-You can delete the boards you created by clicking the three-dot menu at the top of the board and then selecting **Delete** from the list.
+* **Restricted (default)**: Only users explicitly invited can access the board. It will not appear in search or directory listings for others. This is the most secure setting and is recommended for sensitive or work-in-progress boards.
+* **Anyone can view**: Any user in your organization with the link can open and view the board, without needing an explicit invite. They are automatically granted _Viewer_ access. The board may also appear in shared directories.
+* **Anyone can edit**: Any user in your organization with the link can view and edit the board. Use this setting carefully. It is best suited for highly collaborative boards where the entire team is expected to contribute.
 
-### Sort
+<Image align="center" border={true} caption="Visibility Settings for a Board" src="https://files.readme.io/26883f495edef53ea7173da7d002fc8b96f98f07d75aae21bb1e66d4bb5d7537-image.png" />
 
-You can sort the boards by the date they were created and by the person who created them. To do so, click the column header.
+<Callout icon="📘" theme="info">
+  #### Important
 
-<Image align="center" alt="Sort Boards" border={true} caption="Sort Boards" src="https://files.readme.io/d1e35d99ecd88d878727236afb6b32761f33f28cbfc0c30234ca14c41a18ff87-image.png" />
+  Changing a board from _Restricted_ to _Anyone can view_ or _Anyone can edit_ immediately grants access to all users who have the link or the edit access. If the board contains sensitive data, confirm with your team before changing visibility.
+</Callout>
 
-### Search
+## Copy Board Link
 
-You can search the boards by board name or the creator's email ID. To search boards, enter the search criteria under the Search text box.
+For quick sharing without going through the full invite flow, you can copy a direct link to the board.
 
-## Board Limits
+1. Click **Copy link** in the Share modal.
+2. Paste and share the link via your preferred channel (Slack, Email, etc.).
 
-You can create a maximum of 500 boards. You can pin up to 20 tiles per board. You can  also share the board within the organization.
+<Image align="center" border={true} caption="Copy Link to Share a Board" src="https://files.readme.io/983fa7d08d193a8a994d3681477bd8891b50e317f2b46b24632ed9455ff4f04f-image.png" />
 
-# Tiles
+Recipients view the board based on its current visibility setting. If the board is set to _Restricted_, only users who have already been invited can open the link.
 
-This section provides information about different operations that can be performed on the tile. Select the board to view all the included Tiles.
+# Add a Tile to a Board
 
-## Operations
+Tiles are the building blocks of a board. Each tile represents a saved visualization or table from one of the supported analysis types. You can add as many tiles as you need, mix different analysis types on the same board, and rearrange them to suit your layout.
 
-You can perform the following actions on a particular tile:
+You can add a tile to a board both from within the individual analysis screens (e.g., Trends, Funnels) or from the board itself. Once added, the tile appears on the board and reflects the configuration you set in the analysis when you added it.
 
-### Add to Board
+For example, if you want to build a Trends analysis tracking daily active users over the past 30 days and want to add it to your _Product Health_ board:
 
-When you create your new board, you start with an empty board. CleverTap allows you to pin Funnels and  Trends.
+1. Click **Add Tile** from a Board.
+2. Select _Trends_  and configure your analysis query (events, filters, chart type, date range, etc.).
+3. Click **View Analysis**.
+4. Once the analysis is loaded, click **Save**.
+5. Select the target board (e.g., Product Metrics) from the dropdown. If you have not created a board yet, you can create one inline.
+6. (Optional) Enter a _Tile name_ (e.g., Daily Active Users in Last 30 Days).
+7. Click **Save**.
 
-To add a tile of the example metrics:
+<Image align="center" border={true} caption="Add Tile to a Board" src="https://files.readme.io/2692b22923bb66a7a7ebf49472552d15ecca05c9bbfd38d967343cfae0a48f28-image.png" />
 
-1. Go to Analytics > _Trends BETA_ from the board.
-2. Run a Trend Analysis.
-3. Click the **Add to Board**. Name the chart and add it to a new or existing board.
+You can add tiles from any of the following analyses:
 
-<Image align="center" alt="Add Trend to board" border={true} caption="Add Trend to the board" src="https://files.readme.io/7c30b05cc9a203a2f17af1552558641dc0a49be322dad0a8ff4adbfaff211f6d-image.png" />
+| Anlysis | What it shows on the board                                  |
+| :------ | :---------------------------------------------------------- |
+| Trends  | Line, bar, pie, or number charts of event metrics over time |
+| Funnels | Conversion rates across sequential steps                    |
+| Pivots  | Tabular breakdowns of metrics by properties                 |
+| Cohorts | Retention tables for user groups over time                  |
+| Flows   | User path visualizations between events                     |
 
-### Rename a Tile
+<Callout icon="📘" theme="info">
+  #### Important
 
-You can change the tile's name when you hover over any tile on a board.
+  Each tile reflects the exact configuration applied in the analysis at the time it was added, including events, filters, breakdown properties, and chart type. If you later modify the original analysis, the tile does not automatically update unless you re-add it or edit it from the board.
+</Callout>
 
-<Image align="center" alt="Rename a Tile" border={true} caption="Rename  a Tile" src="https://files.readme.io/0cb85b542e65524ad15e3f4f83f20b8a1d327e84b10a4ae116eac03a433e338a-image.png" />
+# Explore Data on Tiles
 
-### Edit a Tile Query
+You do not need to leave the board to dig into your data. Each tile supports direct interaction, so you can explore metrics in context.
 
-Edit the query that is generating the tile. You can view the board that you are editing and the relative analytic metric.
+For example, you can:
 
-To do so:
+* Hover over any data point to view a detailed tooltip with exact values, dates, and segment breakdowns.
+* Compare metrics visually across time periods or user segments without switching tabs.
 
-1. Click the ![](https://files.readme.io/b087d12e90e061ffef4b4f4f6e4409662d82a0d6ad35392feff582616b7395c4-ellipsis_icon.png) icon on the tile.
-2. Click **Edit**.
+This in-board interactivity is especially useful during team reviews or when presenting data live, as you can explore the data without losing the board context.
 
-<Image align="center" alt="Delete a Tile" border={true} caption="Edit  a Tile" src="https://files.readme.io/0cb85b542e65524ad15e3f4f83f20b8a1d327e84b10a4ae116eac03a433e338a-image.png" width="70% " />
+## Apply Filters
 
-3. The underlying query is displayed. You can adjust it and click **Save**.
+Board-level filters let you update data across all supported tiles simultaneously, without reconfiguring each tile individually. This makes it easy to slice the same board for different time periods, geographies, user segments, or other dimensions.
 
-<Image align="center" alt="Edit a tile and the query under it." border={true} caption="Edit a Tile" src="https://files.readme.io/3412b5d61663da15cb01eb59762bc76f7ee8b6b967d7d231dcfc9f1b02b90647-Edit_Tile.gif" />
+When you apply a filter, all supported tiles update dynamically, and you will see the charts and tables refresh to reflect the filtered data in real time. No page reload is required.
 
-### Delete
+Boards support the following two types of filters:
 
-You can delete a tile when you hover over any tile on a board.
+* [Date Range](doc:boards-v2#date-range)
+* [Segment](doc:boards-v2#segment)
 
-<Image align="center" alt="Delete a Tile" border={true} caption="Delete  a Tile" src="https://files.readme.io/0cb85b542e65524ad15e3f4f83f20b8a1d327e84b10a4ae116eac03a433e338a-image.png" />
+Each filter targets a different dimension of your data. You can apply one or both at the same time to narrow down what is displayed across the board.
 
-### Resize
+### Date Range
 
-You can drag and resize the tile by hovering and dragging the bottom corners of the tile.
+Restrict all tile data to a specific time window. For example, on a `Product Metrics` board, you might apply a date range of March 1 to March 31 to view all tile data scoped to March.
 
-<Image align="center" alt="Resize Tile" border={true} caption="Resize Tile" src="https://files.readme.io/ef2ce1cabb0f4e3370a269d2315eba3174c69a929a0c8e14bec4107290623d14-2025-06-18_19-14-42.gif" />
+<Image align="center" border={true} caption="Filter Board Data for a Date Range" src="https://files.readme.io/98b9036244cb74bb6d188951b23ea701c3fcd2f09335308c98b47f1e2b60e8cd-2026-04-13_13-29-03_1.gif" />
 
-### Move
+You can select preset ranges (Last 7 days, Last 30 days, etc.) or a custom date range.
 
-You can reorder the sequence of tiles by hovering over them.
+### Segment
 
-<Image align="center" alt="Move Tiles" border={true} caption="Move Tiles" src="https://files.readme.io/99464d41107cbb2c62e051a4259bac63018136e3776a3463e34cabc410d73e63-2025-06-18_19-17-20.gif" />
+Filter tiles by a defined user segment. For example, applying a `Churn After Purchase` segment to the board will update all supported tiles to show data only for users on mobile devices.
+
+<Image align="center" border={true} caption="Filter Board Data for a Segment" src="https://files.readme.io/321dbb82de394b3c58fd5809a3e6b0aa9858134410baf384f07626145af350be-2026-04-13_13-31-43_1.gif" />
+
+Segments must be pre-configured in your workspace before they can be applied here.
+
+#### Filter Behavior by Tile Types
+
+Not all tiles respond to board-level filters. Some tiles behave differently depending on what board-level filter is applied.
+
+The table below shows how board-level filters respond to the board-level filters:
+
+| Tile Type                        | Responds to Date Filter | Responds to Segment Filter |
+| :------------------------------- | :---------------------- | :------------------------- |
+| Trends, Funnels, Pivots, Cohorts | Yes                     | Yes                        |
+| Flows                            | No                      | No                         |
+| Segment                          | Yes                     | No                         |
+
+# Tile Operations
+
+Each tile on a board has its own set of actions, accessible from the tile menu. These actions let you manage individual tiles without affecting the rest of the board.
+
+You can perform the following operations on a tile:
+
+* [Edit](doc:boards-v2#edit)
+* [Rename](doc:boards-v2#rename)
+* [Rename Legend](doc:boards-v2#rename-legend)
+* [Clone](doc:boards-v2#clone)
+* [Export](doc:boards-v2#export)
+* [Delete](doc:boards-v2#delete)
+
+<Image align="center" border={true} caption="Tile Operations in a Board" src="https://files.readme.io/ee1eb420205c4d56c9be4856ad0b1b5793687acca3020ec43008bb9b474f3d29-image.png" />
+
+## Edit
+
+Opens an underlying analysis (e.g., Trends or Funnels) in edit mode, where you can change events, filters, date ranges, or chart types. Once you save, the tile on the board updates to reflect your changes.
+
+Use _Edit_ when the tile configuration needs to change. For example, adding a new event to a Trends chart.
+
+## Rename
+
+Updates a tile's display name as it appears on the board. This does not affect the underlying analysis name.
+
+Use _Rename_ when the default analysis name is not descriptive enough for the board context. For example, rename _Untitled Trends_ to _Weekly Signups by Channel_.
+
+## Rename Legend
+
+Updates the legend labels shown on the tile's chart. This is useful when default event or property names are too technical or ambiguous for a broader audience.
+
+Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions.
+
+## Clone
+
+Creates a duplicate of the tile on the same board. The cloned tile retains all configuration from the original and can be edited or renamed independently.
+
+Use _Clone_ when you want to create a variant of an existing tile. For example, cloning a Trends tile and editing it to compare a different user segment.
+
+## Export
+
+Downloads a tile's data as a file for offline use or sharing. Export format may vary by tile type (e.g., CSV for tables, image for charts).
+
+Use _Export_ when you need to share a specific chart or table with someone outside the platform, or include it in a presentation or report.
+
+## Delete
+
+Removes a tile from the board permanently. This does not delete the original analysis, and only the tile instance on the board is removed.
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Deleted tiles cannot be restored. If you accidentally delete a tile, you will need to re-add it from the original analysis.
+</Callout>
+
+# Example Use Case: Monitoring Campaign Performance
+
+Here is a practical end-to-end example of how you might use Boards 2.0 to monitor a marketing campaign:
+
+1. Create a board called _Summer Campaign Performance_.
+2. Add the following tiles:
+   1. A Trends tile tracking daily click-through rates from campaign emails
+   2. A Funnel tile showing drop-off at each step of the sign-up flow
+   3. A Cohorts tile measuring 7-day retention for users acquired during the campaign
+3. Apply a date filter scoped to the campaign period (e.g., July 1 to July 31) to view data only for that window.
+4. Share the board with your marketing team, assigning _Viewer_ access to stakeholders and _Editor_ access to analysts who will maintain the board.
+
+With everything in one place, your team can track campaign performance in real time, identify funnel drop-off points, and understand retention, all without switching between separate reports.
+
+# Best Practices
+
+To ensure smooth board management and avoid disruptions in analysis, follow these best practices:
+
+* Group related analyses into a single board organized by goal (e.g., one board for acquisition, one for retention, one for monetization) rather than putting everything on one board.
+* Use clear, descriptive tile names that explain what the data shows, including the metric, time frame, or segment where relevant (e.g., New User Signups for Last 7 Days).
+* Share boards with stakeholders proactively rather than sending one-off screenshots. Boards stay up to date and allow viewers to explore the data themselves.
+* Avoid overloading a single board with too many tiles. A board with more than 15 tiles can become hard to navigate. Consider splitting by audience or use case.
+
+# FAQs
+
+Find answers to the following common questions about managing Boards:
+
+### Q. Can I add the same analysis to multiple boards?
+
+Yes. You can add any analysis to as many boards as you like. Each instance is an independent tile and changes to one do not affect the others.
+
+### Q. Does editing a tile change the original analysis?
+
+Yes. When you click _Edit_ on a tile, it opens the original analysis. Any changes you save will be reflected in the tile and in the analysis itself.
+
+### Q. Why is my board-level filter not affecting some tiles?
+
+The _Flows_ tiles do not respond to date or segment filters. The _Segment_ tiles only respond to segment filter changes, not date changes. For more information, refer to the [Filter Behavior by File Types](doc:boards-v2#filter-behavior-by-file-types).
+
+### Q. Who can delete a board?
+
+The board owner and any _Editor_ can delete a board. _Viewers_ cannot delete boards.
+
+### Q Can I reorder tiles on a board?
+
+Yes. You can drag and drop tiles to rearrange them on the board layout.
+
+### Q. Is there a limit on the number of tiles per board?
+
+Yes. You can add a maximum of 20 tiles per board.

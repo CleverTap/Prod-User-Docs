@@ -3399,6 +3399,17 @@ next:
         </div>
     </div>
   </a>
+  <a href="https://docs.clevertap.com/update/docs/karix-sms">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/5b09dfd1e86b876827c9823a313c51be91943e412118b37d0e9b1b78968ec41d-Karix.jpeg" alt="Karix SMS" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Karix</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+  </a>
 <a href="https://docs.clevertap.com/docs/message-central">
     <div class="integration-card">
         <div class="logo-container">

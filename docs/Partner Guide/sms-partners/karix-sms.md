@@ -28,7 +28,7 @@ Before integrating, check the following:
 * You have an active CleverTap account with SMS channels enabled.
 * You have completed SMS onboarding with Karix and moved your account to Pod3 (AWS open API cluster).
 * You have created a Karix TM Chain.
-* You have configured PE ID and templates in your Karix account. (@Parth: What is PE ID?)
+* You have configured PE ID and templates in your Karix account.
 * You have your Karix _Authorization Key_ (AWS whitelisted key) and _API Key_.
 
 <Callout icon="🚧" theme="warn">

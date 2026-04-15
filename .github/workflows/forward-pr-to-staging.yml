@@ -11,7 +11,8 @@ permissions:
 jobs:
   notify:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login != 'user-docs-bot[bot]'
+
+    if: github.event.pull_request.user.login != 'user-docs-bot[bot]' && !contains(github.event.pull_request.title, '[skip-sync]')
 
     steps:
       - name: Checkout repo

@@ -22,7 +22,7 @@ To view the _Overview_ of a wallet:
 2. Click **Rewards** and select **Loyalty Wallets** from the dropdown menu.
 3. Click the desired wallet and view the following details:
 
-![](https://files.readme.io/4702391dd54c7c81f6de0c46ca93e2bc5189b7541327ed9f2ef7012ab29d5b27-Wallet_Overview.png) Wallet Overview
+<Image border={true} src="https://files.readme.io/4702391dd54c7c81f6de0c46ca93e2bc5189b7541327ed9f2ef7012ab29d5b27-Wallet_Overview.png" className="border" /> Wallet Overview
 
 ## Summary
 
@@ -68,19 +68,19 @@ This section provides the following information about the wallet configuration:
 * **Rounding Rules:** Displays the rounding rule applied to points.
 * **Points Expiry:** Indicates whether points expire and the applicable expiry policy.
 
-![](https://files.readme.io/1b39c2a0341e367aa00857137f05467ee93a0c95fc12516b0f1bc5b36ca5f746-Setup_Details.png)  Setup Details
+<Image border={true} src="https://files.readme.io/1b39c2a0341e367aa00857137f05467ee93a0c95fc12516b0f1bc5b36ca5f746-Setup_Details.png" className="border" />  Setup Details
 
 ### Date Filter
 
 You can adjust the date range using the date picker to analyze the distribution of points within a specific period.
 
-![](https://files.readme.io/c4b6551f0a2665e0e3aec60ca9c181641b3cd105b12ac9c902fe174a2d876753-Calendar_Widget.png)  Calendar Widget
+<Image border={true} src="https://files.readme.io/c4b6551f0a2665e0e3aec60ca9c181641b3cd105b12ac9c902fe174a2d876753-Calendar_Widget.png" className="border" />  Calendar Widget
 
 ### Edit
 
 Clicking _Edit_ allows you to modify wallet names and points.
 
-![](https://files.readme.io/7cfe24d02f41493079a13b689e05654d42fcb03c5de41e2802798260c77cec4f-Edit_Loyalty_Wallet.gif)  Edit Loyalty Wallet and Points Name
+<Image border={true} src="https://files.readme.io/7cfe24d02f41493079a13b689e05654d42fcb03c5de41e2802798260c77cec4f-Edit_Loyalty_Wallet.gif" className="border" />  Edit Loyalty Wallet and Points Name
 
 # Transactions
 
@@ -91,7 +91,7 @@ To view the list of all recorded transactions:
 1. Go to _Loyalty Wallets_ and select the desired wallet.
 2. Click the **Transactions** tab. The following parameters of the transactions appear:
 
-![](https://files.readme.io/7ca194070e2bb934aca1e64c92678dfb76bb9734aa5697dc71acdff97d18f0fb-image.png)  View Wallet Transactions
+<Image border={true} src="https://files.readme.io/7ca194070e2bb934aca1e64c92678dfb76bb9734aa5697dc71acdff97d18f0fb-image.png" className="border" />  View Wallet Transactions
 
 > 📘 Transaction Display Limit
 >

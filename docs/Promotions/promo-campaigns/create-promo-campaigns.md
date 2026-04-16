@@ -49,6 +49,64 @@ The _Who_ section allows you to define who should receive the reward using the r
 
 <Image align="center" border={true} caption="Select Target Segment" src="https://files.readme.io/c0f72135336ae3b88597f99adb1a424fad8b23e8c8d814927a28548d3ef4853c-image.png" />
 
+### Set Control Group and Target Segment Cap
+
+After defining your target segment, expand the _Control group and target segment cap_ panel to configure two optional controls:
+
+* A control group for measuring campaign impact, and
+* A cap on how many users receive the reward
+
+#### Set Control Group
+
+The control group is a subset of qualified users who do not receive the reward. Their behavior can be compared with users who receive it, giving you a true measure of campaign impact.
+
+<Image align="center" border={true} caption="Set Control Group" src="https://files.readme.io/aa8aa9fa114809458e4da9c92a1fcd3d0ec35c8d94830d3f3a854dfd8a43280c-image.png" width="75% " />
+
+The following control group options are available:
+
+* **System Control Group**: Selected by default. Randomly excludes a system-defined percentage of qualified users (for example, 4%) from receiving the reward.
+* **Other Control Groups**: (Optional) Select a custom control group from the dropdown if additional control groups are configured at the account level.
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  The System control group percentage is set at the account level and cannot be changed from within the campaign builder. To modify it, go to _Settings_ > _Control Groups_. For more information, refer to [Control Groups](doc:control-groups).
+</Callout>
+
+#### Set Target Segment Cap
+
+The target segment cap controls how many users from the qualified segment actually receive the reward.
+
+<Image align="center" border={true} caption="Set Target Segment Cap" src="https://files.readme.io/51efb2f3f7466132a338b975e7f41857b25800ba5976992f440d795327c1c4a7-image.png" width="75% " />
+
+The available options and their behavior vary depending on the campaign type (Past Behavior/Custom List or Live Behavior) selected in the [Select Target Segment](doc:create-promo-campaign#select-target-segment) section. The following segment cap options are available based on the selected campaign type:
+
+**Option 1: Send campaign to all qualified target segment users**
+
+Distributes the reward to every user who qualifies based on the segment rules defined in the [Select Target Segment](doc:create-promo-campaign#select-target-segment) section.
+
+For Past Behavior and Custom List campaigns, you can also select the _Don't send the campaign if target segment exceeds [X] users_ option to set an upper threshold. If the qualified segment size exceeds the specified limit, CleverTap does not send the campaign. This protects reward budgets on limited-inventory campaigns such as bulk coupon codes.
+
+**Option 2: Send campaign to at most [X] qualified users**
+
+Limits the total rewards distribution to X users across the entire campaign run. For example, if your qualified segment has 50,000 users and you enter 5,000, only 5,000 randomly selected users will receive the reward when the campaign runs.
+
+**Option 3: Send campaign to at most X qualified users per day (available only for live campaign types)**
+
+Limits the total rewards distribution to X users per day, with qualification in real time.
+
+Additionally, you can also select _And cap to [X] over all_ to cap the cumulative upper limit. This sets the total number of users who can receive the reward over the campaign's lifetime. Once this overall cap is reached, the campaign stops distributing rewards, even if the daily cap has not been met that day.
+
+For example, if you set the daily cap to 500 users and the overall cap to 2,000 users, the campaign rewards up to 500 users each day. Once 2,000 total users have been rewarded across all days, the campaign stops distributing rewards regardless of how many days remain.
+
+<Image align="center" border={true} caption="Set Per Day Capping" src="https://files.readme.io/8f9c34dcd8afd08a80f06c76e0e0746ad8577ce47eecd31d1381aa6a07a37ead-image.png" />
+
+<Callout icon="📘" theme="info">
+  Note
+
+  If you only set the daily cap without enabling _And cap to [X] over all_, rewards continue distributing at the daily rate until the campaign's end date is reached.
+</Callout>
+
 ## Set Up Reward
 
 The **What** section allows you to define the **reward type** for your Promo Campaign. Depending on your selection, the configuration options vary. CleverTap supports the following reward types:
@@ -120,7 +178,7 @@ When you select Live Behavior Segment, the _When_ section shows the following op
       <td>
         Choose when the campaign should stop.
 
-        **Never**: Campaign keeps running until manually stopped.    
+        **Never**: Campaign keeps running until manually stopped.
 
         * **On a Date/Time**: Campaign automatically ends at a chosen date/time.
       </td>
@@ -316,9 +374,9 @@ The following configuration options are available when Loyalty Points is selecte
       <td>
         * **Activation**: Immediate (points instantly usable) OR Custom delay (for example, activate after 7 days).
 
-        * **Expiry**: Specifies how the expiry of points is determined. You can choose one of the following options:  
-          * **Never**: Points do not expire.  
-          * **Fixed date**: Points expire on a specific date.  
+        * **Expiry**: Specifies how the expiry of points is determined. You can choose one of the following options:
+          * **Never**: Points do not expire.
+          * **Fixed date**: Points expire on a specific date.
           * **Custom duration**:  Points expire after a defined duration from when they are awarded (for example, 30 days after activation). When a custom duration is set to Calendar years, points earned in the same calendar year expire at the end of the selected year. For example, if validity is set to 3 calendar years, points earned anytime in 2025 expire on December 31, 2027
       </td>
 
@@ -359,7 +417,7 @@ The following configuration options are available when Loyalty Points is selecte
         Add dynamic key–value pairs to pass additional data into the wallet points payload. Each row has two modes:
 
         * **System Key**: Select from predefined system keys.
-        * **Custom Key**: Define your own key.  
+        * **Custom Key**: Define your own key.
 
         Duplicate keys are not allowed.
       </td>

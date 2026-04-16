@@ -24,13 +24,9 @@ This is a heading 3
 
 ### Heading 7
 
-This is a heading 7
+This is a heading 7 
 
-### Heading 20
-
-This is a heading 20
-
-Hello,
+Hello
 
 ### Heading 9
 

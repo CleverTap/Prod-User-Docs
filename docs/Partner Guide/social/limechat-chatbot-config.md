@@ -7,14 +7,12 @@ metadata:
 ---
 # Overview
 
-# Pre requisites 
+# Pre requisites
 
-whatsapp direct 
+whatsapp direct
 
-# clevertap dashboard set up    
+# clevertap dashboard set up
 
 # limechat dashboard setup
 
 <br />
-
-doc 

@@ -1,7 +1,7 @@
 ---
 title: Role Based Access Control Beta Copy
 excerpt: ''
-deprecated: false
+deprecated: true
 hidden: true
 link:
   new_tab: false

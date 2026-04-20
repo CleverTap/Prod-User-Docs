@@ -32,13 +32,13 @@ The Push Editor in CleverTap allows you to design and edit impactful push notifi
 
 You can select from the following template types:
 
-* [Standard](https://docs.user.clevertap.net/docs/push-editor#standard)
-* [Advanced](https://staging.docs.user.clevertap.net/docs/push-editor#advanced)
-* [Auto Carousel](https://staging.docs.user.clevertap.net/docs/push-editor#auto-carousel)
-* [Timer](https://staging.docs.user.clevertap.net/docs/push-editor#timer)
-* [Text over Image](https://staging.docs.user.clevertap.net/docs/push-editor#text-over-image)
-* [Manual Carousel](https://staging.docs.user.clevertap.net/docs/push-editor#manual-carousel)
-* [Vertical Image with CTA](https://staging.docs.user.clevertap.net/docs/push-editor#vertical-image-with-cta)
+* [Standard](https://docs.clevertap.com/docs/push-editor#standard)
+* [Advanced](https://docs.clevertap.com/docs/push-editor#advanced)
+* [Auto Carousel](https://docs.clevertap.com/docs/push-editor#auto-carousel)
+* [Timer](https://docs.clevertap.com/docs/push-editor#timer)
+* [Text over Image](https://docs.clevertap.com/docs/push-editor#text-over-image)
+* [Manual Carousel](https://docs.clevertap.com/docs/push-editor#manual-carousel-template)
+* [Vertical Image with CTA](https://docs.clevertap.com/docs/push-editor#vertical-image-with-cta)
 
 <Callout icon="📘" theme="info">
   Note
@@ -145,20 +145,20 @@ After you select the required push template for the _Title_ and _Message_ fields
 
 Based on the selected template, the editor displays configurable fields grouped by functionality as follows:
 
-* [Content](https://staging.docs.user.clevertap.net/docs/push-editor#content)
-* [Android Options](https://staging.docs.user.clevertap.net/docs/push-editor#android-options)
-* [iOS Options](https://staging.docs.user.clevertap.net/docs/push-editor#ios-options)
-* [Custom Key-Value Pairs](https://staging.docs.user.clevertap.net/docs/push-editor#custom-key-values)
-* [Post Action Webhook](https://staging.docs.user.clevertap.net/docs/push-editor#post-action-webhook)
-* [App Inbox](https://staging.docs.user.clevertap.net/docs/push-editor#app-inbox)
-* [Notification Priority](https://staging.docs.user.clevertap.net/docs/push-editor#notification-priority)
-* [Collapse Key](https://staging.docs.user.clevertap.net/docs/push-editor#collapse-key)
-* [Interruption Level](https://staging.docs.user.clevertap.net/docs/push-editor#interruption-level)
-* [Template Variations](https://staging.docs.user.clevertap.net/docs/push-editor#template-variations)
-* [Dark Mode](https://staging.docs.user.clevertap.net/docs/push-editor#dark-mode)
-* [Image Scaling](https://staging.docs.user.clevertap.net/docs/push-editor#image-scaling)
-* [Notification Behavior](https://staging.docs.user.clevertap.net/docs/push-editor#notification-behavior)
-* [Dismiss Notification](https://staging.docs.user.clevertap.net/docs/push-editor#dismiss-notification)
+* [Content](https://docs.clevertap.com/docs/push-editor#content)
+* [Android Options](https://docs.clevertap.com/docs/push-editor#android-options)
+* [iOS Options](https://docs.clevertap.com/docs/push-editor#ios-options)
+* [Custom Key-Value Pairs](https://docs.clevertap.com/docs/push-editor#custom-key-values)
+* [Post Action Webhook](https://docs.clevertap.com/docs/push-editor#post-action-webhook)
+* [App Inbox](https://docs.clevertap.com/docs/push-editor#app-inbox)
+* [Notification Priority](https://docs.clevertap.com/docs/push-editor#notification-priority)
+* [Collapse Key](https://docs.clevertap.com/docs/push-editor#collapse-key)
+* [Interruption Level](https://docs.clevertap.com/docs/push-editor#interruption-level)
+* [Template Variations](https://docs.clevertap.com/docs/push-editor#template-variations)
+* [Dark Mode](https://docs.clevertap.com/docs/push-editor#dark-mode)
+* [Image Scaling](https://docs.clevertap.com/docs/push-editor#image-scaling)
+* [Notification Behavior](https://docs.clevertap.com/docs/push-editor#notification-behavior)
+* [Dismiss Notification](https://docs.clevertap.com/docs/push-editor#dismiss-notification)
 
 ## Content
 

@@ -24,43 +24,55 @@ The Push Editor allows you to create and edit relevant and timely messages for y
 
 From the _What_ section, select the [Message Type ](doc:create-message-push#message-types)for your push notification and click **Go To Editor**. You can see the various push templates to help you create a contextual and timely message.
 
-<Image align="center" alt="Push Templates" border={true} caption="Push Templates" src="https://files.readme.io/93a7bdf6e72fef4de198d03b9b26d60351824b0dc6d82175c4201ad8db29cff8-image.png" />
+<Image align="center" alt="Push Templates" border={true} caption="Push Templates" src="https://files.readme.io/ab9993c7493b6cb15542577c8dc8cd3e4731bc04fe09172aec278b507b0f96c8-2026-04-08_12-12-07.png" />
 
 # Push Templates
 
-The Push Editor in CleverTap enables you to design and edit impactful push notifications directly from the dashboard, eliminating the need for developer support or SDK updates. It offers a range of pre-built templates tailored for various campaign goals, making it easier to craft relevant, timely, and engaging messages.
+The Push Editor in CleverTap allows you to design and edit impactful push notifications directly from the dashboard. It does not require developer support or SDK updates. It offers a range of pre-built templates tailored for various campaign goals, making it easier to craft relevant, timely, and engaging messages.
 
 You can select from the following template types:
 
-## **Standard**
+* [Standard](https://docs.user.clevertap.net/docs/push-editor#standard)
+* [Advanced](https://staging.docs.user.clevertap.net/docs/push-editor#advanced)
+* [Auto Carousel](https://staging.docs.user.clevertap.net/docs/push-editor#auto-carousel)
+* [Timer](https://staging.docs.user.clevertap.net/docs/push-editor#timer)
+* [Text over Image](https://staging.docs.user.clevertap.net/docs/push-editor#text-over-image)
+* [Manual Carousel](https://staging.docs.user.clevertap.net/docs/push-editor#manual-carousel)
+* [Vertical Image with CTA](https://staging.docs.user.clevertap.net/docs/push-editor#vertical-image-with-cta)
 
-Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, an e-commerce business might want to inform customers that their order is being processed. You can add GIFs to your message content using the Standard Template. For more information on GIF sizing and format, refer to
+<Callout icon="📘" theme="info">
+  Note
 
-[GIF Support](https://developer.clevertap.com/docs/android-push-templates#gif-support-in-standard-push-template).
+  For minimum SDK version requirements and prerequisites, refer to [Android Push Templates](https://developer.clevertap.com/docs/android-push-templates) and [iOS Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications).
+</Callout>
+
+## Standard
+
+Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, a home decor business might want to inform customers that new furniture with limited stock is available. You can add GIFs to your message content using the Standard Template.
 
 <Image align="center" alt="Standard Template" border={true} caption="Standard Template" src="https://files.readme.io/ed55e473b9eb0f92e91a4572766a83db96535aa90ec95492113b6d66ad782aec-image.png" width="35% " />
 
-## **Advanced**
+## Advanced
 
 Supports rich media, deep links, and enhanced customization for more engaging messages. It is great for interactive, visually appealing messages. For example, businesses can use it to build excitement for new product drops, early access offers, or feature rollouts that benefit from strong visuals and clear Call to Action (CTAs).
 
 <Image align="center" alt="Advanced Template" caption="Advanced Template" src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" width="35% " />
 
-## **Auto Carousel**
+## Auto Carousel
 
-Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can utilize it to promote new product collections, travel packages, and content recommendations, among other offerings.
+Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can use it to promote new product collections, travel packages, content recommendations, and so on. For example, an interiors business can send a notification with multiple images showing their handpicked furniture options.
 
 <Image align="center" alt="Auto Carousel Template" caption="Auto Carousel Template" src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" width="35% " />
 
-## **Timer**
+## Timer
 
-Adds a countdown timer to your template to enable immediate action from the user, ideal for time-sensitive campaigns. For example, businesses can utilize it for flash sales, limited-time discounts, and other promotional offers.
+This template has a countdown timer to enable immediate action from the user. It is ideal for time-sensitive campaigns. For example, businesses can use it for flash sales, limited-time discounts, and so on. This template offers both expanded and collapsed views for Android devices, while iOS supports only the expanded view. Additionally, it includes optional text fields to enhance layouts, as well as a customizable call-to-action (CTA) button with various style options.
 
 <Image align="center" alt="Timer Template" caption="Timer Template" src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" width="35% " />
 
-## **Text over Image**
+## Text over Image
 
-Places bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and other relevant content.
+This template supports a bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and so on. This template provides both expanded and collapsed views for Android devices, while iOS only supports the expanded view. It also features optional text fields for improved layouts and includes a customizable call-to-action (CTA) button, offering various style options.
 
 <Image align="center" alt="Text over Image Push Template" caption="Text over Image Push Template" src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" width="35% " />
 
@@ -76,7 +88,7 @@ You can configure the collapsed and expanded views in the following ways:
 * Use a large icon in the collapsed view.
 * Use a large icon along with an expanded/collapsed image in the collapsed view (supported in SDK PushTemplates `v2.3.0` and above).
 
-The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions.
+The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions. Refer to the following image for a dashboard preview.
 
 <Image align="center" border={true} caption="Large Icon Right-aligned to the Notification" src="https://files.readme.io/144ddde8b4167abd4f1592fd3cb7e16a37dbc1f2b91786686786e0983888dfb2-image.png" />
 
@@ -105,7 +117,7 @@ For SDK versions below PushTemplates `v2.3.0`, the collapsed view supports only 
 * Large Icon + Text
 * Text only
 
-## **Manual Carousel Template**
+## Manual Carousel Template
 
 Manual Carousel is an interactive push notification format that lets users scroll through a series of cards or slides at their own pace. Each card can display rich content like images, headlines, brief descriptions, and a call-to-action (CTA). Users navigate between cards manually using swipe gestures or navigation arrows.
 
@@ -113,24 +125,40 @@ If only a single image is available for download, this template falls back to th
 
 <Image align="center" alt="Manual Carousel Template" border={true} caption="Manual Carousel Template" src="https://files.readme.io/314a341e4efcff60b16c13c2d9d89c91866ff0a66eb39458de68670c9d1d7ab7-Screen_Recording_Jun_4_2025_from_Google_Drive_1.mp4_1.gif" width="35% " />
 
+## Vertical Image with CTA
+
+This template supports vertical or portrait images that preserve the original creative layout without cropping or resizing the image. The Vertical Image template is ideal for campaigns that rely on vertical-first visuals such as product showcases, posters, or reel-style creatives, ensuring the content appears exactly as designed. This template also minimizes redesigning assets for square or landscape formats.
+
+This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles.
+
+<Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/8d7c562ee3568bc402a22f2f67578a7102c4d3e7ddb036799fbd6c3ebff840db-ChatGPT_Image_Apr_13_2026_at_04_13_04_PM.png" width="35% " />
+
 # Push Campaign Setup
+
+After you select the required push template for the _Title_ and _Message_ fields, you can use the following options to create personalized and engaging campaigns:
+
+* Text color to change the color of your text.
+* Emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
+* _@_ personalization or   to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
+* Liquid scripts to check the usage.
+* [Clever AI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
 
 Based on the selected template, the editor displays configurable fields grouped by functionality as follows:
 
-* Content
-* Android Options
-* iOS Options
-* Custom Key-Values
-* Post Action Webhook
-* App Inbox
-
-Once you select the required push template for the _Title_ and _Message_ fields, you can use the following options to create personalized and engaging campaigns:
-
-* Use text color to change the color of your text.
-* Use emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
-* Use _@_ personalization or _\{\{}}_ to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
-* Use liquid scripts  to check the usage.
-* Use [CleverAI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
+* [Content](https://staging.docs.user.clevertap.net/docs/push-editor#content)
+* [Android Options](https://staging.docs.user.clevertap.net/docs/push-editor#android-options)
+* [iOS Options](https://staging.docs.user.clevertap.net/docs/push-editor#ios-options)
+* [Custom Key-Value Pairs](https://staging.docs.user.clevertap.net/docs/push-editor#custom-key-values)
+* [Post Action Webhook](https://staging.docs.user.clevertap.net/docs/push-editor#post-action-webhook)
+* [App Inbox](https://staging.docs.user.clevertap.net/docs/push-editor#app-inbox)
+* [Notification Priority](https://staging.docs.user.clevertap.net/docs/push-editor#notification-priority)
+* [Collapse Key](https://staging.docs.user.clevertap.net/docs/push-editor#collapse-key)
+* [Interruption Level](https://staging.docs.user.clevertap.net/docs/push-editor#interruption-level)
+* [Template Variations](https://staging.docs.user.clevertap.net/docs/push-editor#template-variations)
+* [Dark Mode](https://staging.docs.user.clevertap.net/docs/push-editor#dark-mode)
+* [Image Scaling](https://staging.docs.user.clevertap.net/docs/push-editor#image-scaling)
+* [Notification Behavior](https://staging.docs.user.clevertap.net/docs/push-editor#notification-behavior)
+* [Dismiss Notification](https://staging.docs.user.clevertap.net/docs/push-editor#dismiss-notification)
 
 ## Content
 
@@ -146,6 +174,8 @@ This section includes the core elements of your push notification, applicable ac
 | Expiry Title     | The fallback title that appears when the timer has expired. This helps you communicate a follow-up message or next action.                                                                                                                                                                                                                                                                           | Optional          | Timer                                 |
 | Expiry Message   | The message body displayed after the timer expires. You can use this to soften the missed opportunity or redirect the user elsewhere.                                                                                                                                                                                                                                                                | Optional          | Timer                                 |
 | Expiry Img       | An image that replaces the original notification image after the timer expires. Helps reinforce the expiry visually                                                                                                                                                                                                                                                                                  | Optional          | Timer                                 |
+
+You can configure the title, message, subtitle, and so on for your notification.
 
 <Image align="center" alt="Content Section" border={true} caption="Content Section" src="https://files.readme.io/bc77b4776c512b19f495b2df17b6656687f3a6cf173da2555407256f63a23353-image.png" />
 
@@ -291,6 +321,42 @@ You can use this section to customize Android-specific behavior for your push us
 
       <td>
         All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Expanded button
+      </td>
+
+      <td>
+        A Call to Action (CTA) button displayed in the expanded view of the notification. You can configure the button text, deep link URL and colors. Enables users to take immediate action from the notification. If the button is configured, it is mandatory to add the deep link URL.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Collapsed Button
+      </td>
+
+      <td>
+        A CTA button displayed in the collapsed view of the notification. Allows users to interact with the notification without expanding it. You can configure visibility based on whether the button should appear in collapsed view. If the button is configured, it is mandatory to add the deep link URL.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
       </td>
     </tr>
 
@@ -494,6 +560,78 @@ You can use this section to customize Android-specific behavior for your push us
         All
       </td>
     </tr>
+
+    <tr>
+      <td>
+        Body Text Line 1
+      </td>
+
+      <td>
+        The first body text of your notification. Use this to add further details to your campaign.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Body Text Line 2
+      </td>
+
+      <td>
+        The second body text of your notification. Use this to add further details to your campaign.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Body text line 1 color
+      </td>
+
+      <td>
+        Allows you to customize the color of the Body text line 1 using a HEX code. This helps ensure the text stands out or aligns with your brand colors.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Body text line 2 color
+      </td>
+
+      <td>
+        Allows you to customize the color of the Body text line 2 using a HEX code. This helps ensure the text stands out or aligns with your brand colors.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        Vertical Image
+      </td>
+    </tr>
   </tbody>
 </Table>
 
@@ -502,7 +640,7 @@ You can use this section to customize Android-specific behavior for your push us
 You can use this section to customize Apple-specific behavior for your push using the following fields:
 
 | Field                                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                   | Required/Optional | Available for Template |
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | :--------------------- |
+| :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------- | :--------------------- |
 | Rich Media                                               | Add a fixed or dynamically generated media URL to enrich push notifications. It supports images for Android and both images and videos for iOS. It is useful for visually engaging promotions or announcements.                                                                                                                                                                                                               | Optional          | All                    |
 | Deep Link URL                                            | A clickable URL that takes the user to a specific screen or section within your app. Supports deep linking for seamless In-App navigation.                                                                                                                                                                                                                                                                                    | Optional          | All                    |
 | Sound                                                    | Specifies the custom sound file to be played when the notification arrives. The sound file must be included in your iOS app bundle. Supported formats: `.aiff`, `.caf`, and `.wav`.                                                                                                                                                                                                                                           | Optional          | All                    |
@@ -511,6 +649,8 @@ You can use this section to customize Apple-specific behavior for your push usin
 | Relevance Score                                          | Determines the importance of a notification when grouped in the iOS notification summary. Marketers can now set up the _Relevance Score_ for every notification when creating a Push campaign. This directly impacts the order of notifications when grouped. The score ranges from`0` (lowest) to `1` (highest). Notifications with higher scores take precedence. This feature was introduced in iOS 15 and later versions. | Optional          | All                    |
 | Category                                                 | Specifies a registered iOS category that groups notifications by type and defines custom actions (for example, buttons). Categories must be pre-registered in the app. Each category can support up to four actions.                                                                                                                                                                                                          | Optional          | All                    |
 | Mutable Content                                          | Sends the `mutable-content` flag with the payload, allowing your app’s service extension to modify the push content before it is displayed (for example, attach media, customize text). For more info, refer to Apple’s documentation on [Modifying Content in Newly Delivered Notifications](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications).                | Optional          | All                    |
+| Expanded Image                                           | A larger image displayed when the user expands the notification. Supports image URL or upload. You can add a fixed or dynamically generated URL to include rich media in your push notifications, images for Android, and both images and videos for iOS.                                                                                                                                                                     | Optional          | Vertical Image         |
+| Expanded button                                          | A Call to Action (CTA) button displayed in the expanded view of the notification. You can configure the button text, deep link URL and colors. Enables users to take immediate action from the notification. If the button is configured, it is mandatory to add the deep link URL.                                                                                                                                           | Optional          | Vertical Image         |
 
 ## Custom Key-Values
 
@@ -626,9 +766,7 @@ Use this section to also save the notification in the App Inbox so users can rev
 | Background Color | Specifies the background color of the App Inbox notification. Use brand-consistent colors for better visual appeal. | Optional          | All                    |
 | Filter Tags      | Tags that help categorize and filter App Inbox messages within your app (for example, `promotions`, `reminders`).   | Optional          | All                    |
 
-## Other Settings
-
-### Notification Priority
+## Notification Priority
 
 You can set these priority levels from the CleverTap dashboard as you create your Android push campaigns.
 

@@ -129,7 +129,7 @@ This template supports expanded and collapsed views for Android, but only the ex
 
 > 📘 Private Beta
 >
-> Vertical Image with CTA is available in Private Beta. To enable this feature, contact your Customer Success Manager or raise a support ticket.
+> Vertical Image with CTA is available in Private Beta. To enable this feature, contact your Customer Success Manager.
 
 <Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" width="35% " />
 

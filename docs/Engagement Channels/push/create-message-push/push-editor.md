@@ -38,7 +38,6 @@ You can select from the following template types:
 * [Timer](https://docs.clevertap.com/docs/push-editor#timer)
 * [Text over Image](https://docs.clevertap.com/docs/push-editor#text-over-image)
 * [Manual Carousel](https://docs.clevertap.com/docs/push-editor#manual-carousel-template)
-* [Vertical Image with CTA](https://docs.clevertap.com/docs/push-editor#vertical-image-with-cta)
 
 <Callout icon="📘" theme="info">
   Note
@@ -124,14 +123,6 @@ Manual Carousel is an interactive push notification format that lets users scrol
 If only a single image is available for download, this template falls back to the Basic Template.
 
 <Image align="center" alt="Manual Carousel Template" border={true} caption="Manual Carousel Template" src="https://files.readme.io/314a341e4efcff60b16c13c2d9d89c91866ff0a66eb39458de68670c9d1d7ab7-Screen_Recording_Jun_4_2025_from_Google_Drive_1.mp4_1.gif" width="35% " />
-
-## Vertical Image with CTA
-
-This template supports vertical or portrait images that preserve the original creative layout without cropping or resizing the image. The Vertical Image template is ideal for campaigns that rely on vertical-first visuals such as product showcases, posters, or reel-style creatives, ensuring the content appears exactly as designed. This template also minimizes redesigning assets for square or landscape formats.
-
-This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles.
-
-<Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" width="35% " />
 
 # Push Campaign Setup
 
@@ -344,42 +335,6 @@ You can use this section to customize Android-specific behavior for your push us
 
     <tr>
       <td>
-        Expanded button
-      </td>
-
-      <td>
-        A Call to Action (CTA) button displayed in the expanded view of the notification. You can configure the button text, deep link URL and colors. Enables users to take immediate action from the notification. If the button is configured, it is mandatory to add the deep link URL.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Collapsed Button
-      </td>
-
-      <td>
-        A CTA button displayed in the collapsed view of the notification. Allows users to interact with the notification without expanding it. You can configure visibility based on whether the button should appear in collapsed view. If the button is configured, it is mandatory to add the deep link URL.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         Deeplink URL
       </td>
 
@@ -578,78 +533,6 @@ You can use this section to customize Android-specific behavior for your push us
         All
       </td>
     </tr>
-
-    <tr>
-      <td>
-        Body Text Line 1
-      </td>
-
-      <td>
-        The first body text of your notification. Use this to add further details to your campaign.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Body Text Line 2
-      </td>
-
-      <td>
-        The second body text of your notification. Use this to add further details to your campaign.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Body text line 1 color
-      </td>
-
-      <td>
-        Allows you to customize the color of the Body text line 1 using a HEX code. This helps ensure the text stands out or aligns with your brand colors.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Body text line 2 color
-      </td>
-
-      <td>
-        Allows you to customize the color of the Body text line 2 using a HEX code. This helps ensure the text stands out or aligns with your brand colors.
-      </td>
-
-      <td>
-        Optional
-      </td>
-
-      <td>
-        Vertical Image
-      </td>
-    </tr>
   </tbody>
 </Table>
 
@@ -667,8 +550,6 @@ You can use this section to customize Apple-specific behavior for your push usin
 | Relevance Score                                          | Determines the importance of a notification when grouped in the iOS notification summary. Marketers can now set up the _Relevance Score_ for every notification when creating a Push campaign. This directly impacts the order of notifications when grouped. The score ranges from`0` (lowest) to `1` (highest). Notifications with higher scores take precedence. This feature was introduced in iOS 15 and later versions. | Optional          | All                    |
 | Category                                                 | Specifies a registered iOS category that groups notifications by type and defines custom actions (for example, buttons). Categories must be pre-registered in the app. Each category can support up to four actions.                                                                                                                                                                                                          | Optional          | All                    |
 | Mutable Content                                          | Sends the `mutable-content` flag with the payload, allowing your app’s service extension to modify the push content before it is displayed (for example, attach media, customize text). For more info, refer to Apple’s documentation on [Modifying Content in Newly Delivered Notifications](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications).                | Optional          | All                    |
-| Expanded Image                                           | A larger image displayed when the user expands the notification. Supports image URL or upload. You can add a fixed or dynamically generated URL to include rich media in your push notifications, images for Android, and both images and videos for iOS.                                                                                                                                                                     | Optional          | Vertical Image         |
-| Expanded button                                          | A Call to Action (CTA) button displayed in the expanded view of the notification. You can configure the button text, deep link URL and colors. Enables users to take immediate action from the notification. If the button is configured, it is mandatory to add the deep link URL.                                                                                                                                           | Optional          | Vertical Image         |
 
 ## Custom Key-Values
 

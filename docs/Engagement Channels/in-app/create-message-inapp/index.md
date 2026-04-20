@@ -46,15 +46,19 @@ You must indicate the target audience for your campaign. You can specify your ta
 
 <Image align="center" alt={964} border={true} caption="Define Target Segment - Who" title="Define Target Audience" src="https://files.readme.io/f1fee47-campaign_Who_Live_segment.png" />
 
-> ❗️ Source Event Property
->
-> The CleverTap source event property is not supported for web pop-up and mobile in-app campaigns.
+<Callout icon="❗️" theme="error">
+  #### Source Event Property
+
+  The CleverTap source event property is not supported for web pop-up and mobile in-app campaigns.
+</Callout>
 
 You can also create the target based on past user behavior and user properties or live (ongoing) user behavior. The latter is useful to send out real-time, triggered In-App campaigns.
 
-> 🚧 In-App Delay and Inaction
->
-> When creating an In-App campaign, we recommend keeping the delay to less than 20 minutes.
+<Callout icon="🚧" theme="warn">
+  #### In-App Delay and Inaction
+
+  When creating an In-App campaign, we recommend keeping the delay to less than 20 minutes.
+</Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users when they add a product to their cart but do not finish transacting within 10 minutes.
 

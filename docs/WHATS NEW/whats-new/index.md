@@ -173,6 +173,45 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="Web-Inbox-Launch">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#Web-Inbox-Launch"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img
+        src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg"
+        alt="Campaigns"
+        class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Web Inbox</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now use <b>Web Inbox</b> to control how messages are delivered and
+    displayed to users. This channel helps reduce message fatigue while enabling
+    more effective, time-sensitive communication.</p>
+    <p>With this enhancement, you can:</p>
+    <ul>
+      <li>Set global or campaign-level frequency caps to control how often users
+      see messages</li>
+      <li>Configure flexible time-to-live settings, with durations as low as
+      one hour</li>
+      <li>Limit the number of messages displayed in the inbox to maintain a
+      clean user experience</li>
+      <li>Deliver high-urgency campaigns while maintaining a streamlined inbox
+      experience</li>
+    </ul>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/web-inbox"
+    target="_blank">Web Inbox</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<br />
+
 ## March
 
 <HTMLBlock>{`

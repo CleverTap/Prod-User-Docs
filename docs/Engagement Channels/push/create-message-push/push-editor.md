@@ -290,6 +290,24 @@ You can use this section to customize Android-specific behavior for your push us
 
     <tr>
       <td>
+        Collapsed Image
+      </td>
+
+      <td>
+        An image displayed in the collapsed view of the notification. You can use the same image as the expanded view or provide a separate image. Supports image URL or upload. This allows flexibility in how the notification appears in its compact state.
+      </td>
+
+      <td>
+        Optional
+      </td>
+
+      <td>
+        All
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Large Icon
       </td>
 

@@ -50,15 +50,11 @@ You must indicate the target audience for your campaign. You can specify your ta
 >
 > The CleverTap source event property is not supported for web pop-up and mobile in-app campaigns.
 
-> 🚧 Warning
->
-> When multiple In-App campaigns are created for a single event scheduled to run simultaneously, CleverTap delivers the first campaign that was created.
-
 You can also create the target based on past user behavior and user properties or live (ongoing) user behavior. The latter is useful to send out real-time, triggered In-App campaigns.
 
 > 🚧 In-App Delay and Inaction
 >
-> We recommend creating a Past Behavior campaign for all campaigns where the delay is lesser than 20 minutes for an In-App  campaign.
+> When creating an In-App campaign, we recommend keeping the delay to less than 20 minutes.
 
 For instance, you can create a live _Inaction within time_ campaign that targets users when they add a product to their cart but do not finish transacting within 10 minutes.
 

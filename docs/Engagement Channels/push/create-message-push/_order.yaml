@@ -1,4 +1,5 @@
 - push-editor
+- push-editor-1
 - create-message-advanced-personalization
 - create-message-emoticon-support
 - create-push-message-custom-key-value-pair
@@ -7,4 +8,3 @@
 - test-push-notifications
 - post-action-webhooks
 - post-action-webhooks-via-campaigns-and-api
-- push-editor-1

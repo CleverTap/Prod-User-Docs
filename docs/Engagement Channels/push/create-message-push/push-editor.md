@@ -794,7 +794,7 @@ Have your app running our latest SDK (versions v3.1.4 or higher) and follow the 
 
 ### Notification Tray Priority
 
-On Android, you can also set a priority level for each notification to influence how prominently it is displayed. The higher the priority, the more noticeable it will be.
+On Android, you can also set a priority level for each notification to influence how prominently it is displayed. The higher priority items are more noticeable.
 
 Select any of the following options from the _Notification tray priority_.
 

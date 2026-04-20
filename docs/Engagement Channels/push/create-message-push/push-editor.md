@@ -948,7 +948,7 @@ This option determines how and when a notification is dismissed from the notific
 
 The following are the available options:
 
-* **Manual:** The notification stays in the tray until the user manually removes it. This option is ideal for important messages that should remain visible until acknowledged by the user.
+* **Manual:** The notification stays in the tray until the user manually removes it. This option is ideal for important messages that must remain visible until acknowledged by the user.
 * **Auto**: The notification is automatically dismissed after a specified duration, up to a maximum of 24 hours. This option works well for temporary or time-bound alerts that do not require user interaction.
 
 <Image align="center" alt="Dismiss Notificatiom" border={true} caption="Dismiss Notification" src="https://files.readme.io/c740918fae5e4fbf4e8e8dad8203a1b9004967ae92bac1c429c9d7080107dc10-image.png" width="65% " />

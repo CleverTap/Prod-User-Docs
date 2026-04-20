@@ -131,7 +131,7 @@ This template supports vertical or portrait images that preserve the original cr
 
 This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles.
 
-<Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/8d7c562ee3568bc402a22f2f67578a7102c4d3e7ddb036799fbd6c3ebff840db-ChatGPT_Image_Apr_13_2026_at_04_13_04_PM.png" width="35% " />
+<Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" width="35% " />
 
 # Push Campaign Setup
 

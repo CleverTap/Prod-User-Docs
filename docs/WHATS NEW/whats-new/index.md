@@ -210,8 +210,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-<br />
-
 ## March
 
 <HTMLBlock>{`

@@ -29,7 +29,7 @@ For example, if a user clicks a Shoes Promotion push notification and then purch
 <Callout icon="📘" theme="info">
   #### Data Freshness
 
-  ROI Insights data is refreshed periodically and may take up to 12 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the Engagement Performance Table.
+  ROI Insights data is refreshed periodically and may take up to 6 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the Engagement Performance Table.
 
   Because attribution is calculated using a Last Touch model, conversion metrics may update only after click and conversion events are processed.
 </Callout>

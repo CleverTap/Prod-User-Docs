@@ -12,12 +12,6 @@ metadata:
 
 Configuring Amazon Redshift with CleverTap enables seamless data import, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
 
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  Amazon Redshift integration is available as part of CleverTap's Data Warehouse support. Contact your Customer Success Manager for access.
-</Callout>
-
 # Quick Start Guide for Existing Users
 
 <Accordion title="Expand for quick setup if you have previously configured an Amazon Redshift workspace and are familiar with the CleverTap dashboard. If you are setting up Amazon Redshift for the first time, skip to Prerequisites for Integration below.">

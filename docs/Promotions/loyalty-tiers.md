@@ -1,9 +1,8 @@
 ---
 title: Loyalty Tiers
 excerpt: >-
-  Learn how to set up loyalty tiers that automatically group users by activity,
-  reward them at each level, and regularly re-evaluate eligibility using
-  configurable expiry and downgrade rules.
+  Learn how to create, migrate, and manage a loyalty tier program in CleverTap
+  Promotions.
 deprecated: false
 hidden: true
 metadata:

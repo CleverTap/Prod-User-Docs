@@ -2,7 +2,7 @@
 title: Create Loyalty Tiers
 excerpt: Learn how to create loyalty tiers in CleverTap promotions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

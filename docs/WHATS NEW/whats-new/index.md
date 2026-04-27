@@ -155,6 +155,33 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## April
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="auto-campaign-archival">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#Auto-Campaign-Archival"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Auto Campaign Archival</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>Auto Campaign Archival is now available to keep your campaign listing fast, clean, and easy to navigate.</p>
+    <p>Campaigns in a Completed or Stopped state will now be automatically archived after 6 months (180 days). The archival runs on a rolling basis, and moves older campaigns to the Archived section while keeping your active workspace optimized.</p>
+    <p>With Auto Campaign Archival, you can:</p>
+    <ul>
+      <li>Search faster and load campaign listings more quickly.</li>
+      <li>Navigate your workspace with less clutter.</li>
+      <li>Access archived campaigns at any time, as all actions remain available.</li>
+    </ul>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/enhanced-campaign-list-page#archive-campaigns" target="_blank">Campaign Overview</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="cross-project-cloning-for-engagements">
   <div class="release-note-header">
     <div class="anchor-link-icon">

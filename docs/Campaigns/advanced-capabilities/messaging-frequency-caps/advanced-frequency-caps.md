@@ -4,7 +4,7 @@ excerpt: >-
   Frequency caps limit how often users receive messages when they qualify for
   multiple or recurring campaigns.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

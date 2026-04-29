@@ -18,13 +18,13 @@ This feature allows you to monitor the status of your data exports via Webhook o
 
 > 📘 Supported Partners for Export Status
 >
-> Currently, we provide events export status for Amazon S3 and Google Cloud Platform (GCP) partners only.
+> Currently, we provide events export status for Amazon S3, Microsoft Azure, and Google Cloud Platform (GCP) partners only.
 
 This document further explains the prerequisites, how to enable and disable export status alerts, and track and monitor them.
 
 # Prerequisite
 
-Ensure you integrate with the preferred technology partners: 
+Ensure you integrate with the preferred technology partners:
 
 * [Amazon S3](https://docs.clevertap.com/docs/aws-s3-export)
 * [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/data-export-to-gcp)
@@ -35,7 +35,7 @@ Ensure you integrate with the preferred technology partners:
 This procedure involves the following major steps:
 
 1. [Set up a Webhook](https://docs.clevertap.com/docs/setup-webhooks)
-2. [Enable Status Alerts for Exports on CleverTap Dashboard](doc:status-alerts-for-exports#enable-status-alerts-for-exports)\
+2. [Enable Status Alerts for Exports on CleverTap Dashboard](doc:status-alerts-for-exports#enable-status-alerts-for-exports)  
    OR
 3. [Add or Modify the Webhook](doc:status-alerts-for-exports#add-or-modify-the-webhook)
 
@@ -43,17 +43,15 @@ This procedure involves the following major steps:
 
 To enable status alerts for exports:
 
-1. On the CleverTap dashboard, go to *Settings* > *Partners* > *Exports center*. 
+1. On the CleverTap dashboard, go to _Settings_ > _Partners_ > _Exports center_.
 
-<Image alt="Exports center" align="center" border={true} src="https://files.readme.io/fa86e8d47bcd6a79e7e231bf6fd4833202cc60b759573e456f07a8aa63ba557b-image.png">
-  Exports center
-</Image>
+<Image align="center" alt="Exports center" border={true} caption="Exports center" src="https://files.readme.io/fa86e8d47bcd6a79e7e231bf6fd4833202cc60b759573e456f07a8aa63ba557b-image.png" />
 
 2. Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts** window appears.
 
-<Image align="center" className="border" width="90% " border={true} src="https://files.readme.io/8037095-image.png" />
+<Image align="center" border={true} width="90% " src="https://files.readme.io/8037095-image.png" className="border" />
 
-2. Toggle on the **Enable the status to get notified about exports** switch to enable the status alerts. 
+2. Toggle on the **Enable the status to get notified about exports** switch to enable the status alerts.
 3. Click **Save**.
 
 > 📘 Note
@@ -62,23 +60,23 @@ To enable status alerts for exports:
 
 ## Disable Status Alerts for Exports
 
-To disable status alerts for exports: 
+To disable status alerts for exports:
 
 1. Toggle off the **Enable the status to get notified about exports** switch.
 2. Click **Save**.
 
 ## Add or Modify the Webhook
 
-If required, edit the Webhook as follows: 
+If required, edit the Webhook as follows:
 
 1. On the **Exports** page, Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts** window appears.
-2. On the **Enable export status alerts** pane, you can either create a new URL or use the existing one. 
+2. On the **Enable export status alerts** pane, you can either create a new URL or use the existing one.
 
-* To use an existing Webhook URL, select one of the preferred Webhook URLs from the **Webhook name** drop-down list. 
-* If required, to create a new Webhook URL, click the **Add webhook** link.\
+* To use an existing Webhook URL, select one of the preferred Webhook URLs from the **Webhook name** drop-down list.
+* If required, to create a new Webhook URL, click the **Add webhook** link.  
   For more information about creating Webhook URLs, refer to the [Webhooks](https://docs.clevertap.com/docs/setup-webhooks) documentation. Once you create a new Webhook, click the **Refresh** icon for the new Webhook to appear here.
 
-3. Click **Save**. 
+3. Click **Save**.
 
 > 📘 Note
 >
@@ -99,7 +97,7 @@ The JSON payload configured on the Webhook URL will be pushed to the user once t
 }
 ```
 
-The JSON payload contains the following parameters: 
+The JSON payload contains the following parameters:
 
 <Table align={["left","left"]}>
   <thead>
@@ -151,7 +149,7 @@ The JSON payload contains the following parameters:
       </td>
 
       <td>
-        Status of the export process. For example, Initiated or Completed.  
+        Status of the export process. For example, Initiated or Completed.
 
         <li>**One-time**: a one-time export is initiated and completed just once.</li><li>**Recurring**: a recurring export is initiated and completed repeatedly at set intervals or schedules.</li>
       </td>

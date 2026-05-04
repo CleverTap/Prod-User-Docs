@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting and FAQs
+title: Push-Troubleshooting and FAQs
 excerpt: >-
   Refer to our frequently asked questions and troubleshoot any issues with your
   Push campaign.
@@ -31,4 +31,3 @@ Use this if you are creating campaigns using the new dashboard-based experience 
 Use this if you are using the previous push setup via the existing SDK-based campaign workflow.
 
 [Legacy Push FAQs](doc:legacy-push-to-be-deprecated)
-

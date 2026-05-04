@@ -5,11 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
 # FAQs
-
-<br />
 
 <Accordion title="Existing Campaigns and Migration">
   **1. What happens to my existing campaigns?**\

@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# FAQs
+, potentially affecting# FAQs
 
 <Accordion title="Existing Campaigns and Migration">
   **1. What happens to my existing campaigns?**\
@@ -25,9 +25,8 @@ metadata:
   Yes, they will load seamlessly in the new UI with all configurations intact.
 
   **6. I use recurring campaign exports in my data pipelines. Will this change impact me?**\
-  ->If you are using recurring campaign exports or consuming CleverTap event data in downstream systems, you must review the latest event updates introduced as part of this release.
-  New events and fields may be added, which could impact how your pipelines process or interpret campaign data. No existing events are being removed, but new events may start appearing in your exports, so validating your pipelines is advised.
-  CleverTap recommends to review the updated event changelog here: \[Changelog] ([https://docs.clevertap.com/docs/events-changelog](https://docs.clevertap.com/docs/events-changelog))
+If you consume CleverTap event data in downstream systems. New events and fields may be added that could affect how your pipelines process or interpret campaign data.
+No existing events are being removed; however, new events may start appearing in your exports — so validating your pipelines is advised. CleverTap recommends to review the updated event changelog here: \[Changelog] ([https://docs.clevertap.com/docs/events-changelog](https://docs.clevertap.com/docs/events-changelog))
 </Accordion>
 
 <Accordion title="SDK & Technical Dependencies">

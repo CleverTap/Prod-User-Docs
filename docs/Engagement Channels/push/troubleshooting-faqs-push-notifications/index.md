@@ -24,7 +24,7 @@ To help you find the right information quickly, choose the section that matches 
 
 Use this if you are creating campaigns using the new dashboard-based experience with enhanced capabilities and workflows.
 
-[Next Gen Push FAQs](doc:push-faqs)
+[Push FAQs](doc:push-faqs) 
 
 ### Legacy Push
 

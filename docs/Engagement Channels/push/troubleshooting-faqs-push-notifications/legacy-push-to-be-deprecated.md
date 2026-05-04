@@ -444,11 +444,9 @@ Explore troubleshooting tips and FAQs for Push Notifications by expanding the se
   > 📘 Note
   >
   > The NextGen Segment Builder is currently in Private Beta. For more information, refer to [NextGen Segment Builder](doc:segmentation).
-  </details>
+</details>
 
 # Troubleshooting
-
-<br />
 
 <details>
   <summary>Push Notification Errors in iOS</summary>

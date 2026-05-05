@@ -31,12 +31,9 @@ The following benefits help you maintain a connected customer data strategy whil
 * **CRM-Triggered Engagement**
 
   Use CRM lifecycle changes, such as task creation, opportunity updates, case resolutions, or custom object changes, as triggers for CleverTap Journeys, campaigns, and messages.
-* **Behavioral Data in CRM**
-
-  Export user activity, campaign engagement, and survey responses from CleverTap into Salesforce to help sales teams prioritize outreach and track conversion.
 * **Automated Lead Enrichment**
 
-  Use CleverTap campaigns to capture user signals (for example, NPS responses or feedback surveys) and push them into Salesforce objects for sales or success follow-up. (@Parth: how is this different from the above bullet?)
+  Use CleverTap campaigns to capture user signals (for example, NPS responses or feedback surveys) and push them into Salesforce objects for sales or success follow-up.
 
 # How Integration Works
 

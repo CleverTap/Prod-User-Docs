@@ -152,6 +152,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## May 
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="promotions" id="custom-rewards">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#custom-rewards"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Custom Rewards</h3>
+    <div class="badge new feature">NEW FETURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>Custom Rewards is now available for all Promo customers. It enables you to go beyond traditional coupons and points to deliver high-value rewards through Promo Campaigns. </p>
+    <p>With Custom Rewards, you can:</p>
+    <p>
+      <ul>
+        <li>Manage any external reward catalog on CleverTap to distribute personalized rewards and run loyalty campaigns beyond traditional reward types.</li>
+        <li>Automate reward distribution for existing reward engines, including coupons, real money wallets, and other systems, without manual orchestration.</li>
+        <li>Track and reconcile reward delivery using reward delivery metrics.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href=" https://docs.clevertap.com/docs/custom-rewards" target="_blank">Custom Rewards</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## April
 
 <HTMLBlock>{`

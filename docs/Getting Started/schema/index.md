@@ -232,12 +232,6 @@ You can restore a previously discarded event, event property, or user property f
   These measures prevent accidental or repeated changes to your schema.
 </Callout>
 
-<Callout icon="📘" theme="info">
-  **Private Beta**
-
-  This feature is currently available in Private Beta for selected customers. To enable, contact your Customer Success Manager or raise a support ticket.
-</Callout>
-
 ### Restore a Single Item
 
 1. Go to the _Custom events_ page.

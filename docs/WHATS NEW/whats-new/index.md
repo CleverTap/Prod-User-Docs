@@ -155,6 +155,39 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## April
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="new-in-frequency-limits-advanced-frequency-limits">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#new-in-frequency-limits-advanced-frequency-limits"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img
+        src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg"
+        alt="Frequency Limits"
+        class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Advanced Frequency Limits</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>Advanced Frequency Limits is now available, providing a centralized system to control how often users are contacted across campaigns, channels, and lifecycle stages. As users qualify for multiple campaigns simultaneously, Advanced Frequency Limits helps prevent overlapping or excessive messaging through granular, user-level communication controls.</p>
+    <p>With Advanced Frequency Limits, you can:</p>
+    <p>
+      <ul>
+        <li>Define total messages per user across all campaigns using the Global Limits option.</li>
+        <li>Apply channel-level caps within an overall limit.</li>
+        <li>Apply different limits for onboarding, engagement, retention, and reactivation stages.</li>
+        <li>Exempt transactional and high-priority communications from frequency limits.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/advanced-frequency-caps" target="_blank">Messaging Frequency Caps</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="auto-campaign-archival">
   <div class="release-note-header">
     <div class="anchor-link-icon">

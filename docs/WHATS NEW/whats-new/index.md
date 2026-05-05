@@ -152,7 +152,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## May 
+## May
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="promotions" id="custom-rewards">
@@ -221,7 +221,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <div class="release-note article" data-category="campaigns" id="auto-campaign-archival">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#Auto-Campaign-Archival"><i class="fa-light fa-anchor"></i></a>
+      <a href="#auto-campaign-archival"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>

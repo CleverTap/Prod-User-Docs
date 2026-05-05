@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create, migrate, and manage a loyalty tier program in CleverTap
   Promotions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

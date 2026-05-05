@@ -842,7 +842,7 @@ next:
         </div>
     </div>
 </a> 
-    <a href="https://docs.clevertap.com/docs/salesforce-via-zapier">
+    <a href="https://docs.clevertap.com/docs/salesforce-crm">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/182f0d5e0bd94dfa620de3a37f1796225bf374c8c28e897824595944ecb299e2-salesforce-logo.webp" alt="Salesforce CRM" class="logo">

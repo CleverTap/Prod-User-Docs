@@ -37,7 +37,7 @@ To add a provider, perform the following steps:
 1. From the dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _Email_.
 2. Click **+ Provider** to add a provider.
 
-<Image alt={1162} border={true} src="https://files.readme.io/9206de0-Plus_provider.png" title="Click +Provider" className="border" /> Add Provider
+<Image align="center" border={true} caption="Add Provider" src="https://files.readme.io/9206de0-Plus_provider.png" />
 
 3. Add the following provider details:
 
@@ -160,13 +160,13 @@ To add a provider, perform the following steps:
 </Table>
 
 3. Click **Save**.
-4. (Optional) Click **Send Test Email** to check if the provider has been set up correctly and can send emails.
+4. (Optional) Click **Send Test Email** to verify that the provider is set up correctly and can send emails.
 
 # Add Request ID
 
 In PBS recurring and live campaigns, the same user may receive multiple emails in a single day, sometimes just seconds apart. As these messages are part of the same campaign, it can be difficult to differentiate when tracking delivery or engagement for each individual message.
 
-To solve this, you can enable the _Add request ID_ option while setting up the email provider. This unique system-generated identifier (`systemRequestId)`) is assigned to every email sent using that provider configuration.
+To solve this, enable the _Add request ID_ option when setting up the email provider. This unique system-generated identifier (`systemRequestId)`) is assigned to every email sent using that provider configuration.
 
 <Image align="center" border={true} caption="Add Request ID" src="https://files.readme.io/8c40201c0deaf001517889d8fca6fb6044b4ecd24a19baa30b98aaa5fdf3f9e5-Add_Request_ID.png" width="45% " />
 
@@ -184,11 +184,11 @@ You can disable this option at any time by editing the provider configuration. D
 
 This section describes actions for the available email service providers.
 
-<Image alt={736} border={true} src="https://files.readme.io/36c908a-Email_Operations.png" title="Email Provider Operations" className="border" />  Provider Operations
+<Image align="center" border={true} caption="Provider Operations" src="https://files.readme.io/36c908a-Email_Operations.png" />
 
 ## Archive Service Providers
 
-You can archive any current email service providers from the email settings. Archiving the email service provider stops any active _Campaigns_ or _Journeys_ for this provider. The archived provider will not be available for use in the future. However, it will still retain the provider stats.
+You can archive any current email service providers from the email settings. Archiving the email service provider stops any active _Campaigns_ or _Journeys_ for this provider. The archived provider will not be available for future use. However, it will still retain the provider stats.
 
 Follow the steps to archive an email service provider:
 
@@ -198,7 +198,7 @@ Follow the steps to archive an email service provider:
 
 ## Delete Service Providers
 
-You can delete any current email service providers from the email settings. Deleting the email service provider will remove all existing data from our system and stop any active _Campaigns_ or _Journeys_.  The deleted provider will not be available for use in the future, and the corresponding provider stats won't be retained.
+You can delete any current email service providers from the email settings. Deleting the email service provider will remove all existing data from our system and stop any active _Campaigns_ or _Journeys_.  The deleted provider will no longer be available for use, and the corresponding provider stats won't be retained.
 
 Follow the steps to delete an email service provider:
 
@@ -230,7 +230,7 @@ Set a service provider as the default so that the same provider is used to deliv
 
 # Inbox Previews
 
-Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also allows viewing previews across devices and inboxes before you send out a campaign.
+Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also lets you view previews across devices and inboxes before you send a campaign.
 
 > 🚧 Account Specifications
 >
@@ -249,9 +249,9 @@ To enable or disable the inbox preview, perform the following steps:
 >
 > You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
 
-<Image alt={1172} border={true} src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" title="Enable or Disable Inbox Preview" className="border" />  Enable or Disable Inbox Previews
+<Image align="center" border={true} caption="Enable or Disable Inbox Preview" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
 
-The _Previews_ tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system.
+The _Previews_ tab lists the available email inboxes. For example, a mobile device running Gmail on Android 8, or a computer running Apple Mail 10 on OS X 10.10.
 
 > 🚧 Account Specifications
 >
@@ -260,7 +260,7 @@ The _Previews_ tab lists the available email inboxes. For example, a mobile devi
 
 # Advanced Setup
 
-The _Advance Setup_ for email campaigns in CleverTap allows users to configure more complex and fine-tuned settings for their email campaigns. This feature typically includes options such as:
+The _Advance Setup_ for email campaigns in CleverTap allows users to configure more complex, fine-tuned settings for their campaigns. This feature typically includes options such as:
 
 * _[AppsFlyer OneLink](doc:appsflyer-onelink)_: Enables you to set up deep links using Appsflyer, guiding recipients directly to specific in-app content when they click on an email link.
 * _[Font Manager](doc:font-manager)_: Allows font customization within the email template, giving more control over the look and feel of the email design to align with brand guidelines.

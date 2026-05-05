@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to migrate existing users and historical activity into a new loyalty
   tier system on CleverTap.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

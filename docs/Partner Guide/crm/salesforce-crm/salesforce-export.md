@@ -67,7 +67,7 @@ The External Client App generates the OAuth Client ID and Client Secret that Cle
 
 1. From the Salesforce dashboard, open _Setup_.
 2. Go to _Platform Tools_ > _Apps_ > _External Client Apps_ > _Settings_.
-3. Toggle ON the _Allow access to External Client App consumer secrets via REST API_ and _Allow creation of connected apps_ options. (@Parth: there is no such option - there is an option to create a connected app - please check.)
+3. Toggle ON the _Allow access to External Client App consumer secrets via REST API_ and _Allow creation of connected apps_ options. 
 
    <Image align="center" border={true} caption="Create External Client App" src="https://files.readme.io/5b0f4947967e9da2b5045a7999778a1e743dead6a3e3f73d9e21530701eb7ad1-Create_External_Client_App.webp" />
 4. Go to External Client App Manager and click New External Client App.

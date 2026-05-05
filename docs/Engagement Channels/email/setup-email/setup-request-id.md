@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-This section covers various email tasks, including the integrations and inbox previews. No matter the type of customer emails, all businesses have the same goal of getting to the correct recipient's inbox. By setting up your email correctly, you ensure successful email deliverability.
+This section covers various email tasks, including the integrations and inbox previews. No matter the type of customer email, all businesses share the same goal of getting to the correct recipient's inbox. By setting up your email correctly, you ensure successful email deliverability.
 
 # Email Integrations
 
@@ -232,9 +232,11 @@ Set a service provider as the default so that the same provider is used to deliv
 
 Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also lets you view previews across devices and inboxes before you send a campaign.
 
-> 🚧 Account Specifications
->
-> Email previews are available only if you have opted for the email add-on from CleverTap.
+<Callout icon="🚧" theme="warn">
+  #### Account Specifications
+
+  Email previews are available only if you have opted for the email add-on from CleverTap.
+</Callout>
 
 ## Enable or Disable Inbox Previews
 
@@ -245,9 +247,11 @@ To enable or disable the inbox preview, perform the following steps:
 3. Select a client from the list.
 4. Click on the ellipsis and click **Enable** or **Disable**.
 
-> 📘 Multi-select
->
-> You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
+<Callout icon="📘" theme="info">
+  #### Multi-select
+
+  You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
+</Callout>
 
 <Image align="center" border={true} caption="Enable or Disable Inbox Preview" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
 

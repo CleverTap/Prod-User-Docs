@@ -50,7 +50,7 @@ You can provide a direct URL for media. Dynamic URLs are also supported for pers
 * Enter a complete image or video URL manually.
 * Optionally, use dynamic values to personalize the media source.
 
-This documentation explains every component clearly to support both workflows.
+This documentation explains every component clearly to support these workflows.
 
 ## RCS Template Types
 

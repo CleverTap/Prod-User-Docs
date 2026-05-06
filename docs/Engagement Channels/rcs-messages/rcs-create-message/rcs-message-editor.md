@@ -45,10 +45,10 @@ When using an approved template in the editor, you will see fields pre-filled wi
 
 ### Free-form Templates
 
-For carriers where template approval is not required, you can build templates directly in the editor. These templates allow full flexibility:
+You can provide a direct URL for media. Dynamic URLs are also supported for personalized content.
 
-* You define all text, media, button behavior, and placeholders.
-* There are no locked fields.
+* Enter a complete image or video URL manually.
+* Optionally, use dynamic values to personalize the media source.
 
 This documentation explains every component clearly to support both workflows.
 

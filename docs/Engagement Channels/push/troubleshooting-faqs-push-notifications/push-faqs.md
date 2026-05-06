@@ -26,7 +26,7 @@ metadata:
 
   **6. I use recurring campaign exports in my data pipelines. Will this change impact me?**\
   If you consume CleverTap event data in downstream systems. New events and fields may be added that could affect how your pipelines process or interpret campaign data.
-  No existing events are being removed; however, new events may start appearing in your exports — so validating your pipelines is advised.
+  No existing events are being removed; however, new event properties may start appearing in your exports — so validating your pipelines is advised.
   CleverTap recommends to review the updated [Event Changelog](https://docs.clevertap.com/docs/events-changelog).
 </Accordion>
 

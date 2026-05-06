@@ -3728,6 +3728,137 @@ next:
 </html>
 `}</HTMLBlock>
 
+# Video Caller ID
+
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Grid</title>
+    <style>
+        * {am
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       .content-toc.grid-25{
+      	display:None;
+      }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+       
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .integration-card { /* styling for the cards */
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            #background: #F5F5F5;
+          	background: white;
+            border-radius: 12px;
+          	min-width:200px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .integration-card:hover {
+            
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding-right: 1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 1rem;
+            height: 100%;
+        }
+
+        .logo { /* logo sizing */
+            width: 50px;
+            height: 50px;
+            object-fit:fill;
+            flex-shrink: 0;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+            height: 100%;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            color: #92969f;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+       
+/* responsive elements */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <!-- use this card below for replication and change the link to the desired one -->
+   <a href="https://docs.clevertap.com/docs/truecaller">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/266fe89ac5d62d5e6658c5f02ed1dacdf044f9e02b4c0dec0a572ea00aeb767f-Truecaller_icon.jpeg" alt="Truecaller" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Truecaller</div>
+            <div class="category">Video Caller ID</div>
+        </div>
+    </div>
+</a>
+  </div>
+</body>
+</html>
+`}</HTMLBlock>
+
 # WhatsApp
 
 <HTMLBlock>{`

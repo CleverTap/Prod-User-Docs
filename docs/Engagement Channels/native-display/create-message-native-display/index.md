@@ -263,6 +263,21 @@ The delivery preferences for Live campaigns can be set as follows:
 
 ### Delivery preferences
 
+#### Native Display Priority
+
+The Native Display Priority dropdown allows you to set the priority levels from 1 (lowest) to 10 (highest), with 1 being the default priority. Configuring the Native Display priority allows you to prevent priority conflicts, particularly for campaigns configured on the same triggers.
+
+<Image align="center" alt="Set In-App Priority" border={true} caption="Set Native Display Priority" src="https://files.readme.io/003a54db61496244ea090755731ec073ac0a516aff539414c97704152d9d42b6-image.png" />
+
+Example:  
+Consider a scenario in which the two Native Display campaigns are triggered by the _App Launched_ event. Campaign A  has a priority 8 and campaign B has a priority 10. Both campaigns qualify under the defined trigger; however, end users will receive campaign B because its priority level is higher.
+
+<Callout icon="📘" theme="info">
+  #### Native Display Campaign with Same Priority
+
+  In cases where two campaigns have the same event trigger and Native Display priority, all the campaigns are delivered to the end users.
+</Callout>
+
 #### Set frequency
 
 From the Delivery preferences section, select the days and the time frame to deliver the message.  

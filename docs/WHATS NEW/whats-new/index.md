@@ -155,10 +155,10 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="data-and-integrations" id="snowflake-export">
+<div class="release-note article" data-category="data-and-integrations" id="truecaller-clevertaps-new-enagagement-channel">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#snowflake-export"><i class="fa-light fa-anchor"></i></a>
+      <a href="#truecaller-clevertaps-new-enagagement-channel"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
@@ -179,9 +179,9 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <li>Configure the integration in approximately 10 minutes using a webhook with no engineering dependencies.</li>
       </ul>
     </p>
-<img src="https://files.readme.io/0700e9748fee0f6cfc641b7d571e652046246aa4f6a2534b81ef602b9f87e9e9-Truecaller_Integration.png" alt="Truecaller Integration">
+<p><img src="https://files.readme.io/0700e9748fee0f6cfc641b7d571e652046246aa4f6a2534b81ef602b9f87e9e9-Truecaller_Integration.png" alt="Truecaller Integration"> </p>
 
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/truecaller" target="_blank">Truecaller.</a></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/truecaller" target="_blank">Truecaller</a>.</p>
   </div>
   <hr/>
 </div>

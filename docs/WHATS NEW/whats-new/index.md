@@ -179,7 +179,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <li>Configure the integration in approximately 10 minutes using a webhook with no engineering dependencies.</li>
       </ul>
     </p>
-<p><img src="https://files.readme.io/0700e9748fee0f6cfc641b7d571e652046246aa4f6a2534b81ef602b9f87e9e9-Truecaller_Integration.png" alt="Truecaller Integration"> </p>
+<p><img src="https://files.readme.io/cef720bebeaf829f6efc212fbaf691c438cab02d8d22343ac72eca28d89fed10-Truecaller_Integration_new.png" alt="Truecaller Integration"> </p>
 
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/truecaller" target="_blank">Truecaller</a>.</p>
   </div>

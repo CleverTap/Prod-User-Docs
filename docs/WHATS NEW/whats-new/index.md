@@ -155,6 +155,39 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="snowflake-export">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#snowflake-export"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Truecaller, CleverTap's New Enagagement Channel</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now deliver verified, branded call-screen experiences directly from CleverTap campaigns and journeys using the Truecaller Integration.</p>
+
+    <p>With Truecaller integration, you can:</p>
+
+    <p>
+      <ul>
+        <li>Deliver branded call-screen experiences, including business name, logo, and contextual message, to build trust at the moment of contact.</li>
+        <li>Run outbound call campaigns, post-call pop-ups, missed-call recovery, and sticky messages as part of cross-channel journeys.</li>
+        <li>Use Liquid personalization, segment logic, and goal-event tracking as you do in every other CleverTap channel.</li>
+        <li>Configure the integration in approximately 10 minutes using a webhook with no engineering dependencies.</li>
+      </ul>
+    </p>
+<img src="https://files.readme.io/0700e9748fee0f6cfc641b7d571e652046246aa4f6a2534b81ef602b9f87e9e9-Truecaller_Integration.png" alt="Truecaller Integration">
+
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/truecaller" target="_blank">Truecaller.</a></p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="promotions" id="custom-rewards">
   <div class="release-note-header">
     <div class="anchor-link-icon">

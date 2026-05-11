@@ -20,17 +20,17 @@ For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP 
 
 The following table lists all available tool categories and the tools within each category:
 
-| Category           | Tools                                                                                                             |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Account Management | List My Account, Select Account                                                                                   |
-| Event Analytics    | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events                    |
-| Profile Analytics  | Get Profile Count, Get Real Time Count                                                                            |
-| Campaigns          | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft                               |
-| Analytics          | Prompt To Analytics                                                                                               |
-| Segments           | List Segment, Get Segment, Create Segment, Relevant Segments                                                      |
-| Journeys           | List Journeys, Get Journey Reports                                                                                |
-| Templates          | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates, Delete Email Templates |
-| Querying           | Prompt To CQL, Ask CleverTap                                                                                      |
+| Category                                                                   | Tools                                                                                                             |
+| :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                                                   |
+| [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events                    |
+| [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                                            |
+| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Create Segment, Relevant Segments                                                      |
+| [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft                               |
+| [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                                                |
+| [Analytics](doc:clevertap-mcp-tools-reference#analytics)                   | Prompt To Analytics                                                                                               |
+| [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                                      |
+| [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates, Delete Email Templates |
 
 # Account Management
 

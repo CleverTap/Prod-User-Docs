@@ -54,9 +54,9 @@ The following image shows the _Claude Settings_:
 
 The following steps help you to integrate CleverTap MCP in Claude:
 
-1. Connect the CleverTap MCP
-2. Enable in a Chat
-3. Verify the Connection
+1. [Connect the CleverTap MCP](doc:clevertap-mcp-server-integration-guide#connect-the-clevertap-mcp)
+2. [Enable in a Chat](doc:clevertap-mcp-server-integration-guide#enable-in-a-chat)
+3. [Verify the Connection](doc:clevertap-mcp-server-integration-guide#verify-the-connection)
 
 ## Connect the CleverTap MCP
 
@@ -127,8 +127,8 @@ The following image shows the ChatGPT settings:
 
 The following steps help you to integrate CleverTap MCP in ChatGPT:
 
-1. Enable in a Chat
-2. Verify the Connection
+1. [Enable in a Chat](doc:clevertap-mcp-server-integration-guide#enable-in-a-chat-1)
+2. [Verify the Connection](doc:clevertap-mcp-server-integration-guide#verify-the-connection-1)
 
 ## Enable in a Chat
 

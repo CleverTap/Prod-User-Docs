@@ -11,7 +11,7 @@ metadata:
 ---
 # Overview
 
-CleverTap MCP (Model Context Protocol) is a beta server that connects CleverTap directly to AI clients, including Anthropic Claude and ChatGPT. This guide helps you get the CleverTap MCP up and running in your preferred AI client so you can start interacting with your CleverTap account using natural language.
+CleverTap MCP (Model Context Protocol) is a beta server that connects CleverTap directly to AI clients, including Anthropic Claude and ChatGPT. This guide helps you get the CleverTap MCP up and running in your preferred AI client so you can start interacting with your CleverTap account using natural language. For more information on MCP Tools, refer to [CleverTap Tools Reference](doc:clevertap-mcp-tools-reference).
 
 <Callout icon="📘" theme="info">
   **Early Access**

@@ -123,15 +123,6 @@ The following table lists the tools available for managing email templates. Dele
 | List Email Templates   | Returns a list of all email templates available in the account, with names and metadata.                                                                              |
 | Get Email Templates    | Retrieves the full details of a specific email template by its ID, including the complete HTML body and configuration.                                                |
 
-# Fair Usage Policies
-
-The following table shows the usage limits applicable to all MCP Server operations:
-
-| Operation Type          | Rate Limit              | Applies To  |
-| ----------------------- | ----------------------- | ----------- |
-| Write (create / update) | 5 requests / 30 minutes | Per account |
-| Read                    | 20 requests / minute    | Per account |
-
 <Callout icon="📘" theme="info">
   **Support and Feedback**
 

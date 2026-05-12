@@ -1,9 +1,9 @@
 ---
 title: CleverTap MCP Tools Reference
 excerpt: >-
-  Learn how to use CleverTap MCP tools to query analytics, manage campaigns,
-  build segments, and explore customer data using natural language through AI
-  clients like Claude and ChatGPT.
+  Learn how to use CleverTap MCP tools to query, manage campaigns, build
+  segments, and explore customer data using natural language through AI clients
+  like Claude and ChatGPT.
 deprecated: false
 hidden: true
 metadata:
@@ -11,7 +11,7 @@ metadata:
 ---
 # Overview
 
-MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server exposes such tools for Claude and ChatGPT, enabling you to query analytics, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.  
+MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.  
 For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
 
 <Callout icon="📘" theme="info">
@@ -28,7 +28,6 @@ The following table lists all available tool categories and the tools within eac
 | [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Create Segment, Relevant Segments                                                      |
 | [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft                               |
 | [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                                                |
-| [Analytics](doc:clevertap-mcp-tools-reference#analytics)                   | Prompt To Analytics                                                                                               |
 | [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                                      |
 | [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates, Delete Email Templates |
 
@@ -94,14 +93,6 @@ The following table lists the tools available for viewing and reporting on Journ
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | List Journeys       | Returns a list of all Journeys configured in the CleverTap account, including journey names and statuses. For example: List all active Journeys in my account. |
 | Get Journey Reports | Fetches a detailed performance report for a specific Journey by its ID, including engagement metrics.                                                          |
-
-# Analytics
-
-The following table lists the tools available for running deeper behavioral analyses, including funnels, cohorts, flows, trends, and multi-dimensional pivots:
-
-| Tool / Function     | Description                                                                                                                                                                                                                                                                                                            |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prompt To Analytics | Perform behavioral analysis across user properties and events. Generate insights using capabilities such as Cohorts, Funnels, Trends, Flows, and Pivots to understand engagement, retention, conversions, and user behavior patterns. For example: Show me a funnel from App Launched to Charged for the last 30 days. |
 
 # Querying
 

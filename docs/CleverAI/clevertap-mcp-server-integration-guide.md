@@ -38,17 +38,18 @@ The following prerequisite must be met before connecting CleverTap MCP to Claude
 
 To add a custom connector manually in Claude, follow the steps:
 
-1. Open _Claude > Settings > Connectors_
-2. Go to the Connectors section in your Claude settings.
-3. Click **Add custom connector**. This opens the custom connector form.
-4. Enter the connector details:
+1. Open Claude.
+2. Go to _Settings > Connectors_.You can see a note that Connectors have moved to **Customize**.
+3. Click **Customize.**
+4. Click **+** to choose _Add custom connector_.
+5. Enter the connector details:
    1. Name: `CleverTap`
    2. URL: `https://us1.mcp-server.clevertap.com/mcp`
-5. Click **Add**, then **Connect**. The connector is saved and authenticated via CleverTap SSO.
+6. Click **Add**, then **Connect**. The connector is saved and authenticated via CleverTap SSO.
 
 The following image shows the _Claude Settings_:
 
-<Image align="center" border={true} caption="Add Custom Connector" src="https://files.readme.io/fe09788e677ec71bfced3047e27a1e9d697083f8916ce93a3857f8f738e30b83-image.png" width="65% " />
+<Image align="center" border={true} caption="Add Custom Connector" src="https://files.readme.io/2bf1eb316e3d20774c2bd7ffb09b90052ff55e870e5505e879e017a8cf8eddd9-image.png" width="60% " />
 
 # Integration Steps
 
@@ -65,7 +66,7 @@ The following steps explain how to connect the CleverTap MCP connector in Claude
 1. Open Claude (web or desktop app). Any Claude interface supports connectors.
 2. Go to _Settings > Connectors > Browse Connectors_.
 3. Click **Connect** on CleverTap MCP Beta.
-4. Select the connector with the `us1` endpoint.
+4. Select the connector with the`us1` endpoint.
 5. Click **Configure** after connecting. This shows the full list of tools and functionality available through the MCP.
 
 The following image shows the “us1“ endpoint connector:

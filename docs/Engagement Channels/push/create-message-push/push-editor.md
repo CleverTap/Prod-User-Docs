@@ -447,7 +447,7 @@ You can use this section to customize Android-specific behavior for your push us
       </td>
 
       <td>
-        Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may affect the battery. For more information, refer to []().
+        Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may shorten battery life. For more information, refer to []().
       </td>
 
       <td>
@@ -479,14 +479,14 @@ You can use this section to customize Android-specific behavior for your push us
 
     <tr>
       <td>
-        Skip active users
+        Silent Delivery
       </td>
 
       <td>
         Choose whether to mute the push notification when the user is currently using the app (app in foreground).
 
-        * Yes: If the app is open, the notification is only added to the tray, and a popup is not shown to the user.
-        * No (default): The notification is added to the tray, and a popup is shown to the user, even if the app is open.
+        * Yes: If the app is open, the notification is only added to the tray, and a pop-up is not shown to the user.
+        * No (default): The notification is added to the tray, and a pop-up is shown to the user, even if the app is open.
       </td>
 
       <td>

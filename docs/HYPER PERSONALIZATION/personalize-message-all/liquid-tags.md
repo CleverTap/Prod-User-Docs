@@ -344,10 +344,42 @@ You can generate an HTML table with this tag. It must be wrapped in opening `<ta
 
 ### now
 
-Using this tag, you can insert the current date and time in the specified format.
+Using this tag, you can insert the current date and time in the specified format. Results are returned in IST (Indian Standard Time, UTC+5:30) by default.
 
 ```Text now - tag
 {{ "now" | date: "%Y-%m-%d %H:%M" }}
+```
+
+### date_tz
+
+Using this tag you can format the current timestamp in a specified IANA timezone. Use this filter when your messages need to display time in the recipient's local timezone or a specific regional timezone, regardless of the server timezone.
+
+#### Syntax
+
+```Text syntax
+{{ "now" | date_tz: "<format>", "<timezone>" }}
+```
+
+#### Parameters
+
+format: A string format for time (same as the standard date filter).
+
+timezone: An IANA timezone string (for example, Asia/Singapore, America/Los_Angeles).
+
+> 📘 Note
+>
+> Daylight saving time adjustments are handled automatically for time zones that observe Daylight Saving Time (DST).
+>
+> The date_tz filter is supported across all channels: Email, Mobile Push, SMS, Webhooks, App Inbox, In-App, and WhatsApp.
+
+For example, you can use multiple date_tz calls within a single message to display time across different timezones simultaneously:
+
+```Text date_tz
+Singapore: {{ "now" | date_tz: "%Y-%m-%d %H:%M:%S", "Asia/Singapore" }}
+London:    {{ "now" | date_tz: "%Y-%m-%d %H:%M:%S", "Europe/London" }}
+New York:  {{ "now" | date_tz: "%H:%M", "America/New_York" }}
+Sydney: {{ "now" | date_tz: "%Y-%m-%d %H:%M:%S", "Australia/Sydney" }}
+Auckland: {{ "now" | date_tz:"%Y-%m-%d %H:%M:%S", "Pacific/Auckland" }}
 ```
 
 ## Variable Tags

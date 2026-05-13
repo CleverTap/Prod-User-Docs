@@ -187,7 +187,7 @@ Choose which user identifiers to include in the export and how they appear in th
 
 3. **(Optional) Select Account-Defined User Identity**  
    Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](https://developer.clevertap.com/docs/developer-go-live-checklist) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
-   _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be:
+   _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be: `[user_123, user_456, [user@example.com](mailto:user@example.com)]`.
 
 4. **Select CleverTap ID**  
    Select this option to include the following in your export:

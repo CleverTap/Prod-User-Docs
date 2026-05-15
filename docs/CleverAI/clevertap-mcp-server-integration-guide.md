@@ -79,9 +79,10 @@ The CleverTap MCP server is compatible with the following AI clients:
     1. Open a new chat in Claude to start a fresh conversation.
     2. Click the **+** icon at the bottom-left of the chat input. This opens the tools/connectors menu.
     3. Click **Connectors**. A fly-out panel appears.
-    4.  Navigate to the CleverTap MCP settings in your dashboard. Check the status of the CleverTap MCP toggle:
-      * If it is already ON — leave it as is, no action needed.
-      * If it is OFF — toggle to turn it ON.
+    4. Navigate to the CleverTap MCP settings in your dashboard. Check the status of the CleverTap MCP toggle:
+
+      * If it is already ON, leave it as is, no action needed.
+      * If it is OFF, toggle to turn it ON.
 
     The following image shows the chat screen connector with CleverTap MCP toggle enabled:
 

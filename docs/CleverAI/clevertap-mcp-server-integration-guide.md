@@ -25,6 +25,12 @@ The CleverTap MCP server is compatible with the following AI clients:
 * Anthropic Claude (web, desktop, and mobile)
 * ChatGPT
 
+<Callout icon="📘" theme="info">
+  **Access Limitations**
+
+  Currently, only Admin access is supported. RBAC, PII handling, and Teams are not supported in CleverTap MCP.
+</Callout>
+
 <Tabs>
   <Tab title="Anthropic Claude">
     # Integration Steps
@@ -113,6 +119,7 @@ The CleverTap MCP server is compatible with the following AI clients:
        * **MCP URL:**`https://us1.mcp-server.clevertap.com/mcp`
        * **Authentication:**`OAuth` (default)
     5. Click **Save**. You will be redirected to the CleverTap dashboard for SSO login.
+    6. Follow the prompts to complete sign-in. Once authenticated, your CleverTap MCP connector is ready to use.
 
     The following image shows the ChatGPT settings:
 
@@ -239,6 +246,7 @@ The CleverTap MCP server is compatible with the following AI clients:
        * **MCP URL:**`https://us1.mcp-server.clevertap.com/mcp`
        * **Authentication:**`OAuth` (default)
     5. Click **Save**. You will be redirected to the CleverTap dashboard for SSO login.
+    6. Follow the prompts to complete sign-in. Once authenticated, your CleverTap MCP connector is ready to use.
 
     The following image shows the ChatGPT settings:
 

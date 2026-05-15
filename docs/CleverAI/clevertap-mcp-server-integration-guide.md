@@ -53,7 +53,9 @@ The CleverTap MCP server is compatible with the following AI clients:
     5. Enter the connector details:
        1. Name: `CleverTap`
        2. URL: `https://us1.mcp-server.clevertap.com/mcp`
-    6. Click **Add**, then **Connect**. The connector is saved and authenticated via CleverTap SSO.
+    6. Click **Add**, then **Connect**.
+    7.Click **Save**. You will be redirected to the CleverTap dashboard for SSO login.
+    8. Follow the prompts to complete sign-in. Once authenticated, your CleverTap MCP connector is ready to use.
 
     The following image shows the *Claude Settings*:
 

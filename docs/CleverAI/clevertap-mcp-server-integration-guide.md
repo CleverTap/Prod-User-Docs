@@ -31,7 +31,7 @@ The CleverTap MCP server is compatible with the following AI clients:
 
     The following steps help you to integrate CleverTap MCP in Claude:
 
-    1. Add Custom Connector
+    1. [Add Custom Connector](doc:clevertap-mcp-server-integration-guide#add-custom-connector-1)
     2. [Connect the CleverTap MCP](doc:clevertap-mcp-server-integration-guide#connect-the-clevertap-mcp)
     3. [Enable in a Chat](doc:clevertap-mcp-server-integration-guide#enable-in-a-chat)
     4. [Verify the Connection](doc:clevertap-mcp-server-integration-guide#verify-the-connection)
@@ -96,7 +96,7 @@ The CleverTap MCP server is compatible with the following AI clients:
 
     The following steps help you to integrate CleverTap MCP in ChatGPT:
 
-    1. Add CleverTap as a Custom App
+    1. [Add CleverTap as a Custom App](doc:clevertap-mcp-server-integration-guide#add-clevertap-as-a-custom-app-1)
     2. [Enable in a Chat](doc:clevertap-mcp-server-integration-guide#enable-in-a-chat-1)
     3. [Verify the Connection](doc:clevertap-mcp-server-integration-guide#verify-the-connection-1)
 
@@ -150,11 +150,9 @@ The CleverTap MCP server is compatible with the following AI clients:
   </Tab>
 </Tabs>
 
-
 <Tabs>
   <Tab title="Anthropic Claude">
-
-  # Integration Steps
+    # Integration Steps
 
     The following steps help you to integrate CleverTap MCP in Claude:
 

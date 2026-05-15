@@ -51,8 +51,8 @@ The CleverTap MCP server is compatible with the following AI clients:
     3. Click **Customize.**
     4. Click **+** to choose *Add custom connector*.
     5. Enter the connector details:
-       1. Name: `CleverTap`
-       2. URL: `https://us1.mcp-server.clevertap.com/mcp`
+       * Name: `CleverTap`
+       * URL: `https://us1.mcp-server.clevertap.com/mcp`
     6. Click **Add**, then **Connect**. You will be redirected to the CleverTap dashboard for SSO login.
     7. Follow the prompts to complete sign-in. Once authenticated, your CleverTap MCP connector is ready to use.
 
@@ -81,8 +81,8 @@ The CleverTap MCP server is compatible with the following AI clients:
     3. Click **Connectors**. A fly-out panel appears.
     4. Navigate to the CleverTap MCP settings in your dashboard. Check the status of the CleverTap MCP toggle:
 
-      * If it is already ON, leave it as is, no action needed.
-      * If it is OFF, toggle to turn it ON.
+    * If it is already ON, leave it as is, no action needed.
+    * If it is OFF, toggle to turn it ON.
 
     The following image shows the chat screen connector with CleverTap MCP toggle enabled:
 

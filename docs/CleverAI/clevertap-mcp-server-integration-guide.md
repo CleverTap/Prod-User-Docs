@@ -112,7 +112,7 @@ The CleverTap MCP server is compatible with the following AI clients:
 
     To add CleverTap as a custom app in ChatGPT, follow the steps:
 
-    1. Open *ChatGPT > Profile icon > Settings > Apps*.
+    1. Open *ChatGPT > Profile icon > Settings > Apps > Advanced Settings*.
     2. Enable *Developer Mode*.
     3. Return to *Apps* and click **Create app**. This displays the custom app creation form.
     4. Fill in the app details:

@@ -96,7 +96,7 @@ The CleverTap MCP server is compatible with the following AI clients:
 
     The following steps help you to integrate CleverTap MCP in ChatGPT:
 
-    1. [Add CleverTap as a Custom App](doc:clevertap-mcp-server-integration-guide#add-clevertap-as-a-custom-app-1)
+    1. [Add Custom Connector](doc:clevertap-mcp-server-integration-guide#add-custom-connector-1)
     2. [Enable in a Chat](doc:clevertap-mcp-server-integration-guide#enable-in-a-chat-1)
     3. [Verify the Connection](doc:clevertap-mcp-server-integration-guide#verify-the-connection-1)
 

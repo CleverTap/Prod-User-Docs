@@ -10,187 +10,182 @@ metadata:
 ---
 # Overview
 
-ROI Insights helps you measure the business impact of your campaigns by connecting engagement performance with defined conversion events. It provides a unified dashboard where you can configure conversion goals, track revenue, analyze campaign-level results, and export actionable insights. ROI Insights enables you to move beyond engagement metrics and measure real business outcomes directly from the CleverTap dashboard.
+ROI Insights connects your campaign to real business outcomes, such as conversions, revenue, and custom KPIs from a single dashboard.
 
 With ROI Insights, you can:
 
-* Define up to five conversion events that represent your business goals
-* Track revenue impact alongside engagement metrics
-* Compare campaign performance across segments and filters
-* Create custom KPIs for advanced analysis
-* Export campaign performance data for reporting
+* Track up to five conversion goals (purchases, subscriptions, bookings, and so on)
+* Measure revenue impact alongside engagement metrics
+* Filter and compare campaigns by channel, status, label, and more
+* Build custom KPIs for business-specific analysis
+* Export performance data for reporting.
 
 # Attribution Model
 
-ROI Insights uses a Last Touch Attribution model to attribute conversions to campaigns and journeys. In this model, attribution is based on the most recent Notification Clicked event prior to a conversion. This means the conversion is credited to the last campaign or journey message node the user clicked before completing the configured conversion event. Attribution does not validate whether a campaign is directly related to the conversion event.
+ROI Insights uses a Last Touch Attribution model for attributing conversions to campaigns and journeys. In this model, attribution is based on the most recent _Notification Clicked_ event that occurs before a conversion. This means the conversion is credited to the last campaign or journey message the user clicked on before completing the configured conversion event. Note that the Last Touch model attributes conversions based on the recency of the click, not the relevance of the campaign content to the conversion event.
 
-For example, if a user clicks a Shoes Promotion push notification and then purchases an Electronics item within the configured conversion window, the conversion is still attributed to the Shoes campaign because it was the last clicked touchpoint before the conversion.
+For example, if a user clicks a push notification promoting shoes and then purchases a mobile phone within the set conversion window, the conversion is still attributed to the Shoes campaign. This is because the promotional push for  Shoes was the last touchpoint before the conversion.
 
 <Callout icon="📘" theme="info">
-  #### Data Freshness
+  #### Data Recency
 
-  ROI Insights data is refreshed periodically and may take up to 6 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the Engagement Performance Table.
-
-  Because attribution is calculated using a Last Touch model, conversion metrics may update only after click and conversion events are processed.
+  ROI Insights data is refreshed periodically and may take up to 6 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the _[Engagement Performance Table](doc:roi-insights#engagement-performance-table)_ because the Last Touch model updates conversion metrics only after it processes both click and conversion events.
 </Callout>
 
 # Prerequisites
 
-Before using ROI Insights, you must configure at least one global conversion event in the Schema. These conversion events apply across all campaigns and journeys and are used as the basis for attribution and ROI calculation.
+Before using ROI Insights, you must configure at least one global conversion event, such as _Charged_, in the Schema. These conversion events apply across all campaigns and journeys and are used as the basis for attribution and ROI calculation.
 
-You can configure up to five global conversion events, each with its own filters and conversion window.
+You can configure up to five conversion events to track different business goals simultaneously. Each event supports its own filters to narrow qualifying conversions, and its own lookback window to define how long after a click a conversion counts.
 
 ## Configure ROI Conversion Events
 
 Before analyzing ROI, you must define what constitutes a conversion for your business. A conversion event represents a meaningful user action, such as a purchase, subscription, booking, or app upgrade. You can configure up to five conversion events.
 
-To add a conversion event:
+To add a conversion event from the CleverTap dashboard:
 
-1. Click **Add conversion event**.
-2. Select the event from your event schema.
-3. (Optional) Apply filters to narrow down qualifying conversions.
-4. Define the conversion window. The conversion window defines the time period during which a user action is attributed to a campaign.
+1. Go to **ROI Insights** in the CleverTap dashboard, then click **Add conversion event**.
+2. Select the required event that represents a meaningful user action, such as Charged for purchases or Subscription Started for subscriptions. You can optionally add a display nickname to identify the event clearly in the ROI dashboard.
+3. (Optional) Apply filters to narrow qualifying conversions. For example, filter a Purchase event by product category or transaction value.
+4. Enter the _Lookback window_ to define the time period during which a user action is attributed to a campaign.
 5. Click **Save**.
 
 <Image align="center" border={true} src="https://files.readme.io/d81cd93bee33f5859d1aceae319fa6b1c10ae2f51a985a7320e5449d27df7bb2-2026-02-16_10-57-16_1.gif" className="border" />
 
 <Callout icon="📘" theme="info">
-  #### Impact of Editing or Deleting
+  #### Changing a Conversion Event
 
-  Changes after editing or deleting a conversion event may take time to reflect in the dashboard. If you delete a conversion event, associated metrics will no longer be visible in ROI Insights.
+  Changes such as updating filters, renaming, or modifying the lookback window for a conversion event may take time to reflect on the dashboard. If you delete a conversion event, associated metrics will no longer be visible in ROI Insights.
 </Callout>
-
-# Understanding the ROI Dashboard
-
-Once conversion events are configured, the ROI dashboard displays campaign performance in two primary sections:
-
-* [Metric Tiles](doc:roi-insights#metric-tiles)
-* [Engagement Performance Table](doc:roi-insights#engagement-performance-table)
-
-## Metric Tiles
-
-Metric tiles provide a summary view of key performance indicators based on your selected conversion event and filters. Use metric tiles to quickly assess overall campaign effectiveness before diving into detailed analysis. These tiles update dynamically based on applied filters, selected conversion event, and selected time range.
-
-<Image align="center" border={true} src="https://files.readme.io/3e36c4f04b1c51aa9b46b28a9ff733fab9221c1242b7717de680c7e586f2441a-image.png" className="border" />
-
-Metric tiles include the following default metrics:
-
-* **Total Sent**: The total number of messages that were sent across the selected campaigns within the chosen time range.
-
-* **Total Delivered**: The total number of messages successfully delivered to users’ devices or inboxes. For Push Notifications, the delivered count includes push impressions.
-
-* **Total Clicked**: The total number of times users clicked on the campaign message.
-
-* **Total Viewed**: The total number of times users viewed the message (applicable to channels such as in-app or push where views are tracked).
-
-* **CTR**: The click-through rate, calculated as the percentage of delivered messages that resulted in at least one click.
-
-* **Total Conversions**: The total number of conversion events attributed to the selected campaigns within the defined conversion window.
-
-* **Unique Conversions**: The number of distinct users who completed the configured conversion event, regardless of how many times they converted.
-
-* **Conversion Rate Percent**: The percentage of delivered (or eligible) messages that resulted in at least one conversion, based on the configured conversion event and window.
-
-## Engagement Performance Table
-
-The engagement table displays campaign-level performance metrics. This table allows you to identify top-performing and underperforming campaigns at a glance.
-
-<Image align="center" border={true} src="https://files.readme.io/c334cacc1026b47e411b085365331d6ce7bbdf8e658b71d1967b63081e2332bf-image.png" className="border" />
-
-Each row in the table represents a campaign, and the following columns provide detailed performance metrics:
-
-* **Campaign Name**: The name of the campaign as defined during campaign creation.
-
-* **Status**: The current lifecycle state of the campaign, such as Running, Completed, or Awaiting Next Run.
-
-* **Created by**: The user who created the campaign.
-
-* **Campaign Label**: The label assigned to the campaign for grouping or categorization purposes.
-
-* **Journey Id**: The identifier of the journey associated with the campaign, if applicable.
-
-* **Sent**: The total number of messages sent for that specific campaign.
-
-* **Delivered**: The total number of messages successfully delivered for the campaign.
-
-* **Viewed**: The number of times users viewed the campaign message.
-
-* **Clicked**: The total number of clicks generated by the campaign.
-
-* **CTR**: The click-through rate for the campaign, calculated as the percentage of delivered messages that resulted in clicks.
-
-* **Conversions**: The total number of conversion events attributed to that campaign.
-
-* **Unique Conversions**: The number of distinct users who completed the configured conversion event for that campaign.
-
-* **Conversion Rate**: The percentage of delivered (or eligible) messages that resulted in a conversion for that campaign.
-
-* **Custom KPIs (if configured)**: Additional performance metrics defined by your team to track business-specific goals, such as revenue, average order value, or cost per conversion.
 
 ## Apply Filters
 
-Filters help you narrow down the ROI analysis to specific campaigns, channels, time periods, or owners. When you apply filters, both the metric tiles and the engagement performance table update dynamically to reflect only the data that matches your selected criteria.
+Filters help you narrow down the ROI analysis to specific campaigns by name, channel, time period, owner, and more. When you apply filters, both the _Metric_ tiles and the _Engagement_ performance table update dynamically to reflect only the data that matches your selected criteria.
 
 Use filters to focus on relevant business questions, such as:
 
 * Which campaigns drove the most revenue this quarter?
 * How did email campaigns perform compared to push notifications?
-* Which campaign labels generated the highest conversion rate?
+* Which campaigns generated the highest conversion rate?
 * How are running campaigns performing compared to completed ones?
 
-To open the filter panel, click the Filters icon on the left side of the ROI Insights dashboard.
-
-<Image align="center" border={true} src="https://files.readme.io/6549fd84e3410f62204335a30d2dd218b441241e9a670165d651025fe24d51ba-image.png" className="border" />
+<Image align="center" border={true} caption="Apply Filters for ROI Data" src="https://files.readme.io/9f2621feb3960da5c4ab3430835459d5e64f5d36428f734c0a41b881d693e439-image.png" />
 
 The following filter fields are available:
 
-* **Conversion Event**: Select the conversion event you want to analyze. The dashboard recalculates conversions, unique conversions, and conversion rate based on the selected event. For example, you can switch between Total Purchases and Subscription Started to compare different business outcomes.
-* **Time Period**: Define the date range for your analysis. All metrics and campaign-level performance data will reflect activity within this selected time window. Use this to analyze monthly performance, quarterly ROI, or specific campaign bursts.
-* **Campaign Labels**: Filter campaigns by labels assigned during campaign creation. This helps you group and analyze campaigns by themes such as Promotional, Onboarding, Festive Sale, or Re-engagement.
-* **Channels**: Filter campaigns by channel type, such as Email, Push, In-App, SMS, or other supported channels. This allows you to compare ROI performance across communication channels.
-* **Created By**: Filter campaigns based on the user who created them. This is useful for team-level performance tracking or ownership-based reporting.
-* **Status**: Filter campaigns by lifecycle status, such as Scheduled, Running, Stopped, Completed, or Awaiting Next Run. This helps you evaluate active campaigns separately from historical ones.
-* **Delivery Type**: Filter campaigns by delivery type, such as On Publish, Recurring, or Specific Dates. This allows you to compare always-on campaigns with time-bound campaigns.
+| Field Name       | Description                                                                                                                                                                                                                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Conversion Event | Select the conversion event to analyze. Update conversions, unique conversions, and conversion rate based on the selected event (for example, compare Total Purchases vs Subscription Started).                                                                                      |
+| Campaign Name    | Filter campaigns by name or partial name. Enter an exact campaign name or use a keyword to find campaigns matching a keyword.                                                                                                                                                        |
+| Time Period      | Set the date range for analysis. Metrics are filtered by the conversion timestamp, that is, the date and time the conversion event occurred, rather than when the campaign was clicked. This ensures the time period reflects actual conversion activity within the selected window. |
+| Campaign Labels  | Filter campaigns by assigned labels. Group and analyze campaigns by themes (for example, Promotional or Onboarding).                                                                                                                                                                 |
+| Channels         | Filter campaigns by channel (for example, Email, Push, In-App, SMS). Compare ROI performance across channels.                                                                                                                                                                        |
+| Created By       | Filter campaigns by creator. Analyze performance by user or team ownership.                                                                                                                                                                                                          |
+| Status           | Filter campaigns by statuses (for example, Running or Completed). Compare active and historical campaign performance.                                                                                                                                                                |
+| Delivery Type    | Filter campaigns by delivery type (for example, On Publish or Recurring). Compare always-on and time-bound campaigns.                                                                                                                                                                |
 
 After selecting your required filters, click **Apply** to update the dashboard.
 
+# Understand the ROI Dashboard
+
+After conversion events are configured, the ROI dashboard displays campaign performance in two primary sections:
+
+* [Metric Tiles](doc:roi-insights#metric-tiles)
+* [Engagement Performance Table](doc:roi-insights#engagement-performance-table)
+
+## ROI Metric
+
+The _Metrics_ section provides a summary view of the key performance indicators (KPIs) based on selected conversion events and filters. Use metric tiles to quickly assess overall campaign effectiveness before diving into detailed analysis. This information updates dynamically based on applied filters, selected conversion events, and selected time range.
+
+For example, in the following dashboard, the conversion rate appears healthy, but Total Conversions (35.2K) and Unique Conversions (31.5K) are very close, suggesting that most users converted only once. This could indicate an opportunity to drive repeat conversions.
+
+<Image align="center" border={true} caption="View ROI Metric Tiles" src="https://files.readme.io/448d38d6430f775a5beee37067af98ebafcbda373af9fbdb1b6400d32ba055b8-image.png" />
+
+The _Metrics_ section includes the following default metrics:
+
+| Tile Name               | Description                                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
+| Total Sent              | Messages sent across selected campaigns.                                                            |
+| Total Delivered         | Messages successfully delivered to users. It also includes push impressions for Push Notifications. |
+| Total Clicked           | Clicks on campaign messages.                                                                        |
+| Total Viewed            | Message views (for supported channels like In-App and Push).                                        |
+| CTR                     | Percentage of delivered messages that received at least one click.                                  |
+| Total Conversions       | Conversion events attributed to selected campaigns within the conversion window.                    |
+| Unique Conversions      | Unique users who completed the conversion event.                                                    |
+| Conversion Rate Percent | Percentage of delivered (or eligible) messages that led to at least one conversion.                 |
+
+<Callout icon="📘" theme="info">
+  Note
+
+  Large metric values are automatically formatted using shorthand notation. For example, 1,000 displays as 1K, 1,000,000 as 1M, 1,000,000,000 as 1B, and 1,000,000,000,000 as 1T for easier readability across tiles and the table.
+</Callout>
+
+## Engagement Performance Table
+
+The engagement table displays campaign-level performance metrics. This table allows you to identify top-performing and underperforming campaigns at a glance. For example, the top campaigns by conversion count are email campaigns, while push notifications show a higher CTR but lower conversion rate, useful for deciding where to invest future budget.
+
+<Image align="center" border={true} caption="Engagement Performance Table" src="https://files.readme.io/aceedc4a3372b7e8445397694e07fe296fc34005585ec3b836b0a2ca6d31d671-image.png" />
+
+The following table describes each column in the _Engagement Performance Table_:
+
+| Field Name                  | Description                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Name                        | The campaign name.                                                                                     |
+| Status                      | The current campaign status (for example, Running or Completed).                                       |
+| Channel                     | The icon representing the campaign's delivery channel (for example, Push, Email, In-App).              |
+| Created by                  | The user who created the campaign.                                                                     |
+| Campaign Label              | The campaign label for grouping or categorization.                                                     |
+| Journey Id                  | The associated journey ID, if available.                                                               |
+| Sent                        | Messages sent for the campaign.                                                                        |
+| Delivered                   | Messages successfully delivered for the campaign.                                                      |
+| Viewed                      | Total message views for the campaign.                                                                  |
+| Clicked                     | Total clicks for the campaign.                                                                         |
+| CTR                         | The percentage of delivered messages that received clicks.                                             |
+| Conversions                 | Conversion events attributed to the campaign.                                                          |
+| Unique Conversions          | Unique users who completed the conversion event.                                                       |
+| Conversion Rate             | The percentage of delivered (or eligible) messages that led to a conversion.                           |
+| Custom KPIs (if configured) | Custom metrics defined to track business-specific goals (for example, revenue or average order value). |
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  In the [Engagement Performance Table](doc:roi-insights#engagement-performance-table):
+
+  * You can click on any campaign in the table row to open its campaign stats page. This gives you quick access to detailed performance data without leaving the ROI dashboard.
+  * By default, the table is sorted by Conversion Count in descending order, so the highest-converting campaigns appear at the top.
+  * The engagement performance table also includes archived campaigns to ensure your historical ROI data remains accessible even after campaigns are archived.
+</Callout>
+
 # Custom Metrics
 
-Custom Metrics let you create derived metrics from the engagement and conversion data available in the ROI dashboard. These metrics help you track business-specific performance indicators that are not available as default tiles or table columns. Custom KPIs are especially useful when your definition of success goes beyond basic engagement or conversion metrics.
+Custom Metrics let you create derived metrics from the engagement and conversion data available in the ROI dashboard. These metrics help you track business-specific performance indicators that are not available as default tiles or table columns.
 
-Once created, custom metrics appear as additional columns in the Engagement Performance Table and can be used alongside standard metrics such as Sent, Delivered, Conversions, and Conversion Rate.
+Once created, custom metrics appear as additional columns in the Engagement Performance Table and can be used alongside standard metrics. For example, a Revenue metric calculated using `PROPSUM(Purchase.amount)` will appear as a new column alongside Sent, Delivered, and Conversions.
 
-Use Custom Metrics to:
-
-* Compare revenue generated per delivered message
-* Measure cost-efficiency metrics such as cost per conversion
-* Calculate engagement-to-conversion ratios
-* Create internal performance benchmarks aligned to your business goals
-
-## How Custom Metrics Work?
-
-Custom Metrics are built using formulas based on available campaign-level metrics. You can combine these metrics using supported mathematical operators to compute ratios, averages, or derived values. Custom KPIs are calculated dynamically and update automatically when filters or conversion events are changed.
-
-The following examples illustrate how Custom Metrics can be used to derive meaningful business insights from campaign performance data.
-
-| KPI Name                      | Formula                               | What does it help you measure?                                                                                   |
-| ----------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Revenue per Delivered Message | Total Conversions Revenue / Delivered | The average revenue per delivered message helps you evaluate message-level monetization efficiency.              |
-| Conversion per Click          | Conversions / Clicked                 | How effectively user clicks translate into conversions, helping you assess post-click performance.               |
-| Revenue per Campaign          | Total Conversions Revenue             | The total revenue contribution of each campaign enables direct comparison across campaigns.                      |
-| Cost Efficiency Benchmark     | Revenue / Cost                        | The return generated for every unit of campaign spend helps you evaluate overall campaign profitability and ROI. |
-
-## Create a Custom Metrics
+## Create Custom Metrics
 
 To create a custom metric:
 
 1. Click **Add Custom Metric** in the top-right corner of the ROI dashboard.
-2. Enter a clear and descriptive name for the KPI.
-3. In the formula builder, select a metric from the dropdown.
+2. Enter a clear and descriptive name for the KPI. For example, enter _Revenue_ if you are measuring total purchase value.
+3. In the formula builder, select a metric from the list. For example, select `PROPSUM` from the function list and select the amount property of your _Purchase_ event.
 4. Combine metrics using supported operators.
 5. Click **Save**.
 
-   <Image align="center" border={true} width="70% " src="https://files.readme.io/9c7ab0fc41f4b367063f352ee1005ff4298dcd91aeed2d89f86f7be9f3c7f03f-image.png" className="border" />
+   <Image align="center" border={true} caption="Create a Custom Metric" src="https://files.readme.io/9c7ab0fc41f4b367063f352ee1005ff4298dcd91aeed2d89f86f7be9f3c7f03f-image.png" width="70% " />
+
+## How Custom Metrics Work?
+
+Custom Metrics are built using formulas based on your configured conversion events and their properties. Using the formula builder, you can apply event-level and property-level functions to conversion event data to compute totals, ratios, averages, or derived values. Custom KPIs are calculated dynamically and update automatically when filters, the selected conversion event, or the time range are changed.
+
+The following examples illustrate how Custom Metrics can be built from conversion event data to measure business-specific outcomes:
+
+| KPI Name                        | Formula                                           | What does it help you measure?                                                                                                                                                                                                   | Example                                                                                                                                                    |
+| ------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Revenue                         | PROPSUM(Purchase.amount)                          | The total revenue generated from all Purchase conversion events in the selected period. It sums up the value of the `amount` property across every Purchase event occurrence.                                                    | If 500 users made purchases of amounts such as $20, $50, and $100, Revenue returns the total purchases. For example, $35,000 for the selected time period. |
+| Average Order Value (AOV)       | PROPAVG(Purchase.amount)                          | The average transaction value per Purchase event. It divides the total value of the `amount` property by the number of Purchase event occurrences, helping you understand what a typical order is worth.                         | If the total revenue from 500 purchases is $35,000, AOV returns $70, meaning customers spend $70 on average per order.                                     |
+| Average Revenue Per User (ARPU) | PROPSUM(Purchase.amount) / UNIQUES(Purchase)      | The average revenue generated per unique user who completed a Purchase event. Unlike AOV, which is per transaction, ARPU accounts for users who may have purchased multiple times, giving you a per-user revenue view.           | If 300 unique users generated $35,000 in total revenue, ARPU returns approximately $116.67, meaning each converting user contributed $116.67 on average.   |
+| Profit                          | PROPSUM(Purchase.amount) - PROPSUM(Purchase.cost) | The net profit from all Purchase events in the selected period, calculated by subtracting the total cost from the total revenue. This helps you evaluate whether your campaigns are driving financially sustainable conversions. | If total revenue (PROPSUM of `amount`) is $35,000 and total cost (PROPSUM of `cost`) is $22,000, Profit returns $13,000.                                   |
 
 ### Formula Functions
 
@@ -198,7 +193,7 @@ When creating a Custom Metric, you can use predefined event-level and property-l
 
 #### Event-Level Functions
 
-These functions operate on the selected event and measure its frequency or user participation:
+These functions operate on the selected event and measure the event's frequency or user participation:
 
 * **TOTALS**: Counts every occurrence of the selected event during the chosen time period. For example, if an event such as `Video Played` occurred 12,000 times, TOTALS returns 12,000 even if the same user triggered the event multiple times.
 * **UNIQUES**: Counts the number of distinct users who performed the selected event. For example, if 2,000 unique users triggered the event, UNIQUES returns 2,000; each user is counted only once, regardless of how many times they performed the event.
@@ -216,11 +211,38 @@ Property-level functions operate on numeric event properties such as revenue amo
 When creating a custom metric, keep the following in mind:
 
 * You can combine available metrics using operators such as +, -, *, /, and parentheses ().
-* You can compare up to four formulas in the same configuration by separating them with a semicolon (;).
 * The formula must be mathematically valid.
 * KPI names should clearly describe the metric being calculated.
 * Custom Metrics are calculated per campaign row in the table.
-* KPI values are updated dynamically based on selected filters, the conversion event, and the time range.
+
+## Custom Metric Operations
+
+You can edit or delete any existing custom metric directly from the ROI dashboard.
+
+### Edit
+
+To edit a custom metric:
+
+1. Click the ![](https://files.readme.io/6b504ffa8b8740dfb7348087b0c7871d61c1fd30c7bdc67f9cffdd978e4d01ec-Ellipsis_icon_Boards.png) icon next to the metric name you want to edit.
+2. Update the _Name_, _Description_, or _Formula_ as needed.
+3. Click **Save**.
+
+<Image align="center" border={true} caption="Edit a Custom Metric" src="https://files.readme.io/3f9a279704e9d47def9f525fa7205ed326d27acf374facf018afb195ee0b2ea0-2026-05-05_17-12-32_1.gif" />
+
+### Delete
+
+To delete a custom metric:
+
+1. Click the <Image border={true} src="https://files.readme.io/6b504ffa8b8740dfb7348087b0c7871d61c1fd30c7bdc67f9cffdd978e4d01ec-Ellipsis_icon_Boards.png" className="border" /> icon next to the metric name you want to delete.
+2. Click **Delete**.
+
+<Image align="center" border={true} caption="Delete a Custom Metric" src="https://files.readme.io/2794052449b14e9e8076eee75209227f19bd3860338c38d23dd05dabea3a6db9-2026-05-05_17-14-51_1.gif" />
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Deleting a custom metric removes it permanently from the table. This action cannot be undone.
+</Callout>
 
 # Best Practices
 
@@ -254,7 +276,7 @@ ROI Insights allows switching between configured conversion events, but metrics 
 
 ### What attribution model does ROI Insights use?
 
-ROI Insights uses a Last Touch Attribution model based on the most recent Notification Clicked event prior to conversion.
+ROI Insights uses a Last Touch Attribution model based on the most recent Notification Clicked event prior to conversion. For more information, refer to [Attribution Model](doc:roi-insights#attribution-model).
 
 ### Can I use a different attribution model?
 
@@ -262,4 +284,4 @@ No. Only Last Touch Attribution is supported in this version. Alternative attrib
 
 ### Are conversion goals campaign-specific?
 
-No. ROI Insights uses globally configured conversion events across all campaigns and journeys.
+No. ROI Insights uses account-level conversion events configured. These apply across all campaigns and journeys in your CleverTap account.

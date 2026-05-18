@@ -218,6 +218,38 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## April
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="inaction-segmentation-for-in-app-campaigns">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#inaction-segmentation-for-in-app-campaigns"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Inaction Segmentation for In-App Campaigns</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now trigger In-App campaigns based on user inaction within a defined time window. This enhancement extends Inaction Segmentation beyond push and email, to deliver real-time engagement while users are active in your app.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Target users who do not complete key actions during active sessions.</li>
+        <li>Reduce drop-offs by engaging users when they delay action.</li>
+        <li>Deliver timely nudges to improve conversion and progression.</li>
+      </ul>
+    </p>
+    <p>This feature is available to select customers. Minimum SDK requirements: Android v7.8.0 or later and iOS v7.5.0 or later.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-inapp#deliver-action-based-messages" target="_blank">Deliver Action Based Messages in In-App</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="new-in-frequency-limits-advanced-frequency-limits">
   <div class="release-note-header">
     <div class="anchor-link-icon">

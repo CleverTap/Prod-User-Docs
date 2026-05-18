@@ -4,7 +4,7 @@ excerpt: >-
   Learn how CleverTap uses query sampling to deliver fast, reliable analysis
   results for large and complex datasets.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

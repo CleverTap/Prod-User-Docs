@@ -368,6 +368,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## March
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="controlled-message-delivery-and-display-with-web-inbox">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#controlled-message-delivery-and-display-with-web-inbox"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Controlled Message Delivery and Display with Web Inbox</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now control how messages are delivered in Web Inbox and displayed to users. This enhancement helps reduce message fatigue while enabling more effective, time-sensitive communication.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Set global or campaign-level frequency caps to control how often users see messages.</li>
+        <li>Configure time-to-live settings, with durations as short as one hour.</li>
+        <li>Limit the number of messages displayed in the inbox to maintain a clean user experience.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/web-inbox-create-message#delivery-preferences" target="_blank">Create Message with Web Inbox</a> and <a href="https://developer.clevertap.com/docs/web-inbox" target="_blank">Setting up Web Inbox</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="data-and-integrations" id="snowflake-export">
   <div class="release-note-header">
     <div class="anchor-link-icon">

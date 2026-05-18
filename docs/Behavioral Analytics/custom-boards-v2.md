@@ -22,16 +22,16 @@ Boards are useful for anyone who regularly monitors performance metrics. For exa
 
 With Boards 2.0, you can:
 
-* Create and manage multiple boards, each tailored to a specific goal or team
-* Add analysis tiles from Trends, Funnels, Pivots, Cohorts, and Flows
-* Apply date range and segment filters that dynamically update supported tiles at once
+* Create and manage multiple boards tailored to specific goals or teams.
+* Add analysis tiles from Trends, Funnels, Pivots, Cohorts, and Flows.
+* Apply date-range and segment filters that dynamically update supported tiles in a single step.
 * Share boards with configurable access levels (view-only or edit) without anyone needing to rebuild the analysis themselves.
-* Interact with tile data, hover, compare, and explore directly on the board, without switching between analysis screens
+* Interact with tile data, hover, compare, and explore directly on the board, without switching between analysis screens.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
 
-  This feature is released in Public Beta. For more information or questions, contact your Customer Success Manager or the CleverTap Support.
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
 </Callout>
 
 # Create a Board

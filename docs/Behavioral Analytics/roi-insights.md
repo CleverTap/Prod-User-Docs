@@ -20,6 +20,12 @@ With ROI Insights, you can:
 * Build custom KPIs for business-specific analysis
 * Export performance data for reporting.
 
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  This feature is released in Private Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+</Callout>
+
 # Attribution Model
 
 ROI Insights uses a Last Touch Attribution model for attributing conversions to campaigns and journeys. In this model, attribution is based on the most recent _Notification Clicked_ event that occurs before a conversion. This means the conversion is credited to the last campaign or journey message the user clicked on before completing the configured conversion event. Note that the Last Touch model attributes conversions based on the recency of the click, not the relevance of the campaign content to the conversion event.

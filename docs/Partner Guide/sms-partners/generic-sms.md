@@ -20,94 +20,27 @@ CleverTap supports any SMS provider via an HTTP integration, provided they suppo
 
 To integrate an SMS provider, perform the following steps:
 
-1. In the CleverTap dashboard, navigate to *Settings* > *Engage* > *Channels* > *SMS*.
+1. In the CleverTap dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _SMS_.
 2. Click **+ Add Provider**.
 
-<Image alt="Add Provider" align="center" border={true} src="https://files.readme.io/256e8bc0168c51fb77aac6018c4ff43f10eeed88022971a14da1a3b61dfefdde-image.png" />  Add Provider
+<Image alt="Add Provider" border={true} src="https://files.readme.io/256e8bc0168c51fb77aac6018c4ff43f10eeed88022971a14da1a3b61dfefdde-image.png" className="border" />  Add Provider
 
-3. Under *Provider*, select *Other (Generic)* and enter the following details:
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Field
-      </th>
+3. Under _Provider_, select _Other (Generic)_ and enter the following details:
 
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Nickname
-      </td>
-
-      <td>
-        Uniquely identifies the provider
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Callback URL
-      </td>
-
-      <td>
-        The delivery callback data for SMS campaigns are received on this URL. Customers must configure this URL in their SMS Provider Settings. For more information, refer to [SMS Callbacks](doc:generic-sms#sms-callbacks).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Request Type
-      </td>
-
-      <td>
-        Select the GET or POST option depending on which HTTP protocol your SMS provider supports, then enter the HTTP API endpoint of the provider. For a POST request under *Parameters*, select your request type in: <li> *Key-value pair*: Enter .your keys and values. </li>  <li>*JSON*: Enter your entire JSON payload structure. If the service provider supports batching, you can enable batching by specifying the key name and the number of records per batch.</li>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        HTTP Endpoint
-      </td>
-
-      <td>
-        Enter the API endpoint of the provider.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Authentication
-      </td>
-
-      <td>
-        Under *Authentication*, select one of the following options: <li> No Authentication </li> <li> Basic Authentication: Enter the username and password. </li> <li> Auth 2.0: Enter client URL, client ID, secret key, and key-value pairs (optional). </li>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Headers
-      </td>
-
-      <td>
-        Select *Headers* to pass along any HTTP headers which will be added to the HTTP request sent to the API endpoint.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Field          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nickname       | Uniquely identifies the provider                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Callback URL   | The delivery callback data for SMS campaigns are received on this URL. Customers must configure this URL in their SMS Provider Settings. For more information, refer to [SMS Callbacks](doc:generic-sms#sms-callbacks).                                                                                                                                                                                                                                                   |
+| Request Type   | Select the GET or POST option depending on which HTTP protocol your SMS provider supports, then enter the HTTP API endpoint of the provider. For a POST request under _Parameters_, select your request type in: <li> *Key-value pair*: Enter .your keys and values. </li>  <li>*JSON*: Enter your entire JSON payload structure. If the service provider supports batching, you can enable batching by specifying the key name and the number of records per batch.</li> |
+| HTTP Endpoint  | Enter the API endpoint of the provider.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Authentication | Under _Authentication_, select one of the following options: <li> No Authentication </li> <li> Basic Authentication: Enter the username and password. </li> <li> Auth 2.0: Enter client URL, client ID, secret key, and key-value pairs (optional). </li>                                                                                                                                                                                                                 |
+| Headers        | Select _Headers_ to pass along any HTTP headers which will be added to the HTTP request sent to the API endpoint.                                                                                                                                                                                                                                                                                                                                                         |
 
 > 📘 OAuth 2.0 Authentication
 >
 > In case of failure to authenticate the OAuth 2.0 credentials due to invalid or expired credentials, the CleverTap system will retry after every 120 seconds. All SMSs will fall under Dispatch Error until we successfully validate the credentials.
 
-<Image title="2 Under Authentication.png" alt="Authentication Parameter for type Auth 2.0" align="center" width="80%" border={true} src="https://files.readme.io/c6435fb-2_Under_Authentication.png" />  Authentication Parameter for type Auth 2.0
-<Image title="under_Parameters.png" alt="Parameters under POST Request Type" align="center" width="80%" border={true} src="https://files.readme.io/23dd8e3-under_Parameters.png" /> Parameters under POST Request Type
+<Image alt="Authentication Parameter for type Auth 2.0" border={true} width="80%" src="https://files.readme.io/c6435fb-2_Under_Authentication.png" title="2 Under Authentication.png" className="border" />  Authentication Parameter for type Auth 2.0 <Image alt="Parameters under POST Request Type" border={true} width="80%" src="https://files.readme.io/23dd8e3-under_Parameters.png" title="under_Parameters.png" className="border" /> Parameters under POST Request Type
 
 > 📘 Single Batch Limit
 >
@@ -115,39 +48,40 @@ To integrate an SMS provider, perform the following steps:
 
 # Set Up Your Message Payload
 
-To determine the parameters your SMS provider supports, you can ask for a curl request from your SMS service provider or check the payload structure defined in the provider documentation. 
+To determine the parameters your SMS provider supports, you can ask for a curl request from your SMS service provider or check the payload structure defined in the provider documentation.
 
 To set up your message payload, perform the following steps:
 
-1. In the CleverTap dashboard, navigate to *Settings* > *Engage* > *Channels* > *SMS*.
+1. In the CleverTap dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _SMS_.
 2. Click on the **+ Add Provider** button.
-3. Under *Provider*, select *Other (Generic)*.
-4. If the provider specifies all information, such as a phone number, a message body, or a template, should be passed under *Headers*, then under *Headers*, enter key and value pairs.
+3. Under _Provider_, select _Other (Generic)_.
+4. If the provider specifies all information, such as a phone number, a message body, or a template, should be passed under _Headers_, then under _Headers_, enter key and value pairs.
 
-<Image title="Screen Shot 2018-08-30 at 4.14.49 PM.png" align="center" className="border" border={true} src="https://files.readme.io/67d5387-Screen_Shot_2018-08-30_at_4.14.49_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/67d5387-Screen_Shot_2018-08-30_at_4.14.49_PM.png" title="Screen Shot 2018-08-30 at 4.14.49 PM.png" className="border" />
 
-4. If the provider specifies all information, such as a phone number, a message body, or a template, should be passed under *Body*, then under *Parameters*, select the supported encoding:
+4. If the provider specifies all information, such as a phone number, a message body, or a template, should be passed under _Body_, then under _Parameters_, select the supported encoding:
    * x-www-form-urlencoded: Within this format, all values are passed as key-value pairs, which are used when creating campaigns.
 
-<Image title="Screenshot 2021-05-12 at 4.26.41 PM.png" align="center" className="border" border={true} src="https://files.readme.io/bd4a734-Screenshot_2021-05-12_at_4.26.41_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/bd4a734-Screenshot_2021-05-12_at_4.26.41_PM.png" title="Screenshot 2021-05-12 at 4.26.41 PM.png" className="border" />
 
 * JSON: Within this format, the exact payload is defined in a JSON structure. This is used to define the payload structure for all outgoing requests of this particular provider.
 
-<Image alt="JSON Payload Structure for Outgoing Requests" align="center" border={true} src="https://files.readme.io/4039cdc-JSON_Payload_Structure_for_Outgoing_Requests.png" /> JSON Payload Structure for Outgoing Requests
+<Image alt="JSON Payload Structure for Outgoing Requests" border={true} src="https://files.readme.io/4039cdc-JSON_Payload_Structure_for_Outgoing_Requests.png" className="border" /> JSON Payload Structure for Outgoing Requests
 
 ## System Dynamic Replacements
 
 You can use the following five dynamic replacements within the key-value pairs in the headers or parameters tabs:
+
 * $$To: A mandatory replacement value used to signify the key where the phone number is added to the payload.
 * $$Body: An optional replacement value used to signify the key where the body of the message is added to the payload. Every configuration needs to have $$Body or $$TemplateID key as a mandatory replacement.
 * $$TemplateID: An optional replacement value used to signify the key where the TemplateID of the message is added to the payload. Every configuration needs to have $$TemplateID or $$Body key as a mandatory replacement. This variable is optional and only applicable for campaigns targeted to **Indian mobile numbers**. Refer to the [Regulation Impact](https://docs.clevertap.com/docs/regulation-impact#section-future-campaigns) guide to learn more.
-* $$TemplateVariables: An optional replacement value used to signify the key where the template variables of the message are added to the payload. 
+* $$TemplateVariables: An optional replacement value used to signify the key where the template variables of the message are added to the payload.
 * $$CampaignID: An optional replacement value used to signify the key where the CleverTap campaign ID is added to the payload.
 * $$MessageID: A dynamic replacement parameter replaced by CleverTap with a specific value in the outgoing SMS payload to the provider's endpoint. The provider must send the same value in the [callback](doc:generic-sms#configure-sms-callback) request to CleverTap's callback URL in the meta key. This is mandatory in case of DLR (clicks, delivered, replied, and delivery-related errors) tracking.
 
 ## Custom Dynamic Replacements
 
-In addition to system dynamic replacements, any configuration can have a custom dynamic replacement which is available on the campaign creation flow as a mandatory input. 
+In addition to system dynamic replacements, any configuration can have a custom dynamic replacement which is available on the campaign creation flow as a mandatory input.
 
 The following is an example of a configuration to better understand the setup:
 
@@ -202,18 +136,19 @@ In the example above, there is no bifurcation of the payload. Global and message
 
 # SMS Callbacks
 
-SMS callbacks help you track detailed reports of every SMS being sent from the CleverTap dashboard. All this information is received on the Callback URL present under the Provider *Setup* tab on the CleverTap dashboard. For now, this feature is available only for Generic SMS Integration. If you already have a provider saved, you must set up a new one with the same configuration details along with additional information for SMS callbacks explained in the [Configure SMS Callback](doc:generic-sms#configure-sms-callback) section.
+SMS callbacks help you track detailed reports of every SMS being sent from the CleverTap dashboard. All this information is received on the Callback URL present under the Provider _Setup_ tab on the CleverTap dashboard. For now, this feature is available only for Generic SMS Integration. If you already have a provider saved, you must set up a new one with the same configuration details along with additional information for SMS callbacks explained in the [Configure SMS Callback](doc:generic-sms#configure-sms-callback) section.
 
-<Image title="Callback URL.png" alt={676} align="center" border={true} src="https://files.readme.io/64207ba-Callback_URL.png" />  Callback URL on CleverTap Dashboard
+<Image alt={676} border={true} src="https://files.readme.io/64207ba-Callback_URL.png" title="Callback URL.png" className="border" />  Callback URL on CleverTap Dashboard
 
 ## Configure SMS Callback
 
-During the SMS provider setup process, you must specify the *mid* key (you can have a custom name for this key) with  *$$MessageID* as the value. *$$MessageID* is the dynamic replacement parameter, replaced by CleverTap with the specific value in the outgoing SMS payload to the provider's endpoint. The provider must send the same value in the callback request to CleverTap's callback URL in the meta key mentioned under Send Callback Events section.
+During the SMS provider setup process, you must specify the _mid_ key (you can have a custom name for this key) with  _$$MessageID_ as the value. _$$MessageID_ is the dynamic replacement parameter, replaced by CleverTap with the specific value in the outgoing SMS payload to the provider's endpoint. The provider must send the same value in the callback request to CleverTap's callback URL in the meta key mentioned under Send Callback Events section.
 
-<Image alt="SMS Callback Working" align="center" border={true} src="https://files.readme.io/3d8f3d1-SMS_Callback_Configuration.png" />  SMS Callback Working
+<Image alt="SMS Callback Working" border={true} src="https://files.readme.io/3d8f3d1-SMS_Callback_Configuration.png" className="border" />  SMS Callback Working
 
 ## Sample Request
-This section provides information about the sample request payload sent to SMS providers. 
+
+This section provides information about the sample request payload sent to SMS providers.
 
 ### Sample Request with Batching
 
@@ -252,7 +187,7 @@ The following is a sample request payload structure without batching:
 }
 ```
 
-The following table provides information about the key-value pair present in the above sample requests: 
+The following table provides information about the key-value pair present in the above sample requests:
 
 <Table align={["left","left","left"]}>
   <thead>
@@ -278,14 +213,14 @@ The following table provides information about the key-value pair present in the
       </td>
 
       <td>
-        Denotes Template ID.\
-        An optional replacement value used to signify the key where the TemplateID of the message is added to the payload.\
-        Every configuration must have $$TemplateID or $$Body key as a mandatory replacement.\
+        Denotes Template ID.  
+        An optional replacement value used to signify the key where the TemplateID of the message is added to the payload.  
+        Every configuration must have $$TemplateID or $$Body key as a mandatory replacement.  
         This variable is optional and only applicable for campaigns targeted to Indian mobile numbers.
       </td>
 
       <td>
-        Replacement - $$TemplateID  
+        Replacement - $$TemplateID
 
         For example, 1107160016156755389
       </td>
@@ -297,15 +232,15 @@ The following table provides information about the key-value pair present in the
       </td>
 
       <td>
-        Denotes Message ID.\
-        Metadata that CleverTap sends to the provider and receives in the incoming payload if the callbacks are configured.\
+        Denotes Message ID.  
+        Metadata that CleverTap sends to the provider and receives in the incoming payload if the callbacks are configured.  
         CleverTap dynamically replaces the mid with the required metadata, which is used to consume callback events and display them on the CleverTap dashboard.
       </td>
 
       <td>
-        Replacement - $$MessageID  
+        Replacement - $$MessageID
 
-        For example, 9999999999.1200000000.1654002362.20220531.0.wzrk\_default.-1.
+        For example, 9999999999.1200000000.1654002362.20220531.0.wzrk_default.-1.
       </td>
     </tr>
 
@@ -367,6 +302,7 @@ To send callback events to CleverTap, customers must send a POST request to Clev
             "ts": <10-digit Epoch Timstamp in seconds>,
             "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
             "toPhone": "<The number to which the user replied>",
+            "fromPhone": "<The number from which the user replied>",
       			"incomingText": "<Reciepient's response text>"
         }
     ]
@@ -393,19 +329,19 @@ To send callback events to CleverTap, customers must send a POST request to Clev
 
 The following table provides a brief description of the keys present in the callback payload:
 
-| Key Name       | Description                                                                                                                                                                                     | Sample Values                                               |
-| :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-| event\*        | Denotes the event name.                                                                                                                                                                         | failed/replied/clicked                                      |
-| ts\*           | Denotes the timestamp in Unix Epoch format.                                                                                                                                                     | 1654512921                                                  |
-| meta\*         | Denotes information that CleverTap uses for attributing delivered, clicked, errors, etc., to respective campaigns, profiles, and sms providers. Must be passed as is to CleverTap callback URL. | 9999999999.1200000000.165263328.20220606.0.wzrk\_default.1. |
-| code\*         | Includes error code in case of an error in SMS delivery.                                                                                                                                        | 900, 901                                                    |
-| description\*  | Description of callback event in case of failure or successful delivery.                                                                                                                        | For example: "sender blocked by DLT"                        |
-| toPhone        | The number to which the user replied.                                                                                                                                                           | 5555                                                        |
-| incomingText\* | User-originated message text. It is the reply string in case of a *replied* event. This key is mandatory in case of a *replied* event.                                                          | STOP, START                                                 |
-| url\*          | URL in case of the click event                                                                                                                                                                  | [www.CleverTap.com](http://www.CleverTap.com)               |
-| shorturl       | Short URL in case the outbound URL has been shortened.                                                                                                                                          | [https://bit.ly/3OjG22B](https://bit.ly/3OjG22B)            |
+| Key Name      | Description                                                                                                                                                                                     | Sample Values                                              |
+| :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| event*        | Denotes the event name.                                                                                                                                                                         | failed/replied/clicked                                     |
+| ts*           | Denotes the timestamp in Unix Epoch format.                                                                                                                                                     | 1654512921                                                 |
+| meta*         | Denotes information that CleverTap uses for attributing delivered, clicked, errors, etc., to respective campaigns, profiles, and sms providers. Must be passed as is to CleverTap callback URL. | 9999999999.1200000000.165263328.20220606.0.wzrk_default.1. |
+| code*         | Includes error code in case of an error in SMS delivery.                                                                                                                                        | 900, 901                                                   |
+| description*  | Description of callback event in case of failure or successful delivery.                                                                                                                        | For example: "sender blocked by DLT"                       |
+| toPhone       | The number to which the user replied.                                                                                                                                                           | 5555                                                       |
+| incomingText* | User-originated message text. It is the reply string in case of a _replied_ event. This key is mandatory in case of a _replied_ event.                                                          | STOP, START                                                |
+| url*          | URL in case of the click event                                                                                                                                                                  | [www.CleverTap.com](http://www.CleverTap.com)              |
+| shorturl      | Short URL in case the outbound URL has been shortened.                                                                                                                                          | [https://bit.ly/3OjG22B](https://bit.ly/3OjG22B)           |
 
-\*The asterisk mark against the key name indicates that keys are mandatory in the callback payload. 
+*The asterisk mark against the key name indicates that keys are mandatory in the callback payload.
 
 > 📘 Note
 >
@@ -471,7 +407,7 @@ If there is an error in the SMS delivery, these error codes indicate the nature 
       </td>
 
       <td>
-        The user has already sent a STOP/DND opt-out message and no longer wishes to receive messages from you. Other reasons could be illegal use of the number, nonpayment of bills, number belonging to VIPs, government order to stop SMS to the number, complaints from other mobile users about that number, or user complains to the operator/TRAI regarding unsolicited SMS being received. 
+        The user has already sent a STOP/DND opt-out message and no longer wishes to receive messages from you. Other reasons could be illegal use of the number, nonpayment of bills, number belonging to VIPs, government order to stop SMS to the number, complaints from other mobile users about that number, or user complains to the operator/TRAI regarding unsolicited SMS being received.
       </td>
     </tr>
 
@@ -513,7 +449,7 @@ If there is an error in the SMS delivery, these error codes indicate the nature 
       </td>
 
       <td>
-        Applicable only for SMS sent to Indian destination numbers via domestic lines. Sender ID (Header) is blocked or failed at the DLT platform by the operator due to mismatch, non-registration, template not linked with Sender (header), etc. 
+        Applicable only for SMS sent to Indian destination numbers via domestic lines. Sender ID (Header) is blocked or failed at the DLT platform by the operator due to mismatch, non-registration, template not linked with Sender (header), etc.
       </td>
     </tr>
 
@@ -625,7 +561,7 @@ If there is an error in the SMS delivery, these error codes indicate the nature 
       </td>
 
       <td>
-        Number banned by Indian Govt as it belongs to J\&K (Jammu and Kashmir) series. Other reasons could be SMS dropping by the operator due to no usage of SIM i.e. no voice calls (incoming and outgoing), SMS, and data continuously for 60 days from the date of the first call.
+        Number banned by Indian Govt as it belongs to J&K (Jammu and Kashmir) series. Other reasons could be SMS dropping by the operator due to no usage of SIM i.e. no voice calls (incoming and outgoing), SMS, and data continuously for 60 days from the date of the first call.
       </td>
     </tr>
 
@@ -653,7 +589,7 @@ If there is an error in the SMS delivery, these error codes indicate the nature 
       </td>
 
       <td>
-        The message dropped due to one of the following reasons:  
+        The message dropped due to one of the following reasons:
 
         <li> SMS provider's rule</li> <li>Invalid numbers in the uploaded base, or </li> <li> The client has requested to drop.</li>
       </td>
@@ -768,6 +704,7 @@ The following is the acceptable sample payload:
         }]
     }
 ```
+
 ## Incoming Payload Mapping to System Events
 
 CleverTap maps the following incoming payloads with their respective system events. You can view these on the CleverTap dashboard.
@@ -865,9 +802,10 @@ CleverTap maps the following incoming payloads with their respective system even
 
 > 📘 Notification Replied
 >
-> CleverTap trims the string within the `incomingText` parameter of the *Notification Replied* event containing more than 512 characters.
+> CleverTap trims the string within the `incomingText` parameter of the _Notification Replied_ event containing more than 512 characters.
 
 ## Response Codes
+
 CleverTap sends the following status codes and descriptions as a response to the SMS provider upon receiving callbacks:
 
 | Status Code | Description                                        | Explanation                                                                                                   |
@@ -897,8 +835,8 @@ The following is the payload structure sent by CleverTap to the providers upon r
 	}]
 }
 ```
-The following is the sample success payload:
 
+The following is the sample success payload:
 
 ```json
 {
@@ -908,6 +846,7 @@ The following is the sample success payload:
 }
 
 ```
+
 The following is the sample error payload:
 
 ```json
@@ -938,8 +877,8 @@ The following is the sample error payload:
 
 CleverTap displays comprehensive stats such as Errors, Delivered, Clicked, and CTRs upon receiving callbacks from the SMS service provider. After setting up the provider on the CleverTap dashboard, you can view these statistics from the following pages on the CleverTap dashboard:
 
-* *Stats* tab of the Campaigns. For more information, refer to [SMS Setup](doc:sms-stats).
+* _Stats_ tab of the Campaigns. For more information, refer to [SMS Setup](doc:sms-stats).
 
-<Image alt="SMS Campaign Stats" align="center" width="75%" border={true} src="https://files.readme.io/e014c49-SMS_Campaign_Stats_page.png" />  SMS Campaign Stats
+<Image alt="SMS Campaign Stats" border={true} width="75%" src="https://files.readme.io/e014c49-SMS_Campaign_Stats_page.png" className="border" />  SMS Campaign Stats
 
 * Stats tab under Provider setup. For more information, refer to the [Provider Stats](doc:sms-provider-operations#view-provider-stats).

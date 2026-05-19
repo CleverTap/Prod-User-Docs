@@ -5,12 +5,12 @@ excerpt: >-
   share insights across your team, all in one place.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

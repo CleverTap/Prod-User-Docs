@@ -10,17 +10,19 @@ metadata:
 next:
   description: ''
 ---
+<br />
+
 # Overview
 
-CleverTap's Advanced In-App Builder enables the creation of visually appealing and engaging mobile In-App messages that align with your brand's aesthetics. This document guides you through the main features of the In-App Editor and its usage, helping you maximize the feature's potential.
+CleverTap's Advanced In-App Builder enables you to create visually appealing, engaging mobile In-App messages that align with your brand's aesthetics. This document guides you through the main features of the In-App Editor and its use, helping you maximize its potential.
 
-<Image align="center" alt="Sample In-App with Advanced Builder" border={false} caption="Sample In-App Message with Advanced Editor" src="https://files.readme.io/70dd7cd5e206879de2a4edbe492e11ab7d733e3879aedc4cae3a553d6121405b-Starting-image-1.png" width="40% " />
+<Image align="center" alt="Sample In-App with Advanced Builder" caption="Sample In-App Message with Advanced Editor" src="https://files.readme.io/70dd7cd5e206879de2a4edbe492e11ab7d733e3879aedc4cae3a553d6121405b-Starting-image-1.png" width="40% " />
 
 The Advanced In-App Builder offers remarkable flexibility and ease of use. Here are the key features:
 
 * **Automatic Scaling**: Content automatically adjusts to fit any device size, ensuring consistent presentation across all platforms.
 * **Custom Layout**: Arrange elements in the container to create any desired layout.
-* **Stacking Elements**: Overlay images or other elements for more complex and visually engaging designs.
+* **Stacking Elements**: Overlay images or other elements to create more complex, visually engaging designs.
 * **Styling Options**: Access a wide range of styling options for every element, giving you precise control over the appearance.
 * **Dismiss Button Controls**: Customize the appearance and behavior of the dismiss button, including its style and placement.
 * **Animation**: Enhance user interaction with dynamic effects such as slide or fade-in animations.
@@ -31,37 +33,32 @@ To use the Advanced In-app Builder template:
 
 1. From the _What_ section in the In-App builder, select the _Message Type_ and click **Go to Editor**. The In-App templates are displayed.
 
-<Image align="center" alt="Advanced In-App Builder" border={true} caption="Advanced In-App Builder" src="https://files.readme.io/886bdbb6e9513fa588e41a43d85f09af9c4b0d7431a0b81cdbe25d1e69f858bc-Screenshot_2024-10-11_at_11.53.15.png" />
+<Image align="center" alt="Select Advanced In-App Builder from Templates" border={true} caption="Select Advanced In-App Builder" src="https://files.readme.io/8351e323af05d1ae5a6ba9080c7a52e7393d7a4959727bf704733ade935235c9-image.png" />
 
 2. From _Basic Templates_, select _Advanced In-app Builder_. The Advanced In-App Builder displays.
 
-<Image align="center" alt="Advanced In-App Builder" border={true} caption="Advanced In-App Builder" src="https://files.readme.io/b71a90dc51c963fa8eb012090cb6794a5b06fda319cf5132001f75264bb43fa8-Controls.png" />
+<Image align="center" alt="Advanced In-App Builder" border={true} caption="Advanced In-App Builder" src="https://files.readme.io/b9b8f12e89afc9219743386f0bd871bc7c636f6eafad440020b7e454c7a5c78f-image.png" />
 
 The Advanced In-App Builder has a _What You See Is What You Get (WYSIWYG)_ interface, which allows you to make modifications in real-time.
 
 It is divided into two main sections:
 
-* **Canvas (Left Side)**: The canvas is where you design your In-App message. It is fully interactive, allowing you to drag and drop elements and adjust their position and size with ease.
-* **Controls & Styling Menu (Right Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here are instantly reflected on the canvas in real-time.
-
-> 📘 Test and Preview
->
-> The _Preview and Test_ feature is currently unavailable for the Builder. To test your In-App message on a real device:
->
-> 1. **Send the Campaign**: Exclusively send the campaign to a specific user for testing.
-> 2. **Recreate and Send**: After you are done testing, recreate the campaign and send it to your intended audience.
+* **Canvas (Right Side)**: The canvas is where you design your In-App message. It is fully interactive, allowing you to drag and drop elements and adjust their position and size with ease.
+* **Controls & Styling Menu (Left Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here are instantly reflected on the canvas in real-time.
 
 ## Builder Elements
 
-In the Advanced In-App Builder, _Elements_ are the core components used to construct your message. Upon opening the builder, three default elements are available, as shown in the following image:
+In the Advanced In-App Builder, _Elements_ are the core components used to construct your message. Upon opening the builder, three default elements are available: _Overlay_, _Container_, and _Dismiss Button_.
 
-<Image align="center" alt="Default Elements" border={true} caption="Default Elements" src="https://files.readme.io/77bb8a26baf882c3b13aedce32a82f8b811ccab024ae59f5f80077b3ed0e39ac-image.png" width="50% " />
+The following image shows the default elements:
+
+<Image align="center" alt="Builder Elements" border={true} caption="Builder Elements" src="https://files.readme.io/6f000c194b0eff2f5212ea3d254153936569fdb9918ff552101101a8c906d058-image.png" />
 
 ### Overlay
 
 The overlay provides a background for your In-App message, ensuring a seamless, integrated look.
 
-<Image align="center" alt="Design Overlay" border={true} caption="Design Overlay" src="https://files.readme.io/59d4503d9c0cbbc300f4e5d245189b55d4b065e499d310f33724c110f8d82b84-Overlay_slider.gif" />
+<Image align="center" alt="Design Overlay" border={true} caption="Design Overlay" src="https://files.readme.io/d672f5276736ad6a399337a6cb80eca771b28b480863c315acf19bcc26345a64-image.png" />
 
 The overlay allows you to modify the following:
 
@@ -73,9 +70,11 @@ The overlay allows you to modify the following:
 
 The _Container_ holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
 
-<Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/1626def427219d29d0892846f9c54eb4ce46a4b19a1ecb09fdd2a24c40f8d890-image.png" />
-
 #### Container Properties
+
+Click the + button to add a container element such as _Text_, _Media_, or _Button_.
+
+<Image align="center" alt="Container Properties" border={true} caption="Container Properties" src="https://files.readme.io/7c07c6a2e2cc53ebbe5bb1d8238acf942113e1641e6e04a9997b975de8d5cb6e-image.png" />
 
 You can customize the following properties to control the look, behavior, and visual design of your In-App message:
 
@@ -84,28 +83,28 @@ You can customize the following properties to control the look, behavior, and vi
 * **Margin:** Adjust the margin percentage to create space between the message and the device edges.
 * **Delay:** Set a delay after which the in-app message automatically dismisses.
 
-#### Container Action
+#### On Tap Container Action
 
 Define what happens when users tap the container.
 
-| Action Type            | Description                                                                                                                                                                   |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                        |
-| **Close Notification** | Closes the in-app message.                                                                                                                                                    |
-| **Open URL**           | Opens a specified URL link.                                                                                                                                                   |
-| **Key–Value Pair**     | Adds a key-value pair for tracking or personalization.                                                                                                                        |
-| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](https://docs.clevertap.com/docs/app-functions). |
+| Action Type            | Description                                                                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                                  |
+| **Close Notification** | Closes the in-app message.                                                                                                                                                              |
+| **Open URL**           | Opens a specified URL link.                                                                                                                                                             |
+| **Key–Value Pair**     | Adds a key-value pair for tracking or personalization.                                                                                                                                  |
+| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). |
 
 #### Background
 
 Apply a background color or image to your design. You can do the following:
 
 * Choose a **solid color** using a color picker or hex code.
-* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](https://docs.clevertap.com/docs/advanced-in-app-builder#image-size-and-aspect-ratios).
+* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](<docs: advanced-in-app-builder#size-and-aspect-ratios>).
 
 #### Font and Text
 
-Control how text appears within your container. For more information, refer to [Custom Fonts](https://docs.clevertap.com/docs/advanced-in-app-builder#custom-fonts).
+Control how text appears within your container. For more information, refer to [Custom Fonts](docs:advanced-in-app-builder#custom-fonts).
 
 #### Border Radius
 
@@ -172,7 +171,7 @@ You can use the following media for your content:
 | **JPEG**    | Best for photos and detailed images.            |
 | **PNG**     | Ideal for transparent or high-quality graphics. |
 | **GIF**     | Use for lightweight animations.                 |
-| **Video**   | Use for short videos (up to 50 MB).             |
+| **Video:**  | Use for short videos (up to 50 MB).             |
 
 <Callout icon="📘" theme="info">
   #### Best Practices
@@ -184,13 +183,13 @@ You can use the following media for your content:
 
 The _Dismiss Button_ allows users to close the In-App message.
 
-<Image align="center" alt="Hide/Display Dismiss Button" border={true} caption="Hide/Display Dismiss Button" src="https://files.readme.io/889f6fa799897269c2d9e9e3fe4ddc331f73720c8cffc3eb5cfdf946e48c8132-screenshot-1.png" />
+<Image align="center" alt="Hide/Display Dismiss Button" border={true} caption="Hide/Display Dismiss Button" src="https://files.readme.io/24986a4c9c8915ee965694ff537b4580240ff9b9304c8f0def52a8a53c6a49f0-image.png" />
 
 ## Add New Elements Inside Container
 
 Click **Add** on the canvas to add _Text_, _Image_, or _Button_.
 
-<Image align="center" alt="Add Elements in Container" border={true} caption="Add Elements in Container" src="https://files.readme.io/c1950ae9cf14eb15e517649ad93edc2319c50b83ef422e708c1b27c40e54e851-screenrecording-2.gif" />
+<Image align="center" alt="Add Elements in Container" border={true} caption="Design Container" src="https://files.readme.io/5c7f4c2951e63bc47db0b53962dd3d2b0e7901f47a0472179658465de955acb4-image.png" />
 
 You can enhance your In-App message by adding the following elements inside the container:
 
@@ -204,13 +203,13 @@ You can enhance your In-App message by adding the following elements inside the 
 
 When working with stacked elements such as images, text boxes, or buttons, the _Bring Forward_ and _Send Backward_ buttons manage their visibility on the user's screen. If one element overlaps another, clicking **Bring Forward** brings the selected element to the front, ensuring it is fully visible.
 
-<Image align="center" alt="Bring Forward and Send Backward Buttons" border={true} caption="Position Elements" src="https://files.readme.io/296be8c99677e1a5a42d5b3070322bdf13c6bfbb8bb9ef33a4ef829fbe0ff4f8-screenrecording-3.gif" />
+<Image align="center" alt="Position Elements bring to front or back." border={true} caption="Position Elements" src="https://files.readme.io/35c194660dca11ba3af592a6e9416021bdd5426be91ac02ad3c0435533a305f3-image.png" />
 
 ## Add Animations
 
 The builder offers built-in animation options to enhance the user experience flow. Animations are configured from the Container element.
 
-<Image align="center" alt="Animation" border={true} caption="Design Animation" src="https://files.readme.io/e3e774a3fdb678a01416ff17dbfd20226ab3fa857e7359e2551ae55449bd0a40-scheenrecording-1.gif" />
+<Image align="center" alt="Animate Element" border={true} caption="Animate Element" src="https://files.readme.io/9e32ce79a98200dc097b11f56e9a14a2a7392d22e03f805d69ce8adef1c92c41-image.png" />
 
 You can enhance user interaction with the help of various animation options as follows:
 
@@ -225,7 +224,7 @@ Mobile Banner ads are a type of in-app message designed to subtly engage users w
 
 Unlike Interstitial messages or full-screen Covers, Banners are _nonintrusive_. They do not block app interactions or obscure the rest of the screen. They allow seamless user activity while still effectively delivering your message.
 
-<Image align="center" alt="Create in-app banner" border={true} caption="In-App Banner" src="https://files.readme.io/9405d9f1a56e914769b2147a3627b4e57d6592202ff5bfafe8a099c71ac95d6d-image.png" />
+<Image align="center" alt="Create In-App Banner" border={true} caption="In-App Banner" src="https://files.readme.io/eb7f24a0493c8538d84ccda94b5fd6e4b01ecaceb6b4cbaced3556adae5a903d-image.png" />
 
 ## Create Banners
 
@@ -244,14 +243,11 @@ Your Banner is ready to be used in an In-App campaign.
 
 The Advanced In-app Builder supports **Custom Fonts** for all Text content in your Mobile In-app Campaign. To use custom fonts, follow these steps:
 
-1. Select _Advanced In-App Builder_ from the _Builders_ tab when creating an in-app message campaign. \{Go to, Navigate - What is used across the documentation?}
-2. Select the _Container_ element to manage custom fonts.
+1. Select _Advanced In-App Builder_ from the _Builders_ tab when creating an in-app message campaign.
+2. Select the _Container_ element to add or manage custom fonts.
+3. From the _Font_ list, select a font from _System Fonts_ or your _Custom Fonts_, which will be applied to all elements with Text in your Campaign.
 
-<Image align="center" alt="Font Settings in Container" border={true} caption="Font Settings in Container" src="https://files.readme.io/154da0d64ddecb9d44d104b8e2d7e46e54f3e7e83244f6d98d0ffe263f67c420-image.png" width="50% " />
-
-2. From the _Font_ list, select a font from _System Fonts_ or your _Custom Fonts_, which will be applied to all elements with Text in your Campaign.
-
-<Image align="center" alt="Select Font " border={true} caption="Select Font" src="https://files.readme.io/99b50bebbb4e609093789b37b8d8907402b5d6639541bd57f7c628c98373d10a-Screenshot_2025-01-09_at_16.32.57.png" width="80% " />
+<Image align="center" alt="Select or Add Font" border={true} caption="Select or Add Font" src="https://files.readme.io/e5af8decf68dd7a88f6631713d9eaeb397f8995a27e70b738ce6db726f4c2d3a-image.png" />
 
 3. Click the **Add** button to add your new Custom Font. You can either upload a **CSS file** containing your Custom Font or use the **URL** of an already hosted file.
 

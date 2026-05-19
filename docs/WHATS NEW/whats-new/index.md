@@ -407,6 +407,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="advanced-web-pop-up-builder">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#advanced-web-pop-up-builder"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Advanced Web Pop-up Builder</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>Advanced Web Pop-up Builder is now available, enabling you to create and launch web campaigns faster with greater flexibility. You can design fully customized pop-ups, preview them in real time, and deploy without relying on engineering or design teams.</p>
+    <p>With Advanced Web Pop-up Builder, you can:</p>
+    <p>
+      <ul>
+        <li>Create flexible layouts with full control over fonts, colors, and spacing.</li>
+        <li>Design rich experiences using animations, image stacking, and custom backgrounds.</li>
+        <li>Preview campaigns across devices before publishing.</li>
+        <li>Launch, A/B test, and update content independently.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/advanced-in-app-builder-v2" target="_blank">Advanced Web Pop-up Builder</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="cross-project-cloning-for-engagements">
   <div class="release-note-header">
     <div class="anchor-link-icon">

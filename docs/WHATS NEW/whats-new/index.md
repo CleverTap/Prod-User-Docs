@@ -152,7 +152,40 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## May 
+## May
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="data-warehouse-imports">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#data-warehouse-imports"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Data Warehouse Imports</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now supports native imports directly from your data warehouse. Pull user attributes and events from Snowflake, BigQuery, Databricks, Amazon Redshift, or Microsoft Fabric straight into CleverTap profiles, ready for Segmentation, Journeys, and Campaigns.</p>
+
+    <p>With Data Warehouse Imports, you can:</p>
+
+    <p>
+      <ul>
+        <li>Connect to Snowflake, BigQuery, Databricks, Amazon Redshift, or Microsoft Fabric using secure standard authentication or private key configuration, then query data using custom SQL or a simple table picker.</li>
+        <li>Map warehouse columns to CleverTap user attributes or events visually with data type selection (String, Number, Boolean, Date), and validate the exact profile that will be created before going live.</li>
+        <li>Schedule imports on repeat intervals, custom day-of-week or month schedules, or trigger them manually. After the first full import, only new or updated records sync on subsequent run.</li>
+        <li>Monitor all imports from a single dashboard with run history, success and error counts, and one-click Run, Pause, and Stop controls. Receive email and dashboard alerts for successes, failures, and anomalies.</li>
+<li>Manage access with Admin, Approver, Creator, and Member roles, backed by full audit logs for every configuration change.</li>
+      </ul>
+    </p>
+<p><img src="https://files.readme.io/62d3677e93f585e247a28238e66d00345491608dc8edda862bf8d74e0222c31c-datawarehouse_1_2.png" alt="Data Warehouse Imports."> </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/data-warehouse-import" target="_blank">Data Warehouse Imports.</a></p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="boards-20">

@@ -1,7 +1,7 @@
 ---
 title: Advanced In-App Builder 2.0
 excerpt: Learn how to edit and design In-App campaigns from the CleverTap dashboard.
-deprecated: false
+deprecated: true
 hidden: false
 metadata:
   title: Advanced In-App Builder 2.0

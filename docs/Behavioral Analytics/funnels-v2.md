@@ -332,12 +332,6 @@ To add a funnel to a board:
 
 <Image align="center" border={true} caption="Add a Funnel Analysis to a Board" src="https://files.readme.io/b61eb4ed929cc71c05796470852422a7489b49a5d27b13e9db948a8abde23adc-2026-05-18_16-51-46_1.gif" />
 
-<Callout icon="📘" theme="info">
-  #### Save Chart Configurations
-
-  CleverTap saves the current chart configurations, including the time metric selection (_Median Time_ or _Average Time_), display format (_%_ or _#_), and chart orientation (_vertical_ or _horizontal_), with the board tile and applies them each time the tile is viewed.
-</Callout>
-
 Use boards when you want to:
 
 * Track the same funnel regularly

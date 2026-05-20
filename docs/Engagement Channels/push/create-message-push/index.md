@@ -210,6 +210,22 @@ To calculate the estimated reach, perform the steps below:
 
 <Image align="center" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/cd0a9385b9c0efa8d0ff7d6a5af9fc000b5b164910dfadb31c9ae6565670e23b-2026-01-30_19-12-06_1.gif" width="85% " />
 
+> 📘 Estimated Reach vs. Actual Qualified Count
+>
+> When creating a campaign with the Send to All Devices option enabled, the Estimated Reach shown before publishing the campaign may differ slightly from the actual qualified user count after the campaign is published.
+>
+> This occurs because the estimate is calculated using an optimized approach that evaluates only a limited number of devices per user. As a result, inactive or outdated devices (for example, devices without valid push tokens) may be included in the estimate.
+>
+> During actual campaign execution, only valid and reachable devices are considered. This ensures that all eligible users are targeted, and in some cases, the final qualified count may be slightly higher than the estimate.
+>
+> The difference is typically small and depends on factors such as:
+>
+> * Number of devices associated with each user 
+> * Presence of inactive or historical devices 
+> * Campaign constraints (for example, limits or dwell time) 
+>
+> Estimated Reach should be used as an approximate indicator of campaign size and not as an exact user count. This discrepancy does not impact campaign delivery, and all eligible users and devices are correctly targeted when the campaign is sent.
+
 ### Control Group
 
 You can define the control group to compare and measure the results of your campaign. For more information on control groups, see [Control Groups](doc:control-groups).

@@ -223,7 +223,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <div class="release-note article" data-category="analytics" id="funnels-20">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#enhanced-funnels-20"><i class="fa-light fa-anchor"></i></a>
+      <a href="#funnels-20"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
@@ -294,7 +294,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
       <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Custom Rewards</h3>
-    <div class="badge new feature">NEW FEATURE</div>
+    <div class="badge new-feature">NEW FEATURE</div>
   </div>
   <div class="release-note-body">
     <p>Custom Rewards is now available for all Promo customers. It enables you to go beyond traditional coupons and points to deliver high-value rewards through Promo Campaigns. </p>

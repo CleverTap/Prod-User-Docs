@@ -155,6 +155,38 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="analytics" id="boards-20">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#boards-20"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Boards 2.0</h3>
+    <div class="badge new-fetature">NEW FEATURE</div>
+    <div class="badge public-beta">BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>Boards 2.0 now includes enhancements that make your dashboards more flexible, easier to customize, and simpler to share.</p>
+    <p>With these enhancements, you can:</p>
+<p>
+      <ul>
+        <li>Filter any board by segment to focus insights on a specific audience.</li>
+        <li>Rename tiles and legends to make boards easier to read without additional context.</li>
+        <li>Add trends, funnels, flows, pivots, and cohorts as charts or tables directly on the board.</li>
+        <li>Clone any tile with a single click to iterate on existing analysis without starting over.</li>
+        <li>Export tiles as images, PDFs, or CSVs for use in decks, documents, and offline analysis..</li>
+        <li>Add note tiles to include context, ownership information, or instructions directly on the board.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/boards-v2" target="_blank">Boards 2.0</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="data-and-integrations" id="data-warehouse-imports">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -183,38 +215,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <p><img src="https://files.readme.io/62d3677e93f585e247a28238e66d00345491608dc8edda862bf8d74e0222c31c-datawarehouse_1_2.png" alt="Data Warehouse Imports."> </p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/data-warehouse-import" target="_blank">Data Warehouse Imports.</a></p>
   </div>
-  <hr/>
-</div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
-<div class="release-note article" data-category="analytics" id="boards-20">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#boards-20"><i class="fa-light fa-anchor"></i></a>
-    </div>
-    <div>
-      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">Boards 2.0</h3>
-    <div class="badge new-fetature">NEW FEATURE</div>
-    <div class="badge public-beta">BETA</div> 
-  </div>
-  <div class="release-note-body">
-    <p>Boards 2.0 now includes enhancements that make your dashboards more flexible, easier to customize, and simpler to share.</p>
-    <p>With these enhancements, you can:</p>
-<p>
-      <ul>
-        <li>Filter any board by segment to focus insights on a specific audience.</li>
-        <li>Rename tiles and legends to make boards easier to read without additional context.</li>
-        <li>Add trends, funnels, flows, pivots, and cohorts as charts or tables directly on the board.</li>
-        <li>Clone any tile with a single click to iterate on existing analysis without starting over.</li>
-        <li>Export tiles as images, PDFs, or CSVs for use in decks, documents, and offline analysis..</li>
-        <li>Add note tiles to include context, ownership information, or instructions directly on the board.</li>
-      </ul>
-    </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/boards-v2" target="_blank">Boards 2.0</a>.</p>
-</div>
   <hr/>
 </div>
 `}</HTMLBlock>

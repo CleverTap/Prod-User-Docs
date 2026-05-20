@@ -220,7 +220,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="analytics" id="enhanced-funnels-20">
+<div class="release-note article" data-category="analytics" id="funnels-20">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#enhanced-funnels-20"><i class="fa-light fa-anchor"></i></a>

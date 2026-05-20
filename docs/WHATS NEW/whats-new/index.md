@@ -164,8 +164,8 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
       <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Boards 2.0</h3>
-    <div class="badge new-fetature">NEW FEATURE</div>
-    <div class="badge public-beta">BETA</div> 
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge beta">BETA</div> 
   </div>
   <div class="release-note-body">
     <p>Boards 2.0 now includes enhancements that make your dashboards more flexible, easier to customize, and simpler to share.</p>
@@ -230,7 +230,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
     </div>
     <h3 class="release-note-heading">Funnels 2.0</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge public-beta">BETA</div> 
+    <div class="badge beta">BETA</div> 
   </div>
   <div class="release-note-body">
     <p>Funnels 2.0 now includes enhancements to make conversion analysis more flexible and actionable. These updates improve how you visualize, measure, and export funnel data across product and growth use cases.</p>
@@ -294,7 +294,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
       <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Custom Rewards</h3>
-    <div class="badge new feature">NEW FETURE</div>
+    <div class="badge new feature">NEW FEATURE</div>
   </div>
   <div class="release-note-body">
     <p>Custom Rewards is now available for all Promo customers. It enables you to go beyond traditional coupons and points to deliver high-value rewards through Promo Campaigns. </p>

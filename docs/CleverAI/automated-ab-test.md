@@ -246,7 +246,7 @@ You can create your campaign message manually or use the Fill with AI option. AI
 
 <Image align="center" border={true} caption="Fill with AI" src="https://files.readme.io/0b94fa3aa2f8963ca0345a4f14faee8fd6467815c37e4d71423236eb1ce70884-Fill_with_AI.png" />
 
-To create variants, you can do it manually by clicking ![](https://files.readme.io/64f02a1ec8567dcbfb8a34d1b586ec85a57244dddde72e311c71c30e105c3438-Plus.png)or by clicking **Create More Variants**. AI generates a new variant based on the intent of your existing copy. All non-copy fields are auto-cloned from the source.
+To create variants, you can do it manually by clicking![](https://files.readme.io/64f02a1ec8567dcbfb8a34d1b586ec85a57244dddde72e311c71c30e105c3438-Plus.png)or by clicking **Create More Variants**. AI generates a new variant based on the intent of your existing copy. All non-copy fields are auto-cloned from the source.
 
 <Image align="center" border={true} caption="Create More Variants Using AI" src="https://files.readme.io/1b4395a87cc87bb322dbb9bc959b74ec4ab159fdfed3ed83d0b5225c396a2d40-Create_More_Variants.gif" />
 

@@ -252,6 +252,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="Multiple-Campaigns-Native-Display">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#Multiple-Campaigns-Native-Display"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img
+        src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg"
+        alt="Product Experiences"
+        class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Multiple Campaigns with a Single Event in Native Display</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now run multiple App Native Display campaigns from a single user event, making it easier to build multi-promotion layouts, dynamic carousels, and multi-slot screens without additional event instrumentation.</p>
+    <p>With this enhancement, you can:</p>
+    <ul>
+      <li><strong>Fill multiple screen slots at once:</strong> A single trigger, such as Notification Viewed, can now simultaneously serve several promotions, each targeted to the right segment.</li>
+      <li><strong>Control which campaigns appear first:</strong> Set campaign-level priority to decide the order in which promotions are displayed to users.</li>
+      <li><strong>Build richer in-app experiences:</strong> Power carousels, multi-banner layouts, and personalised screen sections without coordinating multiple events.</li>
+      <li><strong>Keep existing campaigns running as-is:</strong> Apps that have not updated to the new SDK continue to work without any changes.</li>
+    </ul>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-native-display#native-display-priority" target="_blank">Native Display Priority</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="data-and-integrations" id="truecaller-clevertaps-new-enagagement-channel">
   <div class="release-note-header">
     <div class="anchor-link-icon">

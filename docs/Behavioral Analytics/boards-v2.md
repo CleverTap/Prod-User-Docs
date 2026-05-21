@@ -210,18 +210,6 @@ To access the tile menu, click the ![](https://files.readme.io/e4c0310e2942b4fdf
 
 <Image align="center" border={true} caption="Tile Operations In a Board" src="https://files.readme.io/d25577affd29ff3f44f41380c0576bcc7e9686d5dcb19934983585334fbbd792-image.png" />
 
-The operations available on a tile depend on the tile type. The following table summarizes which operations are available for each tile type:
-
-| Operation             |      Note     |     Trends    |    Funnels    |     Pivots    |    Cohorts    |     Flows     |
-| :-------------------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Edit                  |   Available   |   Available   |   Available   |   Available   |   Available   |   Available   |
-| Rename Tile           |   Available   |   Available   |   Available   |   Available   |   Available   |   Available   |
-| Rename Legend         | Not available |   Available   | Not available | Not available | Not available | Not available |
-| Rename Legend & Steps | Not available | Not available |   Available   | Not available | Not available | Not available |
-| Clone                 |   Available   |   Available   |   Available   |   Available   |   Available   |   Available   |
-| Export                | Not available |   Available   |   Available   |   Available   |   Available   |   Available   |
-| Delete                |   Available   |   Available   |   Available   |   Available   |   Available   |   Available   |
-
 The following sections describe each operation in detail.
 
 * [Edit](doc:boards-v2#edit)
@@ -239,7 +227,7 @@ Opens the underlying analysis (for example, Trends or Funnels) in edit mode, whe
 Use _Edit_ when the tile configuration needs to change, for example, when adding a new event to a Trends chart or modifying the steps in a Funnel.
 
 <Callout icon="📘" theme="info">
-  #### Note
+  #### Edit Tile Behavior
 
   Editing a tile opens the original saved analysis. Any changes saved in edit mode will update the analysis itself, not just the tile instance on the board.
 </Callout>
@@ -260,12 +248,6 @@ Updates the legend labels displayed on a Trends tile's chart. This is useful whe
 
 Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions.
 
-<Callout icon="📘" theme="info">
-  #### Note
-
-  The _Rename Legend_ operation is available only on Trends tiles.
-</Callout>
-
 <Image align="center" border={true} caption="Renaming Legend of a Trends Tile" src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" />
 
 ## Rename Legend & Steps
@@ -273,12 +255,6 @@ Use _Rename Legend_ when presenting boards to non-technical stakeholders who may
 Updates both the legend labels and the step names displayed on a Funnels tile. This is useful when default event names or funnel step labels are not self-explanatory to the intended audience.
 
 Use _Rename Legend & Steps_ when sharing a Funnels tile with stakeholders who are unfamiliar with the internal event names used to define funnel steps.
-
-<Callout icon="📘" theme="info">
-  #### Note
-
-  The _Rename Legend & Steps_ operation is available only on Funnels tiles.
-</Callout>
 
 <Image align="center" border={true} caption="Renaming Legends and Steps of a Funnel Tile" src="https://files.readme.io/1a895588fd520171681321b710344b98e09b6dec0a3ef07f8720eb0f45fc2f1a-2026-05-19_23-33-03_1.gif" />
 
@@ -295,12 +271,6 @@ Use _Clone_ when creating a variant of an existing tile is required. For example
 Downloads the tile's data as a file for offline use or sharing. The export format varies by tile type. For example, chart-based tiles, such as Trends, export as PNG, PDF, or CSV, while table-based tiles, such as Pivots, export as CSV.
 
 Use _Export_ when sharing a specific chart or table with someone outside the platform, or when including it in a presentation or report.
-
-<Callout icon="📘" theme="info">
-  #### Note
-
-  The Export operation is not available on Note tiles.
-</Callout>
 
 <Image align="center" border={true} caption="Exporting a Funnel Tile as a PDF" src="https://files.readme.io/1ee60fa1c2b8dd588be4a989524dd2659ad20a788ccc463b92457982c5854b82-2026-05-19_23-38-55_1.gif" />
 

@@ -39,7 +39,7 @@ To enable the approval workflow, go to _Settings_ > _Security_ > _Approval manag
 
 After enabling the workflow, you can assign the _Approver_ role to specific users, or create custom roles with approver access for the Product Experiences feature.
 
-For more information on assigning roles, refer to [Role Based Access Control](https://docs.clevertap.com/docs/role-based-access-control) .
+For more information on assigning roles, refer to [Role Based Access Control](https://docs.clevertap.com/docs/role-based-access-control).
 
 The following users are considered approvers:
 

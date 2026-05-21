@@ -224,7 +224,7 @@ The following sections describe each operation in detail.
 
 Opens the underlying analysis (for example, Trends or Funnels) in edit mode, where you can make changes to events, filters, date ranges, or chart types. Once saved, the tile on the board updates to reflect the changes.
 
-Use _Edit_ when the tile configuration needs to change, for example, when adding a new event to a Trends chart or modifying the steps in a Funnel.
+Use _Edit_ when the tile configuration needs to change. For example, when you want to add a new event to a Trends chart or modify the steps in a Funnel.
 
 <Callout icon="📘" theme="info">
   #### Edit Tile Behavior
@@ -244,9 +244,9 @@ Use _Rename Tile_ when the default analysis name is not descriptive enough for t
 
 ## Rename Legend
 
-Updates the legend labels displayed on a Trends tile's chart. This is useful when default event or property names are too technical or ambiguous for a broader audience.
+Updates the legend labels displayed on a Trends tile's chart. This is useful when the default event or property names are too technical or ambiguous for a broader audience.
 
-Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions.
+Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions. For example, rename _Engaged Users_ to _Engaged Users in Last 30 Days_.
 
 <Image align="center" border={true} caption="Renaming Legend of a Trends Tile" src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" />
 
@@ -268,7 +268,7 @@ Use _Clone_ when creating a variant of an existing tile is required. For example
 
 ## Export
 
-Downloads the tile's data as a file for offline use or sharing. The export format varies by tile type. For example, chart-based tiles, such as Trends, export as PNG, PDF, or CSV, while table-based tiles, such as Pivots, export as CSV.
+Downloads the tile's data as a file for offline use or sharing. The export format varies by tile type. For example, chart-based tiles, such as Trends, can be exported as PNG, PDF, or CSV, while table-based tiles, such as Pivots, can be exported as CSV.
 
 Use _Export_ when sharing a specific chart or table with someone outside the platform, or when including it in a presentation or report.
 
@@ -281,7 +281,7 @@ Permanently removes a tile from the board. This does not delete the original ana
 <Callout icon="📘" theme="info">
   #### Important
 
-  Deleted tiles cannot be restored. If a tile is accidentally deleted, it must be re-added from the original analysis.
+  Deleted tiles cannot be restored. If a tile is accidentally deleted, it must be added again from the original analysis.
 </Callout>
 
 <Image align="center" border={true} caption="Deleting a Pivot Tile" src="https://files.readme.io/27cc0b11c0e1a80c6a4a3d62f9652eaec96a416ec52261cf3d133b57ec7fb066-2026-05-19_23-41-31_1.gif" />

@@ -56,14 +56,12 @@ The following are the key features of the Loyalty Wallets:
 
 The Loyalty Wallets page shows all the wallets created for your account. To view all the created wallets:
 
-1. Go to *Promotions* from the CleverTap dashboard.
-2. Click **Rewards** and select **Loyalty Wallets** from the list. 
+1. Go to _Promotions_ from the CleverTap dashboard.
+2. Click **Rewards** and select **Loyalty Wallets** from the list.
 
-<Image alt="Access All Wallets" align="center" border={true} src="https://files.readme.io/52fa28d7380c4ac8e5ef1c7bd9612edf0d5f33e5d5b866315252917b151752a9-Loyalty_Wallets_Page.png">
-  Access All Wallets
-</Image>
+<Image align="center" alt="Access All Wallets" border={true} caption="Access All Wallets" src="https://files.readme.io/52fa28d7380c4ac8e5ef1c7bd9612edf0d5f33e5d5b866315252917b151752a9-Loyalty_Wallets_Page.png" />
 
-Each wallet has its unique Wallet ID and some predefined values such as Loyalty Points Name, Creation Date, Created by, and so on. For more information, refer to [Create a Wallet](doc:create-loyalty-wallet#create-a-wallet).
+Each wallet has its unique Wallet ID and some predefined values such as Loyalty Points Name, Creation Date, Created by, and so on. For more information, refer to [Create Wallet](doc:create-loyalty-wallet#create-wallet).
 
 # Resources
 
@@ -76,7 +74,7 @@ Refer to the following documents to understand CleverTap's Loyalty Wallet featur
       <li><a class="links" href="https://docs.clevertap.com/docs/wallet-operations" target="_blank" rel="noopener noreferrer">Wallet Operations</a></li>
     </ul>
   </div>
-  
+
   <div class="link-content">
     <ul>
       <li><a class="links" href="https://docs.clevertap.com/docs/create-loyalty-wallet" target="_blank" rel="noopener noreferrer">Create Loyalty Wallet</a></li>

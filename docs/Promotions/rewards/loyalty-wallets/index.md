@@ -44,13 +44,18 @@ Before using the Wallet feature, check the following:
 * You have the necessary permissions to configure and manage wallet points.
 * You have a Wallet already created for your account to integrate the [Wallet APIs](https://developer.clevertap.com/docs/wallet-apis).
 
-# Features
+<br />
+
+# Key Features
 
 The following are the key features of the Loyalty Wallets:
 
-* **Wallet Points**: Loyalty points assigned to customers that can be redeemed for discounts, offers, or in-app purchases. Points can be credited through various sources such as promotional campaigns, cashback coupons, APIs, and CleverTap dashboard. Different reward types are supported, such as fixed points, percentage-based points, proportional points, and random points based on their probability factors.
-* **Wallet Transactions**: Tracks all wallet-related transactions for a user, including point credits, debits, promises, and expiry. Loyalty points can be credited via promo campaigns, the Wallet Credit API, cashback coupons, or the CleverTap dashboard. Debits occur through the [Wallet Debit API](https://developer.clevertap.com/docs/debitcredit-wallet) when users redeem points or the points expire.
-* **Points Expiration**: Wallets can be set up with a point expiration duration, which defines the time period in days, weeks, hours, or minutes after which rewarded points will automatically expire. This approach encourages timely usage and increases engagement.
+* **Wallet Points**: Loyalty points assigned to customers that can be redeemed for discounts, offers, or in-app purchases. Points can be credited through various sources, such as promotional campaigns, cashback coupons, APIs, and the CleverTap dashboard. Different reward types are supported, such as fixed points, percentage-based points, proportional points, and random points based on their probability factors.
+* **Wallet Transactions**: Tracks all wallet-related transactions for a user, including point credits, debits, promises, and expiry. Loyalty points can be credited via promo campaigns, the Wallet Credit API, cashback coupons, or the CleverTap dashboard. Debits occur through the [Wallet Debit API](https://staging.docs.dev.clevertap.net/docs/debitcredit-wallet) when users redeem points or the points expire.
+* **Points Expiration**: Wallets can be set up with a point expiration duration, specifying the number of days, months, years, or calendar years after which rewarded points will automatically expire. This approach encourages timely usage and increases engagement.
+* **Point Redemption Strategy**: Wallets support the following two redemption strategies:
+  * **Expiry FIFO**: Points closest to expiry are redeemed first.
+  * **Issuance FIFO**: Points issued earliest are redeemed first. These points redemption strategies control the order in which points are drawn from a user's wallet during redemption.
 
 # Access Loyalty Wallets
 

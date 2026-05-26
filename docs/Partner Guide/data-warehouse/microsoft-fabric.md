@@ -12,12 +12,6 @@ metadata:
 
 Configuring Microsoft Fabric with CleverTap enables seamless data import, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
 
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  Microsoft Fabric integration is currently released in Private Beta and is available as part of CleverTap's Data Warehouse support. Contact your Customer Success Manager for access.
-</Callout>
-
 # Quick Start Guide for Existing Users
 
 <Accordion title="Expand for quick setup if you have previously configured a Microsoft Fabric workspace and are familiar with the CleverTap dashboard. If you are setting up Microsoft Fabric for the first time, skip to Prerequisites for Integration below.">
@@ -101,7 +95,7 @@ To store data for CleverTap integration, you first need to create a Fabric Wareh
 1. Log in to the [Microsoft Fabric portal](https://app.fabric.microsoft.com).
 2. Navigate to your target **Workspace** from the left sidebar.
 3. Click **+ New Item** and select **Warehouse** under the _Data Warehouse_ section.
-4. Enter a descriptive _Name_ (for example, `clevertap_warehouse`). This name will be pasted in the _Database_ field on the CleverTap dashboard. 
+4. Enter a descriptive _Name_ (for example, `clevertap_warehouse`). This name will be pasted in the _Database_ field on the CleverTap dashboard.
 5. Click **Create**.
 
 To obtain the **Host** value:

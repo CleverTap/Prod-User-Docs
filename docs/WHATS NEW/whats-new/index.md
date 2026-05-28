@@ -182,7 +182,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 <p><img src="https://files.readme.io/3fe1e38403ab24b3ae2f3d46c4e54bc7500e6429c992e3ac725108086d48abb6-image_78.png" alt="Salesforce CRM Connector."> </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/data-warehouse-import" target="_blank"> Salesforce CRM Connector.</a></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/salesforce-crm" target="_blank"> Salesforce CRM Connector.</a></p>
   </div>
   <hr/>
 </div>

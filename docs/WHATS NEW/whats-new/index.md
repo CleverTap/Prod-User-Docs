@@ -167,7 +167,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
     <div class="badge new-feature">NEW FEATURE</div>
   </div>
   <div class="release-note-body">
-    <p>CleverTap now supports native imports directly from Salesforce CRM. Pull standard and custom object data including leads, contacts, opportunities, and cases into CleverTap profiles, ready for Segmentation, Journeys, and Campaigns.</p>
+    <p>CleverTap now supports native imports directly from <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=6d0bd1f7-9c5c-484d-87cd-cfc0c68827ca" target="_blank"> Salesforce CRM Connector.</a></p>. Pull standard and custom object data including leads, contacts, opportunities, and cases into CleverTap profiles, ready for Segmentation, Journeys, and Campaigns.</p>
 
     <p>With the Salesforce CRM Connector, you can:</p>
 

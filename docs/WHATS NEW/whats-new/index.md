@@ -155,6 +155,42 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="salesforce-crm-connector">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#salesforce-crm-connector"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Salesforce CRM Connector</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now supports native imports directly from Salesforce CRM. Pull standard and custom object data including leads, contacts, opportunities, and cases into CleverTap profiles, ready for Segmentation, Journeys, and Campaigns.</p>
+
+    <p>With the Salesforce CRM Connector, you can:</p>
+
+    <p>
+      <ul>
+        <li>Sync 17+ standard Salesforce objects such as Lead, Contact, or Order, and any custom object via a one-time record-triggered flow into CleverTap profiles and events.</li>
+        <li>Choose real-time delivery or batch delivery on a 5 to 60 minute cadence, with automatic retry up to five attempts and deduplication.</li>
+        <li>Use field-level filters to control which records sync, and run a one-time Historical Sync to backfill records created before the integration was set up.</li>
+        <li>Monitor every sync attempt from the native Event Logs in Salesforce showing request, response, and status per record.</li>
+<li>Push engagement data, campaign responses, and survey results from CleverTap back into Salesforce custom objects via OAuth 2.0-secured webhooks.</li>
+<li>Route different objects to different CleverTap projects or regions using multi-connection support.</li>
+      </ul>
+    </p>
+<p><img src="https://files.readme.io/62d3677e93f585e247a28238e66d00345491608dc8edda862bf8d74e0222c31c-datawarehouse_1_2.png" alt="Salesforce CRM Connector."> </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/data-warehouse-import" target="_blank"> Salesforce CRM Connector.</a></p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<br />
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="boards-20">
   <div class="release-note-header">
     <div class="anchor-link-icon">

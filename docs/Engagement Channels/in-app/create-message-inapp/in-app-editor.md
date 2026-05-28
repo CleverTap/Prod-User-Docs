@@ -80,9 +80,11 @@ The Image Interstitial template primarily comprises the following three elements
 
 The selection area within the Content Container automatically adapts to various device screen sizes, eliminating the need to create multiple versions for different devices. To see how the image and buttons scale across different aspect ratios, use the dropdown menu with different device viewport sizes located at the top for a preview.
 
-> 📘 Preview & Test
->
-> * The _Preview & Test_ feature for sending tests on the device is not available for iOS or Android SDK versions lower than **6.0.0** and Unity **3.0.0.** If you need to test on a device with a lower SDK version, send the campaign exclusively to the user first, and then recreate and send it to the intended audience.
+<Callout icon="📘" theme="info">
+  #### Preview & Test
+
+  The _Preview & Test_ feature for sending tests on the device is not available for iOS or Android SDK versions lower than **6.0.0** and Unity **3.0.0.** If you need to test on a device with a lower SDK version, send the campaign exclusively to the user first, and then recreate and send it to the intended audience.
+</Callout>
 
 ### Guidelines for Template Aspect Ratio and File Size
 
@@ -351,17 +353,21 @@ The following tables include the guidelines that you must keep in mind when crea
 | English  | 30              | 128              |
 | Chinese  | 9 (Approximate) | 38 (Approximate) |
 
-> 🚧 Image Cropping
->
-> Due to the multiple phone sizes on both Android and iOS, we will center crop images if the image does not fit the screen resolution.  
-> We scale the image uniformly (maintaining the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the phone (minus padding). The image is then center-aligned.
->
-> **Image Cropping does not apply for Image Interstitial template.**
+<Callout icon="🚧" theme="warn">
+  #### Image Cropping
 
-> 🚧 Video Messages
->
-> When adding video messages to In-App, ensure an audio track is always present.  
-> If required, insert a blank audio track to the video.
+  Due to the multiple phone sizes on both Android and iOS, we will center crop images if the image does not fit the screen resolution.  
+  We scale the image uniformly (maintaining the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the phone (minus padding). The image is then center-aligned.
+
+  **Image Cropping does not apply for Image Interstitial template.**
+</Callout>
+
+<Callout icon="🚧" theme="warn">
+  #### Video Messages
+
+  When adding video messages to In-App, ensure an audio track is always present.  
+  If required, insert a blank audio track to the video.
+</Callout>
 
 ## Ratings Template
 

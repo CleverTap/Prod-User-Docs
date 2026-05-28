@@ -181,7 +181,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <li>Route different objects to different CleverTap projects or regions using multi-connection support.</li>
       </ul>
     </p>
-<p><img src="https://files.readme.io/62d3677e93f585e247a28238e66d00345491608dc8edda862bf8d74e0222c31c-datawarehouse_1_2.png" alt="Salesforce CRM Connector."> </p>
+<p><img src="https://files.readme.io/3fe1e38403ab24b3ae2f3d46c4e54bc7500e6429c992e3ac725108086d48abb6-image_78.png" alt="Salesforce CRM Connector."> </p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/data-warehouse-import" target="_blank"> Salesforce CRM Connector.</a></p>
   </div>
   <hr/>

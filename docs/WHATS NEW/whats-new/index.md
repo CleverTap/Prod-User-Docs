@@ -188,8 +188,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-<br />
-
 <HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="boards-20">
   <div class="release-note-header">

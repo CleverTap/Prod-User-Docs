@@ -25,6 +25,7 @@ The following are the four main types of In-App templates for creating engaging 
 * [_Basic Templates_](doc:in-app-editor#basic-templates)
 * [_Ratings Templates_ ](doc:in-app-editor#ratings-template)
 * [_Lead Generation Templates_](doc:in-app-editor#lead-generation-template)
+* [Picture-in-Picture (PiP) Template](doc:in-app-editor#picture-in-picture-pip-template)
 * [_Custom HTML Templates_](doc:in-app-editor#custom-templates)
 
 ## Basic Templates:
@@ -312,10 +313,30 @@ The following tables include the guidelines that you must keep in mind when crea
         Supported (Play / Replay)
       </td>
     </tr>
+
+    <tr>
+      <td>
+        Picture-in-Picture (PiP)
+      </td>
+
+      <td>
+        Varies by size
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        Image, GIF, Video
+      </td>
+
+      <td>
+        Supported (Autoplay, Mute/Unmute, Play/Pause, Loop)
+      </td>
+    </tr>
   </tbody>
 </Table>
-
-<br />
 
 #### File Size Guidelines
 
@@ -457,6 +478,122 @@ The hyperlinked part must be closed between two asterisks. Add the URL where the
 Select the button style and card positions from the _Style_ tab.
 
 <Image align="center" alt="Card Orientation" border={true} caption="Card Orientation" src="https://files.readme.io/92ac44f-In-App_Template_Types_Lead_Gen_Style.png" />
+
+## Picture-in-Picture (PiP) Template
+
+The Picture-in-Picture (PiP) template enables you to deliver media-rich In-App messages as a _floating, draggable window_ that overlays the app without interrupting the user's primary task. Unlike full-screen or half-screen formats, PiP keeps your promotion persistently visible as the user continues browsing, improving discoverability and enabling engagement at the right moment.
+
+<Image align="center" alt="Sample PiP In-App Message" border={true} caption="Sample Pip In-App Message" src="https://files.readme.io/6725c4e47b6efe492f4cfbbbdf29d70b1bc5b6eee34ba4d6c2e0c86360e335c9-image.png" />
+
+The PiP window floats over the app content at the specified position. The user can drag this window to reposition it, expand it to full screen, or close it entirely, depending on the enabled controls.
+
+The PiP template supports _Images_, _GIFs_, and _short autoplay videos_ (muted by default, with user controls).
+
+<Callout icon="📘" theme="info">
+  #### SDK Version Requirements
+
+  To send a test message using the PiP template, use _CleverTap Android SDK version 8.1.0 or above_ and _iOS SDK version 7.6.0 or above_.
+</Callout>
+
+### Use Cases for PiP
+
+The PiP template is a good choice when you want your promotion to stay visible without blocking the user's current activity. Common use cases where you can use PiP can be the following:
+
+* _Flash sales or limited-time offers_: Show a countdown or discount while the user continues browsing the app.
+* _Promotional videos_: Autoplay a short video in a corner of the screen during a browsing or checkout session.
+* _Persistent reminders_: Keep a coupon or reward visible across multiple screens without requiring an immediate tap.
+* _Re-engagement nudges_: Show a dormant offer at a natural pause point without forcing a full-screen interruption.
+
+### Create a PiP Campaign
+
+To create an In-App campaign using the PiP template:
+
+1. Go to _Campaigns_ and create a new In-App campaign.
+2. In the _What_ section, select the message type and click **Go to Editor**.
+3. In the editor, select the **Picture in Picture** template.
+4. In the **Content** section, upload your media and configure the position, size, and appearance.
+5. In the **Controls** section, enable the end-user interactions you want to allow.
+6. Set the _On Tap_ action and _Initial Animation_.
+7. Preview across device sizes, then publish the campaign.
+
+### Content
+
+The content section allows you to configure the PiP.
+
+<Image align="center" border={true} caption="Content" src="https://files.readme.io/48d95a18ac1f9bf60b7940e15d8d82ae139c2c04ad7acb9f513dccf98fbf97e4-image.png" />
+
+#### Media
+
+Upload the media to display in the PiP window. You can provide a URL or upload a file directly. Supported media types are Image, GIF, and Video.
+
+* **Alternate text**: Provide a text description of the media for accessibility. This is announced to users who rely on screen readers.
+* **Fallback image**: Enable this to specify a static image that the SDK displays if the selected media fails to load. You can provide a URL or upload the image directly.
+
+#### Position
+
+Use the _3×3 grid selector_ to set the initial position of the PiP window. You can place it in any of the nine positions: corners, edge centers, or the screen center.
+
+#### Appearance
+
+The following properties control the size and visual style of the PiP window. Default values differ by platform.
+
+| Property          | Description                                                    | Default (Android) | Default (iOS) |
+| :---------------- | :------------------------------------------------------------- | :---------------- | :------------ |
+| Width             | PiP window width as a percentage of screen width               | 35%               | 30%           |
+| Vertical Margin   | Distance between the PiP window and the top/bottom screen edge | 3%                | 2%            |
+| Horizontal Margin | Distance between the PiP window and the left/right screen edge | 3%                | 2%            |
+| Corner Radius     | Roundness of the PiP window corners                            | 0 dp (square)     | 4 pt          |
+| Border            | Optional border around the PiP window                          | Off               | Off           |
+
+### Controls
+
+Use the _Controls_ section to enable or disable the following end-user interactions on the PiP window:
+
+| Control         | What It Does                                                                                        | Default State |
+| :-------------- | :-------------------------------------------------------------------------------------------------- | :------------ |
+| Drag            | The user can drag the PiP window to reposition it. On release, it snaps to the nearest screen edge. | On            |
+| Play-pause      | Displays a play/pause toggle for video creatives.                                                   | On            |
+| Expand/Collapse | The user can expand the PiP to full screen and collapse it back to the default size.                | Off           |
+| Mute            | Displays a mute or unmute toggle for video creatives.                                               | Off           |
+
+### On Tap
+
+Select the action that occurs when the user taps the PiP window:
+
+| Option          | Behavior                                                                                                                                   |
+| :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| No Action       | Tapping the PiP performs no action.                                                                                                        |
+| Open URL        | Opens a specified URL, deep link, or in-app WebView destination.                                                                           |
+| Key-Value pairs | Sends custom key-value data back to the app.                                                                                               |
+| App Function    | Triggers a defined function within the app. For more information, refer to [App Functions](https://docs.clevertap.com/docs/app-functions). |
+
+### Initial Animation
+
+Select how the PiP window enters the screen when it first appears:
+
+* _Appear_: The PiP appears immediately with no animation.
+
+* _Fade In_: The PiP fades into view. Configure the following:
+  * _Duration_: Length of the fade in milliseconds.
+  * _Easing_: Easing function for the animation (for example, Linear).
+
+* _Fly In_: The PiP slides into position from the edge of the screen. Configure the following:
+  * _Direction_: Direction of entry, that is,  Left (←), Right (→), Up (↑), or Down (↓).
+  * _Duration_: Length of the slide in milliseconds.
+  * _Easing_: Easing function for the animation (for example, Linear).
+
+### Event Tracking
+
+The following events are emitted for PiP campaigns:
+
+| Event                | Trigger                                                                            |
+| :------------------- | :--------------------------------------------------------------------------------- |
+| Notification Viewed  | The PiP becomes visible to the user.                                               |
+| Notification Clicked | The user taps the PiP, and the app is redirected via the configured On Tap action. |
+
+### Fallback Behavior
+
+If the SDK version or device does not support the PiP format or the chosen media type, the SDK does not render the In-App notification.
 
 ## Custom Templates
 

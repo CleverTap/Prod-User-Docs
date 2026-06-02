@@ -160,4 +160,16 @@ The CleverTap MCP server is compatible with the following AI clients:
   </Tab>
 </Tabs>
 
-<br />
+# FAQs
+
+### What is MCP?
+
+MCP (Model Context Protocol) is an open standard that lets AI assistants such as Claude connect directly to external tools and data sources. Instead of copying and pasting data into a chat, MCP lets Claude securely fetch live data from a platform such as CleverTap and act on it in real time, all within the conversation.
+
+### Does enabling the connector in Settings automatically activate it in every chat?
+
+No. You need to turn it on per chat. Click the + icon in the chat input, open Connectors, and toggle CleverTap ON for each new session.
+
+### Is it possible to work with multiple CleverTap projects in one chat session?
+
+Yes. Claude can list all projects linked to your account and switch context between them within the same session when you specify the project or region by name.

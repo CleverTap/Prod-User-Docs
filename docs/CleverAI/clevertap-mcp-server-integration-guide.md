@@ -168,7 +168,7 @@ MCP (Model Context Protocol) is an open standard that lets AI assistants such as
 
 ### Does enabling the connector in Settings automatically activate it in every chat?
 
-No. You need to turn it on per chat. Click the + icon in the chat input, open Connectors, and toggle CleverTap ON for each new session.
+No. You need to turn it on per chat. Click the **+** icon in the chat input, open Connectors, and toggle CleverTap ON for each new session.
 
 ### Is it possible to work with multiple CleverTap projects in one chat session?
 

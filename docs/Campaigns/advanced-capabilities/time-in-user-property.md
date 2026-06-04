@@ -35,7 +35,7 @@ Setting up Time in User Property involves two steps:
 
 > 📘 Note
 >
-> To set up Time in User Property using API, refer to [Time in User Property Object](https://developer.clevertap.com/docs/create-campaign-api#time-in-user-property-object) .
+> To set up Time in User Property using API, refer to [Time in User Property Object](https://developer.clevertap.com/docs/create-campaign-api#time-in-user-property-object).
 
 ## Step 1: Pass the time value in a user property
 

@@ -33,6 +33,10 @@ Setting up Time in User Property involves two steps:
 1. Pass the time value in a user property
 2. Use the property in campaigns
 
+> 📘 Note
+>
+> To set up Time in User Property using API, refer to [Time in User Property Object](https://developer.clevertap.com/docs/create-campaign-api#time-in-user-property-object) .
+
 ## Step 1: Pass the time value in a user property
 
 Pass a time-of-day value (in minutes) as a user property in the user profile. This value represents the number of minutes since the start of the day (00:00) and is used to determine the exact time at which the message should be sent to that user (in account timezone).

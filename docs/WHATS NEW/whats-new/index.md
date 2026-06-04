@@ -152,7 +152,66 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## May
+## May 
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="promotions" id="configurable-point-redemption-strategies-for-loyalty-wallets">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#configurable-point-redemption-strategies-for-loyalty-wallets"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Configurable Point Redemption Strategies for Loyalty Wallets</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now configure how loyalty points are consumed during redemption and expiry directly at the Global Loyalty Wallet level. This gives your brand greater control over point liability management and allows loyalty programs to align redemption behavior with your business and customer experience goals.</p>
+    <p>With Point Redemption Strategies, you can:</p>
+    <p>
+      <ul>
+        <li>Select Expiry FIFO to redeem points closest to expiry first, regardless of when they were earned, helping minimize point expiry liability.</li>
+        <li>Select Issuance FIFO to redeem the oldest earned points first, regardless of expiry date, providing a more intuitive customer experience.</li>
+        <li>Rely on built-in tie-breaker rules to ensure deterministic, predictable point consumption across large volumes of point credits.</li>
+        <li>Apply the chosen strategy at the wallet level during Global Loyalty Wallet creation, with no impact on existing wallets or historical transactions.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-loyalty-wallet#point-consumption-strategies" target="_blank">Points Redemption Strategies</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="promotions" id="advanced-filters-in-wallet-transaction-api">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#advanced-filters-in-wallet-transaction-api"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Advanced Filters in Wallet Transaction API</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now use advanced filters and pagination in the Wallet Transaction API to retrieve and manage loyalty wallet transaction history more efficiently. This enhancement helps you build scalable transaction experiences while improving API performance and frontend flexibility.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Filter transactions using transaction type, transaction source, sale channel, campaign ID, order ID, location ID, and date ranges.</li>
+        <li>Combine multiple filters to retrieve more precise transaction records.</li>
+        <li>Fetch transactions within custom time windows using epoch-based timestamps.</li>
+        <li>Retrieve paginated transaction history with metadata such as current page, total pages, and total records, and hasNext support.</li>
+        <li>Maintain existing integrations without requiring API version upgrades or breaking changes.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://developer.clevertap.com/docs/get-wallet-transactions" target="_blank">Wallet Transaction API</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="data-and-integrations" id="salesforce-crm-connector">

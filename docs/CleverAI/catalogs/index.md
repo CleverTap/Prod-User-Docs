@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-Catalog in CleverTap enables customers to upload and manage product data that powers personalization and recommendations.
+Catalog in CleverTap enables customers to [upload](doc:create-catalog) and [manage](doc:manage-catalog-products) product data that powers personalization and recommendations.
 
 However, uploaded catalogs are often incomplete and lack category-specific attributes such as color, size or length, material, capacity, and other relevant metadata. These gaps limit the ability to deliver true 1:1 personalization and reduce the effectiveness of product recommendations, including scenarios with sparse behavioral or catalog data.
 
@@ -80,7 +80,7 @@ Here are some of the industry-specific personalization and recommendation use ca
 
 ## Catalogs Listing
 
-The Catalogs listing page displays all catalogs available in the account. Each catalog appears as a row in the table and includes details such as the catalog name and ID, number of items, catalog validation status, uploader, upload date, and last updated date. This view provides a central place to monitor and manage catalogs and quickly understand their current state.
+The _Catalogs_ listing page displays all catalogs available in the account. Each catalog appears as a row in the table and includes details such as the catalog name and ID, number of items, catalog validation status, uploader, upload date, and last updated date. This view provides a central place to monitor and manage catalogs and quickly understand their current state.
 
 Use the search bar to find a specific catalog, and scroll through the list to review multiple catalogs. The **Add Catalog** button lets you create a new catalog. A system-generated ID is assigned to each catalog when it is created.
 

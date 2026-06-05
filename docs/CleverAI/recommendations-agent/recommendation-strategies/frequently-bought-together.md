@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to recommend products that are commonly purchased together to
   increase cross-sell opportunities.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

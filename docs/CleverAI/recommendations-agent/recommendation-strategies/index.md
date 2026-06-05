@@ -146,9 +146,3 @@ Pick a strategy based on where the recommendation appears and what user data you
 | Drive repeat engagement           | Purchase and view history       | Frequently Bought Together, Because You Viewed, More Like These                                      |
 
 Select the strategy that best matches the user's context to keep recommendations relevant and effective.
-
-<Callout icon="📘" theme="info">
-  #### Tip
-
-  Behavioral strategies that rely on engagement and purchase signals require sufficient historical data to produce meaningful results. If data is limited, start with catalog-based strategies such as Popular, Trending, or Best Sellers.
-</Callout>

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to recommend top-selling products or content within specific
   categories based on sales performance and popularity.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

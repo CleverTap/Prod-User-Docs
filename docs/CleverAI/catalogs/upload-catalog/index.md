@@ -28,11 +28,11 @@ To upload a catalog, perform the following steps:
 
 <Image align="center" border={true} caption="Upload Catalog" src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" />
 
-| Field        | Description                                                                                                                                                                                                    |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                 |
-| Description  | Add context about the catalog.                                                                                                                                                                                 |
-| Upload Type  | Select how your catalog data is sourced. You can upload a CSV/XML file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Types](doc:create-catalog#upload-type). |
+| Field        | Description                                                                                                                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                  |
+| Description  | Add context about the catalog.                                                                                                                                                                                  |
+| Upload Type  | Select how your catalog data is sourced. You can upload a CSV/XML file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Types](doc:upload-catalog#upload-types). |
 
 After a file is uploaded, the system validates the catalog. Once validation is successful, the file preview section displays a few rows of catalog data, including column headers, so you can preview the data before proceeding. This helps ensure the catalog content is correct before upload.
 

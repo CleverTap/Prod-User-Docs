@@ -20,4 +20,4 @@ CleverTap’s web exit intent pop-ups help with encouraging subscriptions or gat
 >
 > * Exit Intent campaigns will retain their full functionality. They can now be created and managed from the Web Pop-ups channel using the [Triggers for Campaign Delivery ](https://docs.clevertap.com/docs/create-message-web-popup#triggers-for-campaign-delivery)option under the _When_ section.
 > * Existing Campaigns and Journeys using the Web Exit Intent channel will continue to run as expected indefinitely.
-> * Creating or cloning new Campaigns and Journeys using this channel will be disabled after January 31 2026.
+> * Creating or cloning new Campaigns and Journeys using this channel will be disabled after June 30 2026.

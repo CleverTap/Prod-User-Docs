@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-A feed is a data source that adds or updates product data in a catalog. Use feeds to do a full upload when setting up a catalog, or to push incremental (delta) updates as your data changes. A catalog can have multiple feeds, each handling a different type of update.
+A feed is a data source that adds or updates product data in a catalog. Use feeds to do a full upload when setting up a catalog, or to push incremental updates as your data changes. A catalog can have multiple feeds, each handling a different type of update.
 
 For example, consider an e-commerce product catalog:
 

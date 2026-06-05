@@ -138,11 +138,11 @@ Configure the following:
 
 ## Strategy
 
-Select the primary strategy to use for recommendations. For example, select Based on What You Viewed to surface personalized title recommendations for each user based on their individual viewing history.
+Based on What You Viewed recommendations are computed per user using a hybrid algorithm that combines each user's individual viewing history with catalog-level product similarity.
 
-Optionally, enable Fallback Strategy to specify one or more fallback strategies that activate when the primary strategy cannot return enough items — for example, when a user has insufficient viewing history. Fallback strategies are evaluated in order of priority, with the last fallback used only if all preceding strategies return insufficient results. Fallback items are deduplicated against results before being returned.
+During setup, you select the interaction event that captures viewing behavior and configure the time window for evaluating activity. The system applies time-decay weighting to each viewing interaction; recently watched titles influence recommendations more than older ones. Product embeddings are then used to identify catalog items most similar to each user's recently viewed titles.
 
-For example, set Popular Shows as a fallback so recommendation slots remain filled for users with limited viewing history.
+At serving time, recommendations are personalized to each user. The system retrieves the user's recent viewing history, weights each viewed title by recency, and surfaces catalog items most similar to those titles based on product embeddings. Users with no viewing history within the configured time window receive the configured fallback strategy instead.
 
 ## Only Include Items
 

@@ -29,7 +29,7 @@ System fields are enforced by the API. The following table describes the fields 
 <Callout icon="📘" theme="info">
   #### Note
 
-  For bulk product creation, up to 100 products can be included in a single request. In bulk requests, Image URL is optional per product item.
+  For bulk product creation, up to 100 products can be included in a single request.
 </Callout>
 
 ## Attributes
@@ -52,7 +52,7 @@ For more information on the request format, authentication, and the full list of
 The following guidelines apply to product creation and catalog management in CleverTap:
 
 * Each product must have a unique identity within the catalog.
-* Products are created using APIs or feeds, not from the dashboard.
+* Users can create products only through APIs or feeds, not from the dashboard.
 * Missing or invalid system fields result in validation errors during ingestion.
 * Attributes such as price, description, and category are conventions stored in the `attributes` object. The API does not validate or reject a product that omits these values.
 * When creating products via the API in bulk, a maximum of 100 products can be included per request.

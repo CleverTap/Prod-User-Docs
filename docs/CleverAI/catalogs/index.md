@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-Catalog in CleverTap enables customers to [upload](doc:create-catalog) and [manage](doc:manage-catalog-products) product data that powers personalization and recommendations.
+Catalog in CleverTap enables customers to [upload](doc:upload-catalog) and [manage](doc:manage-catalog-products) product data that powers personalization and recommendations.
 
 However, uploaded catalogs are often incomplete and lack category-specific attributes such as color, size or length, material, capacity, and other relevant metadata. These gaps limit the ability to deliver true 1:1 personalization and reduce the effectiveness of product recommendations, including scenarios with sparse behavioral or catalog data.
 

@@ -12,7 +12,7 @@ metadata:
 
 The Stats tab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand recommendation reach and engagement performance across channels.
 
-To create a catalog, refer to [Create Catalog](doc:create-catalog).
+To create a catalog, refer to [Upload Catalog](doc:upload-catalog).
 
 # Engagement Channel-wise Breakdown
 

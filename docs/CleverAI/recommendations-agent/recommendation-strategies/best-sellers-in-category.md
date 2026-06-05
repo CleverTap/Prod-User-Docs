@@ -200,7 +200,7 @@ Items are ranked by total purchase frequency within the requested category and c
 
 ### What happens if there are not enough best-selling items in a category?
 
-The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the best seller results before being returned. If no fallback is configured, the remaining recommendation slots will be empty.
+The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the best seller results before being returned. If no fallback is configured, the default value is returned.
 
 ### When should I use Best Sellers in Category recommendations?
 

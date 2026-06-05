@@ -76,11 +76,11 @@ This section walks you through the steps to create a Popular strategy. Let us ta
 
 Go to _Recommendations_ in the CleverTap dashboard, click **Create Strategy**, and perform the following steps:
 
-1. [Select Strategy Type]()
-2. [Select Catalog]()
-3. [Configure Consideration Criteria]()
-4. [Map Catalog Column to Event Property]()
-5. [Enter Basic Details]()
+1. [Select Strategy Type](doc:popular#select-strategy-type)
+2. [Select Catalog](doc:popular#select-catalog)
+3. [Configure Consideration Criteria](doc:popular#configure-consideration-criteria)
+4. [Map Catalog Column to Event Property](doc:popular#map-catalog-column-to-event-property)
+5. [Enter Basic Details](doc:popular#enter-basic-details)
 
 ### Select Strategy Type
 

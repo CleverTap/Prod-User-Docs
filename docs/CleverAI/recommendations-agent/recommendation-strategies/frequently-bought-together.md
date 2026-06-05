@@ -179,7 +179,7 @@ The strategy evaluates each user's purchase history within the configured time w
 
 ### What happens if a user has no purchase history?
 
-The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the results before being returned. If no fallback is configured, the remaining recommendation slots will be empty.
+The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the results before being returned. If no fallback is configured, the default value is returned.
 
 ### When should I use Frequently Bought Together recommendations?
 

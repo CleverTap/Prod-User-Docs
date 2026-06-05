@@ -80,9 +80,9 @@ The following example shows each layer of a strategy configured to recommend con
 
 Creating a strategy involves the following three key steps:
 
-1. [Select Strategy Type]()
-2. [Configure Data Source and Recommendation Rules]()
-3. [Add Basic Details]()
+1. [Select Strategy Type](doc:create-recommendation-strategy#select-strategy-type)
+2. [Configure Data Source and Recommendation Rules](doc:create-recommendation-strategy#configure-data-source-and-recommendation-rules)
+3. [Add Basic Details](doc:create-recommendation-strategy#add-basic-details)
 
 ## Select Strategy Type
 

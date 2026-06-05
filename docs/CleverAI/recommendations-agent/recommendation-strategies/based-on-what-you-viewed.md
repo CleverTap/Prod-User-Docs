@@ -168,7 +168,7 @@ Yes. Recommendations are computed per user using a hybrid algorithm that combine
 
 ### How are items selected for Based on What You Viewed recommendations?
 
-The strategy evaluates each user's viewing history within the configured time window and identifies catalog items most relevant to their behavior. Titles the user has already watched are excluded from the output.
+The strategy evaluates each user's viewing history within the configured time window and applies time-decay weighting, with recently watched titles count more than older ones. For each viewed title, the system identifies catalog items with the highest product similarity using vector embeddings. Scores are aggregated across all recently viewed titles, and the top-ranked results are returned.
 
 ### What happens if a user has no viewing history?
 

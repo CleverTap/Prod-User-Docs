@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-Catalogs allow you to pull structured product or content data directly into a campaign message, so each user sees item-specific details from your catalog at send time. Instead of hardcoding product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient.
+[Catalogs](doc:catalogs) allow you to pull structured product or content data directly into a campaign message, so each user sees item-specific details from your catalog at send time. Instead of hardcoding product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient.
 
 When you add a catalog block to a campaign, every user who receives the message views item details populated from the catalog record you specify, keeping your content accurate and consistent without manual updates.
 

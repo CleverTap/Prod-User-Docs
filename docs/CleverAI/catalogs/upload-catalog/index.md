@@ -36,7 +36,7 @@ To upload a catalog, perform the following steps:
 
 After a file is uploaded, the system validates the catalog. Once validation is successful, the file preview section displays a few rows of catalog data, including column headers, so you can preview the data before proceeding. This helps ensure the catalog content is correct before upload.
 
-3. [Map data type with Catalog columns](doc:create-catalog#map-data-type-with-catalog-columns).
+3. [Map data type with Catalog columns](doc:upload-catalog#map-data-type-with-catalog-columns).
 4. Create a Feed to populate data in your catalog.
 
 Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes available immediately.

@@ -23,9 +23,9 @@ Both feeds update the same catalog but serve different purposes.
 
 Click **Create Feed** to configure a new feed for the selected catalog. Perform the following steps:
 
-1. [Select an Upload Type](doc:create-feed#select-an-upload-type)  
-2. [Configure the Feed Source](doc:create-feed#configure-the-feed-source) 
-3. [Save the Feed](doc:create-feed#save-the-feed) 
+1. [Select an Upload Type](doc:create-feed#select-an-upload-type)
+2. [Configure the Feed Source](doc:create-feed#configure-the-feed-source)
+3. [Save the Feed](doc:create-feed#save-the-feed)
 
 The following image shows the _Feed_ tab:
 
@@ -58,11 +58,11 @@ For API/URL and Google Sync feeds, fill in the following fields:
 | Source URL     | The URL from which CleverTap fetches the catalog data.                                                                         |
 | Sync Frequency | The interval at which CleverTap re-fetches data from the source URL. Set a value and select the unit: minutes, hours, or days. |
 
-For further details on configuring upload types, refer to [Create Catalog](doc:create-catalog).
+For further details on configuring upload types, refer to [Upload Catalog](doc:upload-catalog).
 
 ## Save the Feed
 
-Click**Save** to add the feed to the catalog.
+Click **Save** to add the feed to the catalog.
 
 # Manage Feeds
 

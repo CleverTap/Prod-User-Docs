@@ -10,30 +10,48 @@ metadata:
 ---
 # Overview
 
-A feed is a data source that adds or updates product data in a catalog. Use feeds to do a full upload when setting up a catalog, or to push incremental updates as your data changes. A catalog can have multiple feeds, each handling a different type of update. For example, consider an e-commerce product catalog:
+A feed is a data source that adds or updates product data in a catalog. Use feeds to do a full upload when setting up a catalog, or to push incremental (delta) updates as your data changes. A catalog can have multiple feeds, each handling a different type of update.
 
-One feed uploads the full product list, including IDs, names, categories, and images, from a CSV file. Another feed syncs pricing and availability daily from your backend system.
+For example, consider an e-commerce product catalog:
+
+* One feed uploads the full product list, including IDs, names, categories, and images, from a CSV file.
+* Another feed syncs pricing and availability daily from your backend system.
 
 Both feeds update the same catalog but serve different purposes.
 
-<Callout icon="📘" theme="info">
-  #### Note
+# Create a Feed
 
-  Multiple one-time file upload feeds can be connected to a single catalog. However, recurring sync feeds (API/URL and Google Sync) are limited to one active configuration per catalog at a time.
-</Callout>
+Click **Create Feed** to configure a new feed for the selected catalog. Perform the following steps:
 
-# Create Feed
+1. Select an Upload Type
+2. Configure the Feed Source
+3. Save the Feed
 
-Click **Create Feed** to configure a new feed for the selected catalog.
+The following image shows the _Feed_ tab:
 
-The following table describes the fields available when creating a feed:
+<Image align="center" border={true} caption="Feed Tab" src="https://files.readme.io/3bb57639fcdcbefeb0d47b08a1fc84787002f55e2b3f7bc3393a2076a3b397f4-image.png" />
 
-| Field         | Description                                                                                                   |
-| ------------- | ------------------------------------------------------------------------------------------------------------- |
-| Upload Type   | Select how the feed data is sourced. Supported options are CSV/XML/JSON file upload, API/URL, or Google Sync. |
-| File / Source | Provide the required input based on the selected upload type, such as a file, URL, or sync configuration.     |
+## Select an Upload Type
 
-For API/URL and Google Sync feeds, the following additional fields are required.
+The upload type determines how feed data is sourced. The following table describes the supported options:
+
+| Upload Type                  | Description                                                                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| CSV / XML / JSON file upload | Upload a file directly. You can connect multiple one-time file uploads to the same catalog.                                  |
+| API / URL                    | CleverTap fetches data from a URL at a set frequency. Only one API/URL feed can be active per catalog at a time.             |
+| Google Sync                  | CleverTap syncs data from a Google source at a set frequency. Only one Google Sync feed can be active per catalog at a time. |
+
+The following image shows the _Create Feed_ page:
+
+<Image align="center" border={true} caption="Create Feed" src="https://files.readme.io/813085df7901b79f10b4c73c7cd8fbd0c6ad5a5630f58e023293c136ba088a31-image.png" />
+
+## Configure the Feed Source
+
+Provide the required input based on the upload type you selected.
+
+For file uploads, attach the file directly.
+
+For API/URL and Google Sync feeds, fill in the following fields:
 
 | Field          | Description                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -42,7 +60,17 @@ For API/URL and Google Sync feeds, the following additional fields are required.
 
 For further details on configuring upload types, refer to [Create Catalog](doc:create-catalog).
 
-After entering the required details, select **Save** to add the feed to the catalog.
+## Save the Feed
+
+Click**Save** to add the feed to the catalog.
+
+# Manage Feeds
+
+Monitor feed activity from the Feed tab. The Feed tab shows all feeds associated with the selected catalog. Each feed entry includes the feed name, number of products, upload type, status, uploaded by, and last updated.
+
+<Image align="center" border={true} caption="Filters on Feed Logs" src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" />
+
+## How multiple feeds work
 
 Each feed updates only the attributes it contains. When multiple feeds are connected to the same catalog:
 
@@ -50,54 +78,23 @@ Each feed updates only the attributes it contains. When multiple feeds are conne
 * Updates from one feed do not overwrite unrelated fields from another.
 * The most recent successful update determines the value of overlapping attributes.
 
-This allows you to do the following:
-
-* Separate initial data ingestion from ongoing updates.
-* Maintain multiple data sources for the same catalog.
-* Update specific attributes without re-uploading the entire dataset.
+This allows you to separate initial data ingestion from ongoing updates, maintain multiple data sources for the same catalog, and update specific attributes without re-uploading the entire dataset.
 
 ## Feed Status
 
-Each feed displays a status that indicates its current state.
-
-The following table describes each status:
+Each feed displays a status that indicates its current state. The following table describes each status:
 
 | Status          | Description                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------------------- |
 | Pending         | The feed has been created and is queued for processing.                                                         |
 | Running         | The feed is currently processing and updating catalog data.                                                     |
-| Completed       | The feed was processed successfully and updated the catalog.                                                    |
+| Completed       | The feed was processed successfully, and the catalog was updated.                                               |
 | Failed          | The feed processing failed due to validation or upload errors.                                                  |
 | Partial Success | The feed processed successfully for some records but failed for others. Review logs to identify failed entries. |
 
-The following image shows the _Create Feed_ page:
-
-<Image align="center" border={true} caption="Create Feed" src="https://files.readme.io/813085df7901b79f10b4c73c7cd8fbd0c6ad5a5630f58e023293c136ba088a31-image.png" />
-
-## Guidelines
-
-The following guidelines apply to creating and managing feeds at CleverTap:
-
-* Multiple one-time file upload feeds can be connected to a single catalog.
-* Recurring sync feeds (API/URL and Google Sync) are limited to one configuration per catalog.
-* Each feed updates only the fields it contains.
-* Feed failures do not impact other feeds linked to the same catalog.
-* Review feed logs to troubleshoot errors or partial updates.
-* Use the appropriate upload type based on your data source and update frequency.
-
-# Manage Feed Logs
-
-Monitor feed activity from the _Feed_ tab. The _Feed_ tab shows all feeds associated with the selected catalog. Each feed entry includes the details such as feed name, number of products, upload type, status, uploaded by, and last updated.
-
-The following image shows the Feed details:
-
-<Image align="center" border={true} caption="Feed Details" src="https://files.readme.io/a9927ab27ab36c718c7271797849e1638987a5ebf97bd88199cb6b818c09ff6b-image.png" />
-
-You can search feeds, apply filters, or click **Create Feed** to add a new feed. This view helps track how catalog data is being sourced and updated.
-
 ## Filter Feed Logs
 
-Apply filters to track feed performance and identify issues. Update or add new feeds as your data requirements evolve. Filters in the Feed Logs view allow you to narrow feeds by the following criteria.
+Apply filters to track feed performance and identify issues. The following table describes the available filters:
 
 | Filter      | Description                                                                                |
 | ----------- | ------------------------------------------------------------------------------------------ |
@@ -105,12 +102,14 @@ Apply filters to track feed performance and identify issues. Update or add new f
 | Status      | Filter feeds by processing state: pending, running, completed, failed, or partial success. |
 | Created By  | View feeds created by a specific user.                                                     |
 
-The following image shows the filters for Feed Logs:
+The following image shows the filters for feed logs:
 
 <Image align="center" border={true} caption="Filters on Feed Logs" src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" />
 
-## Edit Columns
+## Edit columns
 
-The Edit Columns option allows you to customize the Feed tab by choosing which columns to display and in what order. This makes it easier to focus on the most relevant information based on your workflow.
+The Edit Columns option lets you choose which columns to display on the Feed tab and in what order. This makes it easier to focus on the most relevant information based on your workflow.
+
+The following image shows _Edit Columns_ :
 
 <Image align="center" border={true} caption="Edit Columns" src="https://files.readme.io/1c0c02290794e510f17cc46f77527614a1cf0386a71ac6c3f50093143ffb0c07-image.png" />

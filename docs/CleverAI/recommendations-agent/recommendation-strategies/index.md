@@ -114,7 +114,7 @@ The following strategies are available to generate recommendations from your cat
 
   <Card title="Popular in Category" href="https://docs.clevertap.com/docs/popular-in-category" />
 
-  <Card title="Trending" href="/docs/trending" />
+  <Card title="Trending" href="https://docs.clevertap.com/docs/docs/trending" />
 
   <Card title="Trending in Category" href="https://docs.clevertap.com/docs/trending-in-category" />
 

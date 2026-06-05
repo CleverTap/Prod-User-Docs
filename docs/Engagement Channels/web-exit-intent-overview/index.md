@@ -16,7 +16,7 @@ CleverTap’s web exit intent pop-ups help with encouraging subscriptions or gat
 
 > ❗️ Deprecation of Web Exit Intent Channel
 >
-> Effective January 31 2026, Web Exit Intent channel will be deprecated as a standalone option under Campaigns and Journeys.
+> Effective June 30 2026, Web Exit Intent channel will be deprecated as a standalone option under Campaigns and Journeys.
 >
 > * Exit Intent campaigns will retain their full functionality. They can now be created and managed from the Web Pop-ups channel using the [Triggers for Campaign Delivery ](https://docs.clevertap.com/docs/create-message-web-popup#triggers-for-campaign-delivery)option under the _When_ section.
 > * Existing Campaigns and Journeys using the Web Exit Intent channel will continue to run as expected indefinitely.

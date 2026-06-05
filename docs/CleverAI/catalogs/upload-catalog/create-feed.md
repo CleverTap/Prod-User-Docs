@@ -10,19 +10,9 @@ metadata:
 ---
 # Overview
 
-A feed represents a source of data that supplies products or updates to a catalog. While a catalog acts as a container for all items, feeds define how and from where that data is added or updated.
+A feed is a data source that adds or updates product data in a catalog. Use feeds to do a full upload when setting up a catalog, or to push incremental updates as your data changes. A catalog can have multiple feeds, each handling a different type of update. For example, consider an e-commerce product catalog:
 
-A catalog can have multiple feeds, each responsible for different types of data updates.
-
-For example, consider an e-commerce product catalog:
-
-* You upload your full product list, including IDs, names, categories, and images, using a CSV file.
-* Later, you update pricing and availability daily from your backend system.
-
-In this case:
-
-* The initial CSV upload is one feed.
-* The daily price and availability sync is another feed.
+One feed uploads the full product list, including IDs, names, categories, and images, from a CSV file. Another feed syncs pricing and availability daily from your backend system.
 
 Both feeds update the same catalog but serve different purposes.
 

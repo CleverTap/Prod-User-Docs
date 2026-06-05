@@ -148,4 +148,4 @@ The strategy falls back to a separately configured fallback strategy. Fallback i
 
 ### When should I use More Like This recommendations?
 
-Use this strategy when recommendations should be anchored to a specific item rather than to a user's history, for example, on title detail pages, in post-viewing follow-up campaigns, or in any context where a specific title is already in focus and you want to surface similar content.
+Use this strategy when recommendations should be anchored to a specific item rather than to a user's history, for example, on title detail pages, in post-viewing follow-up campaigns, or in any context where a specific title is already in focus, and you want to surface similar content.

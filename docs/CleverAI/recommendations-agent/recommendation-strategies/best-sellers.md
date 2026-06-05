@@ -1,0 +1,176 @@
+---
+title: Best Sellers
+excerpt: >-
+  Learn how to recommend top-performing products or content based on overall
+  sales and popularity trends.
+deprecated: false
+hidden: true
+metadata:
+  robots: index
+---
+# Overview
+
+Best Sellers recommendations surface items with the highest purchase activity from your catalog over a selected time period. Unlike engagement-based strategies such as Popular or Trending, Best Sellers rank items by purchase frequency, making them a reliable indicator of what users are actually buying, not just browsing.
+
+Because they rely on aggregated purchase data rather than individual user history, Best Sellers work for all users, including first-time visitors with no behavioral data.
+
+# Use Cases
+
+Best Sellers recommendations work best when purchase-driven discovery is needed, as follows:
+
+* **Promotional campaigns**: Highlights products with proven purchase performance. For example, a monthly newsletter featuring the top 10 most-purchased products across the catalog helps subscribers shop with confidence.
+* **Push notifications**: Re-engages lapsed users with high-converting items. For example, a push notification highlighting the best-selling products from the past week, prompting users to return and make a purchase. •
+* **SMS campaigns**: Drive conversions through social proof before a sale. For example, an SMS to opt-in users featuring the three most purchased items in the catalog before a seasonal event.
+* **Homepage and discovery surfaces**: Surfaces consistently purchased items to new or anonymous users who have no browsing history.
+* **Reliable fallback slot**: A dependable default when a primary strategy cannot return sufficient results.
+
+# Strategy Logic
+
+Best Sellers recommendations rank items based on total purchase activity over a configured time window.
+
+During setup, you select the consideration criteria (purchase event) that defines what counts as a sale and configure the time window over which purchases are counted.
+
+At serving time, items are ranked from highest to lowest by total purchase frequency within the configured window. Because the ranking is based on catalog-wide aggregated purchase data, the output is consistent across all users in the same context.
+
+Common interaction events include:
+
+| Industry       | Event                  |
+| :------------- | :--------------------- |
+| ECommerce      | Charged, Order Placed  |
+| Food & Grocery | Order Placed           |
+| OTT            | Subscription Purchased |
+
+# Required Inputs
+
+The following inputs are required:
+
+| Input                  | Description                                                                                        |
+| :--------------------- | :------------------------------------------------------------------------------------------------- |
+| Consideration Criteria | The user action used to count and rank items by purchase frequency.                                |
+| Mapping                | Connects the event property containing the item identifier to the identity column of your catalog. |
+
+# Optional Inputs
+
+The following inputs are optional:
+
+| Input                  | Description                                                                                                                                                                                                                                                                   |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Time window            | Period over which purchases are counted. If not set, all available historical data for the selected event is used.                                                                                                                                                            |
+| Consideration Criteria | Narrows which purchases count toward ranking.                                                                                                                                                                                                                                 |
+| Fallback Strategy      | Fills remaining slots if the strategy returns fewer items than requested. Fallback items are deduplicated against the best seller results before being returned. If no fallback is configured and Best Sellers returns insufficient results, the default values are returned. |
+
+# Create Best Sellers Strategy
+
+This section helps you set up a strategy that surfaces the most purchased items from your catalog.
+
+## Prerequisites
+
+Before you begin, check if the following are in place:
+
+* A catalog is uploaded and active.
+* At least one purchase event is being tracked, such as `Order Placed` or `Charged`.
+* The tracked event references the same item ID as the catalog identity column. If they do not match, purchases cannot be attributed to catalog items.
+
+## Set Up Best Sellers Recommendation
+
+This section walks you through the steps to create a Best Sellers strategy. Let us take an example: a food and grocery platform wants to surface the most purchased products across its catalog over the last 30 days.
+
+1. [Select Strategy Type](doc:best-sellers#select-strategy-type)
+2. [Select Catalog](doc:best-sellers#select-catalog)
+3. [Define Consideration Criteria](doc:best-sellers#define-consideration-criteria)
+4. [Map Catalog Column to Event Property](doc:best-sellers#map-catalog-column-to-event-property)
+5. [Enter Basic Details](doc:best-sellers#enter-basic-details)
+
+### Select Strategy Type
+
+Select _Best Sellers_ from the list of strategy types.
+
+<Image align="center" border={true} caption="Select Strategy Type" src="https://files.readme.io/95bab01eccf9a6a46d6307a9266178b1668ca634a9d5819df324308d4202f407-Select_Best_Sellers_Strategy.png" />
+
+### Select Catalog
+
+Select the catalog to use. The catalog must be active and contain the items you want to recommend. For example, select the catalog containing your apparel inventory..
+
+<Image align="center" border={true} caption="Select Catalog" src="https://files.readme.io/d483c8bc62fc1319dddd3be300b27591ce9df6ebd36fd91af3960a7d670a3881-Select_Catalog_for_Best_Sellers_Srategy.png" />
+
+### Define Consideration Criteria
+
+Pick the single event that defines a purchase. This determines what gets counted toward the ranking.
+
+| Event            | What it measures                                                    |
+| :--------------- | :------------------------------------------------------------------ |
+| Charged          | Items most frequently purchased (standard CleverTap purchase event) |
+| Any custom event | Whatever signal matters most to your use case                       |
+
+For example, select Charged as the purchase event and set the lookback period to Last 30 days. This tells the system to count purchases from the past 30 days when ranking items.
+
+<Image align="center" border={true} caption="Define Consideration Criteria" src="https://files.readme.io/443755408811e0ceb87e00ae6fa87246afcbae4a0f4c27cff1f0efd46921e867-Define_Consideration_Criteria_for_Best_Sellers_Recomm.png" />
+
+You can click Add Rule to apply property filters that narrow which purchases count. For example, filtering _Charged_ by `Gender = Female` counts only purchases from female users when identifying best sellers.
+
+### Map Catalog Column to Event Property
+
+Map the event property containing the item identifier to the identity column of your catalog. This tells the system which catalog item each purchase belongs to. For example, map the catalog identity column to the `Product ID` event property of the _Charged_ event.
+
+<Image align="center" border={true} caption="Map Catalog Column to Event Property" src="https://files.readme.io/501c4ea452d23f15b5c5ac45f2a032b563d6b9992b38baefc189093c02d5ba44-Map_Catalog_Column_to_Event_Property_for_Best_Sellers_Recomm.png" />
+
+### Enter Basic Details
+
+After setting up the Catalog and Criteria tab, click **Next** to enter the following basic details:
+
+<Image align="center" border={true} caption="Enter Basic Details" src="https://files.readme.io/afa735875f5cb4ae8ad2eb2ba54983bea6c9419c70b5b1c3a4c58374dad451e4-Enter_Basic_Details_for_Best_Sellers.png" />
+
+| Field       | Details                                                                                                                                          |
+| :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name        | Name the strategy using a clear, descriptive name that reflects the use case and time window. For example, Best Seller Products in Last 30 Days. |
+| Description | An optional description for your strategy.                                                                                                       |
+
+After adding these details, click **Save**. Once the strategy is saved and purchase events are evaluated, the strategy becomes Active and can be used for campaign personalization.
+
+In this case, the strategy surfaces the most-purchased products over the past 30 days. Because no individual user history is required, the ranked list is consistent across all users, making it suitable for a homepage best-sellers section, a monthly promotional email, or an SMS campaign driving conversions through social proof.
+
+# Personalize
+
+Once the strategy is active, you can use it to personalize recommendations in your campaigns. To configure recommendations within a campaign, click **Personalize** to open the _Personalize Setup_ panel, then select the _Recommendations_ tab.
+
+Configure the following:
+
+<Image align="center" border={true} caption="Personalize Campaign Using Recommendation" src="https://files.readme.io/fd731937e2c7bb7dba283705248d89f1676304af1b942a11af35a3e9535d85e3-Personalize_Campaign_Using_Best_Sellers.png" />
+
+## Strategy
+
+Select the primary strategy to use for recommendations. For example, select Best Seller Products in the Last 30 Days to surface the most-purchased products across the catalog for all users.
+
+Optionally, enable Fallback Strategy to specify one or more fallback strategies that activate when the primary strategy cannot return enough items. Fallback strategies are evaluated in order of priority, with the last fallback used only if all preceding strategies return insufficient results. Fallback items are deduplicated against the best seller results before being returned.
+
+For example, set Trending Products as a fallback so recommendation slots remain filled even when Best Sellers returns fewer items than requested.
+
+## Only Include Items
+
+Define rules to restrict which catalog items are eligible for recommendation. You can add Catalog-Based Rules to filter by catalog attributes, or Event-Based Rules to filter based on user behavior. For example, adding a catalog-based rule `Category = Tops` ensures only tops appear in the recommendation block.
+
+## Exclude Items
+
+Define rules to explicitly remove certain catalog items from recommendations. For example, adding a catalog-based rule `Brand = Wrangler` ensures Wrangler-branded products do not appear in the recommendation output.
+
+## Item Configuration
+
+Specify how many items to recommend and which catalog attributes to return for each item. For example, set Items to Recommend to `3` and select `Name`, `ImageUrl`, `Brand, Category`, and `Price` as the Item Attributes to Recommend, so the campaign can render each product with its name, thumbnail, brand, category, and price. Once configured, click **Apply** to save the personalization setup for the campaign.
+
+# FAQs
+
+### Are Best Sellers recommendations personalized?
+
+No, these recommendations are based on aggregated purchase data and apply to all users.
+
+### How is this different from Popular recommendations?
+
+Best Sellers are based on purchases, while Popular recommendations can be based on other engagement events such as views or add-to-cart actions.
+
+### What determines ranking?
+
+Ranking is based on the total number of purchases within the selected time window.
+
+### When should I use Best Sellers recommendations?
+
+Use this strategy when you want to promote products with strong purchase performance.

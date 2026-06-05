@@ -29,7 +29,7 @@ More Titles Like This recommendations are computed using a content-based algorit
 
 At strategy creation time, no interaction event or user data is configured; only the catalog is selected. The system uses pre-computed product embeddings to measure similarity between catalog items.
 
-At serving time, you provide the identity of the seed item, the specific title the user is currently viewing or the campaign is anchored to. The system queries the catalog using vector similarity to identify and return the items most similar to that seed, ranked by similarity score.
+At serving time, you provide the identity of the seed item, the specific title the user is currently viewing, or the campaign to which the user is anchored. The system queries the catalog using vector similarity to identify and return the items most similar to that seed, ranked by similarity score.
 
 Common use cases by industry:
 
@@ -65,7 +65,7 @@ Before you begin, check if the following are in place:
 * A catalog is uploaded and active.
 * The catalog contains sufficient items for similarity computation.
 
-## Set Up More Titles Like This Recommendation
+## Set Up More Like This Recommendation
 
 This section walks you through the steps to create a More Titles Like This strategy. Let us take an example: an OTT platform wants to recommend titles similar to whichever title a user is currently viewing.
 
@@ -91,13 +91,13 @@ After selecting the catalog, click **Next** to enter the following basic details
 
 <Image align="center" border={true} caption="Enter Basic Details" src="https://files.readme.io/a5316fbeaacd42c1d8f1e3e7207465a83121637313108e2e2a5569fa597c2736-Enter_Basic_Details_for_More_LIke_this.png" />
 
-# Personalize Campaign Using More Titles Like This Recommendation
+# Personalize Campaign Using More Like This Recommendation
 
 Once the strategy is active, you can use it to personalize recommendations in your campaigns. To configure recommendations within a campaign, click **Personalize** to open the _Personalize Setup_ panel, then select the _Recommendations_ tab.
 
 Configure the following:
 
-<Image align="center" border={true} caption="Personalize Campaign Using More LIke This Strategy" src="https://files.readme.io/087b4131a427d0ecad3c4207a06a21d317b1073ee4c565bbb12efb61fbf49224-Perosanalize_Campaign_Using_More_Like_This.png" />
+<Image align="center" border={true} caption="Personalize Campaign Using More Like This Strategy" src="https://files.readme.io/087b4131a427d0ecad3c4207a06a21d317b1073ee4c565bbb12efb61fbf49224-Perosanalize_Campaign_Using_More_Like_This.png" />
 
 ## Strategy
 

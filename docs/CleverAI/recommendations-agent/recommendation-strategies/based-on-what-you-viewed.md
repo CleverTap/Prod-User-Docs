@@ -172,7 +172,7 @@ The strategy evaluates each user's viewing history within the configured time wi
 
 ### What happens if a user has no viewing history?
 
-The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the results before being returned. If no fallback is configured, the remaining recommendation slots will be empty.
+The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the results before being returned. If no fallback is configured, the default value is returned.
 
 ### When should I use Based on What You Viewed recommendations?
 

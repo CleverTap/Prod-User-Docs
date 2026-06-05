@@ -196,7 +196,7 @@ No. Best Sellers in Category recommendations reflect aggregated purchase data wi
 
 ### How is the Best Sellers in Category score calculated?
 
-Items are ranked by total purchase frequency within the requested category and configured time window. The most purchased item in that category appears first. All purchases within the window count equally — no time-decay weighting is applied.
+Items are ranked by total purchase frequency within the requested category and configured time window. The most purchased item in that category appears first. All purchases within the window count equally; no time-decay weighting is applied.
 
 ### What happens if there are not enough best-selling items in a category?
 

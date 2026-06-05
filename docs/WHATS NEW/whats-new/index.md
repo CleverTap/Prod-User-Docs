@@ -152,7 +152,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## May 
+## May
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="timezone-support-in-liquid-date-tags">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#timezone-support-in-liquid-date-tags"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Timezone Support in Liquid Date Tags</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>The <code>date_tz</code> tag in Liquid scripting now supports timezone-aware date and time output. Previously, the <code>now</code> tag always returned the results in Indian Standard Time (IST), regardless of your account's configured timezone. You can now define the required timezone directly in your Liquid scripts to get accurate, localized results automatically. </p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Generate dynamic, timezone-aware content based on your account or customer timezone.</li>
+        <li>Eliminate manual timestamp offsets and reduce scripting errors from incorrect conversions.</li>
+        <li>Deliver consistent campaign experiences across multiple regions and geographies.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/liquid-tags#date_tz" target="_blank">Liquid Tags</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="promotions" id="configurable-point-redemption-strategies-for-loyalty-wallets">

@@ -133,18 +133,18 @@ The following strategies are available to generate recommendations from your cat
 
 Pick a strategy based on where the recommendation appears and what user data you have available:
 
-| Context                       | Available Data                  | Goal                              | Recommended Strategies                                                                               |
-| ----------------------------- | ------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| New or anonymous user         | No user data required           | Drive initial discovery           | Popular, Trending, Best Sellers                                                                      |
-| Homepage/Discovery Surface    | No user data required           | Surface popular or emerging items | Popular, Trending, Best Sellers                                                                      |
-| Category page                 | No user data required           | Drive category-level discovery    | Popular in Category, Trending in Category, Best Sellers in Category, Last-Minute Add-ons in Category |
-| Category page                 | Browse and view history         | Personalize within a category     | Based on What You Viewed, Because You Viewed                                                         |
-| Product detail page           | Browse and view history         | Keep the user exploring           | Based on What You Viewed, Because You Viewed, Frequently Viewed Together                             |
-| Product detail page           | Catalog attributes              | Show similar items                | More Like These, Similar to What You Viewed                                                          |
-| Product detail page           | Catalog attributes + price tier | Upsell to a better option         | Premium Alternatives                                                                                 |
-| Cart and checkout             | Current cart + purchase history | Increase basket size              | Frequently Bought Together, Last-Minute Add-ons, Last-Minute Add-ons in Category                     |
-| Cart and checkout             | Catalog attributes + price tier | Upsell at the point of decision   | Premium Alternatives                                                                                 |
-| Post-purchase / re-engagement | Purchase and view history       | Drive repeat engagement           | Frequently Bought Together, Because You Viewed, More Like These                                      |
+| Goal                              | Available Data                  | Recommended Strategies                                                                               |
+| --------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Drive initial discovery           | No user data required           | Popular, Trending, Best Sellers                                                                      |
+| Surface popular or emerging items | No user data required           | Popular, Trending, Best Sellers                                                                      |
+| Drive category-level discovery    | No user data required           | Popular in Category, Trending in Category, Best Sellers in Category, Last-Minute Add-ons in Category |
+| Personalize within a category     | Browse and view history         | Based on What You Viewed, Because You Viewed                                                         |
+| Keep the user exploring           | Browse and view history         | Based on What You Viewed, Because You Viewed, Frequently Viewed Together                             |
+| Show similar items                | Catalog attributes              | More Like These, Similar to What You Viewed                                                          |
+| Upsell to a better option         | Catalog attributes + price tier | Premium Alternatives                                                                                 |
+| Increase basket size              | Current cart + purchase history | Frequently Bought Together, Last-Minute Add-ons, Last-Minute Add-ons in Category                     |
+| Upsell at the point of decision   | Catalog attributes + price tier | Premium Alternatives                                                                                 |
+| Drive repeat engagement           | Purchase and view history       | Frequently Bought Together, Because You Viewed, More Like These                                      |
 
 Select the strategy that best matches the user's context to keep recommendations relevant and effective.
 

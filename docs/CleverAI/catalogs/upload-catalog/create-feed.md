@@ -23,9 +23,9 @@ Both feeds update the same catalog but serve different purposes.
 
 Click **Create Feed** to configure a new feed for the selected catalog. Perform the following steps:
 
-1. Select an Upload Type
-2. Configure the Feed Source
-3. Save the Feed
+1. [Select an Upload Type](doc:create-feed#select-an-upload-type)  
+2. [Configure the Feed Source](doc:create-feed#configure-the-feed-source) 
+3. [Save the Feed](doc:create-feed#save-the-feed) 
 
 The following image shows the _Feed_ tab:
 

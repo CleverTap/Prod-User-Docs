@@ -41,6 +41,17 @@ After a file is uploaded, the system validates the catalog. Once validation is s
 
 Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes available immediately.
 
+<Callout icon="📘" theme="info">
+  #### Catalog Column Limits
+
+  A catalog supports a maximum of 200 columns in total:
+
+  * 3 fixed columns: Product ID, Name, and Image URL
+  * Up to 197 custom attribute columns,defined during catalog creation
+
+  Columns cannot be added or removed after the catalog is saved.
+</Callout>
+
 # Upload Types
 
 Upload Type defines how catalog data is imported into CleverTap. You can upload a file, fetch data from a URL, or sync data from an external source.
@@ -55,9 +66,9 @@ The following image shows the _Catalog upload_ tab:
 
 <Image align="center" border={true} caption="Catalog Upload" src="https://files.readme.io/72162109cee08cbca11c37f059d9e1d2b4109929d6e84397da4d182ce363a4f9-image.png" />
 
-## URL
+## API/URL
 
-Select the _URL_ tab to source catalog data from an external endpoint rather than uploading a file manually.
+Select the _API/URL_ tab to source catalog data from an external endpoint rather than uploading a file manually.
 
 Enter a source _URL_ to fetch catalog data, for example, to automatically pull product updates such as pricing and availability from your backend system at regular intervals.
 
@@ -69,26 +80,24 @@ Enter a source _URL_ to fetch catalog data, for example, to automatically pull p
 
 Click **Fetch Catalogs** to retrieve the data and display a preview of catalog rows and columns. Specify how often CleverTap must re-fetch data from the URL. Enter a _Sync Frequency_ value and select the unit: Minute(s), Hour(s), or Day(s). For example, "Every 1 Hour(s)" pulls fresh catalog data once per hour.
 
-The following image shows the URL tab:
+The following image shows the _API/URL_ tab:
 
 <Image align="center" border={true} caption="Catalog Upload via API or URL" src="https://files.readme.io/a2dd3f47b2bfea17f8f0686f73f94c0314a509e1463e5e2d96484fcf23845858-image.png" />
 
 You can preview the first few rows of the data before validating the input.
 
-## Google Sync (check with@Suvidhi)
+## Google Sync
 
 When _Google sync_ is selected, you can provide the _Source Url_, fetch the Catalog, and define a sync frequency using minutes, hours, or days.
-
-**(@Suvidhi, why Url in one place and URL in API/URL tab?)**
 
 Before fetching the catalog, configure the following fields in the table:
 
 | Field          | Description                                                                                           |
 | -------------- | ----------------------------------------------------------------------------------------------------- |
-| Source URL     | Enter the Google-hosted feed URL from which catalog data is fetched.                                  |
+| Source Url     | Enter the Google-hosted feed URL from which catalog data is fetched.                                  |
 | Sync Frequency | Define how often the catalog is refreshed. You can configure the interval in minutes, hours, or days. |
 
-Click **Fetch Catalog** to retrieve catalog data from the configured source. This option supports ongoing synchronization of catalog data. Only URLs to XML files are allowed for Google Sync. For more information, refer to [GCP](doc:data-export-to-gcp).
+Click **Fetch Catalog** to retrieve catalog data from the configured source. This option supports ongoing synchronization of catalog data. Only links to XML files are allowed for Google Sync. For more information, refer to [Google Merchant Center](https://business.google.com/in/merchant-center/).
 
 The following image shows the Catalog upload via Google sync:
 

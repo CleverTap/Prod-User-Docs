@@ -1,5 +1,8 @@
 ---
 title: Recommendations Agent
+excerpt: >-
+  Learn how to get started with setting up recommendations and personalizing
+  engagement using them effectively
 deprecated: false
 hidden: true
 metadata:

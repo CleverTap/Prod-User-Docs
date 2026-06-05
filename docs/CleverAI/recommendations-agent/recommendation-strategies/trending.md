@@ -175,7 +175,7 @@ Each interaction within the lookback window is weighted by how recently it occur
 
 ### What happens if there are not enough trending items?
 
-The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the trending results before being returned. If no fallback is configured, the remaining recommendation slots will be empty.
+The strategy falls back to a separately configured fallback strategy. Fallback items are deduplicated against the trending results before being returned. If no fallback is configured, the default value is returned.
 
 ### When should I use Trending recommendations?
 

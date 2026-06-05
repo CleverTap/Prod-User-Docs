@@ -1,7 +1,7 @@
 ---
-title: Create Catalog
+title: Upload Catalog
 excerpt: >-
-  Learn how to create and manage catalogs and feeds in CleverTap to upload,
+  Learn how to upload and manage catalogs and feeds in CleverTap to upload,
   sync, and structure product data for personalization, recommendations, and
   engagement.
 deprecated: false
@@ -13,20 +13,20 @@ metadata:
 
 Creating a catalog is the first step to bringing product or content data into CleverTap. A catalog acts as a container for items that can later be used across personalization, recommendations, and engagement use cases.
 
-Once created, catalogs are populated and updated using one or more feeds. Each feed is processed independently, so updates from one feed apply only to the fields it manages without affecting data from other feeds. For example, you might use one feed to upload an initial set of products and another feed to keep pricing or availability updated over time.
+Once uploaded, catalogs are populated and updated using one or more feeds. Each feed is processed independently, so updates from one feed apply only to the fields it manages without affecting data from other feeds. For example, you might use one feed to upload an initial set of products and another feed to keep pricing or availability updated over time.
 
-Catalogs can be created as either Product or Product Location catalogs. Select the catalog type based on the kind of items you want to store. Product catalogs store item-level details such as name, price, and category, while Product Location catalogs store product availability and attributes specific to a location, such as store, region, or warehouse.
+Catalogs can be uploaded as either Product or Product Location catalogs. Select the catalog type based on the kind of items you want to store. Product catalogs store item-level details such as name, price, and category, while Product Location catalogs store product availability and attributes specific to a location, such as store, region, or warehouse.
 
-Once a catalog is created, its type cannot be changed.
+Once a catalog is uploaded, its type cannot be changed.
 
-# Create Catalog
+# Upload Catalog
 
-To create a catalog, perform the following steps:
+To upload a catalog, perform the following steps:
 
 1. Go to _Settings_ > _Catalogs_ and click **Add Catalog**.
 2. Enter the required details.
 
-<Image align="center" border={true} caption="Create Catalog" src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" />
+<Image align="center" border={true} caption="Upload Catalog" src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" />
 
 | Field        | Description                                                                                                                                                                                                   |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,9 +39,9 @@ After a file is uploaded, the system validates the catalog. Once validation is s
 3. [Map data type with Catalog columns](doc:create-catalog#map-data-type-with-catalog-columns).
 4. Create a Feed to populate data in your catalog.
 
-Click **Upload** to create the catalog. Once the Catalog is created, it becomes available immediately.
+Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes available immediately.
 
-# Upload Type
+# Upload Types
 
 Upload Type defines how catalog data is imported into CleverTap. You can upload a file, fetch data from a URL, or sync data from an external source.
 

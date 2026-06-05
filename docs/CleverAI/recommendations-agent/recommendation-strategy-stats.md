@@ -12,6 +12,8 @@ metadata:
 
 The Stats page provides a comprehensive view of how your recommendation strategy is performing across channels, items, and user engagement. Use it to evaluate effectiveness, identify top-performing recommendations, and optimize delivery strategies.
 
+<Image align="center" border={true} caption="Recommendation Strategy Stats Page" src="https://files.readme.io/6a725e0a279cee712e4c21699997d85acb7dc9b60c46ca0733bf451b851fe43e-Recommendation_Strategy_Stats.png" />
+
 It helps you understand the following:
 
 * Channels driving the highest engagement
@@ -27,6 +29,8 @@ Select a date range to analyze recommendation performance over a specific period
 
 At the top of the page, you can see a high-level summary of recommendation performance.
 
+<Image align="center" border={true} caption="Key Metrics" src="https://files.readme.io/7b0acabd13dc7943adbc4820df474531f188926e726b24ea118f2e40cf87de7f-Key_Metric_-_Strategy_Stats.png" />
+
 ## Total number of engagements
 
 The total number of campaigns, journeys, bulletins, and reminders using this strategy that recorded activity in the selected period, across all channels.
@@ -39,9 +43,11 @@ The total number of recommendation instances served to users by the base strateg
 
 This metric helps you measure recommendation volume and distribution.
 
-# Engagement Channel-wise Breakdown
+## Engagement Channel-wise Breakdown
 
 This section breaks down recommendation performance by delivery channel, helping you understand how each channel contributes to overall engagement. You can compare engagement volume, message delivery, recommendation count, and click-through efficiency across channels such as Push Notification, Email, SMS, and others.
+
+<Image align="center" border={true} caption="Channel-wise Breakdown of Recommendation Strategy" src="https://files.readme.io/fefe41460444c12dc972e73e19ebea0a5b2da9633640fd410c67640a32d878a3-Channelwise_Breakdown.png" />
 
 The following metrics are displayed for each channel:
 
@@ -54,20 +60,19 @@ The following metrics are displayed for each channel:
 
 To drill into which engagements are active on a channel, click **View all [Channel] engagements** on the channel row, or use the three-dot menu to navigate directly to a specific engagement type:
 
-* View in Campaigns (count)
-* View in Journeys (count)
-* View in Bulletins (count)
-* View in Reminders (count)
+<Image align="center" border={true} caption="View All Channel-wise Engagements" src="https://files.readme.io/63ab24f15a87b78e265621f08d33a585653f14508e2263be5dc60dfc16fbd975-Channel-wise_Drilldown.png" />
 
 # Top Recommended
 
-This section displays the most frequently recommended items. Use it to:
+This section displays the most frequently recommended items.
+
+<Image align="center" border={true} caption="Top Recommended Items" src="https://files.readme.io/87c774241a414a62471a1e58b6e8a5e5c813ce902d783e2c137f1eccc0854d23-Top_Recommended.png" />
+
+Use it to:
 
 * Evaluate the performance of individual items
 * Identify high-converting recommendations
 * Optimize item ranking strategies
-
-To find a specific item, use the search bar to search by item name or ID.
 
 The following table describes the columns in this section:
 
@@ -76,17 +81,51 @@ The following table describes the columns in this section:
 | Item Name         | The name and ID of the recommended item. Click on an item to view its details in the Item Detail panel. |
 | Total Recommended | The number of times the item was recommended to users in the selected period.                           |
 
-# Item Detail
+To find a specific item, use the search bar to look up by name or ID.
 
-When you select an item from the Top Recommended list, the Item Detail panel opens on the right side of the page.
+## Item Detail
 
-Detail
+When you select an item from the Top Recommended list, the _Item Detail_ panel opens on the right side of the page.
 
-| Column            | Description                                                                    |
-| :---------------- | :----------------------------------------------------------------------------- |
-| Product Id        | The unique identifier of the item in the catalog.                              |
-| Times Recommended | The number of times this item was recommended to users in the selected period. |
+<Image align="center" border={true} caption="Item Detail Panel" src="https://files.readme.io/4c3137bad1493ee7113244c3310169b577de1ffe593b8f8d3171ac0cad2cb403-Item_Detail_Panel.png" />
 
-Attributes
+The Item Detail panel displays the following:
 
-Dynamic key-value pairs from the item catalog, for example, genre, cast, language, and rating. The attributes displayed depend on the catalog schema configured for your account.
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Column
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Detail
+      </td>
+
+      <td>
+        Displays the following:
+
+        * **Product Id**: The unique identifier of the item in the catalog.
+        * **Times Recommended**: The number of times this item was recommended to users in the selected period.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Attributes
+      </td>
+
+      <td>
+        Dynamic key-value pairs from the item catalog, for example, genre, cast, language, and rating. The attributes displayed depend on the catalog schema configured for your account.
+      </td>
+    </tr>
+  </tbody>
+</Table>

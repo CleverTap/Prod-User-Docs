@@ -125,7 +125,6 @@ The following strategies are available to generate recommendations from your cat
   <Card title="Based on What You Viewed" href="https://docs.clevertap.com/docs/based-on-what-you-viewed" />
 
   <Card title="Frequently Bought Together" href="https://docs.clevertap.com/docs/frequently-bought-together" />
-
   <Card title="More Like This" href="https://docs.clevertap.com/docs/more-like-this" />
 </Cards>
 

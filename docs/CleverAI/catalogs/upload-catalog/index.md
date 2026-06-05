@@ -28,11 +28,11 @@ To upload a catalog, perform the following steps:
 
 <Image align="center" border={true} caption="Upload Catalog" src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" />
 
-| Field        | Description                                                                                                                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                |
-| Description  | Add context about the catalog.                                                                                                                                                                                |
-| Upload Type  | Select how your catalog data is sourced. You can upload a CSV/XML file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Type](doc:create-catalog#upload-type). |
+| Field        | Description                                                                                                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                 |
+| Description  | Add context about the catalog.                                                                                                                                                                                 |
+| Upload Type  | Select how your catalog data is sourced. You can upload a CSV/XML file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Types](doc:create-catalog#upload-type). |
 
 After a file is uploaded, the system validates the catalog. Once validation is successful, the file preview section displays a few rows of catalog data, including column headers, so you can preview the data before proceeding. This helps ensure the catalog content is correct before upload.
 
@@ -42,14 +42,15 @@ After a file is uploaded, the system validates the catalog. Once validation is s
 Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes available immediately.
 
 <Callout icon="📘" theme="info">
-  #### Catalog Column Limits
+  #### Catalog Constraints
 
-  A catalog supports a maximum of 200 columns in total:
+  A catalog supports the following:
 
+  * A maximum of 100 columns in total:
   * 3 fixed columns: Product ID, Name, and Image URL
-  * Up to 197 custom attribute columns,defined during catalog creation
+  * Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
 
-  Columns cannot be added or removed after the catalog is saved.
+  Your account supports up to 5 catalogs and a combined total of 15M rows across all catalogs. Both limits apply: you cannot create a new catalog once you reach 5, and you cannot upload more rows to any catalog once your combined row count reaches 15M, whichever comes first.
 </Callout>
 
 # Upload Types
@@ -99,7 +100,7 @@ Before fetching the catalog, configure the following fields in the table:
 
 Click **Fetch Catalog** to retrieve catalog data from the configured source. This option supports ongoing synchronization of catalog data. Only links to XML files are allowed for Google Sync. For more information, refer to [Google Merchant Center](https://business.google.com/in/merchant-center/).
 
-The following image shows the Catalog upload via Google sync:
+The following image shows the Catalog upload via _Google sync_:
 
 <Image align="center" border={true} caption="Catalog Upload via Google Sync" src="https://files.readme.io/e88c50d8431e980f1b79fdb07c65161c2dedca2a0dd14a5d07a159f98a9d7e0d-image.png" />
 

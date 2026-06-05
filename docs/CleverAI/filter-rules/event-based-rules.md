@@ -162,7 +162,7 @@ The designation is made when you attach the rule to a recommendation strategy, n
 
 # Create Event-Based Rule
 
-To create a new rule, go to _Recommendations_ > _Event-Based Rules_ and click **Create Rule**. The _Create Event-Based Rule_ page opens, which has the following three sections: Configure, Criteria, and Link Events.
+To create a new rule, go to _Recommendations_ > _Event-Based Rules_ and click **Create Rule**. The _Create Event-Based Rule_ page opens, which has the following three sections: [Configure](doc:event-based-rules#configure), [Criteria](doc:event-based-rules#criteria), and [Link Events](doc:event-based-rules#link-events).
 
 Once all sections are configured, click **Create** to save the rule.
 

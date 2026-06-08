@@ -101,7 +101,7 @@ Available for PBS and Live campaigns. Maps a user's profile property to a catalo
 
 Available for Live campaigns only. Maps an event property from the triggering event to a catalog item identifier. Use this when the item to surface is determined by the action that fired the campaign, for example, the `item_id` from a "Price Drop" event is used to look up the matching catalog record.
 
-For example, for an e-commerce campaign, you might map Product Name, Product Image, Price, and Product URL. These variables are then available in the Title and Message fields so each message displays the correct details for the item being promoted.
+For example, for an e-commerce campaign, you might map Product Name, Product Image, Price, and Product URL. These variables are then available in the Title and Message fields, so each message displays the correct details for the item being promoted.
 
 Once attributes are mapped, use Liquid Script to reference them in your campaign message.
 

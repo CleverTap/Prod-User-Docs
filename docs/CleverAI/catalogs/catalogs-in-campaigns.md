@@ -74,7 +74,7 @@ Open your campaign and go to the Content Editor. Click **Personalize**, select t
 
 1. [Select catalog](doc:catalogs-in-campaigns#select-catalog)
 2. [Map catalog attributes](doc:catalogs-in-campaigns#map-catalog-attributes)
-3. [(Optional) Apply include and/or exclude rules](doc:catalogs-in-campaigns#select-catalog)
+3. [(Optional) Apply include and/or exclude rules](doc:catalogs-in-campaigns#apply-include-andor-exclude-rules)
 4. [Reference catalog data in campaign message](doc:catalogs-in-campaigns#reference-catalog-data-in-campaign-message)
 
 ## Select Catalog

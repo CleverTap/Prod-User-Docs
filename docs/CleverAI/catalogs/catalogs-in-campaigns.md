@@ -10,15 +10,13 @@ metadata:
 ---
 # Overview
 
-Catalogs let you pull structured product or content data directly into a campaign message, so each user sees item-specific details drawn from your catalog at send time. Instead of hardcoding product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient.
+[Catalogs](doc:catalogs) let you pull structured product or content data directly into a campaign message, so each user sees item-specific details drawn from your catalog at send time. Instead of hardcoding product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient.
 
 When you add a catalog block to a campaign, every user receiving the message sees item details populated from the catalog record you specify, keeping your content accurate and consistent without manual updates.
 
-<Callout icon="📘" theme="info">
-  #### How Catalog Data is Resolved at Send Time?
-
-  Catalog attributes are not embedded when you build the campaign. At the moment CleverTap sends to each recipient, it looks up the catalog record and substitutes the mapped attributes into your template. If a catalog item is updated after the campaign is scheduled, the latest value is used at send time.
-</Callout>
+> 📘 How Catalog Data is Resolved at Send Time?
+>
+> Catalog attributes are not embedded when you build the campaign. At the moment CleverTap sends to each recipient, it looks up the catalog record and substitutes the mapped attributes into your template. If a catalog item is updated after the campaign is scheduled, the latest value is used at send time.
 
 # Use Cases
 
@@ -67,8 +65,8 @@ The following table lists example use cases by domain.
 
 Before adding a catalog block to a campaign, confirm the following are in place:
 
-* At least one active catalog with populated product records.
-* The catalog includes the attributes you intend to use in the message, such as name, image URL, price, and product URL.
+- At least one active catalog with populated product records.
+- The catalog includes the attributes you intend to use in the message, such as name, image URL, price, and product URL.
 
 # Add Catalog to Campaign
 
@@ -83,7 +81,9 @@ Open your campaign and go to the Content Editor. Click **Personalize**, select t
 
 Choose a catalog from the dropdown. The selected catalog is the data source for the campaign. All attribute references in the message template are resolved against records in this catalog.
 
-<Image align="center" alt="Select Catalog" border={true} caption="Select Catalog" src="https://files.readme.io/e86dacf1662ba16b5c0e95c342af78f0beb340cfefb88d799047c1574cbd170b-image.png" />
+
+<Image src="https://files.readme.io/e86dacf1662ba16b5c0e95c342af78f0beb340cfefb88d799047c1574cbd170b-image.png" alt="Select Catalog" align="center" caption="Select Catalog" border={true} />
+
 
 Only active catalogs are available for selection. If the catalog you need is not listed, verify its status on the Catalogs page.
 
@@ -127,7 +127,9 @@ These rules help control relevance and prevent unintended items from surfacing i
 
 Once the catalog is configured, use Liquid Tags in your Title and Message fields to pull mapped attribute values into the template.
 
-<Image align="center" alt="Catalog Reference using Liquid Tags" border={true} caption="Catalog Reference using Liquid Tags" src="https://files.readme.io/a4b02cd130c35aa8e76405e8968e5c1bf5e3adb20f0025ce07957e3182c5ca76-image.png" />
+
+<Image src="https://files.readme.io/a4b02cd130c35aa8e76405e8968e5c1bf5e3adb20f0025ce07957e3182c5ca76-image.png" alt="Catalog Reference using Liquid Tags" align="center" caption="Catalog Reference using Liquid Tags" border={true} />
+
 
 The following example shows how a price-drop alert is resolved in an e-commerce campaign.
 

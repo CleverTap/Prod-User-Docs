@@ -1,7 +1,7 @@
 ---
 title: Legacy Push (To be Deprecated)
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

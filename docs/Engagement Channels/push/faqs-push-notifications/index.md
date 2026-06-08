@@ -1,5 +1,5 @@
 ---
-title: Push-Troubleshooting and FAQs
+title: Push-FAQs
 excerpt: >-
   Refer to our frequently asked questions and troubleshoot any issues with your
   Push campaign.

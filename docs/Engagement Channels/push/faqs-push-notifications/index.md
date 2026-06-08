@@ -1,8 +1,6 @@
 ---
 title: Push-FAQs
-excerpt: >-
-  Refer to our frequently asked questions and troubleshoot any issues with your
-  Push campaign.
+excerpt: Refer to our frequently asked questions for your Push campaign.
 deprecated: false
 hidden: false
 metadata:

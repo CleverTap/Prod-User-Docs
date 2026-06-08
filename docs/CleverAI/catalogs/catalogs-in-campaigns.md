@@ -30,7 +30,7 @@ The following table lists example use cases by domain:
 
 | Domain        | Use case                                                                                                                                                               |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OTT           | Send a "Now Available" notification when a title a user added to their watchlist becomes available, pulling the title name, thumbnail, and deep link from the catalog. |
+| OTT           | Send a _Now Available_ notification when a title a user added to their watchlist becomes available, pulling the title name, thumbnail, and deep link from the catalog. |
 | E-commerce    | Trigger a price-drop alert that displays the exact product name, the updated price, and an image sourced directly from the catalog when the price changes.             |
 | Travel        | Trigger a follow-up when a user views a destination but does not book, surfacing the same destination details and current pricing from the catalog.                    |
 | Food delivery | Notify users when a previously unavailable item at their favorite restaurant is back, with the dish name, image, and price from the catalog.                           |
@@ -39,20 +39,20 @@ The following table lists example use cases by domain:
 
 Build campaign templates that reference catalog attributes instead of static copy. When product details change, such as pricing, availability, or descriptions, the campaign reflects the latest values automatically, without rebuilding the template for each send.
 
-The following table lists example use cases by domain.
+The following table lists example use cases by domain:
 
 | Domain        | Use case                                                                                                                                                                        |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | OTT           | Feature a new release whose title, synopsis, and thumbnail are drawn from the catalog, so no template edits are needed when the lineup changes.                                 |
 | E-commerce    | Run a flash-sale campaign that pulls featured product names and prices from the catalog at send time, eliminating the need to rebuild the campaign each time inventory changes. |
 | Travel        | Promote seasonal packages using catalog-sourced destination names, prices, and imagery that update automatically as inventory changes.                                          |
-| Food delivery | Send a "Featured this week" push where the dish name and image come from the catalog, so the campaign template stays the same across weeks.                                     |
+| Food delivery | Send a _Featured this week_ push where the dish name and image come from the catalog, so the campaign template stays the same across weeks.                                     |
 
 ## Maintain Consistency across Channels
 
 Use the same catalog as the single source of truth for product details across email, push, SMS, and WhatsApp campaigns. A change to a catalog record propagates to every campaign that references it without requiring per-channel edits.
 
-The following table lists example use cases by domain.
+The following table lists example use cases by domain:
 
 | Domain        | Use case                                                                                                                                              |
 | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------- |

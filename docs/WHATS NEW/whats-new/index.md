@@ -155,6 +155,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="predefined-templates-for-rich-push-campaigns">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#predefined-templates-for-rich-push-campaigns"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Predefined Templates for Rich Push Campaigns</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now create push campaigns faster using pre-defined templates. Customize content and preview notifications across Android and iOS before launch, with support for CTAs, GIFs, and advanced Android controls.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Launch push campaigns quickly using ready-to-use templates</li>
+        <li>Preview and test notifications across Android and iOS devices</li>
+        <li>Build richer campaigns with advanced features</li>
+        <li>Standardize push campaign creation across teams</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/push-editor" target="_blank">Push Editor</a>, <a href="https://developer.clevertap.com/docs/android-push-templates" target="_blank">Push for Android</a>, <a href="https://developer.clevertap.com/docs/rich-push-notifications" target="_blank">Rich Push for iOS</a>, and <a href="https://docs.clevertap.com/docs/push-faqs" target="_blank">FAQs</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="timezone-support-in-liquid-date-tags">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -2114,33 +2145,39 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#ai-powered-nps-feedback-analysis">
-        <i class="fa-light fa-anchor" />
+        <i class="fa-light fa-anchor"></i>
       </a>
     </div>
 
-    <div>
-      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon" />
-    </div>
+```
+<div>
+  <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon" />
+</div>
 
-    <h3 class="release-note-heading">AI-Powered NPS Feedback Analysis</h3>
-    <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge private-beta">PRIVATE BETA</div>
+<h3 class="release-note-heading">AI-Powered NPS Feedback Analysis</h3>
+<div class="badge enhancement">ENHANCEMENT</div>
+<div class="badge private-beta">PRIVATE BETA</div>
+```
+
   </div>
 
   <div class="release-note-body">
     <p>The NPS Board now offers AI-powered insights that transform raw feedback into actionable sentiment analysis. Beyond numeric scores, you can instantly understand what customers feel and why, helping your teams act faster on key feedback themes.</p>
     <p>With this enhancement, you can:</p>
 
-    <p>
-      <ul>
-        <li>Generate instant AI summaries of NPS responses, highlighting key insights.</li>
-        <li>Identify key themes with positive, negative, or neutral sentiment indicators.</li>
-        <li>Visualize frequently mentioned terms using an AI-generated word cloud.</li>
-        <li>Track sentiment trends over time using daily, weekly, or monthly intervals..</li>
-      </ul>
-    </p>
+```
+<p>
+  <ul>
+    <li>Generate instant AI summaries of NPS responses, highlighting key insights.</li>
+    <li>Identify key themes with positive, negative, or neutral sentiment indicators.</li>
+    <li>Visualize frequently mentioned terms using an AI-generated word cloud.</li>
+    <li>Track sentiment trends over time using daily, weekly, or monthly intervals..</li>
+  </ul>
+</p>
 
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nps-board-1" target="_blank">NPS Board</a>.</p>
+<p>For more information, refer to <a href="https://docs.clevertap.com/docs/nps-board-1" target="_blank">NPS Board</a>.</p>
+```
+
   </div>
 
   <hr />
@@ -2404,3 +2441,5 @@ body:not(:has(.filters input:checked)) .article {
   
 </style>
 `}</HTMLBlock>
+
+<br />

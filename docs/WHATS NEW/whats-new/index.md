@@ -178,7 +178,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <li>Standardize push campaign creation across teams</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/push-editor" target="_blank">Push Editor</a>, <a href="https://developer.clevertap.com/docs/android-push-templates" target="_blank">Push for Android</a>, <a href="https://developer.clevertap.com/docs/rich-push-notifications" target="_blank">Rich Push for iOS</a>, and <a href="https://docs.clevertap.com/docs/push-faqs" target="_blank">FAQs</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/push-editor" target="_blank">Push Editor</a>, <a href="https://developer.clevertap.com/docs/android-push-templates" target="_blank">Push for Android</a>, <a href="https://developer.clevertap.com/docs/rich-push-notifications" target="_blank">Rich Push for iOS</a>, and <a href="https://docs.clevertap.com/update/docs/faqs-push-notifications" target="_blank">FAQs</a>.</p>
   </div>
 
   <hr/>

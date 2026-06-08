@@ -44,7 +44,9 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/ac0ed6a-Filter_icon.png) icon. The _Filters_ window opens on the left side of the screen.
 
-<Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" src="https://files.readme.io/8cd9b547d48c83a96dd0269e92389e13d056f0c79334e187826806ab27e6d39a-listing.png" />
+
+<Image src="https://files.readme.io/8cd9b547d48c83a96dd0269e92389e13d056f0c79334e187826806ab27e6d39a-listing.png" alt="Filter Campaigns" align="center" caption="Filter Campaigns" border={true} />
+
 
 3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page. If you create a filter and do not select **Apply**, the filter criteria are still displayed but not applied directly in the listing view. Filters are organized separately for Active and Archived campaigns.
 
@@ -67,16 +69,20 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
    | **External Campaigns**     | API Campaigns, Bulletins, Notification via Server API                                        | Filters based on the type of external campaign.                                                                                                                                                                                                               |
 4. Click **Reset** to reset all the applied filters.
 
-<Callout icon="📘" theme="info">
-  #### Time Period Filters
-
-  * By default, the **Time Period** filter for the **Started** and **Created** date is set to **All time**.
-  * When viewing engagement metrics in the campaign list, the **Stats Period** filter is set to **Last 30** days by default.
-  * Resetting reverts the Time Period filters to default values.
-  * Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd shows July 1st–2nd as the date range. When the same filter is applied on July 20th, it automatically shows July 19th–20th as the date range.
-</Callout>
-
 All filters except the _Delivery Type_ and _Segment Type_ filters also have individual reset options. You can reset a specific filter and click **Apply** to view the updated results in the campaign list immediately.
+
+### Time Period Filters
+
+- The Time Period filter has three modes: Created, Started, and All Campaigns. By default, the Time Period filter for the Started and Created date is set to All time.
+- When All Campaigns mode is selected, the default for Time Period in this mode is Last 30 days. All Time is not applicable here.
+- Resetting reverts the Time Period filters to default values.
+- Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd shows July 1st–2nd as the date range. When the same filter is applied on July 20th, it automatically shows July 19th–20th as the date range.
+
+### How Time Period filters interact across the Campaign page
+
+- Stats Period defaults to ±15 days to stay in sync with Campaign Reports.
+- Stats Period follows the campaign Time Period selection. Changing the campaign date range automatically updates the Stats Period to match, but not vice versa.
+- In All Campaigns mode, the Stats Period date picker is disabled (non-editable). The Stats Period is automatically set to the same Last 30 days range as the campaign Time Period.
 
 ## Edit Columns
 
@@ -84,14 +90,14 @@ You can customize the campaign listing view to match your preferences. Click the
 
 The _Sent_ column is toggled off by default.
 
-<Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
-<Callout icon="📘" theme="info">
-  #### Note
+<Image src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" alt="Edit Columns" align="center" caption="Edit Columns" border={true} />
 
-  * The Campaigns listing page also displays the team each campaign is associated with. This feature is currently in Private Beta. For more information, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
-  * Users can view and manage only the campaigns associated with their assigned teams. This ensures campaign visibility and actions align with the configured Role-Based Access Control (RBAC).
-</Callout>
+
+> 📘 Note
+>
+> - The Campaigns listing page also displays the team each campaign is associated with. This feature is currently in Private Beta. For more information, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
+> - Users can view and manage only the campaigns associated with their assigned teams. This ensures campaign visibility and actions align with the configured Role-Based Access Control (RBAC).
 
 ## Add Labels
 
@@ -99,11 +105,9 @@ Labels allow you to tag campaigns with descriptive names or themes. Once applied
 
 You can select up to 10 labels for a campaign. If a campaign already has more than 10 labels assigned from earlier configurations, they will still be visible under _Selected Labels_. However, in such cases, the user will not be able to select any additional labels.
 
-<Callout icon="📘" theme="info">
-  #### Naming Labels
-
-  The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
-</Callout>
+> 📘 Naming Labels
+>
+> The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
 
 You can create and apply labels from the _All Campaigns_ or the _All Journeys_ page. Labels can be applied to individual campaigns from the All Campaigns page during creation. To do so:
 
@@ -112,20 +116,24 @@ You can create and apply labels from the _All Campaigns_ or the _All Journeys_ p
 3. Select the labels you want to add. These labels are moved to the _Selected Tag ID_ section. Click **Deselect** to remove any label.
 4. Click **Apply**.
 
-<Image align="center" alt="Create Multiple Message Labels" border={true} caption="Create and Assign Multiple Message Labels" src="https://files.readme.io/3dd944e95bec99bc93eba8c1d3a729042e52cc3085530098ae42ee79e531f8fa-2025-12-11_18-49-11_1.gif" />
 
-<Callout icon="📘" theme="info">
-  #### Note
+<Image src="https://files.readme.io/3dd944e95bec99bc93eba8c1d3a729042e52cc3085530098ae42ee79e531f8fa-2025-12-11_18-49-11_1.gif" alt="Create Multiple Message Labels" align="center" caption="Create and Assign Multiple Message Labels" border={true} />
 
-  * When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
-  * To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
 
-  <Image align="center" border={true} src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" className="border" />
-</Callout>
+> 📘 Note
+>
+> - When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
+> - To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
+>
+>
+> <Image src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" align="center" border={true} />
+>
 
 You can view and export all labels to a CSV file from the _Settings_ >  _Setup_  > _Labels_  page. You can also edit or delete labels from this page.
 
-<Image align="center" alt="View Labels" border={true} caption="View Labels" src="https://files.readme.io/e96d91674fd5178c48dcf69813fcd9110249717e1d5ffe42e5ed79ab4c8a7dcc-image.png" width="100% " />
+
+<Image src="https://files.readme.io/e96d91674fd5178c48dcf69813fcd9110249717e1d5ffe42e5ed79ab4c8a7dcc-image.png" alt="View Labels" align="center" width="100% " caption="View Labels" border={true} />
+
 
 ## Archive Campaigns
 
@@ -137,15 +145,15 @@ Archiving campaigns helps to keep your CleverTap account organized and clutter-f
 
 Running campaigns cannot be archived.
 
-<Image align="center" alt="Archive Selected Campaigns" border={true} caption="Archive Selected Campaigns" src="https://files.readme.io/99629a5f98ff342e202d24b02c1cadc12487899a05aba35b50bef7086acb34d9-2025-12-11_18-46-35.png" />
 
-<Callout icon="📘" theme="info">
-  #### Note
+<Image src="https://files.readme.io/99629a5f98ff342e202d24b02c1cadc12487899a05aba35b50bef7086acb34d9-2025-12-11_18-46-35.png" alt="Archive Selected Campaigns" align="center" caption="Archive Selected Campaigns" border={true} />
 
-  * Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
-  * Archived campaigns cannot be unarchived.
-  * All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
-</Callout>
+
+> 📘 Note
+>
+> - Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
+> - Archived campaigns cannot be unarchived.
+> - All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
 
 ## Stop Campaigns
 
@@ -154,13 +162,17 @@ You may want to stop a particular campaign after monitoring and evaluating its e
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Select the running campaigns you may want to stop and click the ![](https://files.readme.io/c2fcde8-Stop_icon.png) icon.
 
-<Image align="center" alt="Stop Selected Campaigns" border={true} caption="Stop Selected Campaigns" src="https://files.readme.io/0acbeac73896e43f91a0d5f1fbac522c355109387b7123260d23ca6b763ad48a-2025-12-11_18-46-35.png" />
+
+<Image src="https://files.readme.io/0acbeac73896e43f91a0d5f1fbac522c355109387b7123260d23ca6b763ad48a-2025-12-11_18-46-35.png" alt="Stop Selected Campaigns" align="center" caption="Stop Selected Campaigns" border={true} />
+
 
 3. Click **Save** to stop the selected campaigns or click **Cancel** to undo the action.
 
 Once a campaign is published, you can stop it, but you cannot pause it. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to stop and click **Stop**.
 
-<Image align="center" alt="Stop Campaign" border={true} caption="Stop Campaign" src="https://files.readme.io/e6ba3f73e785f15879df03cfd98f6909e8d660e8fc480a03a407cbd362e83413-2025-12-11_18-55-42.png" />
+
+<Image src="https://files.readme.io/e6ba3f73e785f15879df03cfd98f6909e8d660e8fc480a03a407cbd362e83413-2025-12-11_18-55-42.png" alt="Stop Campaign" align="center" caption="Stop Campaign" border={true} />
+
 
 ## Clone Campaign
 
@@ -169,7 +181,9 @@ Cloning a campaign allows you to create a new campaign from an existing one with
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to clone and click **Clone**.
 
-<Image align="center" alt="Clone Selected Campaign" border={true} caption="Clone Selected Campaign" src="https://files.readme.io/60ef9756f17593efaf98027f43705cc7449505d10e17fe267808760f050d5d23-2025-12-11_18-54-21.png" />
+
+<Image src="https://files.readme.io/60ef9756f17593efaf98027f43705cc7449505d10e17fe267808760f050d5d23-2025-12-11_18-54-21.png" alt="Clone Selected Campaign" align="center" caption="Clone Selected Campaign" border={true} />
+
 
 ## Edit Campaigns
 
@@ -178,11 +192,15 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to edit and click **Edit**.
 
-<Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" />
+
+<Image src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" alt="Edit" align="center" caption="Edit" border={true} />
+
 
 3. You can also click ![](https://files.readme.io/128fa7ea6dcc154592d66b7d4780e18a45e5675822a2b0a443eeeb0824472a71-new_clone.png) icon to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics.
 
-<Image align="center" alt="Open in new tab" border={true} caption="Open Campaigns" src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" />
+
+<Image src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" alt="Open in new tab" align="center" caption="Open Campaigns" border={true} />
+
 
 # Campaign Reports
 
@@ -190,39 +208,43 @@ Selecting _Campaigns_ from the CleverTap Dashboard opens the Campaign Reports ta
 
 Click **Subscribe to Reports** and configure the columns you want to include in the report.
 
-<Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
+
+<Image src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" alt="1422" align="center" caption="Filter Campaigns and View Campaign Reports" border={true} />
+
 
 You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![](https://files.readme.io/3baffd15a3c21d3330adf829d5e4fd8add811ad98f9b850f3e8ef2d3317f592b-reports_icon.png) icon from the campaign listing page.
 
-<Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
+
+<Image src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" alt="Email Report" align="center" caption="Email Report" border={true} />
+
 
 If the report section opens with _All Time_ as the selected time period, requesting the report automatically adjusts the date range to ±15 days. A warning message is displayed to inform the user of this change. For more information, refer to [Campaign Reports](https://docs.clevertap.com/docs/campaign-reports).
 
-<Callout icon="📘" theme="info">
-  #### RBAC Enforcement for Campaign Operations
-
-  The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
-
-  * Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
-  * Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
-
-  For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
-
-  #### Access Behavior
-
-  Refer to the following table for access behaviour. This applies to all actions across both Active and Archived campaigns.
-
-  | **Access Type**  | **Allowed Operations**                                                             |
-  | ---------------- | ---------------------------------------------------------------------------------- |
-  | **Write Access** | Full control over campaigns: Create, Edit, Clone, Archive, Stop, Start, Add Labels |
-  | **Read Access**  | View campaign details, apply filters, and email campaign reports                   |
-
-  #### Error Handling
-
-  If a user attempts an action they do not have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
-
-  <Image align="center" border={true} caption="Limited Access" src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" width="35% " />
-</Callout>
+> 📘 RBAC Enforcement for Campaign Operations
+>
+> The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
+>
+> - Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
+> - Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
+>
+> For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
+>
+> #### Access Behavior
+>
+> Refer to the following table for access behaviour. This applies to all actions across both Active and Archived campaigns.
+>
+> | **Access Type**  | **Allowed Operations**                                                             |
+> | ---------------- | ---------------------------------------------------------------------------------- |
+> | **Write Access** | Full control over campaigns: Create, Edit, Clone, Archive, Stop, Start, Add Labels |
+> | **Read Access**  | View campaign details, apply filters, and email campaign reports                   |
+>
+> #### Error Handling
+>
+> If a user attempts an action they do not have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
+>
+>
+> <Image src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" align="center" width="35% " caption="Limited Access" border={true} />
+>
 
 # Campaign States
 
@@ -250,15 +272,15 @@ The following additional states apply only to campaigns created with the Creator
 
 For Campaigns Scheduled for Later, you can edit the following sections of the campaign:
 
-* Who
-* What
-* When
+- Who
+- What
+- When
 
 For Live Campaigns Awaiting Next Run, you can edit the following:
 
-* What section
-* Campaign name
-* Message labels
+- What section
+- Campaign name
+- Message labels
 
 ## Editing Rules by Campaign State
 
@@ -284,3 +306,5 @@ Each campaign state has distinct characteristics that determine what actions can
 |                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
 |                          | First run was completed, and awaiting the next run | The creator can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                 | The approver can edit only the WHAT section **before the scheduled time** and publish the campaign.                                                                                                                                                                     |
 |                          |                                                    | If the creator tries to edit the campaign **after the scheduled time**, they can edit only the WHAT section and send it to the approver for approval.              | The approver can only edit the WHAT section of the campaign after the scheduled time. Also, a popup indicates that the campaign can be run today or tomorrow.                                                                                                           |
+
+<br />

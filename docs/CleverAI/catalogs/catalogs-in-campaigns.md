@@ -73,8 +73,8 @@ Before adding a catalog block to a campaign, confirm the following are in place:
 Open your campaign and go to the Content Editor. Click **Personalize**, select the _Catalog_ tab, and complete the following steps:
 
 1. [Select catalog](doc:catalogs-in-campaigns#select-catalog)
-2. [Map catalog attributes](#map-catalog-attributes)
-3. [(Optional) Apply include and/or exclude rules](doc:catalogs-in-campaigns)
+2. [Map catalog attributes](doc:catalogs-in-campaigns#map-catalog-attributes)
+3. [(Optional) Apply include and/or exclude rules](doc:catalogs-in-campaigns#select-catalog)
 4. [Reference catalog data in campaign message](doc:catalogs-in-campaigns#reference-catalog-data-in-campaign-message)
 
 ## Select Catalog

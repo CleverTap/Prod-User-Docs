@@ -26,7 +26,7 @@ The following use cases show how different teams use catalog-driven personalizat
 
 Trigger catalog-based messages when a user takes a specific action, such as viewing a product, adding an item to a wishlist, or responding to a price change. The message is sent when the action occurs and pulls item details from the catalog at that time.
 
-The following table lists example use cases by domain.
+The following table lists example use cases by domain:
 
 | Domain        | Use case                                                                                                                                                               |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

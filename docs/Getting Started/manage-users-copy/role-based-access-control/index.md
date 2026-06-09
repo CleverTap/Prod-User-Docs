@@ -176,6 +176,29 @@ You can assign granular permissions to the users for each component. Define whic
 <Image src="https://files.readme.io/d2ea0b423c0110329211f10128bb02901c3794fbfa6ccc7d2e28d76140e3b522-image.png" alt="Provide Component Access" align="center" caption="Provide Component Access" border={true} />
 
 
+### Data Access
+
+You can restrict the customer data accessible to users in a role. Define whether users can access data for all users or only for users that match specific property conditions.
+
+1. Assign permissions for component access and define which feature components are available to the user role.
+2. (Optional) Mask [personally identifiable information](role-based-access-control#mask-personally-identifiable-information) or [events](role-based-access-control#mask-events).
+
+
+<Image src="https://files.readme.io/4b6a97edd1482ed4b9a377a558a86a7e909b83f10e837e4450e0612774c8d571-image.png" align="center" border={true} />
+
+
+Users assigned to a role control how sensitive data appears to them through the _Masked Properties_ setting. With the _Visible_ toggle, users can view masked data fields in plain text. With the _Masked_ toggle, users see the data in its masked form and cannot view the original content.
+
+3. Assign permissions for data access and define the user property data accessible by the user role.
+
+
+<Image src="https://files.readme.io/48280be8f79416863dd18df52ca1ff4de120eb52208392dcb92802a30897c77d-Data_Access.png" alt="1369" align="center" caption="Map User Properties" border={true} />
+
+
+
+<Image src="https://files.readme.io/bd9bed1198633873aef028c7555db50359ce1a408ad201ca8a53b3c3ff38da14-Overview.png" alt="Overview of Data Access" align="center" caption="Overview of Data Access" border={true} />
+
+
 <br />
 
 <br />

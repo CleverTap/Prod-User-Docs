@@ -11,3 +11,4 @@
 - setup-request-id
 - track-domain-reputation
 - email-open-tracking
+- bot-activity-filter

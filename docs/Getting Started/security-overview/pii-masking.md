@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-Masking hides sensitive information from unauthorized users, such as emails, phone numbers, or payment IDs. This feature ensures that PII (Personally Identifiable Information) is visible only to users with the appropriate [role-based access](doc:role-based-access-control). It helps businesses comply with data privacy regulations such as GDPR and enforce internal data governance policies.
+Masking hides sensitive information from unauthorized users, such as emails, phone numbers, or payment IDs. This feature ensures that PII (Personally Identifiable Information) is visible only to users with the appropriate [role-based access](doc:role-based-access-control#data-access). It helps businesses comply with data privacy regulations such as GDPR and enforce internal data governance policies.
 
 > 📘 Enable PII Masking
 >
@@ -20,14 +20,14 @@ Masking hides sensitive information from unauthorized users, such as emails, pho
 
 Masking ensures the following:
 
-* Protection of PII
-* Enforcement of internal data access policies
-* Compliance with regulations (for example, GDPR, CCPA)
+- Protection of PII
+- Enforcement of internal data access policies
+- Compliance with regulations (for example, GDPR, CCPA)
 
 > 📘 Access Control
 >
-> * Only dashboard users with Admin access can mask custom events or user properties.
-> * To use this feature, ensure that Admin roles do not have any custom roles assigned.
+> - Only dashboard users with Admin access can mask custom events or user properties.
+> - To use this feature, ensure that Admin roles do not have any custom roles assigned.
 
 # Mask Event Data
 
@@ -41,24 +41,24 @@ The following lists all the system user and event properties masked by default.
 
 **System User Properties**
 
-* Email
-* Phone number
-* Identity
-* Name
-* Gender
-* DOB (Date of Birth)
-* Latitude
-* Longitude
-* Location
+- Email
+- Phone number
+- Identity
+- Name
+- Gender
+- DOB (Date of Birth)
+- Latitude
+- Longitude
+- Location
 
 **System Event Properties**
 
-* Email
-* Phone number
-* Identity
-* For the event **Identity Set**, the PII property `ID` is masked.
-* For the event **Identity Reset**, the PII property `ID` is masked.
-* For the event **Identity Error**, the PII property `ID` is masked.
+- Email
+- Phone number
+- Identity
+- For the event **Identity Set**, the PII property `ID` is masked.
+- For the event **Identity Reset**, the PII property `ID` is masked.
+- For the event **Identity Error**, the PII property `ID` is masked.
 
 For more information on System Events and properties, refer to [Events](doc:events#overview).
 
@@ -66,8 +66,8 @@ For more information on System Events and properties, refer to [Events](doc:even
 
 CleverTap supports two ways to mask custom event properties:
 
-* Mask a Single Property
-* Mask Multiple Properties in Bulk
+- Mask a Single Property
+- Mask Multiple Properties in Bulk
 
 ### Mask a Single Property
 
@@ -80,11 +80,15 @@ To mask a single custom event property, perform the following steps:
 3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, next to the property name and select **Mask**.
 4. In the confirmation dialog, click **Mask**.
 
-<Image align="center" alt="Mask Single Custom Property" border={true} caption="Mask Single Custom Property" src="https://files.readme.io/4f65ed07ee09b994dc8d709d8ab217f1fe6cf1772d3600b37e2b75a4435440ab-2025-06-16_14-25-07_1.gif" />
+
+<Image src="https://files.readme.io/4f65ed07ee09b994dc8d709d8ab217f1fe6cf1772d3600b37e2b75a4435440ab-2025-06-16_14-25-07_1.gif" alt="Mask Single Custom Property" align="center" caption="Mask Single Custom Property" border={true} />
+
 
 This action masks the value of selected properties.
 
-<Image align="center" alt="Masked property queued for processing" border={true} caption="Masked Property Queued for Processing" src="https://files.readme.io/9aee73f5bf09518d23faedca071aa3f81d5a2f0b36452ac5c2d93c475bd28981-image.png" />
+
+<Image src="https://files.readme.io/9aee73f5bf09518d23faedca071aa3f81d5a2f0b36452ac5c2d93c475bd28981-image.png" alt="Masked property queued for processing" align="center" caption="Masked Property Queued for Processing" border={true} />
+
 
 Once confirmed, CleverTap masks the selected property in the background. The Admin user receives an email notification after masking a property.
 
@@ -97,26 +101,32 @@ Users can simultaneously mask multiple properties of a single custom event for f
 3. Select the properties to mask, then click the ![](https://files.readme.io/f5d0869de355db2c753f2c712fb174e07e0c4ca7c98e40ffb130035cefae64a8-2025-05-08_03-05-09.png) mask icon to mask properties in bulk.
 4. In the confirmation dialog, click **Mask**.
 
-<Image align="center" alt="Mask Properties in Bulk" border={true} caption="Mask Custom Properties in Bulk" src="https://files.readme.io/9dcacf8fcbf672a377ed27003032bb9baafb53898792e39d3d1809d4f8673af7-2025-05-08_02-17-57_1.gif" />
+
+<Image src="https://files.readme.io/9dcacf8fcbf672a377ed27003032bb9baafb53898792e39d3d1809d4f8673af7-2025-05-08_02-17-57_1.gif" alt="Mask Properties in Bulk" align="center" caption="Mask Custom Properties in Bulk" border={true} />
+
 
 This action masks the values of all selected properties. Only admins can mask/unmask an event property.
 
-<Image align="center" alt="Masked property queued for processing" border={true} caption="Masked Property Queued for Processing" src="https://files.readme.io/ebad65c9d791a15ae65099da746df83b2e9071c7bb4caa370da64d75d9a71974-image.png" />
+
+<Image src="https://files.readme.io/ebad65c9d791a15ae65099da746df83b2e9071c7bb4caa370da64d75d9a71974-image.png" alt="Masked property queued for processing" align="center" caption="Masked Property Queued for Processing" border={true} />
+
 
 Once the properties are masked, they are queued for processing. Within a few minutes, values for all masked properties are replaced with placeholder text as shown below:
 
-<Image align="center" border={true} width="20% " src="https://files.readme.io/cb26bd32026184d2412c586f4b51370c3fbde712b88bab03db2e9d7b0d676656-image.png" className="border" />
 
-<Callout icon="📘" theme="info">
-  **Download Restriction on PII Values**
+<Image src="https://files.readme.io/cb26bd32026184d2412c586f4b51370c3fbde712b88bab03db2e9d7b0d676656-image.png" align="center" width="20% " border={true} />
 
-  CSV downloads follow encrypted PII access permissions. Admins and users with encrypted PII access via custom roles can view the actual values.
 
-  For users without encrypted PII access, certain fields are restricted during export, as follows:
-
-  * **System user properties:** Encrypted fields are unavailable for selection in the CSV download confirmation pop-up.
-  * **Custom user properties:** Encrypted columns are included in the CSV, but the values appear as blank.
-</Callout>
+> 📘
+>
+> **Download Restriction on PII Values**
+>
+> CSV downloads follow encrypted PII access permissions. Admins and users with encrypted PII access via custom roles can view the actual values.
+>
+> For users without encrypted PII access, certain fields are restricted during export, as follows:
+>
+> - **System user properties:** Encrypted fields are unavailable for selection in the CSV download confirmation pop-up.
+> - **Custom user properties:** Encrypted columns are included in the CSV, but the values appear as blank.
 
 # Unmask Event Data
 
@@ -127,16 +137,20 @@ To Unmask a single custom event property, perform the following:
 3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, next to the property name and select **Unmask**.
 4. In the confirmation dialog, click **Unmask**.
 
-<Image align="center" alt="Unmask Single Custom Property" border={true} caption="Unmask Single Custom Property" src="https://files.readme.io/558beee8be7de5adc325a9b16e54811a7280dfd1d3862505f02e287f9bcc1a91-2025-05-28_23-18-54_1.gif" />
+
+<Image src="https://files.readme.io/558beee8be7de5adc325a9b16e54811a7280dfd1d3862505f02e287f9bcc1a91-2025-05-28_23-18-54_1.gif" alt="Unmask Single Custom Property" align="center" caption="Unmask Single Custom Property" border={true} />
+
 
 # Masked Data
 
-* Masked values appear as obfuscated or placeholder text in the dashboard.
-* Users with restricted access are unable to view the actual property value. For example, a masked value of an email appears as below:
+- Masked values appear as obfuscated or placeholder text in the dashboard.
+- Users with restricted access are unable to view the actual property value. For example, a masked value of an email appears as below:
 
-<Image align="center" border={true} width="90% " src="https://files.readme.io/258b637bcc866a1fdfcbc779b7b9247a923632ee399f399b0088b9b44b870f9f-image.png" className="border" />
 
-* Admin users can view PII values in plain text or unmask them as needed, while other user roles with PII visibility access can only view the masked icon.
+<Image src="https://files.readme.io/258b637bcc866a1fdfcbc779b7b9247a923632ee399f399b0088b9b44b870f9f-image.png" align="center" width="90% " border={true} />
+
+
+- Admin users can view PII values in plain text or unmask them as needed, while other user roles with PII visibility access can only view the masked icon.
 
 > 📘 Enable PII masking
 >

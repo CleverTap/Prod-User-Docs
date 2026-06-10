@@ -3,6 +3,7 @@
 - postmark
 - sendgrid-delivered
 - sendgrid
+- generic-http-with-attachments
 - generic-http
 - generic-smtp
 - generic-smtp-v2-payload

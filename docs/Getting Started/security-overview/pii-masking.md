@@ -2,7 +2,7 @@
 title: PII Masking
 excerpt: Learn about masking system and custom event properties in CleverTap.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

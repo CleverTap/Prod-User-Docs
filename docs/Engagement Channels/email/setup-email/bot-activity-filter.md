@@ -103,9 +103,13 @@ These properties are available across the following sections on the CleverTap da
 
 # FAQs
 
+### Does the Bot Activity Filter block or stop bots from interacting with my emails?
+
+No. The Bot Activity Filter does not block bot requests or prevent automated systems from interacting with your emails. Instead, CleverTap detects these interactions, flags them using the `machine open` and `machine click` properties, and excludes them from your campaign metrics and journey paths. The events are still recorded, just reported as bot activity rather than counted as genuine engagement.
+
 ### Will the Bot Activity Filter prevent bots from clicking the unsubscribe link and unsubscribing users?  
 
-CleverTap's System Hosted subscription management pages use a two-step confirmation flow by default. A bot clicking the unsubscribe link cannot complete the confirmation step and will not trigger an unsubscribe. If you are using a custom unsubscribe URL or a one-click unsubscribe setup, you can consider implementing a confirmation step to prevent bot-triggered unsubscribes.
+CleverTap's System Hosted subscription management pages use a two-step confirmation flow by default. A bot clicking the unsubscribe link cannot complete the confirmation step and will not trigger an unsubscribe. If you are using a custom unsubscribe URL or a one-click unsubscribe setup, consider adding a confirmation step to prevent bot-triggered unsubscribes.
 
 ### How will the Bot Activity Filter impact the campaign performance?
 

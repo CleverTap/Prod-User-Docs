@@ -593,7 +593,7 @@ In a batching scenario, the JSON payload consists of the following two parts
 
 When the campaign is sent, CleverTap replaces the attachment placeholders with actual base64-encoded attachment data. &#x20;
 
-The array key name (for example, `attachments`, `files`, or any other name) and all field names remain exactly as you defined them in the template. CleverTap replaces the key with the encoded file content at send time.
+The array key name (for example, `attachments`, `files`, or any other name) and all field names remain exactly as you defined them in the template. CleverTap replaces the placeholder values `$AttachmentFileName`, `$AttachmentType`, `$AttachmentContent`) with the actual attachment data at send time.
 
 ```json Without Batching
 {

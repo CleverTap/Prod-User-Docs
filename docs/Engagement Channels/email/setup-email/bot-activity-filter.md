@@ -48,7 +48,7 @@ When enabled, CleverTap analyzes each email interaction and classifies it as:
 Based on this classification, only human interactions count toward campaign metrics and journey paths, ensuring that email campaign performance and journey behavior are based only on real user engagement.
 
 
-<Image src="https://files.readme.io/82d8bd0d956e0b521f2b5987033e6dc541aaed74d6e2a619b93854814445ef34-Bot_Activity_Filter_Workflow.png" align="center" caption="Bot Activity Filter Workflow" border={true} />
+<Image src="https://files.readme.io/82d8bd0d956e0b521f2b5987033e6dc541aaed74d6e2a619b93854814445ef34-Bot_Activity_Filter_Workflow.png" align="center" caption="Bot Activity Filter Workflow" border={true} framed={true} />
 
 
 # Enable Bot Activity Filter
@@ -59,7 +59,7 @@ To enable the Bot Activity Filter feature, perform the following steps:
 2. Toggle ON the _Bot Activity Filter_ feature. The feature is disabled by default.
 
 
-<Image src="https://files.readme.io/b0bddab309253a67af53f05da0f91348507a3da0752f61a52319aa89656d8c3f-Enable_Bot_Activity_Filter.png" align="center" caption="Enable Bot Activity Filter" border={true} />
+<Image src="https://files.readme.io/b0bddab309253a67af53f05da0f91348507a3da0752f61a52319aa89656d8c3f-Enable_Bot_Activity_Filter.png" align="center" caption="Enable Bot Activity Filter" border={true} framed={true} />
 
 
 Once enabled, CleverTap reports human-only engagement across the following:
@@ -79,15 +79,33 @@ Once enabled, CleverTap reports human-only engagement across the following:
 >
 > Bot Activity Filter does not impact delivery-related metrics, including Sent, Delivered, Bounced, Dropped, Unsubscribed, and Spam reported.
 
+# Event Properties
+
+When the _Bot Activity Filter_ is enabled, CleverTap adds the following properties to Notification Clicked and Notification Viewed events, allowing you to distinguish human interactions from suspected bot activity at the event level:
+
+| Event Property  | Type    | Description                                                                                                                                                                          |
+| --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `User Agent`    | String  | Indicates the user agent associated with the click.                                                                                                                                  |
+| `machine click` | Boolean | When `true`, the click is flagged as suspected bot activity and excluded from campaign click metrics and journey evaluations. When `false`, the click is attributed to a human user. |
+| `machine open`  | Boolean | When `true`The open is flagged as suspected bot activity and excluded from Notification Viewed metrics. When `false`, the open is attributed to a human user.                        |
+
+These properties are available across the following sections on the CleverTap dashboard:
+
+- **User Profiles**: Visible under the _User_ _activity details_ section of the _Activity_ tab on the individual User Profile page.
+
+
+  <Image src="https://files.readme.io/f6c7bc156cf0833b965ce771d25d6cf1f74d1a5318720479f9e972e74dcd8cc1-Machine_Open_under_User_profile_Page.png" align="center" caption="Machine Open under Activity tab of the User Profile Page" border={true} framed={true} />
+
+
+- **Segmentation**: You can filter users by `machine open` or `machine click` as event property filters to build segments of users with confirmed human engagement, or to isolate users whose interactions appear automated.
+
+- **Analytics**: Apply these properties as filters in _Funnels_, Events, and _Cohorts_ to scope analysis to human-only engagement.
+
 # FAQs
 
 ### Will the Bot Activity Filter prevent bots from clicking the unsubscribe link and unsubscribing users?  
 
-The Bot Activity Filter does not intercept unsubscribe requests. However, CleverTap's System Hosted and Custom Hosted unsubscribe pages use a two-step confirmation flow; a bot clicking the unsubscribe link cannot complete the confirmation step and will not trigger an unsubscribe. If you are using a custom unsubscribe URL or a one-click unsubscribe setup, CleverTap recommends implementing a confirmation step to prevent bot-triggered unsubscribes.
-
-### How can I prevent bots from accidentally unsubscribing users?  
-
-CleverTap's System Hosted subscription management pages use a two-step confirmation flow by default. A bot clicking the unsubscribe link cannot complete the confirmation step and will not trigger an unsubscribe. You can also configure a custom unsubscribe page to match your brand, including custom messaging. If you are using a one-click unsubscribe setup, CleverTap recommends switching to a two-step flow to prevent bot-triggered unsubscribes.
+CleverTap's System Hosted subscription management pages use a two-step confirmation flow by default. A bot clicking the unsubscribe link cannot complete the confirmation step and will not trigger an unsubscribe. If you are using a custom unsubscribe URL or a one-click unsubscribe setup, you can consider implementing a confirmation step to prevent bot-triggered unsubscribes.
 
 ### How will the Bot Activity Filter impact the campaign performance?
 

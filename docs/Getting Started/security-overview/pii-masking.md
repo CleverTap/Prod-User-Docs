@@ -180,7 +180,7 @@ No. Only Admin users can unmask properties. Non-admin users cannot reverse or ac
 
 ### Does masking affect data processing or segmentation?
 
-Masking only affects the visibility of data on the dashboard; it does not impact how the data is ingested, stored, or used in segmentation, analytics, or campaigns.
+Masking only affects the visibility of data on the dashboard; it does not impact how the data is ingested, stored, or used in Segments, Analytics, or Campaigns.
 
 ### Is there any notification for masking actions?
 

@@ -37,7 +37,7 @@ CleverTap masks specific system user properties and allows users to mask custom 
 
 CleverTap pre-masks specific System User and Event properties.
 
-The following lists all the system user and event properties masked by default.
+The following lists all system user and event properties that are masked by default.
 
 **System User Properties**
 
@@ -77,7 +77,7 @@ To mask a single custom event property, perform the following steps:
 
 1. Go to _Settings_ > _Schema_ >_Events_ > _Custom events_.
 2. Click the _Properties_ hyperlink for the relevant custom event.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, next to the property name and select **Mask**.
+3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon next to the property name and select **Mask**.
 4. In the confirmation dialog, click **Mask**.
 
 
@@ -94,7 +94,7 @@ Once confirmed, CleverTap masks the selected property in the background. The Adm
 
 ### Mask Bulk Properties
 
-Users can simultaneously mask multiple properties of a single custom event for faster setup. To mask multiple custom event properties in bulk, perform the following steps:
+Users can simultaneously mask multiple properties of a single custom event to speed up setup. To mask multiple custom event properties in bulk, perform the following steps:
 
 1. Go to _Settings_ > _Schema_ > _Events_ > _Custom events_.
 2. Click the _Properties_ hyperlink for the relevant custom event.
@@ -130,11 +130,11 @@ Once the properties are masked, they are queued for processing. Within a few min
 
 # Unmask Event Data
 
-To Unmask a single custom event property, perform the following:
+To unmask a single custom event property, perform the following:
 
 1. Go to _Settings_ > _Schema_ >_Events_ > _Custom events_.
 2. Click the _Properties_ hyperlink for the relevant custom event.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, next to the property name and select **Unmask**.
+3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon next to the property name and select **Unmask**.
 4. In the confirmation dialog, click **Unmask**.
 
 
@@ -144,7 +144,7 @@ To Unmask a single custom event property, perform the following:
 # Masked Data
 
 - Masked values appear as obfuscated or placeholder text in the dashboard.
-- Users with restricted access are unable to view the actual property value. For example, a masked value of an email appears as below:
+- Users with restricted access cannot view the actual property value. For example, a masked value of an email appears as follows:
 
 
 <Image src="https://files.readme.io/258b637bcc866a1fdfcbc779b7b9247a923632ee399f399b0088b9b44b870f9f-image.png" align="center" width="90% " border={true} />
@@ -164,7 +164,7 @@ Only Admin users can mask or unmask custom events or user properties. Non-admin 
 
 ### Can I mask custom properties?
 
-Yes. CleverTap allows you to mask any custom user or event properties via the dashboard.
+Yes. CleverTap allows you to mask any custom user or event properties in the dashboard.
 
 ### Can masked properties be unmasked later?
 
@@ -176,7 +176,7 @@ Yes, Admin users can unmask properties by:
 
 ### Can masking be reversed by non-admin users?
 
-No. Only Admin users have permission to unmask properties. Non-admin users cannot reverse or access masked values.
+No. Only Admin users can unmask properties. Non-admin users cannot reverse or access masked values.
 
 ### Does masking affect data processing or segmentation?
 

@@ -190,7 +190,7 @@ You can restrict the customer data accessible to users in a role. Define whether
 Users assigned to a role control how sensitive data appears to them through the _Masked Properties_ setting. With the _Visible_ toggle, users can view masked data fields in plain text. With the _Masked_ toggle, users see the data in its masked form and cannot view the original content.
 
 
-<Image src="https://files.readme.io/e7ff9dab4b68b288556285f1a7428c8124e8009d14823d2b02130948a7ddb7d0-image.png" align="center" caption="Masking - Masked" border={true} />
+<Image src="https://files.readme.io/5337f8b0cb175cc859d0ef860f119ae6a0ca17eecb4fba468a925e9dca709f1a-image.png" align="center" caption="Masking - Masked" border={true} />
 
 
 3. Assign permissions for data access and define the user property data accessible by the user role.

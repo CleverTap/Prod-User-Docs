@@ -146,11 +146,10 @@ To unmask a single custom event property, perform the following:
 - Masked values appear as obfuscated or placeholder text in the dashboard.
 - Users with restricted access cannot view the actual property value. For example, a masked value of an email appears as follows:
 
+  <Image src="https://files.readme.io/2493d16e3da5ee42311af874fad1233a6e957963bbb05909df2b430a49eda5fa-image.png" align="center" caption="View Masked Properties" border={true} />
 
-<Image src="https://files.readme.io/258b637bcc866a1fdfcbc779b7b9247a923632ee399f399b0088b9b44b870f9f-image.png" align="center" width="90% " border={true} />
 
-
-- Admin users can view PII values in plain text or unmask them as needed, while other user roles with PII visibility access can only view the masked icon.
+* Admin users can view PII values in plain text or unmask them as needed, while other user roles with PII visibility access can only view the masked icon.
 
 > 📘 Enable PII masking
 >

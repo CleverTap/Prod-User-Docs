@@ -181,13 +181,17 @@ You can assign granular permissions to the users for each component. Define whic
 You can restrict the customer data accessible to users in a role. Define whether users can access data for all users or only for users that match specific property conditions.
 
 1. Assign permissions for component access and define which feature components are available to the user role.
-2. (Optional) Mask [personally identifiable information](doc:role-based-access-control#mask-personally-identifiable-information) or [events](role-based-access-control#mask-events).
+2. (Optional) Mask personally identifiable information or events.
 
 
-<Image src="https://files.readme.io/4b6a97edd1482ed4b9a377a558a86a7e909b83f10e837e4450e0612774c8d571-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/1af497f814be9cf7d8d455df901c684d70784f7e433a271a50d20c98eaac2b8c-image.png" align="center" caption="Masking - Visible" border={true} />
 
 
 Users assigned to a role control how sensitive data appears to them through the _Masked Properties_ setting. With the _Visible_ toggle, users can view masked data fields in plain text. With the _Masked_ toggle, users see the data in its masked form and cannot view the original content.
+
+
+<Image src="https://files.readme.io/e7ff9dab4b68b288556285f1a7428c8124e8009d14823d2b02130948a7ddb7d0-image.png" align="center" caption="Masking - Masked" border={true} />
+
 
 3. Assign permissions for data access and define the user property data accessible by the user role.
 

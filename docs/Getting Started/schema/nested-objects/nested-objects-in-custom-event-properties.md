@@ -100,7 +100,7 @@ This shows how you can access deeply nested event attributes, including arrays w
 
 # System Considerations
 
-CleverTap enforces some system limits to maintain performance and stability. If a nested object is sent for an existing flat event property key, the root nested event property is rejected.
+CleverTap enforces certain system limits to maintain performance and stability. If a nested object is sent for an existing flat event property key, the root nested event property is rejected.
 
 The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
 

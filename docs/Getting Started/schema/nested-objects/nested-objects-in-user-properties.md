@@ -18,8 +18,7 @@ For more information, refer to [Nested Objects](doc:nested-objects).
 
 Businesses use nested user properties to structure complex profile data.
 
-**BFSI**  
-Notify customers when key stakeholders, such as policy beneficiaries or account nominees, lack email addresses. For example, segment users whose `Policies.Beneficiaries.Email` field is empty.
+**BFSI**<br />Notify customers when key stakeholders, such as policy beneficiaries or account nominees, lack email addresses. For example, segment users whose `Policies.Beneficiaries.Email` field is empty.
 
 **Media and Entertainment**
 
@@ -60,9 +59,9 @@ The following payload updates the user profile with a nested preferences object:
 
 After ingestion, Nested Object fields are available across CleverTap, including user profiles, segmentation filters, and campaign personalization.
 
-* **Profile Page**: View structured objects stored in a user’s profile. Each nested user property appears as a dot-separated field under the _User Properties_ tab on the profile. For example, `InsuranceDetails.Policy.Beneficiary.Email`.
+- **Profile Page**: View structured objects stored in a user’s profile. Each nested user property appears as a dot-separated field under the _User Properties_ tab on the profile. For example, `InsuranceDetails.Policy.Beneficiary.Email`.
 
-* **Segment Builder**: Create conditions using nested attributes, such as `InsuranceDetails.Policy.Beneficiary.DOB`. You can combine multiple nested conditions to create granular filters. For example, you can segment users who have at least one policy with an overdue premium or a beneficiary missing contact information.
+- **Segment Builder**: Create conditions using nested attributes, such as `InsuranceDetails.Policy.Beneficiary.DOB`. You can combine multiple nested conditions to create granular filters. For example, you can segment users who have at least one policy with an overdue premium or a beneficiary missing contact information.
 
 > 📘 Dashboard Limitations with Nested User Properties in Segments
 >
@@ -74,28 +73,39 @@ After ingestion, Nested Object fields are available across CleverTap, including 
 
 The following image shows how nested fields appear within profile data and can be used to create filters in the Segment Builder:
 
-<Image align="center" alt="Nested Objects in Segment Builder" border={true} caption="Nested Objects for User Properties in Segment Builder" src="https://files.readme.io/c5aeec5eff621d610e90bf75239fe8ef3369a52cff95bf00997f85291cc005d0-image.png" />
 
-* **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in user properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
+<Image src="https://files.readme.io/c5aeec5eff621d610e90bf75239fe8ef3369a52cff95bf00997f85291cc005d0-image.png" alt="Nested Objects in Segment Builder" align="center" caption="Nested Objects for User Properties in Segment Builder" border={true} />
+
+
+- **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in user properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
 
 The following image shows the Liquid Tags for Nested Objects in user properties:
 
-<Image align="center" border={true} caption="Liquid Tags for Nested Objects in User Properties" src="https://files.readme.io/a8215156ed3174e8601f9df1404ecb707005e7c106d90107491c3619ab050dc9-image.png" width="70% " />
+
+<Image src="https://files.readme.io/a8215156ed3174e8601f9df1404ecb707005e7c106d90107491c3619ab050dc9-image.png" align="center" width="70% " caption="Liquid Tags for Nested Objects in User Properties" border={true} />
+
 
 You can use dot notation in Liquid Tags to reference nested fields inside user properties. This allows you to dynamically personalize campaign content, such as referencing a user’s policy type or beneficiary name.
 
 # System Considerations
 
-CleverTap enforces some system limits to maintain performance and stability. The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
+CleverTap enforces some system limits to maintain performance and stability. If a nested object is sent for an existing flat user property key, the root nested user property is rejected.
 
-| Limit Type                          | Maximum Value                                                                                    |
-| :---------------------------------- | :----------------------------------------------------------------------------------------------- |
-| Nesting depth                       | 3 levels                                                                                         |
-| Payload size                        | 32 KB. Applies to the total size of profileData (profile uploads), including all nested content. |
-| Root-level keys (objects or arrays) | Maximum 5                                                                                        |
-| Nested elements inside an array     | Maximum 100                                                                                      |
-| Nested keys inside an object        | Maximum 100                                                                                      |
-| Reserved fields for user properties | `identity`, `email`, and `timestamp` remain flat                                                 |
+The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
+
+| Limit Type                                   | Maximum Value                                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Nesting depth                                | 3 levels                                                                                         |
+| Root-level keys (objects or arrays)          | 5                                                                                                |
+| Nested objects/arrays keys per nesting depth | 5                                                                                                |
+| Nested elements inside an array              | 100                                                                                              |
+| Nested keys inside an object                 | 100                                                                                              |
+| Payload size                                 | 32 KB. Applies to the total size of profileData (profile uploads), including all nested content. |
+| Reserved fields for user properties          | `identity`, `email`, and `timestamp` remain flat                                                 |
+
+> 📘 Note
+>
+> If any of the above system considerations are violated, the relevant root nested user property is rejected. The rejected nested property shows up in [Error Stream](doc:error-stream) on CleverTap Dashboard.
 
 # FAQs
 

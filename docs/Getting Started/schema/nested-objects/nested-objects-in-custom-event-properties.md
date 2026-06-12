@@ -76,19 +76,23 @@ These properties can then be used in analytics and campaign targeting workflows.
 
 After ingestion, Nested Objects for custom event properties are available across CleverTap, including segmentation filters and campaign personalization.
 
-* **Segment Builder**
+- **Segment Builder**
 
 Nested fields from events can also be used as filters inside segmentation conditions.
 
 The following image shows how nested fields appear for event properties and can be used to create filters in the Segment Builder:
 
-<Image align="center" border={true} caption="Nested Objects for Event Properties in Segment Builder" src="https://files.readme.io/8cc3b92e6b20288cae3ad3cd23078c8912244e907c56f3d436ce564300cfaff5-image.png" />
 
-* **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in custom event properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
+<Image src="https://files.readme.io/8cc3b92e6b20288cae3ad3cd23078c8912244e907c56f3d436ce564300cfaff5-image.png" align="center" caption="Nested Objects for Event Properties in Segment Builder" border={true} />
+
+
+- **Liquid Tags**: Use Liquid Tags to personalize campaign content using attributes stored inside Nested Objects in custom event properties. You can reference nested fields directly using Liquid Tags to personalize campaign content across multiple channels, including Push Notifications, Emails, In-App messages, SMS, WhatsApp, and Webhooks.
 
 The following image shows the Liquid Tags for Nested Objects in custom event properties:
 
-<Image align="center" border={true} caption="Liquid Tags for Nested Objects in Custom Event Properties" src="https://files.readme.io/e2be66919030b562f73bb7049534d629b0893bb62fe8c87e167e399977335353-image.png" width="70% " />
+
+<Image src="https://files.readme.io/e2be66919030b562f73bb7049534d629b0893bb62fe8c87e167e399977335353-image.png" align="center" width="70% " caption="Liquid Tags for Nested Objects in Custom Event Properties" border={true} />
+
 
 In the above example, `{{ Event.courses_in_cart[0].courses[0].name | default: "courses in cart" }}` is used. The message dynamically inserts the name of the first course from the first item inside the `courses_in_cart` array when the event triggers. If the value is unavailable, it falls back to the default text `courses in cart`.
 
@@ -96,17 +100,24 @@ This shows how you can access deeply nested event attributes, including arrays w
 
 # System Considerations
 
-CleverTap enforces some system limits to maintain performance and stability. The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
+CleverTap enforces some system limits to maintain performance and stability. If a nested object is sent for an existing flat event property key, the root nested event property is rejected.
+
+The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
 
 | Limit Type                                                     | Maximum Value                                                                              |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | Nesting depth                                                  | 3 levels                                                                                   |
+| Custom events with nested support (per account)                | 10                                                                                         |
+| Root-level nested keys per event (objects/arrays)              | 5                                                                                          |
+| Nested objects/arrays keys per nesting depth                   | 5                                                                                          |
+| Nested elements inside an array                                | 100                                                                                        |
+| Nested keys inside an object                                   | 100                                                                                        |
 | Payload size                                                   | 32 KB. Applies to the total size of evtData (event uploads), including all nested content. |
-| Custom events with nested support (per account)                | Maximum 10                                                                                 |
-| Root-level nested keys per event (objects/arrays)              | Maximum 5                                                                                  |
-| Nested elements inside an array                                | Maximum 100                                                                                |
-| Nested keys inside an object                                   | Maximum 100                                                                                |
-| Reserved custom event (not supporting nested event properties) | `Charged`                                                                                  |
+| Reserved custom event (not supporting nested event properties) | Charged                                                                                    |
+
+> 📘 Note
+>
+> If any of the above system considerations are violated, the relevant root nested event property is rejected. The rejected nested property shows up in [Error Stream](doc:error-stream) on CleverTap Dashboard.
 
 # FAQs
 

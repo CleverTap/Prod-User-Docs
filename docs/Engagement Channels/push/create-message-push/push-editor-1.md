@@ -12,15 +12,15 @@ metadata:
 
 The Push Editor allows you to create and edit relevant and timely messages for your push campaign. This section explains the different pre-built Push templates designed to cater to your various push-campaigning needs. You can create your push message by selecting the appropriate push template for your campaign.
 
-<Callout icon="📘" theme="info">
-  #### Public Beta
-
-  This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
-</Callout>
+> 📘 Public Beta
+>
+> This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
 
 From the _What_ section, select the [Message Type ](doc:create-message-push#message-types)for your push notification and click **Go To Editor**. You can see the various push templates to help you create a contextual and timely message.
 
-<Image align="center" alt="Push Templates" border={true} caption="Push Templates" src="https://files.readme.io/ab9993c7493b6cb15542577c8dc8cd3e4731bc04fe09172aec278b507b0f96c8-2026-04-08_12-12-07.png" />
+
+<Image src="https://files.readme.io/ab9993c7493b6cb15542577c8dc8cd3e4731bc04fe09172aec278b507b0f96c8-2026-04-08_12-12-07.png" alt="Push Templates" align="center" caption="Push Templates" border={true} />
+
 
 # Push Templates
 
@@ -28,49 +28,59 @@ The Push Editor in CleverTap allows you to design and edit impactful push notifi
 
 You can select from the following template types:
 
-* [Standard](https://docs.clevertap.com/docs/push-editor#standard)
-* [Advanced](https://docs.clevertap.com/docs/push-editor#advanced)
-* [Auto Carousel](https://docs.clevertap.com/docs/push-editor#auto-carousel)
-* [Timer](https://docs.clevertap.com/docs/push-editor#timer)
-* [Text over Image](https://docs.clevertap.com/docs/push-editor#text-over-image)
-* [Manual Carousel](https://docs.clevertap.com/docs/push-editor#manual-carousel-template)
-* [Vertical Image with CTA](https://docs.clevertap.com/docs/push-editor#vertical-image-with-cta)
+- [Standard](https://docs.clevertap.com/docs/push-editor#standard)
+- [Advanced](https://docs.clevertap.com/docs/push-editor#advanced)
+- [Auto Carousel](https://docs.clevertap.com/docs/push-editor#auto-carousel)
+- [Timer](https://docs.clevertap.com/docs/push-editor#timer)
+- [Text over Image](https://docs.clevertap.com/docs/push-editor#text-over-image)
+- [Manual Carousel](https://docs.clevertap.com/docs/push-editor#manual-carousel-template)
+- [Vertical Image with CTA](https://docs.clevertap.com/docs/push-editor#vertical-image-with-cta)
 
-<Callout icon="📘" theme="info">
-  Note
-
-  For minimum SDK version requirements and prerequisites, refer to [Android Push Templates](https://developer.clevertap.com/docs/android-push-templates) and [iOS Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications).
-</Callout>
+> 📘
+>
+> Note
+>
+> For minimum SDK version requirements and prerequisites, refer to [Android Push Templates](https://developer.clevertap.com/docs/android-push-templates) and [iOS Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications).
 
 ## Standard
 
 Supports simple layout with title, message, image, and optional buttons, ideal for quick, informative alerts. For example, a home decor business might want to inform customers that new furniture with limited stock is available. You can add GIFs to your message content using the Standard Template.
 
-<Image align="center" alt="Standard Template" border={true} caption="Standard Template" src="https://files.readme.io/ed55e473b9eb0f92e91a4572766a83db96535aa90ec95492113b6d66ad782aec-image.png" width="35% " />
+
+<Image src="https://files.readme.io/ed55e473b9eb0f92e91a4572766a83db96535aa90ec95492113b6d66ad782aec-image.png" alt="Standard Template" align="center" width="35% " caption="Standard Template" border={true} />
+
 
 ## Advanced
 
 Supports rich media, deep links, and enhanced customization for more engaging messages. It is great for interactive, visually appealing messages. For example, businesses can use it to build excitement for new product drops, early access offers, or feature rollouts that benefit from strong visuals and clear Call to Action (CTAs).
 
-<Image align="center" alt="Advanced Template" caption="Advanced Template" src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" width="35% " />
+
+<Image src="https://files.readme.io/45e65c72a2e4c221854feefc82a0d58c8aaf6956c7a467c9c780c26613fad9ef-image.png" alt="Advanced Template" align="center" width="35% " caption="Advanced Template" />
+
 
 ## Auto Carousel
 
 Allows multiple images with titles and links that users can swipe through, perfect for showcasing multiple offerings in one message. Businesses can use it to promote new product collections, travel packages, content recommendations, and so on. For example, an interiors business can send a notification with multiple images showing their handpicked furniture options.
 
-<Image align="center" alt="Auto Carousel Template" caption="Auto Carousel Template" src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" width="35% " />
+
+<Image src="https://files.readme.io/b06f01f282ddb61ab6bca44b51c79e65c9735b224432fadaf0799eb6c1dd7a70-Screen_Recording_Jun_4_2025_from_Google_Drive.mp4_1.gif" alt="Auto Carousel Template" align="center" width="35% " caption="Auto Carousel Template" />
+
 
 ## Timer
 
 This template has a countdown timer to enable immediate action from the user. It is ideal for time-sensitive campaigns. For example, businesses can use it for flash sales, limited-time discounts, and so on. This template offers both expanded and collapsed views for Android devices, while iOS supports only the expanded view. Additionally, it includes optional text fields to enhance layouts, as well as a customizable call-to-action (CTA) button with various style options.
 
-<Image align="center" alt="Timer Template" caption="Timer Template" src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" width="35% " />
+
+<Image src="https://files.readme.io/a0dd4a50b5b7783a1f970928b1d13d16d660728b9afb935e4947fbd3c942fb00-Timer_12_Light_Live.mp4_1.gif" alt="Timer Template" align="center" width="35% " caption="Timer Template" />
+
 
 ## Text over Image
 
 This template supports a bold text over a background image to deliver visually striking messages. For example, businesses can use it to highlight seasonal campaigns, special announcements, event invitations, and so on. This template provides both expanded and collapsed views for Android devices, while iOS only supports the expanded view. It also features optional text fields for improved layouts and includes a customizable call-to-action (CTA) button, offering various style options.
 
-<Image align="center" alt="Text over Image Push Template" caption="Text over Image Push Template" src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" width="35% " />
+
+<Image src="https://files.readme.io/c7df51a2d91796e9e7433afa2c3c04646037dc71f5e0b017978a35715e0a2f6a-image.png" alt="Text over Image Push Template" align="center" width="35% " caption="Text over Image Push Template" />
+
 
 ### Collapsed Media Support (Large Icon and Collapsed Image)
 
@@ -78,15 +88,17 @@ The Text over Image push template supports flexible media configurations for the
 
 You can configure the collapsed and expanded views in the following ways:
 
-* Use the same image for both collapsed and expanded views.
-* Use a different image for the collapsed view.
-* Use an image in expanded view only, with no media in collapsed view.
-* Use a large icon in the collapsed view.
-* Use a large icon along with an expanded/collapsed image in the collapsed view (supported in SDK PushTemplates `v2.3.0` and above).
+- Use the same image for both collapsed and expanded views.
+- Use a different image for the collapsed view.
+- Use an image in expanded view only, with no media in collapsed view.
+- Use a large icon in the collapsed view.
+- Use a large icon along with an expanded/collapsed image in the collapsed view (supported in SDK PushTemplates `v2.3.0` and above).
 
 The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions. Refer to the following image for a dashboard preview.
 
-<Image align="center" border={true} caption="Large Icon Right-aligned to the Notification" src="https://files.readme.io/144ddde8b4167abd4f1592fd3cb7e16a37dbc1f2b91786686786e0983888dfb2-image.png" />
+
+<Image src="https://files.readme.io/144ddde8b4167abd4f1592fd3cb7e16a37dbc1f2b91786686786e0983888dfb2-image.png" align="center" caption="Large Icon Right-aligned to the Notification" border={true} />
+
 
 #### Configure Expanded and Collapsed Media
 
@@ -96,7 +108,9 @@ To configure expanded and collapsed push notifications media:
 2. Create or edit a **Push Notification campaign**.
 3. Select the **Text over Image** template.
 
-<Image align="center" border={true} caption="Push Editor" src="https://files.readme.io/562789466fe6c84b517ba4f426977d7d5b71fd04eff51e74f27d63739b84bda8-image.png" />
+
+<Image src="https://files.readme.io/562789466fe6c84b517ba4f426977d7d5b71fd04eff51e74f27d63739b84bda8-image.png" align="center" caption="Push Editor" border={true} />
+
 
 4. To add an image or GIF for the expanded view, click **Upload**, paste the image URL in  _Expanded Media_, or click **Generate with AI** to generate a new image.
 5. Toggle **Same for collapsed media** to use the same media for both collapsed and expanded views.
@@ -108,10 +122,10 @@ To configure expanded and collapsed push notifications media:
 
 For SDK versions below PushTemplates `v2.3.0`, the collapsed view supports only one visual element at a time. Depending on your setup, the notification can render in one of the following ways:
 
-* Collapsed Image + Text
-* Expanded Image + Text
-* Large Icon + Text
-* Text only
+- Collapsed Image + Text
+- Expanded Image + Text
+- Large Icon + Text
+- Text only
 
 ## Manual Carousel Template
 
@@ -119,46 +133,50 @@ Manual Carousel is an interactive push notification format that lets users scrol
 
 If only a single image is available for download, this template falls back to the Basic Template.
 
-<Image align="center" alt="Manual Carousel Template" border={true} caption="Manual Carousel Template" src="https://files.readme.io/314a341e4efcff60b16c13c2d9d89c91866ff0a66eb39458de68670c9d1d7ab7-Screen_Recording_Jun_4_2025_from_Google_Drive_1.mp4_1.gif" width="35% " />
+
+<Image src="https://files.readme.io/314a341e4efcff60b16c13c2d9d89c91866ff0a66eb39458de68670c9d1d7ab7-Screen_Recording_Jun_4_2025_from_Google_Drive_1.mp4_1.gif" alt="Manual Carousel Template" align="center" width="35% " caption="Manual Carousel Template" border={true} />
+
 
 ## Vertical Image with CTA
 
 This template supports vertical or portrait images that preserve the original creative layout without cropping or resizing the image. The Vertical Image template is ideal for campaigns that rely on vertical-first visuals such as product showcases, posters, or reel-style creatives, ensuring the content appears exactly as designed. This template also minimizes redesigning assets for square or landscape formats.
 
-This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles.
+This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles. The image generated is in 3:2 ratio.
 
 > 📘 Private Beta
 >
 > Vertical Image with CTA is available in Private Beta. To enable this feature, contact your Customer Success Manager.
 
-<Image align="center" alt="Vertical Image Template sample" border={true} caption="Vertical Image Template" src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" width="35% " />
+
+<Image src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" alt="Vertical Image Template sample" align="center" width="35% " caption="Vertical Image Template" border={true} />
+
 
 # Push Campaign Setup
 
 After you select the required push template for the _Title_ and _Message_ fields, you can use the following options to create personalized and engaging campaigns:
 
-* Text color to change the color of your text.
-* Emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
-* _@_ personalization or   to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
-* Liquid scripts to check the usage.
-* [Clever AI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
+- Text color to change the color of your text.
+- Emoticons (![](https://files.readme.io/9e57d16-Emoticon.png)) to create more engaging and visually appealing messages that can more effectively capture the audience's attention than plain text. Emojis, unlike simple emoticons, can be more complex and take up varying amounts of space in text.
+- _@_ personalization or   to create more [personalized](doc:personalize-message-all)  or captivating messages. Enter the required details to create the message.
+- Liquid scripts to check the usage.
+- [Clever AI](doc:scribe), the AI-powered writing assistant that can also analyze and adjust the emotional tone of your content. It helps generate attractive and emotionally relevant messages for your campaign.
 
 Based on the selected template, the editor displays configurable fields grouped by functionality as follows:
 
-* [Content](https://docs.clevertap.com/docs/push-editor#content)
-* [Android Options](https://docs.clevertap.com/docs/push-editor#android-options)
-* [iOS Options](https://docs.clevertap.com/docs/push-editor#ios-options)
-* [Custom Key-Value Pairs](https://docs.clevertap.com/docs/push-editor#custom-key-values)
-* [Post Action Webhook](https://docs.clevertap.com/docs/push-editor#post-action-webhook)
-* [App Inbox](https://docs.clevertap.com/docs/push-editor#app-inbox)
-* [Notification Priority](https://docs.clevertap.com/docs/push-editor#notification-priority)
-* [Collapse Key](https://docs.clevertap.com/docs/push-editor#collapse-key)
-* [Interruption Level](https://docs.clevertap.com/docs/push-editor#interruption-level)
-* [Template Variations](https://docs.clevertap.com/docs/push-editor#template-variations)
-* [Dark Mode](https://docs.clevertap.com/docs/push-editor#dark-mode)
-* [Image Scaling](https://docs.clevertap.com/docs/push-editor#image-scaling)
-* [Notification Behavior](https://docs.clevertap.com/docs/push-editor#notification-behavior)
-* [Dismiss Notification](https://docs.clevertap.com/docs/push-editor#dismiss-notification)
+- [Content](https://docs.clevertap.com/docs/push-editor#content)
+- [Android Options](https://docs.clevertap.com/docs/push-editor#android-options)
+- [iOS Options](https://docs.clevertap.com/docs/push-editor#ios-options)
+- [Custom Key-Value Pairs](https://docs.clevertap.com/docs/push-editor#custom-key-values)
+- [Post Action Webhook](https://docs.clevertap.com/docs/push-editor#post-action-webhook)
+- [App Inbox](https://docs.clevertap.com/docs/push-editor#app-inbox)
+- [Notification Priority](https://docs.clevertap.com/docs/push-editor#notification-priority)
+- [Collapse Key](https://docs.clevertap.com/docs/push-editor#collapse-key)
+- [Interruption Level](https://docs.clevertap.com/docs/push-editor#interruption-level)
+- [Template Variations](https://docs.clevertap.com/docs/push-editor#template-variations)
+- [Dark Mode](https://docs.clevertap.com/docs/push-editor#dark-mode)
+- [Image Scaling](https://docs.clevertap.com/docs/push-editor#image-scaling)
+- [Notification Behavior](https://docs.clevertap.com/docs/push-editor#notification-behavior)
+- [Dismiss Notification](https://docs.clevertap.com/docs/push-editor#dismiss-notification)
 
 ## Content
 
@@ -177,18 +195,18 @@ This section includes the core elements of your push notification, applicable ac
 
 You can configure the title, message, subtitle, and so on for your notification.
 
-<Image align="center" alt="Content Section" border={true} caption="Content Section" src="https://files.readme.io/bc77b4776c512b19f495b2df17b6656687f3a6cf173da2555407256f63a23353-image.png" />
 
-<Callout icon="📘" theme="info">
-  #### Recommended Character Limits
+<Image src="https://files.readme.io/bc77b4776c512b19f495b2df17b6656687f3a6cf173da2555407256f63a23353-image.png" alt="Content Section" align="center" caption="Content Section" border={true} />
 
-  While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
 
-  | Platform | Recommended Title Length | Recommended Message Length |
-  | :------- | :----------------------- | :------------------------- |
-  | iOS      | 25-50 characters         | 150 characters             |
-  | Android  | 65 characters            | 240 character              |
-</Callout>
+> 📘 Recommended Character Limits
+>
+> While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
+>
+> | Platform | Recommended Title Length | Recommended Message Length |
+> | :------- | :----------------------- | :------------------------- |
+> | iOS      | 25-50 characters         | 150 characters             |
+> | Android  | 65 characters            | 240 character              |
 
 ## Android Options
 
@@ -474,7 +492,7 @@ You can use this section to customize Android-specific behavior for your push us
       </td>
 
       <td>
-        Determines the prominence of the notification in the tray. Choose from the following options: _Default_, _High_, or _Maximum_. For more information, refer to []().
+        Determines the prominence of the notification in the tray. Choose from the following options: _Default_, _High_, or _Maximum_. For more information, refer to .
       </td>
 
       <td>
@@ -492,7 +510,7 @@ You can use this section to customize Android-specific behavior for your push us
       </td>
 
       <td>
-        Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may affect the battery. For more information, refer to []().
+        Controls how quickly the push is delivered. Choose from the following options: _High_ or _Maximum_. Selecting _High_ ensures faster delivery but may affect the battery. For more information, refer to&#x20;
       </td>
 
       <td>
@@ -530,8 +548,8 @@ You can use this section to customize Android-specific behavior for your push us
       <td>
         Choose whether to mute the push notification when the user is currently using the app (app in foreground).
 
-        * Yes: If the app is open, the notification is only added to the tray, and a popup is not shown to the user.
-        * No (default): The notification is added to the tray, and a popup is shown to the user, even if the app is open.
+        - Yes: If the app is open, the notification is only added to the tray, and a popup is not shown to the user.
+        - No (default): The notification is added to the tray, and a popup is shown to the user, even if the app is open.
       </td>
 
       <td>
@@ -663,7 +681,7 @@ You can use this section to customize Apple-specific behavior for your push usin
 | Deep Link URL                                            | A clickable URL that takes the user to a specific screen or section within your app. Supports deep linking for seamless In-App navigation.                                                                                                                                                                                                                                                                                    | Optional          | All                    |
 | Sound                                                    | Specifies the custom sound file to be played when the notification arrives. The sound file must be included in your iOS app bundle. Supported formats: `.aiff`, `.caf`, and `.wav`.                                                                                                                                                                                                                                           | Optional          | All                    |
 | Badge Count                                              | Updates the app icon badge number to the specified value. Setting it to `0` hides the badge. This must be manually managed at the application level, as it does not auto-increment.                                                                                                                                                                                                                                           | Optional          | All                    |
-| [Interruption Level](doc:push-editor#interruption-level) | Defines the priority and delivery timing of notifications on iOS 15 and above. The following are the three levels: <li>**Active** (default): Displays immediately and may break through focus modes.</li><li>**Passive**: Delivered quietly.</li><li> **Time Sensitive**: Can break through time-based focus modes such as Sleep or Do Not Disturb.</li> For more information, refer to []().                                 | Optional          | All                    |
+| [Interruption Level](doc:push-editor#interruption-level) | Defines the priority and delivery timing of notifications on iOS 15 and above. The following are the three levels: <li>**Active** (default): Displays immediately and may break through focus modes.</li><li>**Passive**: Delivered quietly.</li><li> **Time Sensitive**: Can break through time-based focus modes such as Sleep or Do Not Disturb.</li> For more information, refer to                                       | Optional          | All                    |
 | Relevance Score                                          | Determines the importance of a notification when grouped in the iOS notification summary. Marketers can now set up the _Relevance Score_ for every notification when creating a Push campaign. This directly impacts the order of notifications when grouped. The score ranges from`0` (lowest) to `1` (highest). Notifications with higher scores take precedence. This feature was introduced in iOS 15 and later versions. | Optional          | All                    |
 | Category                                                 | Specifies a registered iOS category that groups notifications by type and defines custom actions (for example, buttons). Categories must be pre-registered in the app. Each category can support up to four actions.                                                                                                                                                                                                          | Optional          | All                    |
 | Mutable Content                                          | Sends the `mutable-content` flag with the payload, allowing your app’s service extension to modify the push content before it is displayed (for example, attach media, customize text). For more info, refer to Apple’s documentation on [Modifying Content in Newly Delivered Notifications](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications).                | Optional          | All                    |
@@ -676,14 +694,14 @@ Use this section to send additional data in the form of key-value pairs as part 
 
 You can define key-value pairs for:
 
-* All platforms
-* iOS only
-* Android only
+- All platforms
+- iOS only
+- Android only
 
 Each pair consists of:
 
-* **Key**: A unique identifier (for example, discountType)
-* **Value**: The corresponding value the app will read (for example, 20)
+- **Key**: A unique identifier (for example, discountType)
+- **Value**: The corresponding value the app will read (for example, 20)
 
 Consider an example where you are running a push campaign offering a 20% discount. By adding a custom key-value pair such as offerType: discount20, your app can read this payload and automatically route the user to a discount page upon tapping the notification.
 
@@ -719,7 +737,7 @@ Use this section to send a payload to your designated endpoint after a push noti
       <td>
         Webhook URL
 
-        <br />
+
       </td>
 
       <td>
@@ -788,7 +806,9 @@ Use this section to also save the notification in the App Inbox so users can rev
 
 You can set these priority levels from the CleverTap dashboard as you create your Android push campaigns.
 
-<Image align="center" alt="Notiofication Priority" border={true} caption="Notification Priority" src="https://files.readme.io/89196f0e16cda364fdcb2d7bee03b9ae36f66045e18f9ccb7bc8c8d46313d420-image.png" />
+
+<Image src="https://files.readme.io/89196f0e16cda364fdcb2d7bee03b9ae36f66045e18f9ccb7bc8c8d46313d420-image.png" alt="Notiofication Priority" align="center" caption="Notification Priority" border={true} />
+
 
 Have your app running our latest SDK (versions v3.1.4 or higher) and follow the steps outlined above to send actionable push notifications and set notification priority on Android devices.
 
@@ -798,16 +818,16 @@ On Android, you can also set a priority level for each notification to influence
 
 Select any of the following options from the _Notification tray priority_.
 
-* **Default Priority**: Use for most of your messages that are not time-sensitive, such as general notifications and promotional offers.
-* **High Priority**: Use for important communications that require extra attention, such as chat messages. These will also display as heads-up notifications and be given a higher priority in the user’s tray. Heads up notifications are notifications that pop up on your screen from the top even when you are using other apps. For example, receive a message on your chat app when you’re using the food delivery app. This feature is available for Android N (API 25) and below. For Android Oreo and above, define the priority in the _Notification Channel_.
-* **Maximum Priority**: Use for urgent, time-sensitive notifications. These notifications will get higher placement inside the user’s tray and display as heads-up notifications.
+- **Default Priority**: Use for most of your messages that are not time-sensitive, such as general notifications and promotional offers.
+- **High Priority**: Use for important communications that require extra attention, such as chat messages. These will also display as heads-up notifications and be given a higher priority in the user’s tray. Heads up notifications are notifications that pop up on your screen from the top even when you are using other apps. For example, receive a message on your chat app when you’re using the food delivery app. This feature is available for Android N (API 25) and below. For Android Oreo and above, define the priority in the _Notification Channel_.
+- **Maximum Priority**: Use for urgent, time-sensitive notifications. These notifications will get higher placement inside the user’s tray and display as heads-up notifications.
 
 ### Notification Delivery Priority
 
 You can assign delivery priority on Android for Push notifications as follows:
 
-* **Normal**:  The data messages with normal priority are delivered immediately when the device is active. However, if the device is inactive to conserve battery, the delivery may be delayed until the device becomes active again. You must set the priority as _Normal_ for less time-sensitive messages (such as notifications of new emails, keeping your UI in sync, or syncing app data in the background).
-* **High**: The messages with high priority are delivered immediately, even if the device is asleep. It wakes the device and allows limited processing (including minimal network use) to ensure the message is received. These messages are meant to provoke user action or response to your app or its notifications. You must set the priority as _High_ for time-sensitive or user-visible content. CleverTap recommends setting the notification priority as _High_ to ensure the time-sensitive content is rendered immediately on end-user devices. If FCM detects a pattern in which messages do not result in user-facing notifications, the messages are deprioritized to normal priority.
+- **Normal**:  The data messages with normal priority are delivered immediately when the device is active. However, if the device is inactive to conserve battery, the delivery may be delayed until the device becomes active again. You must set the priority as _Normal_ for less time-sensitive messages (such as notifications of new emails, keeping your UI in sync, or syncing app data in the background).
+- **High**: The messages with high priority are delivered immediately, even if the device is asleep. It wakes the device and allows limited processing (including minimal network use) to ensure the message is received. These messages are meant to provoke user action or response to your app or its notifications. You must set the priority as _High_ for time-sensitive or user-visible content. CleverTap recommends setting the notification priority as _High_ to ensure the time-sensitive content is rendered immediately on end-user devices. If FCM detects a pattern in which messages do not result in user-facing notifications, the messages are deprioritized to normal priority.
 
 The value for this field is set to _High_ by default.
 
@@ -825,25 +845,27 @@ In iOS versions earlier than 15, users could choose to silence all calls and not
 
 These interruption levels determine the priority and delivery timing of notifications, allowing users to be in control of their device notifications. The interruption levels are designed to cater to different scenarios while respecting user preferences and focus modes. Here are the three interruption levels:
 
-<Image align="center" alt="Set up Interruption Level" border={true} caption="Set up Interruption Level" src="https://files.readme.io/7c5da3ebe282535fd58efb085c44800e87799a61c3cd312ea38e5cf4cab6158e-image.png" />
+
+<Image src="https://files.readme.io/7c5da3ebe282535fd58efb085c44800e87799a61c3cd312ea38e5cf4cab6158e-image.png" alt="Set up Interruption Level" align="center" caption="Set up Interruption Level" border={true} />
+
 
 ### Active (Default)
 
-* **Behavior:** Active notifications replicate the existing notification behavior. Upon delivery, they trigger audible sounds and vibrations and illuminate the screen.
-* **Focus Mode Compatibility:** Active notifications do not break through Focus modes, ensuring that the user's selected focus settings remain undisturbed.
-* **Purpose:** Use this interruption level for notifications that require immediate attention and engagement.
+- **Behavior:** Active notifications replicate the existing notification behavior. Upon delivery, they trigger audible sounds and vibrations and illuminate the screen.
+- **Focus Mode Compatibility:** Active notifications do not break through Focus modes, ensuring that the user's selected focus settings remain undisturbed.
+- **Purpose:** Use this interruption level for notifications that require immediate attention and engagement.
 
 ### Time Sensitive
 
-* **Behavior:** Time-sensitive notifications share similarities with active notifications. However, they are accompanied by a distinctive yellow banner, making them visually recognizable as urgent.
-* **Focus Mode Compatibility:** These notifications can break through both scheduled delivery times and active Focus modes.
-* **Purpose:** Reserve the Time Sensitive interruption level for notifications demanding immediate user action. Their unique appearance aids users in identifying critical messages quickly.
+- **Behavior:** Time-sensitive notifications share similarities with active notifications. However, they are accompanied by a distinctive yellow banner, making them visually recognizable as urgent.
+- **Focus Mode Compatibility:** These notifications can break through both scheduled delivery times and active Focus modes.
+- **Purpose:** Reserve the Time Sensitive interruption level for notifications demanding immediate user action. Their unique appearance aids users in identifying critical messages quickly.
 
 ### Passive
 
-* **Behavior:** Passive notifications are designed for non-urgent matters. They arrive discreetly without generating sounds or vibrations.
-* **Focus Mode Compatibility:** Passive notifications are considerate of users' Focus modes and do not disrupt them.
-* **Purpose:** Employ the Passive interruption level for notifications that do not require instant attention, minimizing distractions while keeping users informed.
+- **Behavior:** Passive notifications are designed for non-urgent matters. They arrive discreetly without generating sounds or vibrations.
+- **Focus Mode Compatibility:** Passive notifications are considerate of users' Focus modes and do not disrupt them.
+- **Purpose:** Employ the Passive interruption level for notifications that do not require instant attention, minimizing distractions while keeping users informed.
 
 > 📘 Critical Interruption Level
 >
@@ -853,12 +875,12 @@ These interruption levels determine the priority and delivery timing of notifica
 
 Users can preview and render different variations of outputs for each Push template type based on the following factors:
 
-* **Version-based Rendition**- Notifications render differently for Android version 12 and above and version 11 and below. Key considerations include the following:
-  * **Android 13 and above**: Use images no larger than 450x450 px for optimal rendering.
-  * **Android 12 and above**: Center-align any text within images is centered for to ensure better visibility.
-  * **Android 11 and 12**: Use image file size below 100 KB to prevent rendering issues.
-  * **Android 11 and below**: Use images of under 3 MB or lower is recommended for better to maintain optimal performance.
-* **CTA-based Rendition** - Notification renders based on whether CTA buttons are included in the payload.
+- **Version-based Rendition**- Notifications render differently for Android version 12 and above and version 11 and below. Key considerations include the following:
+  - **Android 13 and above**: Use images no larger than 450x450 px for optimal rendering.
+  - **Android 12 and above**: Center-align any text within images is centered for to ensure better visibility.
+  - **Android 11 and 12**: Use image file size below 100 KB to prevent rendering issues.
+  - **Android 11 and below**: Use images of under 3 MB or lower is recommended for better to maintain optimal performance.
+- **CTA-based Rendition** - Notification renders based on whether CTA buttons are included in the payload.
 
 ## Dark Mode
 
@@ -937,10 +959,12 @@ This option defines how a notification behaves when users clear their notificati
 
 The following are the available options:
 
-* **Regular:** Notifications are cleared when the user dismisses their notification tray or when an automatic dismissal is triggered. This behavior is ideal for general messages or messages that do not require persistent visibility.
-* **Sticky:**  On Android 14 and above, notifications remain in the tray even after the user performs a bulk dismissal, ensuring that important alerts such as critical system messages or high-priority updates stay visible until the user explicitly clears them. Use the Sticky option to keep important alerts accessible and prevent accidental dismissal.
+- **Regular:** Notifications are cleared when the user dismisses their notification tray or when an automatic dismissal is triggered. This behavior is ideal for general messages or messages that do not require persistent visibility.
+- **Sticky:**  On Android 14 and above, notifications remain in the tray even after the user performs a bulk dismissal, ensuring that important alerts such as critical system messages or high-priority updates stay visible until the user explicitly clears them. Use the Sticky option to keep important alerts accessible and prevent accidental dismissal.
 
-<Image align="center" alt="Notification Behavior" border={true} caption="Notification Behavior" src="https://files.readme.io/b0cfaab970524e37fad67aa1e645e6f7d810be916fdfea6b3ab2b3c42b13b2c6-image.png" width="65% " />
+
+<Image src="https://files.readme.io/b0cfaab970524e37fad67aa1e645e6f7d810be916fdfea6b3ab2b3c42b13b2c6-image.png" alt="Notification Behavior" align="center" width="65% " caption="Notification Behavior" border={true} />
+
 
 ## Dismiss Notification
 
@@ -948,7 +972,11 @@ This option determines how and when a notification is dismissed from the notific
 
 The following are the available options:
 
-* **Manual:** The notification stays in the tray until the user manually removes it. This option is ideal for important messages that must remain visible until acknowledged by the user.
-* **Auto**: The notification is automatically dismissed after a specified duration, up to a maximum of 24 hours. This option works well for temporary or time-bound alerts that do not require user interaction.
+- **Manual:** The notification stays in the tray until the user manually removes it. This option is ideal for important messages that must remain visible until acknowledged by the user.
+- **Auto**: The notification is automatically dismissed after a specified duration, up to a maximum of 24 hours. This option works well for temporary or time-bound alerts that do not require user interaction.
 
-<Image align="center" alt="Dismiss Notificatiom" border={true} caption="Dismiss Notification" src="https://files.readme.io/c740918fae5e4fbf4e8e8dad8203a1b9004967ae92bac1c429c9d7080107dc10-image.png" width="65% " />
+
+<Image src="https://files.readme.io/c740918fae5e4fbf4e8e8dad8203a1b9004967ae92bac1c429c9d7080107dc10-image.png" alt="Dismiss Notificatiom" align="center" width="65% " caption="Dismiss Notification" border={true} />
+
+
+<br />

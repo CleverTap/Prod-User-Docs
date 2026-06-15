@@ -11,11 +11,11 @@ This document includes a guided video series that walks you through the complete
 
 The document covers the following:
 
-* Understand the core concepts and data flow in CleverTap
-* Set up the SDK across supported platforms
-* Create and manage unified user profiles
-* Track events using correct syntax and best practices
-* Configure and send push notifications
+- Understand the core concepts and data flow in CleverTap
+- Set up the SDK across supported platforms
+- Create and manage unified user profiles
+- Track events using correct syntax and best practices
+- Configure and send push notifications
 
 Before you even start with the integration, read about CleverTap as a product and the core capabilities. Also, understand how real-time data drives personalized user engagement.
 
@@ -44,9 +44,9 @@ You can also check the following video to understand the basics of integrating C
 
 Before you begin, ensure you have:
 
-* CleverTap account credentials (Account ID, Token, Region)
-* Access to your application codebase
-* Sample user data (optional, for CSV upload)
+- CleverTap account credentials (Account ID, Token, Region)
+- Access to your application codebase
+- Sample user data (optional, for CSV upload)
 
 # Integrate CleverTap
 
@@ -71,7 +71,7 @@ The following are the key steps:
 
 After completing the steps above, the SDK is now ready to send user and event data to CleverTap.
 
-Check the following videos to learn about the process of integrating the CleverTap SDK into your application:
+Watch the following video for an overview of the steps to integrate the CleverTap SDK into your application:
 
 <HTMLBlock>{`
 <div
@@ -91,6 +91,8 @@ Check the following videos to learn about the process of integrating the CleverT
               allow="autoplay; fullscreen"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
+
+Watch the video below for a detailed walkthrough on integrating the CleverTap SDK into your application:
 
 <HTMLBlock>{`
 <div
@@ -117,9 +119,9 @@ You can import historical or offline user data using CSV uploads.
 
 The following are some of the use cases where you will have to upload a CSV file to push user data to CleverTap:
 
-* Migrating existing users
-* Adding offline data
-* Enriching user profiles
+- Migrating existing users
+- Adding offline data
+- Enriching user profiles
 
 Once you upload the CSV file, user profiles are created or updated in the dashboard.
 
@@ -150,9 +152,9 @@ Define how user identities are managed.
 
 The following are some of the key considerations:
 
-* Unique identifiers (for example, Identity, Email)
-* Profile update behavior
-* Identity merging across devices
+- Unique identifiers (for example, Identity, Email)
+- Profile update behavior
+- Identity merging across devices
 
 After you are done configuring, users are consistently identified across sessions and devices.
 
@@ -183,9 +185,9 @@ The next step is to implement event tracking in your application.
 
 The following are some of the best practices you should follow when setting up event tracking for your application:
 
-* Use consistent event naming
-* Define relevant event properties
-* Follow the recommended event structure
+- Use consistent event naming
+- Define relevant event properties
+- Follow the recommended event structure
 
 Check the following video to learn how to configure event tracking on the CleverTap dashboard. Once done, you can use these events for segmentation, analytics, and campaigns.
 
@@ -243,19 +245,19 @@ Check the following video to learn how to set up push notifications using Clever
 
 Before using CleverTap for campaigns, verify the following:
 
-* User profiles are visible in Live View
-* Events are being tracked correctly
-* Identity merging works as expected
-* Event timestamps are accurate
-* Test push notifications are delivered successfully
+- User profiles are visible in Live View
+- Events are being tracked correctly
+- Identity merging works as expected
+- Event timestamps are accurate
+- Test push notifications are delivered successfully
 
 # Troubleshooting
 
 If you encounter issues:
 
-* Verify SDK initialization settings
-* Check event payload structure
-* Validate identity fields
-* Review push configuration
+- Verify SDK initialization settings
+- Check event payload structure
+- Validate identity fields
+- Review push configuration
 
 If the issue still persists, raise a ticket or contact the CleverTap Support team.

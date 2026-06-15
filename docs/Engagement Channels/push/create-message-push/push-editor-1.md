@@ -94,6 +94,8 @@ You can configure the collapsed and expanded views in the following ways:
 - Use a large icon in the collapsed view.
 - Use a large icon along with an expanded/collapsed image in the collapsed view (supported in SDK PushTemplates `v2.3.0` and above).
 
+The image ratio for collapsed and expanded state is 4:1.
+
 The large icon is shown only in the collapsed view. It appears right-aligned next to the notification title and message for SDK PushTemplates `v2.3.0` and above, and left-aligned for earlier SDK versions. Refer to the following image for a dashboard preview.
 
 

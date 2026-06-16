@@ -2,7 +2,7 @@
 title: JioCX
 excerpt: Learn how to configure JioCX as a provider for CleverTap.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

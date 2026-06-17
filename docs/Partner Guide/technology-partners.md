@@ -3995,7 +3995,40 @@ next:
             <div class="category">WhatsApp</div>
         </div>
     </div>
-</a>
+ </a>
+<a href="https://docs.clevertap.com/docs/bik">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/637a0d0ea0ae3a1557758772e904cf2da64b7383db5b70c6c64e6d29bdf1c9a1-BIk.ai.jpeg" alt="BIK" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">BIK</div>
+            <div class="category">WhatsApp</div>
+        </div>
+    </div>
+ </a>
+<a href="https://docs.clevertap.com/docs/chat360">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/77ce16b245146757f3e6f9855e57552225d04ab01a82f88a72093ce54a86f306-Chat360.jpeg" alt="Chat360" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Chat360</div>
+            <div class="category">WhatsApp</div>
+        </div>
+    </div>
+ </a>
+<a href="https://docs.clevertap.com/docs/Engati">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/4c4c21c75038fd0124f02a3d24d8d3c13ee589355d629b0a73139b89d37fb152-Engati.png" alt="Engati" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Engati</div>
+            <div class="category">WhatsApp</div>
+        </div>
+    </div>
+ </a>
  <a href="https://docs.clevertap.com/docs/exotel-whatsapp">
     <div class="integration-card">
         <div class="logo-container">
@@ -4028,7 +4061,18 @@ next:
             <div class="category">WhatsApp</div>
         </div>
     </div>
-</a>     
+</a>
+<a href="https://docs.clevertap.com/docs/heltar">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/fb7c5c7f11bd2c76f8efb14eed8889050dd6814ac552cd5b0bf9fd90a9d7b761-Heltar.jpeg" alt="Heltar" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Heltar</div>
+            <div class="category">WhatsApp</div>
+        </div>
+    </div>
+ </a>     
 <a href="https://docs.clevertap.com/docs/infobip">
     <div class="integration-card">
         <div class="logo-container">
@@ -4373,3 +4417,5 @@ next:
 </body>
 </html>
 `}</HTMLBlock>
+
+<br />

@@ -80,7 +80,7 @@ To configure the CleverTap dashboard:
 | Field                    | Description                                                            |
 | :----------------------- | :--------------------------------------------------------------------- |
 | Provider                 | Select _Generic (Other)_ from the dropdown list.                       |
-| Nickname                 | Enter the nickname as ~~\<~~_~~ValueFirst>~~_                          |
+| Nickname                 | Enter the nickname as \<_ValueFirst>_                                  |
 | WhatsApp Business Number | Enter your phone number onboarded to WhatsApp API by ValueFirst.       |
 | Request Type             | Ensure Request Type is _POST_                                          |
 | HTTP End point           | You need to paste the Auth URL from ValueFirst post its configuration. |

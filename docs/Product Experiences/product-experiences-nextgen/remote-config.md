@@ -58,6 +58,8 @@ To create a Remote Config Variable, go to _Product Experiences > Remote Config_.
 <Image src="https://files.readme.io/4961653705d0f4bfcfb71a83afe577cfd204303492bc8412be4ccc728db2cc3b-Screenshot_2025-01-08_at_15.02.22.png" alt="Add Remote Config Variable" align="center" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/3f5fcfbacffe8059d79809bf2dded48468a810579d8f9abb0113caaaaf553faa-Screenshot_2025-01-08_at_15.03.09.png" alt="Create Remote Config Variable" align="center" border={true} />
 
@@ -97,6 +99,54 @@ Reviewer to-do:
   - Verify exact UI affordances (menu/icon names) in steps marked VERIFY.
   - Add screenshots at the [SCREENSHOT] placeholders.
 ===================================================================== */}
+
+# Manage Remote Config Variables
+
+After a variable is created, you can update its description or remove it from the dashboard when it is no longer in use.
+
+## Edit a Variable Description
+
+You can update a variable's description at any time. This is useful when the purpose of a variable changes over time, or when the original description needs more clarity for teammates who join later.
+
+To edit a variable description:
+
+1. Select the required variable from the variable list on the _Remote Config_ page.
+2. Open the variable's edit option and update the text in the **Description** field.
+
+{/* VERIFY: Confirm the exact UI affordance for editing a description (for example, an inline edit icon, a kebab menu, or the variable detail panel) and update the step wording to match. */}
+
+3. Save your changes.
+
+{/* [SCREENSHOT] Add a screenshot showing the Description field in edit mode. */}
+
+> 📘 Note
+>
+> Only the description can be edited. The variable name (key) remains fixed, because changing the key would break your SDK integration.
+
+## Delete a Variable
+
+You can delete variables that are no longer needed directly from the dashboard. Removing unused variables keeps your Remote Config workspace organized and prevents deprecated variables from being selected by mistake when you set up new experiments.
+
+To delete a variable:
+
+1. Select the required variable from the variable list on the _Remote Config_ page.
+2. Open the variable's options and select **Delete**.
+
+{/* VERIFY: Confirm the exact UI affordance and the label of the delete control, then update this step. */}
+
+3. Confirm the deletion when prompted.
+
+{/* VERIFY: Confirm whether a confirmation dialog appears and what it says. Adjust or remove this step accordingly. */}
+
+{/* [SCREENSHOT] Add a screenshot of the delete option, and (if applicable) the confirmation dialog. */}
+
+> 🚧 Variables in Use Cannot Be Deleted
+>
+> A variable that is referenced by a live or draft experience cannot be deleted. The system blocks the deletion and indicates where the variable is currently used. Only variables that are not referenced by any live or draft experience can be removed.
+
+{/* VERIFY: The PRD states the system "shows you where it's referenced." Confirm how references are surfaced in the UI (for example, a list of experiences or segments) so this can be described more specifically, ideally with a screenshot. */}
+
+{/* ===================== END CHANGE 2 ===================== */}
 
 # Override Variable Value for New Segment
 
@@ -174,6 +224,8 @@ Value personalization is based on **User Properties** and is supported for **Str
 
 <Image src="https://files.readme.io/a73244ac51a0d5dd34beb666d4c790f740326da085d6f9e178a83c0b4d6cefa9-Screenshot_2025-01-08_at_14.27.02.png" alt="Step 1" align="center" width="400px" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/9c065baa43b5df8bc8e56cdd7bcb1c72a37b580cc72f7d6f38c73d067c14af73-Screenshot_2025-01-08_at_14.27.52.png" alt="Step 2" align="center" border={true} />

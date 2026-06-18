@@ -46,7 +46,7 @@ Each variable requires the following information:
 
 {/* CHANGE 1 — added cross-reference: descriptions are now editable after creation (enhancement: Edit Variable Descriptions). Reviewer: confirm anchor link to the new "Edit a Variable Description" section once published. */}
 
-The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see Edit a Variable Description.
+The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see [Edit a Variable Description.](<doc: remote-config#edit-a-variable-description>)
 
 {/* END CHANGE 1 */}
 

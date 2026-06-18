@@ -62,9 +62,6 @@ This section outlines the storage platforms supported for file-based exports.
 <div class="grid">
   <a href="https://docs.clevertap.com/docs/data-export-to-aws-s3" class="integration-card">
    <div class="name">Amazon S3</div>
-  </a>  
-  <a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
-  <div class="name">BigQuery</div>
   </a>
 	<a href="https://docs.clevertap.com/docs/data-export-to-gcp" class="integration-card">
   <div class="name">Google Cloud Platform (GCP)</div>
@@ -79,5 +76,7 @@ This section outlines the storage platforms supported for file-based exports.
 >
 > CleverTap supports two distinct export flows, depending on your data requirements and integration needs:
 >
-> * [**Profile and User Exports (Legacy)**](doc:profile-and-events-legacy): Supports exporting both events and user profiles.
-> * [**Profile Exports**](doc:profile-exports): The newer, enhanced export flow that supports exporting user profiles only with improved flexibility and structure.
+> - [**Profile and User Exports (Legacy)**](doc:profile-and-events-legacy): Supports exporting both events and user profiles.
+> - [**Profile Exports**](doc:profile-exports): The newer, enhanced export flow that supports exporting user profiles only with improved flexibility and structure.
+
+<br />

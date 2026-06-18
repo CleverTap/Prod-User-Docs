@@ -18,7 +18,7 @@ CleverTap’s Message Archiving feature stores a copy of each outgoing message s
 
 > 📘 Enable Message Archiving
 >
-> Message Archiving is a paid CleverTap add-on. Because archived messages are written directly to your cloud bucket, your cloud provider also charges you for storage, write requests, data retention, retrieval, and any cross-region data transfer. Check your cloud provider's official documentation for pricing details.<br />To enable it, contact your Customer Success Manager or [CleverTap Support.](https://help.clevertap.com/hc/en-us/requests/new)
+> Message Archiving is a paid CleverTap add-on. Archived messages are written directly to your cloud bucket, so your cloud provider charges you for storage, write requests, data retention, retrieval, and any cross-region data transfer. Check your cloud provider's official documentation for pricing details.<br />To enable it, contact your Customer Success Manager or [CleverTap Support.](https://help.clevertap.com/hc/en-us/requests/new)
 
 Some of the key benefits of archiving your messages are:
 

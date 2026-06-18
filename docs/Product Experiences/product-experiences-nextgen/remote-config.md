@@ -151,35 +151,28 @@ To override a variable value for a new segment:
 <Image src="https://files.readme.io/af45e0a-small-Segment_with_Rules.png" alt="Enter Segment Criteria" align="center" border={true} />
 
 
-5. Toggle ON _Save As_  if you want to save the segment for future use. Keeping the toggle off does not save the segment.
+5. Toggle ON _Save As_ if you want to save the segment for future use. Keeping the toggle off does not save the segment.
 6. Click **Apply** to save the segment. The newly-created segment is now visible under the list of segments on the right side of the screen.
 
    > 🚧 Remote Config Segments
    >
    > The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
-7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following figure:
+7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
 
 
-<Image src="https://files.readme.io/5f9a7a1-small-Published.png" alt="Variables in Published State" align="center" border={true} />
+<Image src="https://files.readme.io/5f9a7a1-small-Published.png" alt="Variables in Published State" align="center" caption="Variables in Published State" border={true} />
 
 
-{/* =====================================================================
-CHANGE 3 — added callout for variable-level (single variable) publish.
-Enhancement: "Publish One Variable at a Time".
-This is the headline behavior change, so it is documented at the point
-where the reader clicks Publish.
-===================================================================== */}
+(@murtaza please check)
 
 > 📘 Publishing a Single Variable
 >
 > Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration.
 
-{/* ===================== END CHANGE 3 ===================== */}
-
-All the changes you make to the _Remote Config page_ are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following figure.  If you want to discard the current draft, click the **Discard** button.
+All the changes you make to the _Remote Config page_ are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following image.  If you want to discard the current draft, click the **Discard** button.
 
 
-<Image src="https://files.readme.io/eea0fc0-small-Draft_mode_in_remte_config.png" alt="Draft Mode in Remote Config." align="center" border={true} />
+<Image src="https://files.readme.io/eea0fc0-small-Draft_mode_in_remte_config.png" alt="Draft Mode in Remote Config." align="center" caption="Draft Mode in Remote Config" border={true} />
 
 
 > 📘 Note

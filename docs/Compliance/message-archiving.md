@@ -18,22 +18,22 @@ CleverTap’s Message Archiving feature stores a copy of each outgoing message s
 
 > 📘 Enable Message Archiving
 >
-> Message Archiving is a paid add-on. To enable it, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+> Message Archiving is a paid CleverTap add-on. Because archived messages are written directly to your cloud bucket, your cloud provider also charges you for storage, write requests, data retention, retrieval, and any cross-region data transfer. Check your cloud provider's official documentation for pricing details.<br />To enable it, contact your Customer Success Manager or [CleverTap Support.](https://help.clevertap.com/hc/en-us/requests/new)
 
 Some of the key benefits of archiving your messages are:
 
-* **Audit Readiness:** Maintain a complete record of all user communications to meet compliance requirements.
-* **Real-Time Archiving:** Archive messages as they are sent, with minimal impact on delivery performance.
-* **Low Maintenance:** Requires minimal setup and ongoing upkeep.
+- **Audit Readiness:** Maintain a complete record of all user communications to meet compliance requirements.
+- **Real-Time Archiving:** Archive messages as they are sent, with minimal impact on delivery performance.
+- **Low Maintenance:** Requires minimal setup and ongoing upkeep.
 
 # Supported Channels
 
 Currently, Message Archiving is available for the following channels:
 
-* Email
-* Push notifications
-* SMS
-* WhatsApp
+- Email
+- Push notifications
+- SMS
+- WhatsApp
 
 # Introduction to Message Archiving
 
@@ -241,9 +241,9 @@ The archived files on the AWS contain a JSON payload representing the final mess
 
 The following image shows the steps to browse the archived messages on the AWS S3 bucket:
 
-<Image alt="Sample Message Archive" align="center" border={true} src="https://files.readme.io/6dbc6e767772b915a0d9db56f9a4484df2c91b36c829f06d6f781d2ad4721e99-AWS_Slow.gif">
-  Sample Message Archive
-</Image>
+
+<Image src="https://files.readme.io/6dbc6e767772b915a0d9db56f9a4484df2c91b36c829f06d6f781d2ad4721e99-AWS_Slow.gif" alt="Sample Message Archive" align="center" border={true} />
+
 
 # Set Up Message Archiving
 
@@ -251,12 +251,12 @@ The following image shows the steps to browse the archived messages on the AWS S
 
 Before setting up Message Archiving, check that you have the following:
 
-* An active CleverTap account.
-* An AWS S3 bucket, Azure Blob Storage, or GCP bucket in the same region as your CleverTap account region.
+- An active CleverTap account.
+- An AWS S3 bucket, Azure Blob Storage, or GCP bucket in the same region as your CleverTap account region.
 
 ## Steps to Set Up Message Archiving
 
-To set up message archiving, perform the following steps: 
+To set up message archiving, perform the following steps:
 
 1. **Configure AWS S3 bucket, Azure Blob Storage, or GCP bucket on CleverTap dashboard**: Provide the necessary details for your AWS S3 bucket, including the bucket name and region. For more information, refer to [Configure AWS S3 Bucket on CleverTap Dashboard](doc:data-export-to-aws-s3#configure-s3-bucket-details-on-clevertap-dashboard), [Configure Azure Blob Storage](doc:microsoft-azure) or [Configure GCP Bucket on CleverTap Dashboard.](doc:data-export-to-gcp#configure-clevertap-dashboard) Note that for setting up message archiving with AWS S3, configure the bucket with an appropriate IAM policy. For more information, refer to [Add IAM Policy to S3 Bucket](doc:data-export-to-aws-s3#add-iam-policy-to-s3-bucket-on-aws-console).
 2. **Configure Data Retention Policy**: You must set up the data retention policy for your AWS S3 bucket according to your organizational needs directly in the AWS S3 console.
@@ -267,14 +267,14 @@ For more information and detailed configuration steps, refer to [Data Export to 
 
 Clevertap is committed to safeguarding your data. We ensure the protection of your data by implementing the following measures:
 
-* **Data in Transit:** All data is transmitted using the HTTPS protocol, ensuring secure data transfer between CleverTap and your AWS S3 bucket, Azure Storage Blob, or GCP bucket.
-* **Data at Rest:** The security of data at rest within the AWS S3 bucket, Azure Storage Blob, or GCP bucket is the customer's responsibility. This includes ensuring that proper encryption and access controls are in place.
+- **Data in Transit:** All data is transmitted using the HTTPS protocol, ensuring secure data transfer between CleverTap and your AWS S3 bucket, Azure Storage Blob, or GCP bucket.
+- **Data at Rest:** The security of data at rest within the AWS S3 bucket, Azure Storage Blob, or GCP bucket is the customer's responsibility. This includes ensuring that proper encryption and access controls are in place.
 
 # FAQs
 
 Explore concise troubleshooting tips and FAQs for Messaging Archival in this section.
 
-The following information provides helpful troubleshooting tips and common questions about Message Archiving. 
+The following information provides helpful troubleshooting tips and common questions about Message Archiving.
 
 #### **Q: Is there a user interface for Message Archiving?**
 
@@ -298,17 +298,17 @@ A: If your AWS credentials become invalid, CleverTap cannot archive messages to 
 
 #### **Q: How are retries handled?**
 
-A: If the bucket is unreachable, we will retry up to three times for AWS errors (such as AccessDenied).  CleverTap handles the AWS S3 rate limit errors. 
+A: If the bucket is unreachable, we will retry up to three times for AWS errors (such as AccessDenied).  CleverTap handles the AWS S3 rate limit errors.
 
 #### **Q: What happens if archiving fails ?**
 
-If the archiving fails after multiple retries, messages are marked as  *Failed to Archive Message*.
+If the archiving fails after multiple retries, messages are marked as  _Failed to Archive Message_.
 
-<Image alt="Failed to archive message" align="center" border={true} src="https://files.readme.io/4b8eca3f061741697bca2f07b0307f88efd5ee2f3b5600a1f70bbe72865356d1-image.png">
-  Failed to archive message
-</Image>
 
-#### **Q: Why does my archive`sent at` timestamp differs slightly from the actual send time?**
+<Image src="https://files.readme.io/4b8eca3f061741697bca2f07b0307f88efd5ee2f3b5600a1f70bbe72865356d1-image.png" alt="Failed to archive message" align="center" border={true} />
+
+
+#### **Q: Why does my archive**`sent at`**&#x20;timestamp differs slightly from the actual send time?**
 
 A: The message is archived just before it is sent to the end user, due to which slight delays can occur. This may lead to minor differences in timestamps.
 

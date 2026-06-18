@@ -1,5 +1,6 @@
 ---
 title: Event Exports
+excerpt: Understand how to export event data from CleverTap to cloud storage.
 deprecated: false
 hidden: false
 metadata:

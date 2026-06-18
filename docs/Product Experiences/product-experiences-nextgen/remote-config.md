@@ -44,11 +44,7 @@ Each variable requires the following information:
 - Description (optional)
 - Value (required)
 
-{/* CHANGE 1 — added cross-reference: descriptions are now editable after creation (enhancement: Edit Variable Descriptions). Reviewer: confirm anchor link to the new "Edit a Variable Description" section once published. */}
-
-The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see [Edit a Variable Description.](<doc: remote-config#edit-a-variable-description>)
-
-{/* END CHANGE 1 */}
+The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see [Edit a Variable Description.](<doc: remote-config#edit-a-variable-description>) (@murtaza please check)
 
 Variables created through the interface do not have a _default value_ similar to the variables synced from code. This means that the value you set in the Dashboard is immediately applied to all users.
 

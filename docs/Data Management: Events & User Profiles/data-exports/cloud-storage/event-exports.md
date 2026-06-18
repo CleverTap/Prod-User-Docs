@@ -74,11 +74,11 @@ To create an export, perform the following steps:
    <Image src="https://files.readme.io/20bbd834568b6910208a83bc3999cf8f83958fa77c67e97e428bab06d9d1a524-2026-05-13_14-49-36_1.gif" align="center" caption="Create Export" border={true} />
 
 
-   1. **[Configure Storage & File Details](doc:event-export#configure-storage--file-details)**: Configure the destination, folder structure, file format, and naming conventions.
-   2. **[Select User Identifiers](doc:event-export#select-user-identifiers)**: Define which user identifiers to include alongside each event record and their order.
-   3. **[Select Data Fields & Events](doc:event-export#select-data-fields--event)**: Choose the timestamp format, user properties, device attributes, and communication preferences to include alongside each event record.
-   4. **[Edit Properties & Order](doc:event-export#edit-properties--order)**: Select, rename, and reorder event properties for each selected event individually.
-   5. **[Define Schedule](doc:event-export#define-schedule-for-export)**: Set up one-time or recurring export schedules.
+   1. [Configure Storage & File Details](doc:event-exports#configure-storage--file-details): Configure the destination, folder structure, file format, and naming conventions.
+   2. [Select User Identifiers](doc:event-exports#select-user-identifiers): Define which user identifiers to include alongside each event record and their order.
+   3. [Select Data Fields & Events](doc:event-exports#select-data-fields--event): Choose the timestamp format, user properties, device attributes, and communication preferences to include alongside each event record.
+   4. [Edit Properties & Order](doc:event-exports#edit-properties--order): Select, rename, and reorder event properties for each selected event individually.
+   5. [Define Schedule](doc:event-exports#define-schedule-for-export): Set up one-time or recurring export schedules.
 
 > 📘 Legacy Exports Migration
 >

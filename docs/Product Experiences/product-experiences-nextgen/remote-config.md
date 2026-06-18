@@ -98,15 +98,15 @@ To edit a variable description:
 1. Select the required variable from the variable list on the _Remote Config_ page.
 2. Open the variable's edit option and update the text in the **Description** field.
 
-{/* VERIFY: Confirm the exact UI affordance for editing a description (for example, an inline edit icon, a kebab menu, or the variable detail panel) and update the step wording to match. */}
+
+<Image src="https://files.readme.io/1306db048642c8ecb4d9c7b2226a59c50eaa264b48894cd74ac2ce75f4d6567e-image.png" alt="Edit a variable description" align="center" caption="Edit Variable Description" border={true} />
+
 
 3. Save your changes.
 
-{/* [SCREENSHOT] Add a screenshot showing the Description field in edit mode. */}
-
 > 📘 Note
 >
-> Only the description can be edited. The variable name (key) remains fixed, because changing the key would break your SDK integration.
+> Only the description can be edited. The variable name (key) remains fixed, because changing the key would affect your App integration with CleverTap.
 
 ## Delete a Variable
 

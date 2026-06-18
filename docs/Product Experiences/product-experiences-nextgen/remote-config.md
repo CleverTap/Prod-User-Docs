@@ -128,6 +128,36 @@ To delete a variable:
 >
 > A variable that is referenced by a live or draft experience cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
 
+## Clone a Variable
+
+Cloning creates a copy of an existing variable under a new name within the same project. This is useful when you want to set up a new experiment that reuses the configuration of an existing variable as a starting point, instead of building it from scratch.
+
+When you clone a variable, the following details are copied:
+
+- Variable type
+- Variable values, including the default value and any segment-level values
+- Variable description
+
+The approval status, reviewer feedback, and approval history are not copied. The cloned variable starts fresh with no approval history.
+
+To clone a variable:
+
+1. Go to _Product Experiences_> _Remote Config_.&#x20;
+2. Select the required variable from the variable list on the _Remote Config_ page.
+3. Open the variable's options and click **Clone**.
+
+
+<Image src="https://files.readme.io/4094f7cb4c16e78c2fee471313cd7bb747ecb5191a4f24f240613ca3fec8a4e2-image.png" alt="Clone a Variable" align="center" caption="Clone a Variable" border={true} />
+
+
+4. Enter a unique name for the cloned variable and confirm.
+
+> 📘 Note
+>
+> The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
+>
+>
+
 # Override Variable Value for New Segment
 
 To override a variable value for a new segment:

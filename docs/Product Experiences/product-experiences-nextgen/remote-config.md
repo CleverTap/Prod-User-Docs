@@ -46,7 +46,7 @@ Each variable requires the following information:
 
 The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see [Edit a Variable Description.](<doc: remote-config#edit-a-variable-description>) (@murtaza please check)
 
-Variables created through the interface do not have a _default value_ similar to the variables synced from code. This means that the value you set in the Dashboard is immediately applied to all users.
+Variables created through the interface do not have a _default value,_ as do variables synced from code. This means that the value you set in the Dashboard is applied to all users immediately.
 
 To create a Remote Config Variable, go to _Product Experiences > Remote Config_. Click **Add** to add a variable.
 
@@ -83,20 +83,9 @@ In your app's code, any functionality defined as a variable has a default value 
 
 The following sections provide information about defining and updating a variable value for a particular segment.
 
-{/* =====================================================================
-CHANGE 2 — NEW SECTION: "Manage Remote Config Variables"
-Covers two enhancements from the PRD (Variable-Level Operations):
-  - Edit Variable Descriptions
-  - Delete Unused Variables
-Placement rationale: sits right after the Create section because both
-actions are about the variable definition itself, before the reader moves
-on to overriding values per segment.
-Reviewer to-do:
-  - Verify exact UI affordances (menu/icon names) in steps marked VERIFY.
-  - Add screenshots at the [SCREENSHOT] placeholders.
-===================================================================== */}
-
 # Manage Remote Config Variables
+
+(Review this entire section @murtaza)
 
 After a variable is created, you can update its description or remove it from the dashboard when it is no longer in use.
 
@@ -125,24 +114,19 @@ You can delete variables that are no longer needed directly from the dashboard. 
 
 To delete a variable:
 
-1. Select the required variable from the variable list on the _Remote Config_ page.
-2. Open the variable's options and select **Delete**.
+1. Go to _Product Experiences_> _Remote Config_.&#x20;
+2. Select the required variable from the variable list on the _Remote Config_ page.
+3. Open the variable's options and click **Delete**.
 
-{/* VERIFY: Confirm the exact UI affordance and the label of the delete control, then update this step. */}
 
-3. Confirm the deletion when prompted.
+<Image src="https://files.readme.io/3b291116649bafb8cea24fcb39436e1cd8de8716adccabe40dd4b4ee1f56dc0f-image.png" alt="Delete a variable" align="center" caption="Delete a variable" border={true} />
 
-{/* VERIFY: Confirm whether a confirmation dialog appears and what it says. Adjust or remove this step accordingly. */}
 
-{/* [SCREENSHOT] Add a screenshot of the delete option, and (if applicable) the confirmation dialog. */}
+
 
 > 🚧 Variables in Use Cannot Be Deleted
 >
-> A variable that is referenced by a live or draft experience cannot be deleted. The system blocks the deletion and indicates where the variable is currently used. Only variables that are not referenced by any live or draft experience can be removed.
-
-{/* VERIFY: The PRD states the system "shows you where it's referenced." Confirm how references are surfaced in the UI (for example, a list of experiences or segments) so this can be described more specifically, ideally with a screenshot. */}
-
-{/* ===================== END CHANGE 2 ===================== */}
+> A variable that is referenced by a live or draft experience cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
 
 # Override Variable Value for New Segment
 

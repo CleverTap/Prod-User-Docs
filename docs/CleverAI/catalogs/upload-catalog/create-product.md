@@ -20,11 +20,11 @@ Products cannot be created directly from the dashboard. To add products to a cat
 
 System fields are enforced by the API. The following table describes the fields validated during product creation:
 
-| Field     | Description                        | Constraints                                                      |
-| --------- | :--------------------------------- | ---------------------------------------------------------------- |
-| Identity  | Unique identifier for the product. | Required. Max 500 characters. Must be unique within the catalog. |
-| Name      | Name of the product.               | Required. 1–1,000 characters.                                    |
-| Image URL | Link to the product image.         | Required for single product creation. Max 2,000 characters.      |
+| Field    | Description                        | Constraints                                                      |
+| -------- | :--------------------------------- | ---------------------------------------------------------------- |
+| Identity | Unique identifier for the product. | Required. Max 500 characters. Must be unique within the catalog. |
+| Name     | Name of the product.               | Required. 1–1,000 characters.                                    |
+| ImageURL | Link to the product image.         | Required for single product creation. Max 2,000 characters.      |
 
 > 📘 Note
 >
@@ -71,7 +71,7 @@ The following table describes each column:
 | ------------ | -------------------------------------------------- |
 | Product Name | The name of the product as defined in the catalog. |
 | ID           | The unique identifier assigned to the product.     |
-| Image URL    | The URL of the product image.                      |
+| ImageURL     | The URL of the product image.                      |
 
 ### Download Catalog
 

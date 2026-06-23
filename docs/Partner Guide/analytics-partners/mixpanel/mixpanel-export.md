@@ -111,7 +111,7 @@ On clicking, the _Integrate analytics partner - Mixpanel_ popup opens on the rig
 </Table>
 
 
-<Image src="https://files.readme.io/b7d1729f7d30d292b49529fc306bf89b80664ed738ee197ae4e0495303043306-Screenshot_2026-06-22_at_8.21.48_PM.png" alt="Enter Mixpanel Project Details to Integrate" align="center" width="70% " border={true} />
+<Image src="https://files.readme.io/9d32e591a3f0642e718520bf22fae57d986e1db042753d93765175c99dfe9b7c-Screenshot_2026-06-22_at_8.21.48_PM.png" alt="Enter Mixpanel Project Details to Integrate" align="center" width="70% " caption="Integrate Partner - Mixpanel" border={true} />
 
 
 After successful integration, the _Integrated_ tag displays against Mixpanel on the _Partner List_ page.

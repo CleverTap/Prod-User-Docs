@@ -26,11 +26,9 @@ System fields are enforced by the API. The following table describes the fields 
 | Name      | Name of the product.               | Required. 1–1,000 characters.                                    |
 | Image URL | Link to the product image.         | Required for single product creation. Max 2,000 characters.      |
 
-<Callout icon="📘" theme="info">
-  #### Note
-
-  For bulk product creation, up to 100 products can be included in a single request.
-</Callout>
+> 📘 Note
+>
+> For bulk product creation, up to 100 products can be included in a single request.
 
 ## Attributes
 
@@ -51,13 +49,13 @@ For more information on the request format, authentication, and the full list of
 
 The following guidelines apply to product creation and catalog management in CleverTap:
 
-* Each product must have a unique identity within the catalog.
-* Users can create products only through APIs or feeds, not from the dashboard.
-* Missing or invalid system fields result in validation errors during ingestion.
-* Attributes such as price, description, and category are conventions stored in the `attributes` object. The API does not validate or reject a product that omits these values.
-* When creating products via the API in bulk, a maximum of 100 products can be included per request.
-* Each bulk request must not exceed 500 KB in total payload size.
-* Use feeds for bulk uploads and APIs for real-time or incremental updates.
+- Each product must have a unique identity within the catalog.
+- Users can create products only through APIs or feeds, not from the dashboard.
+- Missing or invalid system fields result in validation errors during ingestion.
+- Attributes such as price, description, and category are conventions stored in the `attributes` object. The API does not validate or reject a product that omits these values.
+- When creating products via the API in bulk, up to 100 products can be included per request.
+- Each bulk request must not exceed 500 KB in total payload size.
+- Use feeds for bulk uploads and APIs for real-time or incremental updates.
 
 # Manage Catalog Products
 
@@ -99,16 +97,14 @@ To collapse the panel, click the arrow at the top.
 
 The _Details_ subsection shows system-level metadata for the selected product.
 
-| Field      | Description                                                 |
-| ---------- | ----------------------------------------------------------- |
-| updated_at | The timestamp indicates when the product was last updated.  |
-| created_at | The timestamp indicates when the product was first created. |
+| Field       | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| updated\_at | The timestamp indicates when the product was last updated.  |
+| created\_at | The timestamp indicates when the product was first created. |
 
-<Callout icon="📘" theme="info">
-  #### Note
-
-  Timestamps are displayed in Unix epoch format.
-</Callout>
+> 📘 Note
+>
+> Timestamps are displayed in Unix epoch format.
 
 ### Properties
 
@@ -116,4 +112,8 @@ The _Properties_ subsection shows the custom attributes stored in the `attribute
 
 The following image shows the Product Details:
 
-<Image align="center" border={true} caption="Product Details" src="https://files.readme.io/972e183c990e86546600a14d8872c678a8fe5052b9f50177b36d307addbd5b93-image.png" />
+
+<Image src="https://files.readme.io/972e183c990e86546600a14d8872c678a8fe5052b9f50177b36d307addbd5b93-image.png" align="center" caption="Product Details" border={true} />
+
+
+<br />

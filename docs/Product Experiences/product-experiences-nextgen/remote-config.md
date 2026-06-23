@@ -122,11 +122,11 @@ To delete a variable:
 <Image src="https://files.readme.io/3b291116649bafb8cea24fcb39436e1cd8de8716adccabe40dd4b4ee1f56dc0f-image.png" alt="Delete a variable" align="center" caption="Delete a variable" border={true} />
 
 
-
+<br />
 
 > 🚧 Variables in Use Cannot Be Deleted
 >
-> A variable that is referenced by a live or draft experience cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
+> A variable that is referenced by a live or draft experiment cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
 
 ## Clone a Variable
 
@@ -155,8 +155,6 @@ To clone a variable:
 > 📘 Note
 >
 > The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
->
->
 
 # Override Variable Value for New Segment
 

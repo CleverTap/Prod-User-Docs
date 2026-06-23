@@ -46,18 +46,18 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        * Surfaces the most popular and relevant items based on aggregate behavior across your entire user base.
-        * Requires no individual user history, works for new and anonymous users from day one.
+        - Surfaces the most popular and relevant items based on aggregate behavior across your entire user base.
+        - Requires no individual user history, works for new and anonymous users from day one.
       </td>
 
       <td>
-        Popular, Trending, Best Sellers, Popular in Category, Trending in Category, Best Sellers in Category, Last-Minute Add-ons, Last-Minute Add-ons in Category
+        Popular, Trending, Best Sellers, Popular in Category, Trending in Category, Best Sellers in Category
       </td>
 
       <td>
-        * **ECommerce**: Send a push to new users featuring this week's most-purchased products.
-        * **OTT**: Recommend trending shows to new subscribers based on what most users are currently watching.
-        * **Travel**: Surface the most-booked destinations in a welcome email to users who haven't searched yet.
+        - **ECommerce**: Send a push to new users featuring this week's most-purchased products.
+        - **OTT**: Recommend trending shows to new subscribers based on what most users are currently watching.
+        - **Travel**: Surface the most-booked destinations in a welcome email to users who haven't searched yet.
       </td>
     </tr>
 
@@ -67,18 +67,18 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        * Recommends items with attributes similar to a seed item, based on how items are described and categorized, not on how many users have engaged with them.
-        * Works immediately for newly added items since it reads item properties, not behavioral signals.
+        - Recommends items with attributes similar to a seed item, based on how items are described and categorized, not on how many users have engaged with them.
+        - Works immediately for newly added items since it reads item properties, not behavioral signals.
       </td>
 
       <td>
-        More Like These, Similar to What You Viewed, Premium Alternatives
+        More Like These
       </td>
 
       <td>
-        * **ECommerce**: Suggest jackets similar to one a user viewed, even if the jacket was just added to the catalog.
-        * **OTT**: Recommend documentaries similar in genre, tone, and length to a film the user just finished.
-        * **Travel**: Suggest beach destinations with a similar climate, price range, and trip duration to one the user explored.
+        - **ECommerce**: Suggest jackets similar to one a user viewed, even if the jacket was just added to the catalog.
+        - **OTT**: Recommend documentaries similar in genre, tone, and length to a film the user just finished.
+        - **Travel**: Suggest beach destinations with a similar climate, price range, and trip duration to one the user explored.
       </td>
     </tr>
 
@@ -88,18 +88,18 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        * Combines item attributes with each user's recent activity, giving recent engagement greater weight and updating recommendations in real time.
-        * Falls back to popular items for new or inactive users.
+        - Combines item attributes with each user's recent activity, giving recent engagement greater weight and updating recommendations in real time.
+        - Falls back to popular items for new or inactive users.
       </td>
 
       <td>
-        Based on What You Viewed, Because You Viewed, Frequently Bought Together, Frequently Viewed Together
+        Based on What You Viewed, Frequently Bought Together
       </td>
 
       <td>
-        * **ECommerce**: Send a cart abandonment push suggesting accessories frequently bought with the item left in the cart.
-        * **OTT**: Recommend episodes of a new series based on the user's most recently engaged genres, even if the series just launched.
-        * **Travel**: Surface hotel upgrades for a destination the user has repeatedly viewed, combining their browsing history with property attributes.
+        - **ECommerce**: Send a cart abandonment push suggesting accessories frequently bought with the item left in the cart.
+        - **OTT**: Recommend episodes of a new series based on the user's most recently engaged genres, even if the series just launched.
+        - **Travel**: Surface hotel upgrades for a destination the user has repeatedly viewed, combining their browsing history with property attributes.
       </td>
     </tr>
   </tbody>

@@ -155,15 +155,15 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## June
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="security-project-settings" id="system-user-properties-locale-and-language">
+<div class="release-note article" data-category="security-project-settings" id="starget-and-personalize-by-locale-and-language-user-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#system-user-properties-locale-and-language"><i class="fa-light fa-anchor"></i></a>
+      <a href="#target-and-personalize-by-locale-and-language-user-properties"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
     </div>
-    <h3 class="release-note-heading">System User Properties: Locale and Language</h3>
+    <h3 class="release-note-heading">Target and Personalize by Locale and Language User Properties</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
   </div>
 

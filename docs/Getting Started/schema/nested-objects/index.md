@@ -151,7 +151,7 @@ Yes, you can query up to three levels in supported segmentation workflows.
 
 ### What happens if I exceed the payload size or nesting limits?
 
-CleverTap drops extra elements or returns an error if a payload exceeds the size or maximum nesting limits.
+CleverTap drops extra elements or returns an error if a payload exceeds the size limit or the maximum nesting limit.
 
 ### Are Nested Objects included in exports?
 

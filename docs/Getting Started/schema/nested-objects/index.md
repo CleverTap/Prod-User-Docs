@@ -77,12 +77,12 @@ The following example shows nesting depth for a user property:
 
 The table below describes the nesting depth for each key in the example above:
 
-| Level | Key                         | Notes                         |
-| ----- | --------------------------- | ----------------------------- |
-| 0     | `InsuranceDetails`          | Root                          |
-| 1     | `Policy`                    |                               |
-| 2     | `Beneficiary`               |                               |
-| 3     | `Name` inside `Beneficiary` | Terminal; cannot nest further |
+| Level | Key                                                          |
+| ----- | ------------------------------------------------------------ |
+| 0     | `InsuranceDetails`  (Root)                                   |
+| 1     | `Policy`                                                     |
+| 2     | `Beneficiary`                                                |
+| 3     | `Name` inside `Beneficiary`  (Terminal; cannot nest further) |
 
 <br />**Event Properties**
 
@@ -110,12 +110,12 @@ The following example shows nesting depth for an event property:
 
 The table below describes the nesting depth for each key in the example above:
 
-| Level | Key                         | Notes                         |
-| ----- | --------------------------- | ----------------------------- |
-| 0     | `courses_in_cart`           | Root                          |
-| 1     | `courses`                   |                               |
-| 2     | `name`, `sub_courses`       |                               |
-| 3     | `name` inside `sub_courses` | Terminal; cannot nest further |
+| Level | Key                                                        |
+| ----- | ---------------------------------------------------------- |
+| 0     | `courses_in_cart`(Root)<br />                              |
+| 1     | `courses`                                                  |
+| 2     | `name`, `sub_courses`                                      |
+| 3     | `name` inside `sub_courses`(Terminal; cannot nest further) |
 
 > 📘 Note
 >

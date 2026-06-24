@@ -35,34 +35,34 @@ The following sample payload sends an event with nested course selection data:
 
 ```json
 {
-  "courses_in_cart": [
+  "Courses_In_Cart": [
     {
-      "id": 10,
-      "name": "Greenfield Institute of Technology",
-      "courses": [
+      "Id": 10,
+      "Name": "Greenfield Institute of Technology",
+      "Courses": [
         {
-          "id": 101,
-          "name": "B.Tech in Computer Science and Engineering (Slot-A)"
+          "Id": 101,
+          "Name": "B.Tech in Computer Science and Engineering (Slot-A)"
         }
       ]
     },
     {
-      "id": 12,
-      "name": "Sunrise University, Jaipur",
-      "courses": [
+      "Id": 12,
+      "Name": "Sunrise University, Jaipur",
+      "Courses": [
         {
-          "id": 102,
-          "name": "B.Tech in Computer Science and Engineering"
+          "Id": 102,
+          "Name": "B.Tech in Computer Science and Engineering"
         },
         {
-          "id": 103,
-          "name": "B.E. in Computer Science and Engineering"
+          "Id": 103,
+          "Name": "B.E. in Computer Science and Engineering"
         }
       ]
     }
   ],
-  "amount": 3.0,
-  "payment_from": "CAF Version2"
+  "Amount": 3.0,
+  "Payment_From": "CAF Version2"
 }
 ```
 
@@ -94,7 +94,7 @@ The following image shows the Liquid Tags for Nested Objects in custom event pro
 <Image src="https://files.readme.io/e2be66919030b562f73bb7049534d629b0893bb62fe8c87e167e399977335353-image.png" align="center" width="70% " caption="Liquid Tags for Nested Objects in Custom Event Properties" border={true} />
 
 
-In the above example, `{{ Event.courses_in_cart[0].courses[0].name | default: "courses in cart" }}` is used. The message dynamically inserts the name of the first course from the first item inside the `courses_in_cart` array when the event triggers. If the value is unavailable, it falls back to the default text `courses in cart`.
+In the above example, `{{ Event.Courses_In_Cart[0].Courses[0].Name | default: "Courses In Cart" }}` is used. The message dynamically inserts the name of the first course from the first item inside the `Courses_In_Cart` array when the event triggers. If the value is unavailable, it falls back to the default text `Courses In Cart`.
 
 This shows how you can access deeply nested event attributes, including arrays within arrays, to personalize real-time messages triggered by custom events.
 

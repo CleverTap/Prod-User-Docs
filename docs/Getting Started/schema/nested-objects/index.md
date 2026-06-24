@@ -90,15 +90,15 @@ The following example shows nesting depth for an event property:
 
 ```json
 {
-  "courses_in_cart": [
+  "Courses_In_Cart": [
     {
-      "id": 10,
-      "courses": [
+      "Id": 10,
+      "Courses": [
         {
-          "name": "B.Tech CSE",
-          "sub_courses": [
+          "Name": "B.Tech CSE",
+          "Sub_Courses": [
             {
-              "name": "Data Structures"
+              "Name": "Data Structures"
             }
           ]
         }
@@ -112,10 +112,10 @@ The table below describes the nesting depth for each key in the example above:
 
 | Level | Key                                                        |
 | ----- | ---------------------------------------------------------- |
-| 0     | `courses_in_cart`(Root)<br />                              |
-| 1     | `courses`                                                  |
-| 2     | `name`, `sub_courses`                                      |
-| 3     | `name` inside `sub_courses`(Terminal; cannot nest further) |
+| 0     | `Courses_In_Cart`(Root)<br />                              |
+| 1     | `Courses`                                                  |
+| 2     | `Name`, `Sub_Courses`                                      |
+| 3     | `Name` inside `Sub_Courses`(Terminal; cannot nest further) |
 
 > 📘 Note
 >

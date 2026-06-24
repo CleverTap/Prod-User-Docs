@@ -100,7 +100,7 @@ This shows how you can access deeply nested event attributes, including arrays w
 
 # System Considerations
 
-CleverTap enforces certain system limits to maintain performance and stability. If a nested object is sent for an existing flat event property key, the root nested event property is rejected.
+CleverTap enforces some system limits to maintain performance and stability. If a nested object is sent for an existing flat event property key, the root nested event property is rejected.
 
 The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
 
@@ -125,7 +125,7 @@ The following table lists the limits applied during nested object ingestion to e
 
 Yes. After ingestion, nested event properties can be used in _Segment Builder_ filters and _Liquid Tags_. You can reference nested attributes using dot notation to create targeted segments or personalize campaign content.
 
-### Are there any reserved custom events for nested event properties?
+### Are there any reserved custom event properties for nested events?
 
 Yes. The custom event`Charged` is reserved for CleverTap’s charged event structure and cannot be used for custom nested events.
 

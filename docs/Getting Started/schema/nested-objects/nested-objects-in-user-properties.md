@@ -89,7 +89,7 @@ You can use dot notation in Liquid Tags to reference nested fields inside user p
 
 # System Considerations
 
-CleverTap enforces certain system limits to maintain performance and stability. If a nested object is sent for an existing flat user property key, the root nested user property is rejected.
+CleverTap enforces some system limits to maintain performance and stability. If a nested object is sent for an existing flat user property key, the root nested user property is rejected.
 
 The following table lists the limits applied during nested object ingestion to ensure consistent data handling:
 

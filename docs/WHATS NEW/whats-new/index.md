@@ -155,6 +155,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## May
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="security-project-settings" id="system-user-properties-locale-and-language">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#system-user-properties-locale-and-language"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">System User Properties: Locale and Language</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now target, segment, and personalize campaigns using locale and language preferences captured directly from the device OS.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Target users by locale (for example, <code>en_US</code>) and language (for example, <code>en</code>).</li>
+        <li>Personalize campaigns dynamically using Liquid Tags.</li>
+        <li>Rely on accurate, up-to-date values, as only the most recently updated value from the latest active device is stored.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/schema-create-linked-events#system-user-properties-locale-and-language" target="_blank">System User Properties: Locale and Language</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="predefined-templates-for-rich-push-campaigns">
   <div class="release-note-header">
     <div class="anchor-link-icon">

@@ -359,7 +359,7 @@ The SDK captures the following properties on supported platforms, including Andr
 | `ct_locale`   | Represents the user's regional setting, for example `en_US`, `en_GB`. |
 | `ct_language` | Represents the user's language preference, for example `en`, `fr`.    |
 
-These values are captured directly from the device operating system and follow standard formats **(@Afzal, do we really need to inform users about it?):**
+These values are captured directly from the device operating system and follow standard formats:
 
 - Language follows [ISO 639](link), the international standard for two-letter language codes, for example `en` for English, `fr` for French.
 - Region (locale) follows [ISO 3166](link), the international standard for two-letter country codes, for example `US` for the United States, `GB` for the United Kingdom.

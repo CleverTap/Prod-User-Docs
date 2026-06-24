@@ -152,7 +152,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## May
+## June
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="system-user-properties-locale-and-language">
@@ -183,6 +183,39 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
   <hr/>
 </div>
 `}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="security-and-project-settings" id="pii-masking-for-user-and-event-properties">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#pii-masking-for-user-and-event-properties"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">PII Masking for User and Event Properties</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now mask custom event and user properties, beyond system PII properties such as email, phone, name, and identity. Account admins can now apply granular, role-based visibility controls across a broader range of data, strengthening data governance across your project.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Extend masking to custom event and user properties.</li>
+        <li>Configure property-level masking via Schema.</li>
+        <li>Use the new Masked and Visible toggle under Data Visibility Access in Role-Based Access Control (RBAC).</li>
+      </ul>
+    </p>
+    <p><strong>Note:</strong> Masking is visible by default, and changes apply only when an admin explicitly configures it.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/pii-masking" target="_blank">PII Masking</a> and <a href="https://docs.clevertap.com/docs/role-based-access-control#data-access" target="_blank">Role-Based Access Control</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+# May
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="predefined-templates-for-rich-push-campaigns">

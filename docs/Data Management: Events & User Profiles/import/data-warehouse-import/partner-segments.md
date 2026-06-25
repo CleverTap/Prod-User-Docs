@@ -23,7 +23,7 @@ The following are some of the key benefits of setting up Partner Segments:
 - **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like any standard [CleverTap segments](doc:segmentation).
 
 <Callout icon="📘" theme="info">
-  #### Supported Data Warehouse
+  ### Supported Data Warehouse
 
   Currently, CleverTap supports [Snowflake,](doc:snowflake) [Google BigQuery,](doc:bigquery) and [Databricks](doc:databricks) as the warehouse connector. Support for Amazon Redshift and Microsoft Fabric will be added in upcoming releases.
 </Callout>
@@ -141,7 +141,7 @@ Before setting up Partner Segments, ensure the following requirements are met:
 - **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.
 
 <Callout icon="🚧" theme="warn">
-  #### Important
+  ### Important
 
   Running queries on your data warehouse (for example, BigQuery, Databricks or Snowflake)  may incur charges according to your warehouse provider pricing. These costs are billed directly by the provider.
 </Callout>
@@ -150,7 +150,7 @@ Before setting up Partner Segments, ensure the following requirements are met:
 
 Setting up Partner Segments consists of the following five main steps:
 
-1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery/Snowflake credentials and configuration details.
+1. [Set up a connection](doc:partner-segments#set-up-warehouse-connection) to your data warehouse by providing your BigQuery,Snowflake or Databricks credentials and configuration details.
 2. [Create a segment](doc:partner-segments#create-segment-import) import by writing an SQL query or selecting a table. Map a result column to a CleverTap user identifier.
 3. [Map the Identity Column](do:cpartner-segments#map-identity-column).
 4. [(Optional) Enable Partner Sync Event](doc:partner-segments#enable-partner-sync-event).
@@ -174,12 +174,13 @@ Create a connection to allow CleverTap to securely access your data warehouse an
 1. Go to _Partners_ > _Select Partner_ (Snowflake or BigQuery) from your CleverTap dashboard
 2. Enter the required configuration details based on your warehouse:
    - For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
+   - For **Databricks**, refer to [Databricks connection setup.](doc:databricks#set-up-databricks-for-integration)
    - For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).
 3. Click **Test Connection** to verify that CleverTap can reach your warehouse. If the test succeeds, a _Connected_ status is displayed. If it fails, review the error message (for example, _Invalid credentials_ or _Network timeout_) and correct the configuration.
 4. Click **Save** to store the connection.
 
 <Callout icon="📘" theme="info">
-  #### Note
+  ### Note
 
   Credentials are encrypted and stored securely. Only users with appropriate permissions can view or edit connection details.
 </Callout>
@@ -212,7 +213,7 @@ Create a segment import to fetch audience data from your connected warehouse and
 The system checks your account’s segment import limits. If you have reached the maximum number of active imports (in _Ready_, _Scheduled_, _Running_, or _Paused_ state), an error message is displayed, and you cannot proceed until you stop or delete an existing import.
 
 <Callout icon="📘" theme="info">
-  #### Note
+  ### Note
 
   The default limit is 50 active Partner segments imports. Contact your Account Manager if you require a higher limit.
 </Callout>
@@ -239,7 +240,7 @@ After entering your query or selecting a table, click **Preview** to see a sampl
 If your SQL query contains syntax errors or lacks permissions, the system displays an error message. Correct the query and preview again.
 
 <Callout icon="🚧" theme="warn">
-  #### Important
+  ### Important
 
   You cannot save a segment import until validation is successful.
 </Callout>
@@ -255,7 +256,7 @@ After previewing your query results, you must map one column from the result set
 Select the identifier column and choose the column name, such as an email address, phone number, or custom ID.
 
 <Callout icon="❗️" theme="error">
-  #### Important
+  ### Important
 
   If you attempt to save a segment import without selecting an identity column or with an unsupported format, the system blocks the action and displays a descriptive error.
 </Callout>
@@ -303,7 +304,7 @@ If you prefer to control when the segment refreshes, set the frequency to manual
 - **Run Later**: The segment is created, but no data is fetched until you manually trigger a refresh.
 
 <Callout icon="📘" theme="info">
-  #### Note
+  ### Note
 
   If you need a refresh frequency below 15 minutes, contact your Customer Support team to know more about enablement options.
 </Callout>
@@ -343,7 +344,7 @@ Each import displays a color-coded health indicator based on the most recent ref
 | Blank     | No new records were retrieved during the last run.                                         |
 
 <Callout icon="📘" theme="info">
-  #### Note
+  ### Note
 
   Records that are added, removed, already present, or dropped (because the identity is not found in CleverTap) are all counted as processed. Only records with null or invalid identity values count toward the error rate.
 </Callout>

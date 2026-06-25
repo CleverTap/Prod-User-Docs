@@ -16,16 +16,16 @@ Once imported, these Partner Segments work alongside CleverTap’s native segmen
 
 The following are some of the key benefits of setting up Partner Segments:
 
-* **Automate data imports**: Connect your warehouse once and schedule automatic refreshes. This removes the need to manually export CSV files or move data between systems.
-* **Keep segments up to date**: Choose a refresh frequency from every 15 minutes to weekly to keep your segments continuously updated. CleverTap automatically refreshes the segment before campaign delivery so you always target the latest audience.
-* **Use insights from your warehouse**: Activate audiences based on attributes already calculated in your warehouse, such as purchase likelihood, loyalty tiers, or churn risk.
-* **Maintain security and compliance**: Your data remains in the warehouse; only the segment results are updated in CleverTap. Credentials are encrypted, and all activities are tracked in audit logs.
-* **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like any standard [CleverTap segments](doc:segmentation).
+- **Automate data imports**: Connect your warehouse once and schedule automatic refreshes. This removes the need to manually export CSV files or move data between systems.
+- **Keep segments up to date**: Choose a refresh frequency from every 15 minutes to weekly to keep your segments continuously updated. CleverTap automatically refreshes the segment before campaign delivery so you always target the latest audience.
+- **Use insights from your warehouse**: Activate audiences based on attributes already calculated in your warehouse, such as purchase likelihood, loyalty tiers, or churn risk.
+- **Maintain security and compliance**: Your data remains in the warehouse; only the segment results are updated in CleverTap. Credentials are encrypted, and all activities are tracked in audit logs.
+- **Use segments across CleverTap**: Partner Segments are available in Campaigns, Journeys, and Analytics, just like any standard [CleverTap segments](doc:segmentation).
 
 <Callout icon="📘" theme="info">
   #### Supported Data Warehouse
 
-  Currently, CleverTap supports [Snowflake](doc:snowflake) and [Google BigQuery](doc:bigquery) as the warehouse connector. Support for Databricks, Amazon Redshift, and Microsoft Fabric will be added in upcoming releases.
+  Currently, CleverTap supports [Snowflake,](doc:snowflake) [Google BigQuery,](doc:bigquery) and Databricks as the warehouse connector. Support for Amazon Redshift and Microsoft Fabric will be added in upcoming releases.
 </Callout>
 
 # Use Cases
@@ -76,9 +76,9 @@ The following glossary defines the key terms used in Partner Segments.
       </td>
 
       <td>
-        * A saved configuration that connects CleverTap to your data warehouse.
-        * Includes the Warehouse Partner, Credentials (for example, a BigQuery service account key), Project and Dataset IDs, and Network Settings.
-        * Each connection has an owner and is governed by Role-Based Access Control (RBAC).
+        - A saved configuration that connects CleverTap to your data warehouse.
+        - Includes the Warehouse Partner, Credentials (for example, a BigQuery service account key), Project and Dataset IDs, and Network Settings.
+        - Each connection has an owner and is governed by Role-Based Access Control (RBAC).
       </td>
     </tr>
 
@@ -88,8 +88,8 @@ The following glossary defines the key terms used in Partner Segments.
       </td>
 
       <td>
-        * Definition of a segment to be imported from the warehouse.
-        * Includes the SQL query or table selection, the Identity column mapping, Import Schedule, a Query Timeout Configuration, and an Import State (_Ready, Scheduled, Running, Paused, or Stopped_).
+        - Definition of a segment to be imported from the warehouse.
+        - Includes the SQL query or table selection, the Identity column mapping, Import Schedule, a Query Timeout Configuration, and an Import State (_Ready, Scheduled, Running, Paused, or Stopped_).
       </td>
     </tr>
 
@@ -99,8 +99,8 @@ The following glossary defines the key terms used in Partner Segments.
       </td>
 
       <td>
-        * A single execution of the segment import.
-        * Each run records a Start Time, an End Time, an Outcome (success or failure), the Total Records Processed, the records Added, Removed, or Dropped, and any Error details.
+        - A single execution of the segment import.
+        - Each run records a Start Time, an End Time, an Outcome (success or failure), the Total Records Processed, the records Added, Removed, or Dropped, and any Error details.
       </td>
     </tr>
 
@@ -110,8 +110,8 @@ The following glossary defines the key terms used in Partner Segments.
       </td>
 
       <td>
-        * An optional event triggered in CleverTap when users are added to or removed from a Partner Segment. This event counts toward your MAU and data points usage.
-        * Enabling this event allows you to use Partner Segments as Live Behavior in Campaigns and Journeys.
+        - An optional event triggered in CleverTap when users are added to or removed from a Partner Segment. This event counts toward your MAU and data points usage.
+        - Enabling this event allows you to use Partner Segments as Live Behavior in Campaigns and Journeys.
       </td>
     </tr>
 
@@ -121,8 +121,8 @@ The following glossary defines the key terms used in Partner Segments.
       </td>
 
       <td>
-        * Maps a column from your warehouse query results to a CleverTap user identifier.
-        * You can map it to an Identity (`identity`) field.
+        - Maps a column from your warehouse query results to a CleverTap user identifier.
+        - You can map it to an Identity (`identity`) field.
       </td>
     </tr>
   </tbody>
@@ -132,12 +132,12 @@ The following glossary defines the key terms used in Partner Segments.
 
 Before setting up Partner Segments, ensure the following requirements are met:
 
-* **BigQuery/Snowflake access**: You must have access to your data warehouse.
-* **BigQuery**: You need a Google Cloud project with BigQuery enabled and a [service account created](doc:bigquery#create-service-account) with read access to the datasets and tables you want to query.
-* **Snowflake**: Access to a [Snowflake account](doc:snowflake#prerequisites-for-integration) with the _Account Identifier_, _Warehouse_, _Database_, and _Schema_ available, and a user role with permissions to run queries and read/write to the specified database and schema. Authentication can be configured using _Password Authentication_ or _Key Pair Authentication_.
-* **User identifier column**: Your SQL query results or selected table must contain a column that maps to a CleverTap Identity field (such as email, phone number, or customer identity).
-* **CleverTap dashboard access**: You need appropriate permissions in CleverTap to create connections and segment imports. Contact your CleverTap admin if you do not have the required access.
-* **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.
+- **BigQuery/Snowflake access**: You must have access to your data warehouse.
+- **BigQuery**: You need a Google Cloud project with BigQuery enabled and a [service account created](doc:bigquery#create-service-account) with read access to the datasets and tables you want to query.
+- **Snowflake**: Access to a [Snowflake account](doc:snowflake#prerequisites-for-integration) with the _Account Identifier_, _Warehouse_, _Database_, and _Schema_ available, and a user role with permissions to run queries and read/write to the specified database and schema. Authentication can be configured using _Password Authentication_ or _Key Pair Authentication_.
+- **User identifier column**: Your SQL query results or selected table must contain a column that maps to a CleverTap Identity field (such as email, phone number, or customer identity).
+- **CleverTap dashboard access**: You need appropriate permissions in CleverTap to create connections and segment imports. Contact your CleverTap admin if you do not have the required access.
+- **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.
 
 <Callout icon="🚧" theme="warn">
   #### Important
@@ -163,8 +163,8 @@ A connection stores the credentials and configuration that CleverTap needs to ac
 
 Use the following options to configure and manage your connections:
 
-* [Create Connection](doc:partner-segments#create-connection)
-* [Manage Connections](doc:partner-segments#manage-connections)
+- [Create Connection](doc:partner-segments#create-connection)
+- [Manage Connections](doc:partner-segments#manage-connections)
 
 ### Create Connection
 
@@ -172,8 +172,8 @@ Create a connection to allow CleverTap to securely access your data warehouse an
 
 1. Go to _Partners_ > _Select Partner_ (Snowflake or BigQuery) from your CleverTap dashboard
 2. Enter the required configuration details based on your warehouse:
-   * For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
-   * For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).
+   - For **BigQuery**, refer to [BigQuery connection setup](doc:bigquery#use-existing-bigquery-credentials).
+   - For **Snowflake**, refer to [Snowflake connection setup](doc:snowflake#set-up-snowflake-for-integration).
 3. Click **Test Connection** to verify that CleverTap can reach your warehouse. If the test succeeds, a _Connected_ status is displayed. If it fails, review the error message (for example, _Invalid credentials_ or _Network timeout_) and correct the configuration.
 4. Click **Save** to store the connection.
 
@@ -273,33 +273,33 @@ By default, the Partner Sync event is disabled. Consider the following differenc
 
 Configure how often CleverTap should pull updated data from your warehouse. You can choose from the following options:
 
-* [Recurring Schedule](doc:partner-segments#recurring-schedule)
-* [Custom Schedule](doc:partner-segments#custom-schedule)
-* [Manual Sync](doc:partner-segments#manual-sync)
+- [Recurring Schedule](doc:partner-segments#recurring-schedule)
+- [Custom Schedule](doc:partner-segments#custom-schedule)
+- [Manual Sync](doc:partner-segments#manual-sync)
 
 ### Recurring Schedule
 
 Set an automatic refresh frequency. Recurring schedules support the following intervals:
 
-* **Minutes**: Minimum interval of 15 minutes.
-* **Hours**: Refresh every N hours.
-* **Days**: Refresh every N days.
-* **Weeks**: Refresh every N weeks.
+- **Minutes**: Minimum interval of 15 minutes.
+- **Hours**: Refresh every N hours.
+- **Days**: Refresh every N days.
+- **Weeks**: Refresh every N weeks.
 
 ### Custom Schedule
 
 For more specific timing, use a custom schedule:
 
-* **Days of the week**: Select one or more days (for example, Monday, Wednesday, Friday) and a time.
-* **Days of the month**: Select specific dates (for example, the 1st and 15th) and a time.
+- **Days of the week**: Select one or more days (for example, Monday, Wednesday, Friday) and a time.
+- **Days of the month**: Select specific dates (for example, the 1st and 15th) and a time.
 
 ### Manual Sync
 
 If you prefer to control when the segment refreshes, set the frequency to manual. You have three sub-options:
 
-* **Run Immediately**: The import runs as soon as it is created. Subsequent runs occur when you manually click the **refresh** button.
-* **Run on a Specific Date and Time**: The first run executes at the date and time you specify. Subsequent runs are manual.
-* **Run Later**: The segment is created, but no data is fetched until you manually trigger a refresh.
+- **Run Immediately**: The import runs as soon as it is created. Subsequent runs occur when you manually click the **refresh** button.
+- **Run on a Specific Date and Time**: The first run executes at the date and time you specify. Subsequent runs are manual.
+- **Run Later**: The segment is created, but no data is fetched until you manually trigger a refresh.
 
 <Callout icon="📘" theme="info">
   #### Note
@@ -313,10 +313,10 @@ After creating a segment import, you can monitor its execution, check its health
 
 The following sections explain the lifecycle statuses, health indicators, and management actions available for segment imports:
 
-* [Import Status](doc:partner-segments#import-status)
-* [Health Status](doc:partner-segments#health-status)
-* [Edit Import](doc:partner-segments#edit-import)
-* [Send Alerts](doc:partner-segments#send-alerts)
+- [Import Status](doc:partner-segments#import-status)
+- [Health Status](doc:partner-segments#health-status)
+- [Edit Import](doc:partner-segments#edit-import)
+- [Send Alerts](doc:partner-segments#send-alerts)
 
 ## Import Status
 
@@ -361,11 +361,11 @@ You can edit a segment import in the Ready or Scheduled state. Editable fields i
 
 CleverTap sends email and dashboard notifications for the following events:
 
-* Start and completion of an import run (with success or failure summary).
-* Errors while fetching records, such as connection errors or exceptions.
-* When an import is _Stopped_, _Paused_, or _Resumed_.
-* When a manual run is triggered.
-* When an import is delayed beyond the expected completion time.
+- Start and completion of an import run (with success or failure summary).
+- Errors while fetching records, such as connection errors or exceptions.
+- When an import is _Stopped_, _Paused_, or _Resumed_.
+- When a manual run is triggered.
+- When an import is delayed beyond the expected completion time.
 
 Alerts are sent to the account admin and the import creator. Each alert includes the _Segment name_, _Timestamp_, and an _Error_ or _Success_ summary.
 
@@ -373,15 +373,15 @@ Alerts are sent to the account admin and the import creator. Each alert includes
 
 Once a segment import has completed at least one successful refresh, you can use the resulting Partner Segment in the following campaigns:
 
-* [Past Behavior Campaigns](doc:partner-segments#past-behavior-campaigns)
-* [Live Behavior Campaigns](doc:partner-segments#live-trigger-campaigns)
+- [Past Behavior Campaigns](doc:partner-segments#past-behavior-campaigns)
+- [Live Behavior Campaigns](doc:partner-segments#live-trigger-campaigns)
 
 ## Past Behavior Campaigns
 
 When creating or editing a campaign, navigate to the target segment selection. Partner Segments are available in two ways:
 
-* **Include/Exclude**: Add a Partner Segment as an inclusion or exclusion filter alongside other segment criteria. For example, include users in a _High-Value Cart Abandoners_ Partner Segment AND exclude users in a _Recent Purchasers_ segment.
-* **Standalone**: Use a Partner Segment directly as your Campaign’s target audience by selecting it from the Partner Segment option in the audience picker.
+- **Include/Exclude**: Add a Partner Segment as an inclusion or exclusion filter alongside other segment criteria. For example, include users in a _High-Value Cart Abandoners_ Partner Segment AND exclude users in a _Recent Purchasers_ segment.
+- **Standalone**: Use a Partner Segment directly as your Campaign’s target audience by selecting it from the Partner Segment option in the audience picker.
 
 Partner Segments work with all messaging channels: Push, Email, SMS, In-App, WhatsApp, App Inbox, and more.
 
@@ -389,8 +389,8 @@ Partner Segments work with all messaging channels: Push, Email, SMS, In-App, Wha
 
 If the Partner Sync event is enabled on the segment import, you can create live behavior campaigns using the _Partner Sync_ event. The event includes the following properties:
 
-* **Segment Name**: The name of the Partner Segment.
-* **Action**: Whether the user was Added or Removed from the segment.
+- **Segment Name**: The name of the Partner Segment.
+- **Action**: Whether the user was Added or Removed from the segment.
   This allows you to trigger real-time messaging when users enter or exit a warehouse-defined audience.
 
 If the Partner Sync event is disabled on the segment import, you can create live behavior campaigns using the Include/Exclude segments in _Past behaviour_.
@@ -399,10 +399,10 @@ If the Partner Sync event is disabled on the segment import, you can create live
 
 Partner Segments integrate with CleverTap Journeys in the same way as campaigns.
 
-* **Entry Criteria**: Journey entry supports both past behaviour and live trigger options. When a journey is triggered, CleverTap refreshes the Partner Segments linked to the journey, similar to how it handles native segments.
-* **Past Behaviour Nodes**: Within a journey, you can use Partner Segments in any past behaviour node to include or exclude users from subsequent steps. The behaviour and targeting capabilities are identical to those available in campaigns.
-* **Live Behavior Nodes**: If the Partner Sync event is enabled, you can use the _Partner Sync_ event as a trigger within journey nodes. Event properties (Segment Name and Action) are available for conditional branching.
-* **Goals (Exit Criteria)**: You can use Partner Segments under past behaviour or live trigger conditions for journey exit goals.
+- **Entry Criteria**: Journey entry supports both past behaviour and live trigger options. When a journey is triggered, CleverTap refreshes the Partner Segments linked to the journey, similar to how it handles native segments.
+- **Past Behaviour Nodes**: Within a journey, you can use Partner Segments in any past behaviour node to include or exclude users from subsequent steps. The behaviour and targeting capabilities are identical to those available in campaigns.
+- **Live Behavior Nodes**: If the Partner Sync event is enabled, you can use the _Partner Sync_ event as a trigger within journey nodes. Event properties (Segment Name and Action) are available for conditional branching.
+- **Goals (Exit Criteria)**: You can use Partner Segments under past behaviour or live trigger conditions for journey exit goals.
 
 # Use Partner Segments in Analytics
 
@@ -461,7 +461,9 @@ Yes. Partner Segments are available in Trends, Cohorts, Flows, Funnels, Pivots, 
 
 If you encounter an issue not covered here, contact CleverTap Support with the following details:
 
-* Your account ID
-* Import name
-* Timestamp of the failed run, and
-* Error messages displayed in the dashboard
+- Your account ID
+- Import name
+- Timestamp of the failed run, and
+- Error messages displayed in the dashboard
+
+<br />

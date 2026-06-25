@@ -25,7 +25,7 @@ The following are some of the key benefits of setting up Partner Segments:
 <Callout icon="📘" theme="info">
   #### Supported Data Warehouse
 
-  Currently, CleverTap supports [Snowflake,](doc:snowflake) [Google BigQuery,](doc:bigquery) and Databricks as the warehouse connector. Support for Amazon Redshift and Microsoft Fabric will be added in upcoming releases.
+  Currently, CleverTap supports [Snowflake,](doc:snowflake) [Google BigQuery,](doc:bigquery) and [Databricks](doc:databricks) as the warehouse connector. Support for Amazon Redshift and Microsoft Fabric will be added in upcoming releases.
 </Callout>
 
 # Use Cases

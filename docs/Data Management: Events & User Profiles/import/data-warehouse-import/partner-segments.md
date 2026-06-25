@@ -132,9 +132,10 @@ The following glossary defines the key terms used in Partner Segments.
 
 Before setting up Partner Segments, ensure the following requirements are met:
 
-- **BigQuery/Snowflake access**: You must have access to your data warehouse.
+- **BigQuery/Snowflake/Databricks access**: You must have access to your data warehouse.
 - **BigQuery**: You need a Google Cloud project with BigQuery enabled and a [service account created](doc:bigquery#create-service-account) with read access to the datasets and tables you want to query.
 - **Snowflake**: Access to a [Snowflake account](doc:snowflake#prerequisites-for-integration) with the _Account Identifier_, _Warehouse_, _Database_, and _Schema_ available, and a user role with permissions to run queries and read/write to the specified database and schema. Authentication can be configured using _Password Authentication_ or _Key Pair Authentication_.
+- **Databricks**: Access to a [Databricks workspace](doc:databricks#prerequisites-for-integration) with the _Host_, _HTTP Path_, _Personal Access Token (PAT)_, _Catalog_, and _Schema_ available. The PAT identity (user or service principal) must have _USAGE_ on the selected catalog and schema, and _SELECT_ on the tables you plan to query.
 - **User identifier column**: Your SQL query results or selected table must contain a column that maps to a CleverTap Identity field (such as email, phone number, or customer identity).
 - **CleverTap dashboard access**: You need appropriate permissions in CleverTap to create connections and segment imports. Contact your CleverTap admin if you do not have the required access.
 - **Feature enablement**: Partner Segments must be enabled for your account. Contact your Account Manager to activate this feature.

@@ -72,7 +72,7 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        More Like These
+        More Like This
       </td>
 
       <td>
@@ -143,7 +143,7 @@ The following strategies are available to generate recommendations from your cat
 ## Content Strategy Recommendation
 
 <Cards>
-  <Card title="More Like These" href="https://docs.clevertap.com/docs/more-like-this" />
+  <Card title="More Like This" href="https://docs.clevertap.com/docs/more-like-this" />
 </Cards>
 
 # Choose Right Strategy
@@ -157,7 +157,7 @@ Pick a strategy based on where the recommendation appears and what user data you
 | Drive category-level discovery    | No user data required     | Popular in Category, Trending in Category, Best Sellers in Category |
 | Personalize within a category     | Browse and view history   | Based on What You Viewed                                            |
 | Keep the user exploring           | Browse and view history   | Based on What You Viewed                                            |
-| Show similar items                | Catalog attributes        | More Like These                                                     |
-| Drive repeat engagement           | Purchase and view history | More Like These                                                     |
+| Show similar items                | Catalog attributes        | More Like This                                                      |
+| Drive repeat engagement           | Purchase and view history | More Like This                                                      |
 
 Select the strategy that best matches the user's context to keep recommendations relevant and effective.

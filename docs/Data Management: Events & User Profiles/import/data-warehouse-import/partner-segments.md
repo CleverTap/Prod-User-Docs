@@ -143,7 +143,7 @@ Before setting up Partner Segments, ensure the following requirements are met:
 <Callout icon="🚧" theme="warn">
   #### Important
 
-  Running queries on your data warehouse (for example, BigQuery or Snowflake)  may incur charges according to your warehouse provider pricing. These costs are billed directly by the provider.
+  Running queries on your data warehouse (for example, BigQuery, Databricks or Snowflake)  may incur charges according to your warehouse provider pricing. These costs are billed directly by the provider.
 </Callout>
 
 # Set Up Partner Segments

@@ -57,35 +57,9 @@ Each tab displays key details for every coupon in a tabular format, including st
       </td>
 
       <td>
-        Shows the current status of the coupon, such as
+        Shows the current status of the coupon, such as _Active_, _Paused_, _Draft_,
 
-        _Active_
-
-        ,
-
-        _Paused_
-
-        ,
-
-        _Draft_
-
-        ,
-
-        _Scheduled_
-
-        ,
-
-        _Ended_
-
-        , or
-
-        _Archived_
-
-        . For more information, refer to
-
-        [Status and Actions](doc:coupon-operations#status-and-actions)
-
-        .
+        _Scheduled_, _Ended_, or _Archived_. <br /><br />For more information, refer to [Status and Actions.](doc:coupon-operations#status-and-actions)
       </td>
     </tr>
 

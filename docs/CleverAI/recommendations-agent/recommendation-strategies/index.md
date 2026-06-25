@@ -143,7 +143,7 @@ The following strategies are available to generate recommendations from your cat
 ## Content Strategy Recommendation
 
 <Cards>
-  <Card title="More Like This" href="https://docs.clevertap.com/docs/more-like-this" />
+  <Card title="More Like These" href="https://docs.clevertap.com/docs/more-like-this" />
 </Cards>
 
 # Choose Right Strategy

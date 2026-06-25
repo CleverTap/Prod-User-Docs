@@ -188,16 +188,10 @@ Each tab displays key details for every coupon in a tabular format, including st
       </td>
 
       <td>
-        <p>Indicates how the coupon is distributed and redeemed based on the format and triggering method. The following are the available options:</p>
-
-        <ul>
-          <li>Single code for all users</li>
+        <p>Indicates how the coupon is distributed and redeemed based on the format and triggering method. The following are the available options:</p><ul><li>Single code for all users</li>
           <li>Single code based on user actions</li>
           <li>Downloadable bulk unique codes</li>
-          <li>Bulk unique codes based on user actions</li>
-        </ul>
-
-        <p>For more information, refer to <a href="doc:create-coupons#select-coupon-type">Select Coupon Type</a>.</p>
+          <li>Bulk unique codes based on user actions</li></ul><p>For more information, refer to <a href="doc:create-coupons#select-coupon-type">Select Coupon Type</a>.</p>
       </td>
     </tr>
 

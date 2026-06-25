@@ -16,7 +16,7 @@ When users move through a CleverTap Journey, entering, progressing, and eventual
 Journey Events give you a clear, real-time record of which users entered a specific journey and how they left it. You can use this data to build smarter segments, trigger follow-up campaigns, analyze performance, and prevent users from receiving conflicting messaging across multiple journeys.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   Journey Events are only raised for journeys published after this feature is enabled on your account.
 
@@ -65,7 +65,7 @@ The following table lists the Journey Entry event properties:
 | **Custom Control Group Name** | Populated only when _Control Group Type_ is _Custom_.  Contains the name of the custom control group.                                         | String    | High-Value Users CG   |
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note&#x20;
 
   For regular journey participants (Target Group users), control group properties are not raised; they are absent from the event record.
 </Callout>
@@ -85,16 +85,14 @@ The following table provides information about when and how quickly a Journey Qu
 | **Past Behavior Segment (PBS)**                               | Raised during the nightly batch run (typically at midnight in your account timezone). If this journey is nested within another journey whose entry is also PBS, the event will only be raised after the upstream journey's PBS computation completes. |
 
 <Callout icon="📘" theme="info">
-  ### **Nested PBS Journeys**
+  #### **Nested PBS Journeys**
 
-  If Journey 2 uses a PBS entry segment built on Journey Qualified from Journey 1 (also uses PBS entry segment), both evaluations happen as follows: Journey 1 PBS runs first, raises Journey Qualified, and Journey 2 PBS evaluation follows in the same run.
-
-  This means there is no extra day of delay, but both runs occur within the same night window.**&#x20;**
+  If Journey 2 uses a PBS entry segment built on Journey Qualified from Journey 1 (also uses PBS entry segment), both evaluations happen as follows: Journey 1 PBS runs first, raises Journey Qualified, and Journey 2 PBS evaluation follows in the same run.This means there is no extra day of delay, but both runs occur within the same night window.**&#x20;**
 </Callout>
 
 ## Journey Exited
 
-The Journey Exited event is raised every time a user leaves a journey, regardless of how or why they left. The Exit Reason property tells you exactly what caused the exit.
+The Journey Exited event is raised whenever a user leaves a journey, regardless of how or why. The Exit Reason property tells you exactly what caused the exit.
 
 ### Exit Reasons
 

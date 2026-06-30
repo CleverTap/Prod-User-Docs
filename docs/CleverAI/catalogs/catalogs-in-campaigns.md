@@ -118,7 +118,7 @@ If your campaign is triggered by a Charged event, you can reference item array p
 
 ## Apply Include and/or Exclude Rules
 
-Refine which catalog items are eligible to appear in the message using catalog-based rules. Rules are evaluated at send time.
+Refine which catalog items are eligible to appear in the message using [catalog-based rules](doc:catalog-based-rules). Rules are evaluated at send time.
 
 **Include Items**
 

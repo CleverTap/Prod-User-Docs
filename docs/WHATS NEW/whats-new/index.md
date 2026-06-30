@@ -185,6 +185,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="attachment-support-in-generic-http">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#attachment-support-in-generic-http"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Attachment Support in Generic HTTP</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+		<div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>CleverTap now supports attachments in email campaigns sent through Generic HTTP Email Integration. You can send files directly with your email campaigns, keeping attachments and email delivery in one streamlined workflow.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Send attachments in campaigns using Generic HTTP Email Integration.</li>
+        <li>Pass attachment data in the HTTP payload using system dynamic replacements.</li>
+        <li>Deliver files directly through your configured HTTP-based email provider.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/generic-http-with-attachments" target="_blank">Generic HTTP</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="bot-activity-filter-for-email">
   <div class="release-note-header">
     <div class="anchor-link-icon">

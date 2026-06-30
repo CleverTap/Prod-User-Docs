@@ -73,7 +73,7 @@ Before adding a catalog block to a campaign, confirm the following are in place:
   <Image src="https://files.readme.io/eef2e7a285494171c664dd9f5b91c468cbe48740d971e56c4afa8597fed26114-image.png" align="center" caption="Catalog" border={true} />
 
 
-- The catalog includes the attributes you intend to use in the message, such as name, image URL, price, and product URL.
+- The catalog includes the [attributes](doc:httpsdoc:create-product#system-fields) you intend to use in the message, such as name, image URL, price, and product URL.
 
 # Add Catalog to Campaign
 

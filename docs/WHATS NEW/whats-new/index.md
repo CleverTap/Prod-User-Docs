@@ -185,6 +185,38 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="bot-activity-filter-for-email">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#bot-activity-filter-for-email"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Bot Activity Filter for Email</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+		<div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now detect and exclude bot-driven email opens and clicks from your email campaign stats, journey nodes, and journey paths.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Exclude bot-driven opens and clicks from email campaign stats for more accurate performance reporting.</li>
+        <li>Prevent bot activity from advancing users through journey nodes and paths.</li>
+        <li>Distinguish genuine human engagement from automated interactions across your email metrics.</li>
+				<li>Build journey logic that responds to real user behavior rather than machine activity.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/bot-activity-filter" target="_blank">Bot Activity Filter</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-and-project-settings" id="pii-masking-for-user-and-event-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">

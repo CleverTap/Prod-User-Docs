@@ -185,6 +185,29 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="email-open-tracking">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#email-open-tracking"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Email Open Tracking</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+		<div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>CleverTap now lets you choose where the open tracking pixel is placed in your emails, at the top or the default bottom of the email body. By default, it is placed at the bottom. Moving the pixel to the top reduces the risk of the tracking pixel getting clipped in large emails and improves open tracking reliability.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/email-open-tracking#advanced-setup" target="_blank">Advanced Setup</a> under Email campaigns.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="attachment-support-in-generic-http">
   <div class="release-note-header">
     <div class="anchor-link-icon">

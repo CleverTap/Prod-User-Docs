@@ -298,10 +298,10 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
   </div>
 
   <hr/>
-</div>
+</div
 `}</HTMLBlock>
 
-# May
+## May
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="predefined-templates-for-rich-push-campaigns">

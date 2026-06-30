@@ -57,9 +57,11 @@ You must indicate the target audience for your WhatsApp campaign. You can target
 
 You can create the target based on past user behavior and user properties or live (ongoing) user behavior. The latter is helpful to send out real-time, triggered campaigns.
 
-> 🚧 Delay > 24 Hours
->
-> We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
+<Callout icon="🚧" theme="warn">
+  ### Delay > 24 Hours
+
+  We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
+</Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes; the golden window within which most users transact on online platforms.
 
@@ -130,9 +132,11 @@ In certain cases, you may need to send a message to only a subset of the qualify
 
 A relevant use case is a limited offer where you want to send a fixed number of coupon codes you want to distribute. If the total reach for your campaign exceeds the number of coupon codes you can distribute, you can limit the number of users who will receive the message to exactly the number of coupons you want to distribute.
 
-> 📘 Campaign Limit
->
-> Ensure that you set up a limit of 100 or more, regardless of the qualified user segment size. If the limit specified is less than 100, an error occurs.
+<Callout icon="📘" theme="info">
+  ### Campaign Limit
+
+  Ensure that you set up a limit of 100 or more, regardless of the qualified user segment size. If the limit specified is less than 100, an error occurs.
+</Callout>
 
 ## WhatsApp Message Types
 
@@ -143,9 +147,11 @@ You can create the following types of messages in your WhatsApp campaign:
 - Split Delivery
 - By User Property
 
-> 📘 Legacy UI
->
-> A/B Test and Split Delivery message types are only available for new campaign UI.
+<Callout icon="📘" theme="info">
+  ### Legacy UI
+
+  A/B Test and Split Delivery message types are only available for new campaign UI.
+</Callout>
 
 ### Single Message
 
@@ -159,9 +165,11 @@ A/B testing helps you understand what type of message copy works best to get cli
 <Image src="https://files.readme.io/6139527-WhatsApp_AB_Test.png" alt="The image represents a sample distribution between two variants for A/B testing" align="center" caption="WhatsApp A/B Tests" border={true} />
 
 
-> 📘 Winning Variant
->
-> The variant that gets the most views is declared the winning variant and is automatically sent to the rest of your target audience.
+<Callout icon="📘" theme="info">
+  ### Winning Variant
+
+  The variant that gets the most views is declared the winning variant and is automatically sent to the rest of your target audience.
+</Callout>
 
 When you create multiple variants (max: 3 variants) for a campaign, you can also auto-copy the content present in the current variant. Further, let us understand A/B Test delivery for Live user segments.
 
@@ -169,9 +177,11 @@ When you create multiple variants (max: 3 variants) for a campaign, you can also
 
 With campaigns sent to live user segments (triggered campaigns), messages are delivered immediately when a user’s activity matches the criteria you have selected. For example, you can send a message when the user has completed a booking or purchase. Since it is not possible to determine the reach of triggered campaigns upfront, you need to decide how many total messages to send for A/B testing before a winner is declared.
 
-> 👍 Triggered Campaign Example
->
-> If you select 500 users as your test audience, we will alternate delivery of Variant A and Variant B as users qualify for the campaign. After a total of messages are sent (Variant A – 250 and Variant B – 250), we then decide the winner based on the number of views and continue only with this winning message for the duration of the campaign.
+<Callout icon="👍" theme="okay">
+  ### Triggered Campaign Example
+
+  If you select 500 users as your test audience, we will alternate delivery of Variant A and Variant B as users qualify for the campaign. After a total of messages are sent (Variant A – 250 and Variant B – 250), we then decide the winner based on the number of views and continue only with this winning message for the duration of the campaign.
+</Callout>
 
 Deciding on a test audience for A/B testing triggered campaigns requires some estimation. We recommend you check the total messages that were sent for similar triggered campaigns in the past to get a sense of how many users may qualify. If you select a test audience that is too small such as 25 users, you will get a statistically insignificant sample. If your test group size exceeds the total number of users who ultimately qualify for that campaign, then no winner will be declared and each message variant will be alternatively delivered for the duration of the campaign.
 
@@ -219,9 +229,11 @@ Fill in the details and click **Done**. For information about using WhatsApp edi
 
 Marketers utilizing Generic integration can leverage custom Key-Value pairs to transmit additional data within the message payload.
 
-> 🚧 Generic Integration Support
->
-> The Custom Key-Value feature support is currently supported for Generic WhatsApp Integrations.
+<Callout icon="🚧" theme="warn">
+  ### Generic Integration Support
+
+  The Custom Key-Value feature support is currently supported for Generic WhatsApp Integrations.
+</Callout>
 
 ### Preview & Test
 
@@ -229,9 +241,11 @@ Once you are all done setting up the content of your campaign in the _What_ sect
 
 ### Import Templates
 
-> 🚧 Template Import Limitations for External Providers
->
-> Importing templates is exclusive to CleverTap BSP, and for other providers, you must recreate templates separately within their interfaces.
+<Callout icon="🚧" theme="warn">
+  ### Template Import Limitations for External Providers
+
+  Importing templates is exclusive to CleverTap BSP, and for other providers, you must recreate templates separately within their interfaces.
+</Callout>
 
 You can also import templates when creating a new message.
 
@@ -245,16 +259,18 @@ You can also import templates when creating a new message.
 4. Click _Import_ to replace all the templates on your CleverTap dashboard.
 5. Click **Continue** to replace templates.  The CleverTap dashboard shows the new templates. Your previous templates are mailed to your email account.
 
-> 📘 Template Import Impact on Failing WhatsApp Campaigns
->
-> Importing templates will not automatically resolve errors or issues related to the existing WhatsApp campaigns or journeys. These campaigns and journeys will continue to fail until you manually update the imported template in the affected campaign's _What_ section.
->
-> To address campaign failures resulting from template-related errors, please follow the below steps:
->
-> 1. Identify the specific campaign or journey that is encountering the error.
-> 2. Access the _What_ section of the campaign or the specific journey node.
-> 3. Edit the campaign or journey and select the specific imported templates.
-> 4. Save and publish the changes, and check that the campaigns and journeys use the updated templates.
+<Callout icon="📘" theme="info">
+  ### Template Import Impact on Failing WhatsApp Campaigns
+
+  Importing templates will not automatically resolve errors or issues related to the existing WhatsApp campaigns or journeys. These campaigns and journeys will continue to fail until you manually update the imported template in the affected campaign's _What_ section.
+
+  To address campaign failures resulting from template-related errors, please follow the below steps:
+
+  1. Identify the specific campaign or journey that is encountering the error.
+  2. Access the _What_ section of the campaign or the specific journey node.
+  3. Edit the campaign or journey and select the specific imported templates.
+  4. Save and publish the changes, and check that the campaigns and journeys use the updated templates.
+</Callout>
 
 ### Quick Reply Button with Custom Payload
 
@@ -272,11 +288,13 @@ Add a custom payload. You can also [personalize](https://docs.clevertap.com/docs
 <Image src="https://files.readme.io/862aa69-small-quick_reply_button.png" alt="Add a Custom Payload" align="center" caption="Add a Custom Payload" border={true} />
 
 
-> 📘 Character Limit for Custom Payload
->
-> 🚧 Generic Integration Support
->
-> Check that your custom payload is under **128** characters to ensure deliverability. Although CleverTap does not restrict characters in a custom payload, WhatsApp limits it to 128 characters.
+<Callout icon="📘" theme="info">
+  ### Character Limit for Custom Payload
+
+  🚧 Generic Integration Support
+
+  Check that your custom payload is under **128** characters to ensure deliverability. Although CleverTap does not restrict characters in a custom payload, WhatsApp limits it to 128 characters.
+</Callout>
 
 For example, a bus service called ACME operates within a city. ACME wants to make it easy for regular passengers to confirm their daily bus rides. To do this, ACME sends reminder notifications in the evening and morning, matching each user's typical travel schedule.
 
@@ -307,9 +325,11 @@ When **Track Links** is enabled, CleverTap shortens your URLs using a default re
 
 To set up your branded domain, follow the steps in the [Branded Domain documentation](https://docs.clevertap.com/docs/branded-domain).
 
-> 📘 Note
->
-> If you send messages to Indian users, ensure your branded domain is also whitelisted on your DLT platform to comply with TRAI regulations.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  If you send messages to Indian users, ensure your branded domain is also whitelisted on your DLT platform to comply with TRAI regulations.
+</Callout>
 
 #### Key Points to Remember
 
@@ -374,11 +394,13 @@ Additionally, you can check the _Cut-Off_ checkbox to avoid sending messages to 
 
 #### Remove Duplicate Profiles
 
-> 📘 Private Beta
->
-> This feature is currently released in Private Beta. If you want to enable this feature for your account, contact  Customer Success Manager.
+<Callout icon="📘" theme="info">
+  ### Private Beta
 
-CleverTap offers the _Remove duplicate profiles_ option for for Past Behavior campaigns WhatsApp campaigns and Journey WhatsApp nodes to prevent sending the same WhatsApp message to multiple qualified user profiles that share the same phone number. When enabled, CleverTap sends the message to only one profile per unique phone number.
+  This feature is currently released in Private Beta. If you want to enable this feature for your account, contact  Customer Success Manager.
+</Callout>
+
+CleverTap offers the _Remove duplicate profiles_ option for Past Behavior WhatsApp campaigns to prevent sending the same WhatsApp message to multiple qualified user profiles that share the same phone number. When enabled, CleverTap sends the message to only one profile per unique phone number.
 
 
 <Image src="https://files.readme.io/6e2ce2ff522bc61a2fd94c35654ed4c92bc860f6a608a508401bccc01b6db096-Remove_Duplicate_Profiles.png" alt="Remove Duplicate Profiles" align="center" width="75% " caption="Remove Duplicate Profiles" border={true} />

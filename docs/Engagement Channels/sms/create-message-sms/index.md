@@ -52,9 +52,11 @@ You must indicate the target audience for your push campaign. You can target you
 
 You can also create the target based on past user behavior and user properties or live (ongoing) user behavior. the latter is useful to send out real-time, triggered SMS campaigns.
 
-> 🚧 Delay > 24 Hours
->
-> We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
+<Callout icon="🚧" theme="warn">
+  ### Delay > 24 Hours
+
+  We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
+</Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users when they add a product to their cart but do not finish transacting within 10 minutes.
 
@@ -90,9 +92,11 @@ Sometimes, you want to send a message to only a subset of the qualifying audienc
 
 A relevant use case is a limited offer where you want to send a fixed number of coupon codes you want to distribute. If the total reach for your campaign exceeds the number of coupon codes you can distribute, you can limit the number of users who will receive the message to precisely the number of coupons that you want to distribute.
 
-> 📘 Campaign Limit
->
-> Ensure that you set up a limit of 100 or more, regardless of the qualified user segment size. If the limit specified is less than 100, an error occurs.
+<Callout icon="📘" theme="info">
+  ### Campaign Limit
+
+  Ensure that you set up a limit of 100 or more, regardless of the qualified user segment size. If the limit specified is less than 100, an error occurs.
+</Callout>
 
 
 <Image src="https://files.readme.io/3aa9241-subset_image.png" alt="406" align="center" caption="Target Reach" border={true} />
@@ -123,9 +127,11 @@ The _Create SMS Notification_ window displays.
 
 For users targeted in India, you might be required to set up template IDs. For more information, refer to [SMS Regulations](https://docs.clevertap.com/docs/regulation-impact#future-campaigns).
 
-> ❗️ Template IDs
->
-> A template ID is required for the SMS campaigns targeted to Indian mobile numbers and having MSG-91 as the service provider. A template ID may or may not be required for other service providers. We recommend checking with your service provider.
+<Callout icon="❗️" theme="error">
+  ### Template IDs
+
+  A template ID is required for the SMS campaigns targeted to Indian mobile numbers and having MSG-91 as the service provider. A template ID may or may not be required for other service providers. We recommend checking with your service provider.
+</Callout>
 
 This section of the campaign creation flow depends on the SMS provider selected for the campaign.
 
@@ -188,9 +194,11 @@ Note that for A/B testing, we ensure there is always an equal number of messages
 
 With campaigns sent to live user segments (triggered campaigns), messages are delivered immediately when a user’s activity matches your selected criteria. For example, you can send a message when the user has completed a booking or purchase. Since it is not possible to determine the reach of triggered campaigns upfront, you need to decide how many total messages to send for A/B testing before a winner is declared.
 
-> 👍 Triggered Campaign Example
->
-> If you select 500 users as your test audience, we will alternate delivery of Variant A and Variant B as users qualify for the campaign. After all the messages are sent (Variant A – 250 and Variant B – 250), we then decide the winner based on the number of clicks and continue only with this winning message for the duration of the campaign.
+<Callout icon="👍" theme="okay">
+  ### Triggered Campaign Example
+
+  If you select 500 users as your test audience, we will alternate delivery of Variant A and Variant B as users qualify for the campaign. After all the messages are sent (Variant A – 250 and Variant B – 250), we then decide the winner based on the number of clicks and continue only with this winning message for the duration of the campaign.
+</Callout>
 
 Deciding on a test audience for A/B testing triggered campaigns requires some estimation. We recommend you check the total messages that were sent for similar triggered campaigns in the past to get a sense of how many users may qualify. If you select a test audience that is too small such as 25 users, you will get a statistically insignificant sample. If your test group size exceeds the total number of users who ultimately qualify for that campaign, then no winner will be declared, and each message variant will be alternatively delivered for the duration of the campaign.
 
@@ -228,9 +236,11 @@ Live campaigns can be set up for a specific event:
 <Image src="https://files.readme.io/8ca1af6-Push_notification_editor_when.png" alt="978" align="center" caption="Define - When" border={true} />
 
 
-> 📘 Recurring Day
->
-> If you specify a recurring day for a campaign such as the 7th of each month, then the campaign will start for the specified day and ignore the creation date. This is a precaution to avoid sending a campaign unintentionally on a prior date.
+<Callout icon="📘" theme="info">
+  ### Recurring Day
+
+  If you specify a recurring day for a campaign such as the 7th of each month, then the campaign will start for the specified day and ignore the creation date. This is a precaution to avoid sending a campaign unintentionally on a prior date.
+</Callout>
 
 ### Delivery preferences
 
@@ -248,11 +258,13 @@ Since past behavior campaigns can have scheduled times, you have the option to s
 
 #### Remove Duplicate Profiles
 
-> 📘 Private Beta
->
-> This feature is currently released in Private Beta. If you want to enable this feature for your account, contact  Customer Success Manager.
+<Callout icon="📘" theme="info">
+  ### Private Beta
 
-CleverTap offers the _Remove duplicate profiles_ option for for Past Behavior campaigns SMS campaigns and Journey SMS nodes to prevent sending the same SMS to multiple qualified user profiles that share the same phone number. When enabled, CleverTap sends the message to only one profile per unique phone number.
+  This feature is currently released in Private Beta. If you want to enable this feature for your account, contact  Customer Success Manager.
+</Callout>
+
+CleverTap offers the _Remove duplicate profiles_ option for Past Behavior SMS campaigns to prevent sending the same SMS to multiple qualified user profiles that share the same phone number. When enabled, CleverTap sends the message to only one profile per unique phone number.
 
 
 <Image src="https://files.readme.io/6e2ce2ff522bc61a2fd94c35654ed4c92bc860f6a608a508401bccc01b6db096-Remove_Duplicate_Profiles.png" alt="Remove Duplicate Profiles" align="center" width="75% " caption="Remove Duplicate Profiles" border={true} />
@@ -276,15 +288,19 @@ After previewing the appearance of your overall campaign, finalize your campaign
 
 This feature helps users track the clicks on each URL included in their SMS campaign. These stats are available under the _Campaigns_ > _Stats_ page. In case of multiple URLs in the same message, the click distribution data is also available under the split of clicks tab under the campaign stats page. For more information, refer to the [Split of Clicks](doc:sms-stats#split-of-clicks) section.
 
-> 📘 TRAI Mandate
->
-> As per the latest TRAI directive, only whitelisted URLs are allowed in SMS messages sent to Indian users. To continue using the SMS Click Tracking feature, whitelist CleverTap's tracking domains on your DLT platform. Failure to do so may lead to delivery errors.
+<Callout icon="📘" theme="info">
+  ### TRAI Mandate
+
+  As per the latest TRAI directive, only whitelisted URLs are allowed in SMS messages sent to Indian users. To continue using the SMS Click Tracking feature, whitelist CleverTap's tracking domains on your DLT platform. Failure to do so may lead to delivery errors.
+</Callout>
 
 ## Link Shortening
 
 This feature allows you to shorten the URLs present in your message. When a link is present in your message, the _Short URL_ section displays below the _Message_ section. This section shows the list of all the URLs present in your message. You can select the URLs you want to shorten if your message body includes one or more URLs.
 
-> 📘 URL Shortening TRAI Regulation
+<Callout icon="📘" theme="info">
+  ### URL Shortening TRAI Regulation
+</Callout>
 
 
 <Image src="https://files.readme.io/5c3dc07-Shorten_URLs_in_the_Message.gif" alt="Shorten URLs Included in the Message" align="center" caption="Shorten URLs Included in the Message" border={true} />
@@ -292,13 +308,17 @@ This feature allows you to shorten the URLs present in your message. When a link
 
 In cases where the message body is empty and the providers use only template IDs, the URLs are not shortened and are sent as is.
 
-> 📘 Character Consumption
->
-> Each shortened URL may consume between 14-20 characters.
+<Callout icon="📘" theme="info">
+  ### Character Consumption
 
-> 📘 Number of URLs to Shorten
->
-> You can shorten a maximum of **five URLs** in one message. In the case of Message by user property, you can shorten a maximum of **five URLs**  per message variant.
+  Each shortened URL may consume between 14-20 characters.
+</Callout>
+
+<Callout icon="📘" theme="info">
+  ### Number of URLs to Shorten
+
+  You can shorten a maximum of **five URLs** in one message. In the case of Message by user property, you can shorten a maximum of **five URLs**  per message variant.
+</Callout>
 
 ## Domains
 
@@ -323,9 +343,11 @@ CleverTap provides the capability to use your own branded domain for link shorte
 
 To set up a branded domain, you need to configure DNS settings and SSL certificates to ensure secure and reliable link tracking. Detailed instructions on setting up and managing your branded domain can be found in the [Branded Domain documentation](doc:branded-domain).
 
-> 📘 TRAI Regulation
->
-> If you are sending SMS messages to users in India, ensure that your branded domain is whitelisted on your Distributed Ledger Technology (DLT) platform, in compliance with the Telecom Regulatory Authority of India (TRAI) regulations. Failure to do so may result in message delivery failures.
+<Callout icon="📘" theme="info">
+  ### TRAI Regulation
+
+  If you are sending SMS messages to users in India, ensure that your branded domain is whitelisted on your Distributed Ledger Technology (DLT) platform, in compliance with the Telecom Regulatory Authority of India (TRAI) regulations. Failure to do so may result in message delivery failures.
+</Callout>
 
 # FAQs
 

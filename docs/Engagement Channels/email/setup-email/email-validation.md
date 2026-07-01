@@ -60,7 +60,7 @@ Each validation run is a discrete job that processes a list of email addresses a
 3. (Optional) Add a Description to provide more context about the validation.
 4. Select Email source:
 
-   - **CSV**: Before you begin, upload your CSV file to the CSV Uploads section. Once uploaded, it will appear in the list of available CSVs when creating a validation, and you can select it. For more information, refer to [CSV Uploads](https://staging.docs.dev.clevertap.net/docs/).
+   - **CSV**: Before you begin, upload your CSV file to the CSV Uploads section. Once uploaded, it will appear in the list of available CSVs when creating a validation, and you can select it. For more information, refer to [CSV Uploads](doc:csv-upload).
    - **Segment**: Search for and select a saved CleverTap segment from the dropdown. The current user count for the segment at the time of validation is shown.
 
 

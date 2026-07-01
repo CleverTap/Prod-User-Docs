@@ -212,6 +212,8 @@ The summary panel at the top shows a count of email addresses across each catego
 
 After reviewing the validation report, you can unsubscribe selected email categories from the email campaigns by clicking **Apply Changes**.
 
+Unsubscribing from this screen cannot be undone. Once applied, this action permanently unsubscribes the affected user profiles from email communication. Before clicking Apply Changes, review your selection.
+
 
 <Image src="https://files.readme.io/022bf6afb0167fadc4fdef329e265063f43a4b46c50294ae9068cd16c6724d97-Unsubscribe_Selected_Email_Categories.png" align="center" caption="Unsubscribe Selected Email Categories from Email Campaigns" border={true} />
 

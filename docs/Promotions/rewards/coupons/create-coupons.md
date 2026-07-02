@@ -84,7 +84,7 @@ You can preview how the coupon will appear in the user’s coupon tray.
 <Callout icon="📘" theme="info">
   ### Coupon Preview
 
-  The preview panel on the right provides a visual representation of how the coupon will appear in the user’s coupon tray. This is only a sample and may not reflect the exact in-app appearance. To customize the tray layout, refer to [Fetch Coupon API](https://developer.clevertap.com/fetch-coupon).
+  The preview panel on the right provides a visual representation of how the coupon will appear in the user’s coupon tray. This is only a sample and may not reflect the exact in-app appearance. To customize the tray layout, refer to [Fetch Coupon API](https://developer.clevertap.com/docs/fetch-coupon).
 </Callout>
 
 ### Reward

@@ -155,7 +155,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## June
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="security-project-settings" id="starget-and-personalize-by-locale-and-language-user-properties">
+<div class="release-note article" data-category="security-project-settings" id="target-and-personalize-by-locale-and-language-user-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#target-and-personalize-by-locale-and-language-user-properties"><i class="fa-light fa-anchor"></i></a>

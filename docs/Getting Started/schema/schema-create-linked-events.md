@@ -81,9 +81,11 @@ The data retention policy (DRP) retains an event for the specified time before d
 2. From the System Events tab, click the ellipsis on the event row and click **Set DRP**.
 3. Select _Custom_, then enter your specific time limit.
 
-> 📘 CleverTap Basic Plan Limit
->
-> The default DRP for CleverTap Basic Plan users is one year, which cannot be changed.
+<Callout icon="📘" theme="info">
+  ### CleverTap Basic Plan Limit
+
+  The default DRP for CleverTap Basic Plan users is one year, which cannot be changed.
+</Callout>
 
 4. Click **Save**.
 
@@ -111,9 +113,11 @@ After an event is removed:
 
 You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
-> ❗️ Caution When Discarding an Event
->
-> You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
+<Callout icon="❗️" theme="error">
+  ### Caution When Discarding an Event
+
+  You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
+</Callout>
 
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
@@ -148,11 +152,13 @@ To publish the events, perform the following:
 | Created on         | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Description        | The description of the event property. You can set the description from the ellipsis menu on the event property row. The property is optional. The event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-> 📘 Effect of Changing the Data Type of an Event or User Property
->
-> - If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
-> - The values already present in the old data type will not change in the new data type.
-> - For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
+<Callout icon="📘" theme="info">
+  ### Effect of Changing the Data Type of an Event or User Property
+
+  - If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
+  - The values already present in the old data type will not change in the new data type.
+  - For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
+</Callout>
 
 ## Add Event Property
 
@@ -203,9 +209,11 @@ You can discard a published event property from the schema. You can still see th
 <Image src="https://files.readme.io/40172c7-Discard_event_property.png" alt="531" align="center" width="80%" border={true} />
 
 
-> ❗️ Caution When Discarding an Event Property
->
-> Exercise extreme caution when discarding an event property. This action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event property. It also drops any future incoming event property with the same name.
+<Callout icon="❗️" theme="error">
+  ### Caution When Discarding an Event Property
+
+  Exercise extreme caution when discarding an event property. This action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event property. It also drops any future incoming event property with the same name.
+</Callout>
 
 # User Properties
 
@@ -273,19 +281,23 @@ You can discard a published user property from the schema. You can still see the
 <Image src="https://files.readme.io/d75580c-Discard_User_Property.png" alt="525" align="center" width="80%" border={true} />
 
 
-> ❗️ Caution When Discarding a User Property
->
-> Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
+<Callout icon="❗️" theme="error">
+  ### Caution When Discarding a User Property
+
+  Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
+</Callout>
 
 ## Create Linked Event for User Property
 
 You can link an event with a user property. This allows you to trigger campaigns, conversions, and exits based on changes in user properties. For example, a gaming app has a user property named `Game Level` that represents a user's progress in the game. You can link an event named `Game Level Upgraded` to the `Game Level`  user property. By doing so, any change in this property to a higher level will activate a campaign. The campaign will congratulate the users and grant them a reward or a unique power corresponding to their achievement.
 
-> 📘 Key Points to Remember
->
-> - This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
-> - For In-App, CleverTap SDK v7.0.0 or higher is required.
-> - User property updates via Journeys are not supported for this feature.
+<Callout icon="📘" theme="info">
+  ### Key Points to Remember
+
+  - This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
+  - For In-App, CleverTap SDK v7.0.0 or higher is required.
+  - User property updates via Journeys are not supported for this feature.
+</Callout>
 
 To link an event with a user property:
 
@@ -297,9 +309,11 @@ To link an event with a user property:
 <Image src="https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif" alt="Create Associated Event" align="center" border={true} />
 
 
-> 📘 **Note**
->
-> The linked events are raised as custom events and contribute to MAU and DP usage, similar to any other custom event.
+<Callout icon="📘" theme="info">
+  ### **Note**
+
+  The linked events are raised as custom events and contribute to MAU and DP usage, similar to any other custom event.
+</Callout>
 
 ### Create Linked Events in Bulk
 
@@ -332,23 +346,25 @@ To discard linked events:
 <Image src="https://files.readme.io/5980787-Discard_Linked_Event.gif" alt="Discard a Linked Event" align="center" border={true} />
 
 
-> 📘 Key Points to Remember
->
-> The following are the key points to consider when creating linked events:
->
-> - You can link only one event with a user property.
-> - You can link events only on active properties.
-> - You cannot create a linked event with the same name as a system event.
-> - Discarding a linked event from the user property:
->   - Delinks the event and the user property.
->   - Stops receiving additional data associated with the user property.
->   - Does not delete any data.
+<Callout icon="📘" theme="info">
+  ### Key Points to Remember
+
+  The following are the key points to consider when creating linked events:
+
+  - You can link only one event with a user property.
+  - You can link events only on active properties.
+  - You cannot create a linked event with the same name as a system event.
+  - Discarding a linked event from the user property:
+    - Delinks the event and the user property.
+    - Stops receiving additional data associated with the user property.
+    - Does not delete any data.
+</Callout>
 
 # System User Properties: Locale and Language
 
 CleverTap captures and provides specific user preferences from the device's operating system as system user properties. Locale and language reflect the user's regional and language settings. These settings are configured at the OS level, enabling you to deliver localized user experiences without additional implementation or custom attributes.
 
-For example, when a user sets up a device and selects a preferred language or region, the SDK automatically reads this information and attaches it to the user's events.  CleverTap's predefined system user properties have a `ct_` prefix, for example `ct_locale` and `ct_language` .
+For example, when a user sets up a device and selects a preferred language or region, the SDK automatically reads this information and attaches it to the user's events.  CleverTap's predefined system user properties have a `CT` prefix, for example `CT Locale` and `CT Language`.
 
 ## Captured Properties
 
@@ -356,8 +372,8 @@ The SDK captures the following properties on supported platforms, including Andr
 
 | Property      | Description                                                           |
 | ------------- | --------------------------------------------------------------------- |
-| `ct_locale`   | Represents the user's regional setting, for example `en_US`, `en_GB`. |
-| `ct_language` | Represents the user's language preference, for example `en`, `fr`.    |
+| `CT Locale`   | Represents the user's regional setting, for example `en_US`, `en_GB`. |
+| `CT Language` | Represents the user's language preference, for example `en`, `fr`.    |
 
 These values are captured directly from the device operating system and follow standard formats:
 
@@ -395,11 +411,11 @@ The following image shows locale and language in the Segment Builder:
 
 ## Verify Capture
 
-To confirm that locale and language are captured for a user, navigate to that user's [_User Profile_ ](doc:user-profiles)page. The `ct_locale` and `ct_language` properties appear under System Properties if the SDK has reported them. If these properties are absent, verify that the device is running a supported SDK version and that the app has been launched at least once after the SDK is initialized.
+To confirm that locale and language are captured for a user, navigate to that user's [_User Profile_ ](doc:user-profiles)page. The `CT Locale` and `CT Language` properties appear under System Properties if the SDK has reported them. If these properties are absent, verify that the device is running a supported SDK version and that the app has been launched at least once after the SDK is initialized.
 
 ## Use Locale and Language in Campaigns
 
-You can target users by locale or language preferences when creating campaigns. Targeting  `ct_locale` lets you reach users in a specific region regardless of their language settings. Targeting  `ct_language` lets you reach users who share a language regardless of their region. Using both together lets you narrow targeting to a specific language within a specific region.
+You can target users by locale or language preferences when creating campaigns. Targeting  `CT Locale` lets you reach users in a specific region regardless of their language settings. Targeting  `CT Language` lets you reach users who share a language regardless of their region. Using both together lets you narrow targeting to a specific language within a specific region.
 
 To use a locale or a language in a campaign:
 
@@ -412,9 +428,11 @@ This allows you to send messages in different languages within a single campaign
 
 For example, users with `ct_language` set to `en` receive the message in English, and users with `ct_language` set to `fr` receive the same message in French.
 
-> 📘 Multi-Device Behavior
->
-> If a user uses multiple devices with different language or locale settings, CleverTap stores the value from the most recently active device. For example, if a user switches from a device set to `en_US` to a device set to `fr_FR` and opens the app, the profile updates to reflect `fr_FR`. This means the user profile always reflects the most recent locale and language information, and campaign targeting applies the updated value going forward.
+<Callout icon="📘" theme="info">
+  ### Multi-Device Behavior
+
+  If a user uses multiple devices with different language or locale settings, CleverTap stores the value from the most recently active device. For example, if a user switches from a device set to `en_US` to a device set to `fr_FR` and opens the app, the profile updates to reflect `fr_FR`. This means the user profile always reflects the most recent locale and language information, and campaign targeting applies the updated value going forward.
+</Callout>
 
 ## Use Locale and Language in Personalization
 
@@ -497,14 +515,16 @@ To disable the tracking of Push Impression event properties:
 
 3. Click **Disable** to confirm your action. The _Property tracking successfully disabled_ message displays on the screen. The status of the event property changes to _Active_. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
 
-> 📘 Key Points to Remember
->
-> The following are some of the points to consider when configuring the _Push Impressions_ event:
->
-> - The event property tracking feature is not available for required properties.
-> - The **Status** is always _Active_ for mandatory properties.
-> - The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
-> - For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
+<Callout icon="📘" theme="info">
+  ### Key Points to Remember
+
+  The following are some of the points to consider when configuring the _Push Impressions_ event:
+
+  - The event property tracking feature is not available for required properties.
+  - The **Status** is always _Active_ for mandatory properties.
+  - The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
+  - For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
+</Callout>
 
 </details>
 
@@ -516,9 +536,11 @@ This is a web entry event similar to the App launched event. This event refers t
 - When a user opens a webpage.
 - When a user reloads the browser after 20 minutes of inactivity.
 
-> 📘 Default Behavior
->
-> This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
+<Callout icon="📘" theme="info">
+  ### Default Behavior
+
+  This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
+</Callout>
 
 </details>
 
@@ -527,15 +549,19 @@ This is a web entry event similar to the App launched event. This event refers t
 
 The _UTM Visited_ event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
 
-> 📘 Deault Behavior
->
-> The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of UTM Visited remains as is. However, they have the capability to enable or disable the same.
+<Callout icon="📘" theme="info">
+  ### Deault Behavior
+
+  The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of UTM Visited remains as is. However, they have the capability to enable or disable the same.
+</Callout>
 
 </details>
 
-> 📘 Configuring Other System Events
->
-> For the remaining system events, you can only change the DRP.
+<Callout icon="📘" theme="info">
+  ### Configuring Other System Events
+
+  For the remaining system events, you can only change the DRP.
+</Callout>
 
 # Conversion Event
 

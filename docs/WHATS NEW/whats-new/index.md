@@ -155,6 +155,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## June
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="segments" id="edit-past-behavior-segments">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#edit-past-behavior-segments"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/04fe24c1114cef41af4a4e0224cab88f5be4c31160eca491d67942c689cb79c0-Segmentation.svg" alt="Segments" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Edit Past Behavior Segments</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now edit existing Past Behavior Segments directly in CleverTap.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Edit Past Behavior Segments without cloning or recreating them.</li>
+        <li>Modify event conditions, filters, time windows, or user properties seamlessly.</li>
+        <li>Maintain segment consistency across campaigns, journeys, and workflows using shared segments for segment membership.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/edit-segments" target="_blank">Edit Segments</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="target-and-personalize-by-locale-and-language-user-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">

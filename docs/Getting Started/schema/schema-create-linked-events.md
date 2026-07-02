@@ -382,7 +382,7 @@ These values are captured directly from the device operating system and follow s
 
 CleverTap stores these values exactly as received from the OS, without any normalization or transformation. This means the casing and format of the value depend on what the OS reports, and may vary across device manufacturers or OS versions.
 
-These properties are captured during the first app launch and updated in every subsequent session if the OS-reported value changes.
+The locale and language values are read from the device OS on every app launch. Within a single session, the values remain fixed even if the device language is changed mid-session. The updated value is reflected only on the next app launch. CleverTap updates the user profile with these values on every event, not only when the value changes.
 
 If the OS does not provide a value for either property, the property is absent from the user profile and is not set to null. Segments or Campaigns filtered by these properties will not match users who lack them.
 

@@ -11,25 +11,26 @@ metadata:
 ---
 # Overview
 
-MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.  
-For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
+MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.<br />For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
 
 <Callout icon="📘" theme="info">
+  ### Access
+
   All tools require Admin access on the target CleverTap project.
 </Callout>
 
 The following table lists all available tool categories and the tools within each category:
 
-| Category                                                                   | Tools                                                                                                             |
-| :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                                                   |
-| [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events                    |
-| [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                                            |
-| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Create Segment, Relevant Segments                                                      |
-| [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft                               |
-| [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                                                |
-| [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                                      |
-| [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates, Delete Email Templates |
+| Category                                                                   | Tools                                                                                          |
+| :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                                |
+| [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events |
+| [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                         |
+| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Create Segment, Relevant Segments                                   |
+| [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft            |
+| [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                             |
+| [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                   |
+| [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates      |
 
 # Account Management
 
@@ -70,7 +71,7 @@ The following table shows the tools available for managing user segments. Segmen
 | List Segment      | Returns a list of all segments defined in the CleverTap account, with names and basic metadata.                                                                                                                                                                   |
 | Get Segment       | Retrieves detailed information about a specific segment, including its definition criteria, estimated reach, and trend data.                                                                                                                                      |
 | Create Segment    | Creates a new user segment based on a natural-language description of the target audience. For example: Create a segment of users who purchased more than 3 times in the last 90 days. **Current Support:** Only for Admin users and Past Behavior Segment (PBS). |
-| Relevant Segments | Identifies the most relevant existing segments from the user's natural language prompt. It helps users avoid manually browsing through all available segments.                                                                                                    |
+| Relevant Segments | Identifies the most relevant existing segments in the user's natural-language prompt. It helps users avoid manually browsing through all available segments.                                                                                                      |
 
 # Campaigns
 
@@ -94,15 +95,6 @@ The following table lists the tools available for viewing and reporting on Journ
 | List Journeys       | Returns a list of all Journeys configured in the CleverTap account, including journey names and statuses. For example: List all active Journeys in my account. |
 | Get Journey Reports | Fetches a detailed performance report for a specific Journey by its ID, including engagement metrics.                                                          |
 
-# Querying
-
-The following table lists the tools available for natural-language querying, including CQL generation and in-interface product Q&A:
-
-| Tool / Function | Description                                                                                                                                                                                                                                                             |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prompt To CQL   | Converts a natural-language query into a valid CleverTap Query Language (CQL) expression, enabling AI-assisted construction of complex data queries without writing CQL manually. For example: Convert users who did `App Launched` but not `Charged` in 7 days to CQL. |
-| Ask CleverTap   | Answers natural-language questions about CleverTap's product, features, best practices, and documentation. Powered by the CleverTap AI knowledge base.                                                                                                                  |
-
 # Templates
 
 The following table lists the tools available for managing email templates. Delete operations are restricted to templates created by the authenticated user:
@@ -115,7 +107,9 @@ The following table lists the tools available for managing email templates. Dele
 | Get Email Templates    | Retrieves the full details of a specific email template by its ID, including the complete HTML body and configuration.                                                |
 
 <Callout icon="📘" theme="info">
-  **Support and Feedback**
+  ### **Support and Feedback**
 
   For questions, issues, or feedback, contact your CleverTap Customer Success Manager.
 </Callout>
+
+<br />

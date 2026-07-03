@@ -198,7 +198,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
   </div>
 
   <div class="release-note-body">
-    <p>You can now target, segment, and personalize campaigns using locale and language preferences captured directly from the device OS.</p>
+    <p>CleverTap now automatically captures locale and language preferences from the device OS, so you can target, segment, and personalize campaigns without maintaining separate user attributes.</p>
     <p>With this enhancement, you can:</p>
     <p>
       <ul>

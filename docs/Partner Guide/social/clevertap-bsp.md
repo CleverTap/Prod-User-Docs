@@ -22,18 +22,22 @@ Listed below are the prerequisites to get started with WhatsApp onboarding with 
 
 For non-verified pages, businesses can still have restricted access for up to 30 days.
 
-> 🚧 Admin Access
->
-> It is mandatory for the user proceeding with the WhatsApp onboarding on CleverTap to have admin access to the Facebook Business Manager page.
+<Callout icon="🚧" theme="warn">
+  ### Admin Access
+
+  It is mandatory for the user proceeding with the WhatsApp onboarding on CleverTap to have admin access to the Facebook Business Manager page.
+</Callout>
 
 - Ensure you provide a dedicated WhatsApp number for long-term use, as this number can not be changed later. This number must be a new number and should not be active on personal WhatsApp or Business WhatsApp applications.
 - Ensure that your WhatsApp number is active, as you will receive an OTP for verification during the onboarding process.
 - While onboarding, ensure that you enter your display name the same as the one used on the Facebook business manager page (also known as the legal name). If the display name doesn't match the business name, you must provide a web URL showing proof of association in the header/footer.
 - Lastly, ensure that your business meets Facebook's [commerce policy](https://www.facebook.com/policies_center/commerce/).
 
-> ❗️ Unique WhatsApp Number
->
-> You must use a distinct WhatsApp number for each CleverTap project.
+<Callout icon="❗️" theme="error">
+  ### Unique WhatsApp Number
+
+  You must use a distinct WhatsApp number for each CleverTap project.
+</Callout>
 
 ## Integrate WhatsApp using CleverTap BSP
 
@@ -58,20 +62,24 @@ After completing the registration, your business is reviewed within 24 hours for
 
 7. Click **Save and Complete Setup**
 
-> 📘 Note
->
-> After completing the WhatsApp onboarding process, businesses can immediately:
->
-> - Send business-initiated conversations to 250 unique customers in a rolling 24-hour period.
-> - Register up to two phone numbers until the WABA display name is approved. Once the display name is approved you can add up to 50 numbers.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  After completing the WhatsApp onboarding process, businesses can immediately:
+
+  - Send business-initiated conversations to 250 unique customers in a rolling 24-hour period.
+  - Register up to two phone numbers until the WABA display name is approved. Once the display name is approved you can add up to 50 numbers.
+</Callout>
 
 ## Configure WhatsApp Username
 
 WhatsApp supports usernames, an optional feature introduced by Meta that allows businesses to be identified by a unique handle in addition to their phone number. Businesses can configure a username directly from the _Mobile Number_ tab in CleverTap.
 
-> 📘 **Note**
->
-> This feature is available only for CleverTap BSP providers. It is not available for Gupshup, Nexmo, Generic WhatsApp, or archived providers.
+<Callout icon="📘" theme="info">
+  ### **Note**
+
+  This feature is available only for CleverTap BSP providers. It is not available for Gupshup, Nexmo, Generic WhatsApp, or archived providers.
+</Callout>
 
 ### Prerequisites
 
@@ -101,7 +109,7 @@ To configure a username for your WhatsApp number:
 5. Enter your desired username in the _Username_ field, or select one from the _Reserved Usernames_ suggestions to pre-fill the field.&#x20;
 
 
-   <Image src="https://files.readme.io/224c8412bc76a3c4314df5257d1609d08e182739732cfdc1f67e63cfc91ce148-configure_username.png" align="left" width="65%" caption="Add Username" border={true} />
+   <Image src="https://files.readme.io/224c8412bc76a3c4314df5257d1609d08e182739732cfdc1f67e63cfc91ce148-configure_username.png" align="center" width="65%" caption="Add Username" border={true} />
 
 
 6. Click **Save**.
@@ -118,9 +126,11 @@ The _Configure Username_ modal displays a list of username suggestions generated
 
 The _Force Update Username_ checkbox applies in a specific scenario: if a username you want to configure is already assigned to another phone number within the same WhatsApp Business Account, selecting this checkbox transfers the username from that number to the current one.
 
-> ⚠️ **Warning**
->
-> Using **Force Update Username** removes the username from the phone number it is currently assigned to. Ensure that the affected number no longer requires that username before proceeding.
+<Callout icon="⚠️" theme="warn">
+  ### **Warning**
+
+  Using **Force Update Username** removes the username from the phone number it is currently assigned to. Ensure that the affected number no longer requires that username before proceeding.
+</Callout>
 
 ### Username Status
 
@@ -173,9 +183,11 @@ If you have trouble creating message templates from your CleverTap account, you 
 
 4. Select the Category, Name, and Language :
    - _Category_: Select the type of template you want to create. You can hover over the template types to view details for each template.
-     > 📘 Unsupported Template Categories
-     >
-     > The **Marketing (Product Messages)** and **Authentication templates** are not supported. We recommend not creating these templates in the WhatsApp Manager Account as they can cause compatibility issues.
+     <Callout icon="📘" theme="info">
+       ### Unsupported Template Categories
+
+       The **Marketing (Product Messages)** and **Authentication templates** are not supported. We recommend not creating these templates in the WhatsApp Manager Account as they can cause compatibility issues.
+     </Callout>
    - _Name_: Enter the template's name in lowercase letters, numbers, and underscores only.
    - _Language_: Select the languages for your message template. You can delete or add more languages in the next step.
 5. Click **Continue** after filling up all the required details.
@@ -194,17 +206,19 @@ If you have trouble creating message templates from your CleverTap account, you 
     - For static redirection URLs, enter the complete URL for redirection (for example, [https://www.example.com/gp/bestsellers](https://www.example.com/gp/bestsellers)).
     - For dynamic redirection URLs, enter the domain of the URL along with a variable (for example, [https://www.example.com/{{1}}](https://www.example.com/{{1}})).
 
-> 📘 Tracking Clicks With _Visit Website_ CTAs
->
-> To track clicks in the CTA, we recommend selecting dynamic URLs. Use the following URLs as the Website URL based on your CleverTap account region:
->
-> EU1:[https://ct1.io/{{1}}](https://ct1.io/{{1}})
->
-> IN1: [https://ct3.io/{{1}}](https://ct3.io/{{1}})
->
-> SG1: [https://ct4.io/{{1}}](https://ct4.io/{{1}})
->
-> US1: [https://ct5.io/{{1}}](https://ct5.io/{{1}})
+<Callout icon="📘" theme="info">
+  ### Tracking Clicks With _Visit Website_ CTAs
+
+  To track clicks in the CTA, we recommend selecting dynamic URLs. Use the following URLs as the Website URL based on your CleverTap account region:
+
+  EU1:[https://ct1.io/{{1}}](https://ct1.io/{{1}})
+
+  IN1: [https://ct3.io/{{1}}](https://ct3.io/{{1}})
+
+  SG1: [https://ct4.io/{{1}}](https://ct4.io/{{1}})
+
+  US1: [https://ct5.io/{{1}}](https://ct5.io/{{1}})
+</Callout>
 
 - **Quick Reply Buttons:**
   - Quick Reply buttons allow the users to choose from predefined response options. For more information about Quick Reply buttons, refer to [WhatsApp Quick Replies](https://faq.whatsapp.com/1791149784551042/?helpref=uf_share).
@@ -212,17 +226,21 @@ If you have trouble creating message templates from your CleverTap account, you 
 
 8. (Optional) Click **Add Sample** to add an optional content example for your template. This helps in understanding the type of message you want to send during the review and approval process.
 
-> ❗️ Sample Content for Template
->
-> Ensure that the sample content that you add does not include any actual user or customer information.
+<Callout icon="❗️" theme="error">
+  ### Sample Content for Template
+
+  Ensure that the sample content that you add does not include any actual user or customer information.
+</Callout>
 
 9. Click **Submit**.
 
 Your template is now sent for review. The status of your template is visible under _Message templates_. After your message is approved, you can copy the message template and paste it into the CleverTap dashboard. To learn more about the template creation process, refer to this [detailed document](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343) by Facebook.
 
-> 📘 Pre-Approved Message Templates
->
-> Facebook offers some pre-approved WhatsApp message templates for testing. You can use these templates in the CleverTap dashboard to start sending test messages as soon as you complete WhatsApp onboarding.
+<Callout icon="📘" theme="info">
+  ### Pre-Approved Message Templates
+
+  Facebook offers some pre-approved WhatsApp message templates for testing. You can use these templates in the CleverTap dashboard to start sending test messages as soon as you complete WhatsApp onboarding.
+</Callout>
 
 ## FAQs
 

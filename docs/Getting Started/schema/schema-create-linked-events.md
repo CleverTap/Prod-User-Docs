@@ -377,8 +377,8 @@ The SDK captures the following properties on supported platforms, including Andr
 
 These values are captured directly from the device operating system and follow standard formats:
 
-- Language follows [ISO 639](), the international standard for two-letter language codes, for example `en` for English, `fr` for French.
-- Region (locale) follows [ISO 3166](), the international standard for two-letter country codes, for example `US` for the United States, `GB` for the United Kingdom.
+- Language follows ISO 639, the international standard for two-letter language codes, for example `en` for English, `fr` for French.
+- Region (locale) follows ISO 3166, the international standard for two-letter country codes, for example `US` for the United States, `GB` for the United Kingdom.
 
 CleverTap stores these values exactly as received from the OS, without any normalization or transformation. This means the casing and format of the value depend on what the OS reports, and may vary across device manufacturers or OS versions.
 

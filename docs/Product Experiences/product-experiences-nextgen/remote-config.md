@@ -44,8 +44,6 @@ Each variable requires the following information:
 - Description (optional)
 - Value (required)
 
-The variable name is fixed once the variable is created, but you can update the description at any time. For more information, see [Edit a Variable Description.](<doc: remote-config#edit-a-variable-description>) (@murtaza please check)
-
 Variables created through the interface do not have a _default value,_ as do variables synced from code. This means that the value you set in the Dashboard is applied to all users immediately.
 
 To create a Remote Config Variable, go to _Product Experiences > Remote Config_. Click **Add** to add a variable.
@@ -87,86 +85,7 @@ In your app's code, any functionality defined as a variable has a default value 
 
 The following sections provide information about defining and updating a variable value for a particular segment.
 
-# Manage Remote Config Variables
-
-(Review this entire section @murtaza)
-
-After a variable is created, you can update its description or remove it from the dashboard when it is no longer in use.
-
-## Edit a Variable Description
-
-You can update a variable's description at any time. This is useful when the purpose of a variable changes over time, or when the original description needs more clarity for teammates who join later.
-
-To edit a variable description:
-
-1. Select the required variable from the variable list on the _Remote Config_ page.
-2. Open the variable's edit option and update the text in the **Description** field.
-
-
-<Image src="https://files.readme.io/1306db048642c8ecb4d9c7b2226a59c50eaa264b48894cd74ac2ce75f4d6567e-image.png" alt="Edit a variable description" align="center" caption="Edit Variable Description" border={true} />
-
-
-3. Save your changes.
-
-<Callout icon="📘" theme="info">
-  ### Note
-
-  Only the description can be edited. The variable name (key) remains fixed, because changing the key would affect your App integration with CleverTap.
-</Callout>
-
-## Delete a Variable
-
-You can delete variables that are no longer needed directly from the dashboard. Removing unused variables keeps your Remote Config workspace organized and prevents deprecated variables from being selected by mistake when you set up new experiments.
-
-To delete a variable:
-
-1. Go to _Product Experiences_> _Remote Config_.&#x20;
-2. Select the required variable from the variable list on the _Remote Config_ page.
-3. Open the variable's options and click **Delete**.
-
-
-<Image src="https://files.readme.io/3b291116649bafb8cea24fcb39436e1cd8de8716adccabe40dd4b4ee1f56dc0f-image.png" alt="Delete a variable" align="center" caption="Delete a variable" border={true} />
-
-
-<br />
-
-<Callout icon="🚧" theme="warn">
-  ### Variables in Use Cannot Be Deleted
-
-  A variable that is referenced by a live or draft experiment cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
-</Callout>
-
-## Clone a Variable
-
-Cloning creates a copy of an existing variable under a new name within the same project. This is useful when you want to set up a new experiment that reuses the configuration of an existing variable as a starting point, instead of building it from scratch.
-
-When you clone a variable, the following details are copied:
-
-- Variable type
-- Variable values, including the default value and any segment-level values
-- Variable description
-
-The approval status, reviewer feedback, and approval history are not copied. The cloned variable starts fresh with no approval history.
-
-To clone a variable:
-
-1. Go to _Product Experiences_> _Remote Config_.&#x20;
-2. Select the required variable from the variable list on the _Remote Config_ page.
-3. Open the variable's options and click **Clone**.
-
-
-<Image src="https://files.readme.io/4094f7cb4c16e78c2fee471313cd7bb747ecb5191a4f24f240613ca3fec8a4e2-image.png" alt="Clone a Variable" align="center" caption="Clone a Variable" border={true} />
-
-
-4. Enter a unique name for the cloned variable and confirm.
-
-<Callout icon="📘" theme="info">
-  ### Note
-
-  The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
-</Callout>
-
-<br />
+#
 
 # Override Variable Value for New Segment
 
@@ -199,7 +118,7 @@ To override a variable value for a new segment:
 
      The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
    </Callout>
-7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to Publish Variables. (@murtaza, please review)After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
+7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
 
 
 <Image src="https://files.readme.io/5f9a7a1-small-Published.png" alt="Variables in Published State" align="center" caption="Variables in Published State" border={true} />
@@ -232,7 +151,7 @@ To define the variable behavior for an existing segment:
 <Image src="https://files.readme.io/a6dd6a3-small-Users_in_Germany.png" align="center" border={true} />
 
 
-3. Click **Publish** to make these changes live on your application.
+3. Click **Publish** to make these changes live on your application. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to Publish Variables. (@murtaza, please review this)
 
 You can also test your application's variable behavior in the draft version using the _Preview & Test_ feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
 
@@ -292,20 +211,8 @@ For all the variable updates made in the draft mode, you can test their behavior
   Let us consider the following example to understand this better:
 
   If you make changes to a variable value for a segment of Indian users and want to preview them on your test device, you need to log in to your app on your device with an Indian user profile that is marked as a test profile to qualify for the segment and view the specific changes. Logging in as a user in the US, for instance, will not allow you to see the changes you made.
-</Callout>
 
-<br />
 
-# Publish Variables
-
-@murtaza please check)
-
-Click Publish to publish a single variable or click Publish All to publish all variables.&#x20;
-
-<Callout icon="📘" theme="info">
-  ### Publishing a Single Variable
-
-  Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration. The **Publish All b**utton will publish all unpublished variables.&#x20;
 </Callout>
 
 # Remote Config Version History

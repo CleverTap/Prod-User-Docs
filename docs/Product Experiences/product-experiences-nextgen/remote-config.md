@@ -163,8 +163,6 @@ You can also test your application's variable behavior in the draft version usin
   - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the Paying users segment, it would be good to fetch them again at the time of purchase within the app.
 </Callout>
 
-<br />
-
 # User Profile Personalization
 
 User Profile Personalization is available only for variables of type **String**.

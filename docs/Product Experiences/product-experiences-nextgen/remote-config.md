@@ -199,7 +199,7 @@ To override a variable value for a new segment:
 
      The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
    </Callout>
-7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
+7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to Publish Variables. (@murtaza, please review)After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
 
 
 <Image src="https://files.readme.io/5f9a7a1-small-Published.png" alt="Variables in Published State" align="center" caption="Variables in Published State" border={true} />
@@ -240,15 +240,11 @@ You can also test your application's variable behavior in the draft version usin
   ### Key Points to Remember
 
   - The change in variable behavior reflects in the live application only after the draft is published.
-
-  {/* CHANGE 4 — added bullet reinforcing single-variable publish in the existing-segment flow, so the behavior is also visible to readers who land here directly. */}
-
-  > - Publishing affects only the variable you are editing. Other variables that remain in draft are not deployed.
-
-  {/* END CHANGE 4 */}
-
-  > - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the _Paying users_ segment, it would be good to fetch them again at the time of purchase within the app.
+  - Publishing affects only the variable you are editing. Other variables that remain in draft are not deployed.
+  - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the Paying users segment, it would be good to fetch them again at the time of purchase within the app.
 </Callout>
+
+<br />
 
 # User Profile Personalization
 

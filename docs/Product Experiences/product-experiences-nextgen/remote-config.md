@@ -60,9 +60,11 @@ To create a Remote Config Variable, go to _Product Experiences > Remote Config_.
 <Image src="https://files.readme.io/3f5fcfbacffe8059d79809bf2dded48468a810579d8f9abb0113caaaaf553faa-Screenshot_2025-01-08_at_15.03.09.png" alt="Create Remote Config Variable" align="center" border={true} />
 
 
-> 📘 Creating File Type Variables.
->
-> Creating File type Variables are currently not supported to be created from the Dashboard. They must be  synced from the code.
+<Callout icon="📘" theme="info">
+  ### Creating File Type Variables.
+
+  Creating File type Variables are currently not supported to be created from the Dashboard. They must be  synced from the code.
+</Callout>
 
 ## Define and Sync Variables from Code
 
@@ -75,9 +77,11 @@ CleverTap supports creating the following variable data types:
 - Boolean
 - File type
 
-> 📘 Prerequisite
->
-> To get a complete view of your application’s variables, you must integrate the required CleverTap’s SDK and sync your defined variables with the CleverTap dashboard. After the sync, you must publish the newly-created variables from the _Remote Config page_ of the CleverTap dashboard.
+<Callout icon="📘" theme="info">
+  ### Prerequisite
+
+  To get a complete view of your application’s variables, you must integrate the required CleverTap’s SDK and sync your defined variables with the CleverTap dashboard. After the sync, you must publish the newly-created variables from the _Remote Config page_ of the CleverTap dashboard.
+</Callout>
 
 In your app's code, any functionality defined as a variable has a default value or state. For instance, every time you add a new feature, it is initially always hidden with a visibility value of `false`. After syncing the variables to CleverTap, you can view these default values on the _Remote Config_ page. After the initial publish, you can decide whether to override the default values for an existing one or create a new segment and define a new variable value.
 
@@ -104,9 +108,11 @@ To edit a variable description:
 
 3. Save your changes.
 
-> 📘 Note
->
-> Only the description can be edited. The variable name (key) remains fixed, because changing the key would affect your App integration with CleverTap.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Only the description can be edited. The variable name (key) remains fixed, because changing the key would affect your App integration with CleverTap.
+</Callout>
 
 ## Delete a Variable
 
@@ -124,9 +130,11 @@ To delete a variable:
 
 <br />
 
-> 🚧 Variables in Use Cannot Be Deleted
->
-> A variable that is referenced by a live or draft experiment cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
+<Callout icon="🚧" theme="warn">
+  ### Variables in Use Cannot Be Deleted
+
+  A variable that is referenced by a live or draft experiment cannot be deleted. The system blocks the deletion and indicates where the variable is currently used.&#x20;
+</Callout>
 
 ## Clone a Variable
 
@@ -152,9 +160,11 @@ To clone a variable:
 
 4. Enter a unique name for the cloned variable and confirm.
 
-> 📘 Note
->
-> The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
+</Callout>
 
 # Override Variable Value for New Segment
 
@@ -182,9 +192,11 @@ To override a variable value for a new segment:
 5. Toggle ON _Save As_ if you want to save the segment for future use. Keeping the toggle off does not save the segment.
 6. Click **Apply** to save the segment. The newly-created segment is now visible under the list of segments on the right side of the screen.
 
-   > 🚧 Remote Config Segments
-   >
-   > The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
+   <Callout icon="🚧" theme="warn">
+     ### Remote Config Segments
+
+     The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
+   </Callout>
 7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following image:
 
 
@@ -193,9 +205,11 @@ To override a variable value for a new segment:
 
 (@murtaza please check)
 
-> 📘 Publishing a Single Variable
->
-> Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration.
+<Callout icon="📘" theme="info">
+  ### Publishing a Single Variable
+
+  Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration. The **Publish All b**utton will publish all unpublished variables.&#x20;
+</Callout>
 
 All the changes you make to the _Remote Config page_ are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following image.  If you want to discard the current draft, click the **Discard** button.
 
@@ -203,11 +217,13 @@ All the changes you make to the _Remote Config page_ are, by default, saved as a
 <Image src="https://files.readme.io/eea0fc0-small-Draft_mode_in_remte_config.png" alt="Draft Mode in Remote Config." align="center" caption="Draft Mode in Remote Config" border={true} />
 
 
-> 📘 Note
->
-> The draft in the Remote Config page is shared with all the dashboard users within your app account for everyone to contribute. The changes you make are visible to the rest of the dashboard users.
->
-> To avoid overriding or discarding someone else’s changes, verify who made the latest changes to an existing draft from the top right corner of the _Remote Config_ page.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  The draft in the Remote Config page is shared with all the dashboard users within your app account for everyone to contribute. The changes you make are visible to the rest of the dashboard users.
+
+  To avoid overriding or discarding someone else’s changes, verify who made the latest changes to an existing draft from the top right corner of the _Remote Config_ page.
+</Callout>
 
 # Override Variable Value for an Existing Segment
 
@@ -224,17 +240,19 @@ To define the variable behavior for an existing segment:
 
 You can also test your application's variable behavior in the draft version using the _Preview & Test_ feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
 
-> 📘 Key Points to Remember
->
-> - The change in variable behavior reflects in the live application only after the draft is published.
->
-> {/* CHANGE 4 — added bullet reinforcing single-variable publish in the existing-segment flow, so the behavior is also visible to readers who land here directly. */}
->
-> > - Publishing affects only the variable you are editing. Other variables that remain in draft are not deployed.
->
-> {/* END CHANGE 4 */}
->
-> > - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the _Paying users_ segment, it would be good to fetch them again at the time of purchase within the app.
+<Callout icon="📘" theme="info">
+  ### Key Points to Remember
+
+  - The change in variable behavior reflects in the live application only after the draft is published.
+
+  {/* CHANGE 4 — added bullet reinforcing single-variable publish in the existing-segment flow, so the behavior is also visible to readers who land here directly. */}
+
+  > - Publishing affects only the variable you are editing. Other variables that remain in draft are not deployed.
+
+  {/* END CHANGE 4 */}
+
+  > - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the _Paying users_ segment, it would be good to fetch them again at the time of purchase within the app.
+</Callout>
 
 # User Profile Personalization
 
@@ -284,12 +302,14 @@ After a Remote Config draft version is published, all the previous live versions
 
 For all the variable updates made in the draft mode, you can test their behavior on a device using the _Preview & Test_ feature. By clicking _Preview & Test_, you enable the variable values from your unpublished draft for all profiles marked as test profiles for your app and the associated devices.
 
-> 🚧 Mark Test Profiles
->
-> For testing the behavior of variables in draft mode, it is a prerequisite to [mark certain profiles as Test profile](doc:concepts-user-profiles#mark-a-user-profile-as-a-test-profile). It is also imperative for the test profiles to qualify for the specific segment to be able to view the variable changes.
->
-> Let us consider the following example to understand this better:
->
-> If you make changes to a variable value for a segment of Indian users and want to preview them on your test device, you need to log in to your app on your device with an Indian user profile that is marked as a test profile to qualify for the segment and view the specific changes. Logging in as a user in the US, for instance, will not allow you to see the changes you made.
+<Callout icon="🚧" theme="warn">
+  ### Mark Test Profiles
+
+  For testing the behavior of variables in draft mode, it is a prerequisite to [mark certain profiles as Test profile](doc:concepts-user-profiles#mark-a-user-profile-as-a-test-profile). It is also imperative for the test profiles to qualify for the specific segment to be able to view the variable changes.
+
+  Let us consider the following example to understand this better:
+
+  If you make changes to a variable value for a segment of Indian users and want to preview them on your test device, you need to log in to your app on your device with an Indian user profile that is marked as a test profile to qualify for the segment and view the specific changes. Logging in as a user in the US, for instance, will not allow you to see the changes you made.
+</Callout>
 
 <br />

@@ -304,6 +304,8 @@ For all the variable updates made in the draft mode, you can test their behavior
 
 @murtaza please check)
 
+Click Publish to publish a single variable or click Publish All to publish all variables.&#x20;
+
 <Callout icon="📘" theme="info">
   ### Publishing a Single Variable
 

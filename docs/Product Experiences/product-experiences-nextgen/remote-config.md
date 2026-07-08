@@ -151,7 +151,7 @@ To define the variable behavior for an existing segment:
 <Image src="https://files.readme.io/a6dd6a3-small-Users_in_Germany.png" align="center" border={true} />
 
 
-3. Click **Publish** to make these changes live on your application. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to Publish Variables. (@murtaza, please review this)
+3. Click **Publish** to make these changes live on your application.
 
 You can also test your application's variable behavior in the draft version using the _Preview & Test_ feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
 

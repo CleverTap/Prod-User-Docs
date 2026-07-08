@@ -166,6 +166,8 @@ To clone a variable:
   The cloned variable is always created as a draft and does not go live automatically. You need to publish it from the _Remote Config_ page for the changes to take effect. The name of the clone must be unique within the project. If a variable with that name already exists, the clone is not created.
 </Callout>
 
+<br />
+
 # Override Variable Value for New Segment
 
 To override a variable value for a new segment:
@@ -203,13 +205,7 @@ To override a variable value for a new segment:
 <Image src="https://files.readme.io/5f9a7a1-small-Published.png" alt="Variables in Published State" align="center" caption="Variables in Published State" border={true} />
 
 
-(@murtaza please check)
-
-<Callout icon="📘" theme="info">
-  ### Publishing a Single Variable
-
-  Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration. The **Publish All b**utton will publish all unpublished variables.&#x20;
-</Callout>
+<br />
 
 All the changes you make to the _Remote Config page_ are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following image.  If you want to discard the current draft, click the **Discard** button.
 
@@ -286,17 +282,7 @@ To change the priority, click **Prioritize** and drag and drop the segment to ch
 <Image src="https://files.readme.io/51068366f3db442bc351b5a4c63968569727cb346535272d6668724e0ac9f363-image.png" alt="Change Segment Prioritization" align="center" width="60% " border={true} />
 
 
-# Remote Config Version History
-
-After a Remote Config draft version is published, all the previous live versions are stored along with the following corresponding metadata: created by and the timestamp when the version was published. Each version can be restored when needed. To view the version history and restore a specific version:
-
-1. Navigate to _Published versions_.
-2. From the Published version history, select the version of your choice.
-3. Click **RESTORE** (see figure below).
-
-
-<Image src="https://files.readme.io/976c144-Version_history_in_remote_config.gif" align="center" border={true} />
-
+#
 
 # Preview and Test Variables
 
@@ -311,5 +297,29 @@ For all the variable updates made in the draft mode, you can test their behavior
 
   If you make changes to a variable value for a segment of Indian users and want to preview them on your test device, you need to log in to your app on your device with an Indian user profile that is marked as a test profile to qualify for the segment and view the specific changes. Logging in as a user in the US, for instance, will not allow you to see the changes you made.
 </Callout>
+
+<br />
+
+# Publish Variables
+
+@murtaza please check)
+
+<Callout icon="📘" theme="info">
+  ### Publishing a Single Variable
+
+  Publishing applies only to the variable you are working on. When you click **Publish**, only that variable's experience goes live. Any other variables that are still in draft state remain untouched and are not deployed. This allows multiple teams to work on different Remote Config experiences at the same time, and lets you release a finished variable without pushing another team's unfinished configuration. The **Publish All b**utton will publish all unpublished variables.&#x20;
+</Callout>
+
+# Remote Config Version History
+
+After a Remote Config draft version is published, all the previous live versions are stored along with the following corresponding metadata: created by and the timestamp when the version was published. Each version can be restored when needed. To view the version history and restore a specific version:
+
+1. Navigate to _Published versions_.
+2. From the Published version history, select the version of your choice.
+3. Click **RESTORE** (see figure below).
+
+
+<Image src="https://files.readme.io/976c144-Version_history_in_remote_config.gif" align="center" border={true} />
+
 
 <br />

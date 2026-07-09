@@ -35,7 +35,11 @@ To link a new account:
 
 1. Go to _Settings > Channels > Remarketing > Google_.
 2. Click **Connect Ad Account**.
-3. In the Google sign-in window, sign in and grant CleverTap access to your Google Ads accounts.
+3. In the Google sign-in window, sign in and grant CleverTap access to your Google Ads accounts.&#x20;
+
+   <Image src="https://files.readme.io/ddaf04493c05ca09aa0cac23a108ee33b64cbf26e61870587a10848584bdbd19-select_ad_acounts.png" align="center" caption="Select Ad Account" border={true} />
+
+
 4. After authorization, CleverTap displays the Google Ads accounts you have access to. Use the search box to find an account by name or ID if needed.
 5. Select the accounts you want to connect, and then click **Connect**.
 6. The connected accounts appear on the listing page.

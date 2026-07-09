@@ -37,6 +37,14 @@ The campaign listing page in CleverTap helps you manage all your campaigns effic
 
 You can perform different actions on the campaigns from the _All Campaigns_ page, including filtering, labeling, editing, archiving, stopping, cloning, and analyzing performance. The following sections provide a brief overview of each operation.
 
+You can click <Img src="https://files.readme.io/20d7b3517f2705efbc35ae31b2020308748434196208761e7b918125bdd0c02a-Open_in_New_Tab.png" width="30px" height="30px" /> icon to open the campaign in a new tab for editing.&#x20;
+
+To open a campaign in a new tab, press **Cmd + Click** on macOS or **Ctrl + Click** on Windows.
+
+
+<Image src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" alt="Open in new tab" align="center" caption="Open Campaigns" border={true} />
+
+
 ## Filter Campaigns
 
 You can use filters to quickly search your campaigns by Status, Channel, Time Period, creator, and more. To do so:
@@ -94,10 +102,12 @@ The _Sent_ column is toggled off by default.
 <Image src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" alt="Edit Columns" align="center" caption="Edit Columns" border={true} />
 
 
-> 📘 Note
->
-> - The Campaigns listing page also displays the team each campaign is associated with. This feature is currently in Private Beta. For more information, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
-> - Users can view and manage only the campaigns associated with their assigned teams. This ensures campaign visibility and actions align with the configured Role-Based Access Control (RBAC).
+<Callout icon="📘" theme="info">
+  ### Note
+
+  - The Campaigns listing page also displays the team each campaign is associated with. This feature is currently in Private Beta. For more information, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
+  - Users can view and manage only the campaigns associated with their assigned teams. This ensures campaign visibility and actions align with the configured Role-Based Access Control (RBAC).
+</Callout>
 
 ## Add Labels
 
@@ -105,9 +115,11 @@ Labels allow you to tag campaigns with descriptive names or themes. Once applied
 
 You can select up to 10 labels for a campaign. If a campaign already has more than 10 labels assigned from earlier configurations, they will still be visible under _Selected Labels_. However, in such cases, the user will not be able to select any additional labels.
 
-> 📘 Naming Labels
->
-> The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
+<Callout icon="📘" theme="info">
+  ### Naming Labels
+
+  The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
+</Callout>
 
 You can create and apply labels from the _All Campaigns_ or the _All Journeys_ page. Labels can be applied to individual campaigns from the All Campaigns page during creation. To do so:
 
@@ -120,14 +132,17 @@ You can create and apply labels from the _All Campaigns_ or the _All Journeys_ p
 <Image src="https://files.readme.io/3dd944e95bec99bc93eba8c1d3a729042e52cc3085530098ae42ee79e531f8fa-2025-12-11_18-49-11_1.gif" alt="Create Multiple Message Labels" align="center" caption="Create and Assign Multiple Message Labels" border={true} />
 
 
-> 📘 Note
->
-> - When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
-> - To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
->
->
-> <Image src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" align="center" border={true} />
->
+<Callout icon="📘" theme="info">
+  ### Note
+
+  - When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
+
+  - To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
+
+
+  <Image src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" align="center" border={true} />
+
+</Callout>
 
 You can view and export all labels to a CSV file from the _Settings_ >  _Setup_  > _Labels_  page. You can also edit or delete labels from this page.
 
@@ -149,11 +164,13 @@ Running campaigns cannot be archived.
 <Image src="https://files.readme.io/99629a5f98ff342e202d24b02c1cadc12487899a05aba35b50bef7086acb34d9-2025-12-11_18-46-35.png" alt="Archive Selected Campaigns" align="center" caption="Archive Selected Campaigns" border={true} />
 
 
-> 📘 Note
->
-> - Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
-> - Archived campaigns cannot be unarchived.
-> - All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  - Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
+  - Archived campaigns cannot be unarchived.
+  - All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
+</Callout>
 
 ## Stop Campaigns
 
@@ -196,12 +213,6 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 <Image src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" alt="Edit" align="center" caption="Edit" border={true} />
 
 
-3. You can also click ![](https://files.readme.io/128fa7ea6dcc154592d66b7d4780e18a45e5675822a2b0a443eeeb0824472a71-new_clone.png) icon to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics.
-
-
-<Image src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" alt="Open in new tab" align="center" caption="Open Campaigns" border={true} />
-
-
 # Campaign Reports
 
 Selecting _Campaigns_ from the CleverTap Dashboard opens the Campaign Reports table, where you can see all your campaigns across every channel in one consolidated view. Campaign Reports include the channel, delivery status, and key statistics to assess and compare performance.
@@ -220,31 +231,33 @@ You can also email a report by selecting the campaign and clicking **Send Report
 
 If the report section opens with _All Time_ as the selected time period, requesting the report automatically adjusts the date range to ±15 days. A warning message is displayed to inform the user of this change. For more information, refer to [Campaign Reports](https://docs.clevertap.com/docs/campaign-reports).
 
-> 📘 RBAC Enforcement for Campaign Operations
->
-> The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
->
-> - Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
-> - Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
->
-> For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
->
-> #### Access Behavior
->
-> Refer to the following table for access behaviour. This applies to all actions across both Active and Archived campaigns.
->
-> | **Access Type**  | **Allowed Operations**                                                             |
-> | ---------------- | ---------------------------------------------------------------------------------- |
-> | **Write Access** | Full control over campaigns: Create, Edit, Clone, Archive, Stop, Start, Add Labels |
-> | **Read Access**  | View campaign details, apply filters, and email campaign reports                   |
->
-> #### Error Handling
->
-> If a user attempts an action they do not have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
->
->
-> <Image src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" align="center" width="35% " caption="Limited Access" border={true} />
->
+<Callout icon="📘" theme="info">
+  ### RBAC Enforcement for Campaign Operations
+
+  The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
+
+  - Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
+  - Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
+
+  For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
+
+  #### Access Behavior
+
+  Refer to the following table for access behaviour. This applies to all actions across both Active and Archived campaigns.
+
+  | **Access Type**  | **Allowed Operations**                                                             |
+  | ---------------- | ---------------------------------------------------------------------------------- |
+  | **Write Access** | Full control over campaigns: Create, Edit, Clone, Archive, Stop, Start, Add Labels |
+  | **Read Access**  | View campaign details, apply filters, and email campaign reports                   |
+
+  #### Error Handling
+
+  If a user attempts an action they do not have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
+
+
+  <Image src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" align="center" width="35% " caption="Limited Access" border={true} />
+
+</Callout>
 
 # Campaign States
 

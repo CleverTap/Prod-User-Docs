@@ -26,7 +26,7 @@ The following table lists all available tool categories and the tools within eac
 | [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                                |
 | [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events |
 | [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                         |
-| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Create Segment, Relevant Segments                                   |
+| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Relevant Segments                                                   |
 | [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft            |
 | [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                             |
 | [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                   |
@@ -66,16 +66,15 @@ The following table lists the tools available for analyzing user profile data, f
 
 The following table shows the tools available for managing user segments. Segment creation via MCP is currently limited to Past Behavior Segments (PBS) and requires Admin access:
 
-| Tool / Function   | Description                                                                                                                                                                                                                                                       |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| List Segment      | Returns a list of all segments defined in the CleverTap account, with names and basic metadata.                                                                                                                                                                   |
-| Get Segment       | Retrieves detailed information about a specific segment, including its definition criteria, estimated reach, and trend data.                                                                                                                                      |
-| Create Segment    | Creates a new user segment based on a natural-language description of the target audience. For example: Create a segment of users who purchased more than 3 times in the last 90 days. **Current Support:** Only for Admin users and Past Behavior Segment (PBS). |
-| Relevant Segments | Identifies the most relevant existing segments in the user's natural-language prompt. It helps users avoid manually browsing through all available segments.                                                                                                      |
+| Tool / Function   | Description                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| List Segment      | Returns a list of all segments defined in the CleverTap account, with names and basic metadata.                                                              |
+| Get Segment       | Retrieves detailed information about a specific segment, including its definition criteria, estimated reach, and trend data.                                 |
+| Relevant Segments | Identifies the most relevant existing segments in the user's natural-language prompt. It helps users avoid manually browsing through all available segments. |
 
 # Campaigns
 
-While you can create a draft campaign in MCP on CleverTap, it is available only for the Push Channel. After creating the Push Campaign, you must publish this draft manually from the CleverTap dashboard.
+While you can create a draft campaign in MCP on CleverTap, it is available only for the Push Channel. After creating the Push Campaign, you must manually publish the draft from the CleverTap dashboard.
 
 The following table lists the tools available for managing and reporting on campaigns:
 

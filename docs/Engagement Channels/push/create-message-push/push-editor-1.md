@@ -12,9 +12,11 @@ metadata:
 
 The Push Editor allows you to create and edit relevant and timely messages for your push campaign. This section explains the different pre-built Push templates designed to cater to your various push-campaigning needs. You can create your push message by selecting the appropriate push template for your campaign.
 
-> 📘 Public Beta
->
-> This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
+<Callout icon="📘" theme="info">
+  ### Public Beta
+
+  This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or  CleverTap Support.
+</Callout>
 
 From the _What_ section, select the [Message Type ](doc:create-message-push#message-types)for your push notification and click **Go To Editor**. You can see the various push templates to help you create a contextual and timely message.
 
@@ -36,11 +38,13 @@ You can select from the following template types:
 - [Manual Carousel](https://docs.clevertap.com/docs/push-editor#manual-carousel-template)
 - [Vertical Image with CTA](https://docs.clevertap.com/docs/push-editor#vertical-image-with-cta)
 
-> 📘
->
-> Note
->
-> For minimum SDK version requirements and prerequisites, refer to [Android Push Templates](https://developer.clevertap.com/docs/android-push-templates) and [iOS Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications).
+<Callout icon="📘" theme="info">
+  ###
+
+  Note
+
+  For minimum SDK version requirements and prerequisites, refer to [Android Push Templates](https://developer.clevertap.com/docs/android-push-templates) and [iOS Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications).
+</Callout>
 
 ## Standard
 
@@ -145,9 +149,11 @@ This template supports vertical or portrait images that preserve the original cr
 
 This template supports expanded and collapsed views for Android, but only the expanded view for iOS. It also provides optional additional text fields for richer layouts, and an optional CTA button with customizable styles. The image generated is in 3:2 ratio.
 
-> 📘 Private Beta
->
-> Vertical Image with CTA is available in Private Beta. To enable this feature, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  ### Private Beta
+
+  Vertical Image with CTA is available in Private Beta. To enable this feature, contact your Customer Success Manager.
+</Callout>
 
 
 <Image src="https://files.readme.io/62afa2b767eb0d7910b21f0b3383453323e5fb14d965946f3af3cea9f4cf9fa0-ChatGPT_Image_Apr_20_2026_at_12_27_11_PM.png" alt="Vertical Image Template sample" align="center" width="35% " caption="Vertical Image Template" border={true} />
@@ -201,14 +207,16 @@ You can configure the title, message, subtitle, and so on for your notification.
 <Image src="https://files.readme.io/bc77b4776c512b19f495b2df17b6656687f3a6cf173da2555407256f63a23353-image.png" alt="Content Section" align="center" caption="Content Section" border={true} />
 
 
-> 📘 Recommended Character Limits
->
-> While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
->
-> | Platform | Recommended Title Length | Recommended Message Length |
-> | :------- | :----------------------- | :------------------------- |
-> | iOS      | 25-50 characters         | 150 characters             |
-> | Android  | 65 characters            | 240 character              |
+<Callout icon="📘" theme="info">
+  ### Recommended Character Limits
+
+  While there are no enforced character limits for push notifications, following these best practices ensures your message is displayed seamlessly across devices, thus preventing the title from trimming. The recommended character limits are as follows:
+
+  | Platform | Recommended Title Length | Recommended Message Length |
+  | :------- | :----------------------- | :------------------------- |
+  | iOS      | 25-50 characters         | 150 characters             |
+  | Android  | 65 characters            | 240 character              |
+</Callout>
 
 ## Android Options
 
@@ -713,85 +721,11 @@ You can add multiple pairs using the **Add pair** button to support different lo
 
 Use this section to send a payload to your designated endpoint after a push notification is delivered.
 
-<Table align={["left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Field
-      </th>
-
-      <th>
-        Description
-      </th>
-
-      <th>
-        Required/Optional
-      </th>
-
-      <th>
-        Available for Template
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Webhook URL
-
-
-      </td>
-
-      <td>
-        A server endpoint you want to call when the push is clicked.
-      </td>
-
-      <td>
-        Required
-      </td>
-
-      <td>
-        All
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Method
-      </td>
-
-      <td>
-        HTTP method to use (GET, POST, and so on)
-      </td>
-
-      <td>
-        Required
-      </td>
-
-      <td>
-        All
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Payload
-      </td>
-
-      <td>
-        Optional data to include in the request (JSON format supported).
-      </td>
-
-      <td>
-        Required
-      </td>
-
-      <td>
-        All
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Field       | Description                                                      | Required/Optional | Available for Template |
+| :---------- | :--------------------------------------------------------------- | :---------------- | :--------------------- |
+| Webhook URL | A server endpoint you want to call when the push is clicked.     | Required          | All                    |
+| Method      | HTTP method to use (GET, POST, and so on)                        | Required          | All                    |
+| Payload     | Optional data to include in the request (JSON format supported). | Required          | All                    |
 
 ## App Inbox
 
@@ -833,9 +767,11 @@ You can assign delivery priority on Android for Push notifications as follows:
 
 The value for this field is set to _High_ by default.
 
-> 📘 Notification Priority for Cloned Campaigns
->
-> Cloned campaigns retain the priority setting from the original campaign.
+<Callout icon="📘" theme="info">
+  ### Notification Priority for Cloned Campaigns
+
+  Cloned campaigns retain the priority setting from the original campaign.
+</Callout>
 
 ## Collapse Key
 
@@ -869,9 +805,11 @@ These interruption levels determine the priority and delivery timing of notifica
 - **Focus Mode Compatibility:** Passive notifications are considerate of users' Focus modes and do not disrupt them.
 - **Purpose:** Employ the Passive interruption level for notifications that do not require instant attention, minimizing distractions while keeping users informed.
 
-> 📘 Critical Interruption Level
->
-> Currently, this _Interruption level_ is not availabe in CleverTap dashboard. We recommend contacting your Customer Success Manager and sharing your use case if you want to send the campaign from the dashboard with _Interruption level_ set as _Critical_.
+<Callout icon="📘" theme="info">
+  ### Critical Interruption Level
+
+  Currently, this _Interruption level_ is not availabe in CleverTap dashboard. We recommend contacting your Customer Success Manager and sharing your use case if you want to send the campaign from the dashboard with _Interruption level_ set as _Critical_.
+</Callout>
 
 ## Template Variations
 
@@ -893,9 +831,11 @@ Push templates automatically adapt to the device's theme settings, rendering not
 | **Dark mode enabled**  | Notification renders with a **dark background**   | ![](https://files.readme.io/37884bc08c5375da82457ffc4f54c7b31d3dc1591e0430f65949b73003df5e35-image.png) |
 | **Dark mode disabled** | Notification renders with a **light background**. | ![](https://files.readme.io/e5e9256facd596cdea7b325ad9945868ed3a4d3c5527ef09d46ae64ae350fc5d-image.png) |
 
-> 📘 Custom Color Support
->
-> Templates support **custom color definitions** that adapt to both themes for visual consistency.
+<Callout icon="📘" theme="info">
+  ### Custom Color Support
+
+  Templates support **custom color definitions** that adapt to both themes for visual consistency.
+</Callout>
 
 ## Image Scaling
 

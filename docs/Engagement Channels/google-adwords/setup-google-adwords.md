@@ -34,14 +34,19 @@ To run Google Ads remarketing campaigns directly from CleverTap, you must first 
 To link a new account:
 
 1. Go to _Settings > Channels > Remarketing > Google_.
+
 2. Click **Connect Ad Account**.
+
 3. In the Google sign-in window, sign in and grant CleverTap access to your Google Ads accounts.&#x20;
+
 
    <Image src="https://files.readme.io/ddaf04493c05ca09aa0cac23a108ee33b64cbf26e61870587a10848584bdbd19-select_ad_acounts.png" align="center" caption="Select Ad Account" border={true} />
 
 
 4. After authorization, CleverTap displays the Google Ads accounts you have access to. Use the search box to find an account by name or ID if needed.
+
 5. Select the accounts you want to connect, and then click **Connect**.
+
 6. The connected accounts appear on the listing page.
 
 <Callout icon="🚧" theme="warn">
@@ -97,7 +102,11 @@ Authentication tokens expire periodically for security reasons. When this happen
 
 To restore the connection, click the **Reconnect** icon on the disconnected account's row and complete the authorization flow again to re-establish access. Reconnecting uses the same authorization flow as connecting a new account. This maintains a secure, uninterrupted integration.
 
-\[Image: google reconnect icon on a disconnected account]
+
+<Image src="https://files.readme.io/d8056347e40b2f3ac281017041a7fd93fcb46bbcf9ca05bca6922664eb01f771-reconnect_google_ad.png" align="center" width="100%" caption="Reconnect Google Account" border={true} />
+
+
+<br />
 
 ## Disconnecting an Account
 
@@ -113,7 +122,11 @@ To remove a linked Google Ads account:
   Disconnecting an account makes it unavailable for future engagements. Any current engagements using this account are stopped or paused.
 </Callout>
 
-\[Image: google disconnect confirmation dialog]
+
+<Image src="https://files.readme.io/e4a092db3297e10426ace2976d00361dead3238b0f34e1251ac886ff99dd87be-disconnect_ad_account.png" align="center" width="65%" caption="Disconnect Google Account" border={true} />
+
+
+<br />
 
 ## Setting a Default Account
 
@@ -126,4 +139,8 @@ This account is pre-selected as the Export destination during campaign creation,
 
 The **Set as Default** option appears only for connected accounts that are not currently the default.
 
-\[Image: google set as default]
+
+<Image src="https://files.readme.io/ff33b4a89bb1678a65d965877218b739ca010efe4cace86f719d4133e4826ae0-set_as_default.png" align="center" caption="Set as Default" border={true} />
+
+
+<br />

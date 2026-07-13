@@ -268,6 +268,10 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
+![]()
+
+<br />
+
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="advanced-configuration-for-event-exports">
   <div class="release-note-header">
@@ -289,7 +293,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <li>Control exactly what gets exported, including identity fields, user properties, device attributes, event selection, and engagement metadata such as campaign, variant, and journey details.</li>
         <li>Select, rename, reorder, and lock event properties per event to prevent pipeline breakage when new properties are added.</li>
 <li>Run one-time exports for up to the last 365 days, or schedule recurring exports every 4, 8, 12, or 24 hours with optional historical backfill. </li>
-      </ul>
+      </ul><p><img src="https://files.readme.io/642b9884fa1d56e89395d2bd96665f1092b58d6b9500be045f8d2fa990725d9b-event_export_2.png" alt="Event Export Enahncements."> </p>
     </p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/event-exports" target="_blank">Event Exports</a>.</p>
 </div>

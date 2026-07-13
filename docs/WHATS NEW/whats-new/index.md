@@ -215,6 +215,33 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="mixpanel-india-region-support">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#mixpanel-india-region-support"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Mixpanel India Region Support</h3>
+    <div class="badge new-feature">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Customers using the native Mixpanel export integration can now route exports to Mixpanel's India data center, in addition to the US and EU regions.</p>
+    <p>With these enhancements, you can:</p>
+    <p>
+      <ul>
+        <li>Select India as a data residency region when configuring Mixpanel exports.</li>
+        <li>Meet regional compliance and data governance requirements without changing your existing export setup.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/mixpanel-export" target="_blank">Mixpanel Export</a>and <a href="https://docs.mixpanel.com/docs/privacy/in-residencys" target="_blank">Mixpanel India Data Residency</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="advanced-configuration-for-event-exports">
   <div class="release-note-header">
     <div class="anchor-link-icon">

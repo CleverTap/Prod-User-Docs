@@ -238,6 +238,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="richer-interactions-in-rcs">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#richer-interactions-in-rcs"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Richer Interactions in RCS</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge private-beta">ENHANCEMENT</div> 
+  </div>
+  <div class="release-note-body">
+    <p>RCS messages in CleverTap now support new interactive buttons, PDF media in templates, and granular error codes to drive action, collect user input, and troubleshoot delivery failure directly from your campaigns.</p>
+    <p>With these enhancements, you can:</p>
+    <p>
+      <ul>
+        <li>Add a Calendar Event button to let users save dates directly to their calendar app, pre-filled with event details.</li>
+        <li>Share a precise location with users via a Send Location button that opens their map app with specified coordinates.</li>
+        <li>Collect a user's location with a Get User Location button that returns GPS coordinates or a selected location as a message reply.</li> 
+<li>Include PDFs alongside images and videos in Rich Card and Carousel templates for document-forward campaigns such as brochures, catalogs, and policy documents.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/rcs-message-editor" target="_blank">RCS Message Editor</a> and<a href="https://docs.clevertap.com/docs/rcs-message-templates" target="_blank"> RCS Message Templates</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="attachment-support-in-generic-http">
   <div class="release-note-header">
     <div class="anchor-link-icon">

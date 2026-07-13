@@ -236,7 +236,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <li>Get notified when Meta reclassifies a template category, such as Utility to Marketing, which may affect pricing and campaign eligibility.</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/jiocx" target="_blank">JioCX.</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-message-templates" target="_blank">WhatsApp Message Templates.</a>.</p>
 </div>
   <hr/>
 </div>

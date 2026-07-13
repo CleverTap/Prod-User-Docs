@@ -310,7 +310,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
     <div class="badge new-feature">ENHANCEMENT</div>
   </div>
   <div class="release-note-body">
-    <p>CleverTap now proactively notifies WhatsApp Direct users when Meta makes changes to the WhatsApp message templates you've created, so you can act before delivery, performance, or costs are affected.</p>
+    <p>CleverTap now proactively notifies WhatsApp Direct users when Meta makes changes to the WhatsApp message templates created by you, so you can act before delivery, performance, or costs are affected.</p>
     <p>With Template Alerting, you can:</p>
     <p>
       <ul>

@@ -185,6 +185,33 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="whatsApp-template-library">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#whatsApp-template-library"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">WhatsApp Template Library</h3>
+    <div class="badge new-feature">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap WhatsApp Direct customers can now browse and launch campaigns using pre-created Meta templates directly from the CleverTap dashboard, without creating every template from scratch.</p>
+    <p>With the Template Library, you can:</p>
+    <p>
+      <ul>
+        <li>Browse hundreds of pre-created Meta Utility templates, automatically synced when your WABA is connected and refreshed weekly.</li>
+        <li>Select a template, open it in the editor with pre-filled content and variables, customize as needed, and submit for approval.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-message-templates#template-library" target="_blank">WhatsApp Template Library</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="target-and-personalize-by-locale-and-language-user-properties">
   <div class="release-note-header">
     <div class="anchor-link-icon">

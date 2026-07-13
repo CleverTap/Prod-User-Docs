@@ -215,6 +215,34 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="jiocx-native-integration-for-rcs">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#jiocx-native-integration-for-rcs"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">JioCX Native Integration for RCS</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>Businesses targeting users in India can now send RCS campaigns through JioCX natively in CleverTap, without additional connectors or custom API wiring.</p>
+    <p>With this integration, you can:</p>
+    <p>
+      <ul>
+        <li>Select JioCX as your RCS service provider directly in the CleverTap RCS Campaign Builder and start sending campaigns to Jio subscribers in India.</li>
+        <li>Track delivery status for JioCX campaigns alongside your other channels, keeping reporting consolidated in one place.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/jiocx" target="_blank">JioCX.</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="email-open-tracking">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -247,7 +275,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
       <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Richer Interactions in RCS</h3>
-    <div class="badge new-feature">NEW FEATURE</div>
     <div class="badge private-beta">ENHANCEMENT</div> 
   </div>
   <div class="release-note-body">

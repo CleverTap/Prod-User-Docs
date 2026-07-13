@@ -268,10 +268,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-![]()
-
-<br />
-
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="advanced-configuration-for-event-exports">
   <div class="release-note-header">

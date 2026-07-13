@@ -215,6 +215,35 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="advanced-configuration-for-event-exports">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#advanced-configuration-for-event-exports"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Advanced Configuration for Event Exports</h3>
+    <div class="badge new-feature">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Event Exports to Amazon S3, Google Cloud Storage, and Microsoft Azure now give you full control over file organization, schema structure, and export scheduling, keeping the downstream pipelines predictable and easier to maintain.</p>
+    <p>With these enhancements, you can:</p>
+    <p>
+      <ul>
+        <li>Organize exported files using custom folder paths and file naming with dynamic variables, and export in CSV, JSON, XML, or Parquet.</li>
+        <li>Control exactly what gets exported, including identity fields, user properties, device attributes, event selection, and engagement metadata such as campaign, variant, and journey details.</li>
+        <li>Select, rename, reorder, and lock event properties per event to prevent pipeline breakage when new properties are added.</li>
+<li>Run one-time exports for up to the last 365 days, or schedule recurring exports every 4, 8, 12, or 24 hours with optional historical backfill. </li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/event-exports" target="_blank">Event Exports</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="whatsApp-template-alerting">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -236,7 +265,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <li>Get notified when Meta reclassifies a template category, such as Utility to Marketing, which may affect pricing and campaign eligibility.</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-message-templates" target="_blank">WhatsApp Message Templates.</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-message-templates" target="_blank">WhatsApp Message Templates</a>.</p>
 </div>
   <hr/>
 </div>
@@ -264,7 +293,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <li>Track delivery status for JioCX campaigns alongside your other channels, keeping reporting consolidated in one place.</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/jiocx" target="_blank">JioCX.</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/jiocx" target="_blank">JioCX</a>.</p>
 </div>
   <hr/>
 </div>

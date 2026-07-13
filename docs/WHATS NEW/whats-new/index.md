@@ -215,6 +215,34 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="whatsApp-template-alerting">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#whatsApp-template-alerting"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">WhatsApp Template Alerting</h3>
+    <div class="badge new-feature">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now proactively notifies WhatsApp Direct users when Meta makes changes to the WhatsApp message templates you've created, so you can act before delivery, performance, or costs are affected.</p>
+    <p>With Template Alerting, you can:</p>
+    <p>
+      <ul>
+        <li>Receive alerts via email and dashboard notifications when a template's status changes, including approved, rejected, paused, or disabled.</li>
+        <li>Stay informed when a template's quality rating shifts (Green, Yellow, or Red) so you can take corrective action before delivery is affected.</li>
+<li>Get notified when Meta reclassifies a template category, such as Utility to Marketing, which may affect pricing and campaign eligibility.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/jiocx" target="_blank">JioCX.</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="jiocx-native-integration-for-rcs">
   <div class="release-note-header">
     <div class="anchor-link-icon">

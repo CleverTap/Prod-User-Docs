@@ -1152,7 +1152,7 @@ The following image shows the Download CSV button in the _Custom User Property_ 
 
 ## CSV Columns
 
-The following table describes the columns included in the downloaded CSV. The dependency columns, Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs, show how each schema element is used across Campaigns, Journeys, and Segments.
+The following table describes the core columns included in the downloaded CSV. The dependency columns, Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs, show how each schema element is used across Campaigns, Journeys, and Segments.
 
 <Table align={["left","left"]}>
   <thead>

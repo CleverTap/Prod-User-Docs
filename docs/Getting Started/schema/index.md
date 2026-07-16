@@ -22,10 +22,10 @@ You can see your events under _Settings_ > _Schema Events_. On this page, you ca
 
 The _Events_ schema has four parts:
 
-* [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events)
-* [System events](https://docs.clevertap.com/docs/schema#section-system-events)
-* [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event)
-* [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event)
+- [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events)
+- [System events](https://docs.clevertap.com/docs/schema#section-system-events)
+- [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event)
+- [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event)
 
 # Custom Events
 
@@ -36,7 +36,9 @@ Custom events are events that you can define, edit, remove, and so on. These are
 
 If you have already defined your events, they are all present on this tab.
 
-<Image align="center" border={true} caption="View Custom Events" src="https://files.readme.io/a13c357-Custom_Events.png" />
+
+<Image src="https://files.readme.io/a13c357-Custom_Events.png" align="center" caption="View Custom Events" border={true} />
+
 
 | Event Detail   | Description                                                                                                                                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +59,9 @@ You can add an event from the _Custom events_ tab.
 2. Click the **+Event** button to add an event.
 3. Add the event name. This name must be unique in the schema.
 
-<Image align="center" border={true} caption="Add Custom Event" src="https://files.readme.io/6a62a19-Add_New_Event.png" />
+
+<Image src="https://files.readme.io/6a62a19-Add_New_Event.png" align="center" caption="Add Custom Event" border={true} />
+
 
 For more information, refer to [Event Property](doc:events#event-properties).
 
@@ -67,7 +71,9 @@ The system now automatically generates clear and consistent descriptions using A
 
 This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
 
-<Image align="center" border={true} caption="AI-Generated Descriptions for Custom Events" src="https://files.readme.io/56fe6da791b6e91a5bc71074e56b538495cdc52ed85f01e670bf1652263d6dbf-2026-03-24_12-13-17_1.gif" />
+
+<Image src="https://files.readme.io/56fe6da791b6e91a5bc71074e56b538495cdc52ed85f01e670bf1652263d6dbf-2026-03-24_12-13-17_1.gif" align="center" caption="AI-Generated Descriptions for Custom Events" border={true} />
+
 
 ## Edit Event
 
@@ -86,6 +92,8 @@ The data retention policy (DRP) retains an event for the specified time before d
 3. Select _Custom_, then enter your specific time limit.
 
 <Callout icon="📘" theme="info">
+  ###
+
   **CleverTap Essentials Plan Limit**
 
   The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
@@ -93,7 +101,9 @@ The data retention policy (DRP) retains an event for the specified time before d
 
 4. Click **Save**.
 
-<Image align="center" border={true} caption="Set Data Retention Policy" src="https://files.readme.io/ba7f979-SET_DRP.png" />
+
+<Image src="https://files.readme.io/ba7f979-SET_DRP.png" align="center" caption="Set Data Retention Policy" border={true} />
+
 
 ## Remove Event
 
@@ -102,18 +112,22 @@ You must be careful before removing an event. If you ever need to remove an even
 1. Click the ellipsis menu on the event row.
 2. Click **Remove**.
 
-<Image align="center" border={true} caption="Remove an Event" src="https://files.readme.io/b6033f7-Custom_Events.png" />
+
+<Image src="https://files.readme.io/b6033f7-Custom_Events.png" align="center" caption="Remove an Event" border={true} />
+
 
 After an event is removed:
 
-* The entire event row is removed from the schema.
-* If an event comes in with the same name, it is considered an undefined event.
+- The entire event row is removed from the schema.
+- If an event comes in with the same name, it is considered an undefined event.
 
 ## Discard Event
 
 You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
 <Callout icon="❗️" theme="error">
+  ###
+
   **When Discarding an Event**
 
   You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
@@ -122,7 +136,9 @@ You can discard an active event from the schema. You can still see the event row
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
 
-<Image align="center" border={true} caption="Discard an Event" src="https://files.readme.io/6f94655-Discard_event.png" />
+
+<Image src="https://files.readme.io/6f94655-Discard_event.png" align="center" caption="Discard an Event" border={true} />
+
 
 ## Define Event
 
@@ -151,11 +167,13 @@ To publish the events, perform the following:
 | **Description**        | The description of the event property. You can set this from the ellipsis menu on the event property row. The property is optional, and the event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Effect of Changing the Data Type of an Event or User Property**
 
-  * If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
-  * The values already present in the old data type will not change in the new data type.
-  * For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
+  - If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
+  - The values already present in the old data type will not change in the new data type.
+  - For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
 </Callout>
 
 ## Add Event Property
@@ -163,12 +181,13 @@ To publish the events, perform the following:
 To add an event property:
 
 1. Click the number of properties shown in the _Custom events_ tab
-2. Click **+Property**, then click **Add new**.  
-   You can also add an event property from the catalog by clicking **Add from catalog**. For more information, refer to [Add Columns from a Catalog](doc:catalog-data-ingestion#add-columns-from-a-catalog).
+2. Click **+Property**, then click **Add new**.<br />You can also add an event property from the catalog by clicking **Add from catalog**. For more information, refer to [Add Columns from a Catalog](doc:catalog-data-ingestion#add-columns-from-a-catalog).
 3. Enter a property name and choose the relevant property details.
 4. Select the checkmark.
 
-<Image align="center" border={true} caption="Add Event Property" src="https://files.readme.io/9a45a27-Add_property.png" />
+
+<Image src="https://files.readme.io/9a45a27-Add_property.png" align="center" caption="Add Event Property" border={true} />
+
 
 ### AI-Generated Descriptions for Event Properties
 
@@ -176,7 +195,9 @@ The system now automatically generates clear and consistent descriptions using A
 
 This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
 
-<Image align="center" border={true} caption="AI-Generated Descriptions for Event Properties" src="https://files.readme.io/7382ad8ae86487a7d17b3c2cb618d1c10601d468825dcc15db8bf5b94e812e80-2026-03-24_12-23-09_1.gif" />
+
+<Image src="https://files.readme.io/7382ad8ae86487a7d17b3c2cb618d1c10601d468825dcc15db8bf5b94e812e80-2026-03-24_12-23-09_1.gif" align="center" caption="AI-Generated Descriptions for Event Properties" border={true} />
+
 
 ## Edit Event Property
 
@@ -186,7 +207,9 @@ You can edit any column; however, you can only edit names for unpublished event 
 2. Edit the property name and any other appropriate property details.
 3. Click the checkmark.
 
-<Image align="center" border={true} caption="Edit Event Property" src="https://files.readme.io/804cbdc-Edit_Event_Property.png" />
+
+<Image src="https://files.readme.io/804cbdc-Edit_Event_Property.png" align="center" caption="Edit Event Property" border={true} />
+
 
 ## Remove Event Property
 
@@ -197,23 +220,29 @@ You can remove an unpublished event property.
 
 After an event property is removed:
 
-* The entire event property row is removed from the schema.
-* If an event property comes in with the same name, it is considered undefined.
+- The entire event property row is removed from the schema.
+- If an event property comes in with the same name, it is considered undefined.
 
 ## Discard Event
 
 You can discard an active event from the schema. You can still see the event row in the schema; however, the event is marked as discarded. Post discarding, CleverTap removes the data after 16 days. However, you can choose to restore the discarded event after 24 hours. For more information, refer to [Restore Events](doc:schema#restore-event).
 
-> ❗️ Caution When Discarding an Event
->
-> You can discard only an active event. Discarding an event purges all data for that event and drops any future incoming events with the same name. This action impacts your schema. A discarded event can be restored, but only after 24 hours.
+<Callout icon="❗️" theme="error">
+  ### Caution When Discarding an Event
+
+  You can discard only an active event. Discarding an event purges all data for that event and drops any future incoming events with the same name. This action impacts your schema. A discarded event can be restored, but only after 24 hours.
+</Callout>
 
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
 
-<Image align="center" border={true} caption="Discard an Event" src="https://files.readme.io/6f94655-Discard_event.png" />
+
+<Image src="https://files.readme.io/6f94655-Discard_event.png" align="center" caption="Discard an Event" border={true} />
+
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Discard Access**
 
   Only admin users can discard events.
@@ -224,10 +253,12 @@ You can discard an active event from the schema. You can still see the event row
 You can restore a previously discarded event, event property, or user property from the schema. Once restored, it becomes available again across Campaigns, Journeys, Analytics, and other features that use the schema.
 
 <Callout icon="🚧" theme="warn">
+  ###
+
   **Cooldown Period for Restore and Re-discard**
 
-  * After you discard an item, you cannot restore it for the next 24 hours.
-  * After you restore an item, you cannot discard it again for the next 24 hours.
+  - After you discard an item, you cannot restore it for the next 24 hours.
+  - After you restore an item, you cannot discard it again for the next 24 hours.
 
   These measures prevent accidental or repeated changes to your schema.
 </Callout>
@@ -239,7 +270,9 @@ You can restore a previously discarded event, event property, or user property f
 3. Click the ![](https://files.readme.io/d1a1a29245a043e42fe9f768ccb6c41e50dc1693d8b3553ac09edd9cadcc8355-Restore_Icon.png) icon.
 4. In the confirmation window, click **Restore**.
 
-<Image align="center" border={true} caption="Restore Custom Event" src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png" />
+
+<Image src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png" align="center" caption="Restore Custom Event" border={true} />
+
 
 ### Restore Multiple Items
 
@@ -248,9 +281,13 @@ You can restore a previously discarded event, event property, or user property f
 3. Click the ![](https://files.readme.io/4f93c7fed376db11d7b36dd4e54539e1a2284761341d8dfc3e227322f366d3d5-Restore_Icon.png) icon from the toolbar.
 4. In the confirmation window, click **Restore**.
 
-<Image align="center" border={true} caption="Bulk Restore Discarded Items" src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png" />
+
+<Image src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png" align="center" caption="Bulk Restore Discarded Items" border={true} />
+
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Restore Access**
 
   Only admin users can restore the discarded events.
@@ -282,7 +319,9 @@ To add a user property from this page:
 2. Enter a property name and choose a data type.
 3. Click the checkmark.
 
-<Image align="center" border={true} caption="Add User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
+
+<Image src="https://files.readme.io/fc5ba43-Add_User_Property.png" align="center" caption="Add User Property" border={true} />
+
 
 ### AI-Generated Descriptions for User Properties
 
@@ -290,7 +329,9 @@ The system now automatically generates clear and consistent descriptions using A
 
 This AI-generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
 
-<Image align="center" border={true} caption="AI-Generated Descriptions for User Properties" src="https://files.readme.io/5d86035f9560a43cd30ada370de9b3251562b1e81432bc25cf08e0cd44188fdb-2026-03-24_12-17-12_1.gif" />
+
+<Image src="https://files.readme.io/5d86035f9560a43cd30ada370de9b3251562b1e81432bc25cf08e0cd44188fdb-2026-03-24_12-17-12_1.gif" align="center" caption="AI-Generated Descriptions for User Properties" border={true} />
+
 
 ## Edit User Property
 
@@ -300,7 +341,9 @@ You can edit any column; however, you can only edit names for unpublished user p
 2. Edit the property name and the data type.
 3. Click the checkmark.
 
-<Image align="center" border={true} caption="Edit User Property" src="https://files.readme.io/0afe960-Edit_User_Property.png" />
+
+<Image src="https://files.readme.io/0afe960-Edit_User_Property.png" align="center" caption="Edit User Property" border={true} />
+
 
 ## Remove User Property
 
@@ -311,8 +354,8 @@ You can remove an unpublished property.
 
 After a user property is removed:
 
-* The entire user property row is removed from the schema.
-* If a user property comes in with the same name, it is considered as an undefined user property.
+- The entire user property row is removed from the schema.
+- If a user property comes in with the same name, it is considered as an undefined user property.
 
 ## Discard User Property
 
@@ -322,9 +365,13 @@ You can discard a published user property from the schema. You can still see the
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-<Image align="center" border={true} caption="Discard User Property" src="https://files.readme.io/d75580c-Discard_User_Property.png" />
+
+<Image src="https://files.readme.io/d75580c-Discard_User_Property.png" align="center" caption="Discard User Property" border={true} />
+
 
 <Callout icon="❗️" theme="error">
+  ###
+
   **When Discarding a User Property**
 
   Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
@@ -335,11 +382,13 @@ You can discard a published user property from the schema. You can still see the
 You can link an event with a user property. This allows you to trigger campaigns, conversions, and exits based on changes in user properties. For example, a gaming app has a user property named `Game Level` that represents a user's progress in the game. You can link an event named `Game Level Upgraded` to the `Game Level` user property. By doing so, any change in this property to a higher level will activate a campaign. The campaign will congratulate the users and grant them a reward or a unique power corresponding to their achievement.
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Key Points to Remember**
 
-  * This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
-  * For In-App, CleverTap SDK v7.0.0 or higher is required.
-  * User property updates via Journeys are not supported for this feature.
+  - This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
+  - For In-App, CleverTap SDK v7.0.0 or higher is required.
+  - User property updates via Journeys are not supported for this feature.
 </Callout>
 
 To link an event with a user property:
@@ -358,10 +407,14 @@ To create linked events in bulk:
 
 1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.
 
-   <Image align="center" border={true} caption="Bulk Link Events" src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" />
+
+   <Image src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" align="center" caption="Bulk Link Events" border={true} />
+
 2. Enter the events you want to link for each user property and click **Create**.
 
-   <Image align="center" border={true} caption="Create Linked Events in Bulk" src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" />
+
+   <Image src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" align="center" caption="Create Linked Events in Bulk" border={true} />
+
 
 ### Discard Linked Event
 
@@ -372,20 +425,24 @@ To discard linked events:
 1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property.
 2. Select _Discard Linked Event_ and click **Discard**.
 
-<Image align="center" border={true} caption="Discard a Linked Event" src="https://files.readme.io/5980787-Discard_Linked_Event.gif" />
+
+<Image src="https://files.readme.io/5980787-Discard_Linked_Event.gif" align="center" caption="Discard a Linked Event" border={true} />
+
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Key Points to Remember**
 
   The following are the key points to consider when creating linked events:
 
-  * You can link only one event with a user property.
-  * You can link events only on active properties.
-  * You cannot create a linked event with the same name as a system event.
-  * Discarding a linked event from the user property:
-    * Delinks the event and the user property.
-    * Stops receiving additional data associated with the user property.
-    * Does not delete any data.
+  - You can link only one event with a user property.
+  - You can link events only on active properties.
+  - You cannot create a linked event with the same name as a system event.
+  - Discarding a linked event from the user property:
+    - Delinks the event and the user property.
+    - Stops receiving additional data associated with the user property.
+    - Does not delete any data.
 </Callout>
 
 # System Events
@@ -400,7 +457,9 @@ To configure the tracking of system events:
 2. Select the event that you want to configure from the _System events_ tab.
 3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Enable/Disable_ from the list.
 
-<Image align="center" border={true} caption="Turn Off Toggle to Disable Tracking UTM Visited" src="https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif" />
+
+<Image src="https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif" align="center" caption="Turn Off Toggle to Disable Tracking UTM Visited" border={true} />
+
 
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
 
@@ -1025,6 +1084,8 @@ Currently, you can enable or disable tracking for the following events from the 
 </Accordion>
 
 <Callout icon="📘" theme="info">
+  ###
+
   **Configuring Other System Events**
 
   For the remaining system events, you can only change the DRP.
@@ -1052,34 +1113,180 @@ This event qualifies users as active if they have performed the event at least o
 
 Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the _Trends_ page.
 
-<Image align="center" border={true} caption="Set Qualifying Event" src="https://files.readme.io/5d67342-set_qualifying.png" />
+
+<Image src="https://files.readme.io/5d67342-set_qualifying.png" align="center" caption="Set Qualifying Event" border={true} />
+
 
 # Download Schema Data from Dashboard
 
-You can download the data for all events and user profiles from the CleverTap dashboard or via an API.
+You can download event and user property data from the Schema page as a CSV file. The downloaded report includes event and property metadata, such as name, type, status, and creation date.
 
 ## Event Data
 
-To download event data from the CleverTap dashboard in CSV format:
+To download event data as a CSV:
 
-1. Navigate to _Settings_ > _Schema_ > _Events_. You can download event data from the _System events_ tab or the _Custom event_ tab.
-2. Click the **Download as CSV** button, then the _Download CSV file_ window displays.
-3. Select to download _Events_ or _Events with properties_.
-4. Click **Download**.
+1. Go to _Settings_ > _Schema_ > _Events_.
+2. From the _System events_ or _Custom events_ tab, click **Download as CSV**. A dialog appears where you choose whether to include property-level data.
+3. Click **Download**.
 
-## User Profile data
+The following image shows the Download CSV button in the _System Events_ tab:
 
-To download all event data from the CleverTap dashboard in CSV format:
 
-1. Navigate to _Settings_ > _Schema_ > _User Properties_.
-2. Click the **Download as CSV** button.
+<Image src="https://files.readme.io/ed95a6f665ff336263b433b47db1cacc31586d7e1ada34a551b34e081c56b45c-image.png" alt="Download as CSV button in the System Events tab" align="center" caption="Download Event Data" border={true} />
+
+
+## User Property Data
+
+To download user property data as a CSV:
+
+1. Go to _Settings_ > _Schema_ > _User Properties_.
+2. Click **Download as CSV**. A confirmation dialog appears.
+3. Click **Download**.
+
+The following image shows the Download CSV button in the _Custom User Property_ tab:
+
+
+<Image src="https://files.readme.io/08adc1d3e4b44b853d69ac2f9f82a5823fe7fd649ffb886ab67a1edcb4501ad8-image.png" alt="Download as CSV button in the Custom User Property tab" align="center" caption="Download User Property Data" border={true} />
+
+
+## CSV Columns
+
+The following table describes the columns included in the downloaded CSV. The last six columns, Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs, show how each schema element is used across Campaigns, Journeys, and Segments.
+
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Column
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Property Name / Event Name
+      </td>
+
+      <td>
+        Name of the schema element.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Type
+      </td>
+
+      <td>
+        Indicates whether the element is _Defined_ or _Undefined_. A Defined element has been explicitly added and configured in the schema. An _Undefined_ element has been observed in ingested data but has not yet been formally defined.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Status
+      </td>
+
+      <td>
+        - **Active** -The event or property is currently receiving data.
+        - **Inactive** - The event or property has been defined in the schema but has not yet received any data.
+        - **Discarded** - All existing data for the event or user property definition has been removed, and any new incoming data with the same name is dropped rather than recorded. Campaigns, Journeys, and Segments that depend on this event or property stop working while it is discarded. The event can be restored, but only after a 24-hour cooldown period.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created On
+      </td>
+
+      <td>
+        Date when this element was added to the schema.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Data Points / Count
+      </td>
+
+      <td>
+        Number of times this element was ingested during the selected period.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign Count
+      </td>
+
+      <td>
+        Number of campaigns that use this element.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign IDs
+      </td>
+
+      <td>
+        IDs of the campaigns that use this element, separated by semicolons.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Journey Count
+      </td>
+
+      <td>
+        Number of journeys that use this element.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Journey IDs
+      </td>
+
+      <td>
+        IDs of the journeys that use this element, separated by semicolons.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Segment Count
+      </td>
+
+      <td>
+        Number of segments that use this element.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Segment IDs
+      </td>
+
+      <td>
+        IDs of the segments that use this element, separated by semicolons.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## Download with API
 
-To download event data or user profile data with API, refer to the following:
+To download event data or user profile data with the API, refer to the following:
 
-* Use the [Events Schema API](https://developer.clevertap.com/docs/get-schema#section-get-events-schema-api) to download event data.
-* Use the [User Properties Schema API](https://developer.clevertap.com/docs/get-schema#section-get-user-properties-schema-api) to download user profile data.
+- Use the [Events Schema API](https://developer.clevertap.com/docs/get-schema#section-get-events-schema-api) to download event data.
+- Use the [User Properties Schema API](https://developer.clevertap.com/docs/get-schema#section-get-user-properties-schema-api) to download user profile data.
 
 # Considerations
 

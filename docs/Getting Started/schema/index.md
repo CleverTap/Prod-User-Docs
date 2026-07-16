@@ -1119,7 +1119,7 @@ Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active)
 
 # Download Schema Data from Dashboard
 
-You can download event and user property data from the Schema page as a CSV file. The downloaded report includes event and property metadata, such as name, type, status, and creation date.
+You can download event and user property data from the _Schema_ page as a CSV file. The downloaded report includes event and property metadata, such as name, type, status, and creation date, along with the dependency columns, such as Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs
 
 ## Event Data
 
@@ -1151,7 +1151,7 @@ The following image shows the Download CSV button in the _Custom User Property_ 
 
 ## CSV Columns
 
-The following table describes the columns included in the downloaded CSV. The last six columns, Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs, show how each schema element is used across Campaigns, Journeys, and Segments.
+The following table describes the columns included in the downloaded CSV. The dependency columns, Campaign Count, Campaign IDs, Journey Count, Journey IDs, Segment Count, and Segment IDs, show how each schema element is used across Campaigns, Journeys, and Segments.
 
 <Table align={["left","left"]}>
   <thead>
@@ -1183,7 +1183,7 @@ The following table describes the columns included in the downloaded CSV. The la
       </td>
 
       <td>
-        Indicates whether the element is _Defined_ or _Undefined_. A Defined element has been explicitly added and configured in the schema. An _Undefined_ element has been observed in ingested data but has not yet been formally defined.
+        Indicates whether the element is _Defined_ or _Undefined_. A defined element has been explicitly added and configured in the schema. An _Undefined_ element has been observed in ingested data but has not yet been formally defined.
       </td>
     </tr>
 
@@ -1206,16 +1206,6 @@ The following table describes the columns included in the downloaded CSV. The la
 
       <td>
         Date when this element was added to the schema.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Data Points / Count
-      </td>
-
-      <td>
-        Number of times this element was ingested during the selected period.
       </td>
     </tr>
 

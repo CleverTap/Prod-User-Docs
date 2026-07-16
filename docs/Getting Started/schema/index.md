@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-A Schema is a framework for maintaining, organizing, and structuring your data. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data incurs high costs in terms of effort and money, you can save a significant amount of manual effort in tracking your data over time.
+A Schema is a framework for maintaining, organizing, and structuring your data. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data incdurs high costs in terms of effort and money, you can save a significant amount of manual effort in tracking your data over time.
 
 To preserve data sanity, the schema table stores event and user properties in a pre-defined order. It ensures better output because it enforces standardization of the incoming data and avoids duplication or corruption of data. Better input leads to a better outcome in your campaigns and journeys. It also provides more accurate insights into your data analytics.
 
@@ -409,6 +409,7 @@ To create linked events in bulk:
 
 
    <Image src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" align="center" caption="Bulk Link Events" border={true} />
+
 
 2. Enter the events you want to link for each user property and click **Create**.
 

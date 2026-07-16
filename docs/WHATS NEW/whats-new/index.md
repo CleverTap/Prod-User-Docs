@@ -152,6 +152,38 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## July
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="security-project-settings" id="download-schema-data-from-dashboard">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#download-schema-data-from-dashboard"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Download Schema Data from Dashboard</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now download event and user property data in CSV format and view which Campaign, Journey, and Segment references each event or user property.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Identify and remove unused or stale events and properties by checking for zero Campaign, Journey, or Segment references.</li>
+        <li>Assess the impact of modifying or discarding a property proactively, by seeing which Campaigns, Journeys, or Segments depend on it.</li>
+        <li>Trace usage at the ID level using semicolon-separated Campaign, Journey, and Segment IDs in the exported CSV.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/schema#download-schema-data-from-dashboard" target="_blank">Download Schema Data</a>.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## June
 
 <HTMLBlock>{`

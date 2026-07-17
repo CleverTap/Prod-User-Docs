@@ -187,28 +187,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## June
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="product-experiences" id="delivery-delay-for-in-app-messages-2">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#delivery-delay-for-in-app-messages-2"><i class="fa-light fa-anchor"></i></a>
-    </div>
-    <div>
-      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">Delivery Delay for In-App Messages</h3>
-    <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge private-beta">PRIVATE BETA</div>
-  </div>
-  <div class="release-note-body">
-    <p>You can now delay displaying In-App messages using delivery preferences. Instead of showing messages immediately at app launch, you can delay delivery by up to 20 minutes, to ensure messages appear at the right moment.</p>
-    <p>This enhancement helps reduce disruption and improve engagement for the In-App messages without requiring any developer effort. This feature is now available on Android SDK v7.7.1+ and iOS SDK v7.4.0+ for select customers.</p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-inapp#in-app-delay" target="_blank">In-App Delay</a>.</p>
-  </div>
-  <hr/>
-</div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
 <div class="release-note article" data-category="product-experiences" id="picture-in-picture-support-for-in-app-messages-and-web-popups">
   <div class="release-note-header">
     <div class="anchor-link-icon">

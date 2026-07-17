@@ -187,6 +187,35 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## June
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="picture-in-picture-support-for-in-app-messages-and-web-popups">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#picture-in-picture-support-for-in-app-messages-and-web-popups"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Picture-in-Picture Support for In-App Messages and Web Popups</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>In-App Messages and Web Popups now support a Picture-in-Picture (PiP) format, enabling you to display a draggable, dismissible floating window with rich media such as Images, GIFs, or short videos, over your app's existing UI without interrupting user interactions.</p>
+    <p>With PiP, you can:</p>
+    <p>
+      <ul>
+        <li>Display high-attention promotions that stay visible without interrupting user actions so users continue their primary activity.</li>
+        <li>Let users drag and snap the PiP window to any screen corner, expand it to full screen, or dismiss it.</li>
+        <li>Choose from small, medium, or large size presets, set the initial corner placement, and select an entrance animation.</li>
+      </ul>
+    </p>
+    <p>This feature is supported for Android SDK v8.1.0 or iOS SDK v7.6.0 and above.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/in-app-editor#picture-in-picture-pip-template" target="_blank">Picture-in-Picture for In-App Messages</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="segments" id="edit-past-behavior-segments">
   <div class="release-note-header">
     <div class="anchor-link-icon">

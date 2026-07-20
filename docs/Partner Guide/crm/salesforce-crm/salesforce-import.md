@@ -18,6 +18,27 @@ Connecting your Salesforce CRM to CleverTap lets you bring CRM records into Clev
 - Trigger CleverTap Journeys and Campaigns from CRM events (a new Opportunity, a closed Case, a renewed Subscription).
 - Backfill historical CRM records so segmentation works from day one.&#x20;
 
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/vJwDLLvm5mILctHhHMWhFA/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
+
+#
+
 <Callout icon="📘" theme="info">
   #### Salesforce Add-on
 

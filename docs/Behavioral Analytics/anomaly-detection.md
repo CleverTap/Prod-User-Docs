@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to spot unusual spikes and drops in your metrics instantly and
   understand their exact causes.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -17,24 +17,6 @@ Connecting your Salesforce CRM to CleverTap lets you bring CRM records into Clev
 - Segment users by CRM attributes (lead status, deal stage, subscription tier, and so on).
 - Trigger CleverTap Journeys and Campaigns from CRM events (a new Opportunity, a closed Case, a renewed Subscription).
 - Backfill historical CRM records so segmentation works from day one.&#x20;
-  <HTMLBlock>{`
-  <div
-                style="
-                  position: relative;
-                  padding-bottom: 56.25%;
-                  height: 0;
-                  border-radius: 0;
-                  box-shadow: 0 15px 40px rgba(63,58,79,.3);
-                  overflow: hidden;
-                  min-width:320px"><iframe
-                src="https://clevertap.portal.trainn.co/share/vJwDLLvm5mILctHhHMWhFA/embed?autoplay=false"
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-                allow="autoplay; fullscreen"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-  `}</HTMLBlock>
 
 <Callout icon="📘" theme="info">
   #### Salesforce Add-on
@@ -153,15 +135,13 @@ Before configuring the integration, ensure you have the following:
   <Image src="https://files.readme.io/b1d94d561559ff350ae681e993d74ca58e10450f17b2864d3d222d96f02a6625-image.png" alt="CleverTap Project Details" align="center" caption="CleverTap Project Details" border={true} />
 
 
-
-
   | Field        | Description                                                                                                                                                                             |
   | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Account ID   | CleverTap Project ID.                                                                                                                                                                   |
   | API Passcode | Project's API passcode. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/concepts#passcode) in CleverTap docs.                                    |
   | Region       | The data center hosting your account (for example, `in1`, `us1`, `eu1`, `sg1`). For more information, refer to [API Endpoints](https://developer.clevertap.com/docs/idc#api) by region. |
 
-
+<br />
 
 # Import Standard Objects
 
@@ -178,12 +158,16 @@ The following are the key steps to import data from Salesforce to CleverTap:
 The CleverTap _Settings_ tab shows the Connections list. Each connection points to one CleverTap project. To connect Salesforce to the CleverTap account, perform the following steps:
 
 1. In Salesforce, open the App Launcher and search for "CleverTap".
+
 2. Select _CleverTap_ from the results.
+
 3. Open the CleverTap _Settings_ tab and click **Add New Connection**.
+
 4. Enter the following integration details: Region, Connection Name, Account ID, API Passcode.
 
 
    <Image src="https://files.readme.io/0efa1a4bb21e4986d16a5366efd72f39ef0e867286f4beadd4d5744f95e5124d-Add_New_Connection.svg" align="center" caption="Add New Connection on Salesforce Dashboard" border={true} />
+
 
 5. Click **Save**. The connection now appears in the Connections list. You can either delete, edit, or map a Field.
 
@@ -206,8 +190,6 @@ To import data from Salesforce, perform the following steps:
 
 
    <Image src="https://files.readme.io/d0a50f9c0b67f8d06a72784f82b4883d95c00f4086088457c7025ef22be9e4ad-Salesforce_sync.svg" align="center" caption="Add New Sync" border={true} />
-
-
 
 
    <Table align={["left","left"]}>

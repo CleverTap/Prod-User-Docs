@@ -1,5 +1,5 @@
 ---
-title: Flows
+title: WhatsApp Flows
 excerpt: Create, configure, and launch WhatsApp Flows in CleverTap.
 deprecated: false
 hidden: false

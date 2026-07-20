@@ -13,10 +13,28 @@ metadata:
 
 Connecting your Salesforce CRM to CleverTap lets you bring CRM records into CleverTap to:
 
-* Build a unified view of each customer that combines CRM data with app/web behavior.
-* Segment users by CRM attributes (lead status, deal stage, subscription tier, and so on).
-* Trigger CleverTap Journeys and Campaigns from CRM events (a new Opportunity, a closed Case, a renewed Subscription).
-* Backfill historical CRM records so segmentation works from day one.
+- Build a unified view of each customer that combines CRM data with app/web behavior.
+- Segment users by CRM attributes (lead status, deal stage, subscription tier, and so on).
+- Trigger CleverTap Journeys and Campaigns from CRM events (a new Opportunity, a closed Case, a renewed Subscription).
+- Backfill historical CRM records so segmentation works from day one.&#x20;
+  <HTMLBlock>{`
+  <div
+                style="
+                  position: relative;
+                  padding-bottom: 56.25%;
+                  height: 0;
+                  border-radius: 0;
+                  box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                  overflow: hidden;
+                  min-width:320px"><iframe
+                src="https://clevertap.portal.trainn.co/share/vJwDLLvm5mILctHhHMWhFA/embed?autoplay=false"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                allow="autoplay; fullscreen"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+  `}</HTMLBlock>
 
 <Callout icon="📘" theme="info">
   #### Salesforce Add-on
@@ -26,7 +44,9 @@ Connecting your Salesforce CRM to CleverTap lets you bring CRM records into Clev
 
 The integration is delivered through the [CleverTap-managed Package](https://appexchange.salesforce.com/appxListingDetail?listingId=6d0bd1f7-9c5c-484d-87cd-cfc0c68827ca\&tab=e) (namespace: CleverTap), which you install in your Salesforce org from the AppExchange.
 
-<Image align="center" border={true} caption="Salesforce Import Workflow" src="https://files.readme.io/c937c5bd9e25824da3fd3070b5956b22e4416ad1946bb2a9fc78b313c9e963ab-salesforce-import-clevertap.png" />
+
+<Image src="https://files.readme.io/c937c5bd9e25824da3fd3070b5956b22e4416ad1946bb2a9fc78b313c9e963ab-salesforce-import-clevertap.png" align="center" caption="Salesforce Import Workflow" border={true} />
+
 
 # &#x20;CleverTap-Managed Package
 
@@ -92,8 +112,8 @@ The following table shows the components present inside the CleverTap-managed Pa
       </td>
 
       <td>
-        * Optional.
-        * Queues records in Salesforce and sends them on a cadence you pick (5 to 60 minutes) instead of one callout per change.
+        - Optional.
+        - Queues records in Salesforce and sends them on a cadence you pick (5 to 60 minutes) instead of one callout per change.
       </td>
     </tr>
   </tbody>
@@ -103,15 +123,15 @@ The following table shows the components present inside the CleverTap-managed Pa
 
 The import flow supports the following standard objects out of the box, along with any custom objects in your Salesforce org:
 
-* **Standard Objects with Prebuilt Triggers**: Lead, Contact, Account, Opportunity, Case, Campaign, Event, Task, Campaign Member, Service Appointment, Quote, Contract, Order, Product, Price Book, Asset, and Opportunity Product.
-* **Custom Objects**: Any custom object in your org is supported. They appear in the Source Entity dropdown with a `[Custom]` prefix and require a one-time Record-Triggered Flow setup.
-* **Objects excluded from Source Entity Dropdown**:
-  * Custom Settings
-  * Custom Metadata Types (objects ending in `__mdt`)
-  * Platform Events (objects ending in `__e`)
-  * Big Objects (objects ending in `__b`)
-  * External Objects (objects ending in `__x`)
-  * The internal objects of the package (`Config__c`, `Event__c`, `Sync_Configuration__c`, `Sync_Queue__c`, `Mapping__c`, `CleverTap_Passcode__c`)
+- **Standard Objects with Prebuilt Triggers**: Lead, Contact, Account, Opportunity, Case, Campaign, Event, Task, Campaign Member, Service Appointment, Quote, Contract, Order, Product, Price Book, Asset, and Opportunity Product.
+- **Custom Objects**: Any custom object in your org is supported. They appear in the Source Entity dropdown with a `[Custom]` prefix and require a one-time Record-Triggered Flow setup.
+- **Objects excluded from Source Entity Dropdown**:
+  - Custom Settings
+  - Custom Metadata Types (objects ending in `__mdt`)
+  - Platform Events (objects ending in `__e`)
+  - Big Objects (objects ending in `__b`)
+  - External Objects (objects ending in `__x`)
+  - The internal objects of the package (`Config__c`, `Event__c`, `Sync_Configuration__c`, `Sync_Queue__c`, `Mapping__c`, `CleverTap_Passcode__c`)
 
 # Prerequisites
 
@@ -119,19 +139,21 @@ Before configuring the integration, ensure you have the following:
 
 ### Salesforce
 
-* A valid Salesforce account on Enterprise, Unlimited, or Performance edition with API access enabled.
-* Permission to access Object Manager, App Manager, Flow Builder, and Apex Classes.
-* The CleverTap-managed package is installed from AppExchange (namespace: CleverTap).
-* The CleverTap Integration Access permission set is assigned to users configuring the integration.
+- A valid Salesforce account on Enterprise, Unlimited, or Performance edition with API access enabled.
+- Permission to access Object Manager, App Manager, Flow Builder, and Apex Classes.
+- The CleverTap-managed package is installed from AppExchange (namespace: CleverTap).
+- The CleverTap Integration Access permission set is assigned to users configuring the integration.
 
 ### CleverTap
 
-* Admin access to the CleverTap dashboard.
-* Find the following details from your CleverTap dashboard under Settings > Project:
+- Admin access to the CleverTap dashboard.
+- Find the following details from your CleverTap dashboard under Settings > Project:
 
-  <Image align="center" alt="CleverTap Project Details" border={true} caption="CleverTap Project Details" src="https://files.readme.io/b1d94d561559ff350ae681e993d74ca58e10450f17b2864d3d222d96f02a6625-image.png" />
 
-  <br />
+  <Image src="https://files.readme.io/b1d94d561559ff350ae681e993d74ca58e10450f17b2864d3d222d96f02a6625-image.png" alt="CleverTap Project Details" align="center" caption="CleverTap Project Details" border={true} />
+
+
+
 
   | Field        | Description                                                                                                                                                                             |
   | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -139,7 +161,7 @@ Before configuring the integration, ensure you have the following:
   | API Passcode | Project's API passcode. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/concepts#passcode) in CleverTap docs.                                    |
   | Region       | The data center hosting your account (for example, `in1`, `us1`, `eu1`, `sg1`). For more information, refer to [API Endpoints](https://developer.clevertap.com/docs/idc#api) by region. |
 
-  <br />
+
 
 # Import Standard Objects
 
@@ -160,10 +182,14 @@ The CleverTap _Settings_ tab shows the Connections list. Each connection points 
 3. Open the CleverTap _Settings_ tab and click **Add New Connection**.
 4. Enter the following integration details: Region, Connection Name, Account ID, API Passcode.
 
-   <Image align="center" border={true} caption="Add New Connection on Salesforce Dashboard" src="https://files.readme.io/0efa1a4bb21e4986d16a5366efd72f39ef0e867286f4beadd4d5744f95e5124d-Add_New_Connection.svg" />
+
+   <Image src="https://files.readme.io/0efa1a4bb21e4986d16a5366efd72f39ef0e867286f4beadd4d5744f95e5124d-Add_New_Connection.svg" align="center" caption="Add New Connection on Salesforce Dashboard" border={true} />
+
 5. Click **Save**. The connection now appears in the Connections list. You can either delete, edit, or map a Field.
 
-   <Image align="center" border={true} src="https://files.readme.io/8eaf10de7da9a079882953bc9757f64988844d717868adaa6365b2d35fce737b-CleverTap_Settings_Tab_on_Salesforce_Dashboard.png" className="border" />
+
+   <Image src="https://files.readme.io/8eaf10de7da9a079882953bc9757f64988844d717868adaa6365b2d35fce737b-CleverTap_Settings_Tab_on_Salesforce_Dashboard.png" align="center" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Multiple Salesforce Connections
@@ -178,9 +204,11 @@ To import data from Salesforce, perform the following steps:
 1. In CleverTap Settings, click **Map Field** for the relevant connection.
 2. Click **Add New Sync** and enter the  following details:
 
-   <Image align="center" border={true} caption="Add New Sync" src="https://files.readme.io/d0a50f9c0b67f8d06a72784f82b4883d95c00f4086088457c7025ef22be9e4ad-Salesforce_sync.svg" />
 
-   <br />
+   <Image src="https://files.readme.io/d0a50f9c0b67f8d06a72784f82b4883d95c00f4086088457c7025ef22be9e4ad-Salesforce_sync.svg" align="center" caption="Add New Sync" border={true} />
+
+
+
 
    <Table align={["left","left"]}>
      <thead>
@@ -234,8 +262,8 @@ To import data from Salesforce, perform the following steps:
          <td>
            Available options:
 
-           * **Profiles**: Select Profiles to push Salesforce records into CleverTap as user profile records. This helps build a richer customer view for more effective segmentation and engagement.
-           * **Event**: Select Event to capture an activity at a point in time, for example, an Opportunity created, a Case closed, a subscription renewed, and record it against the user profile in CleverTap. You should select _Event_ when you want to trigger a campaign from something that happened in Salesforce, or when you are doing lifecycle analytics.
+           - **Profiles**: Select Profiles to push Salesforce records into CleverTap as user profile records. This helps build a richer customer view for more effective segmentation and engagement.
+           - **Event**: Select Event to capture an activity at a point in time, for example, an Opportunity created, a Case closed, a subscription renewed, and record it against the user profile in CleverTap. You should select _Event_ when you want to trigger a campaign from something that happened in Salesforce, or when you are doing lifecycle analytics.
          </td>
        </tr>
 
@@ -253,7 +281,9 @@ To import data from Salesforce, perform the following steps:
 3. (Optional) Configure the [Delivery Mode](doc:salesforce-import#select-delivery-mode) and [Filter](doc:salesforce-import#configure-field-level-filters). To start with, you can keep the defaults as is.
    1. Click **Next**. The field mapping screen opens.
 
-      <Image align="center" border={true} caption="Map Fields for Sync" src="https://files.readme.io/950026f9544ad56c96151b918b0c6e6329845a551163209315b8b4b3a21b5f5d-Field_Mapping.svg" />
+
+      <Image src="https://files.readme.io/950026f9544ad56c96151b918b0c6e6329845a551163209315b8b4b3a21b5f5d-Field_Mapping.svg" align="center" caption="Map Fields for Sync" border={true} />
+
 
       <Table align={["left","left"]}>
         <thead>
@@ -297,8 +327,8 @@ To import data from Salesforce, perform the following steps:
             </td>
 
             <td>
-              * For profiles import, map any other Salesforce fields you want to map in CleverTap (for example, FirstName, LastName, LeadSource, Status, Company).
-              * For event import, map the event properties you want to track. For an Opportunity event, the fields are typically Amount, StageName, CloseDate, and so on.
+              - For profiles import, map any other Salesforce fields you want to map in CleverTap (for example, FirstName, LastName, LeadSource, Status, Company).
+              - For event import, map the event properties you want to track. For an Opportunity event, the fields are typically Amount, StageName, CloseDate, and so on.
 
               **Note**: Event mappings are additive. Every field you map here becomes an event property in CleverTap, which marketers can then segment or personalize.
             </td>
@@ -317,28 +347,32 @@ To import data from Salesforce, perform the following steps:
 
 Every sync configuration runs in one of two modes. You set this on the sync basics screen, before field mapping.
 
-<Image align="center" border={true} caption="Choose Delivery Mode" src="https://files.readme.io/bbba5a300657af7a861ba8e39de27cfef7650a52bc3a91bceb3ed1de1c65333c-choose-delivery-mode-clevertap.png" />
 
-* **Real-Time**: Default. Every record change triggers an immediate HTTP callout to CleverTap. This is the right default for most use cases. Changes appear in CleverTap within seconds. Select this option if the data drives a live Journey or Campaign trigger.
-  * Pros: Lowest latency. The marketing team can respond to CRM activity in real time.
-  * Cons: One callout per record change. High-volume orgs that update thousands of Leads per hour can come close to the Salesforce daily callout limit (100K on Enterprise, 200K on Unlimited).
-* **Batch**: Select this option if you are running profile enrichment, segmentation backfills, or anything that does not need to land in CleverTap within seconds. Changes are queued inside Salesforce (in a staging table called `Sync_Queue__c`) and drained on a schedule you pick. One scheduled job collects all pending rows for each sync and sends them to CleverTap in one callout per record.
-  * Pros: Predictable throughput. Best for high volume. Failed records retry automatically up to **5 times**.
-  * Cons: Data lags by your selected cadence. Uses scheduled Apex slots. For more information, refer to [Configure Batch Drainer Schedule](doc:salesforce-import#configure-batch-drainer-schedule). When you select this option, the following fields appear:
-  * **Batch Size**: The number of records sent in a single drainer call. The default value is **100**, and the maximum is **1000**.
-  * Batch Frequency Minutes: Indicates how often the drainer runs. You can select from the following options: 5, 10, 15, 20, 30, or 60.
+<Image src="https://files.readme.io/bbba5a300657af7a861ba8e39de27cfef7650a52bc3a91bceb3ed1de1c65333c-choose-delivery-mode-clevertap.png" align="center" caption="Choose Delivery Mode" border={true} />
+
+
+- **Real-Time**: Default. Every record change triggers an immediate HTTP callout to CleverTap. This is the right default for most use cases. Changes appear in CleverTap within seconds. Select this option if the data drives a live Journey or Campaign trigger.
+  - Pros: Lowest latency. The marketing team can respond to CRM activity in real time.
+  - Cons: One callout per record change. High-volume orgs that update thousands of Leads per hour can come close to the Salesforce daily callout limit (100K on Enterprise, 200K on Unlimited).
+- **Batch**: Select this option if you are running profile enrichment, segmentation backfills, or anything that does not need to land in CleverTap within seconds. Changes are queued inside Salesforce (in a staging table called `Sync_Queue__c`) and drained on a schedule you pick. One scheduled job collects all pending rows for each sync and sends them to CleverTap in one callout per record.
+  - Pros: Predictable throughput. Best for high volume. Failed records retry automatically up to **5 times**.
+  - Cons: Data lags by your selected cadence. Uses scheduled Apex slots. For more information, refer to [Configure Batch Drainer Schedule](doc:salesforce-import#configure-batch-drainer-schedule). When you select this option, the following fields appear:
+  - **Batch Size**: The number of records sent in a single drainer call. The default value is **100**, and the maximum is **1000**.
+  - Batch Frequency Minutes: Indicates how often the drainer runs. You can select from the following options: 5, 10, 15, 20, 30, or 60.
 
 ## Configure Field-Level Filters
 
 Filters let you sync only the records that matter. Set per sync configuration. The following are the available field-level filter options:
 
-<Image align="center" border={true} caption="Filter Modes" src="https://files.readme.io/5e0e0cf94a60ecae681822e421aef1231a9d79c9c00656d5b27a10ab4235b7d9-Filter_Modes_-_What_Gets_Synced.png" />
 
-* **None**: Default. Syncs every change.
-* **Specific Fields Changed**: Sync only fires when one of your watched fields actually changes. Pick the fields from a dual-listbox.
+<Image src="https://files.readme.io/5e0e0cf94a60ecae681822e421aef1231a9d79c9c00656d5b27a10ab4235b7d9-Filter_Modes_-_What_Gets_Synced.png" align="center" caption="Filter Modes" border={true} />
+
+
+- **None**: Default. Syncs every change.
+- **Specific Fields Changed**: Sync only fires when one of your watched fields actually changes. Pick the fields from a dual-listbox.
 
   For example, `Watched fields` = `Status`, `Email`. A Lead whose `Description` gets edited will not fire a sync. A Lead whose `Status` changes from `Open` to `Qualified` does.
-* **Condition Based**: Sync only fires when the record matches a condition you write. Supports the following operators:
+- **Condition Based**: Sync only fires when the record matches a condition you write. Supports the following operators:
 
   | Operator             | Meaning            | Example                                       |
   | :------------------- | :----------------- | :-------------------------------------------- |
@@ -348,12 +382,11 @@ Filters let you sync only the records that matter. Set per sync configuration. T
   | `AND`, `OR`          | compound           | `Status = 'Qualified' AND LeadSource != null` |
   | `null`               | null check         | `LeadSource != null`                          |
 
-  * String values must be wrapped in single quotes: Status = 'Qualified'.
-  * Numbers are unquoted: NumberOfEmployees > 50.
+  - String values must be wrapped in single quotes: Status = 'Qualified'.
+  - Numbers are unquoted: NumberOfEmployees > 50.
 
-  The package validates the expression live as you type and blocks you from clicking Next if the expression is malformed (unbalanced quotes, unknown field name, trailing AND, and so on). Use the Show available fields button next to the editor to see the valid field names on the source object.  
-  You can use this with both Standard and Custom objects. Condition evaluation only needs the current record values, so it works fine in both the Trigger path and the Flow-invocable path.
-* **Field and Condition**: Both conditions must be met: at least one watched field must change, and the defined condition must evaluate to true.
+  The package validates the expression live as you type and blocks you from clicking Next if the expression is malformed (unbalanced quotes, unknown field name, trailing AND, and so on). Use the Show available fields button next to the editor to see the valid field names on the source object.<br />You can use this with both Standard and Custom objects. Condition evaluation only needs the current record values, so it works fine in both the Trigger path and the Flow-invocable path.
+- **Field and Condition**: Both conditions must be met: at least one watched field must change, and the defined condition must evaluate to true.
 
   For example:
 
@@ -361,14 +394,13 @@ Filters let you sync only the records that matter. Set per sync configuration. T
 
   **Sync fires when**:
 
-  * `Status` changes to `Qualified` (watched field changed + condition now matches)
-  * `LeadSource` changes for a Lead that is already `Qualified` (watched field changed + condition continues to match)
+  - `Status` changes to `Qualified` (watched field changed + condition now matches)
+  - `LeadSource` changes for a Lead that is already `Qualified` (watched field changed + condition continues to match)
 
   **Sync does NOT fire when**:
 
-  * `Description` changes on a Qualified Lead (no watched field changed)
-  * `Status` changes to `Open` (watched field changed, but condition no longer matches)
-    <br />
+  - `Description` changes on a Qualified Lead (no watched field changed)
+  - `Status` changes to `Open` (watched field changed, but condition no longer matches) <br />
 
   <Callout icon="📘" theme="info">
     #### Note
@@ -389,7 +421,9 @@ When you pick Batch as the delivery mode, the package queues records in Salesfor
 1. Go to _CleverTap Settings_  > Batch Scheduler.
 2. Select the action you want to perform:
 
-   <Image align="center" border={true} caption="Configure Batch Drain Schedule" src="https://files.readme.io/fa9b4adea9d177d35c48931540876a186251d7f3511a82ff0c5cab2601a85031-Batch_Drain_Schedule.svg" />
+
+   <Image src="https://files.readme.io/fa9b4adea9d177d35c48931540876a186251d7f3511a82ff0c5cab2601a85031-Batch_Drain_Schedule.svg" align="center" caption="Configure Batch Drain Schedule" border={true} />
+
 
    | Field         | Description                                                                                                |
    | :------------ | :--------------------------------------------------------------------------------------------------------- |
@@ -412,7 +446,7 @@ The following table lists the components present under the _Batch Scheduler_ sec
 
 ### Multiple Scheduled Jobs
 
-Multiple scheduled jobs are created for a single cadence due to the Salesforce platform limitation. Salesforce requires a fixed-minute value in Apex cron expressions and does not support shorthand intervals such as “every 5 minutes” (for example, */5). To achieve sub-hourly schedules, the system creates one job per minute interval.
+Multiple scheduled jobs are created for a single cadence due to the Salesforce platform limitation. Salesforce requires a fixed-minute value in Apex cron expressions and does not support shorthand intervals such as “every 5 minutes” (for example, \*/5). To achieve sub-hourly schedules, the system creates one job per minute interval.
 
 For example, for a 5-minute cadence, it creates 12 jobs (one for each 5-minute slot in an hour). Similarly, for a 15-minute cadence, it creates 4 jobs.
 
@@ -454,9 +488,9 @@ To import custom objects from Salesforce to CleverTap, perform the following ste
 
 In addition to the usual requirements, the following are prerequisites for importing custom objects:
 
-* The custom object exists in your org (for example, `Property_Lead__c`).
-* The fields you want to sync already exist on it.
-* Access to Flow Builder in Setup.
+- The custom object exists in your org (for example, `Property_Lead__c`).
+- The fields you want to sync already exist on it.
+- Access to Flow Builder in Setup.
 
 ## Configure Sync
 
@@ -464,12 +498,12 @@ To configure the sync, perform the following steps:
 
 1. Go to _CleverTapSettings_ and click **Map Field** for the relevant connection.
 2. Click **Add New Sync** and enter the following details:
-   * Source Entity: Choose your custom object. Custom objects show with a [Custom] prefix in the dropdown.
-   * Target Entity: Select Profile or Event.
+   - Source Entity: Choose your custom object. Custom objects show with a \[Custom] prefix in the dropdown.
+   - Target Entity: Select Profile or Event.
 3. Click **Next**, configure the following field mappings and click **Save**:
-   * Customer ID: This field must map to a unique identifier field on your custom object.
-   * Event Name: Mapping for this field is required only if the _Target Entity_ is an event. It can have a static value or be mapped from a field.
-   * Additional Fields: Map any custom fields to CleverTap properties.
+   - Customer ID: This field must map to a unique identifier field on your custom object.
+   - Event Name: Mapping for this field is required only if the _Target Entity_ is an event. It can have a static value or be mapped from a field.
+   - Additional Fields: Map any custom fields to CleverTap properties.
 
 ## Create Record-Triggered Flow
 
@@ -489,21 +523,23 @@ To create Record-Triggered Flow, perform the following steps:
    1. Click `+` and select _Action_.
    2. Search for _Send Custom Object to CleverTap_ and configure the inputs:
 
-      <Image align="center" border={true} caption="Configure Inputs for CleverTap Sync Action" src="https://files.readme.io/7d9afa27b53641da272b5c0e611619985712fb5a62022c74cafb6c169c256fa1-Salesforce_Setup.svg" />
 
-      * **Record ID**: Set to `{!$Record.Id}` (the ID of the triggering record). If the visual picker doesn't show it, click the toggle to switch to manual entry and type `{!$Record.Id}` literally.
+      <Image src="https://files.readme.io/7d9afa27b53641da272b5c0e611619985712fb5a62022c74cafb6c169c256fa1-Salesforce_Setup.svg" align="center" caption="Configure Inputs for CleverTap Sync Action" border={true} />
+
+
+      - **Record ID**: Set to `{!$Record.Id}` (the ID of the triggering record). If the visual picker doesn't show it, click the toggle to switch to manual entry and type `{!$Record.Id}` literally.
 
         <Callout icon="📘" theme="info">
           #### Important
 
           Do NOT pick `Owner ID`, `Created By ID`, or any other relationship field here. The Record ID must be the ID of the custom object record itself. If `{!$Record.Id}`  does not appear in the visual picker, click the toggle icon to switch to manual entry mode and type `{!$Record.Id}`.
         </Callout>
-      * **Object API Name**: Enter the API name of your custom object as plain text, for example `CleverTap__Property_Lead__c`. This must be a static string, not a field reference.
+      - **Object API Name**: Enter the API name of your custom object as plain text, for example `CleverTap__Property_Lead__c`. This must be a static string, not a field reference.
 
         <Callout icon="📘" theme="info">
           #### Important
 
-          In a namespaced org (which yours is, because the package is installed), custom objects you create carry the `CleverTap__` namespace prefix. A custom object named Property Lead has the API name `CleverTap__Property_Lead__c`, not `Property_Lead__c`. Verify the exact API name in _Setup_ > _Object Manager_ > _[Your Object]_ > _Details_.
+          In a namespaced org (which yours is, because the package is installed), custom objects you create carry the `CleverTap__` namespace prefix. A custom object named Property Lead has the API name `CleverTap__Property_Lead__c`, not `Property_Lead__c`. Verify the exact API name in _Setup_ > _Object Manager_ > _\[Your Object]_ > _Details_.
         </Callout>
    3. Give the action a label (for example, "Sync to CleverTap"), then click **Done**.
 6. Click **Save**, give the flow a name (for example, _Sync Property Lead to CleverTap_), and then click **Activate**.
@@ -539,9 +575,9 @@ After a record is created or updated in Salesforce and a matching sync is active
 1. On the Salesforce dashboard, open the _CleverTap Event Logs_ tab.
 2. Find the row for the record you are verifying.
 3. Click the dropdown and select _View Details_. The following panel displays:
-   * Status: Success or Failure
-   * Response: The body CleverTap returned.
-   * Request: The payload sent (so you can confirm the field mapping resolved correctly).
+   - Status: Success or Failure
+   - Response: The body CleverTap returned.
+   - Request: The payload sent (so you can confirm the field mapping resolved correctly).
 4. Copy the identity value of the record (the `Identity` mapping, typically the Email).
 5. From the CleverTap dashboard, go to _Segments_ > _Find People_ and search the profile by Identity.
 6. Paste the identity value into the input field.
@@ -565,8 +601,8 @@ To trigger historical sync, perform the following steps:
 
 You can see the results:
 
-* **On Salesforce dashboard**: CleverTap Events Logs. It displays the per-record success/failure.
-* **On CleverTap dashboard**: Segments > Find People. It displays the records available for segmentation immediately.
+- **On Salesforce dashboard**: CleverTap Events Logs. It displays the per-record success/failure.
+- **On CleverTap dashboard**: Segments > Find People. It displays the records available for segmentation immediately.
 
 # Event Logs & Monitoring
 
@@ -581,8 +617,8 @@ The _CleverTap Event Logs_ tab is your single source of truth for sync activity.
 
 You can view the following details by clicking the dropdown and selecting **View Details**.
 
-* Request body: The JSON payload that was sent to CleverTap. Confirms that your field mappings produced the values you expect.
-* Response body: What CleverTap returned. On failure, this usually tells you exactly what went wrong (invalid identity, unknown event property, rate-limit error, and so on).
+- Request body: The JSON payload that was sent to CleverTap. Confirms that your field mappings produced the values you expect.
+- Response body: What CleverTap returned. On failure, this usually tells you exactly what went wrong (invalid identity, unknown event property, rate-limit error, and so on).
 
 # Error Responses
 
@@ -603,9 +639,9 @@ The following are the common failure responses:
 
 Accurate user attribution depends on consistent identity across syncs. Follow these rules when mapping Customer ID:
 
-* **For Profile Imports**: Use the record's Email field (Lead.Email, Contact.Email) wherever possible. Emails are usually unique and stable. Avoid mutable fields like phone numbers, and avoid Salesforce record IDs — the same human has different IDs as a Lead versus a Contact, and your CleverTap profile would split.
-* **For Event Imports**: Use the same identity field you used for the profile. If Lead profiles sync on Lead.Email, Opportunity events should also be attributed to Email (typically via the related Contact.Email), so events land on the right profile.
-* **For Custom Objects**: Apply the same principle. Pick one stable, unique field per object and reuse it across the profile sync and any event syncs on that object.
+- **For Profile Imports**: Use the record's Email field (Lead.Email, Contact.Email) wherever possible. Emails are usually unique and stable. Avoid mutable fields like phone numbers, and avoid Salesforce record IDs — the same human has different IDs as a Lead versus a Contact, and your CleverTap profile would split.
+- **For Event Imports**: Use the same identity field you used for the profile. If Lead profiles sync on Lead.Email, Opportunity events should also be attributed to Email (typically via the related Contact.Email), so events land on the right profile.
+- **For Custom Objects**: Apply the same principle. Pick one stable, unique field per object and reuse it across the profile sync and any event syncs on that object.
 
 CleverTap recommends having one identity field per person across profile and event sync. Also, before a full historical backfill, run a test sync with a narrow filter (for example, 10 records) and confirm the profiles appear correctly in CleverTap. You must write down your org's identity strategy somewhere your marketing, analytics, and CRM teams can find it.
 
@@ -617,9 +653,9 @@ If you create two Active Sync configurations for the same source entity, each re
 
 A simple rule of thumb:
 
-* For a Live campaign trigger, you can select Real-Time.
-* For Profile enrichment/analytics/backfill, select Batch and start with a 15-minute cadence.
-* In the case of Mixed needs for the same object, you can configure the following two syncs: Real-Time for the marketing-critical fields, and Batch for everything else.
+- For a Live campaign trigger, you can select Real-Time.
+- For Profile enrichment/analytics/backfill, select Batch and start with a 15-minute cadence.
+- In the case of Mixed needs for the same object, you can configure the following two syncs: Real-Time for the marketing-critical fields, and Batch for everything else.
 
 ### Filters to Save API Volume
 
@@ -645,7 +681,7 @@ If a sync fires on every record update (including noise such as Description upda
 | Missing required input parameter: recordId                 | The Flow Record ID input is mapped to the wrong field.         | Edit the Flow action and set Record ID to `{!$Record.Id}` (not `Owner ID` or any relationship field).                                                                                              |
 | Object API Name shows "bad value for restricted picklist"  | You're on an older version of the package.                     | Install the latest package version, the Source Entity field is unrestricted in current versions.                                                                                                   |
 | Custom object doesn't appear in the Source Entity dropdown | Browser cache, or the object doesn't meet criteria.            | Hard-refresh the browser (Cmd+Shift+R or Ctrl+Shift+R). Ensure the object is accessible and queryable, and is not a Custom Setting, Metadata Type, Platform Event, Big Object, or External Object. |
-| Error: "SOQL error on field name"                          | A custom field API name is misspelt in the sync mapping.       | Verify the field API name under _Setup_ > _Object Manager_ > _[Your Object]_ > _Fields & Relationships_.                                                                                           |
+| Error: "SOQL error on field name"                          | A custom field API name is misspelt in the sync mapping.       | Verify the field API name under _Setup_ > _Object Manager_ > _\[Your Object]_ > _Fields & Relationships_.                                                                                          |
 
 ### Batch/Scheduler
 
@@ -675,9 +711,9 @@ Historical import backfills previously captured Salesforce records into CleverTa
 
 Yes. The following are some of the use cases where you can create multiple sync configurations for the same Salesforce object:
 
-* Push the same object to multiple CleverTap accounts (different regions or business units).
-* Separate profile and event syncs from the same object (one profile-target, one event-target).
-* Use different field mappings for different CleverTap use cases.
+- Push the same object to multiple CleverTap accounts (different regions or business units).
+- Separate profile and event syncs from the same object (one profile-target, one event-target).
+- Use different field mappings for different CleverTap use cases.
 
 Each sync configuration operates independently, with its own mapping, target entity, connection, delivery mode, and filters. If you create overlapping active configurations, a warning is displayed so you can review and adjust if needed.
 
@@ -687,8 +723,8 @@ In Salesforce, it is common for triggers to fire multiple times during a single 
 
 As a result, a newly created record may trigger:
 
-* Once on insert
-* Again, on the subsequent update, this is how Batch mode handles it.
+- Once on insert
+- Again, on the subsequent update, this is how Batch mode handles it.
 
 To prevent duplicate sends, Batch mode deduplicates records at enqueue time. If a record already has a Pending queue entry for a given sync configuration, additional enqueue attempts are ignored.
 
@@ -696,9 +732,9 @@ For example, there are three new Leads, which means there will be three queue en
 
 To address this:
 
-* Accept the duplicate behavior, or
-* Add a Specific Fields Changed filter, or
-* Switch the sync to Batch mode for built-in deduplication
+- Accept the duplicate behavior, or
+- Add a Specific Fields Changed filter, or
+- Switch the sync to Batch mode for built-in deduplication
 
 ### How do I sync custom objects?
 
@@ -719,7 +755,7 @@ Any standard custom data object. Automatically excluded: Custom Settings, Custom
 
 ### What is the API name format for custom objects in a namespaced org?
 
-When the CleverTap managed package is installed, custom objects you create carry the `CleverTap__ namespace` prefix. A custom object named Property Lead has the API name `CleverTap__Property_Lead__c`. Verify the exact name in Setup > Object Manager > [Your Object] > Details > API Name.
+When the CleverTap managed package is installed, custom objects you create carry the `CleverTap__ namespace` prefix. A custom object named Property Lead has the API name `CleverTap__Property_Lead__c`. Verify the exact name in Setup > Object Manager > \[Your Object] > Details > API Name.
 
 ### What happens when a sync fails?
 
@@ -741,9 +777,9 @@ Salesforce's Apex scheduler rejects any "every N minutes" shorthand in cron expr
 
 Three levers, in order of effectiveness:
 
-* Add a Specific Fields Changed filter on the fields marketing actually cares about.
-* Switch to Batch mode at 15 or 30-minute cadence.
-* Use a Condition-Based filter to cut out records that aren't relevant to CleverTap at all (e.g. Status != 'Closed Lost').
+- Add a Specific Fields Changed filter on the fields marketing actually cares about.
+- Switch to Batch mode at 15 or 30-minute cadence.
+- Use a Condition-Based filter to cut out records that aren't relevant to CleverTap at all (e.g. Status != 'Closed Lost').
 
 ### Can I edit a sync after it's live?
 

@@ -18,25 +18,6 @@ CleverTap's native Salesforce integration combines structured CRM data with beha
 
 This enables marketing, sales, and support teams to deliver contextual, timely customer experiences throughout the full lifecycle.
 
-<HTMLBlock>{`
-<div
-              style="
-                position: relative;
-                padding-bottom: 56.25%;
-                height: 0;
-                border-radius: 0;
-                box-shadow: 0 15px 40px rgba(63,58,79,.3);
-                overflow: hidden;
-                min-width:320px"><iframe
-              src="https://clevertap.portal.trainn.co/share/vJwDLLvm5mILctHhHMWhFA/embed?autoplay=false"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-              allow="autoplay; fullscreen"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-`}</HTMLBlock>
-
 # Key Benefits
 
 The following benefits help you maintain a connected customer data strategy while enabling targeted engagement across every stage of the customer lifecycle:

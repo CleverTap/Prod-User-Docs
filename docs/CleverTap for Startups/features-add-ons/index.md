@@ -22,30 +22,30 @@ The Essentials plan offers features and add-ons that are essential for early-sta
 
 Gain deep user insights with the following powerful data analysis tools:
 
-* [Boards](https://docs.clevertap.com/docs/simple-reports?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): In CleverTap, we have pre-built dashboards to help you answer general questions about your app usage.
-* [Funnels](https://docs.clevertap.com/docs/funnels?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Funnels are defined as a series of events that a user performs in a particular order. Funnels show users progress through defined paths in your app and pinpoint where they drop off between steps.
-* [Cohorts](https://docs.clevertap.com/docs/cohorts?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Cohort analysis is a way to group users who are similarly based on who or what they have done and track their behavior over time.
-* [Trends](https://docs.clevertap.com/docs/trends?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Trends provide you with the capability to understand how users are using the platform.
-* [Pivots](https://docs.clevertap.com/docs/pivots?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Pivot is a valuable tool for marketers dealing with large volumes of data. It helps them create concise summaries and view custom reports to obtain user insights effectively.
-* [Flows](https://docs.clevertap.com/docs/flows?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Flows provide the capability to understand the ways a user navigates through an application giving a broad view of the common paths users take as well as where they get stuck.
-* [Analyze Events](https://docs.clevertap.com/docs/events-analytics?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Analyzing events helps to understand your audience's behavior comprehensively, whether you want to view which countries use your app the most or what hours of the day they might stream a show.
-* [Real Impact](https://docs.clevertap.com/docs/real-impact?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Real Impact is a reporting dashboard that shows how and to what extent users respond to your CleverTap marketing campaigns—everything from the revenue generated to churn.
-* [Session Analytics](https://docs.clevertap.com/docs/session-analytics?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Session Analytics helps track the events that users perform within a session. Analyzing session length is a great way to measure engagement for certain apps, such as video or music streaming, news, and so on.
+- [Boards](https://docs.clevertap.com/docs/simple-reports?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): In CleverTap, we have pre-built dashboards to help you answer general questions about your app usage.
+- [Funnels](https://docs.clevertap.com/docs/funnels?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Funnels are defined as a series of events that a user performs in a particular order. Funnels show users progress through defined paths in your app and pinpoint where they drop off between steps.
+- [Cohorts](https://docs.clevertap.com/docs/cohorts?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Cohort analysis is a way to group users who are similarly based on who or what they have done and track their behavior over time.
+- [Trends](https://docs.clevertap.com/docs/trends?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Trends provide you with the capability to understand how users are using the platform.
+- [Pivots](https://docs.clevertap.com/docs/pivots?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Pivot is a valuable tool for marketers dealing with large volumes of data. It helps them create concise summaries and view custom reports to obtain user insights effectively.
+- [Flows](https://docs.clevertap.com/docs/flows?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Flows provide the capability to understand the ways a user navigates through an application giving a broad view of the common paths users take as well as where they get stuck.
+- [Analyze Events](https://docs.clevertap.com/docs/events-analytics?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Analyzing events helps to understand your audience's behavior comprehensively, whether you want to view which countries use your app the most or what hours of the day they might stream a show.
+- [Real Impact](https://docs.clevertap.com/docs/real-impact?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Real Impact is a reporting dashboard that shows how and to what extent users respond to your CleverTap marketing campaigns—everything from the revenue generated to churn.
+- [Session Analytics](https://docs.clevertap.com/docs/session-analytics?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB): Session Analytics helps track the events that users perform within a session. Analyzing session length is a great way to measure engagement for certain apps, such as video or music streaming, news, and so on.
 
 ## Messaging Channels
 
 The following channels are available for CleverTap for Startups:
 
-* [Push Notifications ](https://docs.clevertap.com/docs/push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [Web Push](https://docs.clevertap.com/docs/web-push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [In-App](https://docs.clevertap.com/docs/in-app?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [App Inbox](https://docs.clevertap.com/docs/app-inbox?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [SMS](https://docs.clevertap.com/docs/sms?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [Email ](https://docs.clevertap.com/docs/email?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [WhatsApp](https://docs.clevertap.com/docs/whatsapp-direct-add-on)
-* [Journey](https://docs.clevertap.com/docs/journeys?utm_source=C4S\&utm_medium=doc\&utm_id=KB)
-* [Webhooks](https://docs.clevertap.com/docs/webhooks-overview?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [Push Notifications ](https://docs.clevertap.com/docs/push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [Web Push](https://docs.clevertap.com/docs/web-push?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [In-App](https://docs.clevertap.com/docs/in-app?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [App Inbox](https://docs.clevertap.com/docs/app-inbox?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [SMS](https://docs.clevertap.com/docs/sms?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [Email ](https://docs.clevertap.com/docs/email?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [WhatsApp](https://docs.clevertap.com/docs/whatsapp-direct-add-on)
+- [Journey](https://docs.clevertap.com/docs/journeys?utm_source=C4S\&utm_medium=doc\&utm_id=KB)
+- [Webhooks](https://docs.clevertap.com/docs/webhooks-overview?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 
 You can integrate with Email, SMS, and WhatsApp service providers of your choice as part of the plan. CleverTap does not impose any extra charges on the plan, as the cost is directly settled between you and the service provider. You also get four additional messaging channels available as an add-on in the Essentials plan.
 
@@ -61,11 +61,11 @@ A Journey is a visual campaign builder that lets you create omni-channel messagi
 
 The Segment feature can be used to group users based on their actions performed, actions not performed, or user profile properties that match a set of defined criteria. There are three types of Segments in CleverTap:
 
-* Live user
-* Psychographic
-* Past behavior
+- Live user
+- Psychographic
+- Past behavior
 
-To access additional information, refer to the [FAQ ](https://staging.docs.user.clevertap.net/docs/features-add-onscopy?utm_source=C4S\&utm_medium=doc\&utm_id=KB#faqs) section for details on commonly encountered queries.
+To access additional information, refer to the [FAQ ](https://docs.clevertap.com/docs/features-add-onscopy?utm_source=C4S\&utm_medium=doc\&utm_id=KB#faqs) section for details on commonly encountered queries.
 
 # Add-ons
 
@@ -275,8 +275,8 @@ For more information about the Add-ons offered by CleverTap, refer to [CleverTap
 
 After you create an account, you can find in-depth information about the platform features, their functioning, and setup through the following resources on your CleverTap dashboard:
 
-* [CleverTap University](https://academy.clevertap.com/catalog?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
-* [Upskill with CleverTap](https://eu1.dashboard.clevertap.com/x/upskil?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [CleverTap University](https://academy.clevertap.com/catalog?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
+- [Upskill with CleverTap](https://eu1.dashboard.clevertap.com/x/upskil?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB)
 
 # FAQs
 
@@ -298,5 +298,4 @@ You can utilize CleverTap's Session Analytics to track user events within a sess
 
 ### What is the delivery rate for Push Notifications sent via CleverTap?
 
-Reachability of 100% is possible only for iOS for the opted-in users. In the case of Android, it is usually impossible due to the battery optimization features of Chinese OEMs like One Plus, Xiaomi, so on.  
-With CleverTap, you can achieve a delivery rate of over 80%. More details regarding increasing the push delivery rate can be found [here](https://clevertap.com/blog/push-deliverability?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB).
+Reachability of 100% is possible only for iOS for the opted-in users. In the case of Android, it is usually impossible due to the battery optimization features of Chinese OEMs like One Plus, Xiaomi, so on.<br />With CleverTap, you can achieve a delivery rate of over 80%. More details regarding increasing the push delivery rate can be found [here](https://clevertap.com/blog/push-deliverability?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB).

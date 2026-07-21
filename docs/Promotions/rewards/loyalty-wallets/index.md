@@ -40,22 +40,20 @@ The following table highlights key use cases, real-world examples, and the impac
 
 Before using the Wallet feature, check the following:
 
-* You have enabled the Loyalty Wallets feature on your CleverTap account.
-* You have the necessary permissions to configure and manage wallet points.
-* You have a Wallet already created for your account to integrate the [Wallet APIs](https://developer.clevertap.com/docs/wallet-apis).
-
-<br />
+- You have enabled the Loyalty Wallets feature on your CleverTap account.
+- You have the necessary permissions to configure and manage wallet points.
+- You have a Wallet already created for your account to integrate the [Wallet APIs](https://developer.clevertap.com/docs/wallet-apis).
 
 # Key Features
 
 The following are the key features of the Loyalty Wallets:
 
-* **Wallet Points**: Loyalty points assigned to customers that can be redeemed for discounts, offers, or in-app purchases. Points can be credited through various sources, such as promotional campaigns, cashback coupons, APIs, and the CleverTap dashboard. Different reward types are supported, such as fixed points, percentage-based points, proportional points, and random points based on their probability factors.
-* **Wallet Transactions**: Tracks all wallet-related transactions for a user, including point credits, debits, promises, and expiry. Loyalty points can be credited via promo campaigns, the Wallet Credit API, cashback coupons, or the CleverTap dashboard. Debits occur through the [Wallet Debit API](https://staging.docs.dev.clevertap.net/docs/debitcredit-wallet) when users redeem points or the points expire.
-* **Points Expiration**: Wallets can be set up with a point expiration duration, specifying the number of days, months, years, or calendar years after which rewarded points will automatically expire. This approach encourages timely usage and increases engagement.
-* **Point Redemption Strategy**: Wallets support the following two redemption strategies:
-  * **Expiry FIFO**: Points closest to expiry are redeemed first.
-  * **Issuance FIFO**: Points issued earliest are redeemed first. These points redemption strategies control the order in which points are drawn from a user's wallet during redemption.
+- **Wallet Points**: Loyalty points assigned to customers that can be redeemed for discounts, offers, or in-app purchases. Points can be credited through various sources, such as promotional campaigns, cashback coupons, APIs, and the CleverTap dashboard. Different reward types are supported, such as fixed points, percentage-based points, proportional points, and random points based on their probability factors.
+- **Wallet Transactions**: Tracks all wallet-related transactions for a user, including point credits, debits, promises, and expiry. Loyalty points can be credited via promo campaigns, the Wallet Credit API, cashback coupons, or the CleverTap dashboard. Debits occur through the [Wallet Debit API](https://developer.clevertap.com/docs/debitcredit-wallet) when users redeem points or the points expire.
+- **Points Expiration**: Wallets can be set up with a point expiration duration, specifying the number of days, months, years, or calendar years after which rewarded points will automatically expire. This approach encourages timely usage and increases engagement.
+- **Point Redemption Strategy**: Wallets support the following two redemption strategies:
+  - **Expiry FIFO**: Points closest to expiry are redeemed first.
+  - **Issuance FIFO**: Points issued earliest are redeemed first. These points redemption strategies control the order in which points are drawn from a user's wallet during redemption.
 
 # Access Loyalty Wallets
 
@@ -64,7 +62,9 @@ The Loyalty Wallets page shows all the wallets created for your account. To view
 1. Go to _Promotions_ from the CleverTap dashboard.
 2. Click **Rewards** and select **Loyalty Wallets** from the list.
 
-<Image align="center" alt="Access All Wallets" border={true} caption="Access All Wallets" src="https://files.readme.io/52fa28d7380c4ac8e5ef1c7bd9612edf0d5f33e5d5b866315252917b151752a9-Loyalty_Wallets_Page.png" />
+
+<Image src="https://files.readme.io/52fa28d7380c4ac8e5ef1c7bd9612edf0d5f33e5d5b866315252917b151752a9-Loyalty_Wallets_Page.png" alt="Access All Wallets" align="center" caption="Access All Wallets" border={true} />
+
 
 Each wallet has its unique Wallet ID and some predefined values such as Loyalty Points Name, Creation Date, Created by, and so on. For more information, refer to [Create Wallet](doc:create-loyalty-wallet#create-wallet).
 
@@ -87,3 +87,5 @@ Refer to the following documents to understand CleverTap's Loyalty Wallet featur
     </ul>
   </div>
 </div>
+
+<br />

@@ -26,10 +26,10 @@ The _Templates_ section helps you organize and standardize your messaging templa
 
 The following channels are currently supported in the Templates section. We will soon start supporting more channels for template management in the Content Manager.
 
-| Channel | Description                                                                                  | Documentation                                                                  |
-| ------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Email   | Design reusable email structures using drag-and-drop, pre-built layouts, or the HTML editor. | [Email Templates](https://staging.docs.user.clevertap.net/docs/email-template) |
-| Push    | Create reusable push notification templates with rich media, carousels, timers, and more.    | [Push Templates](https://docs.clevertap.com/docs/push-templates)               |
+| Channel | Description                                                                                  | Documentation                                                        |
+| ------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Email   | Design reusable email structures using drag-and-drop, pre-built layouts, or the HTML editor. | [Email Templates](https://docs.clevertap.com/docs/email-templates-1) |
+| Push    | Create reusable push notification templates with rich media, carousels, timers, and more.    | [Push Templates](https://docs.clevertap.com/docs/push-templates)     |
 
 # Template Operations
 

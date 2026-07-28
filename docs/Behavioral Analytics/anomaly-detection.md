@@ -19,9 +19,11 @@ This feature is available on Trends charts and supports the following metrics:
 - Event count (Total)
 - Unique users
 
-> 📘 Private Beta
->
-> This feature is released in Private Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+<Callout icon="📘" theme="info">
+  ### Private Beta
+
+  This feature is released in Private Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+</Callout>
 
 # How Anomaly Detection Works?
 
@@ -56,9 +58,11 @@ The system begins scanning the selected line. A loading indicator appears while 
 <Image src="https://files.readme.io/d212eb6f816c183959f118746741f1038f239415f0a87e197dc0c93667865881-2026-06-16_16-37-52_1.gif" align="center" caption="Scan for Anomalies" border={true} />
 
 
-> 📘 Scan Limit at Once Per Chart
->
-> Only one scan can run per chart at a time. If you navigate away from the chart before the scan completes, the scan is canceled. Results are retained only if the scan completes successfully.
+<Callout icon="📘" theme="info">
+  ### Scan Limit at Once Per Chart
+
+  Only one scan can run per chart at a time. If you navigate away from the chart before the scan completes, the scan is canceled. Results are retained only if the scan completes successfully.
+</Callout>
 
 ## View Scan Results
 
@@ -134,9 +138,11 @@ Root Cause Analysis (RCA) identifies which user properties or event properties c
 
 For example, suppose your _Charged_ event shows an unexpected 40% spike on November 8. RCA might reveal that users in the Gold membership tier who received a seasonal discount drove the spike, while users in other tiers behaved normally. Instead of manually building breakdowns across City, Platform, and Membership Type, RCA surfaces the top drivers automatically so you can act quickly.
 
-> 📘 RCA Limit at Once Per Anomaly
->
-> RCA supports only one anomaly at a time and only on a single selected line. Batch RCA across multiple anomalies or multiple lines is not supported.
+<Callout icon="📘" theme="info">
+  ### RCA Limit at Once Per Anomaly
+
+  RCA supports only one anomaly at a time and only on a single selected line. Batch RCA across multiple anomalies or multiple lines is not supported.
+</Callout>
 
 To start an RCA:
 
@@ -150,9 +156,11 @@ The **Root Cause Analysis** tab opens automatically. A progress indicator shows 
 <Image src="https://files.readme.io/bdcd7764c06ad1864428c4bc24e9a08504ca9451993863d7b62b5bbdcdfdf846-2026-06-16_23-19-19_1.gif" align="center" caption="Analyze Root Cause of an Anomaly" border={true} />
 
 
-> 📘 RCA Limit at Once Per Chart
->
-> You cannot run a duplicate RCA on the same chart while one is already in progress.
+<Callout icon="📘" theme="info">
+  ### RCA Limit at Once Per Chart
+
+  You cannot run a duplicate RCA on the same chart while one is already in progress.
+</Callout>
 
 ## View RCA Results
 
@@ -237,9 +245,11 @@ To use the _Deep Dive with Ask AI_ option:
 <Image src="https://files.readme.io/529d373649160d405bdfc0614158a15d7782ea994ee77138c4e32dc4e73e119b-2026-06-17_11-41-11_1.gif" align="center" caption="Deep Dive with Ask AI" border={true} />
 
 
-> 📘 Verify AI Summaries Against Source Data
->
-> Ask AI responses may not always be 100% accurate. Verify important findings against your source data before taking action.
+<Callout icon="📘" theme="info">
+  ### Verify AI Summaries Against Source Data
+
+  Ask AI responses may not always be 100% accurate. Verify important findings against your source data before taking action.
+</Callout>
 
 # FAQs
 

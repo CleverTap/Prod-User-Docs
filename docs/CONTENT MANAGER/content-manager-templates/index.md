@@ -29,7 +29,7 @@ The following channels are currently supported in the Templates section. We will
 | Channel | Description                                                                                  | Documentation                                                                  |
 | ------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | Email   | Design reusable email structures using drag-and-drop, pre-built layouts, or the HTML editor. | [Email Templates](https://staging.docs.user.clevertap.net/docs/email-template) |
-| Push    | Create reusable push notification templates with rich media, carousels, timers, and more.    | [Push Templates](https://staging.docs.user.clevertap.net/docs/push-templates)  |
+| Push    | Create reusable push notification templates with rich media, carousels, timers, and more.    | [Push Templates](https://docs.clevertap.com/docs/push-templates)               |
 
 # Template Operations
 

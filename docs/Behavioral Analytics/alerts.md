@@ -31,7 +31,7 @@ This feature is available on Trends charts and supports the following metrics:
   This feature is released in Private Beta. For more information or any queries, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
 </Callout>
 
-# How Alerts Work?
+# Alerts Evaluation Process
 
 When you create an alert, CleverTap captures a snapshot of the event, filters, and metric you are monitoring. This becomes the alert's query. CleverTap then automatically evaluates this query at the cadence you set.
 

@@ -39,7 +39,7 @@ At each evaluation, CleverTap:
 
 - Fetches the latest metric data for the monitored event and segment.
 - Runs the detection logic (anomaly or threshold) against the latest data.
-- triggers a notification if the condition is met, and delivers it to your chosen notification channels.
+- Triggers a notification if the condition is met, and delivers it to your chosen notification channels.
 
 <Callout icon="💡" theme="default">
   ### Tip

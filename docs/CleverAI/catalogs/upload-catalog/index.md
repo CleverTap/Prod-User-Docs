@@ -26,7 +26,9 @@ To upload a catalog, perform the following steps:
 1. Go to _Settings_ > _Catalogs_ and click **Add Catalog**.
 2. Enter the required details.
 
-<Image align="center" border={true} caption="Upload Catalog" src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" />
+
+<Image src="https://files.readme.io/9c3156b684f45804189d17cf7a905956474200cc9b2d1425f4e4614288418ee2-image.png" align="center" caption="Upload Catalog" border={true} />
+
 
 | Field        | Description                                                                                                                                                                                                     |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,9 +48,9 @@ Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes
 
   A catalog supports the following:
 
-  * A maximum of 100 columns in total:
-  * 3 fixed columns: Product ID, Name, and Image URL
-  * Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
+  - A maximum of 200 columns in total:
+  - 3 fixed columns: Product ID, Name, and Image URL
+  - Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
 
   Your account supports up to 5 catalogs and a combined total of 15M rows across all catalogs. Both limits apply: you cannot create a new catalog once you reach 5, and you cannot upload more rows to any catalog once your combined row count reaches 15M, whichever comes first.
 </Callout>
@@ -65,7 +67,9 @@ This option is ideal for one-time or bulk uploads.
 
 The following image shows the _Catalog upload_ tab:
 
-<Image align="center" border={true} caption="Catalog Upload" src="https://files.readme.io/72162109cee08cbca11c37f059d9e1d2b4109929d6e84397da4d182ce363a4f9-image.png" />
+
+<Image src="https://files.readme.io/72162109cee08cbca11c37f059d9e1d2b4109929d6e84397da4d182ce363a4f9-image.png" align="center" caption="Catalog Upload" border={true} />
+
 
 ## API/URL
 
@@ -83,7 +87,9 @@ Click **Fetch Catalogs** to retrieve the data and display a preview of catalog r
 
 The following image shows the _API/URL_ tab:
 
-<Image align="center" border={true} caption="Catalog Upload via API or URL" src="https://files.readme.io/a2dd3f47b2bfea17f8f0686f73f94c0314a509e1463e5e2d96484fcf23845858-image.png" />
+
+<Image src="https://files.readme.io/a2dd3f47b2bfea17f8f0686f73f94c0314a509e1463e5e2d96484fcf23845858-image.png" align="center" caption="Catalog Upload via API or URL" border={true} />
+
 
 You can preview the first few rows of the data before validating the input.
 
@@ -102,13 +108,14 @@ Click **Fetch Catalog** to retrieve catalog data from the configured source. Thi
 
 The following image shows the Catalog upload via _Google sync_:
 
-<Image align="center" border={true} caption="Catalog Upload via Google Sync" src="https://files.readme.io/e88c50d8431e980f1b79fdb07c65161c2dedca2a0dd14a5d07a159f98a9d7e0d-image.png" />
+
+<Image src="https://files.readme.io/e88c50d8431e980f1b79fdb07c65161c2dedca2a0dd14a5d07a159f98a9d7e0d-image.png" align="center" caption="Catalog Upload via Google Sync" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Sync Frequency
 
-  CleverTap fetches your catalog from the source URL at the interval you set. It does not store a static copy, so the Sync Frequency you choose directly affects how current your catalog data is. Set a shorter interval, such as every hour, if your source updates frequently, for example during flash sales or when stock levels change in real time. Set a longer interval, such as once a day, if your catalog is relatively stable and only updated periodically. This also reduces unnecessary load on your data source.  
-  Enter a value between 1–59 for minutes, 1–23 for hours, or any positive number for days.
+  CleverTap fetches your catalog from the source URL at the interval you set. It does not store a static copy, so the Sync Frequency you choose directly affects how current your catalog data is. Set a shorter interval, such as every hour, if your source updates frequently, for example during flash sales or when stock levels change in real time. Set a longer interval, such as once a day, if your catalog is relatively stable and only updated periodically. This also reduces unnecessary load on your data source.<br />Enter a value between 1–59 for minutes, 1–23 for hours, or any positive number for days.
 
   As a best practice, match the sync frequency to how often your source data actually changes.
 </Callout>
@@ -122,12 +129,16 @@ After uploading and validating a catalog file, CleverTap automatically reads the
 
   A catalog supports a maximum of 200 columns in total:
 
-  * 3 fixed columns: Product ID, Name, and Image URL
-  * Up to 197 custom attribute columns,defined during catalog creation
+  - 3 fixed columns: Product ID, Name, and Image URL
+  - Up to 197 custom attribute columns,defined during catalog creation
 
   Columns cannot be added or removed after the catalog is saved.
 </Callout>
 
 The following image shows the _Mapping data type_ section:
 
-<Image align="center" border={true} caption="Map Data Type" src="https://files.readme.io/327e5a0f27fe737f30eee6ce99f29d91d339ad12b298ba1cd7a45d734fefda02-image.png" />
+
+<Image src="https://files.readme.io/327e5a0f27fe737f30eee6ce99f29d91d339ad12b298ba1cd7a45d734fefda02-image.png" align="center" caption="Map Data Type" border={true} />
+
+
+<br />

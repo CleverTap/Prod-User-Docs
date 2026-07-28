@@ -1,5 +1,5 @@
 - field-level-at-rest-encryption
+- bring-your-own-key-byok-encryption
 - api-encryption
 - file-upload-encryption
 - cpaas-encryption
-- bring-your-own-key-byok-encryption

@@ -1,8 +1,9 @@
 ---
-title: Copy of Anomaly Detection
+title: Alerts
 excerpt: >-
-  Learn how to spot unusual spikes and drops in your metrics instantly and
-  understand their exact causes.
+  Learn how to set up continuous metric monitoring and receive instant
+  notifications when anomalies or threshold breaches occur in your analytics
+  data.
 deprecated: false
 hidden: true
 metadata:
@@ -10,277 +11,480 @@ metadata:
 ---
 # Overview
 
-Anomaly Detection is an intelligence feature within CleverTap Analytics that automatically identifies statistically significant deviations in your trend data. Instead of manually scanning dashboards for unusual spikes or drops, you can scan any trendline on demand and let CleverTap detect outliers using a seasonality-aware algorithm.
+Alerts in Analytics is a continuous monitoring feature in CleverTap that notifies you when a metric on a trendline behaves unexpectedly. Instead of checking dashboards manually, you set up an alert once, and CleverTap evaluates the metric on your chosen cadence on an hourly, daily, weekly, or monthly basis and notifies you when a condition is met.
 
-Once anomalies are detected, you can run a Root Cause Analysis (RCA) to understand which user properties or event properties drove the change. You can then use the _Deep Dive with Ask AI_ feature to generate a natural language summary of findings and suggested next steps.
+You can choose between two alert types:
+
+- **Anomaly alerts**: Triggered when the metric deviates from its expected range, as determined by CleverTap's seasonality-aware detection model.
+- **Threshold alerts**: Triggered when the metric crosses a fixed value or changes by a defined percentage relative to the same period last week.
+
+When an alert is triggered, CleverTap delivers notifications to the destinations you choose, such as a Dashboard Notification, Email, or a Slack channel.
 
 This feature is available on Trends charts and supports the following metrics:
 
-- Event count (Total)
-- Unique users
+- Total Events
+- Unique Users
 
-> 📘 Private Beta
->
-> This feature is released in Private Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+<Callout icon="📘" theme="info">
+  ### **Private Beta**
 
-# How Anomaly Detection Works?
+  This feature is released in Private Beta. For more information or any queries, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+</Callout>
 
-CleverTap uses a Prophet-based detection model to identify anomalies. The algorithm builds a confidence band around the expected trendline based on historical data and seasonality patterns. Any data point that falls outside this band is flagged as an anomaly.
+# How Alerts Work?
 
-The detection process involves two key components:
+When you create an alert, CleverTap captures a snapshot of the event, filters, and metric you are monitoring. This becomes the alert's query. CleverTap then automatically evaluates this query at the cadence you set.
 
-- **Confidence band:** The upper and lower bounds of the expected value range for each data point.
-- **Anomaly marker:** A visual indicator placed on data points that fall outside the confidence band.
+At each evaluation, CleverTap:
 
-When you run an anomaly scan, the system evaluates the selected time series and derives anomaly and baseline periods from the chart context.
+- Fetches the latest metric data for the monitored event and segment.
+- Runs the detection logic (anomaly or threshold) against the latest data.
+- triggers a notification if the condition is met, and delivers it to your chosen notification channels.
+
+<Callout icon="💡" theme="default">
+  ### Tip
+
+  Use anomaly alerts for metrics that change frequently and unpredictably. Use threshold alerts when you have a specific value or percentage change in mind that you always want to know about.
+</Callout>
 
 # Prerequisites
 
-Before you use Anomaly Detection, make sure you meet the following requirements:
+Before you create an alert, make sure you meet the following requirements:
 
 - You have access to the CleverTap Analytics module.
-- You have a Trends chart configured with at least one metric (Event count or Unique users).
-- The chart has sufficient historical data for the algorithm to establish a baseline.
+- You have a Trends chart configured with at least one supported metric (Event count or Unique users).
+- To send alerts to Slack, a user with admin access must first connect your project to Slack. For more information, refer to [Connect Slack](doc:alerts#connect-slack).
 
-# Scan for Anomalies
+# Create an Alert
 
-This section explains how to scan a Trends chart for anomalies. To start an anomaly scan:
+You can create an alert directly from a Trends chart. ​
+
+To create an alert:
 
 1. Go to _Analytics_ > _Trends Beta_ and view a Trends analysis.
-2. Hover over a data point (node) on a trendline and click the ![](https://files.readme.io/570ce2373c56a41a7ad83352039a10593c2ac079bc1fe70c6c45660f356e098e-Plus_Icon_for_Data_Point_in_Analytics.png) icon to open the contextual action menu.
-3. Click **Scan for Anomalies**.
+2. Hover over a data point on the trendline you want to monitor, then click the + icon to open the contextual action menu.
+3. Click **Create alert**.
 
-The system begins scanning the selected line. A loading indicator appears while the system processes the request (approximately two to three seconds).
 
+<Image src="https://files.readme.io/c6e328875aa68607e42a14a7a4c38e53c7eebdf4495322157d7a0a3f47fe6749-image.png" align="center" caption="Create Alert from a Trendline Data Point" border={true} />
 
-<Image src="https://files.readme.io/d212eb6f816c183959f118746741f1038f239415f0a87e197dc0c93667865881-2026-06-16_16-37-52_1.gif" align="center" caption="Scan for Anomalies" border={true} />
 
+The **Create Alert** modal opens, which follows the following two-step process:
 
-> 📘 Scan Limit at Once Per Chart
->
-> Only one scan can run per chart at a time. If you navigate away from the chart before the scan completes, the scan is canceled. Results are retained only if the scan completes successfully.
+1. [Criteria](doc:alerts#criteria)
+2. [Delivery Options](doc:alerts#delivery-options)
 
-## View Scan Results
+## Criteria
 
-When the scan completes, a success message appears, showing the number of anomalies detected.
+The **Criteria** step lets you name the alert and define the condition that triggers it. This step lets you define what to monitor and how to detect a condition.
 
-- If anomalies are found, the count is displayed, and the detected anomalies appear as markers on the trendline.
-- If no anomalies are found, the success message shows zero with the same layout.
 
-Detected anomalies appear as markers on the trendline. A confidence band (upper and lower bounds) is drawn around the scanned line to show the expected range of the value.
+<Image src="https://files.readme.io/1dd0255d9fe3a48f9e0b85cf16983288a1cb999f541cce691a9497448b5a85cc-image.png" align="center" caption="Define Alert Criteria" border={true} />
 
 
-<Image src="https://files.readme.io/4a1071ad82c435c1046a271c8fd6d1a282b65c726702557ca80f29d2458d20b7-image.png" align="center" caption="View Anomaly Scan Results" border={true} />
+The following fields appear in this step:
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-### Inspect Anomaly
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
-Hover over any anomaly marker on the chart to view a tooltip that shows the following details:
+  <tbody>
+    <tr>
+      <td>
+        Name
+      </td>
 
-- **Expected value:** The value the algorithm predicted based on historical patterns.
-- **Actual value:** The observed value at that data point.
-- **Deviation:** The percentage spike or drop from the expected value.
+      <td>
+        A label for the alert. Choose a name that clearly describes what is being monitored. For example, _the charged event drop for weekdays_.
+      </td>
+    </tr>
 
-The tooltip supports both positive deviations (spikes) and negative deviations (drops).
+    <tr>
+      <td>
+        Event trigger
+      </td>
 
+      <td>
+        The event and filter conditions that are being monitored. This field is pre-populated from the trendline you selected on the Trends chart and cannot be edited in the modal. For example, if you opened the alert from a _Charged_ event trendline filtered by _Count greater than or equal to 1_, those details appear here automatically.
+      </td>
+    </tr>
 
-<Image src="https://files.readme.io/0103edb0b6dfdd2db64884e80421334f01eb389b07d7e087aec778a2dfc60059-image.png" align="center" caption="Preview Detected Anomalies" border={true} />
+    <tr>
+      <td>
+        Alert trigger
+      </td>
 
+      <td>
+        The type of detection to use. You can select the following two Alert trigger types:
 
-## Manage Scan Controls
+        - **Anomaly**: Triggers when the metric deviates from its statistically expected range. Choose Anomaly when you want open-ended monitoring, meaning you do not need to know in advance what value constitutes a problem. CleverTap builds a confidence band around the expected value using historical data and seasonal patterns, then triggers the alert when the metric falls outside that band.
 
-In the scan results, the **Manage Scan Controls** call to action (CTA) also appears. You can adjust the scan's sensitivity and behavior in these scan controls. These scan controls let you modify how the system's algorithm detects anomalies. ​
+          For example,**&#x20;**&#x79;our _App Launch_ event typically records between 80,000 and 100,000 app launches on weekdays. On a Tuesday, app launches drop to 42,000. CleverTap recognizes this falls outside the expected range and triggers the alert.
+        - **Threshold**: Triggers when the metric crosses a fixed value or percentage change. Choose Threshold when you have a specific value or percentage change in mind that you always want to know about. The alert triggers when the metric crosses the threshold value or percentage you define.
 
-To open scan controls, click **Manage Scan Controls** in the post-scan modal, or access it directly from the chart action menu.
+          For example, you want to know whenever your _Charged_ event total drops more than 20% compared to the same weekday last week. You set the condition to _Decreases by (%)_ and the value to _20_. If last Tuesday's total was 5,000 and this Tuesday's is 3,800 (a 24% decrease), the alert triggers. If this Tuesday's total is 4,200 (a 16% decrease), no alert will be triggered.
+      </td>
+    </tr>
 
+    <tr>
+      <td>
+        Scan mode _(Anomaly only)_
+      </td>
 
-<Image src="https://files.readme.io/1cd3a709fee30d35f6c5d663bbc874d932f481649106f95df13674d76a949042-image.png" align="center" caption="Manage Scan Controls" border={true} />
+      <td>
+        The detection mode to use. It determines how much historical data CleverTap uses to build the expected value baseline. The right choice depends on how stable or seasonal your metric is.
 
+        For more information, refer to [Scan Mode](doc:anomaly-detection#scan-mode).
+      </td>
+    </tr>
 
-You can adjust the following two settings:
+    <tr>
+      <td>
+        Confidence interval _(Anomaly only)_
+      </td>
 
-- [Scan Mode](doc:anomaly-detection#scan-mode)​
+      <td>
+        The sensitivity of anomaly detection, such as, 99%, 95%, 90%
 
-- [Confidence Interval](doc:anomaly-detection#confidence-interval)
+        For more information, refer to [Confidence Interval](doc:anomaly-detection#confidence-interval).
+      </td>
+    </tr>
 
-### Scan Mode
+    <tr>
+      <td>
+        Alert for (Anomaly only)
+      </td>
+
+      <td>
+        Controls which direction of deviation triggers the alert. The following options are available:
+
+        - **Spike**: Triggers an alert only when the metric exceeds the upper bound of the expected range.
+        - **Drop**: Triggers alert only when the metric rises below the lower bound of the expected range.
+        - **Both**: Triggers an alert on both upward and downward deviations.
+
+        Use these options to reduce noise when you only care about one type of movement in your metric. For example,**&#x20;**&#x69;&#x66;**&#x20;**&#x79;ou monitor a _Payment Failed_ event and only care about spikes in failure&#x73;_, and&#x20;_&#x61; drop in failures is not a problem. Set an alert for _Spike_ so that naturally quieter periods do not generate false alerts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Trigger condition _(Threshold only)_
+      </td>
+
+      <td>
+        The condition that must be met to trigger the alert. The following options are available:
 
-The scan modes determine the training algorithm used to build the expected trendline.
+        - **Above**: Triggers when the metric value exceeds the threshold.
+        - **Below**: Triggers when the metric value drops below the threshold.
+        - **Increases by (%)**: Triggers when the metric increases by at least X% compared to the same period last week.
+        - **Decreases by (%)**: Triggers when the metric decreases by at least X% compared to the same period last week.
+      </td>
+    </tr>
 
-| Mode       | Behavior                                                                                                      |
-| ---------- | ------------------------------------------------------------------------------------------------------------- |
-| **Agile**  | Default mode. Adapts quickly to recent changes in the data. Use this for dynamic or rapidly changing metrics. |
-| **Robust** | More stable and conservative mode. Suitable for metrics with stable long-term trends.                         |
+    <tr>
+      <td>
+        Threshold value _(Threshold only)_
+      </td>
 
-### Confidence Interval
+      <td>
+        The numeric value used in the trigger condition. Enter an absolute number for _Above_ o&#x72;_&#x20;Below_, or a percentage for _Increases by (%)_ or _Decreases by (%)_.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
-The confidence interval controls the strictness of anomaly detection.
+After configuring the criteria, click **Next** to proceed to [Delivery Options](doc:alerts#delivery-options).
 
-| Interval | Behavior                                                         |
-| -------- | ---------------------------------------------------------------- |
-| **99%**  | Detects fewer anomalies, flagging only the strongest deviations. |
-| **95%**  | Default setting, balancing sensitivity and precision.            |
-| **90%**  | Detects more anomalies, flagging smaller deviations.             |
+## Delivery Options
 
-After you update any preference, click **Scan** to trigger a re-scan. The re-scan runs on the same line and the same visible time range.
+The Delivery Options step lets you configure how often CleverTap evaluates the alert and where to send the notifications.
 
 
-<Image src="https://files.readme.io/f38939d9ee9b053f84923b03656ef7f2679f1cf767e8acfeaa2f52bda6c86946-2026-06-16_16-58-21_1.gif" align="center" caption="Re-scan Anomalies After Changing Scan Controls" border={true} />
+<Image src="https://files.readme.io/fdc19d024c6f20774e1c638a68ab0336f2cac53bcc9a5346526c44b63ffc5f4c-image.png" align="center" caption="Set Up Delivery Options for Alerts" border={true} />
 
 
-# Analyze Root Cause
+The following fields appear in this step:
 
-Root Cause Analysis (RCA) identifies which user properties or event properties contributed most to the anomaly. RCA compares data from the anomaly period with a baseline period and ranks properties by their contribution to the deviation.
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-For example, suppose your _Charged_ event shows an unexpected 40% spike on November 8. RCA might reveal that users in the Gold membership tier who received a seasonal discount drove the spike, while users in other tiers behaved normally. Instead of manually building breakdowns across City, Platform, and Membership Type, RCA surfaces the top drivers automatically so you can act quickly.
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
-> 📘 RCA Limit at Once Per Anomaly
->
-> RCA supports only one anomaly at a time and only on a single selected line. Batch RCA across multiple anomalies or multiple lines is not supported.
+  <tbody>
+    <tr>
+      <td>
+        Alert frequency
+      </td>
 
-To start an RCA:
+      <td>
+        Determines how often CleverTap checks whether the alert condition is met. The following options are available:
 
-1. Complete an anomaly scan on the Trends chart. Anomaly markers must be present on the chart.
-2. Click an anomaly marker to open the action menu.
-3. Click **Analyze Root Cause**.
+        - **Hourly**: Evaluates once per hour, approximately 20 minutes after each hour closes.
+        - **Daily**: Evaluates once per day at approximately 6:00 AM in your account's timezone.
+        - **Weekly**: Evaluates once per week at approximately 6:00 AM on the first day of the new week in your account's timezone.
+        - **Monthly**: Evaluates once per month at approximately 6:00 AM on the first day of the new month in your account's timezone.
+      </td>
+    </tr>
 
-The **Root Cause Analysis** tab opens automatically. A progress indicator shows the scan status as the system evaluates the properties. The selected anomaly node remains highlighted while the RCA runs.
+    <tr>
+      <td>
+        Delivery destination
+      </td>
 
+      <td>
+        Defines where to send notifications. For example, Dashboard, Email, or Slack (You can also multi-select Slack channels).
+      </td>
+    </tr>
 
-<Image src="https://files.readme.io/bdcd7764c06ad1864428c4bc24e9a08504ca9451993863d7b62b5bbdcdfdf846-2026-06-16_23-19-19_1.gif" align="center" caption="Analyze Root Cause of an Anomaly" border={true} />
+    <tr>
+      <td>
+        Email recipients
+      </td>
 
+      <td>
+        The email addresses to notify. You are added automatically as a recipient.
+      </td>
+    </tr>
 
-> 📘 RCA Limit at Once Per Chart
->
-> You cannot run a duplicate RCA on the same chart while one is already in progress.
+    <tr>
+      <td>
+        Slack channels _(if Slack is connected)_
+      </td>
+
+      <td>
+        The Slack channel to send the alert to. Select from the available channels the bot has been invited to. Slack delivery requires a one-time project-level Slack connection by an admin. If Slack is not connected, you see a **Connect Slack&#x20;**&#x62;utton instead of the channel picker.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
-## View RCA Results
+After configuring delivery options, click **Create** to save the alert.
+
+<Callout icon="💡" theme="default">
+  ### **Note**
 
-When the analysis completes, the _Root Cause Analysis_ tab presents the following two levels of information:
+  The 20-minute delay allows event data to fully settle before evaluation runs. CleverTap only evaluates complete, closed periods, it never evaluates a partial bucket. For example, if you set an hourly alert with an evaluation window of 3:00 to 4:00 PM, CleverTap evaluates the metric at approximately 4:20 PM once that hour is fully closed.
 
-- **RCA Summary**: A summary appears at the top and gives you a quick read of what happened. It shows the anomaly date, whether a spike or drop was detected, the magnitude of the change, and the total number of properties analyzed. This tells you immediately whether the anomaly is significant and how broadly the system investigated it.
-- **Contributing Property Charts**: The summary also appears as individual tiles, one per top contributing property. Each tile shows a mini trend chart for that property with a vertical reference line marking the exact anomaly date. This makes it easy to view which property value spiked or dropped in lockstep with the anomaly. For example, for the +16.64% spike detected on May 26, 2026, in the _Charged_ event, RCA surfaces the following tiles in order of their maximum contribution to the anomaly:
-  - **customerid** (showing which individual customers contributed most to the spike)
-  - **Amount** (showing the transaction amount range that drove the increase)
-  - **CT Latitude** (showing the geographic latitude bands where the spike was concentrated)
-  - **CT Longitude** (showing the geographic longitude bands associated with the spike)
+  This is important when interpreting a metric value of 0. A value of 0 in a completed, evaluated period means no events occurred. It does not mean data has not arrived yet, CleverTap waits for the period to close before running any evaluation.
+</Callout>
 
+# Manage Alerts
 
-<Image src="https://files.readme.io/b0274f03fe270dd9aee04dee896ee94ecd0926abacabf4ff874342a2cd226bc5-image.png" align="center" caption="View RCA Results" border={true} />
+You can view, edit, pause, resume, and delete all alerts in your project from the **Manage Alerts** page.
 
+To access Manage Alerts, go to _Settings_ > _Alerts_.
 
-Each tile shows not just the anomaly date but also the trend leading up to it, giving you context for whether the change was sudden or gradual.
 
-The property value most responsible for the anomaly, also called the Faulting Value, is always shown in the chart tile, even if it does not rank in the top values by overall volume. Showing the Faulting Value prevents high-traffic but unaffected segments from burying the actual cause.
+<Image src="https://files.readme.io/3ad8e36ba913f002df2406ce536d7b86e5e20dbbb04f90b55f9462b55a37b96e-image.png" align="center" caption="View Alerts on Manage Alerts" border={true} />
 
-# Save RCA as Board
 
-You can save your RCA findings as a board for future reference or to share them with your team.
+The Manage Alerts page shows a table with the following columns:
 
-To save the RCA output, click **Save as a Board** on the Root Cause Analysis tab, and the dashboard saves the top 20 RCA property tiles as a board on the Boards list page.
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Column
+      </th>
 
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
-<Image src="https://files.readme.io/9b09cc897702119b1e2d54b8693dbd5ff823cf70b5423f712c82188a8383a736-2026-06-16_23-45-31_1.gif" align="center" caption="Save an RCA as a Board" border={true} />
+  <tbody>
+    <tr>
+      <td>
+        Name
+      </td>
 
+      <td>
+        The name you gave the alert when you created it.
+      </td>
+    </tr>
 
-### Understand How RCA is Computed
+    <tr>
+      <td>
+        Status
+      </td>
 
-RCA works by comparing the same metric, broken down by each property, across the following two time windows:
+      <td>
+        The current state of the alert. The following alert statuses are available:
 
-- Anomaly period
-- Baseline period
+        - **ACTIVE**:**&#x20;**&#x54;he alert is running and will evaluate at its next scheduled time.
+        - **PAUSED**: The alert is not evaluating. Its configuration is preserved. You can resume it at any time.
+        - **FAILING**: The alert has failed to evaluate successfully for three or more consecutive times. You are notified by email when this happens.
+      </td>
+    </tr>
 
-The anomaly period is the day the anomaly occurred, and the baseline period is a recent normal day just before it. The property that changed the most between those two days is ranked as the top contributor.
+    <tr>
+      <td>
+        Alert trigger
+      </td>
 
-For example, if your _Charged_ event shows a spike on November 8. RCA uses yesterday (November 7, a normal day within the confidence band) as the baseline. It then checks every property, such as City, Platform, Membership Tier, Payment Method, and so on, and asks, _Which of these had the biggest jump between November 7 and November 8?_ If purchases from users in _Madrid_ jumped from 200 to 800, while every other City stayed flat, then _City = Madrid_ gets the highest ranking and appears as the top contributing property tile.
+      <td>
+        Whether the alert uses Anomaly or Threshold detection.
+      </td>
+    </tr>
 
-Here is how the computation works step by step:
+    <tr>
+      <td>
+        Created By
+      </td>
 
-1. **Select the two periods**: The anomaly period is the timestamp of the flagged data point. The baseline period is the most recent data point that still falls within the confidence band. For example, the previous day on a daily chart, or the previous week on a weekly chart.
-2. **Break the metric by property**: For each candidate property, such as City, Platform, or Membership Tier, the system counts the metric value for each property value during both periods. For example, `City = Madrid` and 800 purchases on November 8 versus 200 on November 7.
-3. **Compute the delta**: Calculates the difference between the anomaly period and the baseline period using `Delta = Anomaly period value − Baseline period value`. For `City = Madrid`, that is `800 − 200 = 600`.
-4. **Rank by absolute change**: Properties are ranked by the size of their delta, regardless of whether the change was a spike or a drop. The larger the absolute change, the higher the rank.
-5. **Surface the top contributors**: The properties with the highest-ranked deltas appear as individual chart tiles in the RCA results.
+      <td>
+        The email address of the person who created the alert.
+      </td>
+    </tr>
 
-### Partial Results
+    <tr>
+      <td>
+        Created On
+      </td>
 
-RCA runs in three internal stages. Stages 1 and 2 compute which properties contributed to the anomaly and by how much. Stage 3 generates the individual chart tiles you view in the results. If Stage 3 times out for some properties, RCA still shows you what it could complete, rather than failing silently.
+      <td>
+        The date the alert was created.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
-For example, suppose RCA analyzes 20 properties for the May 26 spike. Stages 1 and 2 were completed successfully, and all 20 properties were ranked. In Stage 3, 17 property charts render correctly, but the charts for Payment Method, Device Model, and App Version time out. In this case, you see 17 property tiles in the results, a clear note that RCA could not generate 3 charts, and the RCA summary and rankings are fully intact.
+## Edit
 
-Here is how partial results work depending on what fails:
+To edit an alert's criteria or delivery options:
 
-- If some property charts time out, CleverTap shows the successfully computed tiles and silently omits the ones that failed.
-- If all property charts fail, the RCA summary and the ranked property list are still shown. A fallback message appears in the charts section to let you know that the RCA could not load the tiles.
+1. On the Manage Alerts page, hover over the alert you want to edit.
+2. Click the edit icon.
+3. The _Edit alert_ modal opens with your existing settings pre-filled.
+4. Update the fields you want to edit.
+5. Click **Save changes** to confirm.
 
-# Deep Dive with Ask AI
 
-After you complete an RCA, you can use **Deep Dive with Ask AI** to generate a natural language explanation of the anomaly, its impact, and recommended next steps.
+<Image src="https://files.readme.io/92e4840eb85e2b4ed4736741cc7fb2ecb5e0940221ad12f57b19521fe1792c15-2026-07-27_18-13-05_1.gif" align="center" caption="Editing an Active Alert" border={true} />
 
-Ask AI reviews the chart context and RCA findings to produce a contextual summary. The summary includes the following sections:
 
-- **Summary**: A brief overview of the anomaly, the date it occurred, the event affected, the actual versus expected values, and whether it was a spike or a drop.
-- **Primary Drivers**: The top properties that contributed most to the anomaly, with a plain-language explanation of how each property behaved during the anomaly period.
-- **Contextual Signals**: External factors checked against the anomaly window, such as active campaigns, A/B tests, audit logs, or annotations, to help determine whether a known activity triggered the change.
-- **Impact Assessment**: The scale and distribution of the anomaly across segments, geographies, and user groups, including whether the change is likely a data quality issue or a genuine user behavior shift.
-- **Possible Explanations**: A ranked list of hypotheses that may explain the anomaly, based on the property patterns surfaced during RCA.
-- **Suggested Next Steps**: Specific actions you can take to investigate further or respond to the anomaly.
+## Pause
 
-To use the _Deep Dive with Ask AI_ option:
+Pausing an alert temporarily stops it from evaluating. The alert configuration is preserved, and you can resume it later. Use this when you want to stop receiving alerts during a known period of unusual activity. For example, during a major product launch or a marketing campaign, without losing the alert configuration.
 
-1. Complete an RCA on the anomaly.
-2. In the Root Cause Analysis tab, click **Deep Dive with Ask AI**.
-3. Optionally, type a question in the Ask AI input to refine the analysis. For example, _deep dive on the May 26 anomaly_.
-4. Ask AI processes the query and returns a summary.
+To pause an alert:
 
+1. On the Manage Alerts page, hover over the alert you want to pause.
+2. Click the ellipsis icon.
+3. Click **Pause**.
+4. A confirmation dialog, _This will pause triggering the \[Alert Name] alert appears._
+5. Click **Pause** to confirm.
 
-<Image src="https://files.readme.io/529d373649160d405bdfc0614158a15d7782ea994ee77138c4e32dc4e73e119b-2026-06-17_11-41-11_1.gif" align="center" caption="Deep Dive with Ask AI" border={true} />
 
+<Image src="https://files.readme.io/84aa84dc8f2f5f59f587bfbd41da98c7a4e4b7f5381d8df36071ecab83692ce6-2026-07-27_18-11-47_1.gif" align="center" caption="Pausing an Active Alert" border={true} />
 
-> 📘 Verify AI Summaries Against Source Data
->
-> Ask AI responses may not always be 100% accurate. Verify important findings against your source data before taking action.
+
+To resume a paused alert, follow the same steps and click **Resume** in the ellipsis menu.
+
+## Delete
+
+Deleting an alert permanently removes it and its notification settings. This action cannot be undone.
+
+To delete an alert:
+
+1. On the Manage Alerts page, hover over the alert you want to delete.
+2. Click the ellipsis icon.
+3. Click **Delete**.
+4. A confirmation dialog, _This will delete the alert and its notification settin&#x67;_&#x73; appear&#x73;_._
+5. Click **Delete** to confirm.
+
+
+<Image src="https://files.readme.io/705199421e05735aab327fda0954319d036c26eb2c7677ca5f4b6f272543f5f6-2026-07-27_18-12-08_1.gif" align="center" caption="Deleting an Active Alert" border={true} />
+
+
+# Connect Slack
+
+Connecting Slack allows any alert in your project to deliver notifications to a Slack channel. This is a one-time, project-level setup that requires admin access.
+
+## Prerequisites for Slack
+
+- You must have admin access to your CleverTap project.
+- You must have permission to install apps in your Slack workspace.
+
+## Connect Your Slack Workspace
+
+To connect Slack:
+
+1. Open the _Delivery Options_ step from the _Create Alert_ modal.
+2. Click **Connect Slack**. You are redirected to Slack's authorization page to grant CleverTap the requested permissions.
+3. Select a workspace and click **Submit Request**.
+
+
+<Image src="https://files.readme.io/a79146cc3627edb84c7d84c3c82f8afcff2d17e205e902fde0e611b78d363884-image.png" align="center" border={true} />
+
+
+Once connected, any alert in your project can route notifications to any Slack channel to which the CleverTap bot has been invited.
+
+# Project Limits
+
+The following limits apply to Alerts:
+
+| Limit                             | Value                              |
+| --------------------------------- | ---------------------------------- |
+| Active alerts per project         | 10                                 |
+| Supported metrics                 | Total Events and Unique users only |
+| Alert types                       | Anomaly and Threshold              |
+| Threshold percent-change baseline | Same period last week only         |
+
+<Callout icon="💡" theme="default">
+  ### **Note**
+
+  When you reach the 10-alert limit, the **Create alert** option is disabled. To create a new alert, go to **Manage Alerts** and delete or pause any active alerts first. Paused alerts do not count toward the 10-alert limit. Only alerts with **ACTIVE** status count against the project cap.
+</Callout>
 
 # FAQs
 
-Find answers to the following common questions about using ̉Anomaly Detection:
+Find answers to the following common questions about Alerts in Analytics.
 
-### Which chart types support Anomaly Detection?
+### What does the alert frequency control?
 
-Anomaly Detection is supported only on Trends charts.
+The alert frequency determines how often CleverTap evaluates the alert. Hourly evaluations check the metric every hour, daily evaluations check once per day, and so on. Choose a frequency that matches how quickly you need to respond to a change in the metric.
 
-### Can I scan multiple lines at once?
+### What is the baseline for percentage-change threshold alerts?
 
-No. Currently, multi-line scanning is not supported. You must select a single line before scanning.
+The baseline is always the same period from the previous week. For example, if your alert evaluates on a Wednesday, CleverTap compares Wednesday's value to the previous Wednesday's value. This applies regardless of whether your alert frequency is set to Hourly, Daily, Weekly, or Monthly. The comparison always looks back to the equivalent period one week prior. Prior-period baselines are not supported. This keeps comparisons consistent with the weekly seasonality patterns common in most product metrics.
 
-### What is the difference between Agile and Robust scan modes?
+### Can I receive alerts on multiple channels at once?
 
-Agile mode adapts quickly to recent data changes and is best for dynamic metrics. The Robust mode is more stable and conservative, suitable for metrics with steady, long-term trends.
+Yes. You can select any combination of Dashboard, Email, and Slack as delivery destinations for each alert.
 
-### What does the confidence interval control?
+### What happens to Slack alerts if I disconnect Slack?
 
-The confidence interval controls the width of the expected value band. A higher interval (99%) results in a wider band, so only extreme deviations are flagged. A lower interval (90%) yields a narrower band, leading to more data points flagged as anomalies.
+Slack delivery is paused on all existing alerts. Dashboard and email notifications for those alerts continue to trigger.
 
-### Can I run RCA on more than one anomaly?
+### Why is my alert showing a _FAILING_ status?
 
-No. RCA supports only one anomaly at a time in Phase 1.
+An alert enters **FAILING** status when it fails to evaluate successfully three or more consecutive times. This can happen due to a temporary system error. You receive an email notification when this happens. If the alert continues to fail, contact [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
 
-### What happens if I navigate away during a scan?
+### I set an anomaly alert, but it isn't triggering even though I can see an obvious drop on my chart. Why?
 
-The scan is canceled. Results are retained only if the scan completes successfully before you navigate away.
+The anomaly algorithm may not have flagged the drop if it falls within the expected confidence band. Try editing the alert and lowering the Confidence Interval to 90%. This narrows the expected band and makes the alert more sensitive. For more information, refer to [Confidence Interval](doc:anomaly-detection#confidence-interval).
 
-### Can I save the RCA results?
+### Can I edit an alert's monitored event or metric after creating it?
 
-Yes. Use **Save as a Board** from the Root Cause Analysis tab to save the findings as a CleverTap Board.
+No. The event, filters, and metric are captured as a snapshot when the alert is created and cannot be changed afterward. To monitor a different event or metric, delete the existing alert and create a new one.
 
-### Why am I seeing _No anomalies detected_ when I can see an obvious spike in the analysis?
-
-Try lowering the Confidence Interval to 90% in Scan Controls and re-scan. A higher confidence interval requires stronger deviations before flagging them.
-
-### Why does the RCA tab show no results?
-
-RCA requires a completed anomaly scan. Confirm that anomaly markers are visible on the chart before opening the RCA tab. If Stage 1 or Stage 2 of the RCA computation failed, no partial results are shown. In these cases, try running the scan again.
-
-### What should I do if the Ask AI shows inaccurate information?
-
-Ask AI generates summaries based on chart context and may not accurately reflect all the data. Always cross-check the AI summary with the raw RCA property charts.
+<br />

@@ -155,6 +155,27 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## July
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="journeys" id="user-re-entry-in-control-groups-for-recurring-journeys">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#user-re-entry-in-control-groups-for-recurring-journeys"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">User Re-entry in Control Groups for Recurring Journeys</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Control Groups in Journeys now support re-entry, ensuring consistent Control Group reporting across all recurrence cycles of a journey.</p>
+    <p>With this enhancement, Control Group users can now re-enter recurring journeys when <em>Allow re-entry</em> is enabled, so the Control Group size stays consistent with the configured split across every run. Target Group (TG) and Control Group (CG) stats are also now marked on the same day, giving tightly aligned day-wise node reporting between the two groups.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/control-groups#faqs" target="_blank">FAQs under Control Groups</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="download-schema-data-from-dashboard">
   <div class="release-note-header">
     <div class="anchor-link-icon">

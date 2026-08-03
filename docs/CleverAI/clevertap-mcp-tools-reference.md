@@ -24,7 +24,7 @@ The following table lists all available tool categories and the tools within eac
 | Category                                                                   | Tools                                                                                     |
 | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                           |
-| Analytics                                                                  | Run Analytics Query                                                                       |
+| [Analytics](doc:clevertap-mcp-tools-reference#analytics)                   | Run Analytics Query                                                                       |
 | [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Top Property Counts, Get Custom Events, Relevant Events              |
 | [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                    |
 | [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Relevant Segments                                              |

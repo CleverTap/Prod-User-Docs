@@ -21,16 +21,15 @@ MCP tools are pre-built functions that AI clients invoke using natural language 
 
 The following table lists all available tool categories and the tools within each category:
 
-| Category                                                                   | Tools                                                                                          |
-| :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                                |
-| [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Event Trends, Get Top Property Counts, Get Custom Events, Relevant Events |
-| [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                         |
-| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Relevant Segments                                                   |
-| [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft            |
-| [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                             |
-| [Querying](doc:clevertap-mcp-tools-reference#querying)                     | Prompt To CQL, Ask CleverTap                                                                   |
-| [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates      |
+| Category                                                                   | Tools                                                                                     |
+| :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                           |
+| [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Top Property Counts, Get Custom Events, Relevant Events              |
+| [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                    |
+| [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Relevant Segments                                              |
+| [Campaigns](doc:clevertap-mcp-tools-reference#campaigns)                   | List Campaigns, Get Campaign Reports, Get Message Reports, Create Campaign In Draft       |
+| [Journeys](doc:clevertap-mcp-tools-reference#journeys)                     | List Journeys, Get Journey Reports                                                        |
+| [Templates](doc:clevertap-mcp-tools-reference#templates)                   | Create Email Templates, Update Email Templates, List Email Templates, Get Email Templates |
 
 # Account Management
 
@@ -48,7 +47,6 @@ The following table shows the tools available for querying event-level data, inc
 | Tool / Function         | Description                                                                                                                                                                     |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Get Event Count         | Returns the total count of a specific event within a given date range, with optional filters on event properties. For example: How many App Launched events occurred last week? |
-| Get Event Trends        | Provides time-series trend data for a specific event, showing how its frequency changes over a defined period.                                                                  |
 | Get Top Property Counts | Returns the most or least frequently occurring values for a specific event property, useful for understanding the distribution of user behavior.                                |
 | Get Custom Events       | Fetches the list of all custom events tracked in the CleverTap account, including event names and metadata.                                                                     |
 | Relevant Events         | Analyzes account data and identifies the most relevant events for a given use case or question.                                                                                 |
@@ -78,12 +76,12 @@ While you can create a draft campaign in MCP on CleverTap, it is available only 
 
 The following table lists the tools available for managing and reporting on campaigns:
 
-| Tool / Function          | Description                                                                                                                                                                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| List Campaigns           | Lists all campaigns within a specified date range, including campaign names, types, and other details. For example: Show me all campaigns that ran in April 2026.                                                                                    |
-| Get Campaign Reports     | Retrieves detailed metrics and performance data for a specific campaign by its ID.                                                                                                                                                                   |
-| Get Message Reports      | Returns a summary report of messages sent by CleverTap within a given date range, aggregated across campaigns and channels.                                                                                                                          |
-| Create Campaign In Draft | Creates a new campaign in draft state. The draft must be reviewed and published manually from the CleverTap dashboard before going live. **Current Support:** Only for Admin users and Push channels. Campaigns are created without personalization. |
+| Tool / Function          | Description                                                                                                                                                                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| List Campaigns           | Lists all campaigns within a specified date range, including campaign names, types, and other details. For example: Show me all campaigns that ran in April 2026.                                                                                             |
+| Get Campaign Reports     | Retrieves the complete configuration overview for a specific campaign, identified by its campaign ID. This includes the audience, goal, schedule, DND settings, and channel-specific configurations, as well as engagement metrics for a selected date range. |
+| Get Message Reports      | Returns a summary report of messages sent by CleverTap within a given date range, aggregated across campaigns and channels.                                                                                                                                   |
+| Create Campaign In Draft | Creates a new campaign in draft state. The draft must be reviewed and published manually from the CleverTap dashboard before going live. **Current Support:** Only for Admin users and Push channels. Campaigns are created without personalization.          |
 
 # Journeys
 
@@ -110,5 +108,3 @@ The following table lists the tools available for managing email templates. Dele
 
   For questions, issues, or feedback, contact your CleverTap Customer Success Manager.
 </Callout>
-
-<br />

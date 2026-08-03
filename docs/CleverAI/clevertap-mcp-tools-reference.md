@@ -24,6 +24,7 @@ The following table lists all available tool categories and the tools within eac
 | Category                                                                   | Tools                                                                                     |
 | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | [Account Management](doc:clevertap-mcp-tools-reference#account-management) | List My Account, Select Account                                                           |
+| Analytics                                                                  | Run Analytics Query                                                                       |
 | [Event Analytics](doc:clevertap-mcp-tools-reference#event-analytics)       | Get Event Count, Get Top Property Counts, Get Custom Events, Relevant Events              |
 | [Profile Analytics](doc:clevertap-mcp-tools-reference#profile-analytics)   | Get Profile Count, Get Real Time Count                                                    |
 | [Segments](doc:clevertap-mcp-tools-reference#segments)                     | List Segment, Get Segment, Relevant Segments                                              |
@@ -40,7 +41,11 @@ You can use the following tools to manage your CleverTap account:
 | Select Account  | Sets the active CleverTap account for all subsequent tool calls in the session. The account ID is passed as a parameter.                                                    |
 | List My Account | Lists all CleverTap accounts that the authenticated user has access to, including account names and identifiers. For example: List all CleverTap accounts I have access to. |
 
-# Event Analytics
+# Analytics
+
+Runs an analytics query from a natural language prompt. This endpoint supports trends, funnels, cohorts, flows, and pivots, and returns the generated CQL and results. For example, Show me the daily trend of Charged events for the last 30 days.
+
+## Event Analytics
 
 The following table shows the tools available for querying event-level data, including counts, trends, property distributions, and relevant events identified by the AI client:
 
@@ -51,7 +56,7 @@ The following table shows the tools available for querying event-level data, inc
 | Get Custom Events       | Fetches the list of all custom events tracked in the CleverTap account, including event names and metadata.                                                                     |
 | Relevant Events         | Analyzes account data and identifies the most relevant events for a given use case or question.                                                                                 |
 
-# Profile Analytics
+## Profile Analytics
 
 The following table lists the tools available for analyzing user profile data, from historical behavior-based counts to real-time active user metrics:
 

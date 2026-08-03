@@ -70,6 +70,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-security-project-settings" />
         <span class="security-project-settings">
           <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" />
+
           Security & Project Settings
         </span>
       </label>
@@ -78,6 +79,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-data-and-integrations" />
         <span class="data-and-integrations">
           <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="Data & Integrations" />
+
           Data & Integrations
         </span>
       </label>
@@ -86,6 +88,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-analytics" />
         <span class="analytics">
           <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" />
+
           Analytics
         </span>
       </label>
@@ -94,6 +97,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-segments" />
         <span class="segments">
           <img src="https://files.readme.io/04fe24c1114cef41af4a4e0224cab88f5be4c31160eca491d67942c689cb79c0-Segmentation.svg" alt="Segments" />
+
           Segments
         </span>
       </label>
@@ -102,6 +106,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-campaigns" />
         <span class="campaigns">
           <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" />
+
           Campaigns
         </span>
       </label>
@@ -110,6 +115,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-journeys" />
         <span class="journeys">
           <img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" />
+
           Journeys
         </span>
       </label>
@@ -118,6 +124,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-promotions" />
         <span class="promotions">
           <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" />
+
           Promotions
         </span>
       </label>
@@ -126,6 +133,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-conversations" />
         <span class="conversations">
           <img src="https://files.readme.io/ae95d26dd8714ac2522e7a2b39166d95ace62433496df35d5dcc4d90414527bd-Conversations.svg" alt="Conversations" />
+
           Conversations
         </span>
       </label>
@@ -134,6 +142,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-product-experiences" />
         <span class="product-experiences">
           <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" />
+
           Product Experiences
         </span>
       </label>
@@ -142,6 +151,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
         <input type="checkbox" id="filter-content-manager" />
         <span class="content-manager">
           <img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" />
+
           Content Manager
         </span>
       </label>
@@ -206,6 +216,28 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 ## June
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="delivery-delay-for-in-app-messages-2">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#delivery-delay-for-in-app-messages-2"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Delivery Delay for In-App Messages</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now delay displaying In-App messages using delivery preferences. Instead of showing messages immediately at app launch, you can delay delivery by up to 20 minutes, to ensure messages appear at the right moment.</p>
+    <p>This enhancement helps reduce disruption and improve engagement for the In-App messages without requiring any developer effort. This feature is now available on Android SDK v7.7.1+ and iOS SDK v7.4.0+ for select customers.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-inapp#in-app-delay" target="_blank">In-App Delay</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="product-experiences" id="picture-in-picture-support-for-in-app-messages-and-web-popups">
@@ -1939,6 +1971,7 @@ src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3c
 
   <div class="release-note-body">
     <p>
+
       You can now experience the redesigned Campaign Listing page, built for faster performance and improved usability.
       This enhancement streamlines campaign management and brings key insights to the forefront.
     </p>
@@ -1954,6 +1987,7 @@ src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3c
     </ul>
 
     <p>
+
       For more information, refer to
       <a href="https://docs.clevertap.com/docs/enhanced-campaign-list-page" target="_blank">Campaign Overview</a>.
     </p>
@@ -2870,5 +2904,3 @@ body:not(:has(.filters input:checked)) .article {
   
 </style>
 `}</HTMLBlock>
-
-<br />

@@ -1,5 +1,5 @@
 ---
-title: Alerts
+title: Analytics Alerts
 excerpt: >-
   Learn how to set up continuous metric monitoring and receive instant
   notifications when anomalies or threshold breaches occur in your analytics

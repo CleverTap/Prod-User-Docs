@@ -1,5 +1,5 @@
 ---
-title: Notify- Email
+title: Notify-Email
 excerpt: >-
   Learn how to set up and trigger real-time transactional Email campaigns using
   Notify.

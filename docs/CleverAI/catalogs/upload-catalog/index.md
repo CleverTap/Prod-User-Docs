@@ -48,7 +48,7 @@ Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes
 
   A catalog supports the following:
 
-  - A maximum of 200 columns in total:
+  - A maximum of 200 columns in total
   - 3 fixed columns: Product ID, Name, and Image URL
   - Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
 

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to set up and trigger real-time transactional SMS campaigns using
   Notify.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

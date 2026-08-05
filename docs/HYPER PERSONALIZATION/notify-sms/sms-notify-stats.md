@@ -2,7 +2,7 @@
 title: SMS Notify Stats
 excerpt: Learn how to track and analyze the performance of your Notify campaigns.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

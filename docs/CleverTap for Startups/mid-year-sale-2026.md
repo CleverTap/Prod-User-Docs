@@ -14,7 +14,7 @@ CleverTap for Startups is thrilled to announce the _Mid-Year Sale 2026_, featuri
 
 The following section outlines the primary details of the Mid-Year Sale 2026 offer, including its duration, name, and eligibility criteria.
 
-- **Offer Duration**: July 15, 2026, to August 05, 2026
+- **Offer Duration**: July 15, 2026, to August 30, 2026
 - **Offer Name**: Mid-Year Sale (90% Off for the First 6 Months)
 - **Eligibility**: Available to all new CleverTap customers who subscribe to the Essentials Plan (Monthly Subscription) for up to 100,000 Monthly Active Users (MAU).
 

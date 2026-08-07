@@ -114,7 +114,7 @@ For example, for an e-commerce campaign, you might map Product Name, Product Ima
 
 Once attributes are mapped, use Liquid Script to reference them in your campaign message.
 
-If your campaign is triggered by a Charged event, you can reference item array properties from that event in Liquid Tags to look up the matching catalog record. Profile Mapping and Event Mapping are not used in this case.
+If your campaign is triggered by a Charged event, you can reference item array properties from that event in Liquid Tags to look up the matching catalog record. This uses the same Event Mapping mechanism described above, rather than bypassing it.
 
 ## Apply Include and/or Exclude Rules
 

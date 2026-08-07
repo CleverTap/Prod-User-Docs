@@ -49,7 +49,7 @@ Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes
   A catalog supports the following:
 
   - A maximum of 200 columns in total
-  - 3 fixed columns: Product ID, Name, and Image URL
+  - 3 fixed columns: Product ID, Name, and Image URL. Use the following header casing in your CSV file: Identity, Name, ImageURL.
   - Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
 
   Your account supports up to 5 catalogs and a combined total of 15M rows across all catalogs. Both limits apply: you cannot create a new catalog once you reach 5, and you cannot upload more rows to any catalog once your combined row count reaches 15M, whichever comes first.
@@ -139,6 +139,3 @@ The following image shows the _Mapping data type_ section:
 
 
 <Image src="https://files.readme.io/327e5a0f27fe737f30eee6ce99f29d91d339ad12b298ba1cd7a45d734fefda02-image.png" align="center" caption="Map Data Type" border={true} />
-
-
-<br />

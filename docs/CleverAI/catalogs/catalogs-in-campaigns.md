@@ -128,7 +128,7 @@ For example, add a catalog rule `In Stock = true` to ensure only available items
 
 **Exclude Items**
 
-Add rules to prevent specific items from appearing. Items that match any exclude rule are removed from consideration.
+Add rules to prevent specific items from appearing. Items are removed from consideration only if they match all the exclusion rules, not just one.
 
 For example, add a catalog rule `Category = Clearance` to prevent clearance items from appearing in a full-price promotion.
 

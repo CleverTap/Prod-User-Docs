@@ -18,7 +18,7 @@ Products cannot be created directly from the dashboard. To add products to a cat
 
 ## System Fields
 
-System fields are enforced by the API. The following table describes the fields validated during product creation:
+System fields are enforced by the API. These fields below correspond to the three fixed columns shown on the dashboard: Product ID, Name, and Image URL.
 
 | Field    | Description                        | Constraints                                                      |
 | -------- | :--------------------------------- | ---------------------------------------------------------------- |
@@ -26,9 +26,11 @@ System fields are enforced by the API. The following table describes the fields 
 | Name     | Name of the product.               | Required. 1–1,000 characters.                                    |
 | ImageURL | Link to the product image.         | Required for single product creation. Max 2,000 characters.      |
 
-> 📘 Note
->
-> For bulk product creation, up to 100 products can be included in a single request.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  For bulk product creation, up to 100 products can be included in a single request.
+</Callout>
 
 ## Attributes
 
@@ -97,14 +99,16 @@ To collapse the panel, click the arrow at the top.
 
 The _Details_ subsection shows system-level metadata for the selected product.
 
-| Field       | Description                                                 |
-| ----------- | ----------------------------------------------------------- |
-| updated\_at | The timestamp indicates when the product was last updated.  |
-| created\_at | The timestamp indicates when the product was first created. |
+| Field      | Description                                                 |
+| ---------- | ----------------------------------------------------------- |
+| updated_at | The timestamp indicates when the product was last updated.  |
+| created_at | The timestamp indicates when the product was first created. |
 
-> 📘 Note
->
-> Timestamps are displayed in Unix epoch format.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Timestamps are displayed in Unix epoch format.
+</Callout>
 
 ### Properties
 
@@ -114,6 +118,3 @@ The following image shows the Product Details:
 
 
 <Image src="https://files.readme.io/972e183c990e86546600a14d8872c678a8fe5052b9f50177b36d307addbd5b93-image.png" align="center" caption="Product Details" border={true} />
-
-
-<br />

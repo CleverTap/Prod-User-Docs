@@ -102,7 +102,7 @@ Catalog attributes are mapped using one of two methods, depending on the campaig
 
 **Profile Mapping**
 
-Available for PBS and Live campaigns. Maps a user's profile property to a catalog item identifier, so CleverTap looks up the catalog record that matches the value stored in the user's profile. Use this when the item to surface is derived from something known about the user.
+Available for any campaign type that includes a _Catalogs_ tab. Maps a user's profile property to a catalog item identifier, so CleverTap looks up the catalog record that matches the value stored in the user's profile. Use this when the item to surface is derived from something known about the user.
 
 For example, if a user's profile stores their preferred city as`home_city`, you can map that to a catalog of travel destinations to surface city-specific deals.
 

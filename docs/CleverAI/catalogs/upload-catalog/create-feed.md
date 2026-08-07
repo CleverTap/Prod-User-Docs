@@ -14,8 +14,8 @@ A feed is a data source that adds or updates product data in a catalog. Use feed
 
 For example, consider an e-commerce product catalog:
 
-* One feed uploads the full product list, including IDs, names, categories, and images, from a CSV file.
-* Another feed syncs pricing and availability daily from your backend system.
+- One feed uploads the full product list, including IDs, names, categories, and images, from a CSV file.
+- Another feed syncs pricing and availability daily from your backend system.
 
 Both feeds update the same catalog but serve different purposes.
 
@@ -29,7 +29,9 @@ Click **Create Feed** to configure a new feed for the selected catalog. Perform 
 
 The following image shows the _Feed_ tab:
 
-<Image align="center" border={true} caption="Feed Tab" src="https://files.readme.io/3bb57639fcdcbefeb0d47b08a1fc84787002f55e2b3f7bc3393a2076a3b397f4-image.png" />
+
+<Image src="https://files.readme.io/3bb57639fcdcbefeb0d47b08a1fc84787002f55e2b3f7bc3393a2076a3b397f4-image.png" align="center" caption="Feed Tab" border={true} />
+
 
 ## Select an Upload Type
 
@@ -43,7 +45,9 @@ The upload type determines how feed data is sourced. The following table describ
 
 The following image shows the _Create Feed_ page:
 
-<Image align="center" border={true} caption="Create Feed" src="https://files.readme.io/813085df7901b79f10b4c73c7cd8fbd0c6ad5a5630f58e023293c136ba088a31-image.png" />
+
+<Image src="https://files.readme.io/813085df7901b79f10b4c73c7cd8fbd0c6ad5a5630f58e023293c136ba088a31-image.png" align="center" caption="Create Feed" border={true} />
+
 
 ## Configure the Feed Source
 
@@ -68,17 +72,17 @@ Click **Save** to add the feed to the catalog.
 
 Monitor feed activity from the Feed tab. The Feed tab shows all feeds associated with the selected catalog. Each feed entry includes the feed name, number of products, upload type, status, uploaded by, and last updated.
 
-<Image align="center" border={true} caption="Filters on Feed Logs" src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" />
 
-## How multiple feeds work
+<Image src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" align="center" caption="Filters on Feed Logs" border={true} />
 
-Each feed updates only the attributes it contains. When multiple feeds are connected to the same catalog:
 
-* Each feed operates independently.
-* Updates from one feed do not overwrite unrelated fields from another.
-* The most recent successful update determines the value of overlapping attributes.
+## How Multiple Feeds Work
 
-This allows you to separate initial data ingestion from ongoing updates, maintain multiple data sources for the same catalog, and update specific attributes without re-uploading the entire dataset.
+Each feed operates independently. However, updates are not merged across feeds. When a feed processes a product, it replaces the entire attributes object for that product with the data in the current feed. Any attribute not included in the latest feed is removed, not preserved from an earlier feed.
+
+For example, if Feed A sets color and size for a product, and Feed B later updates only the color for the same product, the product retains only the color after Feed B runs. size is dropped.
+
+This allows you to separate initial data ingestion from ongoing updates and maintain multiple data sources for the same catalog. To avoid unintended data loss, include every attribute you want to persist in each feed that touches a given product.
 
 ## Feed Status
 
@@ -104,7 +108,9 @@ Apply filters to track feed performance and identify issues. The following table
 
 The following image shows the filters for feed logs:
 
-<Image align="center" border={true} caption="Filters on Feed Logs" src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" />
+
+<Image src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" align="center" caption="Filters on Feed Logs" border={true} />
+
 
 ## Edit columns
 
@@ -112,4 +118,5 @@ The Edit Columns option lets you choose which columns to display on the Feed tab
 
 The following image shows _Edit Columns_ :
 
-<Image align="center" border={true} caption="Edit Columns" src="https://files.readme.io/1c0c02290794e510f17cc46f77527614a1cf0386a71ac6c3f50093143ffb0c07-image.png" />
+
+<Image src="https://files.readme.io/1c0c02290794e510f17cc46f77527614a1cf0386a71ac6c3f50093143ffb0c07-image.png" align="center" caption="Edit Columns" border={true} />

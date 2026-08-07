@@ -16,9 +16,9 @@ However, uploaded catalogs are often incomplete and lack category-specific attri
 
 For example, consider an e-commerce catalog item uploaded with the following data:
 
-* _Title_: Men’s Running Shoes
-* _Description_: Lightweight shoes designed for daily runs
-* _Image_: Product image showing a blue running shoe
+- _Title_: Men’s Running Shoes
+- _Description_: Lightweight shoes designed for daily runs
+- _Image_: Product image showing a blue running shoe
 
 The catalog item does not explicitly include structured attributes such as color, shoe type, gender, or usage.
 
@@ -32,9 +32,9 @@ Here are some of the industry-specific personalization and recommendation use ca
 
     This enables use cases such as:
 
-    * Personalized product recommendations based on user preferences (for example, color or style affinity).
-    * Improved product discovery through attribute-based filtering.
-    * Adapted product images and descriptions optimized for different engagement channels and user personas
+    - Personalized product recommendations based on user preferences (for example, color or style affinity).
+    - Improved product discovery through attribute-based filtering.
+    - Adapted product images and descriptions optimized for different engagement channels and user personas
   </Tab>
 
   <Tab title="FinTech">
@@ -42,9 +42,9 @@ Here are some of the industry-specific personalization and recommendation use ca
 
     This enables:
 
-    * Personalized product recommendations aligned to a user’s risk profile.
-    * Targeted campaigns for low-risk or high-risk financial products.
-    * Better compliance-aware segmentation and messaging.
+    - Personalized product recommendations aligned to a user’s risk profile.
+    - Targeted campaigns for low-risk or high-risk financial products.
+    - Better compliance-aware segmentation and messaging.
   </Tab>
 
   <Tab title="Food and Delivery">
@@ -52,9 +52,9 @@ Here are some of the industry-specific personalization and recommendation use ca
 
     This enables:
 
-    * Personalized meal and restaurant recommendations based on user preferences.
-    * Improved discovery for new or less-ordered items.
-    * Adapted images and descriptions optimized for different channels and regions
+    - Personalized meal and restaurant recommendations based on user preferences.
+    - Improved discovery for new or less-ordered items.
+    - Adapted images and descriptions optimized for different channels and regions
   </Tab>
 
   <Tab title="Gaming">
@@ -62,9 +62,9 @@ Here are some of the industry-specific personalization and recommendation use ca
 
     This enables:
 
-    * Personalized game recommendations and promotions.
-    * Audience-specific onboarding and engagement journeys.
-    * Discovery of similar games based on enriched attributes.
+    - Personalized game recommendations and promotions.
+    - Audience-specific onboarding and engagement journeys.
+    - Discovery of similar games based on enriched attributes.
   </Tab>
 
   <Tab title="Subscription">
@@ -72,9 +72,9 @@ Here are some of the industry-specific personalization and recommendation use ca
 
     This enables:
 
-    * Personalized content recommendations.
-    * Audience-specific newsletters and campaigns.
-    * Better discovery of relevant content across the catalog.
+    - Personalized content recommendations.
+    - Audience-specific newsletters and campaigns.
+    - Better discovery of relevant content across the catalog.
   </Tab>
 </Tabs>
 
@@ -86,27 +86,32 @@ Use the search bar to find a specific catalog, and scroll through the list to re
 
 The following image shows the _Catalog listing_ page:
 
-<Image align="center" border={true} caption="Catalog Listing" src="https://files.readme.io/b85ade9f52fc8d004d616b3e8a4df335d4cfef34310f32b7a1901a99eed376a8-image.png" />
+
+<Image src="https://files.readme.io/b85ade9f52fc8d004d616b3e8a4df335d4cfef34310f32b7a1901a99eed376a8-image.png" align="center" caption="Catalog Listing" border={true} />
+
 
 ## Filters on Catalogs Listing
 
 The Filters panel helps narrow down the catalogs displayed in the list. You can filter catalogs based on the following:
 
-* ACTIVE- Successfully created or synced, available for use in campaigns.
-* INACTIVE - Disabled, data feed unreachable/failed, or no product entries. Cannot be used in live campaigns until the issue is resolved.
+- ACTIVE- Successfully created or synced, available for use in campaigns.
+- INACTIVE - Disabled, data feed unreachable/failed, or no product entries. Cannot be used in live campaigns until the issue is resolved.
 
 Filters can be saved for reuse or reset when no longer needed. This makes it easier to locate specific catalogs, especially when managing a large number of entries.
 
 The following image shows the available _Filters_ for Catalog Listing:
 
-<Image align="center" border={true} caption="Filters on Catalog Listing" src="https://files.readme.io/c1907af47e0dcc4808e8fd274de4da868b8304713a0756cc43e159fcf0a4d934-image.png" />
+
+<Image src="https://files.readme.io/c1907af47e0dcc4808e8fd274de4da868b8304713a0756cc43e159fcf0a4d934-image.png" align="center" caption="Filters on Catalog Listing" border={true} />
+
 
 ## Edit Columns
 
 The Edit Columns panel allows you to control how the catalogs table is displayed. You can select which columns appear in the table and reorder them using drag handles.
 
-The available columns include name, number of items, catalog validation, uploaded by, uploaded on, and last updated on. After making changes, select _Apply Changes_ to save or reset to revert to the previous configuration, or _Cancel_ to exit without saving. Customizing columns helps you focus on the information that matters most to your workflow.
+Name always appears and cannot be hidden. The following columns can be shown, hidden, or reordered: Items, Status, Active Engagements, Updated by, Updated on, and Last Updated on. Customizing columns helps you focus on the information that matters most to your workflow.
 
 The following image shows the _Edit Columns_ panel to show or hide the column in Catalog Listing:
 
-<Image align="center" border={true} caption="Edit Columns" src="https://files.readme.io/2c3de3406367c98ea4d91aae067a29eb0ebb57645733855e0f45548430f2266b-image.png" />
+
+<Image src="https://files.readme.io/2c3de3406367c98ea4d91aae067a29eb0ebb57645733855e0f45548430f2266b-image.png" align="center" caption="Edit Columns" border={true} />

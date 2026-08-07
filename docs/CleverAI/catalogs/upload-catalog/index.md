@@ -49,7 +49,7 @@ Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes
   A catalog supports the following:
 
   - A maximum of 200 columns in total
-  - 3 fixed columns: Identity, Name, and Image URL. Use the following header casing in your CSV file: identity vs Identity vs IDENTITY, name vs Name, and imageurl vs ImageUrl vs Image_URL
+  - 3 fixed columns: Identity, Name, and Image URL. Column headers are case-insensitive. You can use any of the following header casing in your CSV file: identity vs Identity vs IDENTITY, name vs Name, and imageurl vs ImageUrl vs Image_URL
   - Up to 197 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
 
   Your account supports up to 5 catalogs and a combined total of 15M rows across all catalogs. Both limits apply: you cannot create a new catalog once you reach 5, and you cannot upload more rows to any catalog once your combined row count reaches 15M, whichever comes first.

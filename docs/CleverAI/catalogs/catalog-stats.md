@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-The Stats tab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand recommendation reach and engagement performance across channels.
+The _Stats&#x20;_&#x74;ab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand the reach and engagement performance of recommendations across channels.
 
 To create a catalog, refer to [Upload Catalog](doc:upload-catalog).
 

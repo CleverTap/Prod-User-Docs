@@ -109,9 +109,7 @@ You can also configure a custom kit for the current thread. This helps align gen
 
 You can customize how content is written using _Content Settings_. To configure the Content Settings, follow the given steps:
 
-1. Click the&#x20;
-
-   <Image src="https://files.readme.io/24934bf75abfbb60b6e472ec6eada7c29619243e8bc94c147b88ae0c6b0bc1e6-image.png" align="left" width="30px" wrap={true} />
+1. Click the&#x20; <Image src="https://files.readme.io/24934bf75abfbb60b6e472ec6eada7c29619243e8bc94c147b88ae0c6b0bc1e6-image.png" align="left" width="30px" wrap={true} />
 
    &#x20;icon in the _Ask AI_ window to configure the following options:
 

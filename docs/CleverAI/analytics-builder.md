@@ -1,5 +1,5 @@
 ---
-title: Analytics Agent
+title: Analytics Builder
 excerpt: Generate advanced queries and visual reports with a simple prompt.
 deprecated: false
 hidden: true
@@ -14,7 +14,7 @@ next:
 
 <br />
 
-Analytics Agent lets you generate advanced queries and visual reports simply by describing your intent in plain language. This AI-powered agent saves time by eliminating the need to create advanced queries or navigate the query builder menus manually.
+Analytics Builder lets you generate advanced queries and visual reports simply by describing your intent in plain language. This AI-powered agent saves time by eliminating the need to create advanced queries or navigate the query builder menus manually.
 
 Use this feature to quickly explore user behavior or product usage by entering a natural language prompt.
 
@@ -24,7 +24,7 @@ Use this feature to quickly explore user behavior or product usage by entering a
   Currently, this feature is a Private Beta Release. If you want access to this feature, contact your CSM or Account Manager.
 </Callout>
 
-Analytics Agent has three stages:
+Analytics Builder has three stages:
 
 1. **AskAI**<br />Enter your prompt in the **AskAI** input box. For example: _"Show me active users trend for the past week."_
 
@@ -38,7 +38,7 @@ Analytics Agent has three stages:
 
 # Generate Analytics Insights
 
-To use Analytics Agent:
+To use Analytics Builder:
 
 1. From the CleverTap dashboard, go to Analytics, and select New Trends, Funnels, or Flows.
 

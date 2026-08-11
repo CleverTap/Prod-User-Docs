@@ -14,7 +14,7 @@ next:
 
 <br />
 
-Analytics Builder lets you generate advanced queries and visual reports simply by describing your intent in plain language. This AI-powered agent saves time by eliminating the need to create advanced queries or navigate the query builder menus manually.
+Analytics Builder lets you generate advanced queries and visual reports simply by describing your intent in plain language. This AI-powered agent saves time by eliminating the need to create advanced queries or manually navigate query builder menus.
 
 Use this feature to quickly explore user behavior or product usage by entering a natural language prompt.
 
@@ -80,6 +80,10 @@ This feature supports new Trends, Funnels, and Flows.
 ### How is my data used and sent to OpenAI?
 
 Your data is never used to train OpenAI models, and is deleted by OpenAI within 30 days. To generate AI output through CleverTap AI features that leverage OpenAI, CleverTap sends your prompt along with event names, event properties, user properties, segment names or IDs, or any other relevant input to OpenAI. The input sent to OpenAI by CleverTap does not identify you or your users unless you choose to include identifiable information in your prompt. CleverTap provides no warranties regarding the AI-generated content, including the output. For more information about OpenAI's data handling, refer to OpenAI’s [Enterprise Privacy Policy](https://openai.com/enterprise-privacy).
+
+### Why can't I see my conversation threads ?
+
+Clearing your browser storage will also clear your conversation threads.&#x20;
 
 ### Is there a limit to the thread history?
 

@@ -109,7 +109,11 @@ You can also configure a custom kit for the current thread. This helps align gen
 
 You can customize how content is written using _Content Settings_. To configure the Content Settings, follow the given steps:
 
-1. Click the <Image src="https://files.readme.io/24934bf75abfbb60b6e472ec6eada7c29619243e8bc94c147b88ae0c6b0bc1e6-image.png" width="30px"/> icon in the _Ask AI_ window to configure the following options:
+1. Click the&#x20;
+
+   <Image src="https://files.readme.io/24934bf75abfbb60b6e472ec6eada7c29619243e8bc94c147b88ae0c6b0bc1e6-image.png" align="left" width="30px" wrap={true} />
+
+   &#x20;icon in the _Ask AI_ window to configure the following options:
 
 - _Language_: Choose the language for the generated copy.
 - _Script_: Select the writing system used for the selected language (for example, if your selected language is Hindi, choose Devanagari script for `नमस्ते` or Latin script for `Namaste`.)

@@ -112,38 +112,53 @@ The following strategies are available to generate recommendations from your cat
 ## Popular
 
 <Cards>
-  <Card title="Popular" href="https://docs.clevertap.com/docs/popular" />
+  <Card title="Popular" href="https://docs.clevertap.com/docs/popular">
 
-  <Card title="Popular in Category" href="https://docs.clevertap.com/docs/popular-in-category" />
+  </Card>
+
+  <Card title="Popular in Category" href="https://docs.clevertap.com/docs/popular-in-category">
+
+  </Card>
 </Cards>
 
 ## Trending
 
 <Cards>
+  <Card title="Trending" href="https://docs.clevertap.com/docs/trending">
 
-  <Card title="Trending" href="https://docs.clevertap.com/docs/docs/trending" />
+  </Card>
 
-  <Card title="Trending in Category" href="https://docs.clevertap.com/docs/trending-in-category" />
+  <Card title="Trending in Category" href="https://docs.clevertap.com/docs/trending-in-category">
+
+  </Card>
 </Cards>
 
 ## Best Sellers
 
 <Cards>
-  <Card title="Best Sellers" href="https://docs.clevertap.com/docs/best-sellers" />
+  <Card title="Best Sellers" href="https://docs.clevertap.com/docs/best-sellers">
 
-  <Card title="Best Sellers in Category" href="https://docs.clevertap.com/docs/best-sellers-in-category" />
+  </Card>
+
+  <Card title="Best Sellers in Category" href="https://docs.clevertap.com/docs/best-sellers-in-category">
+
+  </Card>
 </Cards>
 
 ## Hybrid Strategy Recommendation
 
 <Cards>
-  <Card title="Based on What You Viewed" href="https://docs.clevertap.com/docs/based-on-what-you-viewed" />
+  <Card title="Based on What You Viewed" href="https://docs.clevertap.com/docs/based-on-what-you-viewed">
+
+  </Card>
 </Cards>
 
 ## Content Strategy Recommendation
 
 <Cards>
-  <Card title="More Like This" href="https://docs.clevertap.com/docs/more-like-this" />
+  <Card title="More Like This" href="https://docs.clevertap.com/docs/more-like-this">
+
+  </Card>
 </Cards>
 
 # Choose Right Strategy

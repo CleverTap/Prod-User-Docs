@@ -305,24 +305,46 @@ If you have a custom inbox and want to configure the message within CleverTap, y
   To access this feature, ensure that you upgrade to SDK version 5.2.0 or higher.
 </Callout>
 
-### Time to Live (TTL)
+### Time to Live
 
-_App Inbox_ campaigns are by design persisted on the user device for a number of days.
+Time to Live (TTL) defines how long an App Inbox message remains stored and visible to the user after delivery. When the TTL period expires, the message is automatically removed from the user's App Inbox.
 
-1. You can configure the number of days (or hours) to keep the message on the user's device by setting the _time to live_.
-
-
-<Image src="https://files.readme.io/bbd5393-Campaigns_message_time_to_live.png" alt="710" align="center" caption="Define Message Time to Live" border={true} />
+The following image shows the Message time to live settings in the When section of a campaign:
 
 
-The TTL can range from 1 day to 60 days. The default value for TTL is 2 days. You can define the TTL for a maximum of 60 days. The message on the user's device stays there for the specified TTL after which it is automatically removed. You can also have _Infinite TTL_ which means the message will never be deleted from the user's device.
+<Image src="https://files.readme.io/2b53b704120e90273fa4b5c0b20546fbde58ff1740f8837177bd0fc53b0b59f9-image.png" alt="Time to live for a message" align="center" caption="Time to live for a message" border={true} />
 
-<Callout icon="🚧" theme="warn">
-  ### Choosing the Right TTL
 
-  - You should choose a TTL that resonates with the purpose of your campaign. Some messages need to stay on the user's device for a longer period (coupon codes which are valid for a month) while some should last for a day or two (weekend discount offers).
-  - The TTL is considered based on campaign sent time.
+You can configure TTL using one of two modes:
+
+- Relative: The message remains visible for a specified duration after it is sent.
+- Absolute: The message remains visible until a specific date and time.
+
+<Callout icon="📘" theme="info">
+  ### Private Beta
+
+  Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
 </Callout>
+
+#### Relative Time
+
+Use this option when you want the message to remain active for a fixed duration with no set expiry date.
+
+1. Under Message time to live, select _Relative_.
+2. Enter a numeric value in the input field.
+3. Select the unit: Minute(s), Hour(s), or Day(s).
+
+#### Absolute Time
+
+Use this option when you want the message to expire at a specific date and time, regardless of when it is sent.
+
+1. Under Message time to live, select _Absolute_.
+2. In the date field, enter the expiry date in **MMM DD, YYYY** format (for example, Jan 01, 2026).
+3. In the time field, enter the expiry time in **HH:MM AM/PM** format (for example, 10:56 AM).
+
+#### Select a TTL
+
+Always select a TTL that aligns with the purpose of your campaign. Some messages need to remain in a user's inbox for a longer period (for example, coupon codes valid for a month), while others should only last a day or two (for example, weekend discount offers).<br />TTL is calculated from the dispatch time, that is, when the user qualifies for the campaign.
 
 <Callout icon="📘" theme="info">
   ### How a Message is Accounted For
@@ -333,7 +355,7 @@ The TTL can range from 1 day to 60 days. The default value for TTL is 2 days. Yo
 <Callout icon="❗️" theme="error">
   ### Events via API
 
-  For live action campaigns, messages do not get delivered to the App inbox if the qualifying event is sent via API. This only applies to standalone App Inbox campaigns and not Push + App inbox campaigns.
+  For live action campaigns, messages do not get delivered to the App inbox if the qualifying event is sent via API. This only applies to standalone App Inbox campaigns and not Push + App inbox campaigns.&#x20;
 </Callout>
 
 ### Supported Media Types

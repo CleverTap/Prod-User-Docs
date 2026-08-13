@@ -38,7 +38,7 @@ To create a new External Trigger campaign:
 
 1. From the dashboard, select _Campaigns_.
 2. Click + Campaign.
-3. Select the messaging channel from the Messaging Channels list. This feature is currently available for the _Push Notifications_, _Email_, _Webhook_, and _App Inbox_ messaging channels.
+3. Select the messaging channel from the Messaging Channels list. This feature is currently available for the _Push Notifications_, _Email_, and _Webhook_ messaging channels.
 
 
 <Image src="https://files.readme.io/a0f8ec12123bf8c5c3bb504a096c54b76083a69034625df3dd9d6b6a20f1ac8a-Select_a_Campaign_from_Campaign.png" alt="Select Messaging Channel" align="center" border={true} />

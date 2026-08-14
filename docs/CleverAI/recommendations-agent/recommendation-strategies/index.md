@@ -172,7 +172,7 @@ Pick a strategy based on where the recommendation appears and what user data you
 | Drive category-level discovery    | No user data required     | Popular in Category, Trending in Category, Best Sellers in Category |
 | Personalize within a category     | Browse and view history   | Based on What You Viewed                                            |
 | Keep the user exploring           | Browse and view history   | Based on What You Viewed                                            |
-| Show similar items                | Catalog attributes        | More Like This                                                      |
-| Drive repeat engagement           | Purchase and view history | More Like This                                                      |
+| Show similar items                | Catalog attributes        | More Like These                                                     |
+| Drive repeat engagement           | Purchase and view history | More Like These                                                     |
 
 Select the strategy that best matches the user's context to keep recommendations relevant and effective.

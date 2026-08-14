@@ -1,5 +1,5 @@
 ---
-title: Filter Rules
+title: Rule-Based Filters
 excerpt: Learn how to use different filter rule types to refine recommendation results.
 deprecated: false
 hidden: true

@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-# What is NPS?
+# Overview
 
 NPS is an acronym for Net Promoter Score. It is a customer loyalty and satisfaction measurement that asks customers how likely they are to recommend your product or service to others on a scale of 0 to 10.
 

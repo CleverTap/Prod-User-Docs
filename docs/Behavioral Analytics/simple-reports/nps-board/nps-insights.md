@@ -29,7 +29,7 @@ Go to _Dashboard > Boards > NPS_. Select the **AI Insights** tab to view the det
 Refer to the following _AI Insights_ tabs:
 
 - [AI Generated Summary](doc:nps-insights#ai-generated-summary)
-- [Key Themes](httpsdoc:nps-insights#key-themes)
+- [Key Themes](doc:nps-insights#key-themes)
 - [Comments](doc:nps-insights#comments)
 - [Trend](doc:nps-insights#trend)
 - [Smart Word Cloud](doc:nps-insights#smart-word-cloud)

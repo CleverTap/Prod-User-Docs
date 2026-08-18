@@ -2,7 +2,7 @@
 title: 'Image Creator: FAQs'
 excerpt: Find answers to common questions about the Image Creator.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -1,7 +1,7 @@
 ---
 title: Generate On-Brand Images with Effective Prompts
 excerpt: >-
-  Create stunning, on-brand campaign visuals with the AI Designer Agent using
+  Create stunning, on-brand campaign visuals with the Image Creator using
   effective prompts. 
 deprecated: false
 hidden: true
@@ -14,23 +14,27 @@ metadata:
 ---
 # Overview
 
-The AI Designer Agent creates brand-aligned images directly from your prompts. Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether it is for a sales banner, event promotion, or seasonal creative.
+Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether for a sales banner, an event promotion, or a seasonal creative. This document helps you write prompts that get precise, visually accurate, and on-brand results.
 
-This document helps you write prompts that get precise, visually accurate, and on-brand results.
+Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [FAQs](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#faqs).
+
+# Ways to Generate Images with AI
+
+You can generate on-brand images in multiple ways depending on your campaign needs. The AI Image Generator supports creating new images, editing existing ones, or using a reference image to guide visual consistency.
+
+For more information on generating and editing images, along with step-by-step instructions, refer to [Image Creator](https://staging.docs.user.clevertap.net/docs/ai-image-generator).
 
 <Callout icon="📘" theme="info">
-  **Private Beta**
+  #### **How Brand Kit and Prompts Work Together**
 
-  Currently, this feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
+  If your prompt conflicts with your Brand Kit, the Brand Kit always takes priority to maintain brand consistency. The system applies settings in this order: **Brand Kit → Prompt → Filters.&#x20;**&#x54;his ensures every generated image stays brand-compliant and visually consistent with your defined design standards.
 </Callout>
-
-Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance related details, refer to [FAQs](https://docs.clevertap.com/docs/designer-agent#faqs).
 
 # Writing Effective Prompts
 
-Writing a clear, focused prompt helps the AI Designer Agent understand what you want to create, why you are creating it, and where it will be used. A good prompt explains the intent of the campaign (what you want to achieve with this image), the visual feel, and the layout composition, ensuring the final design looks on-brand and aligns with your campaign goals.
+Writing a clear, focused prompt helps the Image Creator understand what you want to create, why you are creating it, and where it will be used. A good prompt explains the intent of the campaign (what you want to achieve with this image), the visual feel, and the layout composition, ensuring the final design looks on-brand and aligns with your campaign goals.
 
-You can follow this simple structure to describe your image idea in a way the Designer Agent understands easily:
+You can follow this simple structure to describe your image idea in a way the Image Creator understands easily:
 
 ### Define the Purpose (What the Image Is Meant to Do)
 
@@ -50,28 +54,46 @@ Specify the structure of your image, where to place text, logos, or visual empha
 > Use soft, festive lighting that evokes the spirit of Diwali celebrations. The scene should evoke a sense of luxury and invitation.
 > Include elegant home décor items, and the overall tone should be celebratory, warm, and of high quality. Place the HomeStay logo in the top-right corner. Display the featured décor items prominently in the center or foreground. Add a ‘Shop Now’ call-to-action button at the bottom of the image.
 
-<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/e9161ad5cd4a04aaec0e328b2d276174a7c22b01cc2fd98661da2cfd3bc6f71d-image.png" />
+
+<Image src="https://files.readme.io/08102a5e060435caee68996a1d47e525e012cd3e196dc5ddad9928d43b77c23f-e9161ad5cd4a04aaec0e328b2d276174a7c22b01cc2fd98661da2cfd3bc6f71d-image.jpg" align="center" caption="Sample Image" border={true} />
+
 
 ## **Prompt Tips**
 
 The following are some useful tips when adding visual and emotional details to your prompts:
 
-* Describe mood or emotion (for example, warm, premium, playful, trustworthy).
-* Mention lighting or visual treatment (for example, soft light, gradient glow, high contrast).
-* Be specific and describe what the image should show and why. Avoid short or vague inputs like “banner” or “sale.” For example: “Create a festive Diwali banner with gold lamps, warm lighting, and a red background.”
-* Keep tone and brand cues consistent. Choose one style, for example, either “bold and expressive” or “clean and minimal.” Ensure color choices align with your Brand Kit. Avoid mixing contradictory styles (“vibrant and minimal”).
-* Specify the text placement and exact text for the image, as the AI renders only the text stated in your prompt. Without text, AI may add placeholder content. For example: “Add the text ‘Shop Now’ at the bottom center in bold white.”
-* Upload reference images directly instead of pasting URLs, as external links are not supported.
+- Describe mood or emotion (for example, warm, premium, playful, trustworthy).
+- Mention lighting or visual treatment (for example, soft light, gradient glow, high contrast).
+- Be specific and describe what the image should show and why. Avoid short or vague inputs like “banner” or “sale.” For example: “Create a festive Diwali banner with gold lamps, warm lighting, and a red background.”
+- Keep tone and brand cues consistent. Choose one style, for example, either “bold and expressive” or “clean and minimal.” Ensure color choices align with your Brand Kit. Avoid mixing contradictory styles (“vibrant and minimal”).
+- Specify the text placement and exact text for the image, as the AI renders only the text stated in your prompt. Without text, AI may add placeholder content. For example: “Add the text ‘Shop Now’ at the bottom center in bold white.”
+- Upload reference images directly instead of pasting URLs, as external links are not supported.
 
 # Sample Prompts
 
 The following sample prompts show how detailed prompts improve image quality, tone, and brand consistency. You can experiment with more prompts to find a suitable message tone and style for your brand. Browse the sample prompts by industry:
 
-* [E-Commerce](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#e-commerce)
-* [OTT](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#ott)
-* [FinTech](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#fintech)
-* [Food Delivery](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#food-delivery)
-* [Gaming](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#gaming)
+<Cards>
+  <Card title="E-Commerce" href="#e-commerce" icon="fa-shopping-cart">
+    Personalization & Offers
+  </Card>
+
+  <Card title="OTT" href="#ott" icon="fa-tv">
+    Content & Engagement
+  </Card>
+
+  <Card title="Fintech" href="#fintech" icon="fa-wallet">
+    Finance & Portfolios
+  </Card>
+
+  <Card title="Food Delivery" href="#food-delivery" icon="fa-utensils">
+    Menu & Recommendations
+  </Card>
+
+  <Card title="Gaming" href="#gaming" icon="fa-gamepad">
+    Rewards & Items
+  </Card>
+</Cards>
 
 ## E-Commerce
 
@@ -83,7 +105,9 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="E-Commerce Example" src="https://files.readme.io/fd89bc42f9d527d5901cc3512ece9c060ebf2a65c60c7d47e9b35358d997936c-image.png" />
+
+<Image src="https://files.readme.io/fd89bc42f9d527d5901cc3512ece9c060ebf2a65c60c7d47e9b35358d997936c-image.png" align="center" caption="E-Commerce Example" border={true} />
+
 
 ## OTT
 
@@ -96,22 +120,23 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="OTT Example" src="https://files.readme.io/e06469f220ac3077786a2a2117c45fad9a23055cd742e993425d61dbda7f2765-image.png" />
+
+<Image src="https://files.readme.io/e06469f220ac3077786a2a2117c45fad9a23055cd742e993425d61dbda7f2765-image.png" align="center" caption="OTT Example" border={true} />
+
 
 ## FinTech
 
 **Prompt:**
 
 > Design a clean banner for a home loan offer in the FinTech domain.
-> Use a calm, trustworthy color palette with blues, soft neutrals, and subtle gradients. Show a young couple or homeowner looking confident, secure, and financially empowered, with realistic, non-exaggerated expressions. Use modern FinTech styling with soft shadows, clean lines, and minimal icons.  
-> CTA button at the bottom center, with rounded corners and solid blue fill, containing bold white text that reads “Apply Now”.  
-> Headline: “Your Dream Home Awaits”
-> Subtext: “Apply for low-interest home loans today.”  
-> Add fine-print below the CTA: “Terms and conditions apply.”
+> Use a calm, trustworthy color palette with blues, soft neutrals, and subtle gradients. Show a young couple or homeowner looking confident, secure, and financially empowered, with realistic, non-exaggerated expressions. Use modern FinTech styling with soft shadows, clean lines, and minimal icons.<br />CTA button at the bottom center, with rounded corners and solid blue fill, containing bold white text that reads “Apply Now”.<br />Headline: “Your Dream Home Awaits”
+> Subtext: “Apply for low-interest home loans today.”<br />Add fine-print below the CTA: “Terms and conditions apply.”
 
 **Result:**
 
-<Image align="center" border={true} caption="FinTech Example" src="https://files.readme.io/54f3b1b3cb08b7239df9508a181dde86ab6a98f6e2e38b2f35a26e433e145992-image.png" />
+
+<Image src="https://files.readme.io/54f3b1b3cb08b7239df9508a181dde86ab6a98f6e2e38b2f35a26e433e145992-image.png" align="center" caption="FinTech Example" border={true} />
+
 
 ## Food Delivery
 
@@ -125,7 +150,9 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="Food Delivery Example" src="https://files.readme.io/280b041825365c4cb8fa9cc77bbb00d15629d1c5f8e5ada9a3de7b4b1f1b69cc-image.png" />
+
+<Image src="https://files.readme.io/280b041825365c4cb8fa9cc77bbb00d15629d1c5f8e5ada9a3de7b4b1f1b69cc-image.png" align="center" caption="Food Delivery Example" border={true} />
+
 
 ## Gaming
 
@@ -141,18 +168,8 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="Gaming Example" src="https://files.readme.io/295f26fb92cee8792178e07c64018cf06aaa17aca58e5ed632bf86169db858fd-image.png" />
 
-# Ways to Generate Images with AI
+<Image src="https://files.readme.io/295f26fb92cee8792178e07c64018cf06aaa17aca58e5ed632bf86169db858fd-image.png" align="center" caption="Gaming Example" border={true} />
 
-You can generate on-brand images in multiple ways depending on your campaign needs. The AI Image Generator supports creating new images, editing existing ones, or using a reference image to guide visual consistency.
 
-For more information on generating and editing images, along with step-by-step instructions, refer to [Designer Agent](https://staging.docs.user.clevertap.net/docs/ai-image-generator).
-
-<Callout icon="📘" theme="info">
-  **How Brand Kit and Prompts Work Together**
-
-  If your prompt conflicts with your Brand Kit, the Brand Kit always takes priority to maintain brand consistency. The system applies settings in this order: **Brand Kit → Prompt → Filters**
-
-  This ensures every generated image stays brand-compliant and visually consistent with your defined design standards.
-</Callout>
+#

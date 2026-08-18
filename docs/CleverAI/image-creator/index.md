@@ -206,7 +206,7 @@ Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337
 
 # Manage Generated Images
 
-All AI-generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads) and [AI Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-images-folder).
+All AI-generated images can be accessed via [Threads](https://docs.clevertap.com/docs/image-creator#threads]\(https://docs.clevertap.com/docs/image-creator#threads\)) and [AI Images Folder](https://docs.clevertap.com/docs/image-creator#ai-images-folder).
 
 ## Threads
 

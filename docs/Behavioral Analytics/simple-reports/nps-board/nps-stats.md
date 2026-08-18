@@ -8,6 +8,11 @@ metadata:
 ---
 The **NPS board** in CleverTap provides a comprehensive overview of customer feedback collected through Net Promoter Score surveys. It combines key quantitative metrics with trend visualizations to help you measure and track user sentiment over time.
 
+To view NPS stats:
+
+1. Go to _Dashboard \_Dashboard > Boards > NPS_. NPS\_. Select the **Stats** tab.
+2. Apply view filters if required.&#x20;
+
 The NPS board in CleverTap displays the following data points:
 
 - **Overall NPS Score:** Calculated using customer responses.

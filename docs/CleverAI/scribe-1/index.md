@@ -46,7 +46,7 @@ Scribe supports the following channels:
 
 # Generate Copy using a Prompt
 
-Use a prompt to quickly generate campaign copy tailored to your goals. Before generating content, set the [Brand Context](https://docs.clevertap.com/docs/brand-context), select the appropriate [Brand Kits,](https://docs.clevertap.com/docs/brand-kit) and configure [Content Settings]() to guide tone, style, and language.
+Use a prompt to quickly generate campaign copy tailored to your goals. Before generating content, set the [Brand Context](https://docs.clevertap.com/docs/brand-context), select the appropriate [Brand Kits,](https://docs.clevertap.com/docs/brand-kit) and configure [Content Settings](https://docs.clevertap.com/docs/scribe-1#content-settings) to guide tone, style, and language.
 
 <Callout icon="📘" theme="info">
   ### Steps may vary slightly by channel
@@ -93,7 +93,7 @@ To generate copy using Scribe, follow the given steps:
 
 # Brand Kits and Content Settings
 
-The Scribe provides controls to guide the style and tone of the generated copy, using [Brand Kit,](https://docs.clevertap.com/docs/brand-kit) and [Content Settings](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#content-settings).
+The Scribe provides controls to guide the style and tone of the generated copy, using [Brand Kit,](https://docs.clevertap.com/docs/brand-kit) and [Content Settings](https://docs.clevertap.com/docs/scribe-1#content-settings).
 
 
 <Image src="https://files.readme.io/7546019ad6cb4f35ba28555e5fdd97af307e96611ef1b9c7585f383a629e1c3c-2026-08-11_16-44-55.jpg" align="center" caption="Core Brand and Content Settings" border={true} />

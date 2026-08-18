@@ -22,8 +22,6 @@ Review AI-generated images for brand and legal compliance before publishing. Avo
 
 You can generate on-brand images in multiple ways depending on your campaign needs. The AI Image Generator supports creating new images, editing existing ones, or using a reference image to guide visual consistency.
 
-For more information on generating and editing images, along with step-by-step instructions, refer to [Image Creator](https://docs.clevertap.com/docs/image-creator).
-
 <Callout icon="📘" theme="info">
   #### **How Brand Kit and Prompts Work Together**
 
@@ -172,4 +170,6 @@ The following sample prompts show how detailed prompts improve image quality, to
 <Image src="https://files.readme.io/295f26fb92cee8792178e07c64018cf06aaa17aca58e5ed632bf86169db858fd-image.png" align="center" caption="Gaming Example" border={true} />
 
 
-#
+For more information on generating and editing images, along with step-by-step instructions, refer to [Image Creator](https://docs.clevertap.com/docs/image-creator).
+
+<br />

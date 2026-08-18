@@ -16,7 +16,7 @@ metadata:
 
 Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether for a sales banner, an event promotion, or a seasonal creative. This document helps you write prompts that get precise, visually accurate, and on-brand results.
 
-Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [FAQs](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#faqs).
+Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [Image Creator: FAQs](https://docs.clevertap.com/docs/image-creator-faqs).
 
 # Ways to Generate Images with AI
 

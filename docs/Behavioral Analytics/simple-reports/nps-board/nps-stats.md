@@ -2,7 +2,7 @@
 title: NPS Stats
 excerpt: Learn how to understand the stats on NPS board.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -282,5 +282,5 @@ For more information, refer to the following resources:
 
 - [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
 - [Brand Kit](https://docs.clevertap.com/docs/brand-kit)
-- [Image Creator: FAQs](doc:faqs-4)
+- [Image Creator: FAQs](https://docs.clevertap.com/docs/image-creator-faqs)
 - [CleverTap Terms & Disclaimer](doc:clevertap-aienabled-feature-disclaimer-terms)&#x20;

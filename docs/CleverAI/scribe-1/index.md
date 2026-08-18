@@ -259,4 +259,4 @@ For more information, refer to the following resources:
 - [Generate High-Impact Copy with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
 - [Brand Context](https://docs.clevertap.com/docs/brand-context)
 - [Scribe: FAQs](https://docs.clevertap.com/docs/scribe-faqs-1)
-- [CleverTap Terms & Disclaimer](doc:clevertap-aienabled-feature-disclaimer-terms)&#x20;
+- [CleverTap Terms & Disclaimer](https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms)&#x20;

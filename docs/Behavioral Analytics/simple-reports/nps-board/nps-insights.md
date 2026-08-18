@@ -16,24 +16,17 @@ In addition to standard NPS metrics, NPS Insights applies AI-powered analysis to
   NPS Insights is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
-To view NPS Insights:
+To view NPS Insights:&#x20;
 
-1. Go to _Dashboard > Boards > NPS_. Select the **Stats** tab.
-2. Apply view filters if required. The following filters are available:
-   - **Segment:** Select All users or a specific segment
-   - **Period:** Select a custom date range
-   - **Campaign:** Select a specific campaign
-3. Once selected, the filtered insights view is shown under the _AI Insights_ tab.
-4. Click _See detailed insights_ to redirect to the AI insights page.
-5. To export data, click the download icon.
+Go to _Dashboard > Boards > NPS_. Select the **AI Insights** tab to view the detailed analysis of all user reviews.
+
+<br />
 
 
 <Image src="https://files.readme.io/b46dbc3de7332b1aea991b1fbb680240ea7ff8fe02752cc63af5c35d883db32d-image.png" alt="AI Insights" align="center" caption="AI Insights" border={true} />
 
 
-## AI Insights
-
-Select the **AI insights** tab to view the detailed analysis of all user reviews. Click _See detailed insights_ to redirect to the AI insights page. Refer to the following _AI Insights_ tabs:
+Refer to the following _AI Insights_ tabs:
 
 - [AI Generated Summary](https://docs.clevertap.com/docs/nps-board-1#ai-generated-summary)
 - [Key Themes](https://docs.clevertap.com/docs/nps-board-1#key-themes)

@@ -28,11 +28,11 @@ Go to _Dashboard > Boards > NPS_. Select the **AI Insights** tab to view the det
 
 Refer to the following _AI Insights_ tabs:
 
-- [AI Generated Summary](<doc: nps-insights#ai-generated-summary>)
-- [Key Themes](https://docs.clevertap.com/docs/nps-board-1#key-themes)
-- [Comments](https://docs.clevertap.com/docs/nps-board-1#comments)
-- [Trend](https://docs.clevertap.com/docs/nps-board-1#trend)
-- [Smart Word Cloud](https://docs.clevertap.com/docs/nps-board-1#smart-word-cloud)
+- [AI Generated Summary](doc:nps-insights#ai-generated-summary)
+- [Key Themes](httpsdoc:nps-insights#key-themes)
+- [Comments](doc:nps-insights#comments)
+- [Trend](doc:nps-insights#trend)
+- [Smart Word Cloud](doc:nps-insights#smart-word-cloud)
 
 ### AI Generated Summary
 

@@ -22,12 +22,6 @@ Review AI-generated images for brand and legal compliance before publishing. Avo
 
 You can generate on-brand images in multiple ways depending on your campaign needs. The AI Image Generator supports creating new images, editing existing ones, or using a reference image to guide visual consistency.
 
-<Callout icon="📘" theme="info">
-  #### **How Brand Kit and Prompts Work Together**
-
-  If your prompt conflicts with your Brand Kit, the Brand Kit always takes priority to maintain brand consistency. The system applies settings in this order: **Brand Kit → Prompt → Filters.&#x20;**&#x54;his ensures every generated image stays brand-compliant and visually consistent with your defined design standards.
-</Callout>
-
 # Writing Effective Prompts
 
 Writing a clear, focused prompt helps the Image Creator understand what you want to create, why you are creating it, and where it will be used. A good prompt explains the intent of the campaign (what you want to achieve with this image), the visual feel, and the layout composition, ensuring the final design looks on-brand and aligns with your campaign goals.
@@ -170,6 +164,14 @@ The following sample prompts show how detailed prompts improve image quality, to
 <Image src="https://files.readme.io/295f26fb92cee8792178e07c64018cf06aaa17aca58e5ed632bf86169db858fd-image.png" align="center" caption="Gaming Example" border={true} />
 
 
+<Callout icon="📘" theme="info">
+  #### **How Brand Kit and Prompts Work Together**
+
+  If your prompt conflicts with your Brand Kit, the Brand Kit always takes priority to maintain brand consistency. The system applies settings in this order: **Brand Kit → Prompt → Filters.&#x20;**&#x54;his ensures every generated image stays brand-compliant and visually consistent with your defined design standards.
+</Callout>
+
 For more information on generating and editing images, along with step-by-step instructions, refer to [Image Creator](https://docs.clevertap.com/docs/image-creator).
+
+<br />
 
 <br />

@@ -20,4 +20,16 @@ CleverTap’s NPS dashboard gives you a clear and comprehensive view of your cus
 
 <br />
 
+<Cards>
+  <Card title="Card One" icon="fa-rocket">
+    NPS Stats
+  </Card>
+
+  <Card title="Card Two" icon="fa-code">
+    NPS Insights
+  </Card>
+</Cards>
+
+<br />
+
 <br />

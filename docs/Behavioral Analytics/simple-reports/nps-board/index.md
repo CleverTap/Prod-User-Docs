@@ -21,12 +21,12 @@ CleverTap’s NPS dashboard gives you a clear and comprehensive view of your cus
 <br />
 
 <Cards>
-  <Card title="Card One" href="https://docs.clevertap.com/update/docs/nps-stats" icon="fa-rocket">
-    NPS Stats
+  <Card title="NPS Stats" href="https://docs.clevertap.com/update/docs/nps-stats" icon="fa-rocket">
+    View NPS Stats
   </Card>
 
-  <Card title="Card Two" href="https://docs.clevertap.com/update/docs/nps-insights" icon="fa-code">
-    NPS Insights
+  <Card title="NPS Insights" href="https://docs.clevertap.com/update/docs/nps-insights" icon="fa-code">
+    View AI Insights
   </Card>
 </Cards>
 

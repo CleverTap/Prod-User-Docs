@@ -11,9 +11,9 @@ NPS Insights is an enhancement to CleverTap’s Net Promoter Score (NPS) dashboa
 In addition to standard NPS metrics, NPS Insights applies AI-powered analysis to free-text responses, helping you quickly interpret customer feedback. This gives marketers and product teams a more complete view of customer satisfaction and the key factors influencing it.
 
 <Callout icon="📘" theme="info">
-  ### Private Beta
+  ### Availability
 
-  Currently, this feature is released in Private Beta. If you want access to this feature, contact your Account Manager.
+  NPS Insights is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 To view NPS Insights:

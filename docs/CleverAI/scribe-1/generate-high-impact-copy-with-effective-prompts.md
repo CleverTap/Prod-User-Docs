@@ -93,10 +93,8 @@ The following sample prompts show how detailed prompts improve the message quali
 **Result**
 
 
-<Image src="https://files.readme.io/621825eec9956e627a9d4c1573ba0c7920e454f6473203637e70a8b8a76b5538-2026-08-12_12-47-52.jpg" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/621825eec9956e627a9d4c1573ba0c7920e454f6473203637e70a8b8a76b5538-2026-08-12_12-47-52.jpg" align="center" width="80% " caption="E-Commerce" border={true} />
 
-
-<br />
 
 ## OTT
 
@@ -107,7 +105,7 @@ The following sample prompts show how detailed prompts improve the message quali
 **Result**
 
 
-<Image src="https://files.readme.io/3bd3761f3dca12166feda26de392d9d629f80bc9cb4103c5d9f33baf2382813e-2026-08-12_12-51-32.jpg" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/3bd3761f3dca12166feda26de392d9d629f80bc9cb4103c5d9f33baf2382813e-2026-08-12_12-51-32.jpg" align="center" caption="OTT" border={true} />
 
 
 ## Fintech
@@ -119,7 +117,7 @@ The following sample prompts show how detailed prompts improve the message quali
 **Result**
 
 
-<Image src="https://files.readme.io/f4f4a004834c180e9141a4afc0533c2758caff69a44188b90eddd91973537e6c-2026-08-12_12-52-27.jpg" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/f4f4a004834c180e9141a4afc0533c2758caff69a44188b90eddd91973537e6c-2026-08-12_12-52-27.jpg" align="center" caption="FinTech" border={true} />
 
 
 ## Food Delivery
@@ -131,7 +129,7 @@ The following sample prompts show how detailed prompts improve the message quali
 **Result**
 
 
-<Image src="https://files.readme.io/de8b111d2e47bfe0c5c9a4616022c2ced9196955330e312ef5111ffd962555df-image.png" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/de8b111d2e47bfe0c5c9a4616022c2ced9196955330e312ef5111ffd962555df-image.png" align="center" caption="Food Delivery" border={true} />
 
 
 ## Gaming
@@ -143,15 +141,15 @@ The following sample prompts show how detailed prompts improve the message quali
 **Result**
 
 
-<Image src="https://files.readme.io/97df66e1e6e7ce9a93b4b0a5a4247d22078e0c61e3744a5d2bbc297ed0575f32-37971334273982724d22c9e816bfd8b5f54ac8117dd3dec047160de9e8c465e1-image.jpg" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/97df66e1e6e7ce9a93b4b0a5a4247d22078e0c61e3744a5d2bbc297ed0575f32-37971334273982724d22c9e816bfd8b5f54ac8117dd3dec047160de9e8c465e1-image.jpg" align="center" caption="Gaming" border={true} />
 
 
 <Callout icon="📘" theme="info">
-  **How Brand Kit and Prompts Work Together**
+  ### **How Brand Kit and Prompts Work Together**
 
   If your prompt conflicts with your Brand Kit, the Brand Kit always takes priority to maintain brand consistency. The system applies settings in this order: _Brand Kit -> Prompt -> Filters_
 
   This ensures every generated copy stays brand-compliant and visually consistent with your defined design standards.
 </Callout>
 
-For more information on generating copy using the Scribe, along with step-by-step instructions, refer to [Scribe](/copywriter-agent).
+For more information on generating copy using the Scribe, along with step-by-step instructions, refer to [Scribe](https://docs.clevertap.com/docs/scribe-1).

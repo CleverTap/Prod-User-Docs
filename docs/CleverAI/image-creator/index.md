@@ -85,7 +85,7 @@ To generate an image using prompts:
 <Image src="https://files.readme.io/74f18fb31de8a3b4e279030917574e593e550c36050e1a63a373c4298c65dcb3-2026-08-12_14-12-49.jpg" align="center" caption="Generate Image" border={true} />
 
 
-4. Apply a Brand Kit to ensure brand consistency, and customize the [Image Settings](https://docs.clevertap.com/docs/designer-agent#image-settings) to align with your campaign goals.
+4. Apply a [Brand Kit](https://docs.clevertap.com/docs/image-creator#brand-kit]\(https://docs.clevertap.com/docs/image-creator#brand-kit) to ensure brand consistency, and customize the [Image Settings](https://docs.clevertap.com/docs/designer-agent#image-settings) to align with your campaign goals.
 5. Describe the image you want in the prompt field at the bottom. For example, refer to the sample image below for an OTT platform to promote an upcoming Premier League football match:
 
 

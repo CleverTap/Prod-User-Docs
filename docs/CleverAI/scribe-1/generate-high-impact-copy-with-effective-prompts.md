@@ -10,23 +10,17 @@ metadata:
 ---
 # Overview
 
-The _Copywriter Agent_ generates compelling, high-conversion copy directly from your prompts. Whether you need a catchy headline for a flash sale or a persuasive call to action for an engagement campaign, a structured prompt ensures the output aligns with your brand’s unique voice and campaign goals.
+The Scribe generates compelling, high-conversion copy directly from your prompts. Whether you need a catchy headline for a flash sale or a persuasive call to action for an engagement campaign, a structured prompt ensures the output aligns with your brand’s unique voice and campaign goals.
 
 This document helps you write prompts that produce creative, relevant, and brand-aligned copy for your push notifications.
-
-<Callout icon="📘" theme="info">
-  **Private Beta**
-
-  Currently, this feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
-</Callout>
 
 Always review AI-generated copy for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [FAQs](https://docs.clevertap.com/docs/designer-agent#faqs).
 
 # Writing Effective Prompts
 
-An effective copy prompt does not just ask for "a message", but provides context, defines the tone, and sets the rules. By following a clear structure, you help the Copywriter Agent understand the _Who, What, and How_ of your campaign.
+An effective copy prompt does not just ask for "a message", but provides context, defines the tone, and sets the rules. By following a clear structure, you help the Scribe understand the _Who, What, and How_ of your campaign.
 
-You can follow this simple structure to describe your copy idea in a way the Copywriter Agent understands easily:
+You can follow this simple structure to describe your copy idea in a way the Scribe understands easily:
 
 ### Define the Objective (What are you trying to achieve?)
 
@@ -51,22 +45,24 @@ _Example: "Mention 40% off. Include a fire emoji and a clear CTA to 'Shop the Sa
 
 **Result**
 
-<Image align="center" border={true} caption="Generated Copy" src="https://files.readme.io/77de9961adee78579c4498ee04deb51ebd7ad78a5468413950b1ba64b21ed8fb-image.png" />
+
+<Image src="https://files.readme.io/c79d24d3a0d1f52211539b282936d209351025f9ecbaaad7cde95f3c7eb66ddf-2026-08-18_15-42-03.jpg" align="center" caption="Scribe Prompt" border={true} />
+
 
 ## Prompt Tips
 
 The following are some useful tips when adding details to your prompts:
 
-* **Specify the "Hook":** Tell the AI if you want to lead with a question, a bold statement, or a direct offer.
-* **Define Your Audience:** Instead of "users," say "lapsed subscribers," "VIP members," or "first-time shoppers."
-* **Use Power Words:** Ask the AI to use specific types of language, such as "scarcity-driven" (Only 2 left!) or "benefit-focused" (Sleep better tonight).
-* **Avoid Vague Terms:** Instead of "Make it good," try "Make it humorous and use wordplay related to coffee."
+- **Specify the "Hook":** Tell the AI if you want to lead with a question, a bold statement, or a direct offer.
+- **Define Your Audience:** Instead of "users," say "lapsed subscribers," "VIP members," or "first-time shoppers."
+- **Use Power Words:** Ask the AI to use specific types of language, such as "scarcity-driven" (Only 2 left!) or "benefit-focused" (Sleep better tonight).
+- **Avoid Vague Terms:** Instead of "Make it good," try "Make it humorous and use wordplay related to coffee."
 
 # Sample Prompts
 
 The following sample prompts show how detailed prompts improve the message quality, tone, and brand consistency. You can experiment with more prompts to find a suitable message tone and style for your brand. Browse the sample prompts by industry:
 
-<Cards columns={3}>
+<Cards>
   <Card title="E-Commerce" href="#e-commerce" icon="fa-shopping-cart">
     Personalization & Offers
   </Card>
@@ -96,7 +92,11 @@ The following sample prompts show how detailed prompts improve the message quali
 
 **Result**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/a6fa6f100bda606949f751aeadbed5bb82ac11df004db19a62aaa9f1cf7d9ef3-image.png" className="border" />
+
+<Image src="https://files.readme.io/621825eec9956e627a9d4c1573ba0c7920e454f6473203637e70a8b8a76b5538-2026-08-12_12-47-52.jpg" align="center" width="80% " border={true} />
+
+
+<br />
 
 ## OTT
 
@@ -106,7 +106,9 @@ The following sample prompts show how detailed prompts improve the message quali
 
 **Result**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/1e24abe9ada32a25164793c562d56e163606595890d84b0bab3ced2ff587ddb0-image.png" className="border" />
+
+<Image src="https://files.readme.io/3bd3761f3dca12166feda26de392d9d629f80bc9cb4103c5d9f33baf2382813e-2026-08-12_12-51-32.jpg" align="center" width="80% " border={true} />
+
 
 ## Fintech
 
@@ -116,7 +118,9 @@ The following sample prompts show how detailed prompts improve the message quali
 
 **Result**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/b4c4e5f74a19aea0e44edfb4ca66dbb563a72c079829994077210281bf1b0e03-image.png" className="border" />
+
+<Image src="https://files.readme.io/f4f4a004834c180e9141a4afc0533c2758caff69a44188b90eddd91973537e6c-2026-08-12_12-52-27.jpg" align="center" width="80% " border={true} />
+
 
 ## Food Delivery
 
@@ -126,7 +130,9 @@ The following sample prompts show how detailed prompts improve the message quali
 
 **Result**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/de8b111d2e47bfe0c5c9a4616022c2ced9196955330e312ef5111ffd962555df-image.png" className="border" />
+
+<Image src="https://files.readme.io/de8b111d2e47bfe0c5c9a4616022c2ced9196955330e312ef5111ffd962555df-image.png" align="center" width="80% " border={true} />
+
 
 ## Gaming
 
@@ -136,7 +142,9 @@ The following sample prompts show how detailed prompts improve the message quali
 
 **Result**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/37971334273982724d22c9e816bfd8b5f54ac8117dd3dec047160de9e8c465e1-image.png" className="border" />
+
+<Image src="https://files.readme.io/97df66e1e6e7ce9a93b4b0a5a4247d22078e0c61e3744a5d2bbc297ed0575f32-37971334273982724d22c9e816bfd8b5f54ac8117dd3dec047160de9e8c465e1-image.jpg" align="center" width="80% " border={true} />
+
 
 <Callout icon="📘" theme="info">
   **How Brand Kit and Prompts Work Together**
@@ -146,4 +154,4 @@ The following sample prompts show how detailed prompts improve the message quali
   This ensures every generated copy stays brand-compliant and visually consistent with your defined design standards.
 </Callout>
 
-For more information on generating copy using the Copywriter Agent, along with step-by-step instructions, refer to [Copywriter Agent](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent).
+For more information on generating copy using the Scribe, along with step-by-step instructions, refer to [Scribe](/copywriter-agent).

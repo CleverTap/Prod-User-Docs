@@ -44,7 +44,7 @@ To view NPS Insights:
 5. To export data, click the download icon.
 
 
-<Image src="https://files.readme.io/23620d714ca78b6c891e895e525bf2d97fdeec85c6bf5e01a11654f91dcafe95-nps.png" alt="AI Insights" align="center" border={true} />
+<Image src="https://files.readme.io/b46dbc3de7332b1aea991b1fbb680240ea7ff8fe02752cc63af5c35d883db32d-image.png" alt="AI Insights" align="center" caption="AI Insights" border={true} />
 
 
 ## AI Insights

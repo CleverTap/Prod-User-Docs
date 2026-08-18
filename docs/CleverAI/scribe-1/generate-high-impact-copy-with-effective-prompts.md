@@ -14,7 +14,7 @@ The Scribe generates compelling, high-conversion copy directly from your prompts
 
 This document helps you write prompts that produce creative, relevant, and brand-aligned copy for your push notifications.
 
-Always review AI-generated copy for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [FAQs](https://docs.clevertap.com/docs/designer-agent#faqs).
+Always review AI-generated copy for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance-related details, refer to [Scribe: FAQs](https://docs.clevertap.com/docs/scribe-faqs-1).
 
 # Writing Effective Prompts
 

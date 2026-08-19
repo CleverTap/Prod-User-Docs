@@ -5,7 +5,7 @@ excerpt: >-
   to run, and how to manage, monitor, and expand your organization's AI usage
   from the CleverTap dashboard.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

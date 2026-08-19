@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-[Product Catalog](doc:catalogs) lets you reference product or content data directly in a campaign message. Instead of manually entering product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient at send time.
+[Product Catalog](doc:product-catalog) lets you reference product or content data directly in a campaign message. Instead of manually entering product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient at send time.
 
 When you add a catalog block to a campaign and map its attributes, each recipient views item details populated from the matching catalog record, keeping your content accurate without manual updates.
 

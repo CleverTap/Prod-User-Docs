@@ -1,5 +1,5 @@
 ---
-title: IntelliTime Campaign
+title: IntelliTime
 excerpt: >-
   Learn how you can optimize the campaign conversion rates using the IntelliTime
   Campaign feature.

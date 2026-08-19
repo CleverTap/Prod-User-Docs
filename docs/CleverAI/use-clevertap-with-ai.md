@@ -21,19 +21,19 @@ This document is the directory for everything. Use it to find the right agent fo
 Generates on-brand, contextual content in seconds: Copy, Images, and Templates.
 
 <Cards>
-  <Card title="Scribe" href="https://staging.docs.user.clevertap.net/docs/copywriter-agent">
+  <Card title="Scribe" href="https://docs.clevertap.com/docs/scribe-1">
 
   </Card>
 
-  <Card title="Image Creator" href="https://staging.docs.user.clevertap.net/docs/ai-image-generator">
+  <Card title="Image Creator" href="https://docs.clevertap.com/docs/image-creator">
 
   </Card>
 
-  <Card title="Email Template Creator" href="https://staging.docs.user.clevertap.net/docs/email-template-creator">
+  <Card title="Email Template Creator" href="https://docs.clevertap.com/docs/email-template-creator">
 
   </Card>
 
-  <Card title="WhatsApp Template Creator">
+  <Card title="WhatsApp Template Creator" href="https://docs.clevertap.com/docs/whatsapp-template-creator">
 
   </Card>
 </Cards>

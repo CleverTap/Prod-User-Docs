@@ -14,19 +14,19 @@ As CleverAI evolves, the content these agents generate feeds directly into Cleve
 # Agents in This Family
 
 <Cards>
-  <Card title="Scribe">
+  <Card title="Scribe" href="https://docs.clevertap.com/update/docs/scribe-1">
 
   </Card>
 
-  <Card title="Image Creator">
+  <Card title="Image Creator" href="https://docs.clevertap.com/update/docs/image-creator">
 
   </Card>
 
-  <Card title="Email Template Creator">
+  <Card title="Email Template Creator" href="https://docs.clevertap.com/docs/email-template-creator">
 
   </Card>
 
-  <Card title="WhatsApp Template Creator">
+  <Card title="WhatsApp Template Creator" href="https://docs.clevertap.com/docs/whatsapp-template-creator">
 
   </Card>
 </Cards>

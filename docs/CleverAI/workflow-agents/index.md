@@ -14,15 +14,15 @@ Segment Builder and Journey Builder turn a plain-language description into a wor
 # Agents in This Family
 
 <Cards>
-  <Card title="Segment Builder">
+  <Card title="Analytics Builder" href="https://docs.clevertap.com/docs/analytics-builder">
 
   </Card>
 
-  <Card title="Journey Builder">
+  <Card title="Segment Builder" href="https://docs.clevertap.com/docs/segment-builder">
 
   </Card>
 
-  <Card title="Analytics Builder">
+  <Card title="Journey Builder" href="https://docs.clevertap.com/docs/journey-builder">
 
   </Card>
 
@@ -30,11 +30,11 @@ Segment Builder and Journey Builder turn a plain-language description into a wor
 
   </Card>
 
-  <Card title="NPS Insights">
+  <Card title="NPS Insights" href="https://docs.clevertap.com/docs/nps-insights">
 
   </Card>
 
-  <Card title="CleverTap MCP">
+  <Card title="CleverTap MCP" href="https://docs.clevertap.com/docs/clevertap-mcp">
 
   </Card>
 </Cards>

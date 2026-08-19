@@ -1,5 +1,5 @@
 ---
-title: Email Template Creator
+title: 'Email Template Creator: Generate with AI'
 excerpt: >-
   Learn how to create email templates faster by describing your intent and
   letting the Email Template Creator agent generate editable template.

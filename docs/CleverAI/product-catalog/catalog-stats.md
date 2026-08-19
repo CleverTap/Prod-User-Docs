@@ -1,5 +1,5 @@
 ---
-title: Catalog Stats
+title: Product Catalog Stats
 excerpt: >-
   Learn how the Stats tab helps you track catalog coverage, recommendation
   reach, and engagement performance across channels.
@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-The _Stats&#x20;_&#x74;ab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand the reach and engagement performance of recommendations across channels.
+The _Stats&#x20;_&#x74;ab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand the reach and engagement performance of recommendations across channels. Stats are populated only once a recommendation strategy is using the catalog. Until then, both sections show No engagement data available and No recommended products found, with the subtext No strategies are using this catalog yet. This is expected for a newly uploaded catalog.
 
 To create a catalog, refer to [Upload Catalog](doc:upload-catalog).
 
@@ -20,13 +20,13 @@ This section shows how catalog-driven messages perform across supported engageme
 
 The following table describes each column:
 
-| Column                            | Description                                                                                                                       |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Channel                           | The engagement channel through which catalog-based messages were sent. Supported channels include Email, SMS, WhatsApp, and Push. |
-| Total number of Engagements       | The total count of campaigns, journeys, or other messaging touchpoints that used catalog items on that channel.                   |
-| Total number of Messages          | The total number of messages sent that included catalog items on that channel.                                                    |
-| Total number of items recommended | The total number of catalog items recommended through messages on that channel.                                                   |
-| Average Click Through Rate        | The percentage of sent catalog-based messages on that channel that received at least one click.                                   |
+| Column                            | Description                                                                                                                                         |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Channel                           | The engagement channel through which catalog-based messages were sent. Supported channels include Email, SMS, WhatsApp, Push, In-App, and Web push. |
+| Total number of Engagements       | The total count of campaigns, journeys, or other messaging touchpoints that used catalog items on that channel.                                     |
+| Total number of Messages          | The total number of messages sent that included catalog items on that channel.                                                                      |
+| Total number of items recommended | The total number of catalog items recommended through messages on that channel.                                                                     |
+| Average Click Through Rate        | Clicks divided by messages sent on that channel, as a percentage.                                                                                   |
 
 The following image shows the _Stats_ page:
 
@@ -54,25 +54,22 @@ The following table describes the default columns in the list.
 
 # Item Detail
 
-Selecting a row opens the _Item Detail_ panel on the right, which displays information about the selected product. It is organized into two subsections: Details and Properties.
+Selecting a row opens the _Item Detail_ panel on the right, which displays information about the selected product. It is organized into two subsections: _Details_ and _Attributes_.
 
 ## Details
 
 The _Details_ subsection shows system-level metadata for the selected product.
 
-| Field           | Description                                                     |
-| --------------- | --------------------------------------------------------------- |
-| Uploaded on     | The date and time when the item was first added to the catalog. |
-| Last updated on | The date and time the item was last updated.                    |
+| Field             | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| Product ID        | The unique identifier assigned to the product in the catalog.          |
+| Times recommended | How many times has the item been recommended over the selected period? |
 
-## Properties
+## <br />Attributes
 
-The _Properties_ subsection shows the attributes defined in your catalog schema for the selected product. The fields displayed here vary depending on the catalog's schema.
+The _Attributes_ subsection shows the attributes defined in your catalog schema for the selected product. The fields displayed here vary depending on the catalog's schema.&#x20;
 
-| Field      | Description                                                   |
-| ---------- | ------------------------------------------------------------- |
-| Product Id | The unique identifier assigned to the product in the catalog. |
-| Image link | The URL of the product image.                                 |
+Shows the custom attributes stored for the selected product. The fields displayed here vary depending on your catalog's schema, for example, category, brand, price, or stock. These are not fixed system fields.
 
 <Callout icon="📘" theme="info">
   #### Note

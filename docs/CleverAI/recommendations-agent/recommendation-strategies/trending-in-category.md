@@ -12,16 +12,16 @@ metadata:
 
 Trending in Category recommendations surface the items whose engagement is growing the fastest within a specific category. Unlike trending strategies that evaluate momentum across the entire catalog, Trending in Category applies time-decay weighting scoped to a category, giving greater weight to recent interactions and gradually reducing the impact of older activity, so the results reflect what is gaining momentum within that category right now.
 
-Because Trending in Category recommendations are based on aggregated user behavior scoped to a category, they work for all users without requiring individual user history. The same strategy can serve multiple categories without separate configurations.
+Because Trending in Category recommendations are based on aggregated user behavior scoped to a category, they work for all users without requiring individual user history. The category is not fixed when you create the strategy. At serve time, it is resolved from a constant value, a user property, or a triggering event property. This means the same strategy can serve different categories without reconfiguration.
 
 # Use Cases
 
 Trending in Category recommendations work best when category-scoped, momentum-driven recommendations are needed, as follows:
 
-* **Category pages and discovery surfaces**: Surfaces items gaining traction within a defined catalog subset. For example, an OTT platform displaying the fastest-rising titles on its Drama genre page.
-* **Promotional campaigns**: Highlights emerging items within a category before they peak. For example, a category-specific email surfacing the fastest-rising products in the Electronics category.
-* **Flash sales and time-sensitive offers**: Drives urgency around items with a sharp spike in category-level activity. For example, a push notification to users who have browsed the Footwear category, highlighting items that have seen a sharp spike in engagement over the past 24 hours.
-* **Reliable fallback slot**: A dependable default when a primary strategy cannot return sufficient results within a category.
+- **Category pages and discovery surfaces**: Surfaces items gaining traction within a defined catalog subset. For example, an OTT platform displaying the fastest-rising titles on its Drama genre page.
+- **Promotional campaigns**: Highlights emerging items within a category before they peak. For example, a category-specific email surfacing the fastest-rising products in the Electronics category.
+- **Flash sales and time-sensitive offers**: Drives urgency around items with a sharp spike in category-level activity. For example, a push notification to users who have browsed the Footwear category, highlighting items that have seen a sharp spike in engagement over the past 24 hours.
+- **Reliable fallback slot**: A dependable default when a primary strategy cannot return sufficient results within a category.
 
 # Strategy Logic
 
@@ -42,34 +42,26 @@ Common interaction events include:
 
 The following inputs are required:
 
-| Input             | Description                                                                                                                                                                                                    |
-| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Interaction event | The user action used to measure engagement and identify trending items within the category.                                                                                                                    |
-| Category          | The category to scope results to. Not configured during strategy creation, provided dynamically when the recommendation is requested. The same strategy can serve multiple categories without reconfiguration. |
-| Mapping           | Connects the event property containing the item identifier to the identity column of your catalog.                                                                                                             |
-
-# Optional Inputs
-
-The following inputs are optional:
-
-| Input              | Description                                                                                                                                                                                                                                                                                                                                          |
-| :----------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Time window        | Period over which interactions are evaluated and weighted. If not set, all available historical data for the selected event is used.                                                                                                                                                                                                                 |
-| Interaction filter | Narrows which interactions count toward the trending score. For example, filter by device type or subscription plan.                                                                                                                                                                                                                                 |
-| Fallback strategy  | Fills remaining slots if the category returns fewer items than requested. Configured when adding the strategy to a campaign, not during strategy setup. Fallback items are deduplicated against trending results before being returned. If no fallback is configured and the category returns insufficient results, default values will be returned. |
+| Input              | Description                                                                                                                                                                                                    |
+| :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Interaction event  | The user action used to measure engagement and identify trending items within the category.                                                                                                                    |
+| Category           | The category to scope results to. Not configured during strategy creation, provided dynamically when the recommendation is requested. The same strategy can serve multiple categories without reconfiguration. |
+| Mapping            | Connects the event property containing the item identifier to the identity column of your catalog.                                                                                                             |
+| Time window        | Period over which interactions are evaluated and weighted. If not set, all available historical data for the selected event is used.                                                                           |
+| Interaction filter | Narrows which interactions count toward the trending score. For example, filter by device type or subscription plan.                                                                                           |
 
 # Create Trending in Category Strategy
 
-This section helps you set up a strategy that surfaces the fastest-rising items within a specific category from your catalog.
+This section helps you set up a strategy to surface the fastest-rising items in a specific category from your catalog.
 
 ## Prerequisites
 
 Before you begin, check if the following are in place:
 
-* A catalog is uploaded and active.
-* At least one interaction event is being tracked, such as VideoWatched, Product Viewed, or Charged.
-* The tracked event references the same item ID as the catalog identity column. If they do not match, interactions cannot be attributed to catalog items.
-* The catalog contains at least one column suitable for category grouping, with a limited number of distinct values. Columns with a high number of unique values are not supported.
+- A catalog is uploaded and active.
+- At least one interaction event is being tracked, such as VideoWatched, Product Viewed, or Charged.
+- The tracked event references the same item ID as the catalog identity column. If they do not match, interactions cannot be attributed to catalog items.
+- The catalog contains at least one column suitable for category grouping that has a limited number of distinct values. Columns with a high number of unique values are not supported.
 
 ## Set Up Trending in Category Recommendation
 
@@ -88,13 +80,17 @@ To create a Trending in Category strategy, perform the following steps:
 
 Select _Trending in Category_ from the list of strategy types.
 
-<Image align="center" border={true} caption="Select Strategy" src="https://files.readme.io/c5984497183fdd67f7ab656f8272699aed5dbc48145a3344bc68c35653d09c51-Select_Trending_in_Category_Strategy.png" />
+
+<Image src="https://files.readme.io/baef1f0e6233f08a8d1e9a6736fd49df5dbff10c221daa95c3e3bda9a3d47a9b-Select_Trending_in_Category_Recommendation.png" align="center" caption="Select Strategy" border={true} />
+
 
 ### Select Catalog
 
 Select the catalog to use. The catalog must be active and contain the items you want to recommend. For example, select the OTT catalog containing your streaming library.
 
-<Image align="center" border={true} caption="Select Catalog" src="https://files.readme.io/7b4c6480d418a45d79474ddae67a74d27388472a55c4f11b6d3c46c980f77fcb-Select_Catalog_for_Trending_in_Category_Recomm.png" />
+
+<Image src="https://files.readme.io/7b4c6480d418a45d79474ddae67a74d27388472a55c4f11b6d3c46c980f77fcb-Select_Catalog_for_Trending_in_Category_Recomm.png" align="center" caption="Select Catalog" border={true} />
+
 
 ### Define Consideration Criteria
 
@@ -105,11 +101,13 @@ Pick the single event that defines engagement within the category. This determin
 | VideoWatched     | Titles gaining the most watches within the category |
 | Any custom event | Whatever signal matters most to your use case       |
 
-For example, select _VideoWatched_ as the interaction event and set the lookback period to Last 7 days. This tells the system to evaluate watch activity from the past seven days, with recent watches weighted more heavily than older ones.
+For example, select `VideoWatched` as the interaction event and set the lookback period to Last 7 days. This tells the system to evaluate watch activity from the past seven days, with recent watches weighted more heavily than older ones.
 
-<Image align="center" border={true} caption="Select Catalog" src="https://files.readme.io/fdb32c44360d0ee06c0517eea3e550a7e1143fb6536dfb8c7e7002c8965ded71-Select_Catalog_for_Trending_in_Category_Recomm.png" />
 
-You can click **Add Rule** to apply property filters that narrow which interactions count. For example, filtering _VideoWatched_ by `Device = Web` counts only watches from web users when identifying trending titles within the category.
+<Image src="https://files.readme.io/fdb32c44360d0ee06c0517eea3e550a7e1143fb6536dfb8c7e7002c8965ded71-Select_Catalog_for_Trending_in_Category_Recomm.png" align="center" caption="Select Catalog" border={true} />
+
+
+You can click **+ Filter** to apply property filters that narrow which interactions count. For example, filtering _VideoWatched_ by `Device = Web` counts only watches from web users when identifying trending titles within the category.
 
 ### Define Catalog Columns for Category Grouping
 
@@ -117,7 +115,9 @@ Select up to three catalog columns that define how category groupings are identi
 
 For example, if the catalog column is `Is Premium` with values `true` and `false`, selecting `Is Premium` lets you retrieve the fastest-rising titles for premium or non-premium content independently using the same strategy.
 
-<Image align="center" border={true} caption="Define Catalog Column Representing Category for Grouping" src="https://files.readme.io/c8cbbedcea00c469c89fc26979e0ba689610cb266e76c227b5624ce4d2340913-Catalog_Columns_Representing_Category_for_Trending_in_Catalog.png" />
+
+<Image src="https://files.readme.io/57945237d9b8459eb2e9acdf1191ff539ae1e09dc3e0927d345aa2613e8f10b6-Define_Catalog_Columns_for_Category_Grouping_-_Trending_in_Category.png" align="center" caption="Define Catalog Column Representing Category for Grouping" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Note
@@ -129,19 +129,23 @@ For example, if the catalog column is `Is Premium` with values `true` and `false
 
 ### Map Catalog Column to Event Property
 
-Map the event property containing the item identifier to the identity column of your catalog. This tells the system which catalog item each interaction belongs to. For example, map the catalog identity column to the `Content ID` event property of the _VideoWatched_ event.
+The catalog column you select must be the column designated as the unique item identifier when setting up the catalog. This is the column the engine uses to match the event to the correct catalog item.&#x20;
 
-<Image align="center" border={true} caption="Map Catalog Column to Event Property" src="https://files.readme.io/3c1bf97ee5a13dd6d2b3f18ee65a0ad171f71e6b5ec059a91fad5db11613c2c5-Catalog_and_Event_Property_Mapping_for_Trending_in_Category.png" />
+For example, map the catalog identity column to the `Content ID` event property of the _VideoWatched_ event.
+
+
+<Image src="https://files.readme.io/cc4ca1b19cd7b7c07f0fe9a111afeafaafb9157d02423bee2951621d573b9e9e-Map_Catalog_Column_to_Event_Property.png" align="center" caption="Map Catalog Column to Event Property" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Note
 
-  If this mapping is incorrect or missing, the system cannot match user interactions to catalog items, and the strategy will return no results.
+  Ensure the mapping is correctly configured. A missing mapping means the engine has no interaction data to compute trending scores within the category, and the strategy returns no results. An incorrect mapping, for example, selecting a column that does not uniquely identify items; the strategy saves successfully but returns incorrect or empty results at delivery time.
 </Callout>
 
 ### Enter Basic Details
 
-After setting up the Catalog and Criteria tab, click Next to enter the following basic details:
+After setting up the _Catalog & Criteria_ tab, click **Next** to enter the following basic details:
 
 | Field       | Details                                                                                                                                                                             |
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -158,7 +162,9 @@ Once the strategy is active, you can use it to personalize recommendations in yo
 
 Configure the following:
 
-<Image align="center" border={true} caption="Personalize Campaign Using Trending in Category" src="https://files.readme.io/f5cf74926048919b38e132f2354cc32b200c0329763292e3e20471ff4d604bb2-Perosonalize_Campaign_Setup_for_Trending_in_Category.png" />
+
+<Image src="https://files.readme.io/2e229baa644ae83261824f1b87ec921c414255c6621a262a6a9b84b5f5a6927b-Personalize_Campaigns_Using_Trending_in_Category_Recommendations.png" align="center" caption="Personalize Campaign Using Trending in Category" border={true} />
+
 
 ## Strategy
 
@@ -168,28 +174,87 @@ When you select a Trending in Category strategy, the setup panel displays a Defi
 
 For each catalog column, choose one of the following:
 
-| Option            | When to use                                                                                                                                           | Example                                                                                                                                            |
-| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Profile Property  | The category value is read dynamically from the user's profile at serving time. Different users receive recommendations scoped to their own category. | Map `is_premium` to the user's Customer Type profile attribute. Each user sees trending titles scoped to the Customer Type value on their profile. |
-| Constant Property | The category value is fixed for the entire campaign. All users receive recommendations scoped to the same category.                                   | Set `is_premium` to true so all users see trending premium titles, or false for non-premium titles.                                                |
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Option
+      </th>
+
+      <th>
+        When to use
+      </th>
+
+      <th>
+        Example
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Profile Property
+      </td>
+
+      <td>
+        The category value is read dynamically from the user's profile at serving time. Different users receive recommendations scoped to their own category.
+      </td>
+
+      <td>
+        Map `is_premium` to the user's Customer Type profile attribute. Each user sees trending titles scoped to the Customer Type value on their profile.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Constant Property
+      </td>
+
+      <td>
+        The category value is fixed for the entire campaign. All users receive recommendations scoped to the same category.
+      </td>
+
+      <td>
+        Set `is_premium` to true so all users see trending premium titles, or false for non-premium titles.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Event Property
+      </td>
+
+      <td>
+        - Resolves the item from a property on the triggering event.&#x20;
+
+        * Available for Live campaigns only.&#x20;
+      </td>
+
+      <td>
+        Map to `Content ID` from the VideoWatched event
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <Callout icon="📘" theme="info">
-  Note
+  #### Note
 
   When using Profile Property, the values in the selected user profile attribute must match those in the catalog column. For example, if the `Is Premium` catalog column has values `true` and `false`, the mapped profile attribute must return one of those values for each user. If the values do not match, the system cannot scope results correctly and may return no items.
 </Callout>
 
 Optionally, enable Fallback Strategy to specify one or more fallback strategies that activate when the primary strategy cannot return enough items. Fallback strategies are evaluated in order of priority, with the last fallback used only if all preceding strategies return insufficient results. Fallback items are deduplicated against trending results before being returned. For example, set _Trending Titles_ as the fallback so users always see trending content, even if there are insufficient results for their category scope.
 
-## Only Include Items
+## Inclusion Criteria
 
-Define rules to restrict which catalog items are eligible for recommendation. You can add Catalog-Based Rules to filter by catalog attributes, or Event-Based Rules to filter based on user behavior. For example, adding a catalog-based rule Genre = Action/Thriller ensures only Action and Thriller titles are recommended.
+Define rules to restrict which catalog items are eligible for recommendation. You can add Catalog-Based Rules to filter by catalog attributes or Event-Based Rules to filter by user behavior. For example, adding a catalog-based rule `Genre = Action/Thriller` ensures only Action and Thriller titles are recommended.
 
-## Exclude Items
+## Exclusion Criteria
 
-Define rules to explicitly remove certain catalog items from recommendations. For example, adding a catalog-based rule Language = Hindi excludes Hindi-language titles from the recommendation output.
+Define rules to explicitly remove certain catalog items from recommendations. For example, adding a catalog-based rule `Language = Hindi` excludes Hindi-language titles from the recommendation output.
 
-## Item Configuration
+## Final Outcome
 
 Specify how many items to recommend and which catalog attributes to return for each item. For example, set Items to Recommend to `3` and select `Name`, `content_url`, and `ImageUrl` as the Item Attributes to Recommend, so the campaign can render each title with its name, content link, and thumbnail. Once configured, click **Apply** to save the personalization setup for the campaign.
 

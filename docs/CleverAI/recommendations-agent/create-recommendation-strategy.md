@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-A recommendation strategy controls which catalog items are shown to each user and in what order, based on signals such as user activity, item popularity, or content attributes. It connects your catalog to your campaigns, sourcing eligible items and delivering personalized recommendations through engagements. Once created, a strategy can be reused across multiple campaigns.
+A recommendation strategy controls which catalog items are shown to each user and in what order, based on signals such as user activity, item popularity, or content attributes. It connects your catalog to your campaigns, sources eligible items, and delivers personalized recommendations through engagement. Once created, a strategy can be reused across multiple campaigns.
 
 When you create a strategy, you define:
 
@@ -124,7 +124,7 @@ For example, if a Video Viewed event includes a `show_id` property, map it to th
 The following image shows how to create a Recommendation Strategy:
 
 
-<Image src="https://files.readme.io/485dc6e3c14c440a5b61b61e34667986e1a03d539e423a634e424d2b82085fd3-2026-05-19_17-35-55_1.gif" align="center" caption="Create a Recommendation Strategy" border={true} />
+<Image src="https://files.readme.io/7ce4e1fb853df6a264e0af11eb7279ce0ef549ccffee46c211613f15424f8026-Create_Recomm_Strategy.gif" align="center" caption="Create a Recommendation Strategy" border={true} />
 
 
 ## Add Basic Details
@@ -195,13 +195,7 @@ Each strategy has the following actions available:
 
 ## Filter Strategies
 
-Click the&#x20;
-
-
-<Image src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" border={true} />
-
-
-&#x20;icon to open the _Filters_ panel. You can filter by:
+Click the <img src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" valign="middle" height=“30”> icon to open the _Filters_ panel. You can filter by:
 
 
 <Image src="https://files.readme.io/60e4c3edb8dd16ded35e440797a6bc857c075ae00a123384e8d9fe4396d2b854-image.png" align="center" caption="Strategies- Filters" border={true} />

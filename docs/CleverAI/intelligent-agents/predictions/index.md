@@ -1,5 +1,5 @@
 ---
-title: Predictions
+title: Unlock Growth with Predictions
 excerpt: >-
   CleverTap's AI-powered feature designed to amplifiy your growth and maximize
   ROI.

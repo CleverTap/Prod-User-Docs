@@ -64,7 +64,7 @@ The following guidelines apply to product creation and catalog management in Cle
 <Callout icon="📘" theme="info">
   ### Updating attributes replaces the whole object
 
-  Both the update APIs and feeds replace a product's entire attributes object rather than merging individual keys. To change one attribute, send every attribute you want to keep. For more information, refer to [Create Feed](doc:product-catalog/create-feed).
+  Both the update APIs and feeds replace a product's entire attributes object rather than merging individual keys. To change one attribute, send every attribute you want to keep. For more information, refer to [Create Feed](doc:create-feed).
 </Callout>
 
 # Manage Catalog Products

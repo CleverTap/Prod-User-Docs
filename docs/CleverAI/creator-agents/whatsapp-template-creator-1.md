@@ -1,5 +1,5 @@
 ---
-title: WhatsApp Template Creator
+title: 'WhatsApp Template Creator: Generate with AI'
 deprecated: false
 hidden: true
 link:

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how CleverTap’s Product Catalog enriches incomplete catalogs with AI to
   power personalized experiences and recommendations.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

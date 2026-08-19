@@ -1,8 +1,8 @@
 ---
-title: Best Time Campaign
+title: IntelliTime Campaign
 excerpt: >-
-  Learn how you can optimize the campaign conversion rates using the Best Time
-  Campaign feature
+  Learn how you can optimize the campaign conversion rates using the IntelliTime
+  Campaign feature.
 deprecated: false
 hidden: false
 metadata:
@@ -14,15 +14,15 @@ next:
 ---
 # Overview
 
-*Best Time* is a feature that learns from your user's activity over time to recommend the most optimal time to send a message to each user for a campaign or a journey. This optimizes the message send-time for each user based on their time zone and the period they are most active with your application. These time-based messages help achieve the following for the Campaigns and Journeys built using the Best Time feature:
+_IntelliTime_ is a feature that identifies the contextual Best Time for users. This ensures that each user receives messages at the most opportune moments, tailored to their individual contexts. This optimizes the message send time for each user based on their time zone and the period when they are most active in your application. These time-based messages help achieve the following for the Campaigns and Journeys built using the IntelliTime feature:
 
-* Increased Engagement
-* Personalized Experience
-* Improved Conversion Rates
+- Increased Engagement
+- Personalized Experience
+- Improved Conversion Rates
 
-# Best Time Overview Video
+# IntelliTime Overview Video
 
-Learn how to send campaigns based on contextual Best Time for users with a sample use case.
+Learn how to send campaigns based on contextual IntelliTime for users with a sample use case.
 
 <HTMLBlock>{`
 <div
@@ -43,137 +43,144 @@ Learn how to send campaigns based on contextual Best Time for users with a sampl
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
 
-<br />
-
-It enables you can create a Best Time Config based on the event and its properties. The Best Time Config refers to an event that triggers the determination of the best time to send a notification to your users. Thereby ensuring the optimal time to send messages or notifications to individual users based on their historical behavior and engagement patterns. 
+It enables you to create an IntelliTime Config based on the event and its properties. The IntelliTime Config refers to an event that triggers the determination of the best time to send a notification to your users. Thereby ensuring the optimal timing for sending messages or notifications to individual users based on their historical behavior and engagement patterns.
 
 With this feature, you can:
 
-* Configure up to 10 different configurations based on specific event filters along with the properties.
-* View the distribution of optimal times for your users, thereby maximizing the impact of the campaigns.
-* Select a fallback time for those without a clear best time.
-
-<Image title="Best Time Campaigns.png" alt={2122} align="center" className="border" width="smart" border={true} src="https://files.readme.io/aeedcd6-Best_Time_Campaigns.png" />
+- Configure up to 10 different configurations based on specific event filters along with the properties.
+- View the distribution of optimal times for your users to maximize the impact of your campaigns.
+- Select a fallback time for those without a clear best time.
 
 # How It Works
 
-CleverTap identifies the best time based on a selected event. The  *Best Time* campaigns are sent by splitting a day into 12 buckets of two hours each. The users are then assigned to one of these buckets based on the time of the day they are most active on the app. The user is then sent the campaign or journey in that two-hour window. If any user has not performed the selected event in the last 180 days, you can select the time slot (fallback time) for sending the campaign based on the user distribution.
+CleverTap identifies the best time based on a selected config. The IntelliTime campaigns are sent by splitting a day into 12 buckets of two hours each in absolute clock time. The users are then assigned to one of these buckets based on their contextual Best Time. The user is then sent the campaign or journey in that two-hour window. If any user has not performed the selected event in the last 180 days, you can identify a fallback time for sending the campaign based on the user distribution graph.
 
-For example, you want to send personalized discount offers to your users based on the Product Viewed in the last 180 days. With the Best Time feature, you can optimize the timing of these messages to maximize user engagement and conversion rates based on user distribution.
+For example, you want to send personalized discount offers to your users based on the Product Viewed in the last 180 days. With the IntelliTime feature, you can optimize the timing of these messages to maximize user engagement and conversion rates based on user distribution.
 
-<Image alt="Sample Best Time Config" align="center" width="75% " border={true} src="https://files.readme.io/a8a4f2d-Sample_Best_Time_Config.png">
-  Sample Best Time Config
-</Image>
 
-> 👍 Bucket Example
->
-> For example, if a *Best Time* campaign is created on January 1 at 5:15 PM, the campaign will start running based on the upcoming best time slot i.e. 6 P.M. and the users will receive campaigns based on the slot in which they are most active on the application.
+<Image src="https://files.readme.io/43f886eb77bcbbcc51ef6667b709becefe4432638af122713146296b73771dd0-a8a4f2d-Sample_Best_Time_Config-2.jpg" alt="Sample Best Time Config" align="center" width="75% " caption="Sample Best Time Config" border={true} />
 
-> 📘 Best Time Campaign Handling During DND
->
-> If the Best Time bucket coincides with the DND period defined by the user, then the campaign message is discarded.
+
+<Callout icon="👍" theme="okay">
+  ### Bucket Example
+
+  For example, if a IntelliTime campaign is created on January 1 at 5:15 PM, the campaign will start running based on the upcoming best time slot i.e. 6 P.M. and the users will receive campaigns based on the slot in which they are most active on the application.
+</Callout>
+
+<Callout icon="📘" theme="info">
+  ### IntelliTime Campaign Handling During DND
+
+  If the IntelliTime bucket coincides with the DND period defined by the user, then the campaign message is discarded.
+</Callout>
 
 # Create Best Time Campaigns
 
 This is a two-step process that includes the following steps:
 
-1. [Set Up the Best Time Event](https://docs.clevertap.com/docs/best-time#set-up-best-time-event). 
-2. [Create a Campaign using the Best Time feature](https://docs.clevertap.com/docs/best-time#create-a-campaign-using-the-best-time-feature).
+1. [Set Up the IntelliTime Event](https://docs.clevertap.com/docs/best-time#set-up-best-time-event).
+2. [Create a Campaign using the IntelliTime feature](https://docs.clevertap.com/docs/best-time#create-a-campaign-using-the-best-time-feature).
 
-## Set Up Best Time Event
+## Set Up IntelliTime Config
 
-You can configure the best time option for one-time or recurring campaigns for **Email**, **SMS**, **Push**, **WhatsApp**, and **Web Push** channels. To set up Best Time campaigns:
+You can configure the IntelliTime option for one-time or recurring campaigns for **Email**, **SMS**, **Push**, **WhatsApp**, and **Web Push** channels. To set up IntelliTime campaigns:
 
-1. Navigate to *Settings* > *Setup* > *Best Time* from the CleverTap dashboard.
-2. Click **+ Best-Time Config**.
+1. Navigate to _Settings_ > _Setup_ > IntelliTime from the CleverTap dashboard.
+2. Click **Create New**.
 
-<Image alt="Set Up Best Time Event " align="center" border={true} src="https://files.readme.io/8a845b3-Set_Up_Best_Time_Event.png">
-  Set Up Best Time Event 
-</Image>
 
-3. Enter the *Config name* to uniquely identify the Best Time event. 
-4. Select the system/custom event for which you want to define the Best Time campaign. 
-5. Click **+ Filter** to target a particular set of users for the campaign.\
-   Consider an example where you want to send Best Time campaigns to users who have performed the *Added To Cart* event for the product *Ironman Helmet* on their mobile devices.
+<Image src="https://files.readme.io/ad3d2aa991f7e71729ba3874387503083c86ee99a89b56a75f2517e0552253a9-2026-08-19_10-46-12.jpg" alt="Set Up Best Time Event " align="center" caption="Set Up IntelliTime Event" border={true} />
+
+
+3. Enter the _Config name_ to uniquely identify the IntelliTime event.
+4. Select the system/custom event for which you want to define the IntelliTime campaign.
+5. Click **+ Filter** to target a particular set of users for the campaign.<br />Consider an example in which you want to send IntelliTime campaigns to users who have performed the _Added To Cart_ event for the _Ironman Helmet_ product on their mobile devices.
 6. (Optional) Click **Preview User Distribution** to check the user distribution for the selected event in the last 180 days. You can also change the filter based on the user distribution to achieve optimal conversion rates.
 
-<Image alt="Define Best Time Config" align="center" border={true} src="https://files.readme.io/de72691-Define_Best_Time_Config.gif">
-  Define Best Time Config
-</Image>
 
-7. Click **Save** to save the Best Time event.
+<Image src="https://files.readme.io/de72691-Define_Best_Time_Config.gif" alt="Define Best Time Config" align="center" caption="Define Best Time Config" border={true} />
 
-Currently, you can create journeys using the default Best Time config. So, it is mandatory to mark one of the Best Time configs as Default to refer to it later. You can do so by clicking the ![lEllipses](https://files.readme.io/3b92fb0-Ellipses.png) icon and selecting *Mark as Default*.
 
-<Image alt="Marking Best Time Event as Default" align="center" border={true} src="https://files.readme.io/612bfbe-Mark_as_Default.png">
-  Marking Best Time Event as Default
-</Image>
+7. Click **Save** to save the IntelliTime event.
 
-Similarly, you can also delete a particular Best Time event by clicking the ![lEllipses](https://files.readme.io/3b92fb0-Ellipses.png) icon and then selecting *Delete*.
+Currently, you can create journeys using the default IntelliTime config. So, it is mandatory to mark one of the IntelliTime configs as _Default_ so you can refer to it later. You can do so by clicking _Mark as Default_. Similarly, you can also delete a particular IntelliTime event by clicking _Delete_.
 
-> 📘 Default Best Time Events
->
-> The default Best Time events cannot be deleted. Also, deleting such events does not impact the already running campaigns.
 
-## Create a Campaign using the Best Time Feature
+<Image src="https://files.readme.io/da34f6a1f8f63cf5dc89928563fef4a7d3bdcb4887760e10257b5c6f4d0a6584-2026-08-19_11-13-44.jpg" alt="Marking Best Time Event as Default" align="center" caption="Marking IntelliTime Event as Default" border={true} />
 
-Here, consider an example of the Best Time email campaign. To create a campaign with this feature, perform the following steps:
 
-1. Navigate to *Campaigns* from the CleverTap dashboard.
+<br />
+
+<Callout icon="📘" theme="info">
+  #### Default IntelliTime Events
+
+  The default IntelliTime events cannot be deleted. Also, deleting such events does not impact the already running campaigns.
+</Callout>
+
+## Create Campaign using IntelliTime
+
+Here, consider an example of the IntelliTime email campaign. To create a campaign with this feature, perform the following steps:
+
+1. Go to _Campaigns_ from the CleverTap dashboard.
 2. Click **+ Campaign**.
 
-<Image title="2x Create a campaign.png" alt={1571} align="center" border={true} src="https://files.readme.io/5de46d2-2x_Create_a_campaign.png">
-  Create a Campaign
-</Image>
 
-3. Select *Email* from the list of messaging channels.
+<Image src="https://files.readme.io/5de46d2-2x_Create_a_campaign.png" alt="1571" align="center" border={true} />
+
+
+3. Select _Email_ from the list of messaging channels.
 
 4. Define all the following information for the campaign:
 
-   * Qualification Criteria
-   * Email Service Provider
-   * Campaign Goal
-   * Who
-   * What
+   - Qualification Criteria
+   - Email Service Provider
+   - Campaign Goal
+   - Who
+   - What
 
    For more information about configuring the above details on the CleverTap dashboard, refer to [Create Email Campaign](doc:create-message-email).
 
-5. Define the Best Time campaign schedule:\
-   a. From the *When* section of the campaign, select *Schedule for later* or *Set as Recurring* under the Data and time section, depending on the nature of your campaign.\
-   b. Select the date to send the campaign and select *Best time for every user* from the dropdown.
+5. Define the IntelliTime campaign schedule:<br />a. From the _When_ section of the campaign, select _Schedule for later_ or _Set as Recurring_ under the Data and time section, depending on the nature of your campaign.<br />b. Select the date to send the campaign and select IntelliTim&#x65;_&#x20;for every user_ from the dropdown.
 
-<Image title="Select Best Time option.gif" alt={1332} align="center" border={true} src="https://files.readme.io/d60c6db-Select_Best_Time_option.gif">
-  Define Best Time Campaign Schedule
-</Image>
 
-   Best Time feature works with the following campaign types:
+<Image src="https://files.readme.io/e95308f6e752ff769ae290cf8a2483ee3d85046135684b54bfd9b6e404445af6-2026-08-19_10-49-57.jpg" alt="2122" align="center" width="smart" caption="IntelliTime for every user" border={true} />
 
-* One-time campaign, which is scheduled for a later time
-* Campaigns scheduled for multiple dates
-* Recurring campaign
 
-> 🚧 Campaign Time Overlap
->
-> If you have the Best Time campaign scheduled for the present day, you cannot schedule a Fixed Time campaign for the next day to avoid campaign time overlap between two dates.
+IntelliTime feature works with the following campaign types:
 
-  c. Click **Done**.\
-  d.  Select the *Best Time event* under the *Delivery preferences* section or select *Ad hoc event* to define the Best Time event here if not done earlier.
+- One-time campaign, which is scheduled for a later time
+- Campaigns scheduled for multiple dates
+- Campaign scheduled for multiple dates
+- Recurring campaign
 
-<Image alt="Select Best Time Event" align="center" border={true} src="https://files.readme.io/b2581a5-Select_Best_Time_Event.gif">
-  Select Best Time Event
-</Image>
+<Callout icon="🚧" theme="warn">
+  #### Campaign Time Overlap
 
-  e. Select the *Fallback time frame* if the best time is unavailable for the users or the user has not performed the selected event in the last 180 days.\
-  f. Set up the remaining fields under the *When* section of the campaign and click **Done**.
+  If you have the IntelliTime campaign scheduled for the present day, you cannot schedule a Fixed Time campaign for the next day to avoid campaign time overlap between two dates.
+</Callout>
+
+6. Click **Done**.
+7. Select the IntelliTim&#x65;_&#x20;event_ under the _Delivery preferences_ section or select _Ad hoc event_ to define the IntelliTime event here if not done earlier.
+
+
+<Image src="https://files.readme.io/b2581a5-Select_Best_Time_Event.gif" alt="Select Best Time Event" align="center" border={true} />
+
+
+8. Select the _Fallback time frame_ if the best time is unavailable for the users or the user has not performed the selected event in the last 180 days.
+
+<Callout icon="🚧" theme="warn">
+  #### Fallback Time Frame
+
+  Ensure that the fallback time frame that you set up does not overlap with the designated Do Not Disturb (DDND) hours configured for the campaign.
+</Callout>
 
 The campaign is now ready to publish.
 
-# Create Best Time Journeys
+# Create IntelliTime Journeys
 
 For campaigns following a past behavior segment, messages can be delivered at the best time with any of the following channels: [email](doc:email), [push notifications](doc:push), [web push](doc:web-push), and [SMS](doc:SMS).
 
-1. [Set Up the Best Time Event](doc:best-time#set-up-best-time-event).
-2. [Create Journeys with Best Time Feature](doc:best-time#create-a-campaign-using-the-best-time-feature).
+1. [Set Up IntelliTime Event](doc:best-time#set-up-best-time-event)
+2. [Create Journeys with IntelliTime Feature](doc:best-time#create-a-campaign-using-the-best-time-feature)
 
 ## Create Journeys with Best Time Feature
 
@@ -181,16 +188,16 @@ To create journeys using the Best time feature:
 
 1. [Create a journey](https://docs.clevertap.com/docs/journeys) as per your requirement.
 2. Click on the ![Timer](https://files.readme.io/834daaa-Timer_icon.png) icon between the segment and the consecutive message node.
-3. Select the *Best time* option to send a message at the best time. Currently, you can create journeys using the default Best Time config. So, it is mandatory to mark one of the Best Time configs as Default to refer to it later.
+3. Select the _Best time_ option to send a message at the best time. Currently, you can create journeys using the default Best Time config. So, it is mandatory to mark one of the Best Time configs as Default to refer to it later.
 4. Click **Save & Close**.
 
-<Image title="4 Click sleep time.png" alt={1547} align="center" border={true} src="https://files.readme.io/5660e8b-4_Click_sleep_time.png">
-  Define Delivery Options
-</Image>
+
+<Image src="https://files.readme.io/bb2d014d971f3770f2e945bca1ed4094bc626214b620d3bf43e68b5b4b24ee44-Select_IntelliTime_under_Delivery_Options.png" alt="1547" align="center" caption="Define Delivery Options" border={true} />
+
 
 # Advanced Options
 
-If *Best Time* is chosen as the delivery option, the following advanced options are applicable:
+If IntelliTime is chosen as the delivery option, the following advanced options are applicable:
 
-* User time zone: Considering the *Best Time* feature chooses the time when the user is most active, the [user time zone](https://docs.clevertap.com/docs/notification-delivery-options#section-delivery-in-user-s-timezone) is always implicitly applied.
-* Global throttle limits: Cannot be applied with the *Best Time* feature.
+- User time zone: Considering the IntelliTime feature chooses the time when the user is most active, the [user time zone](https://docs.clevertap.com/docs/notification-delivery-options#section-delivery-in-user-s-timezone) is always implicitly applied.
+- Global throttle limits: Cannot be applied with the IntelliTime feature.

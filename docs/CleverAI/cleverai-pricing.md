@@ -87,42 +87,42 @@ CleverTap groups CleverAI agents into three families based on their functions. T
 
 Creator Agents generate on-brand content, such as copy, images, and templates, directly from a prompt.
 
-| Agent             | What it does                                                                                                                              | Cost per response |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| [Scribe]()        | Generates on-brand campaign copy instantly from a prompt, blending your Brand Kit with insights from your best-performing past campaigns. | 3 Tokens          |
-| [Image Creator]() | Generates on-brand campaign images instantly from a prompt, automatically applying your Brand Kit's colors and style.                     | 5 Tokens          |
+| Agent                                                          | What it does                                                                                                                              | Cost per response |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [Scribe](https://docs.clevertap.com/docs/scribe-1)             | Generates on-brand campaign copy instantly from a prompt, blending your Brand Kit with insights from your best-performing past campaigns. | 3 Tokens          |
+| [Image Creator](https://docs.clevertap.com/docs/image-creator) | Generates on-brand campaign images instantly from a prompt, automatically applying your Brand Kit's colors and style.                     | 5 Tokens          |
 
 ## Intelligent Agents
 
 Intelligent Agents run continuously in the background, using your account's data to personalize content, predict behavior, or optimize journeys.
 
-| Agent               | What it does                                                                                                                                             | How it is billed                                                                               |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [Recommendations]() | Surfaces the most relevant products or content for each user based on their browsing and purchase history, for use across Push, Email, In-App, and more. | 1 Block = 2 active recommendations (fixed capacity, does not reset)                            |
-| [Predictions]()     | Forecasts user behaviors such as churn, conversion, uninstalls, and so on to build dynamic segments that update continuously.                            | 1 Block = 5 active predictions (fixed capacity, does not reset)                                |
-| [IntelliChannel]()  | Identifies the channel each user engages with most across Push, Email, SMS, and WhatsApp, and keeps it updated as behavior changes.                      | Fair-usage capacity of 1,000 sends/month, expandable in Blocks of 1,000/month (resets monthly) |
-| [IntelliNode]()     | Tests up to seven journey paths at once and automatically routes users toward the best-converting path.                                                  | 1 Block = 7 active IntelliNodes (fixed capacity, does not reset)                               |
-| [IntelliAB]()       | Continuously tests message variants and automatically shifts more traffic to the best-performing one, eliminating the need to manually declare a winner. | Block-based (capacity varies by configuration)                                                 |
+| Agent                                                                    | What it does                                                                                                                                             | How it is billed                                                                               |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Recommendations](https://docs.clevertap.com/docs/recommendations-agent) | Surfaces the most relevant products or content for each user based on their browsing and purchase history, for use across Push, Email, In-App, and more. | 1 Block = 2 active recommendations (fixed capacity, does not reset)                            |
+| [Predictions](https://docs.clevertap.com/docs/predictions)               | Forecasts user behaviors such as churn, conversion, uninstalls, and so on to build dynamic segments that update continuously.                            | 1 Block = 5 active predictions (fixed capacity, does not reset)                                |
+| [IntelliChannel](https://docs.clevertap.com/docs/intellichannel)         | Identifies the channel each user engages with most across Push, Email, SMS, and WhatsApp, and keeps it updated as behavior changes.                      | Fair-usage capacity of 1,000 sends/month, expandable in Blocks of 1,000/month (resets monthly) |
+| [IntelliNode](https://docs.clevertap.com/docs/intellinode)               | Tests up to seven journey paths at once and automatically routes users toward the best-converting path.                                                  | 1 Block = 7 active IntelliNodes (fixed capacity, does not reset)                               |
+| [IntelliAB](https://docs.clevertap.com/docs/intelliab)                   | Continuously tests message variants and automatically shifts more traffic to the best-performing one, eliminating the need to manually declare a winner. | Block-based (capacity varies by configuration)                                                 |
 
 ## Workflow Agents
 
 Workflow Agents speed up day-to-day tasks such as building segments, analyzing data, and setting up journeys.
 
-| Agent                 | What it does                                                                                                                                                                       | Cost per response |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| [Analytics Builder]() | Turns a plain-language question into instant charts, trends, or breakdowns. It is the same analysis you would otherwise build manually.                                            | 5 Tokens          |
-| [Segment Builder]()   | Describes your audience criteria in a prompt and returns a ready-to-use segment, using the same AND/OR logic as CleverTap's NextGen Segment Builder.                               | 5 Tokens          |
-| [Journey Builder]()   | Describes your goal and target users, and builds an engagement journey with pre-filled nodes and scheduling.                                                                       | 13 Tokens         |
-| [AI Schema]()         | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Token           |
-| [NPS Insights]()      | Analyzes open-ended NPS survey responses to surface themes, sentiment, and what is driving your promoters and detractors, requiring no manual reading.                             | 2 Tokens          |
+| Agent                                                                  | What it does                                                                                                                                                                       | Cost per response |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [Analytics Builder](https://docs.clevertap.com/docs/analytics-builder) | Turns a plain-language question into instant charts, trends, or breakdowns. It is the same analysis you would otherwise build manually.                                            | 5 Tokens          |
+| [Segment Builder](https://docs.clevertap.com/docs/segment-builder)     | Describes your audience criteria in a prompt and returns a ready-to-use segment, using the same AND/OR logic as CleverTap's NextGen Segment Builder.                               | 5 Tokens          |
+| [Journey Builder](https://docs.clevertap.com/docs/journey-builder)     | Describes your goal and target users, and builds an engagement journey with pre-filled nodes and scheduling.                                                                       | 13 Tokens         |
+| [AI Schema]()                                                          | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Token           |
+| [NPS Insights](https://docs.clevertap.com/docs/nps-insights)           | Analyzes open-ended NPS survey responses to surface themes, sentiment, and what is driving your promoters and detractors, requiring no manual reading.                             | 2 Tokens          |
 
 ## Other Agents
 
 The following is an agent that fits into the other agents' category:
 
-| Agent               | What it does                                                                                                                                                 | How it is billed                  |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
-| [Product Catalog]() | Manages your entire product catalog, such as names, prices, images, and attributes, in one place, powering personalized recommendations and dynamic content. | Block-based (1 block = 500K rows) |
+| Agent                                                              | What it does                                                                                                                                                 | How it is billed                  |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| [Product Catalog](https://docs.clevertap.com/docs/product-catalog) | Manages your entire product catalog, such as names, prices, images, and attributes, in one place, powering personalized recommendations and dynamic content. | Block-based (1 block = 500K rows) |
 
 <Callout icon="🚧" theme="warn">
   ### Chained agent calls add to the total cost

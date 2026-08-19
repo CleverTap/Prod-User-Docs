@@ -13,7 +13,7 @@ Recommendations let you deliver a personalized set of items to each user within 
 When you add a recommendation block to a campaign, users receiving the same message may see entirely different items, each set chosen specifically for them.
 
 <Callout icon="📘" theme="info">
-  #### How Personalization Works at Send Time
+  #### How Personalization Works at Send Time of Campaign
 
   Recommendations are not resolved when you build the campaign. At the moment CleverTap sends to each recipient, it runs the selected strategy against that user's profile and returns a ranked list of items drawn from your catalog. Two users in the same campaign receive the same message template but different items.
 
@@ -33,7 +33,7 @@ Target users who have been inactive for a defined period. Combine a re-engagemen
 | Travel        | Reach users who browsed but never booked with a "Still dreaming?" email featuring destinations they previously searched, now with updated availability or pricing. |
 | Food Delivery | Win back churned users with a "Your favorites are waiting" push featuring restaurants from their most-ordered cuisines.                                            |
 
-### Recover abandoned sessions with relevant alternatives
+### Recover Abandoned Sessions with Relevant Alternatives
 
 Trigger a campaign when a user drops off mid-session without completing an action. Reinforce the original item and surface alternatives that match the same intent, giving users a reason to return without requiring them to search again.
 
@@ -70,10 +70,8 @@ When you want all users to see the same high-signal items, for example, bestsell
 
 Before adding a recommendation block to a campaign, confirm the following are in place:
 
-* At least one active recommendation strategy.
-* A catalog with mapped item attributes (name, image, price, URL) on which the recommendation strategy is created.
-* Relevant user events are being tracked. Behavioral strategies, such as Based on What You Viewed, require that the view or interaction events be instrumented.
-* The engagement campaign is created and in draft state
+- At least one active recommendation strategy.
+- Relevant user events are being tracked. Behavioral strategies, such as Based on What You Viewed, require that the view or interaction events be instrumented.
 
 # Add Recommendations to Campaign
 
@@ -90,7 +88,9 @@ Choose a primary strategy from the dropdown. This strategy determines how recomm
 
 Optionally, add one or more fallback strategies. Fallbacks activate when the primary strategy cannot generate results for a given user, for example, a new user who has not yet watched anything. For such users, you can add Trending as a fallback strategy
 
-<Image align="center" border={true} caption="Select Strategy" src="https://files.readme.io/fa31f9abff99364d6bd27395e953ddd6ee87b7fa642076f20823da7c1f566436-Select_Strategy.png" />
+
+<Image src="https://files.readme.io/fa31f9abff99364d6bd27395e953ddd6ee87b7fa642076f20823da7c1f566436-Select_Strategy.png" align="center" caption="Select Strategy" border={true} />
+
 
 Fallbacks execute in the order you configure them: the first fallback that returns results is used. If no fallback strategies are configured and the primary strategy returns no results, the default values will be returned.
 
@@ -98,33 +98,37 @@ Fallbacks execute in the order you configure them: the first fallback that retur
 
 Refine which items are eligible to appear using catalog or event-based rules. Rules are evaluated at send time.
 
-### Include Items
+### Inclusion Criteria
 
 For example, the OTT platform adds a catalog rule: Language = English. This ensures only English shows appear in the recommendation block, keeping the output consistent with the campaign's intent.
 
-### Exclude Items
+### Exclusion Criteria
 
 For example, the OTT platform adds a catalog rule: `Genre = Action/Thriller`. This ensures Action/Thriller shows do not appear in the recommendations block.
 
 Together, these rules mean each user receives up to 10 shows, excluding `Action/Thriller` shows, filtered to `English-language` content, ranked by each user's individual viewing behavior or by platform-wide trending if they are new.
 
-<Image align="center" border={true} caption="Include and Exclude Items" src="https://files.readme.io/f3e1c873c1fab38148b01bae7e10081ef601712bf77484222b1b6104077121df-Include_and_Exclude_Items.png" />
+
+<Image src="https://files.readme.io/f3e1c873c1fab38148b01bae7e10081ef601712bf77484222b1b6104077121df-Include_and_Exclude_Items.png" align="center" caption="Include and Exclude Items" border={true} />
+
 
 These rules help control relevance and prevent undesired items from appearing.
 
 For more information about rule configuration, refer to [Catalog-Based Rules]()  and [Event-Based Rules]().
 
-## Configure Items
+## Final Outcome
 
-### Item Count
+### Items to Recommend
 
 Set the number of items to display per user. For example, if the Item count is set to 10. Each user receives a personalized list of 10 shows.
 
-### Item Attributes
+### Item Attributes to Recommend
 
 Select the catalog attributes to surface for each recommended item. Any attribute mapped in your catalog is available. For example, the OTT platform selects Title, Thumbnail, Genre, and Content URL. These attributes will be available as variables in the message template, so each recommendation card can display the show name, poster image, genre label, and a link that opens directly to the show in the app.
 
-<Image align="center" border={true} caption="Configure Items" src="https://files.readme.io/680dc34189572b01eb7a2be7d0a68a8b8dbe38efc2777f2db5aadbce88bc2852-Configure_Items.gif" />
+
+<Image src="https://files.readme.io/16b44b2f729bafc66f654bf3764f2d1303cfaf267e0595d3e169c9da88a85897-Configure_Final_Outcome.gif" align="center" caption="Configure Items" border={true} />
+
 
 Once the recommendation personalization is set, Liquid Script is used to reference the recommendation output in your Title and Message fields.
 
@@ -134,7 +138,9 @@ Once the recommendation is applied, use Liquid Tags in your _Title_ and _Message
 
 The following image shows the filled Title and Message fields with Recommendations:
 
-<Image align="center" border={true} caption="Reference Recommendations in Campaign" src="https://files.readme.io/5be0e65575d2ee9e7ada9c37c412ca21082cac34f34810b69e3bd2ae7dbe65ab-Reference_Recommendation_in_Campaign.png" />
+
+<Image src="https://files.readme.io/5be0e65575d2ee9e7ada9c37c412ca21082cac34f34810b69e3bd2ae7dbe65ab-Reference_Recommendation_in_Campaign.png" align="center" caption="Reference Recommendations in Campaign" border={true} />
+
 
 ### How It Resolves at Send Time
 
@@ -160,14 +166,22 @@ User has no viewing history. Strategy falls back to platform-wide trending conte
 | Image         | Squid Game thumbnail             |
 | Click to View | Deep link directly to Squid Game |
 
-The genre label in the message body is pulled from _Genre_ attribute of the top recommended item, that is, `Recommendation["Recommendation 1"][1].genre | default: "Genre" }}`.
+The genre label in the message body is pulled from `Genre` attribute of the top recommended item, that is, `Recommendation["Recommendation 1"][1].genre | default: "Genre" }}`.
 
-For the returning user, this resolves to Comedy because the top-ranked recommendation is a comedy. The Based on What You Viewed strategy surfaces shows similar to what the user has previously watched. In this case, the user's viewing history (The Office, Brooklyn Nine-Nine, Schitt's Creek) has led the strategy to rank comedy titles highest.
+For the returning user, this resolves to `Comedy` because the top-ranked recommendation is a comedy. The Based on What You Viewed strategy surfaces shows similar to what the user has previously watched. In this case, the user's viewing history (The Office, Brooklyn Nine-Nine, Schitt's Creek) has led the strategy to rank comedy titles highest.
 
 For the new user on the Trending fallback, the top-ranked show is a drama, so the genre resolves to Drama. The template is identical for both users; only the resolved values differ based on which strategy fired and what it returned.
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  You can configure up to five fallback strategies. Only Popular and Trending<br />strategies can be used as fallbacks; they do not depend on user interaction<br />history or a reference item, so they always resolve. The fallback must also use<br />the same catalog as the primary strategy.
+</Callout>
 
 # Publish
 
 Use Preview to verify the message template structure and confirm that item layout and attribute placeholders are correctly positioned in your content.
 
 Once the template is validated, publish or schedule the campaign. At send time, CleverTap generates personalized recommendations for each recipient. Each user receives items selected and ranked specifically for them based on their individual profile, behavior, and the configured strategy.
+
+<br />

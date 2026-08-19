@@ -26,7 +26,7 @@ As CleverAI evolves, the content these agents generate feeds directly into Cleve
 
   </Card>
 
-  <Card title="WhatsApp Template Creator" href="https://docs.clevertap.com/docs/whatsapp-template-creator">
+  <Card title="WhatsApp Template Creator" href="https://docs.clevertap.com/docs/whatsapp-template-creator-1">
 
   </Card>
 </Cards>

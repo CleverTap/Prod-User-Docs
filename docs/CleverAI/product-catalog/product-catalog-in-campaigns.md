@@ -67,22 +67,22 @@ The following table lists example use cases by domain:
 
 Before adding a catalog block to a campaign, confirm the following are in place:
 
-- At least one active catalog with populated product records.&#x20;
+- At least one active product catalog with populated product records.&#x20;
 
 
-  <Image src="https://files.readme.io/eef2e7a285494171c664dd9f5b91c468cbe48740d971e56c4afa8597fed26114-image.png" align="center" caption="Catalog" border={true} />
+  <Image src="https://files.readme.io/fb1eeb26ad53c6b9e7611105b75e077125bdfa87e9e9f486c1bfa97144e4c74e-image.png" align="center" caption="Product Catalog" border={true} />
 
 
-- The catalog includes the [attributes](doc:httpsdoc:create-product#system-fields) you intend to use in the message, such as name, image URL, price, and product URL.
+- The catalog includes the [attributes](doc:create-product#system-fields) you intend to use in the message, such as name, image URL, price, and product URL.
 
 # Add Catalog to Campaign
 
-Open your campaign and go to the Content Editor. Click **Personalize**, select the _Catalog_ tab, and complete the following steps:
+Open your campaign and go to the Content Editor. Click **Personalize**, select the _Product_ _Catalog_ tab, and complete the following steps:
 
-1. [Select catalog](#select-catalog)
-2. [Map catalog attributes](#map-catalog-attributes)
-3. [(Optional) Apply include and/or exclude rules](#apply-include-andor-exclude-rules)
-4. [Reference catalog data in campaign message](#reference-catalog-data-in-campaign-message)
+1. [Select catalog](doc:product-catalog-in-campaigns#select-catalog)
+2. [Map catalog attributes](doc:product-catalog-in-campaigns#map-catalog-attributes)
+3. [(Optional) Apply include and/or exclude rules](doc:product-catalog-in-campaigns#apply-include-andor-exclude-rules)
+4. [Reference catalog data in campaign message](doc:product-catalog-in-campaigns#reference-catalog-data-in-campaign-message)
 
 ## Select Catalog
 
@@ -92,7 +92,7 @@ Choose a catalog from the dropdown. The selected catalog is the data source for 
 <Image src="https://files.readme.io/e86dacf1662ba16b5c0e95c342af78f0beb340cfefb88d799047c1574cbd170b-image.png" alt="Select Catalog" align="center" caption="Select Catalog" border={true} />
 
 
-Only active catalogs are available for selection. If the catalog you need is not listed, verify its status on the Product Catalog page.
+Only active product catalogs are available for selection. If the catalog you need is not listed, verify its status on the _Product Catalog_ page.
 
 ## Map Catalog Attributes
 
@@ -102,7 +102,7 @@ Catalog attributes are mapped using one of two methods, depending on the campaig
 
 **Profile Mapping**
 
-Available for any campaign type that includes a _Catalogs_ tab. Maps a user's profile property to a catalog item identifier, so CleverTap looks up the catalog record that matches the value stored in the user's profile. Use this when the item to surface is derived from something known about the user.
+Available for any campaign type that includes a _Product Catalog_ tab. Maps a user's profile property to a catalog item identifier, so CleverTap looks up the catalog record that matches the value stored in the user's profile. Use this when the item to surface is derived from something known about the user.
 
 For example, if a user's profile stores their preferred city as`home_city`, you can map that to a catalog of travel destinations to surface city-specific deals.
 

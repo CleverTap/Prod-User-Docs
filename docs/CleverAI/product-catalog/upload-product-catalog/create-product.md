@@ -45,7 +45,7 @@ The following are common conventions used in the `attributes` object:
 | category          | The category the product belongs to.                    |
 | Custom attributes | Any additional attributes based on your catalog schema. |
 
-For more information on the request format, authentication, and the full list of supported fields, refer to [Create Product API]().
+For more information on the request format, authentication, and the full list of supported fields, refer to [Create Product API](https://developer.clevertap.com/docs/create-single-product-api).
 
 ## Guidelines
 
@@ -64,7 +64,7 @@ The following guidelines apply to product creation and catalog management in Cle
 <Callout icon="📘" theme="info">
   ### Updating attributes replaces the whole object
 
-  Both the update APIs and feeds replace a product's entire attributes object rather than merging individual keys. To change one attribute, send every attribute you want to keep. For more information, refer to [Create Feed](doc:producy-catalog/create-feed).
+  Both the update APIs and feeds replace a product's entire attributes object rather than merging individual keys. To change one attribute, send every attribute you want to keep. For more information, refer to [Create Feed](doc:product-catalog/create-feed).
 </Callout>
 
 # Manage Catalog Products

@@ -1,5 +1,5 @@
 ---
-title: Use CleverTap with AI
+title: Agent Hub
 deprecated: false
 hidden: true
 metadata:

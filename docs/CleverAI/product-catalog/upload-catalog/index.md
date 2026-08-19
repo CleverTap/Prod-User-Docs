@@ -29,7 +29,7 @@ Once uploaded, catalogs are populated and updated using one or more feeds. Each 
 
 Product catalogs store item-level details such as name, price, and category. Once a catalog is uploaded, its type cannot be changed.
 
-# Upload Catalog
+# Upload a Product Catalog
 
 To upload a catalog, perform the following steps:
 

@@ -97,7 +97,7 @@ You can configure the IntelliTime option for one-time or recurring campaigns for
 6. (Optional) Click **Preview User Distribution** to check the user distribution for the selected event in the last 180 days. You can also change the filter based on the user distribution to achieve optimal conversion rates.
 
 
-<Image src="https://files.readme.io/de72691-Define_Best_Time_Config.gif" alt="Define Best Time Config" align="center" caption="Define Best Time Config" border={true} />
+<Image src="https://files.readme.io/042c90f45d9080eea98e8a82175b5c84e1a6046bec69becae02036374454829b-2026-08-19_14-28-33_1.gif" alt="Define Best Time Config" align="center" width="70%" caption="Define Best Time Config" border={true} />
 
 
 7. Click **Save** to save the IntelliTime event.

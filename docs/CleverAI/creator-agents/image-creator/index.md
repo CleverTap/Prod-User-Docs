@@ -10,7 +10,16 @@ metadata:
   description: ''
   robots: index
 next:
-  description: ''
+  pages:
+    - slug: effective-prompts-for-ai-designer-agent
+      title: Generate On-Brand Images with Effective Prompts
+      type: basic
+    - slug: brand-kit
+      title: Brand Kit
+      type: basic
+    - slug: image-creator-faqs
+      title: 'Image Creator: FAQs'
+      type: basic
 ---
 # Overview
 

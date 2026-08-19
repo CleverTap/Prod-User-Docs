@@ -25,20 +25,20 @@ Event-based rules operate in two phases: a background pre-computation phase and 
 When a user triggers an event, a background process (the populator) evaluates the rule continuously:
 
 1. Checks whether the event matches the rule's criteria (event name and filter conditions).
-2. Uses the Link Events mapping to identify which catalog item is associated with the event.
+2. Uses the Catalog and Event Property Mapping section to identify which catalog item is associated with the event.
 3. Writes the matched product ID to a per-user feature store, keyed by rule and timestamp.
 4. Retains only the most recent N entries, where N is the Interaction Count you set on the rule.
 
-This means the eligible item set per user is always pre-computed. Recommendation requests do not query event history in real time; they read from the pre-computed store.
+The eligible item set for each user is built continuously in the background. When a recommendation request arrives, the engine reads from this store; it does not process event history at that point.
 
-You need to configure the following fields to pre-compute the eligible item set per user:
+The following fields control how the populator builds the store:
 
-| Field                                              | Effect                                                                                                      |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Criteria (event + filters)                         | Determines which events qualify                                                                             |
-| Link Events (Map catalog column to event property) | Determines which catalog item to associate with each qualifying event.                                      |
-| Interaction Count                                  | Determines how many recent qualifying event-item associations to retain per user. The default value is 100. |
-| Date/Time Period                                   | Determines how far back in history the populator looks                                                      |
+| Field                                                                     | Effect                                                                                                      |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Condition (event + filters)                                               | Determines which events qualify                                                                             |
+| Catalog and Event Property Mapping (Map catalog column to event property) | Determines which catalog item to associate with each qualifying event.                                      |
+| Interaction Count                                                         | Determines how many recent qualifying event-item associations to retain per user. The default value is 100. |
+| Date/Time Period                                                          | Determines how far back in history the populator looks                                                      |
 
 ### Runtime Filtering
 
@@ -46,8 +46,8 @@ When a recommendation request arrives, the recommendation pool is assembled firs
 
 1. The engine reads each user's pre-computed product IDs for the referenced rules.
 2. Per-user filtering is then applied to that pool:    
-   * Include rule: Keep only items that appear in the user's resolved include set    
-   * Exclude rule: Remove items that appear in the user's resolved exclude set
+   - Inclusion rule: Keep only items that appear in the user's resolved include set    
+   - Exclusion rule: Remove items that appear in the user's resolved exclude set
 
 The final ranked output is returned.
 
@@ -57,18 +57,18 @@ The final ranked output is returned.
   When catalog-based rules are active, they are applied first at the catalog fetch step to shape the candidate pool. Event-based rules then filter that pool per user.
 </Callout>
 
-## Include vs. Exclude
+## Inclusion vs. Exclusion
 
-Include and Exclude are not properties of a rule. The same rule can act as an include in one strategy and exclude in another.
+Inclusion and Exclusion are not properties of a rule. The same rule can act as an inclusion in one strategy and an exclusion in another.
 
-The designation is made when you attach the rule to a recommendation strategy, not when you create the rule. When creating a rule, you define the matching criteria and item association. How the resolved item set is applied (that is, included or excluded) is a strategy-level decision.
+The designation is made when you attach the rule to a recommendation strategy, not when you create the rule. When creating a rule, you define the matching criteria and item association. How the resolved item set is applied (i.e., whether to include or exclude it) is a strategy-level decision.
 
 <Callout icon="📘" theme="info">
-  #### Criteria Logic
+  #### Condition Logic
 
-  * Each rule supports exactly one event (for example, Product Viewed or Added to Cart)
-  * Multiple filter rows within that event are combined with AND logic
-  * To handle OR logic across different events, create separate rules and reference both in the strategy
+  - Each rule supports exactly one event (for example, Product Viewed or Added to Cart)
+  - Multiple filter rows within that event are combined with AND logic
+  - To handle OR logic across different events, create separate rules and reference both in the strategy
 </Callout>
 
 # Use Cases
@@ -93,10 +93,10 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude already-purchased items: Create a rule on the Charged event mapped to purchased product IDs. Use as an exclude in post-purchase campaigns to avoid recommending items the user has already bought.
-        * Surface items from the same category: Create a rule on Product Viewed filtered by category. Use as an include to recommend items from the category the user just browsed.
-        * Exclude cart items: Create a rule on Added to Cart mapped to cart product IDs. Use as an exclude to avoid surfacing items already in the user's cart.
-        * Recommend from recent interest: Create a rule on a search or view event mapped to product IDs to surface items the user showed intent for.
+        - Exclude already-purchased items: Create a rule on the Charged event mapped to purchased product IDs. Use as an exclude in post-purchase campaigns to avoid recommending items the user has already bought.
+        - Surface items from the same category: Create a rule on Product Viewed filtered by category. Use as an include to recommend items from the category the user just browsed.
+        - Exclude cart items: Create a rule on Added to Cart mapped to cart product IDs. Use as an exclude to avoid surfacing items already in the user's cart.
+        - Recommend from recent interest: Create a rule on a search or view event mapped to product IDs to surface items the user showed intent for.
       </td>
     </tr>
 
@@ -106,8 +106,8 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude completed titles: Create a rule on a Content Completed event mapped to content IDs. Use as an exclude to stop recommending titles the user has already finished.
-        * Continue watching: Create a rule on Content Started filtered to partially viewed titles. Use as an include to surface in-progress content.
+        - Exclude completed titles: Create a rule on a Content Completed event mapped to content IDs. Use as an exclusion to stop recommending titles the user has already finished.
+        - Continue watching: Create a rule on Content Started filtered to partially viewed titles. Use as an include to surface in-progress content.
       </td>
     </tr>
 
@@ -117,8 +117,8 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude viewed destinations: Create a rule on Destination Viewed mapped to destination IDs. Use as an exclude to surface new options instead of repeating what was browsed.
-        * Match searched route: Create a rule on Flight Searched filtered by origin or destination. Use as an include to surface relevant hotels or experiences for that route.
+        - Exclude viewed destinations: Create a rule on Destination Viewed mapped to destination IDs. Use as an exclusion to surface new options instead of repeating what was browsed.
+        - Match searched route: Create a rule on Flight Searched filtered by origin or destination. Use as an include to surface relevant hotels or experiences for that route.
       </td>
     </tr>
 
@@ -128,9 +128,9 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude already-ordered items: Create a rule on Order Placed mapped to item or restaurant IDs. Use as an exclude to prevent meals the user just ordered from surfacing.
-        * Recommend from browsed cuisine: Create a rule on Restaurant Viewed filtered by cuisine type. Use as an include to surface similar cuisine options the user was exploring.
-        * Re-engage with saved items: Create a rule on Item Added to Favorites mapped to item IDs. Use as an include to surface saved but unpurchased items in reorder campaigns.
+        - Exclude already-ordered items: Create a rule on Order Placed mapped to item or restaurant IDs. Use as an exclusion to prevent meals the user just ordered from surfacing.
+        - Recommend from browsed cuisine: Create a rule on Restaurant Viewed filtered by cuisine type. Use as an include to surface similar cuisine options the user was exploring.
+        - Re-engage with saved items: Create a rule on Item Added to Favorites mapped to item IDs. Use as an include to surface saved but unpurchased items in reorder campaigns.
       </td>
     </tr>
 
@@ -140,9 +140,9 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude owned items: Create a rule on Item Purchased (skins, weapons, characters) mapped to item IDs. Use as an exclude to avoid recommending what the user already owns in the in-game store.
-        * Surface items from played genres: Create a rule on Game Started filtered by genre. Use as an include to recommend titles or content packs from genres the user actively plays.
-        * Re-engage lapsed players: Create a rule that maps Level Completed to game IDs. Use as an include to surface the next chapter, expansion, or related content after progress events.
+        - Exclude owned items: Create a rule on Item Purchased (skins, weapons, characters) mapped to item IDs. Use as an exclude to avoid recommending what the user already owns in the in-game store.
+        - Surface items from played genres: Create a rule on Game Started filtered by genre. Use as an include to recommend titles or content packs from genres the user actively plays.
+        - Re-engage lapsed players: Create a rule that maps Level Completed to game IDs. Use as an include to surface the next chapter, expansion, or related content after progress events.
       </td>
     </tr>
 
@@ -152,9 +152,9 @@ The designation is made when you attach the rule to a recommendation strategy, n
       </td>
 
       <td>
-        * Exclude already-attempted assessments: Create a rule on Quiz Attempted mapped to assessment IDs. Use as an exclude to avoid surfacing tests the user has already taken, and surface only new assessments in their skill path.
-        * Continue learning path: Create a rule on Lesson Started or Module Completed, mapped to course IDs. Use as an include to surface the next course in the same skill path.
-        * Recommend by topic interest: Create a rule on Course Viewed filtered by subject or skill tag. Use as an include to surface similar courses from the domain the user is actively exploring.
+        - Exclude already-attempted assessments: Create a rule on Quiz Attempted mapped to assessment IDs. Use as an exclude to avoid surfacing tests the user has already taken, and surface only new assessments in their skill path.
+        - Continue learning path: Create a rule on Lesson Started or Module Completed, mapped to course IDs. Use as an include to surface the next course in the same skill path.
+        - Recommend by topic interest: Create a rule on Course Viewed filtered by subject or skill tag. Use as an include to surface similar courses from the domain the user is actively exploring.
       </td>
     </tr>
   </tbody>
@@ -162,65 +162,70 @@ The designation is made when you attach the rule to a recommendation strategy, n
 
 # Create Event-Based Rule
 
-To create a new rule, go to _Recommendations_ > _Event-Based Rules_ and click **Create Rule**. The _Create Event-Based Rule_ page opens, which has the following three sections: [Configure](doc:event-based-rules#configure), [Criteria](doc:event-based-rules#criteria), and [Link Events](doc:event-based-rules#link-events).
+To create a new rule, go to _Recommendations_ > _Event-Based Rules_ and click **Create Rule**. The _Create Event-Based Rule_ page opens.&#x20;
 
-Once all sections are configured, click **Create** to save the rule.
+To create a rule, perform the following steps:&#x20;
 
-## Configure
+1. Click **Create** to save the rule.
+2. Enter the following details to identify and describe the rule:
 
-Enter the following details to identify and describe the rule:
 
-<Image align="center" border={true} caption="Configure Rule Details" src="https://files.readme.io/fa5fecd99963efe1eb5b2e691ee1415fd3e0bb14d11cdffbe4d02c8f9f8b824f-Configure_Event-Based_Rule_Details.png" />
+<Image src="https://files.readme.io/fa5fecd99963efe1eb5b2e691ee1415fd3e0bb14d11cdffbe4d02c8f9f8b824f-Configure_Event-Based_Rule_Details.png" align="center" caption="Enter Rule Details" border={true} />
+
 
 | Field       | Description                                                                                                                                                    | Constraints                                                      |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Name        | A descriptive name that makes the rule's intent immediately clear. For example, Added to Cart in Last 10, Product Viewed – Nike, Already Purchased, and so on. | Max 255 characters. Required. Must be unique within the account. |
 | Description | A short explanation of what the rule does and when to use it. For example, Excludes items the user has already purchased in the last 30 days.                  | Max 1000 characters. Optional.                                   |
 
-## Criteria
+3. Click **Add Condition** to add a condition block. Each rule supports one event.
+4. Select an Event: Click the event field to choose from the available events in your account, such as Added to Cart, Product Viewed, or Charged.
+5. (Optional) Filter the Event: Click **+ Filter** to narrow the event using event properties. A filter row appears with the following fields:
 
-This section defines which user events qualify for the rule. To configure the criteria, perform the following steps:
 
-1. Click **Add Criteria** to add a condition block. Each rule supports one event.
-2. Select an Event: Click the event field to choose from the available events in your account, such as Added to Cart, Product Viewed, or Charged.
-3. Filter the Event: Click **+ Filter** to narrow the event using event properties. A filter row appears with the following fields:
+   <Image src="https://files.readme.io/b394d28f3ae68dd375edd0da25cd78ae3f3c6af04a8d5993354f06459f66faed-Select_event_and_add_filter.png" align="center" caption="Add Condition" border={true} />
 
-   <Image align="center" border={true} caption="Configure Criteria" src="https://files.readme.io/56bb4fb550ba3cb6a15c1a3c787a78b203480f529a2f0b8206667aae7c919d34-Configure_Criteria.png" />
 
 | Field             | Description                                                                                                                                                                                  |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Event Property    | Select the specific property source to filter on, such as Brand, Category, or Product Name                                                                                                   |
+| Event Property    | Select the specific property source to filter on, such as Brand, Category, or Product Name.                                                                                                  |
 | Operator          | The comparison logic: equals, not equals, contains, does not contain, greater than, less than, between, and others                                                                           |
 | Value             | The value to match, entered as free text (for example, Nike)                                                                                                                                 |
 | Interaction Count | The maximum number of recent qualifying event-item associations to retain per user. For example, a value of 10 means only the 10 most recent matching events are used.                       |
 | Date/Time Period  | The time window within which qualifying events are considered. Supports relative periods (last 7 days, last 30 days) and absolute date ranges. Events outside this window are not evaluated. |
 
-4. Click **+** to add additional values for the same property (OR logic within the filter row). You can click × to remove a value. To delete the filter row, click the trash icon on the right.
+6. Click **+** to add additional values for the same property (OR logic within the filter row). You can click × to remove a value. To delete the filter row, click the trash icon on the right.
 
-Multiple filter rows on the same event are combined with AND logic: all conditions must match for the event to qualify. For example: `Event: Product Viewed AND Brand = Nike AND Category = Footwear`
+   Multiple filter rows on the same event are combined with AND logic: all conditions must match for the event to qualify. For example: `Event: Product Viewed AND Brand = Nike AND Category = Footwear`
 
-This applies only to Product Viewed events where Brand is Nike, and Category is Footwear.
+   This applies only to Product Viewed events where Brand is Nike, and Category is Footwear.
 
 <Callout icon="📘" theme="info">
-  #### Criteria Logic
+  #### Condition Logic
 
-  * Each rule supports exactly one event (for example, Product Viewed or Added to Cart)
-  * Multiple filter rows within that event are combined with AND logic
-  * To handle OR logic across different events, create separate rules and reference both in the strategy
+  - Each rule supports exactly one event (for example, Product Viewed or Added to Cart)
+  - Multiple filter rows within that event are combined with AND logic
+  - To handle OR logic across different events, create separate rules and reference both in the strategy
 </Callout>
 
-## Link Events
+## Catalog and Event Property Mapping
 
-The Link Events section maps a catalog column to an event property so the engine knows which catalog item to associate with a qualifying event.
+This section maps a catalog column to an event property so the engine knows which catalog item to associate with a qualifying event.
 
 | Column         | Description                                                                             |
 | -------------- | --------------------------------------------------------------------------------------- |
 | Catalog column | The field from the catalog that identifies the item (for example, product_id)           |
 | Event property | The event property whose value corresponds to the catalog column (for example, item_id) |
 
-In this example, Catalog column: `product_id` maps to Event property: `item_id`
+In this example, the Catalog column: `product_id` maps to Event property: `item_id`
 
 This tells the engine: when a qualifying event triggers, read the `item_id` from that event and match it against the catalog column `product_id`  to identify which item is associated.
+
+<Callout icon="📘" theme="info">
+  #### Column Mapping
+
+  The catalog column you select must be the column designated as the unique item identifier when setting up the catalog, for example, `product_id`. This is the column the engine uses to match the event to the correct catalog item.
+</Callout>
 
 # Manage Event-Based Rules
 
@@ -228,20 +233,22 @@ The Event-Based Rules list page provides a central view of all rules, with tools
 
 Each rule displays the following columns by default:
 
-<Image align="center" border={true} caption="Rules List Page" src="https://files.readme.io/e0fdeac21e34b0b3dc31a311cccd677747be80e884513fc5df41e4a8b5b1482f-image.png" />
 
-| Column             | Description                                                                 |
-| ------------------ | --------------------------------------------------------------------------- |
-| Rule Name          | The name of the rule and its unique ID. Click the copy icon to copy the ID. |
-| Created On         | The date the rule was created.                                              |
-| Created By         | The user who created the rule.                                              |
-| Active Engagements | The number of engagements currently referencing this rule.                  |
+<Image src="https://files.readme.io/70fd82c76940d7147851275099139bc02a84046b003bb16573b47165df6e0085-Event-Basd_Rules_List_Page.png" align="center" caption="Event-Based Rules List Page" border={true} />
+
+
+| Column             | Description                                                                                                                                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rule Name          | The name of the rule and its unique ID. Click the copy icon to copy the ID.                                                                                                                                |
+| Created On         | The date the rule was created.                                                                                                                                                                             |
+| Created By         | The user who created the rule.                                                                                                                                                                             |
+| Active Engagements | The number of active engagements currently using this rule. A rule with one or more active engagements cannot be deleted. To delete the rule, first remove it from or stop all engagements referencing it. |
 
 From the rules list, you can perform the following actions on any rule:
 
-* **Edit**: Modify the rule's name, description, criteria, interaction count, date range, or event mapping.
-* **Clone**: Select the rule to open it and then click <Image border={true} src="https://files.readme.io/950d4b88e844764c813af0c75c2c0081ed101d0aa8190eca0b4043b6f2bb119e-Clone_icon_-_version_management.png" className="border" /> to create a copy of the rule. You can use this as a starting point for a new rule with a similar configuration.
-* **Delete**: Remove one or more rules. Select the rules you want to remove and confirm deletion. Bulk deletion is supported. Before deleting, review the Active Strategies count — deleting a rule that is referenced by a live strategy will remove it from that strategy's configuration.
+- **Edit**: Modify the rule's name, description, criteria, interaction count, date range, or event mapping.
+- **Clone**: Select the rule to open it and then click <img src="https://files.readme.io/950d4b88e844764c813af0c75c2c0081ed101d0aa8190eca0b4043b6f2bb119e-Clone_icon_-_version_management.png" valign="middle" height=“30”> to create a copy of the rule. You can use this as a starting point for a new rule with a similar configuration.
+- **Delete**: Select the rule and confirm deletion. A rule cannot be deleted while it is<br />referenced by one or more active engagements. CleverTap displays the list of campaigns<br />and journeys blocking the deletion, so you know what to update before retrying.
 
 ## Search Rules
 
@@ -249,7 +256,7 @@ Use the search bar to find rules by name. Click any column header to sort by tha
 
 ## Filter Rules
 
-Click the <Image border={true} src="https://files.readme.io/7aff7af8e3b59d1f1ef7e3f97c80e00b6cc7848b3af3799a0963ce52adc60bff-Filter_icon.png" className="border" /> icon to open the _Filters_ panel:
+Click the <img src="https://files.readme.io/7aff7af8e3b59d1f1ef7e3f97c80e00b6cc7848b3af3799a0963ce52adc60bff-Filter_icon.png" valign="middle" height=“30”> icon to open the _Filters_ panel:
 
 | Filter      | Description                                             |
 | ----------- | ------------------------------------------------------- |
@@ -258,7 +265,7 @@ Click the <Image border={true} src="https://files.readme.io/7aff7af8e3b59d1f1ef7
 
 ## Edit Columns
 
-Click the <Image border={true} src="https://files.readme.io/c9badc2bd28fb245e6cc13ed5598b8ef5dfbce7349bd1ad620ed1e7e5ab90a21-Edit_Columns_icon.png" className="border" /> icon to open the _Edit Columns_ panel. Toggle columns on or off and drag rows to reorder them. Click **Apply Changes** to save, or **Reset** to restore the default layout.
+Click the <img src="https://files.readme.io/c9badc2bd28fb245e6cc13ed5598b8ef5dfbce7349bd1ad620ed1e7e5ab90a21-Edit_Columns_icon.png" valign="middle" height=“30”> icon to open the _Edit Columns_ panel. Toggle columns on or off and drag rows to reorder them. Click **Apply Changes** to save, or **Reset** to restore the default layout.
 
 | Column             | Visibility                       |
 | ------------------ | -------------------------------- |

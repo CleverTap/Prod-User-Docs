@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to choose and apply the right recommendation strategy to deliver
   relevant items across different user touchpoints.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

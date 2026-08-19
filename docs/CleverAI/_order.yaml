@@ -1,6 +1,7 @@
 - use-clevertap-with-ai
 - clevertapai-terms-disclaimer
 - creator-agents
+- email-template-creator
 - predictions
 - intellinode-1
 - recommendations-1
@@ -9,7 +10,6 @@
 - preferred-channel
 - scribe-1
 - journey-builder
-- email-template-creator
 - clevertap-mcp-server-integration-guide
 - clevertap-mcp-tools-reference
 - automated-ab-test

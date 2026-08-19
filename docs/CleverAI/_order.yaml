@@ -2,6 +2,7 @@
 - clevertapai-terms-disclaimer
 - creator-agents
 - intelligent-agents
+- recommendations-agent
 - predictions
 - recommendations-1
 - analytics-builder
@@ -11,6 +12,5 @@
 - clevertap-mcp-tools-reference
 - catalogs
 - rule-based-filters
-- recommendations-agent
 - lifecycle-agents
 - ask

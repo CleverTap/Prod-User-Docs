@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-CleverTap for Startups is thrilled to announce the _Mid-Year Sale 2026_, featuring an exclusive offer for new customers on the _CleverTap Essentials Plan_. This limited-time promotion gives you _90% off for the first 6 months_ after completing your free trial period. Do not miss this opportunity to experience the full power of CleverTap at a fraction of the cost. To avail of this offer during the offer period, refer to the [Sign-up](https://clevertap.com/clevertap-for-startups-features/) page.
+CleverTap for Startups is thrilled to announce the _Mid-Year Sale 2026_, featuring an exclusive offer for new customers on the _CleverTap Essentials and Core&#x20;_&#x70;lans. This limited-time promotion gives you _90% off for the first 6 months_ after completing your free trial period. Do not miss this opportunity to experience the full power of CleverTap at a fraction of the cost. To avail of this offer during the offer period, refer to the [Sign-up](https://clevertap.com/clevertap-for-startups-features/) page.
 
 <Callout icon="📘" theme="info">
   ### Plan Eligibility
@@ -22,14 +22,14 @@ The following section outlines the primary details of the Mid-Year Sale 2026 off
 
 - **Offer Duration**: July 15, 2026, to August 30, 2026
 - **Offer Name**: Mid-Year Sale (90% Off for the First 6 Months)
-- **Eligibility**: Available to all new CleverTap customers who subscribe to the Essentials Plan (Monthly Subscription) for up to 100,000 Monthly Active Users (MAU).
+- **Eligibility**: Available to all new CleverTap customers who subscribe to the _Essentials and Core plans_ (Monthly Subscription) for up to 100,000 Monthly Active Users (MAU).
 
 # Terms and Conditions
 
 The following terms and conditions apply to the Mid-Year Sale 2026 offer:
 
 - The offer applies to new CleverTap accounts only.
-- Offer valid for _Essentials Plan_ with a _monthly subscription up to 100K MAU_.
+- Offer valid for _Essentials and Core&#x20;_&#x70;lans with a _monthly subscription up to 100K MAU_.
 - The _90% discount_ applies only to the base plan and add-ons, excluding:
 
   - Email BSP (fixed + usage fee)

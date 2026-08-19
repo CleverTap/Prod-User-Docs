@@ -12,7 +12,7 @@ metadata:
 
 The _Stats&#x20;_&#x74;ab provides an overview of how items in a catalog are used across recommendations and engagement channels. It helps you understand the reach and engagement performance of recommendations across channels. Stats are populated only once a recommendation strategy is using the catalog. Until then, both sections show No engagement data available and No recommended products found, with the subtext No strategies are using this catalog yet. This is expected for a newly uploaded catalog.
 
-To create a catalog, refer to [Upload Catalog](doc:upload-catalog).
+To create a catalog, refer to [Upload Product Catalog](doc:upload-product-catalog).
 
 # Engagement Channel-wise Breakdown
 

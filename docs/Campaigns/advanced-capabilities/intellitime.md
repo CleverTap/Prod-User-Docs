@@ -77,8 +77,8 @@ For example, you want to send personalized discount offers to your users based o
 
 This is a two-step process that includes the following steps:
 
-1. [Set Up the IntelliTime Event](https://docs.clevertap.com/docs/best-time#set-up-best-time-event).
-2. [Create a Campaign using the IntelliTime feature](https://docs.clevertap.com/docs/best-time#create-a-campaign-using-the-best-time-feature).
+1. Set Up the IntelliTime Event
+2. Create a Campaign using the IntelliTime feature
 
 ## Set Up IntelliTime Config
 
@@ -179,8 +179,8 @@ The campaign is now ready to publish.
 
 For campaigns following a past behavior segment, messages can be delivered at the best time with any of the following channels: [email](doc:email), [push notifications](doc:push), [web push](doc:web-push), and [SMS](doc:SMS).
 
-1. [Set Up IntelliTime Event](doc:best-time#set-up-best-time-event)
-2. [Create Journeys with IntelliTime Feature](doc:best-time#create-a-campaign-using-the-best-time-feature)
+1. Set Up IntelliTime Event
+2. Create Journeys with IntelliTime Feature
 
 ## Create Journeys with Best Time Feature
 

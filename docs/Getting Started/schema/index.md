@@ -20,7 +20,7 @@ To preserve data sanity, the schema table stores event and user properties in a 
 
 CleverTap uses AI to generate clear, consistent descriptions whenever you click the description field while creating or updating a custom event, event property, or user property. You can accept or dismiss the generated description and edit it further after accepting.
 
-These AI-generated descriptions are also used in advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+These descriptions are also used in advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
 
 For more information, refer to the following sections:
 
@@ -844,8 +844,7 @@ Currently, you can enable or disable tracking for the following events from the 
 
           generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
 
-
-          rc="https://files.readme.i
+          rc="[https://files.readme.i](https://files.readme.i)
         </td>
 
         <td>
@@ -1044,10 +1043,12 @@ Currently, you can enable or disable tracking for the following events from the 
 
      <Image src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" align="center" border={true} />
 
+
   2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select _Disable Property_ from the list. The _Enable property tracking_ popup opens.
 
 
      <Image src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" align="center" border={true} />
+
 
   3. Click **Disable** to confirm your action. The _Property tracking successfully disabled_ message displays on the screen. The status of the event property changes to _Active_. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
 

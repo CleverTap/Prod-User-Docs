@@ -1,5 +1,5 @@
 ---
-title: Upload Catalog
+title: Upload Product Catalog
 excerpt: >-
   Learn how to upload and manage catalogs and feeds in CleverTap to upload,
   sync, and structure product data for personalization, recommendations, and
@@ -11,7 +11,7 @@ metadata:
 ---
 # Overview
 
-Uploading a catalog is the first step to bringing product or content data into CleverTap. A catalog acts as a container for items that can later be used across personalization, recommendations, and engagement use cases.
+Uploading a product catalog is the first step to bringing product or content data into CleverTap. A catalog acts as a container for items that can later be used across personalization, recommendations, and engagement use cases.
 
 Once uploaded, catalogs are populated and updated using one or more feeds. Each feed is processed independently, so updates from one feed apply only to the fields it manages and do not affect data from other feeds. For example, you might use one feed to upload an initial set of products and another feed to keep pricing or availability updated over time.
 

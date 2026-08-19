@@ -40,15 +40,15 @@ To upload a catalog, perform the following steps:
    <Image src="https://files.readme.io/211a695de9baa2eb9124a5aa9f6114f644e08a3bb27ca1bbc2237c22dd60c245-image.png" align="center" caption="Upload Product Catalog" border={true} />
 
 
-| Field        | Description                                                                                                                                                                                                                                                           |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                                                                        |
-| Description  | Add context about the catalog.                                                                                                                                                                                                                                        |
-| Upload Type  | Select how your catalog data is sourced. Choose Device storage, URL sync, or Google merchant sync. You can upload a CSV file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Types](doc:upload-catalog#upload-types). |
+| Field        | Description                                                                                                                                                                                                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Catalog Name | Enter a name to uniquely identify the catalog.                                                                                                                                                                                                                                |
+| Description  | Add context about the catalog.                                                                                                                                                                                                                                                |
+| Upload Type  | Select how your catalog data is sourced. Choose Device storage, URL sync, or Google merchant sync. You can upload a CSV file, fetch data from a URL, or sync from an external source. For more information, refer to [Upload Types](doc:upload-product-catalog#upload-types). |
 
 After a file is uploaded, the system validates the catalog. Once validation succeeds, the file preview section displays a few rows of catalog data, including column headers, so you can review the data before proceeding. This helps ensure the catalog content is correct before upload.
 
-3. [Map data type with Catalog columns](doc:upload-catalog#map-data-type-with-catalog-columns).
+3. [Map data type with Catalog columns](doc:upload-product-catalog#map-data-type-with-catalog-columns).
 4. Create a Feed to populate _your catalog with data_.
 
 Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes available immediately.

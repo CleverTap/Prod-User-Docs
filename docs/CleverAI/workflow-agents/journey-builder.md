@@ -1,5 +1,5 @@
 ---
-title: Journey Builder
+title: 'Journey Builder: Build with AI'
 excerpt: >-
   Learn how to build a Journey from a natural-language prompt using Journey
   Builder agent.

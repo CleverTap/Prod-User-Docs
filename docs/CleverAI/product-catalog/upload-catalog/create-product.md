@@ -20,16 +20,16 @@ Products cannot be created directly from the dashboard. To add products to a cat
 
 System fields are enforced by the API. These fields below correspond to the three fixed columns shown on the dashboard: Product ID, Name, and Image URL.
 
-| Field    | Description                        | Constraints                                                      |
-| -------- | :--------------------------------- | ---------------------------------------------------------------- |
-| Identity | Unique identifier for the product. | Required. Max 500 characters. Must be unique within the catalog. |
-| Name     | Name of the product.               | Required. 1–1,000 characters.                                    |
-| ImageURL | Link to the product image.         | Required for single product creation. Max 2,000 characters.      |
+| Field    | Description                        | Constraints                                                                                |
+| -------- | :--------------------------------- | ------------------------------------------------------------------------------------------ |
+| Identity | Unique identifier for the product. | Required. Max 500 characters. Must be unique within the catalog.                           |
+| Name     | Name of the product.               | Required. 1–1,000 characters.                                                              |
+| ImageURL | Link to the product image.         | Required for single product creation; optional for bulk creation. Maximum 2000 characters. |
 
 <Callout icon="📘" theme="info">
   ### Note
 
-  For bulk product creation, up to 100 products can be included in a single request.
+  For bulk product creation, up to 100 products can be included in a single request, and the request payload must not exceed 500 KB.
 </Callout>
 
 ## Attributes
@@ -55,13 +55,21 @@ The following guidelines apply to product creation and catalog management in Cle
 - Users can create products only through APIs or feeds, not from the dashboard.
 - Missing or invalid system fields result in validation errors during ingestion.
 - Attributes such as price, description, and category are conventions stored in the `attributes` object. The API does not validate or reject a product that omits these values.
+- Attribute values must match the data type declared for that attribute in the catalog schema.
+- Only attributes marked filterable in the catalog schema can be used in campaign catalog rules.
 - When creating products via the API in bulk, up to 100 products can be included per request.
 - Each bulk request must not exceed 500 KB in total payload size.
 - Use feeds for bulk uploads and APIs for real-time or incremental updates.
 
+<Callout icon="📘" theme="info">
+  ### Updating attributes replaces the whole object
+
+  Both the update APIs and feeds replace a product's entire attributes object rather than merging individual keys. To change one attribute, send every attribute you want to keep. For more information, refer to [Create Feed](doc:producy-catalog/create-feed).
+</Callout>
+
 # Manage Catalog Products
 
-The _Product_ tab displays all products within a selected catalog. It provides tools for searching, filtering, and inspecting individual catalog items.
+The _Items&#x20;_&#x74;ab displays all products within the selected catalog, with search and an item detail panel.
 
 ## Product List
 
@@ -69,11 +77,11 @@ The product list displays all catalog items in a paginated table.
 
 The following table describes each column:
 
-| Column       | Description                                        |
-| ------------ | -------------------------------------------------- |
-| Product Name | The name of the product as defined in the catalog. |
-| ID           | The unique identifier assigned to the product.     |
-| ImageURL     | The URL of the product image.                      |
+| Column    | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| Name      | The name of the product as defined in the catalog.                |
+| Item ID   | The product's identity, its unique identifier within the catalog. |
+| Image URL | The link to the product image.                                    |
 
 ### Download Catalog
 
@@ -91,13 +99,13 @@ When the export is complete, you receive an email notification. Click the **Read
 
 ## Product Details
 
-Selecting a product from the list opens the _Product Detail_ panel on the right. The panel displays the product name, product image, and two subsections: _Details_ and _Properties_.
+Selecting a product from the list opens the _Selected Item_ panel on the right. The panel shows the product name and image, followed by two subsections: _Upload Details_ and _More Details_.
 
 To collapse the panel, click the arrow at the top.
 
-### Details
+### Upload Details
 
-The _Details_ subsection shows system-level metadata for the selected product.
+The _Upload_ _Details_ subsection shows system-level metadata for the selected product.
 
 | Field      | Description                                                 |
 | ---------- | ----------------------------------------------------------- |
@@ -107,12 +115,12 @@ The _Details_ subsection shows system-level metadata for the selected product.
 <Callout icon="📘" theme="info">
   ### Note
 
-  Timestamps are displayed in Unix epoch format.
+  These timestamps are shown as Unix epoch values in milliseconds, for example 1786000117000. Divide by 1000 to convert to epoch seconds.
 </Callout>
 
-### Properties
+### More Details
 
-The _Properties_ subsection shows the custom attributes stored in the `attributes` object for the selected product. The fields displayed here vary depending on the catalog's schema.
+The _More Details&#x20;_&#x73;ubsection shows the custom attributes stored in the `attributes` object for the selected product. The fields displayed here vary depending on the catalog's schema.
 
 The following image shows the Product Details:
 

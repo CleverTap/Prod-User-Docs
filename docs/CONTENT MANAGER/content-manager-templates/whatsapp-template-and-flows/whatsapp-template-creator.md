@@ -71,7 +71,7 @@ Consider an example where you want to create a limited-time offer template annou
 
 ## Configure Content Settings
 
-[Content Settings](doc:scribe1#content-settings) let you control how the Template Builder Agent generates your template content before you prompt it.
+[Content Settings](doc:scribe-1#content-settings) let you control how the Template Builder Agent generates your template content before you prompt it.
 
 ## Customize Templates for Brand Consistency
 

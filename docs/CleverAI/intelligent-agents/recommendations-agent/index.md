@@ -1,5 +1,5 @@
 ---
-title: Recommendations Agent
+title: Recommendations
 excerpt: >-
   Learn how to get started with setting up recommendations and personalizing
   engagement using them effectively

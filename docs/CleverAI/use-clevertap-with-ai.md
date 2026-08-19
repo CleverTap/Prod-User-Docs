@@ -43,11 +43,11 @@ Generates on-brand, contextual content in seconds: Copy, Images, and Templates.
 Continuously evaluates and optimizes performance at the impression level: timing, channel, path, variant, and audience decisions.
 
 <Cards>
-  <Card title="IntelliTime" href="https://staging.docs.user.clevertap.net/docs/best-time">
+  <Card title="IntelliTime" href="https://docs.clevertap.com/docs/best-time">
 
   </Card>
 
-  <Card title="IntelliChannel" href="https://staging.docs.user.clevertap.net/docs/intellichannel">
+  <Card title="IntelliChannel" href="https://docs.clevertap.com/docs/intellichannel">
 
   </Card>
 
@@ -55,15 +55,15 @@ Continuously evaluates and optimizes performance at the impression level: timing
 
   </Card>
 
-  <Card title="IntelliAB" href="https://staging.docs.user.clevertap.net/docs/intelliab">
+  <Card title="IntelliAB" href="https://docs.clevertap.com/docs/intelliab">
 
   </Card>
 
-  <Card title="Recommendations" href="https://staging.docs.user.clevertap.net/docs/recommendations-ai">
+  <Card title="Recommendations" href="https://docs.clevertap.com/docs/recommendations-agent">
 
   </Card>
 
-  <Card title="Predictions" href="https://staging.docs.user.clevertap.net/docs/predictions">
+  <Card title="Predictions" href="https://docs.clevertap.com/docs/predictions">
 
   </Card>
 </Cards>
@@ -73,15 +73,15 @@ Continuously evaluates and optimizes performance at the impression level: timing
 Automates core platform workflows to reduce time-to-live: Segment creation, Journey building, Analytics.
 
 <Cards>
-  <Card title="Segment Builder" href="https://staging.docs.user.clevertap.net/docs/segment-builder">
+  <Card title="Segment Builder" href="https://docs.clevertap.com/docs/segment-builder">
 
   </Card>
 
-  <Card title="Journey Builder" href="https://staging.docs.user.clevertap.net/docs/journey-builder">
+  <Card title="Journey Builder" href="https://docs.clevertap.com/docs/journey-builder">
 
   </Card>
 
-  <Card title="Analytics Builder" href="https://staging.docs.user.clevertap.net/docs/analytics-builder">
+  <Card title="Analytics Builder" href="https://docs.clevertap.com/docs/analytics-builder">
 
   </Card>
 
@@ -89,11 +89,11 @@ Automates core platform workflows to reduce time-to-live: Segment creation, Jour
 
   </Card>
 
-  <Card title="NPS Insights">
+  <Card title="NPS Insights" href="https://docs.clevertap.com/docs/nps-insights">
 
   </Card>
 
-  <Card title="CleverTap MCP" href="https://staging.docs.user.clevertap.net/docs/clevertap-mcp">
+  <Card title="CleverTap MCP" href="https://docs.clevertap.com/docs/clevertap-mcp">
 
   </Card>
 </Cards>

@@ -1,5 +1,5 @@
 ---
-title: Automated A/B Test
+title: IntelliAB
 excerpt: >-
   Learn how to configure AI-powered A/B Test for Push campaigns that
   continuously learns and shifts traffic toward your best-performing message in

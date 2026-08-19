@@ -62,7 +62,7 @@ For API/URL and Google Sync feeds, fill in the following fields:
 | Source URL     | The URL from which CleverTap fetches the catalog data.                                                                         |
 | Sync Frequency | The interval at which CleverTap re-fetches data from the source URL. Set a value and select the unit: minutes, hours, or days. |
 
-For further details on configuring upload types, refer to [Upload Catalog](doc:upload-catalog).
+For further details on configuring upload types, refer to [Upload Product Catalog](doc:upload-product-catalog).
 
 ## Save the Feed
 

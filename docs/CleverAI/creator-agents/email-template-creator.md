@@ -10,75 +10,102 @@ metadata:
 ---
 # Overview
 
-AI-powered Email Campaign Agent helps marketers create email templates and campaigns faster using generative AI. Instead of starting from a blank canvas, you can describe your intent in natural language and let AI generate an email template that you can further customize using the visual editor. You can use this feature when:
+An AI-powered email template creator agent helps marketers create email templates and campaigns faster using generative AI. Instead of starting from a blank canvas, you can describe your intent in natural language and let AI generate an email template that you can further customize using the visual editor.&#x20;
 
-* Quickly generate email copy and layout ideas.
-* Experiment with tone, messaging, or CTAs.
-* Accelerate campaign creation without writing content from scratch.
+Use this feature to:
+
+- Generate email copy and layout ideas quickly.
+- Experiment with tone, messaging, or CTAs.
+- Accelerate campaign creation without writing content from scratch.
 
 This experience is designed to reduce time-to-live while keeping marketers in full control of the final email.
 
-# Create Campaign Using Email Campaign Agent
+<Callout icon="📘" theme="info">
+  #### Private Beta
 
-This section walks through creating an email template using an example, so you can understand how the Email Campaign Agent fits into your workflow.
+  Email Template Creator agent is currently released in Private Beta and is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+</Callout>
+
+# Create Campaign Using Email Template Creator Agent
+
+This section walks through creating an email template with an example to help you understand how the agent fits into your workflow.
 
 Consider an example where you want to create a promotional email announcing a new feature to existing users. To create an email template, perform the following steps:
 
 1. Go to the _Campaigns_ page from the CleverTap dashboard.
+
 2. Select _Email_ from the list of Messaging Channels.
+
 3. Go to the _What_ section and click **Go to Editor**.
+
 4. Select _Drag and Drop_ editor.
 
-   <Image align="center" border={true} caption="Access Email Campaign Agent" src="https://files.readme.io/268194e9dafcf4c0bf2e2169f992e65fa972c6b50be096a24d5d2f15603dd3f0-Access_Email_Campaign_Agent.gif" />
+
+   <Image src="https://files.readme.io/268194e9dafcf4c0bf2e2169f992e65fa972c6b50be096a24d5d2f15603dd3f0-Access_Email_Campaign_Agent.gif" align="center" caption="Access Email Template Creator Agent" border={true} />
+
+
 5. In the AskAI section, enter a prompt that explains what you want to create. For example,
 
-   <br />
-
    ```
-   Create a promotional email announcing a new Instagram analytics feature for existing customers. Use a friendly but professional tone. Highlight one key benefit and include a clear call-to-action to explore the feature.
+   Create a promotional email for a social media platform announcing a new analytics feature for existing customers. Use a friendly but professional tone. Highlight one key benefit and include a clear call-to-action to explore the feature.
    ```
 
-   <Image align="center" border={true} caption="Generate Template Using Email Campaign Agent" src="https://files.readme.io/dd198e9e429c75331f0e7f261dbe563620276941e693865a3cb7e1ce99914d1c-Generate_Template_Using_Email_Campaign_Agent.png" />
+
+   <Image src="https://files.readme.io/48aeed6cba8296d549a239a65c1bb25523ecbf56f75611959116b03add906dc1-Campaign_using_Template_Buileder_Agent.gif" align="center" caption="Generate Template Using Email Template Creator Agent" border={true} />
+
+
+   <Callout icon="📘" theme="info">
+     #### Template Images in Email Campaign
+
+     Images generated as part of email campaigns count towards monthly image generation limit of 100.&#x20;
+   </Callout>
+
 6. Review the generated template and refine the template using follow-up prompts. For example, "Make the tone friendly", "Change the CTA to focus on urgency", and so on.
-7. (Optional) Customize the layout in the Email Editor after the template is generated. For example,
-   * Edit text directly in the visual editor.
-   * Add or remove sections, images, or buttons.
-   * Replace AI-generated copy with custom messaging where needed.
 
-Save the generated template to reuse individual sections or the entire template in future campaigns.
+7. (Optional) Customize the layout in the Email Editor after the template is generated. For example,
+   - Edit text directly in the visual editor.
+   - Add or remove sections, images, or buttons.
+   - Replace AI-generated copy with custom messaging where needed.
+
+Save the generated template to reuse individual sections or the entire template in future campaigns. You can also retrieve any previous version by clicking **Click to restore this version**.&#x20;
+
+
+<Image src="https://files.readme.io/f41c4534b925feb27ef6fdea179eb5c9b857dc5cc87917ebd67ffef16bbac2e8-Click_to_restore_version_1.gif" align="center" caption="Click to Restore Version" border={true} />
+
 
 # Customize Template for Brand Consistency
 
-Email Campaign Agent supports integration with CleverTap’s creative tool, such as Brand Kit, to help you maintain consistent branding across all messages. Using this feature, you can apply pre-defined visual assets, color palettes, and typography to maintain brand consistency across campaign messages. For more information, refer to [Brand Kits](doc:brand-kit).
+Email Template Creator agent supports integration with [Brand Kit](doc:brand-kit) to help you maintain consistent branding across all messages. Using this feature, you can apply pre-defined visual assets, color palettes, and typography to maintain brand consistency across campaign messages.&#x20;
 
-<Image align="center" border={true} caption="Customize Template Using Brand Kit for Brand Consistency" src="https://files.readme.io/a8d1e54bd1e5d7f2abc905fd8507627f460f83dd71320afda2754ade8c394705-Access_Brand_Kit.png" />
+
+<Image src="https://files.readme.io/a8d1e54bd1e5d7f2abc905fd8507627f460f83dd71320afda2754ade8c394705-Access_Brand_Kit.png" align="center" caption="Customize Template Using Brand Kit for Brand Consistency" border={true} />
+
 
 # Manage Generated Templates
 
-All AI-generated templates will be saved under the _Saved Templates_ section of the email editor and can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads). Also, the images generated as a part of this process can be accessed via [AI Generated Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-generated-images-folder).
+All AI-generated templates will be saved under the _Saved Templates_ section of the email editor, and images generated as a part of this process can be accessed via [AI Generated Images Folder](doc:image-creator).
 
-## Threads
+# Threads
 
-Once you start generating Templates, it automatically saves your sessions under the ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
+Once you start generating Templates, it automatically saves your sessions under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20"> panel. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
 
-<Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/e18467fe443fb9cfb9105b317084b72c3fa08175240f3a71972d6b8d07a060d1-All_Email_Template_Threads.png" />
+
+<Image src="https://files.readme.io/e18467fe443fb9cfb9105b317084b72c3fa08175240f3a71972d6b8d07a060d1-All_Email_Template_Threads.png" alt="All Threads" align="center" caption="All Threads" border={true} />
+
 
 ### How Threads Work
 
-Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that your history remains personalized and relevant. All threads for your account appear in the **All Threads** popup. A thread becomes the context for your next generation, allowing Clever.AI to remember your prior visual style, brand preferences, or edits. They are not tied to specific campaigns; they persist across multiple campaigns for seamless continuity.
+Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that your history remains personalized and relevant. All threads for your account appear in the **All Threads** popup. A thread becomes the context for your next generation, allowing CleverAI to remember your prior visual style, brand preferences, or edits. They are not tied to specific campaigns; they persist across multiple campaigns for seamless continuity.
 
-If multiple users from the same account use AI tools:
-
-* Each user sees only their own threads and the latest template generation session that they have participated in.
-* Threads are separate for Segmentation, Analytics, Designer Agent, and Copywriter Agent, even under the same account.
+If multiple users from the same account use AI tools, each user sees only their own threads and the latest template generation session that they have participated in.
 
 ### Manage Threads
 
 From the **All Threads** view, you can:
 
-* Reopen an older thread to continue generating or editing templates using the same context.
-* Review and compare multiple template versions created during that session.
-* Restore or reuse previously generated templates without regenerating them.
+- Reopen an older thread to continue generating or editing templates using the same context.
+- Review and compare multiple template versions created during that session.
+- Restore or reuse previously generated templates without regenerating them.
 
 <Callout icon="💡" theme="default">
   #### **Tip**
@@ -86,4 +113,18 @@ From the **All Threads** view, you can:
   For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing template while maintaining your brand styling and earlier visual tone.
 </Callout>
 
-<br />
+# Additional Resources
+
+<Cards>
+  <Card title="Brand Kits" target="https://docs.clevertap.com/docs/brand-kit">
+
+  </Card>
+
+  <Card title="Image Creator">
+
+  </Card>
+
+  <Card title="CleverAI Terms & Disclaimer" target="https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms">
+
+  </Card>
+</Cards>

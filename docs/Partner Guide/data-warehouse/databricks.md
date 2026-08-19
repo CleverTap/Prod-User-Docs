@@ -14,52 +14,57 @@ Configuring Databricks with CleverTap enables seamless data import, ensuring syn
 
 # Quick Start Guide for Existing Users
 
-<Accordion title="Expand for quick setup if you have previously configured a Databricks workspace and are familiar with the CleverTap dashboard. If you are setting up Databricks for the first time, skip to Prerequisites for Integration below.">
-  ## Prerequisites
+<details>
+  <summary>Expand for quick setup if you have previously configured a Databricks workspace and are familiar with the CleverTap dashboard. If you are setting up Databricks for the first time, skip to Prerequisites for Integration below.</summary>
 
-  Before you begin, ensure you have the following details:
+  <hr />
 
-  * **Connection Name**: A unique name to identify this configuration in CleverTap.
-  * **Host**: Databricks workspace domain (found under *SQL* > *Warehouses* > *Connection Details*).
-  * **HTTP Path**: HTTP path of the target SQL Warehouse (found under *SQL* > *Warehouses* >
-    *Connection Details*).
-  * **Personal Access Token (PAT)**: Token authorized to access the SQL Warehouse.
-  * **Catalog**: The Unity Catalog for CleverTap data operations.
-  * **Schema**: The specific schema within the catalog for CleverTap tables.
-  * **Port**: HTTPS port (defaults to 443 if not specified)
+## Prerequisites
 
-    ## Configure Databricks Credentials in CleverTap
+Before you begin, ensure you have the following details:
 
-    To set up the Databricks credentials in CleverTap, perform the following steps:
+- **Connection Name**: A unique name to identify this configuration in CleverTap.
+- **Host**: Databricks workspace domain (found under _SQL_ > _Warehouses_ > _Connection Details_).
+- **HTTP Path**: HTTP path of the target SQL Warehouse (found under _SQL_ > _Warehouses_ >
+  _Connection Details_).
+- **Personal Access Token (PAT)**: Token authorized to access the SQL Warehouse.
+- **Catalog**: The Unity Catalog for CleverTap data operations.
+- **Schema**: The specific schema within the catalog for CleverTap tables.
+- **Port**: HTTPS port (defaults to 443 if not specified)
 
-  1. Go to *CleverTap Dashboard* > *Settings* > *Partners* > *Databricks*.
+  ## Configure Databricks Credentials in CleverTap
 
-  2. Click *Add Database*.
+  To set up the Databricks credentials in CleverTap, perform the following steps:
 
-  3. Enter the following details: *Host*, *HTTP Path*, *Personal Access Token (PAT)*,*Catalog*, *Schema*, and *Port*.
+1. Go to _CleverTap Dashboard_ > _Settings_ > _Partners_ > _Databricks_.
 
-  4. Click **Test Connection** to verify thev configuration and click **Save** to store the configuration.
+2. Click _Add Database_.
 
-  After setting up the configuration, you can [import](doc:data-warehouse-import) data between Databricks and CleverTap.
-</Accordion>
+3. Enter the following details: _Host_, _HTTP Path_, _Personal Access Token (PAT)_,_Catalog_, _Schema_, and _Port_.
+
+4. Click **Test Connection** to verify thev configuration and click **Save** to store the configuration.
+
+After setting up the configuration, you can [import](doc:data-warehouse-import) data between Databricks and CleverTap.
+
+</details>
 
 # Prerequisites for Integration
 
 If you are setting up Databricks for the first time, ensure you have the following before proceeding with the CleverTap configuration:
 
-* CleverTap **Access** to configure Databricks.
-* **Databricks Workspace Details**:
-  * **Host**: Workspace domain (for example, `adb1234567890123456.17.azuredatabricks.net`). Do not include the protocol (https://).
-  * **HTTP Path**: HTTP path of the target SQL Warehouse or endpoint (for example, `/sql/1.0/warehouses/abc123def456`).
-  * **Personal Access Token (PAT)**: Token authorized to access the SQL Warehouse. Ensure the token has an appropriate lifetime (recommended: 90 days or more for production).
-  * **Catalog and Schema**: Unity Catalog objects where data will be read.
-  * **Port**: HTTPS port used to reach Databricks. Defaults to 443 if not specified. Customers behind corporate proxies may need to consult their network administrator for the correct port.
-* **Databricks Identity and Permissions**
+- CleverTap **Access** to configure Databricks.
+- **Databricks Workspace Details**:
+  - **Host**: Workspace domain (for example, `adb1234567890123456.17.azuredatabricks.net`). Do not include the protocol (https\://).
+  - **HTTP Path**: HTTP path of the target SQL Warehouse or endpoint (for example, `/sql/1.0/warehouses/abc123def456`).
+  - **Personal Access Token (PAT)**: Token authorized to access the SQL Warehouse. Ensure the token has an appropriate lifetime (recommended: 90 days or more for production).
+  - **Catalog and Schema**: Unity Catalog objects where data will be read.
+  - **Port**: HTTPS port used to reach Databricks. Defaults to 443 if not specified. Customers behind corporate proxies may need to consult their network administrator for the correct port.
+- **Databricks Identity and Permissions**
 
   The identity used to generate the PAT (user or service principal) must have, at minimum:
 
-  * **USAGE** on the selected **catalog** and **schema**.
-  * **SELECT** on tables you plan to import (optionally, grant on future tables if your process creates tables later).
+  - **USAGE** on the selected **catalog** and **schema**.
+  - **SELECT** on tables you plan to import (optionally, grant on future tables if your process creates tables later).
 
 <Callout icon="📘" theme="info">
   **Security**
@@ -68,16 +73,15 @@ If you are setting up Databricks for the first time, ensure you have the followi
 </Callout>
 
 <Callout icon="📘" theme="info">
-  **IP Whitelisting**  
-  To ensure seamless communication between CleverTap and your Databricks workspace, whitelist the required CleverTap IP ranges in your network and Databricks workspace settings. For the complete list, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges).
+  **IP Whitelisting**<br />To ensure seamless communication between CleverTap and your Databricks workspace, whitelist the required CleverTap IP ranges in your network and Databricks workspace settings. Refer to [CleverTap IP Ranges](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration) for the complete list.
 </Callout>
 
 # Set Up Databricks for Integration
 
 You can set up Databricks using one of the following ways:
 
-* For new users who need to provision Databricks resources from scratch: [Create New Databricks Setup](doc:databricks#create-new-databricks-setup)
-* For users who already have configured resources in Databricks: [Use Existing Databricks Credentials](doc:databricks#use-existing-databricks-credentials)
+- For new users who need to provision Databricks resources from scratch: [Create New Databricks Setup](doc:databricks#create-new-databricks-setup)
+- For users who already have configured resources in Databricks: [Use existing Databricks Credentials](doc:databricks#use-existing-databricks-credentials)
 
 ## Create New Databricks Setup
 
@@ -95,7 +99,7 @@ The following table explains each Databricks component and its role in the integ
 To create each resource, perform the following steps:
 
 1. [Create a Catalog](doc:databricks#create-catalog)
-2. [Create SQL Warehouse](doc:databricks#create-sql-warehouse)
+2. [Create a SQL Warehouse](doc:databricks#create-sql-warehouse)
 3. [Create Personal Access Token](doc:databricks#create-personal-access-token)
 4. [Create a Schema](doc:databricks#create-schema)
 5. [Configure Permissions](doc:databricks#configure-permissions)
@@ -105,7 +109,7 @@ To create each resource, perform the following steps:
 To get your Databricks data in CleverTap, you first need to create a Unity Catalog.
 
 <Callout icon="📘" theme="info">
-  #### Prerequisite
+  **Prerequisite**
 
   Creating a catalog requires metastore admin privileges or the CREATE CATALOG permission. Contact your Databricks workspace administrator if you do not have this permission.
 </Callout>
@@ -150,7 +154,7 @@ To create a SQL Warehouse via the Databricks UI, perform the following steps:
 6. Copy the **Host** and **HTTP Path** values. You will need these when configuring CleverTap.
 
 <Callout icon="📘" theme="info">
-  #### Note
+  ### Note
 
   Enable Auto Stop to control costs. Databricks charges on a per-second billing model, so setting Auto Stop to 10 minutes ensures the warehouse does not run when idle. Ensure the PAT identity has USE permission on this warehouse.
 </Callout>
@@ -160,17 +164,53 @@ To create a SQL Warehouse via the Databricks UI, perform the following steps:
 Create or identify the Databricks identity you will use with CleverTap, then generate a Personal Access Token (PAT). To generate a PAT, perform the following steps:
 
 1. In Databricks, click your **username** in the top-right corner of the workspace.
+
 2. Select **Settings** from the dropdown menu.
+
 3. Under **User**, select **Developer**.
+
 4. In the **Access Tokens** section, click **Manage**.
+
 5. Click **Generate New Token**.
+
 6. Enter an optional **Comment** (for example, `CleverTap Integration`) to identify the token.
-7. Set the **Lifetime** in days. For production integrations, a minimum of 90 days is recommended. Leave blank for no expiration.
-8. Click **Generate**.
-9. Copy the token value immediately and store it securely. **The token is displayed only once**. You will paste it in the Personal Access Token (PAT) field in CleverTap.
+
+7. Set the **Lifetime** in days. For production integrations, a minimum of 90 days is recommended. The maximum lifetime for a PAT is 730 days.
+
+8. If your workspace has scoped PATs enabled (Beta), select the following scope:
+
+   - `sql`
+
+   This is the only scope required. CleverTap connects via JDBC (Java Database Connectivity) to your SQL Warehouse and uses standard SQL commands (`SHOW CATALOGS`, `SHOW SCHEMAS`, `SHOW TABLES`, `DESCRIBE`, `SELECT`) for all operations, all of which are covered by the `sql` scope.
+
+   If you do not see a scope selector, your workspace does not have the Beta enabled. Proceed without selecting a scope and the token will inherit the user's permissions.
+
+9. Ensure the user or service principal the PAT belongs to has the following grants:
+
+   **Unity Catalog grants**
+
+   - `USE CATALOG` on the catalog
+   - `USE SCHEMA` on the schema
+   - `SELECT` on each table or view CleverTap needs to import
+
+   **Compute access**
+
+   - `CAN USE` on the SQL Warehouse CleverTap will connect to
+
+   - That is the full set. We recommend creating a dedicated service principal for this integration and limiting `SELECT` grants to only the specific tables or views you want CleverTap to import, which is the cleanest approach from a least-privilege standpoint.
+
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     We recommend creating a dedicated service principal for this integration and limiting `SELECT` grants to only the specific tables or views you want CleverTap to import.
+   </Callout>
+
+10. Click **Generate**.
+
+11. Copy the token value immediately and store it securely. **The token is displayed only once**. You will paste it in the Personal Access Token (PAT) field in CleverTap.
 
 <Callout icon="🚧" theme="warn">
-  #### Token Expiration
+  ### **Token Expiration**
 
   PATs expire based on the lifetime you set during creation. When a token expires, the CleverTap connection will fail, and imports will stop. Monitor token expiration dates and regenerate tokens before they expire. Consider setting a calendar reminder.
 </Callout>
@@ -224,10 +264,10 @@ GRANT SELECT ON SCHEMA clevertap_catalog.clevertap_schema TO 'clevertap_user';
 ```
 
 <Callout icon="📘" theme="info">
-  #### Granular Table Permissions
+  **Granular Table Permissions**
 
   If you prefer to grant access to specific tables rather than the entire schema, use the following command instead: `GRANT SELECT ON TABLE clevertap_catalog.clevertap_schema.table_name TO
-                                          clevertap_user` Repeat for each table that CleverTap needs to access.
+                          clevertap_user` Repeat for each table that CleverTap needs to access.
 </Callout>
 
 If the PAT identity also needs access to the SQL Warehouse, ensure the warehouse permissions are configured:
@@ -246,13 +286,13 @@ SHOW GRANTS ON SCHEMA clevertap_catalog.clevertap_schema;
 
 ## Use Existing Databricks Credentials
 
-If you already have Databricks set up, perform the following steps to find each detail in the Databricks workspace.
+If you already have Databricks set up, perform the following steps to find each detail on the Databricks workspace.
 
-* [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse)
-* [Create or Retrieve PAT](doc:databricks#create-or-retrieve-pat)
-* [Find Existing Catalog](doc:databricks#find-existing-catalog)
-* [Find Existing Schema](doc:databricks#find-existing-schema)
-* [Verify Existing Permissions](doc:databricks#verify-existing-permissions)
+- [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse)
+- [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat)
+- [Find Existing Catalog](doc:databricks#find-existing-catalog)
+- [Find Existing Schema](doc:databricks#find-existing-schema)
+- [Verify Existing Permissions](doc:databricks#verify-existing-permissions)
 
 ### Obtain Host and HTTP Path from SQL Warehouse
 
@@ -265,7 +305,7 @@ To configure the integration, you need your Databricks Host and the HTTP Path of
 5. Copy the Host value (for example, `adb-1234567890123456.17.azuredatabricks.net`).
 6. Copy the HTTP Path value (for example, `/sql/1.0/warehouses/abc123def456`).
 
-### Create or Retrieve PAT
+### Create or Retrieve a PAT
 
 To authenticate CleverTap with Databricks, generate a Personal Access Token:
 
@@ -275,7 +315,7 @@ To authenticate CleverTap with Databricks, generate a Personal Access Token:
 4. Copy the token value immediately and store it securely. **The token is displayed only once.**
 
 <Callout icon="📘" theme="info">
-  #### Token Rotation
+  **Token Rotation**
 
   If your organization requires periodic credential rotation, generate a new PAT before the current one expires. Update the CleverTap connection with the new token to avoid import interruptions. Refer to Databricks documentation on Personal Access Tokens for detailed guidance.
 </Callout>
@@ -321,11 +361,13 @@ If the required permissions (USAGE and SELECT) are not present, refer to the [Co
 
 You have already prepared your Databricks environment and gathered the required values (Host, HTTP Path, Personal Access Token, Catalog, and optionally Schema and Port). In this section, you will add a Databricks connection in CleverTap, enter these parameters, validate the connection, and proceed to create an import.
 
-<Image align="center" border={true} caption="Connection Details for Databricks" src="https://files.readme.io/d272d6e1260af455b54f219aa305af9d54e268051ba7a3901a686a2b2405a47a-databricks.png" />
+
+<Image src="https://files.readme.io/d272d6e1260af455b54f219aa305af9d54e268051ba7a3901a686a2b2405a47a-databricks.png" align="center" caption="Connection Details for Databricks" border={true} />
+
 
 ## Connection Details for Databricks
 
-To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog](doc:databricks#create-new-databricks-setup), [SQL Warehouse](doc:databricks#create-sql-warehouse), [Personal Access Token](doc:databricks#create-personal-access-token), and [Schema](doc:databricks#create-schema) or [Use existing Databricks credentials](doc:databricks#use-existing-databricks-credentials) and configure the following:
+To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog](doc:databricks-integration#create-new-databricks-setup), [SQL Warehouse](doc:databricks#create-sql-warehouse), [Personal Access Token](doc:databricks#create-personal-access-token), and [Schema](doc:databricks#create-schema) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:
 
 | Field                       | Description                                                                                                                                                                                                                                                 |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -333,7 +375,7 @@ To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ a
 | Host                        | The Databricks workspace host (domain only; do not include the protocol). For example: `adb-1234567890123456.17.azuredatabricks.net`. Refer to [Obtain Host and HTTP Path from SQL Warehouse](doc:databricks#obtain-host-and-http-path-from-sql-warehouse). |
 | Port                        | HTTPS port used to reach Databricks. If a port is specified, CleverTap uses it; otherwise, the connection`defaults` to `443`.                                                                                                                               |
 | HTTP Path                   | The HTTP path of the target SQL Warehouse endpoint in Databricks. For example: `/sql/1.0/warehouses/abc123def456`.                                                                                                                                          |
-| Personal Access Token (PAT) | The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve PAT](doc:databricks#create-or-retrieve-pat). Ensure the token has not expired.                                                                                      |
+| Personal Access Token (PAT) | The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT](doc:databricks#create-or-retrieve-a-pat). Ensure the token has not expired.                                                                                  |
 | Catalog                     | The Unity Catalog used for CleverTap data operations.                                                                                                                                                                                                       |
 | Schema                      | The specific schema within the catalog that contains the tables used by CleverTap.                                                                                                                                                                          |
 
@@ -342,41 +384,41 @@ To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ a
 After entering all connection details, complete the setup:
 
 1. Click Test Connection to verify that the workspace, HTTP Path, token, and privileges are correct.
-   * A successful test confirms that CleverTap can reach your Databricks workspace and access the specified catalog and schema.
-   * A failed test indicates an issue with one or more parameters. For common errors, refer to [Troubleshooting](doc:databricks#troubleshooting).
-2. Click **Save** to store the connection details.
+   1. A successful test confirms that CleverTap can reach your Databricks workspace and access the specified catalog and schema.
+   2. A failed test indicates an issue with one or more parameters. Refer to the [Troubleshooting](doc:databricks#troubleshooting) section below for common errors.
+2. Click Save to store the connection details.
 3. After saving, navigate to the Import Connections dashboard and click [Create Import](doc:data-warehouse-import) to set up your first data import.
 
-# Troubleshooting
+## Troubleshooting
 
 If the Test Connection fails, use the following table to identify and resolve common issues:
 
-| Symptom                          | Likely Cause                                            | Resolution                                                                             |
-| :------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------- |
-| Connection timeout               | Network/firewall is blocking the connection             | Ensure CleverTap IPs are whitelisted. Verify the Host value does not include https://. |
-| Authentication failed            | Invalid or expired PAT                                  | Generate a new PAT in Databricks and update the connection in CleverTap.               |
-| Warehouse not found or inactive  | SQL Warehouse is stopped, or the HTTP Path is incorrect | Start the warehouse in Databricks or verify the HTTP Path from Connection Details.     |
-| Catalog or schema not accessible | Missing USAGE permission                                | Grant USAGE on the catalog and schema to the PAT identity. See Configure Permissions.  |
-| SELECT permission denied         | Missing SELECT permission on tables                     | Grant SELECT on the schema or specific tables. See Configure Permissions.              |
+| Symptom                          | Likely Cause                                            | Resolution                                                                              |
+| :------------------------------- | :------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
+| Connection timeout               | Network/firewall is blocking the connection             | Ensure CleverTap IPs are whitelisted. Verify the Host value does not include https\://. |
+| Authentication failed            | Invalid or expired PAT                                  | Generate a new PAT in Databricks and update the connection in CleverTap.                |
+| Warehouse not found or inactive  | SQL Warehouse is stopped, or the HTTP Path is incorrect | Start the warehouse in Databricks or verify the HTTP Path from Connection Details.      |
+| Catalog or schema not accessible | Missing USAGE permission                                | Grant USAGE on the catalog and schema to the PAT identity. See Configure Permissions.   |
+| SELECT permission denied         | Missing SELECT permission on tables                     | Grant SELECT on the schema or specific tables. See Configure Permissions.               |
 
 # FAQs
 
-This section answers common questions related to managing BigQuery connections and imports in CleverTap.
+This section answers common questions related to managing BigQuery connections and imports within CleverTap.
 
 ### How can I delete a connection that has running imports?
 
-Go to _Import Connections_ and select the connection. Click on **Delete** and review any active imports. If there are any imports in _Ready_, _Schedule_, _paused_, or _running_ states, stop all active imports associated with that connection. Ensuring all imports are stopped, click **Delete** again and confirm your action.
+Go to _Import Connections_, select the connection, click **Delete**, and review the running imports. If there are any imports in ready, scheduled, paused, or running state, it stops all these active imports associated with the connection. Once done, click **Delete** and confirm.
 
 ### How can I filter import connections?
 
 Use the filters on _Import Connections_ to refine the list:
 
-* **Connected On**: Filter by creation date.
-* **Connected By**: Filter by the user who created the connection.
+- **Connected On**: Filter by creation date.
+- **Connected By**: Filter by the user who created the connection.
 
 ### How can I whitelist IPs for CleverTap integration?
 
-To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges for Import](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
+To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for import integrations, refer to [CleverTap IP Ranges](doc:import-faqs#how-can-i-whitelist-ips-for-clevertap-integration).
 
 ### What happens when my PAT expires?
 
@@ -385,9 +427,3 @@ When the Personal Access Token expires, CleverTap will no longer be able to auth
 ### Can I use the same Databricks connection for multiple imports?
 
 Yes. A single Databricks connection in CleverTap can be used to create multiple import configurations, each reading from different tables within the same catalog and schema
-
-# Next Steps
-
-<Cards>
-  <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
-</Cards>

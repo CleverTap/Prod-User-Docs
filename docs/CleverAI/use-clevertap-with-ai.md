@@ -7,7 +7,7 @@ metadata:
 ---
 # Overview
 
-CleverAI brings AI into CleverTap in two ways.
+CleverAI<sup>TM</sup> brings AI into CleverTap in two ways.
 
 - **Built-in agents**: They work directly inside your dashboard. They generate content, make optimization decisions, and automate core workflows, so you spend less time on manual setup and more time on strategy. Each agent sits in one of three layers depending on what it is doing for you: **Creator Agents generate content, Intelligent Agents make optimization decisions, and Workflow Agents automate the busywork**.
 - **CleverTap MCP**: It connects Claude, ChatGPT, and Cursor directly to your CleverTap account, so you can create segments, pull analytics, and check campaign performance in natural language without switching tabs or manually exporting data. Access through MCP mirrors your dashboard permissions.

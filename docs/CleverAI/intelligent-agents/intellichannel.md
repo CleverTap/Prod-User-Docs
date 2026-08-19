@@ -4,7 +4,7 @@ excerpt: >-
   Learn how IntelliChannel ensures every user gets messages through the channel
   they engage with most, maximizing reach and response.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

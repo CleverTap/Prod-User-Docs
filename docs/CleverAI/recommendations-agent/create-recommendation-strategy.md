@@ -14,9 +14,9 @@ A recommendation strategy controls which catalog items are shown to each user an
 
 When you create a strategy, you define:
 
-* Which strategy type to use
-* Which Catalog is used to generate product recommendations
-* How user activity links to catalog items based on the strategy type selected
+- Which strategy type to use
+- Which Catalog is used to generate product recommendations
+- How user activity links to catalog items based on the strategy type selected
 
 This allows you to define recommendation logic once and reuse it across multiple engagements.
 
@@ -24,9 +24,9 @@ This allows you to define recommendation logic once and reuse it across multiple
 
 Ensure the following are in place before creating a strategy:
 
-* **Catalog**: At least one Catalog must exist in your account with all required attributes, such as Item ID, Name, Description, Category, Genre, Language, Price, and Brand or tags. If no suitable catalog exists, you can create one during setup. For more information, refer to [Catalog](doc:catalogs).
-* **Event Tracking**: If your strategy depends on user behavior, ensure relevant events are tracked in your project, such as `Product Viewed`, `Added to Cart`, `Charged`, or `Video Viewed`.
-* **Identifier Mapping:** Events and catalog data must share a common identifier so the system can link user actions to items. For example, if an event Product Viewed includes a `Product ID` property, its value must match the corresponding item identifier in the Catalog.
+- **Catalog**: At least one Catalog must exist in your account with all required attributes, such as Item ID, Name, Description, Category, Genre, Language, Price, and Brand or tags. If no suitable catalog exists, you can create one during setup. For more information, refer to [Catalog](doc:catalogs).
+- **Event Tracking**: If your strategy depends on user behavior, ensure relevant events are tracked in your project, such as `Product Viewed`, `Added to Cart`, `Charged`, or `Video Viewed`.
+- **Identifier Mapping:** Events and catalog data must share a common identifier so the system can link user actions to items. For example, if an event Product Viewed includes a `Product ID` property, its value must match the corresponding item identifier in the Catalog.
 
 # Recommendation Strategies Workflow
 
@@ -102,9 +102,9 @@ Select a catalog from the dropdown. A preview table displays sample items and at
 
 Criteria determine which items qualify for recommendation based on user activity. Each criteria block includes:
 
-* Event name: The user action to track (for example, Product Viewed, Added to Cart, Video Viewed.
-* Time window: How far back the system looks (for example, last 7 days)
-* (Optional) Filters: narrow the event scope by event properties.
+- Event name: The user action to track (for example, Product Viewed, Added to Cart, Video Viewed.
+- Time window: How far back the system looks (for example, last 7 days)
+- (Optional) Filters: narrow the event scope by event properties.
 
 For example, CRITERIA A: Did Video Viewed in the last 7 days.
 
@@ -123,16 +123,18 @@ For example, if a Video Viewed event includes a `show_id` property, map it to th
 
 The following image shows how to create a Recommendation Strategy:
 
-<Image align="center" border={true} caption="Create a Recommendation Strategy" src="https://files.readme.io/485dc6e3c14c440a5b61b61e34667986e1a03d539e423a634e424d2b82085fd3-2026-05-19_17-35-55_1.gif" />
+
+<Image src="https://files.readme.io/485dc6e3c14c440a5b61b61e34667986e1a03d539e423a634e424d2b82085fd3-2026-05-19_17-35-55_1.gif" align="center" caption="Create a Recommendation Strategy" border={true} />
+
 
 ## Add Basic Details
 
 Enter the following details and click **Create** to save the strategy:
 
-| Field       | Description                                                                                                                                                                                     |
-| :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name        | Use a clear and descriptive name that reflects the use case, Catalog, and logic. For example, * * Popular Shoes by Purchases, Trending Hindi Movies, Viewed Electronics Last 7 Days, and so on. |
-| Description | Add additional context if needed.                                                                                                                                                               |
+| Field       | Description                                                                                                                                                                                 |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name        | Use a clear and descriptive name that reflects the use case, Catalog, and logic. For example, Popular Shoes by Purchases, Trending Hindi Movies, Viewed Electronics Last 7 Days, and so on. |
+| Description | Add additional context if needed.                                                                                                                                                           |
 
 # Recommendation Strategy States
 
@@ -146,7 +148,9 @@ A strategy moves through a defined set of states from the moment it is created u
 
 The following image shows a strategy moving through five states, from creation to deletion:
 
-<Image align="center" border={true} caption="Recommendation Strategy States" src="https://files.readme.io/23ca8cebe41a279c26b117c71a099e887cba9e5a1ed85cf86de02fff60416a7b-Recommendation_Strategy_States.png" width="65% " />
+
+<Image src="https://files.readme.io/23ca8cebe41a279c26b117c71a099e887cba9e5a1ed85cf86de02fff60416a7b-Recommendation_Strategy_States.png" align="center" width="65% " caption="Recommendation Strategy States" border={true} />
+
 
 The following table describes each strategy state:
 
@@ -165,7 +169,9 @@ Go to the Strategies tab to view and manage all recommendation strategies presen
 
 The strategies list displays the following information for each strategy:
 
-<Image align="center" border={true} caption="Strategies List" src="https://files.readme.io/c49bd282ea326713cfa86897716fafbb84b943e890f61c275278c50b5c8f3aa7-image.png" />
+
+<Image src="https://files.readme.io/c49bd282ea326713cfa86897716fafbb84b943e890f61c275278c50b5c8f3aa7-image.png" align="center" caption="Strategies List" border={true} />
+
 
 | Column      | Description                                                                                          |
 | ----------- | ---------------------------------------------------------------------------------------------------- |
@@ -189,9 +195,17 @@ Each strategy has the following actions available:
 
 ## Filter Strategies
 
-Click the <Image border={true} src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" className="border" /> icon to open the _Filters_ panel. You can filter by:
+Click the&#x20;
 
-<Image align="center" border={true} caption="Strategies- Filters" src="https://files.readme.io/60e4c3edb8dd16ded35e440797a6bc857c075ae00a123384e8d9fe4396d2b854-image.png" />
+
+<Image src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" border={true} />
+
+
+&#x20;icon to open the _Filters_ panel. You can filter by:
+
+
+<Image src="https://files.readme.io/60e4c3edb8dd16ded35e440797a6bc857c075ae00a123384e8d9fe4396d2b854-image.png" align="center" caption="Strategies- Filters" border={true} />
+
 
 | Type         | Description                                                                   |
 | :----------- | :---------------------------------------------------------------------------- |
@@ -203,6 +217,6 @@ Click the <Image border={true} src="https://files.readme.io/fdeb9b35ac9c63a8bacf
 
 # Best Practices
 
-* Always validate catalog selection before defining rules so that the correct Catalog is used for generating product recommendations
-* Ensure event-to-catalog mapping is correct for activity-based strategies
-* Use descriptive strategy names so they are easy to identify when reusing across engagements
+- Always validate catalog selection before defining rules so that the correct Catalog is used for generating product recommendations
+- Ensure event-to-catalog mapping is correct for activity-based strategies
+- Use descriptive strategy names so they are easy to identify when reusing across engagements

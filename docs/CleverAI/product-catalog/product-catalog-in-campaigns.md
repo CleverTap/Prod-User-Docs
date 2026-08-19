@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to add a catalog to a campaign and reference catalog attributes to
   populate item-specific details in your messages at send time.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

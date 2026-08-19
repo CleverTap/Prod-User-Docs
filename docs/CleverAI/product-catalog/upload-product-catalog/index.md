@@ -5,7 +5,7 @@ excerpt: >-
   sync, and structure product data for personalization, recommendations, and
   engagement.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to configure data sources that upload and update products in a
   catalog.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

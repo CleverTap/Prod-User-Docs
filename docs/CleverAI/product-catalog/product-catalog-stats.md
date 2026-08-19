@@ -4,7 +4,7 @@ excerpt: >-
   Learn how the Stats tab helps you track catalog coverage, recommendation
   reach, and engagement performance across channels.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -2,7 +2,7 @@
 title: Create Product
 excerpt: Learn about creating and managing catalog products using APIs and data feeds.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

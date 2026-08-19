@@ -10,6 +10,12 @@ metadata:
 
 CleverTap for Startups is thrilled to announce the _Mid-Year Sale 2026_, featuring an exclusive offer for new customers on the _CleverTap Essentials Plan_. This limited-time promotion gives you _90% off for the first 6 months_ after completing your free trial period. Do not miss this opportunity to experience the full power of CleverTap at a fraction of the cost. To avail of this offer during the offer period, refer to the [Sign-up](https://clevertap.com/clevertap-for-startups-features/) page.
 
+<Callout icon="📘" theme="info">
+  ### Plan Eligibility
+
+  This sale is applicable to both the Essentials and Core plans.
+</Callout>
+
 # Offer Details
 
 The following section outlines the primary details of the Mid-Year Sale 2026 offer, including its duration, name, and eligibility criteria.

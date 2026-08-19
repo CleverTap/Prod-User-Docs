@@ -27,7 +27,7 @@ CleverAI Billing works on two models, depending on the type of agent:
 | **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
 <Callout icon="📘" theme="info">
-  ### **Who Can Manage CleverAI Billing?**
+  ### **Who can manage CleverAI billing?**
 
   Only Admins can view CleverAI Token and Block balances, turn agents on or off, manage allocation across projects, or request more quota. If you are not an admin, you can still use any agent your admin has enabled.
 </Callout>
@@ -124,13 +124,13 @@ The following is an agent that fits into the other agents' category:
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
 | [Product Catalog]() | Manages your entire product catalog, such as names, prices, images, and attributes, in one place, powering personalized recommendations and dynamic content. | Block-based (1 block = 500K rows) |
 
-<Callout icon=":construction:" theme="warn">
-  ### Chained Agent Calls Add to the Total Cost
+<Callout icon="🚧" theme="warn">
+  ### Chained agent calls add to the total cost
 
   A response can cost more than the base agent price.**&#x20;**&#x49;f an agent calls on another agent to complete your request, you are charged for all of it. For example, if Journey Builder (13 Tokens) also generates an email header using Scribe (3 Tokens) and a hero image using Image Creator (5 Tokens) as part of building your journey, the total cost for that one action is 13 + 3 + 5 = 21 Tokens. This is shown as a single entry in your usage history.
 </Callout>
 
-<Callout icon=":blue_book:" theme="info">
+<Callout icon="📘" theme="info">
   ### **Multiple outputs in one prompt**
 
   If you ask an agent for multiple outputs in a single prompt, you are charged per output, not per prompt. For example, 5 image variations from Image Creator will be calculated as 5 images × 5 Tokens = 25 Tokens for that one request.
@@ -166,7 +166,7 @@ The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capaci
 <Image src="https://files.readme.io/a82a24883e0f942f9c8e66bd872e240eee36aae33e7cf7bbbd0236667ae31731-image.png" align="center" caption="Manage Custom Allocation" border={true} />
 
 
-<Callout icon=":construction:" theme="warn">
+<Callout icon="🚧" theme="warn">
   ### **You can not allocate less than a project has already used**
 
   A project's allocation can never be set below what it has already consumed. If you need to reduce a project's Tokens or Blocks, first make sure its usage is below your target number.
@@ -204,8 +204,8 @@ To enable an Agent:
 <Image src="https://files.readme.io/0e034d7d6797ea09306616c5de37546a3c5ebea032fed2e76c6994d0ed9fd290-2026-08-17_19-05-20_1.gif" align="center" caption="Turn On an Agent" border={true} />
 
 
-<Callout icon=":blue_book:" theme="info">
-  ### What Non-admins See?
+<Callout icon="📘" theme="info">
+  ### What Non-admins see?
 
   Non-admins can open the same _Settings > CleverAI_ page to browse agents and read their descriptions, but the enable/disable toggle is not available to them. If a non-admin needs an agent turned on, they will need to ask their admin directly.
 </Callout>
@@ -243,7 +243,7 @@ To do so:
 <Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI Token and Agent Capacity Usage by Projects" border={true} />
 
 
-<Callout icon=":blue_book:" theme="info">
+<Callout icon="📘" theme="info">
   ### **Promotional CleverAI Tokens**
 
   Promotional CleverAI Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
@@ -297,7 +297,7 @@ To do so:
 <Image src="https://files.readme.io/4489dfe2cf692717262bf311491181b99afe2e63009854e3a9db1ebe284c9002-image.png" align="center" caption="View Audit Logs" border={true} />
 
 
-<Callout icon=":blue_book:" theme="info">
+<Callout icon="📘" theme="info">
   ### Note
 
   Audit Logs are only available to admins. Non-admins who need this information should ask their admin.

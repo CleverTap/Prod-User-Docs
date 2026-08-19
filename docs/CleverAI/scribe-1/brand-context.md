@@ -38,7 +38,7 @@ To configure Brand Context, perform the following steps:
 2. Enter your brand details under the **About Your Brand** section and click **Save**.
 
 
-<Image src="https://files.readme.io/8e455cb5742891aed0142ad800841aec3a3c0568cc94743d838ce1fce768e599-2026-08-18_15-52-11.jpg" align="center" caption="Brand Context" border={true} />
+<Image src="https://files.readme.io/e6c8c89f16f782e252b6f0ed28a6dec44374713c1785b03166dcff1963fa3f60-8e455cb5742891aed0142ad800841aec3a3c0568cc94743d838ce1fce768e599-2026-08-18_15-52-11.jpg" align="center" caption="Brand Context" border={true} />
 
 
 The following details are required:

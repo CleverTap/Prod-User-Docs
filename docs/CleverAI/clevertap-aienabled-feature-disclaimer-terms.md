@@ -1,5 +1,5 @@
 ---
-title: CleverTap AI‑Enabled Feature Disclaimer & Terms
+title: CleverAI Terms & Disclaimer
 excerpt: >-
   Understand terms governing the responsible use of Clever.AI features for
   generating and managing marketing content.

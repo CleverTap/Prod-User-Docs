@@ -33,7 +33,7 @@ Product catalogs store item-level details such as name, price, and category. Onc
 
 To upload a catalog, perform the following steps:
 
-1. Go to _Catalogs_ and click **Add Catalog**.
+1. Go to _Product Catalog_ and click **Add Catalog**.
 2. Enter the required details.
 
 

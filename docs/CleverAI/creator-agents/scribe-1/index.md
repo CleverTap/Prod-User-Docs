@@ -5,6 +5,17 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  pages:
+    - slug: generate-high-impact-copy-with-effective-prompts
+      title: Generate High-Impact Copy with Effective Prompts
+      type: basic
+    - slug: brand-context
+      title: Brand Context
+      type: basic
+    - slug: scribe-faqs-1
+      title: 'Scribe: FAQs'
+      type: basic
 ---
 # Overview
 

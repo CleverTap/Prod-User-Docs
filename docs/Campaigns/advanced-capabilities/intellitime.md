@@ -124,7 +124,7 @@ Here, consider an example of the IntelliTime email campaign. To create a campaig
 2. Click **+ Campaign**.
 
 
-<Image src="https://files.readme.io/5de46d2-2x_Create_a_campaign.png" alt="1571" align="center" border={true} />
+<Image src="https://files.readme.io/e646c494011d86e8bc971fa4fe998fc3a1a18c4b2ef7fc8b39c7f5333eaf43d6-2026-08-19_14-31-37.jpg" alt="1571" align="center" border={true} />
 
 
 3. Select _Email_ from the list of messaging channels.

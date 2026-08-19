@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create a prediction in CleverTap with this quick step-by-step
   guide.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

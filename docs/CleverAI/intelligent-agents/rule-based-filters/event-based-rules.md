@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create recommendation rules triggered by user events and
   behaviors.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

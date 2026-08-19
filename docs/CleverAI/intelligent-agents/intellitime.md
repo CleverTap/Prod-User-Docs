@@ -4,7 +4,7 @@ excerpt: >-
   Learn how you can optimize the campaign conversion rates using the IntelliTime
   Campaign feature.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

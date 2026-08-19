@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create recommendation rules using product catalog attributes and
   conditions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

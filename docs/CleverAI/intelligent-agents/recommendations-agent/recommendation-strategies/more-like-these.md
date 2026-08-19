@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to recommend products or content that closely match a user’s
   interests based on similar items.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

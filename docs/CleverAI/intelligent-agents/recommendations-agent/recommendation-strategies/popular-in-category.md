@@ -4,7 +4,7 @@ excerpt: >-
   Learn how Popular in Category recommendations surface the most engaged-with
   items within a specific category using aggregated user interactions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

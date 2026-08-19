@@ -4,7 +4,7 @@ excerpt: >-
   Create data-driven engagement campaigns using prediction results to boost user
   engagement and optimize conversions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

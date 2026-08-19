@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to surface rapidly rising items within a specific category based on
   recent engagement growth.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

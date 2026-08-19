@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to get started with setting up recommendations and personalizing
   engagement using them effectively
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -2,7 +2,7 @@
 title: Personalize Engagements Using Recommendations
 excerpt: Learn how to personalize user engagements with dynamic recommendation content.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

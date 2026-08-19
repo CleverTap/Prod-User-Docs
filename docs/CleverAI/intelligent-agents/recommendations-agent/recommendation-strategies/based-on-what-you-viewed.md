@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to recommend products or content based on a user’s recent browsing
   and viewing behavior.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

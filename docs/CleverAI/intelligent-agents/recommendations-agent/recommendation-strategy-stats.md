@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to monitor the performance and usage of your recommendation strategy
   across engagements, messages, and channels.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

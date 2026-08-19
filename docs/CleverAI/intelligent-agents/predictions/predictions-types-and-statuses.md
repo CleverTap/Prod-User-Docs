@@ -4,7 +4,7 @@ excerpt: >-
   Explore the Predictions Dashboard to understand prediction types and their
   states.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

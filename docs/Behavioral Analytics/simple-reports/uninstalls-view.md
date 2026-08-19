@@ -28,7 +28,7 @@ To get to the uninstall view, navigate to _Boards_ > _Uninstall_.
   Here are some things to consider:
 
   - You must explicitly enable _Uninstall_ detection feature from your dashboard.
-  - Uninstall detection is only available for iOS and Android apps.
+  - Uninstall detection is only available for Android apps.
   - Uninstall data is not available for Windows apps.
 </Callout>
 

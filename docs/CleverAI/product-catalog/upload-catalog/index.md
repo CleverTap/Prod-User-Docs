@@ -153,10 +153,10 @@ The following table lists the data types and the usage examples:
 <Callout icon="📘" theme="info">
   #### Catalog Column Limits
 
-  A catalog supports a maximum of 200 columns in total:
+  A catalog supports a maximum of 100 columns in total:
 
   - 3 fixed columns: Product ID, Name, and Image URL
-  - Up to 197 custom attribute columns,defined during catalog creation
+  - Up to 97 custom attribute columns,defined during catalog creation
 
   Columns cannot be added or removed after the catalog is saved.
 </Callout>

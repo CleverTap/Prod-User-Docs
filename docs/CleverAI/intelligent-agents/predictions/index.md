@@ -1,5 +1,5 @@
 ---
-title: 'Predictions: Optimize with AI'
+title: Predictions
 excerpt: >-
   CleverTap's AI-powered feature designed to amplifiy your growth and maximize
   ROI.

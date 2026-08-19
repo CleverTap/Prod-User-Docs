@@ -1,5 +1,5 @@
 ---
-title: Segmentation Agent
+title: Segmentation Builder
 excerpt: Generate segment query results with a prompt.
 deprecated: false
 hidden: true

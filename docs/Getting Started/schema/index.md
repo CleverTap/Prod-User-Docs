@@ -30,7 +30,7 @@ For more information, refer to the following sections:
 
 # Events
 
-You can see your events under _Settings_ > _Schema Events_. On this page, you can view all the events you are working with, along with editing or discarding, searching, and filtering them.
+You can see your events under _Settings_ > _Schema Events_. On this page, you can view all the events you are working with, edit or discard them, search for them, and filter them.
 
 The _Events_ schema has four parts:
 

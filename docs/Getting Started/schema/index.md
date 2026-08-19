@@ -12,13 +12,25 @@ next:
 ---
 # Overview
 
-A Schema is a framework for maintaining, organizing, and structuring your data. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data incdurs high costs in terms of effort and money, you can save a significant amount of manual effort in tracking your data over time.
+A Schema is a framework for maintaining, organizing, and structuring your data. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data incurs high costs in terms of effort and money, you can save a significant amount of manual effort in tracking your data over time.
 
-To preserve data sanity, the schema table stores event and user properties in a pre-defined order. It ensures better output because it enforces standardization of the incoming data and avoids duplication or corruption of data. Better input leads to a better outcome in your campaigns and journeys. It also provides more accurate insights into your data analytics.
+To preserve data sanity, the schema table stores event and user properties in a pre-defined order. It ensures better output by enforcing the standardization of incoming data and avoiding duplication or corruption. Better input leads to a better outcome in your campaigns and journeys. It also provides more accurate insights into your data analytics.
+
+## AI-Generated Schema Descriptions
+
+CleverTap uses AI to generate clear, consistent descriptions whenever you click the description field while creating or updating a custom event, event property, or user property. You can accept or dismiss the generated description and edit it further after accepting.
+
+These AI-generated descriptions are also used in advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+
+For more information, refer to the following sections:
+
+- [AI-Generated Descriptions for Custom Events](doc:schema#section-ai-generated-descriptions-for-custom-events)
+- [AI-Generated Descriptions for Event Properties](doc:schema#section-ai-generated-descriptions-for-event-properties)
+- [AI-Generated Descriptions for User Properties](doc:schema#section-ai-generated-descriptions-for-user-properties)
 
 # Events
 
-You can see your events under _Settings_ > _Schema Events_. On this page, you can view all the events you are working with, along with editing or discarding to searching and filtering them.
+You can see your events under _Settings_ > _Schema Events_. On this page, you can view all the events you are working with, along with editing or discarding, searching, and filtering them.
 
 The _Events_ schema has four parts:
 
@@ -92,8 +104,6 @@ The data retention policy (DRP) retains an event for the specified time before d
 3. Select _Custom_, then enter your specific time limit.
 
 <Callout icon="📘" theme="info">
-  ###
-
   **CleverTap Essentials Plan Limit**
 
   The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
@@ -126,8 +136,6 @@ After an event is removed:
 You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
 <Callout icon="❗️" theme="error">
-  ###
-
   **When Discarding an Event**
 
   You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
@@ -167,8 +175,6 @@ To publish the events, perform the following:
 | **Description**        | The description of the event property. You can set this from the ellipsis menu on the event property row. The property is optional, and the event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Effect of Changing the Data Type of an Event or User Property**
 
   - If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
@@ -241,8 +247,6 @@ You can discard an active event from the schema. You can still see the event row
 
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Discard Access**
 
   Only admin users can discard events.
@@ -253,8 +257,6 @@ You can discard an active event from the schema. You can still see the event row
 You can restore a previously discarded event, event property, or user property from the schema. Once restored, it becomes available again across Campaigns, Journeys, Analytics, and other features that use the schema.
 
 <Callout icon="🚧" theme="warn">
-  ###
-
   **Cooldown Period for Restore and Re-discard**
 
   - After you discard an item, you cannot restore it for the next 24 hours.
@@ -286,8 +288,6 @@ You can restore a previously discarded event, event property, or user property f
 
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Restore Access**
 
   Only admin users can restore the discarded events.
@@ -370,8 +370,6 @@ You can discard a published user property from the schema. You can still see the
 
 
 <Callout icon="❗️" theme="error">
-  ###
-
   **When Discarding a User Property**
 
   Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
@@ -382,8 +380,6 @@ You can discard a published user property from the schema. You can still see the
 You can link an event with a user property. This allows you to trigger campaigns, conversions, and exits based on changes in user properties. For example, a gaming app has a user property named `Game Level` that represents a user's progress in the game. You can link an event named `Game Level Upgraded` to the `Game Level` user property. By doing so, any change in this property to a higher level will activate a campaign. The campaign will congratulate the users and grant them a reward or a unique power corresponding to their achievement.
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Key Points to Remember**
 
   - This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
@@ -431,8 +427,6 @@ To discard linked events:
 
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Key Points to Remember**
 
   The following are the key points to consider when creating linked events:
@@ -467,20 +461,22 @@ Currently, you can enable or disable tracking for the following events from the 
 <Accordion title="Push Impressions">
   The Push Impression event is tracked when a push notification sent from CleverTap is delivered to a user’s device. After the toggle for Push Impressions is turned on, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user’s device.
 
-  The *Push Impression* event has its own event properties and the users can configure these non-required event properties to optimize the cost.
+  The _Push Impression_ event has its own event properties and the users can configure these non-required event properties to optimize the cost.
 
   To do so:
 
-  1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
-  2. Select the *Push Impressions* event from the *System events* tab.
-  3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Setup push impressions* from the list.
-  4. Turn ON the **Mobile Push** toggle and click **Save**. The *Push impressions tracking enables* message displays on the screen.
+  1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
+  2. Select the _Push Impressions_ event from the _System events_ tab.
+  3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Setup push impressions_ from the list.
+  4. Turn ON the **Mobile Push** toggle and click **Save**. The _Push impressions tracking enables_ message displays on the screen.
 
-  <Image align="center" border={true} src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif" />
+
+  <Image src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif" align="center" border={true} />
+
 
   ### Disable Event Property Tracking
 
-  The users can disable the tracking of some of the *Push Impression* event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
+  The users can disable the tracking of some of the _Push Impression_ event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
 
   <Table align={["left","left","left"]}>
     <thead>
@@ -844,10 +840,12 @@ Currently, you can enable or disable tracking for the following events from the 
         <td>
           Indicates the image rendering status with the following values:
 
-          <ul><li> NO\_IMAGE- No image included</li>
-          <li>SUCCESS- Image downloaded successfully</li>
-          <li> NO\_NETWORK- Image included but no network connectivity</li>
-          <li> DOWNLOAD\_FAILED- Image download failed due to an external error</li></ul>
+          ption. After accepting it, you can edit the description if needed.
+
+          generated description is further leveraged in the advanced AI features such as Prompt-to-Segmentation, Prompt-to-Analytics, and Prompt-to-Journeys.
+
+
+          rc="https://files.readme.i
         </td>
 
         <td>
@@ -1041,31 +1039,35 @@ Currently, you can enable or disable tracking for the following events from the 
 
   To disable the tracking of Push Impression event properties:
 
-  1. From the *System events* tab, click the *Properties* hyperlink. The Push Impressions properties list opens.
+  1. From the _System events_ tab, click the _Properties_ hyperlink. The Push Impressions properties list opens.
 
-     <Image align="center" border={true} src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" />
-  2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select *Disable Property* from the list. The *Enable property tracking* popup opens.
 
-     <Image align="center" border={true} src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" />
-  3. Click **Disable** to confirm your action. The *Property tracking successfully disabled* message displays on the screen. The status of the event property changes to *Active*. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
+     <Image src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" align="center" border={true} />
+
+  2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select _Disable Property_ from the list. The _Enable property tracking_ popup opens.
+
+
+     <Image src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" align="center" border={true} />
+
+  3. Click **Disable** to confirm your action. The _Property tracking successfully disabled_ message displays on the screen. The status of the event property changes to _Active_. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
 
   <Callout icon="📘" theme="info">
     **Key Points to Remember**
 
-    The following are some of the points to consider when configuring the *Push Impressions* event:
+    The following are some of the points to consider when configuring the _Push Impressions_ event:
 
-    * The event property tracking feature is not available for required properties.
-    * The **Status** is always *Active* for mandatory properties.
-    * The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
-    * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
+    - The event property tracking feature is not available for required properties.
+    - The **Status** is always _Active_ for mandatory properties.
+    - The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
+    - For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
   </Callout>
 </Accordion>
 
 <Accordion title="Web Session Started">
   This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event will be recorded in two cases:
 
-  * When a user opens a webpage.
-  * When a user reloads the browser after 20 minutes of inactivity.
+  - When a user opens a webpage.
+  - When a user reloads the browser after 20 minutes of inactivity.
 
   <Callout icon="📘" theme="info">
     **Default Behavior**
@@ -1075,7 +1077,7 @@ Currently, you can enable or disable tracking for the following events from the 
 </Accordion>
 
 <Accordion title="UTM Visited">
-  The *UTM Visited* event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
+  The _UTM Visited_ event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
 
   <Callout icon="📘" theme="info">
     **Default Behavior**
@@ -1085,8 +1087,6 @@ Currently, you can enable or disable tracking for the following events from the 
 </Accordion>
 
 <Callout icon="📘" theme="info">
-  ###
-
   **Configuring Other System Events**
 
   For the remaining system events, you can only change the DRP.

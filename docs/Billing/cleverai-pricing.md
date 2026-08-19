@@ -26,7 +26,7 @@ CleverAI Billing works on two models, depending on the type of agent:
 | **CleverAI Tokens**   | Every time you ask a prompt-based agent to do something, it uses a set number of Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
 | **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
-<Callout icon=":blue_book:" theme="info">
+<Callout icon="📘" theme="info">
   ### **Who Can Manage CleverAI Billing?**
 
   Only Admins can view CleverAI Token and Block balances, turn agents on or off, manage allocation across projects, or request more quota. If you are not an admin, you can still use any agent your admin has enabled.

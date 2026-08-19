@@ -1,5 +1,5 @@
 ---
-title: Catalogs in Campaigns
+title: Product Catalog in Campaigns
 excerpt: >-
   Learn how to add a catalog to a campaign and reference catalog attributes to
   populate item-specific details in your messages at send time.
@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-[Catalogs](doc:catalogs) let you reference product or content data directly in a campaign message. Instead of manually entering product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient at send time.
+[Product Catalog](doc:catalogs) lets you reference product or content data directly in a campaign message. Instead of manually entering product names, images, or prices into your template, you reference catalog attributes as variables, and CleverTap resolves them per recipient at send time.
 
 When you add a catalog block to a campaign and map its attributes, each recipient views item details populated from the matching catalog record, keeping your content accurate without manual updates.
 
@@ -92,7 +92,7 @@ Choose a catalog from the dropdown. The selected catalog is the data source for 
 <Image src="https://files.readme.io/e86dacf1662ba16b5c0e95c342af78f0beb340cfefb88d799047c1574cbd170b-image.png" alt="Select Catalog" align="center" caption="Select Catalog" border={true} />
 
 
-Only active catalogs are available for selection. If the catalog you need is not listed, verify its status on the Catalogs page.
+Only active catalogs are available for selection. If the catalog you need is not listed, verify its status on the Product Catalog page.
 
 ## Map Catalog Attributes
 

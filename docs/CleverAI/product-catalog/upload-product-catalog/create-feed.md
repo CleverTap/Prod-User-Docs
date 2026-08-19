@@ -27,10 +27,10 @@ Click **Create Feed** to configure a new feed for the selected catalog. Perform 
 2. [Configure the Feed Source](doc:create-feed#configure-the-feed-source)
 3. [Save the Feed](doc:create-feed#save-the-feed)
 
-The following image shows the _Feed_ tab:
+The following image shows the _Feeds_ tab:
 
 
-<Image src="https://files.readme.io/3bb57639fcdcbefeb0d47b08a1fc84787002f55e2b3f7bc3393a2076a3b397f4-image.png" align="center" caption="Feed Tab" border={true} />
+<Image src="https://files.readme.io/8e4070a1588800881006bfc54f545d143ce27fdf452425e70d2a0824a9bd0c7c-image.png" align="center" caption="Feeds Tab" border={true} />
 
 
 ## Select an Upload Type
@@ -43,10 +43,10 @@ The upload type determines how feed data is sourced. The following table describ
 | API / URL                    | CleverTap fetches data from a URL at a set frequency. Only one API/URL feed can be active per catalog at a time.             |
 | Google Sync                  | CleverTap syncs data from a Google source at a set frequency. Only one Google Sync feed can be active per catalog at a time. |
 
-The following image shows the _Create Feed_ page:
+The following image shows the _Add Feed_ page:
 
 
-<Image src="https://files.readme.io/813085df7901b79f10b4c73c7cd8fbd0c6ad5a5630f58e023293c136ba088a31-image.png" align="center" caption="Create Feed" border={true} />
+<Image src="https://files.readme.io/af971eacc822a74b76bdb9edefb08207633f504eb5217ab31186aad1287ae710-image.png" align="center" caption="Add Feed" border={true} />
 
 
 ## Configure the Feed Source
@@ -73,7 +73,7 @@ Click **Save** to add the feed to the catalog.
 Monitor feed activity from the Feed tab. The Feed tab shows all feeds associated with the selected catalog. Each feed entry includes the feed name, number of products, upload type, status, uploaded by, and last updated.
 
 
-<Image src="https://files.readme.io/56cb5cafc861370f4bfe33f054cce052d39a806f1a15dcb517ef2a735dfbc693-image.png" align="center" caption="Filters on Feed Logs" border={true} />
+<Image src="https://files.readme.io/f3b4e24dee54b65bd7c45b53e749ed478f4acdba75c8551f2c8f40a6a15eb167-image.png" align="center" caption="Filters on Feed Logs" border={true} />
 
 
 ## How Multiple Feeds Work
@@ -119,4 +119,4 @@ The Edit Columns option lets you choose which columns to display on the Feed tab
 The following image shows _Edit Columns_ :
 
 
-<Image src="https://files.readme.io/1c0c02290794e510f17cc46f77527614a1cf0386a71ac6c3f50093143ffb0c07-image.png" align="center" caption="Edit Columns" border={true} />
+<Image src="https://files.readme.io/794fd08939a39abfab9ec228fbbe8d55ed9e3999fdfc726ecb27d2ba1b56fd6f-image.png" align="center" caption="Edit Columns" border={true} />

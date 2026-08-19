@@ -51,7 +51,7 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        Popular, Trending, Best Sellers, Popular in Category, Trending in Category, Best Sellers in Category
+        Popular, Trending, Best Sellers, Popular in Category, Trending in Category, Best Sellers in Category, Last-Minute Add-ons, Last-Minute Add-ons in Category
       </td>
 
       <td>
@@ -72,7 +72,7 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        More Like This
+        More Like These, Similar to What You Viewed, Premium Alternatives
       </td>
 
       <td>
@@ -93,7 +93,7 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        Based on What You Viewed
+        Based on What You Viewed, Because You Viewed, Frequently Bought Together, Frequently Viewed Together
       </td>
 
       <td>
@@ -109,8 +109,6 @@ The following table lists the algorithms and the CleverTap recommendation strate
 
 The following strategies are available to generate recommendations from your catalog:
 
-## Popular
-
 <Cards>
   <Card title="Popular" href="https://docs.clevertap.com/docs/popular">
 
@@ -119,23 +117,15 @@ The following strategies are available to generate recommendations from your cat
   <Card title="Popular in Category" href="https://docs.clevertap.com/docs/popular-in-category">
 
   </Card>
-</Cards>
 
-## Trending
-
-<Cards>
-  <Card title="Trending" href="https://docs.clevertap.com/docs/trending">
+  <Card title="Trending" href="/docs/trending">
 
   </Card>
 
   <Card title="Trending in Category" href="https://docs.clevertap.com/docs/trending-in-category">
 
   </Card>
-</Cards>
 
-## Best Sellers
-
-<Cards>
   <Card title="Best Sellers" href="https://docs.clevertap.com/docs/best-sellers">
 
   </Card>
@@ -143,20 +133,16 @@ The following strategies are available to generate recommendations from your cat
   <Card title="Best Sellers in Category" href="https://docs.clevertap.com/docs/best-sellers-in-category">
 
   </Card>
-</Cards>
 
-## Hybrid Strategy Recommendation
-
-<Cards>
   <Card title="Based on What You Viewed" href="https://docs.clevertap.com/docs/based-on-what-you-viewed">
 
   </Card>
-</Cards>
 
-## Content Strategy Recommendation
+  <Card title="Frequently Bought Together" href="https://docs.clevertap.com/docs/frequently-bought-together">
 
-<Cards>
-  <Card title="More Like These" href="https://docs.clevertap.com/docs/more-like-these">
+  </Card>
+
+  <Card title="More Like These" href="https://docs.clevertap.com/docs/more-like-this">
 
   </Card>
 </Cards>
@@ -165,14 +151,17 @@ The following strategies are available to generate recommendations from your cat
 
 Pick a strategy based on where the recommendation appears and what user data you have available:
 
-| Goal                              | Available Data            | Recommended Strategies                                              |
-| --------------------------------- | ------------------------- | ------------------------------------------------------------------- |
-| Drive initial discovery           | No user data required     | Popular, Trending, Best Sellers                                     |
-| Surface popular or emerging items | No user data required     | Popular, Trending, Best Sellers                                     |
-| Drive category-level discovery    | No user data required     | Popular in Category, Trending in Category, Best Sellers in Category |
-| Personalize within a category     | Browse and view history   | Based on What You Viewed                                            |
-| Keep the user exploring           | Browse and view history   | Based on What You Viewed                                            |
-| Show similar items                | Catalog attributes        | More Like These                                                     |
-| Drive repeat engagement           | Purchase and view history | More Like These                                                     |
+| Goal                              | Available Data                  | Recommended Strategies                                                                               |
+| --------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Drive initial discovery           | No user data required           | Popular, Trending, Best Sellers                                                                      |
+| Surface popular or emerging items | No user data required           | Popular, Trending, Best Sellers                                                                      |
+| Drive category-level discovery    | No user data required           | Popular in Category, Trending in Category, Best Sellers in Category, Last-Minute Add-ons in Category |
+| Personalize within a category     | Browse and view history         | Based on What You Viewed, Because You Viewed                                                         |
+| Keep the user exploring           | Browse and view history         | Based on What You Viewed, Because You Viewed, Frequently Viewed Together                             |
+| Show similar items                | Catalog attributes              | More Like These, Similar to What You Viewed                                                          |
+| Upsell to a better option         | Catalog attributes + price tier | Premium Alternatives                                                                                 |
+| Increase basket size              | Current cart + purchase history | Frequently Bought Together, Last-Minute Add-ons, Last-Minute Add-ons in Category                     |
+| Upsell at the point of decision   | Catalog attributes + price tier | Premium Alternatives                                                                                 |
+| Drive repeat engagement           | Purchase and view history       | Frequently Bought Together, Because You Viewed, More Like These                                      |
 
 Select the strategy that best matches the user's context to keep recommendations relevant and effective.

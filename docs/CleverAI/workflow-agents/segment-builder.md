@@ -1,5 +1,5 @@
 ---
-title: Segmentation Builder
+title: 'Segmentation Builder: Build with AI'
 excerpt: Generate segment query results with a prompt.
 deprecated: false
 hidden: true

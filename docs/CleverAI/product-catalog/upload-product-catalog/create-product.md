@@ -10,11 +10,11 @@ metadata:
 
 Creating a product allows you to add individual items to a catalog. Products represent the core entities within a catalog and include attributes such as name, ID, image URL, and additional custom attributes.
 
-Products are created and managed programmatically using APIs or ingested through feeds. [Create Product APIs](https://developer.clevertap.com/docs/create-single-product-api) are typically used for real-time or controlled product creation, while [feeds](doc:create-feed) are used for bulk uploads and periodic updates.
+Products are created and managed programmatically using APIs or ingested through feeds. [Create Product APIs](https://developer.clevertap.com/docs/product-catalog-api) are typically used for real-time or controlled product creation, while [feeds](doc:create-feed) are used for bulk uploads and periodic updates.
 
 # Create Product
 
-Products cannot be created directly from the dashboard. To add products to a catalog, you must use the [Create Product API](https://developer.clevertap.com/docs/create-single-product-api) or upload data through feeds.
+Products cannot be created directly from the dashboard. To add products to a catalog, you must use the [Create Product API](https://developer.clevertap.com/docs/product-catalog-api) or upload data through feeds.
 
 ## System Fields
 
@@ -45,7 +45,7 @@ The following are common conventions used in the `attributes` object:
 | category          | The category the product belongs to.                    |
 | Custom attributes | Any additional attributes based on your catalog schema. |
 
-For more information on the request format, authentication, and the full list of supported fields, refer to [Create Product API](https://developer.clevertap.com/docs/create-single-product-api).
+For more information on the request format, authentication, and the full list of supported fields, refer to [Create Product API](https://developer.clevertap.com/docs/product-catalog-api).
 
 ## Guidelines
 

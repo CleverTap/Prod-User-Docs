@@ -60,7 +60,7 @@ Click **Upload** to upload the catalog. Once the Catalog is uploaded, it becomes
 
   - A maximum of 100 columns in total
   - 3 fixed columns: Identity, Name, and Image URL. Column headers are case-insensitive. You can use any of the following header casing in your CSV file: identity vs Identity vs IDENTITY, name vs Name, and imageurl vs ImageUrl vs Image_URL vs image_url
-  - Up to 97 custom attribute columns, defined during catalog creation Columns cannot be added or removed after the catalog is saved.
+  - Up to 97 custom attribute columns, defined during catalog creation. Columns cannot be added or removed after the catalog is saved.
 
   Your account supports up to 5 catalogs and a combined total of 15M rows across all catalogs. Both limits apply: you cannot create a new catalog once you reach 5, and you cannot upload more rows to any catalog once your combined row count reaches 15M, whichever comes first.
 
@@ -131,7 +131,7 @@ The following image shows the Catalog upload via _Google sync:_
 <Callout icon="📘" theme="info">
   #### Sync Frequency
 
-  CleverTap fetches your catalog from the source URL at the interval you set. It does not store a static copy, so the Sync Frequency you choose directly affects how current your catalog data is. Set a shorter interval, such as every hour, if your source updates frequently, for example during flash sales or when stock levels change in real time. Set a longer interval, such as once a day, if your catalog is relatively stable and only updated periodically. This also reduces unnecessary load on your data source.<br />Enter a value between 1–59 for minutes, 1–23 for hours, or any positive number for days. The minimum value is 1. There is currently no enforced maximum.
+  CleverTap fetches your catalog from the source URL at the interval you set. It does not store a static copy, so the Sync Frequency you choose directly affects how current your catalog data is. Set a shorter interval, such as every hour, if your source updates frequently, for example during flash sales or when stock levels change in real time. Set a longer interval, such as once a day, if your catalog is relatively stable and only updated periodically. This also reduces unnecessary load on your data source.<br />Enter a value between 1–59 for minutes, 1–23 for hours, or any positive number for days. The minimum value is 30 minutes. There is currently no enforced maximum.
 
   As a best practice, match the sync frequency to how often your source data actually changes.
 </Callout>

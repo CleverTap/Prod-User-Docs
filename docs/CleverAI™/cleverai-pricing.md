@@ -307,7 +307,7 @@ To do so:
 
 Your CleverAI<sup>TM</sup> Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI<sup>TM</sup> Token and Block balances will both show as expired.
 
-<Callout icon=":+1" theme="okay">
+<Callout icon="&#128077;" theme="okay">
   #### **Renewing before expiry keeps your Tokens**
 
   If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.

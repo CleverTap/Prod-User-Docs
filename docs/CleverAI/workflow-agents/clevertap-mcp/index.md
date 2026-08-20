@@ -1,5 +1,5 @@
 ---
-title: CleverTap MCP
+title: CleverTap MCP Server
 excerpt: >-
   Learn how to use CleverTap MCP tools to query, manage campaigns, build
   segments, and explore customer data using natural language through AI clients

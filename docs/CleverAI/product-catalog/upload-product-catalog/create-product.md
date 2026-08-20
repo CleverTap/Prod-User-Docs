@@ -113,7 +113,7 @@ The _Upload_ _Details_ subsection shows system-level metadata for the selected p
 | created_at | The timestamp indicates when the product was first created. |
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   These timestamps are shown as Unix epoch values in milliseconds, for example 1786000117000. Divide by 1000 to convert to epoch seconds.
 </Callout>

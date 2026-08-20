@@ -14,9 +14,9 @@ metadata:
 MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.<br />For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
 
 <Callout icon="📘" theme="info">
-  ### Availability
+  #### Availability
 
-  CleverTap MCP is in Public beta. To enable this feature, contact your Customer Success Manager.&#x20;
+  CleverTap MCP is currently released in Public beta. To enable this feature, contact your Customer Success Manager.&#x20;
 </Callout>
 
 The following table lists all available tool categories and the tools within each category:

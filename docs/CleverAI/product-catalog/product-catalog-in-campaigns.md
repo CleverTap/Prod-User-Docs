@@ -15,7 +15,7 @@ metadata:
 When you add a catalog block to a campaign and map its attributes, each recipient views item details populated from the matching catalog record, keeping your content accurate without manual updates.
 
 <Callout icon="📘" theme="info">
-  ### How Catalog Data is Resolved at Send Time?
+  #### How Catalog Data is Resolved at Send Time?
 
   Catalog attributes are not embedded when you build the campaign. At the moment CleverTap sends to each recipient, it looks up the catalog record and substitutes the mapped attributes into your template. If a catalog item is updated after the campaign is scheduled, the latest value is used at send time.
 </Callout>

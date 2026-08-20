@@ -24,9 +24,9 @@ These descriptions are also used in advanced AI features such as Prompt-to-Segme
 
 For more information, refer to the following sections:
 
-- [AI-Generated Descriptions for Custom Events](doc:schema#section-ai-generated-descriptions-for-custom-events)
-- [AI-Generated Descriptions for Event Properties](doc:schema#section-ai-generated-descriptions-for-event-properties)
-- [AI-Generated Descriptions for User Properties](doc:schema#section-ai-generated-descriptions-for-user-properties)
+- [AI-Generated Descriptions for Custom Events](https://docs.clevertap.com/docs/schema#ai-generated-descriptions-for-custom-events)
+- [AI-Generated Descriptions for Event Properties](https://docs.clevertap.com/docs/schema#ai-generated-descriptions-for-event-properties)
+- [AI-Generated Descriptions for User Properties](https://docs.clevertap.com/docs/schema#ai-generated-descriptions-for-user-properties)
 
 # Events
 
@@ -34,10 +34,10 @@ You can see your events under _Settings_ > _Schema Events_. On this page, you ca
 
 The _Events_ schema has four parts:
 
-- [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events)
-- [System events](https://docs.clevertap.com/docs/schema#section-system-events)
-- [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event)
-- [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event)
+- [Custom events](https://docs.clevertap.com/docs/schema#custom-events)
+- [System events](https://docs.clevertap.com/docs/schema#system-events)
+- [Conversion event](https://docs.clevertap.com/docs/schema#conversion-event)
+- [Qualifying event](https://docs.clevertap.com/docs/schema#qualifying-event)
 
 # Custom Events
 

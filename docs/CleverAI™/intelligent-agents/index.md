@@ -14,27 +14,27 @@ IntelliTime and IntelliChannel decide when and where to reach each user. Intelli
 # Agents in This Family
 
 <Cards>
-  <Card title="IntelliTime">
+  <Card title="IntelliTime" href="https://docs.clevertap.com/docs/intellitime">
 
   </Card>
 
-  <Card title="IntelliChannel">
+  <Card title="IntelliChannel" href="https://docs.clevertap.com/docs/intellichannel">
 
   </Card>
 
-  <Card title="IntelliNode">
+  <Card title="IntelliNode" href="https://docs.clevertap.com/docs/intellinode">
 
   </Card>
 
-  <Card title="IntelliAB">
+  <Card title="IntelliAB" href="https://docs.clevertap.com/docs/intelliab">
 
   </Card>
 
-  <Card title="Recommendations">
+  <Card title="Recommendations" href="https://docs.clevertap.com/docs/recommendations-agent">
 
   </Card>
 
-  <Card title="Predictions">
+  <Card title="Predictions" href="https://docs.clevertap.com/docs/predictions">
 
   </Card>
 </Cards>

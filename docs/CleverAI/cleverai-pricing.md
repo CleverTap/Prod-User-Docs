@@ -1,9 +1,9 @@
 ---
 title: CleverAI™️ Pricing
 excerpt: >-
-  Understand how CleverAI Tokens and Blocks work, what each CleverAI agent costs
-  to run, and how to manage, monitor, and expand your organization's AI usage
-  from the CleverTap dashboard.
+  Understand how CleverAI™️ Tokens and Blocks work, what each CleverAI™️ agent
+  costs to run, and how to manage, monitor, and expand your organization's AI
+  usage from the CleverTap dashboard.
 deprecated: false
 hidden: true
 metadata:
@@ -11,25 +11,25 @@ metadata:
 ---
 # Overview
 
-CleverAI is a group of AI agents built into CleverTap that includes agents such as Scribe, Image Creator, Segment Builder, Predictions, Recommendations, and more. This document explains how CleverTap measures and manages usage of these agents so your organization always knows what it has access to, how much it has used, and how to get more.
+CleverA<sup>TM</sup>I is a group of AI agents built into CleverTap that includes agents such as Scribe, Image Creator, Segment Builder, Predictions, Recommendations, and more. This document explains how CleverTap measures and manages usage of these agents so your organization always knows what it has access to, how much it has used, and how to get more.
 
-CleverAI Billing is the commercial and metering layer underneath CleverTap's suite of AI agents. It governs the following three things:
+CleverAI<sup>TM</sup> Billing is the commercial and metering layer underneath CleverTap's suite of AI agents. It governs the following three things:
 
-1. Which AI capabilities can you access via the CleverAI plan tiers?
+1. Which AI capabilities can you access via the CleverAI<sup>TM</sup> plan tiers?
 2. How the usage of prompt-based agents is metered and charged?&#x20;
 3. How is the usage of capacity-configured Machine Learning (ML) capabilities metered and charged?
 
 CleverAI Billing works on two models, depending on the type of agent:
 
-| Model                 | How does it work?                                                                                                                                                                                                                     | Used by                                                                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **CleverAI Tokens**   | Every time you ask a prompt-based agent to do something, it uses a set number of Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
-| **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
+| Model                                     | How does it work?                                                                                                                                                                                                                     | Used by                                                                                                                                                |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **CleverAI**<sup>TM</sup>**&#x20;Tokens** | Every time you ask a prompt-based agent to do something, it uses a set number of Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
+| **Blocks & Capacity**                     | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
 <Callout icon="📘" theme="info">
-  ### **Who can manage CleverAI billing?**
+  ### **Who can manage CleverAI**<sup>TM</sup>**&#x20;billing?**
 
-  Only Admins can view CleverAI Token and Block balances, turn agents on or off, manage allocation across projects, or request more quota. If you are not an admin, you can still use any agent your admin has enabled.
+  Only Admins can view CleverAI<sup>TM</sup> Token and Block balances, turn agents on or off, manage allocation across projects, or request more quota. If you are not an admin, you can still use any agent your admin has enabled.
 </Callout>
 
 Before using this guide, remember to understand the following three things:
@@ -40,7 +40,7 @@ Before using this guide, remember to understand the following three things:
 
 ## Billing Plan
 
-Each CleverTap billing Plan unlocks a different set of CleverAI agents for your organization to enable.
+Each CleverTap billing Plan unlocks a different set of CleverAI<sup>TM</sup> agents for your organization to enable.
 
 | Plan         | What it includes                                                                                         |
 | ------------ | -------------------------------------------------------------------------------------------------------- |
@@ -54,34 +54,34 @@ For more information, refer to [Enable/Disable an Agent](doc:cleverai-pricing#en
 
 ## Roles
 
-Only Admins can manage CleverAI settings and view usage. Team members (non-admins) can use any agent an admin has already enabled for their project.
+Only Admins can manage CleverAI<sup>TM</sup> settings and view usage. Team members (non-admins) can use any agent an admin has already enabled for their project.
 
-| Activity                           | Admin | Non-admin |
-| ---------------------------------- | ----- | --------- |
-| Use an enabled agent               | Yes   | No        |
-| View CleverAI Token/Block balances | Yes   | No        |
-| Turn agents on or off              | Yes   | No        |
-| Manage allocation across projects  | Yes   | No        |
-| Request more Tokens or Blocks      | Yes   | No        |
-| View Audit Logs                    | Yes   | No        |
+| Activity                                        | Admin | Non-admin |
+| ----------------------------------------------- | ----- | --------- |
+| Use an enabled agent                            | Yes   | No        |
+| View CleverAI<sup>TM</sup> Token/Block balances | Yes   | No        |
+| Turn agents on or off                           | Yes   | No        |
+| Manage allocation across projects               | Yes   | No        |
+| Request more Tokens or Blocks                   | Yes   | No        |
+| View Audit Logs                                 | Yes   | No        |
 
 If you are a non-admin and hit a limit or find an agent disabled, every screen you see points you to contact your admin rather than showing you balances or settings directly.
 
 ## Glossary
 
-Before using CleverAI, get familiar with the following terms.
+Before using CleverAI<sup>TM</sup>, get familiar with the following terms.
 
-| Term               | What it means                                                                                                          |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Agent**          | A single CleverAI capability, such as Scribe, Predictions, or Journey Builder.                                         |
-| **CleverAI Token** | The unit used to measure one response from a prompt-based agent.                                                       |
-| **Block**          | The unit you purchase to expand your capacity for a configuration-based agent, such as Recommendations or Predictions. |
-| **Capacity**       | Defines how many configuration-based agents you can have active at once. For example, 4 active Recommendations.        |
-| **Allocation**     | How your organization's Tokens and Block capacity are split across projects.                                           |
+| Term                                     | What it means                                                                                                          |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Agent**                                | A single CleverAI<sup>TM</sup> capability, such as Scribe, Predictions, or Journey Builder.                            |
+| **CleverAI**<sup>TM</sup>**&#x20;Token** | The unit used to measure one response from a prompt-based agent.                                                       |
+| **Block**                                | The unit you purchase to expand your capacity for a configuration-based agent, such as Recommendations or Predictions. |
+| **Capacity**                             | Defines how many configuration-based agents you can have active at once. For example, 4 active Recommendations.        |
+| **Allocation**                           | How your organization's Tokens and Block capacity are split across projects.                                           |
 
-# CleverAI Agents
+# CleverAI<sup>TM</sup> Agents
 
-CleverTap groups CleverAI agents into three families based on their functions. The table below lists every agent, what it does, how it is billed, and where to find its full documentation.
+CleverTap groups CleverAI<sup>TM</sup> agents into three families based on their functions. The table below lists every agent, what it does, how it is billed, and where to find its full documentation.
 
 ## Creator Agents
 
@@ -125,13 +125,13 @@ The following is an agent that fits into the other agents' category:
 | [Product Catalog](https://docs.clevertap.com/docs/product-catalog) | Manages your entire product catalog, such as names, prices, images, and attributes, in one place, powering personalized recommendations and dynamic content. | Block-based (1 block = 500K rows) |
 
 <Callout icon="🚧" theme="warn">
-  ### Chained agent calls add to the total cost
+  #### Chained agent calls add to the total cost
 
   A response can cost more than the base agent price.**&#x20;**&#x49;f an agent calls on another agent to complete your request, you are charged for all of it. For example, if Journey Builder (13 Tokens) also generates an email header using Scribe (3 Tokens) and a hero image using Image Creator (5 Tokens) as part of building your journey, the total cost for that one action is 13 + 3 + 5 = 21 Tokens. This is shown as a single entry in your usage history.
 </Callout>
 
 <Callout icon="📘" theme="info">
-  ### **Multiple outputs in one prompt**
+  #### **Multiple outputs in one prompt**
 
   If you ask an agent for multiple outputs in a single prompt, you are charged per output, not per prompt. For example, 5 image variations from Image Creator will be calculated as 5 images × 5 Tokens = 25 Tokens for that one request.
 </Callout>
@@ -144,8 +144,8 @@ To view the AI allocation for your organization:
 
 1. Go to _Organization_ > _AI Allocation&#x20;_&#x66;rom the CleverTap dashboard.
 2. At the top, you will see
-   - **CleverAI Tokens**: A card showing the Promotional and Purchased Token balances, and their expiry date.
-   - **CleverAI Blocks & Capacity:** A card showing the number of Blocks and the capacity for each Block-based agent.
+   - **CleverAI**<sup>TM</sup>**&#x20;Tokens**: A card showing the Promotional and Purchased Token balances, and their expiry date.
+   - **CleverAI**<sup>TM</sup>**&#x20;Blocks & Capacity:** A card showing the number of Blocks and the capacity for each Block-based agent.
 3. Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using, either a specific number or _Shared_ if it is drawing from the organization's common pool.
 
 
@@ -167,7 +167,7 @@ The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capaci
 
 
 <Callout icon="🚧" theme="warn">
-  ### **You can not allocate less than a project has already used**
+  #### **You can not allocate less than a project has already used**
 
   A project's allocation can never be set below what it has already consumed. If you need to reduce a project's Tokens or Blocks, first make sure its usage is below your target number.
 </Callout>
@@ -188,11 +188,11 @@ To remove all of a project's custom allocation at once:
 
 # Enable/Disable Agents
 
-Every CleverAI agent is off by default for every project, even if your Plan includes it. An admin needs to turn each agent on before anyone on the project can use it.
+Every CleverAI<sup>TM</sup> agent is off by default for every project, even if your Plan includes it. An admin needs to turn each agent on before anyone on the project can use it.
 
 To enable an Agent:
 
-1. Go to _Settings_ > _CleverAI > Agents_ from the CleverTap dashboard.
+1. Go to _Settings_ > _CleverAI_<sup>TM</sup>_&#x20;> Agents_ from the CleverTap dashboard.
 2. Browse or search for the agent you want to enable, or select the agent to open its details panel. This shows:
    1. Enabled/Disabled status
    2. LLM used (which AI model powers this agent)
@@ -207,34 +207,34 @@ To enable an Agent:
 <Callout icon="📘" theme="info">
   ### What Non-admins see?
 
-  Non-admins can open the same _Settings > CleverAI_ page to browse agents and read their descriptions, but the enable/disable toggle is not available to them. If a non-admin needs an agent turned on, they will need to ask their admin directly.
+  Non-admins can open the same _Settings > CleverAI_<sup>TM</sup> page to browse agents and read their descriptions, but the enable/disable toggle is not available to them. If a non-admin needs an agent turned on, they will need to ask their admin directly.
 </Callout>
 
-## View CleverAI Usage
+## View CleverAI<sup>TM</sup> Usage
 
-Every organization can see how much of its CleverAI Tokens and Block capacity has been used, broken down by project.
+Every organization can see how much of its CleverAI<sup>TM</sup> Tokens and Block capacity have been used, broken down by project.
 
 To do so:
 
 1. From the CleverTap dashboard, go to _Organization_ > _Billing_ > _My Plan_.
 
 2. On the _Overview_ tab, you will see two balance cards:
-   - **CleverAI Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
+   - **CleverAI**<sup>TM</sup>**&#x20;Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
 
-     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI Tokens Usage" border={true} />
+     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI<sup>TM</sup> Tokens Usage" border={true} />
 
 
-   - **CleverAI Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
+   - **CleverAI**<sup>TM</sup>**&#x20;Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
 
-     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI Blocks & Capacity" border={true} />
+     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI<sup>TM</sup> Blocks & Capacity" border={true} />
 
 
-3. Click **View Detailed Breakdown** to open the _CleverAI Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
+3. Click **View Detailed Breakdown** to open the _CleverAI_<sup>TM</sup>_&#x20;Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 
 
-<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI" border={true} />
+<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI<sup>TM</sup>" border={true} />
 
 
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
@@ -244,9 +244,9 @@ To do so:
 
 
 <Callout icon="📘" theme="info">
-  ### **Promotional CleverAI Tokens**
+  #### **Promotional CleverAI**<sup>TM</sup>**&#x20;Tokens**
 
-  Promotional CleverAI Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
+  Promotional CleverAI<sup>TM</sup> Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
 </Callout>
 
 # Request More Quota
@@ -261,7 +261,7 @@ To do so:
 <Image src="https://files.readme.io/49d7d45433644e9905a524ca2e3b37b360b5e534273d0bb04492009709237b0b-image.png" align="center" caption="Request More Quota for an Organization" border={true} />
 
 
-2. Select the required amount of CleverAI Tokens and Blocks. For example, 50,000 tokens, 7 blocks of Recommendations, 5 blocks of Predictions, and 4 blocks of IntelliNode.
+2. Select the required amount of CleverAI<sup>TM</sup> Tokens and Blocks. For example, 50,000 tokens, 7 blocks of Recommendations, 5 blocks of Predictions, and 4 blocks of IntelliNode.
 
 
 <Image src="https://files.readme.io/868a2b2c76b52612986689b07e6ea674c736463c025020c638916df889d4194c-image.png" align="center" caption="Add Tokens and Blocks Requirements" border={true} />
@@ -277,7 +277,7 @@ To do so:
 5. Select **Request**.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   Once Tokens hit 100% for a project, prompt-based agents stop responding in that project until an admin reallocates existing Tokens or adds more.
 </Callout>
@@ -305,21 +305,21 @@ To do so:
 
 # Contract Renewal and Expiry
 
-Your CleverAI Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI Token and Block balances will both show as expired.
+Your CleverAI<sup>TM</sup> Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI<sup>TM</sup> Token and Block balances will both show as expired.
 
 <Callout icon=":+1:" theme="okay">
-  ### **Renewing before expiry keeps your Tokens**
+  #### **Renewing before expiry keeps your Tokens**
 
   If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.
 </Callout>
 
 # CleverTap for Startups
 
-If your organization is on the CleverTap for Startups program, the _My Plan_ page shows CleverAI Token usage alongside your regular Essentials plan usage and overages.
+If your organization is on the CleverTap for Startups program, the _My Plan_ page shows CleverAI<sup>TM</sup> Token usage alongside your regular Essentials plan usage and overages.
 
 ## Purchase Tokens
 
-If you are on the CleverTap for Startups plan, you can buy additional CleverAI Tokens directly for use with Image Creator and Scribe:
+If you are on the CleverTap for Startups plan, you can buy additional CleverAI<sup>TM</sup> Tokens directly for use with Image Creator and Scribe:
 
 1. From your _My Plan_ page, click **Purchase Tokens**.
 2. Select a Token pack from the dropdown.
@@ -329,9 +329,9 @@ This is a direct, self-serve purchase and does not require a request to the Clev
 
 # Best Practices
 
-Follow these recommendations to get the most out of your CleverAI Tokens and Block capacity:
+Follow these recommendations to get the most out of your CleverAI<sup>TM</sup> Tokens and Block capacity:
 
-- **Enable only the agents your team actively uses:** Idle agents cost nothing while off, and this keeps your _Settings_ > _CleverAI > Agents_ list easy to scan.
+- **Enable only the agents your team actively uses:** Idle agents cost nothing while off, and this keeps your _Settings_ > _CleverAI_<sup>TM</sup>_&#x20;> Agents_ list easy to scan.
 - **Check your My Plan page monthly**: Especially if you are running high-volume campaigns with Scribe, Image Creator, or Journey Builder, since these carry higher per-response Token costs.
 - **Reallocate before you request more:** If one project is under its Token allocation while another is running low, reallocate from Manage Allocation as it is instant.
 - **Watch for chained-agent costs:** Journey Builder and other orchestrating agents can invoke other agents behind the scenes, hence a single action may cost more Tokens than the base agent price suggests.
@@ -343,7 +343,7 @@ If you run into one of the following common issues, check the following troubles
 
 ### **An agent I need is greyed out and shows a _disabled_ message.**
 
-Ask your admin to enable it in _Settings > CleverAI_, or, if you are the admin, refer to [Enable/Disable an Agent](doc:cleverai-pricing#enabledisable-agents).
+Ask your admin to enable it in _Settings > CleverAI_<sup>TM</sup>, or, if you are the admin, refer to [Enable/Disable an Agent](doc:cleverai-pricing#enabledisable-agents).
 
 ### **My team hit 100% of Tokens and can not use the prompt-based agents.**
 
@@ -363,9 +363,9 @@ This is expected. Token and Block balances are tied to your contract term. Conta
 
 # FAQs
 
-Find answers to common questions about CleverAI Tokens, Blocks & Capacity, and billing:
+Find answers to common questions about CleverAI<sup>TM</sup> Tokens, Blocks & Capacity, and billing:
 
-### **Do unused CleverAI Tokens roll over to the next month?**
+### **Do unused CleverAI**<sup>TM</sup>**&#x20;Tokens roll over to the next month?**
 
 Tokens do not operate on a monthly cycle. They are valid for the entire term of your contract and are not reset monthly. Some Block-based agents (such as IntelliChannel) do reset their fair-usage capacity monthly, while others (such as Recommendations, Predictions, and IntelliNode) have a fixed capacity that never resets.
 

@@ -1,6 +1,6 @@
 ---
-title: IntelliNODE Use Cases
-excerpt: Understand how to make the most of your IntelliNODE experiment.
+title: IntelliNode Use Cases
+excerpt: Understand how to make the most of your IntelliNode experiment.
 deprecated: false
 hidden: false
 link:
@@ -12,22 +12,22 @@ metadata:
 ---
 # Overview
 
-IntelliNODE is a clever system designed to provide your business with the benefit of optimum engagement and retention. IntelliNODE has a wide variety of industry applications. You can experiment with the messaging order, content, channel, timing, and frequency.
+IntelliNode is a clever system designed to deliver optimal engagement and retention for your business. IntelliNODE has a wide variety of industry applications. You can experiment with the messaging order, content, channel, timing, and frequency.
 
-Following are the cases where leading different industries are solving their most interesting problems. Use the below sample use cases to exceed customer expectations and increase ROI.
+The following are cases in which leaders across different industries are solving their most interesting problems. Use the sample use cases below to exceed customer expectations and increase ROI.
 
 ## FinTech
 
 The Fintech industry has its own unique set of challenges with customer engagement and retention. While you focus on innovation and service for your customers, we can help you automate and fulfill your engagement needs.
 
-Following are the use cases where you can test your approach:
+The following are the use cases where you can test your approach:
 
 <details>
   <summary><span className="bold"> High drop off during the know your customer (KYC) process.</span></summary>
 
-### High drop off during the *know your customer* (KYC) process
+### High drop-off during the _know your customer_ (KYC) process
 
-KYC is a mandatory step before the user can make any worthwhile transactions on the application.  A high drop-off at this stage means a wasted acquisition.  
+KYC is a mandatory step before the user can make any worthwhile transactions on the application.  A high drop-off at this stage means a wasted acquisition.
 
 ### Purpose
 
@@ -41,7 +41,9 @@ Users are more likely to complete KYC registration if they are engaged at a spec
 
 Use IntelliNODE to set up different experiments to engage users at different times. If this is a weekday journey, create multiple paths to engage users based on before, during, and after office hours. Given that office hours are from 10.00 AM to 6:00 PM, create four different paths to send a push message at 8.30 AM, 2.30 PM, 6.30 PM, and 8.30 PM.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/15c948e-small-Complete_KYC_Process.png" />
+
+<Image src="https://files.readme.io/15c948e-small-Complete_KYC_Process.png" align="center" border={true} />
+
 
 </details>
 
@@ -50,7 +52,7 @@ Use IntelliNODE to set up different experiments to engage users at different tim
 
 ### Coupon Codes for Users
 
-You can have higher app launches and more engagement and purchases if the users are incentivized with discounts. 
+You can see higher app launches, more engagement, and more purchases when users are incentivized with discounts.
 
 #### Purpose
 
@@ -58,17 +60,19 @@ Make an informed decision to select two of the following channels: SMS, Email, o
 
 #### Assumption
 
-Users are more likely to use coupon codes from WhatsApp. A reminder from Email or SMS can be beneficial. 
+Users are more likely to use coupon codes from WhatsApp. A reminder from Email or SMS can be beneficial.
 
 #### Experiment
 
 Use IntelliNODE to experiment with a combination of two channels. Use the experiments for a cost-benefit analysis of the channels. For example, create three IntelliNODE paths:
 
-* **Path A**: SMS + Email
-* **Path B**: WhatsApp + Email
-* **Path C**: SMS + WhatsApp
+- **Path A**: SMS + Email
+- **Path B**: WhatsApp + Email
+- **Path C**: SMS + WhatsApp
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/11c1e49-small-CouponCodeforHigherAppLaunch.png" />
+
+<Image src="https://files.readme.io/11c1e49-small-CouponCodeforHigherAppLaunch.png" align="center" border={true} />
+
 
 </details>
 
@@ -77,7 +81,7 @@ Use IntelliNODE to experiment with a combination of two channels. Use the experi
 
 ### Select the order of the messaging channel
 
-Which is the best messaging order to inform users about a debit in their account? 
+Which is the best messaging order to inform users about a debit in their account?
 
 #### Purpose
 
@@ -89,16 +93,18 @@ The combination of messaging channels must have the highest reach.
 
 #### Experiment
 
-Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
+Create distinct paths with IntelliNODE and determine the optimal messaging order among Push, SMS, and Email. For example, create six paths:
 
-* **Path A**: Push > Email > SMS
-* **Path B**: Push > SMS > Email
-* **Path C**: Email > Push > SMS
-* **Path D**: Email > SMS > Push
-* **Path E**: SMS > Push > Email
-* **Path F**: SMS > Email > Push
+- **Path A**: Push > Email > SMS
+- **Path B**: Push > SMS > Email
+- **Path C**: Email > Push > SMS
+- **Path D**: Email > SMS > Push
+- **Path E**: SMS > Push > Email
+- **Path F**: SMS > Email > Push
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c83e6ea-small-MessagingOrderforAccountDebit.jpg" />
+
+<Image src="https://files.readme.io/c83e6ea-small-MessagingOrderforAccountDebit.jpg" align="center" border={true} />
+
 
 </details>
 <details>
@@ -116,30 +122,32 @@ Select the time to engage your users.
 
 The following are the assumptions:
 
-* Articles about the long-term view of the market are most read after market hours.
-* News about global indices is read before market hours.
+- Articles about the long-term view of the market are most read after market hours.
+- News about global indices is read before market hours.
 
 #### Experiment
 
-Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends. You can run these two experiments simultaneously with two IntelliNODEs. 
+Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends. You can run these two experiments simultaneously with two IntelliNODEs.
 
-Create the following push paths: 
+Create the following push paths:
 
-*IntelliNODE 1 (Runs on weekdays only)*
+_IntelliNODE 1 (Runs on weekdays only)_
 
-* 8.30 AM - Long-term view articles 
-* 8.30 AM - Global Indices News 
-* 7.30 PM - Long-term view articles
-* 7.30 PM - Global Indices
+- 8.30 AM - Long-term view articles
+- 8.30 AM - Global Indices News
+- 7.30 PM - Long-term view articles
+- 7.30 PM - Global Indices
 
-*IntelliNODE 2 (Runs on weekends only)*
+_IntelliNODE 2 (Runs on weekends only)_
 
-* 8.30 AM - Long-term view articles 
-* 8.30 AM - Global Indices News 
-* 7.30 PM - Long-term view articles
-* 7.30 PM - Global Indices
+- 8.30 AM - Long-term view articles
+- 8.30 AM - Global Indices News
+- 7.30 PM - Long-term view articles
+- 7.30 PM - Global Indices
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/8fe39fd-Schedule_stock_market_.jpg" />
+
+<Image src="https://files.readme.io/8fe39fd-Schedule_stock_market_.jpg" align="center" border={true} />
+
 
 </details>
 
@@ -156,24 +164,25 @@ Select the most preferred communication channel by customers which is also econo
 
 #### Assumption
 
-Customers prefer uploading salary slips by Email rather than WhatsApp.
+Customers prefer to upload salary slips via email rather than WhatsApp.
 
 #### Experiment
 
-Create an IntelliNODE to find out the most preferred channel by customers but also provides economy of scale.
+Create an IntelliNode journey that identifies customers' preferred channel while also achieving economies of scale.
 
-Using IntelliNODE create a path for each, that is, Email and WhatsApp, to test your assumption. You can also add more channels to this mix. 
+Using IntelliNODE, create a path for each, that is, Email and WhatsApp, to test your assumption. You can also add more channels to this mix.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/5ed7fbe-small-SalarySlipUploaded.png" />
+
+<Image src="https://files.readme.io/5ed7fbe-small-SalarySlipUploaded.png" align="center" border={true} />
+
 
 </details>
 
 ## E-commerce
 
-While E-commerce is a buzzword today, it is also a challenging business to be in. The cost of customer acquisition and logistics, added to the high drop-off rates, is an interesting problem to solve. Customers today are more likely to buy from businesses that deliver a personalized experience.
-CleverTap has collated various use cases from players in this industry with similar challenges and how IntelliNODE is helping them win. 
+While E-commerce is a buzzword today, it is also a challenging business to be in. The cost of customer acquisition and logistics, added to the high drop-off rates, is an interesting problem to solve. Customers today are more likely to buy from businesses that deliver a personalized experience.<br />CleverTap has collated various use cases from players in this industry with similar challenges and how IntelliNode is helping them win.
 
-Following are the use cases where you can test your approach:
+The following are the use cases where you can test your approach:
 
 <details>
   <summary><span className="bold"> Users drop-off after adding an item to cart.</span></summary>
@@ -184,7 +193,7 @@ Find the ideal time to engage with users to help them complete the purchase.
 
 #### Purpose
 
-Find out the message delay required to persuade users to complete the purchase.  
+Find out the message delay required to persuade users to complete the purchase.
 
 #### Assumption
 
@@ -192,9 +201,11 @@ Users will likely purchase within two hours of adding an item to the cart.
 
 #### Experiment
 
-Set up different experiments to engage users at different delays. Set up multiple IntelliNODE paths to engage the user within the specified duration of the event. Set up paths for the first 15 minutes, 30 minutes, one hour, and two hours after the user abandons the cart. 
+Set up different experiments to engage users at different delays. Set up multiple IntelliNODE paths to engage the user within the specified duration of the event. Set up paths for the first 15 minutes, 30 minutes, one hour, and two hours after the user abandons the cart.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/580166c-UserDropOff.jpg" />
+
+<Image src="https://files.readme.io/580166c-UserDropOff.jpg" align="center" border={true} />
+
 
 </details>
 
@@ -215,15 +226,17 @@ Email is a channel that can give great engagement while being cost-effective.
 
 #### Experiment
 
-Use IntelliNODE to select a combination of two channels. Additionally, you can compare engagement costs for these channels too and drop the least economical channel combination. 
+Use IntelliNODE to select a combination of two channels. Additionally, you can compare engagement costs for these channels too and drop the least economical channel combination.
 
 For example, create three IntelliNODE paths:
 
-* **Path A**: SMS + Email
-* **Path B**: SMS + WhatsApp
-* **Path C**: Email + WhatsApp
+- **Path A**: SMS + Email
+- **Path B**: SMS + WhatsApp
+- **Path C**: Email + WhatsApp
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f8b7a22-small-TrackProductShipment.png" />
+
+<Image src="https://files.readme.io/f8b7a22-small-TrackProductShipment.png" align="center" border={true} />
+
 
 </details>
 <details>
@@ -245,13 +258,15 @@ A user must be nudged three times to complete a purchase. However, if the user i
 
 Create an IntelliNODE experiment with different messaging frequencies for a channel. Create the following IntelliNODE paths for push messages over a period of 20 days:
 
-* **Path A**: Two push messages
-* **Path B**: Three push messages
-* **Path C**: Five push messages
-* **Path D**: Six push messages
-* **Path E**: Seven push messages
+- **Path A**: Two push messages
+- **Path B**: Three push messages
+- **Path C**: Five push messages
+- **Path D**: Six push messages
+- **Path E**: Seven push messages
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/79bb10e-small-AddToCart.jpg" />
+
+<Image src="https://files.readme.io/79bb10e-small-AddToCart.jpg" align="center" border={true} />
+
 
 </details>
 
@@ -260,8 +275,8 @@ Create an IntelliNODE experiment with different messaging frequencies for a chan
 
 ### Inform users about the products that are back in stock.
 
-* Inform customers about products that were out of stock but are available now.
-* Find the time when users are most likely to purchase the items that went out of stock.
+- Inform customers about products that were out of stock but are available now.
+- Find the time when users are most likely to purchase the items that went out of stock.
 
 #### Purpose
 
@@ -269,29 +284,31 @@ Select the time to engage your user.
 
 #### Assumption
 
-Users were looking for the product but could not purchase it because it was out of stock. Users are more likely to make such purchases during the evening hours. 
+Users were looking for the product but could not purchase it because it was out of stock. Users are more likely to make such purchases during the evening hours.
 
 #### Experiment
 
-Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends. 
+Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends.
 
 Create the following push paths:
 
-*IntelliNODE 1 (Runs on weekdays only)*
+_IntelliNODE 1 (Runs on weekdays only)_
 
-* 8.30 AM 
-* 10.30 AM 
-* 7.30 PM 
-* 8.30 PM 
+- 8.30 AM
+- 10.30 AM
+- 7.30 PM
+- 8.30 PM
 
-*IntelliNODE 2 (Runs on weekends only)*
+_IntelliNODE 2 (Runs on weekends only)_
 
-* 8.30 AM 
-* 10.30 AM 
-* 7.30 PM 
-* 8.30 PM 
+- 8.30 AM
+- 10.30 AM
+- 7.30 PM
+- 8.30 PM
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/2084255-ProductRestocked.jpg" />
+
+<Image src="https://files.readme.io/2084255-ProductRestocked.jpg" align="center" border={true} />
+
 
 </details>
 <details>
@@ -313,20 +330,22 @@ Customers are more likely to enroll if they receive email reminders.
 
 Create different paths from IntelliNODE for each messaging channel. Use IntelliNODE to create multiple paths such as:
 
-* **Path A**: SMS reminders
-* **Path B**: Email reminders
-* **Path C**: WhatsApp reminders
-* **Path D**: Push reminders
-* **Path E**: App Inbox reminders
-* **Path F**: In-App reminders
+- **Path A**: SMS reminders
+- **Path B**: Email reminders
+- **Path C**: WhatsApp reminders
+- **Path D**: Push reminders
+- **Path E**: App Inbox reminders
+- **Path F**: In-App reminders
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/fcf9193-small-ProductLaunch.jpg" />
+
+<Image src="https://files.readme.io/fcf9193-small-ProductLaunch.jpg" align="center" border={true} />
+
 
 </details>
 
 ## Media
 
-The media industry can immensely benefit from better targeting, data-driven decision-making, better customer engagement, cross-promotion content, and increased audience retention. IntelliNODE can boost audience engagement to unprecedented levels, and boost revenue growth, through experimentation. 
+The media industry can immensely benefit from better targeting, data-driven decision-making, better customer engagement, cross-promotion content, and increased audience retention. IntelliNODE can boost audience engagement to unprecedented levels, and boost revenue growth, through experimentation.
 
 Following are the use cases where you can test your approach:
 
@@ -335,7 +354,7 @@ Following are the use cases where you can test your approach:
 
 ### Users do not engage with messages about new movie releases
 
-Users do not click on the push messages that are sent to promote new movies. The viewership for new movies is low. 
+Users do not click on the push messages that are sent to promote new movies. The viewership for new movies is low.
 
 #### Purpose
 
@@ -349,12 +368,14 @@ Sending push notifications during evening hours can increase conversion and help
 
 Create an IntelliNODE with paths that engage users at different times, such as:
 
-* **Path A**: 5.30 PM 
-* **Path B**: 6.30 AM 
-* **Path C**: 7.30 PM 
-* **Path D**: 8.30 PM 
+- **Path A**: 5.30 PM
+- **Path B**: 6.30 AM
+- **Path C**: 7.30 PM
+- **Path D**: 8.30 PM
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/7376e93-small-MovieReleaseDates.jpg" />
+
+<Image src="https://files.readme.io/7376e93-small-MovieReleaseDates.jpg" align="center" border={true} />
+
 
 </details>
 <details>
@@ -374,17 +395,18 @@ The assumption is that the mobile Push, followed by Email and SMS, decreases the
 
 #### Experiment
 
-Use IntelliNODE to experiment to select the optimum combination of channels. Additionally, you can compare engagement costs for these channels too and drop the most expensive channel from the mix.\
-Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
+Use IntelliNODE to experiment to select the optimum combination of channels. Additionally, you can compare engagement costs for these channels too and drop the most expensive channel from the mix.<br />Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
 
-* **Path A**: Push > Email > SMS
-* **Path B**: Push > SMS > Email
-* **Path C**: Email > Push > SMS
-* **Path D**: Email > SMS > Push
-* **Path E**: SMS > Push > Email
-* **Path F**: SMS > Email > Push
+- **Path A**: Push > Email > SMS
+- **Path B**: Push > SMS > Email
+- **Path C**: Email > Push > SMS
+- **Path D**: Email > SMS > Push
+- **Path E**: SMS > Push > Email
+- **Path F**: SMS > Email > Push
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b448e24-small-ResumeWatchingShows.jpg" />
+
+<Image src="https://files.readme.io/b448e24-small-ResumeWatchingShows.jpg" align="center" border={true} />
+
 
 </details>
 
@@ -407,13 +429,15 @@ Too many nudges will drive users to unsubscribe, and too few nudges will not dri
 
 Create an IntelliNODE experiment with different messaging frequencies for a channel. Create the following IntelliNODE paths for push messages over a period of 20 days:
 
-* **Path A**: Two push messages
-* **Path B**: Three push messages
-* **Path C**: Five push messages
-* **Path D**: Six push messages
-* **Path E**: Seven push messages
+- **Path A**: Two push messages
+- **Path B**: Three push messages
+- **Path C**: Five push messages
+- **Path D**: Six push messages
+- **Path E**: Seven push messages
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f6d0871-small-AVODtoSVOD.jpg" />
+
+<Image src="https://files.readme.io/f6d0871-small-AVODtoSVOD.jpg" align="center" border={true} />
+
 
 </details>
 <details>
@@ -435,14 +459,16 @@ Messaging order influences the time to convert.
 
 Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
 
-* **Path A**: Push > Email > SMS
-* **Path B**: Push > SMS > Email
-* **Path C**: Email > Push > SMS
-* **Path D**: Email > SMS > Push
-* **Path E**: SMS > Push > Email
-* **Path F**: SMS > Email > Push
+- **Path A**: Push > Email > SMS
+- **Path B**: Push > SMS > Email
+- **Path C**: Email > Push > SMS
+- **Path D**: Email > SMS > Push
+- **Path E**: SMS > Push > Email
+- **Path F**: SMS > Email > Push
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/757daa2-small-MessageingOrderforAnticipation.jpg" />
+
+<Image src="https://files.readme.io/757daa2-small-MessageingOrderforAnticipation.jpg" align="center" border={true} />
+
 
 </details>
 
@@ -465,23 +491,25 @@ Sending the push notification at an optimum time can lead to an increase in conv
 
 Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends. Create the following push paths:
 
-*IntelliNODE 1 (Runs on weekdays only)*
+_IntelliNODE 1 (Runs on weekdays only)_
 
-* 8.30 AM 
-* 10.30 AM 
-* 7.30 PM 
-* 8.30 PM 
+- 8.30 AM
+- 10.30 AM
+- 7.30 PM
+- 8.30 PM
 
-*IntelliNODE 2 (Runs on weekends only)*
+_IntelliNODE 2 (Runs on weekends only)_
 
-* 8.30 AM 
-* 10.30 AM 
-* 7.30 PM 
-* 8.30 PM 
+- 8.30 AM
+- 10.30 AM
+- 7.30 PM
+- 8.30 PM
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f7ce12a-VideoGenre.jpg" />
 
-You can add more variations by using IntelliNODE. For example, send exercise video programs in the morning and thriller series at night. 
+<Image src="https://files.readme.io/f7ce12a-VideoGenre.jpg" align="center" border={true} />
+
+
+You can add more variations by using IntelliNODE. For example, send exercise video programs in the morning and thriller series at night.
 
 </details>
 

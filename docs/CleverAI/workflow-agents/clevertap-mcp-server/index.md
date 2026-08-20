@@ -16,7 +16,7 @@ MCP tools are pre-built functions that AI clients invoke using natural language 
 <Callout icon="📘" theme="info">
   #### Availability
 
-  CleverTap MCP is currently released in Public beta. To enable this feature, contact your Customer Success Manager.&#x20;
+  CleverTap MCP Server is currently released in Public beta. To enable this feature, contact your Customer Success Manager.&#x20;
 </Callout>
 
 The following table lists all available tool categories and the tools within each category:

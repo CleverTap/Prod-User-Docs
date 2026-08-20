@@ -22,7 +22,7 @@ IntelliTime and IntelliChannel decide when and where to reach each user. Intelli
 
   </Card>
 
-  <Card title="IntelliNODE">
+  <Card title="IntelliNode">
 
   </Card>
 

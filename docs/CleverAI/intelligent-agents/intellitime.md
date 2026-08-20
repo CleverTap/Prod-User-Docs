@@ -62,13 +62,13 @@ For example, you want to send personalized discount offers to your users based o
 
 
 <Callout icon="👍" theme="okay">
-  ### Bucket Example
+  #### Bucket Example
 
   For example, if a IntelliTime campaign is created on January 1 at 5:15 PM, the campaign will start running based on the upcoming best time slot i.e. 6 P.M. and the users will receive campaigns based on the slot in which they are most active on the application.
 </Callout>
 
 <Callout icon="📘" theme="info">
-  ### IntelliTime Campaign Handling During DND
+  #### IntelliTime Campaign Handling During DND
 
   If the IntelliTime bucket coincides with the DND period defined by the user, then the campaign message is discarded.
 </Callout>
@@ -116,7 +116,7 @@ Currently, you can create journeys using the default IntelliTime config. So, it 
   The default IntelliTime events cannot be deleted. Also, deleting such events does not impact the already running campaigns.
 </Callout>
 
-## Create Campaign using IntelliTime
+## Create Campaign Using IntelliTime
 
 Here, consider an example of the IntelliTime email campaign. To create a campaign with this feature, perform the following steps:
 

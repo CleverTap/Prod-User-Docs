@@ -2,7 +2,7 @@
 title: How to Write Effective Prompts for Scribe
 excerpt: Learn how to write effective prompts for Scribe
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

@@ -4,7 +4,7 @@ excerpt: >-
   The first and only content generator that can create emotionally resonant
   content at scale.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

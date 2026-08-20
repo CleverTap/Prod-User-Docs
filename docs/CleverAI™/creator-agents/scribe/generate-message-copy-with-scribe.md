@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to write effective Scribe prompts, with best practices and
   ready-to-use templates for common campaigns across industries.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

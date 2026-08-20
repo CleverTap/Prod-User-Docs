@@ -2,7 +2,7 @@
 title: Sample Syntaxes for Writing Prompts
 excerpt: Use the sample syntaxes to write prompts for Scribe.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

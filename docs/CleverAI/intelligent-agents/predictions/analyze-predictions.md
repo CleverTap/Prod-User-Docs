@@ -4,7 +4,7 @@ excerpt: >-
   Discover how to analyze predictions right from the CleverTap dashboard and
   unlock valuable insights to elevate your engagement strategy.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

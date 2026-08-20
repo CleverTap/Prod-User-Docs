@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create recommendation strategies that show relevant items from
   your catalog across different user experiences.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

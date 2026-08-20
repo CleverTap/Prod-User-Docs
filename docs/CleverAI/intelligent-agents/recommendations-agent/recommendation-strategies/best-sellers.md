@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to recommend top-performing products or content based on overall
   sales and popularity trends.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

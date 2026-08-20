@@ -2,7 +2,7 @@
 title: Rule-Based Filters
 excerpt: Learn how to use different filter rule types to refine recommendation results.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

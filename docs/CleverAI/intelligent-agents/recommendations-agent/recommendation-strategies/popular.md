@@ -4,7 +4,7 @@ excerpt: >-
   Learn how Popular recommendations show consistently high performing items of
   the catalog using aggregated engagement to drive reliable discovery.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how Trending recommendations surface recently surging items to keep
   experiences current and relevant.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

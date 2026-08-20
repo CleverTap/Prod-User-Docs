@@ -26,7 +26,7 @@ Segment Builder and Journey Builder turn a plain-language description into a wor
 
   </Card>
 
-  <Card title="AI Schema">
+  <Card title="AI Schema" href="https://docs.clevertap.com/docs/schema#ai-generated-schema-descriptions">
 
   </Card>
 
@@ -34,7 +34,7 @@ Segment Builder and Journey Builder turn a plain-language description into a wor
 
   </Card>
 
-  <Card title="CleverTap MCP" href="https://docs.clevertap.com/docs/clevertap-mcp">
+  <Card title="CleverTap MCP Server" href="https://docs.clevertap.com/docs/clevertap-mcp-server">
 
   </Card>
 </Cards>

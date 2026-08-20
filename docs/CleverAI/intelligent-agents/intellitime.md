@@ -177,7 +177,7 @@ The campaign is now ready to publish.
 
 # Create IntelliTime Journeys
 
-For campaigns following a past behavior segment, messages can be delivered at the best time with any of the following channels: [email](doc:email), [push notifications](doc:push), [web push](doc:web-push), and [SMS](doc:SMS).
+For campaigns targeting a past behavior segment, messages can be delivered at the optimal time via any of the following channels: [email](doc:email), [push notifications](doc:push), [web push](doc:web-push), and [SMS](doc:SMS).
 
 1. Set Up IntelliTime Event
 2. Create Journeys with IntelliTime Feature

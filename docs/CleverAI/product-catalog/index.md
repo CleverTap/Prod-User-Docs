@@ -23,7 +23,7 @@ For example, consider an e-commerce catalog item uploaded with the following dat
 The catalog item does not explicitly include structured attributes such as color, shoe type, gender, or usage.
 
 <Callout icon="📘" theme="info">
-  ### Availability
+  #### Availability
 
   Product Catalog is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>

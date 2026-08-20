@@ -4,7 +4,7 @@ excerpt: >-
   Learn how configuring brand colors, tone, and content guidelines once helps
   you create on-brand AI-generated assets, every time.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

@@ -2,7 +2,7 @@
 title: Brand Context
 excerpt: 'Learn how to set up a consolidated Brand Context for your account. '
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

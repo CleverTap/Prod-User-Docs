@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create email templates faster by describing your intent and
   letting the Email Template Creator agent generate editable template.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

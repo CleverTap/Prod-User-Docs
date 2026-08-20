@@ -4,7 +4,7 @@ excerpt: >-
   Create stunning, on-brand campaign visuals with the Image Creator using
   effective prompts. 
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create on-brand campaign copy with the AI Copywriter Agent using
   effective prompts. 
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

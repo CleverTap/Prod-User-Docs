@@ -2,7 +2,7 @@
 title: Brand Kit
 excerpt: Learn how to set up a consolidated Brand Kit for Image Creator.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

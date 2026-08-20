@@ -2,7 +2,7 @@
 title: Scribe
 excerpt: 'Learn how to generate message copies across all campaigns with AI. '
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 next:

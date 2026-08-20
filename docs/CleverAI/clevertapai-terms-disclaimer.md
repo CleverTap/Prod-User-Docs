@@ -4,7 +4,7 @@ excerpt: >-
   Understand terms governing the responsible use of CleverAI™️ features for
   generating and managing marketing content.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

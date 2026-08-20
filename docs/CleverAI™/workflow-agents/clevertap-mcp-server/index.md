@@ -11,7 +11,7 @@ metadata:
 ---
 # Overview
 
-MCP tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.<br />For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
+MCP (Model Context Protocol) tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides such tools for Claude and ChatGPT, enabling you to query, manage campaigns, build segments, and explore customer data, all without leaving your AI interface.<br />For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
 
 <Callout icon="📘" theme="info">
   #### Availability

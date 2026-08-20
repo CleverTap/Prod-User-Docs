@@ -127,7 +127,7 @@ The following image shows how IntelliChannel differs from Estimated Reach:
 <Image src="https://files.readme.io/ad3fe6cdc54d8dccda3d6a2f4a7a376b4a0c99f49c896c3dbeb7fa581b65f060-image.png" align="center" caption="IntelliChannel and Estimate Reach" border={true} />
 
 
-## Personalize Campaigns using IntelliChannel
+## Personalize Campaigns Using IntelliChannel
 
 When creating a Campaign, use the _IntelliChannel&#x20;_&#x70;roperty in the Who section to target users most likely to engage with that channel.
 

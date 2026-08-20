@@ -2,7 +2,7 @@
 title: Messages
 excerpt: Learn how to messages for each stage in the Lifecycle Agent.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

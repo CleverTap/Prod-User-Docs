@@ -2,7 +2,7 @@
 title: 'Analytics Builder: Build with AI'
 excerpt: Generate advanced queries and visual reports with a simple prompt.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

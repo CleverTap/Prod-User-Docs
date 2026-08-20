@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to build a Journey from a natural-language prompt using Journey
   Builder agent.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

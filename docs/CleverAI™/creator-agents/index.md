@@ -14,11 +14,11 @@ As CleverAI<sup>TM</sup> evolves, the content these agents generate feeds direct
 # Agents in This Family
 
 <Cards>
-  <Card title="Scribe" href="https://docs.clevertap.com/update/docs/scribe-1">
+  <Card title="Scribe" href="https://docs.clevertap.com/docs/scribe-1">
 
   </Card>
 
-  <Card title="Image Creator" href="https://docs.clevertap.com/update/docs/image-creator">
+  <Card title="Image Creator" href="https://docs.clevertap.com/docs/image-creator">
 
   </Card>
 

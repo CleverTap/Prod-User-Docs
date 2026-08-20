@@ -15,8 +15,8 @@ Uploading a product catalog is the first step to bringing product or content dat
 
 Once uploaded, catalogs are populated and updated using one or more feeds. Each feed is processed independently, so updates from one feed apply only to the fields it manages and do not affect data from other feeds. For example, you might use one feed to upload an initial set of products and another feed to keep pricing or availability updated over time.
 
-<Callout icon="📘" theme="warn">
-  ### **Note**
+<Callout icon="🚧" theme="warn">
+  #### **Note**
 
   Each feed replaces a product's attributes in full.
 

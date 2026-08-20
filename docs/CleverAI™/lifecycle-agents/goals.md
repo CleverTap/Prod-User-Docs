@@ -2,7 +2,7 @@
 title: Goals
 excerpt: Learn how to set the goals in Lifecycle Agent.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

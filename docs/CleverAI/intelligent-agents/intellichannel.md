@@ -166,7 +166,7 @@ The following are the answers to common questions about how IntelliChannel works
 
 ### What happens if a user unsubscribes from their IntelliChannel?
 
-If a user unsubscribes from their IntelliChannel, Clever.AI detects it during the next daily refresh and re-evaluates their engagement across active channels. The IntelliChannel is then updated automatically to SMS, Email, or another channel where the user has shown the highest recent engagement.
+If a user unsubscribes from their IntelliChannel, CleverAI<sup>TM</sup> detects it during the next daily refresh and re-evaluates their engagement across active channels. The IntelliChannel is then updated automatically to SMS, Email, or another channel where the user has shown the highest recent engagement.
 
 ### Why am I not able to see the IntelliChannel property in my Segment Builder?
 

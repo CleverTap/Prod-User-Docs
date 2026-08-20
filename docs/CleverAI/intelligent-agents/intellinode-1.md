@@ -1,5 +1,5 @@
 ---
-title: IntelliNODE
+title: IntelliNode
 excerpt: ''
 deprecated: false
 hidden: false

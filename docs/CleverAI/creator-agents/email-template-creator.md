@@ -95,7 +95,7 @@ Once you start generating Templates, it automatically saves your sessions under 
 
 ### How Threads Work
 
-Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that your history remains personalized and relevant. All threads for your account appear in the **All Threads** popup. A thread becomes the context for your next generation, allowing CleverAI to remember your prior visual style, brand preferences, or edits. They are not tied to specific campaigns; they persist across multiple campaigns for seamless continuity.
+Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that your history remains personalized and relevant. All threads for your account appear in the **All Threads** popup. A thread becomes the context for your next generation, allowing CleverAI <sup>TM</sup> to remember your prior visual style, brand preferences, or edits. They are not tied to specific campaigns; they persist across multiple campaigns for seamless continuity.
 
 If multiple users from the same account use AI tools, each user sees only their own threads and the latest template generation session that they have participated in.
 

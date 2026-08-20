@@ -26,7 +26,7 @@ The following image illustrates how Recommendations works, from the inputs that 
 
 
 <Callout icon="📘" theme="info">
-  ### Availability
+  #### Availability
 
   Recommendations is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
@@ -56,7 +56,7 @@ User interactions such as views, clicks, purchases, and watch history provide si
   CleverTap provides a set of out-of-the-box strategies, including Popular, Trending, Based on What You Viewed, Frequently Bought Together, More Like These, and others, each suited to a different recommendation goal. You can use these directly or fine-tune them to your use case by configuring the interaction event, time window, filters, and catalog mapping.
 
   For example, a streaming platform might start with the out-of-the-box Popular strategy and configure it to count only `video_played` events from the last 7 days, filtered to a specific genre, then reuse that same strategy across a homepage banner, a weekly digest email, and a push notification campaign.
-- **Algorithm**: The underlying computational method that determines how catalog items are ranked and selected for each user. Algorithms vary in the signals they use; some rank by overall popularity across all users, others factor in an individual user's interaction history, and others detect patterns across users with similar behavior. For example, the Popular algorithm ranks items by total view count across all users, surfacing the most-viewed item first. Each Strategy is built on a specific algorithm that you choose when creating or customizing a Strategy.
+- **Algorithm**: The underlying computational method that determines how catalog items are ranked and selected for each user. Algorithms vary in the signals they use; some rank by overall popularity across all users, others factor in an individual user's interaction history, and others detect patterns across users with similar behavior. For example, the Popular algorithm ranks items by total view count across all users, surfacing the most-viewed item first. Each Strategy is built on a specific algorithm you choose when creating or customizing it.
 - **Rules**: Rules let you define reusable conditions based on catalog attributes, such as `in_stock` = Y. These rules can then be applied as filters during recommendation personalization. Two types of Rules-based filters are supported:
   - **Catalog-based Rules**: Based on item attributes such as category or price. For example, a catalog filter can restrict recommendations to in-stock products only, so a user never sees an item they cannot buy.
   - **Events-based Rules**: Based on user activity, such as `video_played`.
@@ -65,9 +65,9 @@ User interactions such as views, clicks, purchases, and watch history provide si
 
 # Recommendations Workflow
 
-Recommendations combine your catalog, user behavior, and a strategy you define, then deliver the right items at the right time, across the right channels. The process has the following four key steps:
+Recommendations combine your catalog, user behavior, and a strategy you define to deliver the right items at the right time across the right channels. The process has the following four key steps:
 
-1. **Connect Catalog**: Ingest your item catalog into CleverTap (supports CSV, API sync, or Google Sheets sync). Each item, whether a product, video, article, or any other entity, becomes a candidate for recommendation. Catalog attributes such as category, price, availability, and custom fields are used to filter items appropriately. For more information, refer to [Catalogs](doc:catalogs).
+1. **Connect Catalog**: Ingest your item catalog into CleverTap (supports CSV, API sync, or Google Sheets sync). Each item, whether a product, video, article, or any other entity, becomes a candidate for recommendation. Catalog attributes such as category, price, availability, and custom fields are used to filter items appropriately. For more information, refer to [Product Catalog](doc:product-catalog).
 
 2. **Set Up Strategy**: Select a recommendation strategy that matches your goal. The strategy determines how items are ranked and selected for each user. Define the interaction event (for example, Product Viewed), configure the lookback period, and map the event property that identifies the product to the catalog's Identity field. The strategy begins processing once it is activated. Saving the strategy does not make it live; you must activate it after saving. The strategy is ready to serve once it reaches Active status.
 

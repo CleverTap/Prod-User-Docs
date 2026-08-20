@@ -1,6 +1,6 @@
 ---
-title: IntelliNODE FAQs
-excerpt: Frequently asked questions related to IntelliNODE Journeys
+title: IntelliNode FAQs
+excerpt: Frequently asked questions related to IntelliNode Journeys
 deprecated: false
 hidden: false
 metadata:

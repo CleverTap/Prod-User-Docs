@@ -1,7 +1,7 @@
 - lifecycle-agent-goals
 - lifecycle-agent-target-segment
 - lifecycle-agent-engagement-strategy
-- messages
+- lifecyle-agent-messages
 - guardrails
 - agent-statuses
 - stats

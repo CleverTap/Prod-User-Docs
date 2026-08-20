@@ -113,7 +113,7 @@ This filter selects users who primarily engage through Push notifications. Once 
 This image shows how to create a user segment using the _IntelliChannel&#x20;_&#x70;roperty. The Reachability metrics in the _Segment Insights_ section display how many users in the segment can currently receive messages across each active channel, such as Push, Email, SMS, and WhatsApp. Reachability depends on device and channel availability, not on user preference.
 
 <Callout icon="📘" theme="info">
-  ### **IntelliChannel and Estimate Reach**
+  #### **IntelliChannel and Estimate Reach**
 
   - **IntelliChannel&#x20;**&#x69;dentifies the channel where a user shows the highest engagement based on past interactions.
   - **Estimated Reach** shows how many users in this segment (whose IntelliChannel is Push) are currently reachable across all channels based on delivery eligibility.

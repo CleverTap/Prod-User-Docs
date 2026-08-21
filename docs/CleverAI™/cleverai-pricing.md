@@ -19,7 +19,7 @@ CleverAI<sup>TM</sup> Billing is the commercial and metering layer underneath Cl
 2. How the usage of prompt-based agents is metered and charged?&#x20;
 3. How is the usage of capacity-configured Machine Learning (ML) capabilities metered and charged?
 
-CleverAI Billing works on two models, depending on the type of agent:
+CleverAI<sup>TM</sup> Billing works on two models, depending on the type of agent:
 
 | Model                                     | How does it work?                                                                                                                                                                                                                     | Used by                                                                                                                                                |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -234,13 +234,13 @@ To do so:
 3. Click **View Detailed Breakdown** to open the _CleverAI_<sup>TM</sup>_&#x20;Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 
 
-<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI</sup>I is a" border={true} />
+<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI<sup>TM</sup> Token and Block Capacity" border={true} />
 
 
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
 
-<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI Token and Agent Capacity Usage by Projects" border={true} />
+<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI<sup>TM</sup?> Token and Agent Capacity Usage by Projects" border={true} />
 
 
 <Callout icon="📘" theme="info">

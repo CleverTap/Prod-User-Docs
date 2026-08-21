@@ -219,16 +219,16 @@ To do so:
 1. From the CleverTap dashboard, go to _Organization_ > _Billing_ > _My Plan_.
 
 2. On the _Overview_ tab, you will see two balance cards:
-   - **CleverAI**<sup>TM</sup>**&#x20;Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
+   - **CleverAI**<sup>TM</sup>Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
 
-     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAIleverA<sup>TM Tokens Usage" border={true} />
+     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI<sup>TM</sup> Tokens Usage" border={true} />
 
 
    - **CleverAI**<sup>TM</sup>**&#x20;Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
 
-     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAIleverA<sup>TM Blocks & Capacity" border={true} />
+     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI<sup>TM Blocks & Capacity" border={true} />
 
 
 3. Click **View Detailed Breakdown** to open the _CleverAI_<sup>TM</sup>_&#x20;Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.

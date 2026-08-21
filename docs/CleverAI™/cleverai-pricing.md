@@ -143,7 +143,7 @@ The _AI Allocation_ page allows admins to view organization-wide balances and de
 To view the AI allocation for your organization:
 
 1. Go to _Organization_ > _AI Allocation&#x20;_&#x66;rom the CleverTap dashboard.
-2. At the top, you will see
+2. At the top, you will see the following:
    - **CleverAI**<sup>TM</sup>**&#x20;Tokens**: A card showing the Promotional and Purchased Token balances, and their expiry date.
    - **CleverAI**<sup>TM</sup>**&#x20;Blocks & Capacity:** A card showing the number of Blocks and the capacity for each Block-based agent.
 3. Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using, either a specific number or _Shared_ if it is drawing from the organization's common pool.
@@ -240,7 +240,7 @@ To do so:
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
 
-<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI<sup>TM</sup?> Token and Agent Capacity Usage by Projects" border={true} />
+<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI<sup>TM</sup> Token and Agent Capacity Usage by Projects" border={true} />
 
 
 <Callout icon="📘" theme="info">

@@ -220,31 +220,6 @@ c. Email opt out
 
 - Our SDK has a flag ‘MSG-email’ which if set to disable, will ensure that no email is received by the email id associated to the logged in device.
 
-**d. WhatsApp opt out**
-
-CleverTap exposes two flags for WhatsApp, and each operates at a different level.
-
-- Set the `MSG-whatsapp` flag to `false` to unsubscribe the specific user profile from WhatsApp messages. Set it to `true` to resubscribe that profile.
-- Set the `MSG-dndWhatsApp` flag to `true` to unsubscribe every profile that shares the same phone number from WhatsApp messages, even when multiple profiles are tied to that number. Set it back to `false` to allow the number to receive messages again.
-
-<Callout icon="📘" theme="info">
-  ### Note
-
-  `MSG-whatsapp` defaults to `false`, unlike the push, SMS, and email flags above, which default to an opted-in state. A profile is treated as opted out of WhatsApp until you explicitly set this flag to `true`.
-</Callout>
-
-Because both flags interact, the combination determines the actual subscription status:
-
-| `MSG-whatsapp` | `MSG-dndWhatsApp` | Subscription Status |
-| -------------- | ----------------- | ------------------- |
-| Not set        | Not set           | Unsubscribed        |
-| Not set        | `true`            | Unsubscribed        |
-| Not set        | `false`           | Unsubscribed        |
-| `true`         | Not set           | Subscribed          |
-| `true`         | `true`            | Unsubscribed        |
-| `true`         | `false`           | Subscribed          |
-| `false`        | Any value         | Unsubscribed        |
-
 ### 3. Access Control
 
 If the SDK has been updated and the updated app is being used by a user, all end users have this right to opt out of Marketing.

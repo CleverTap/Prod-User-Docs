@@ -26,7 +26,7 @@ Scribe is an AI-powered writing assistant that helps you generate engaging conte
 <Callout icon="📘" theme="info">
   ### Note
 
-  We recommend moving to the new Scribe experience for the latest AI-powered copywriting capabilities. For more information, refer to [Scribe](https://docs.clevertap.com/docs/scribe-v2). To enable the new Scribe for your account., contact CleverTap Support.
+  We recommend moving to the new Scribe experience for the latest AI-powered copywriting capabilities. For more information, refer to [Scribe](https://docs.clevertap.com/docs/scribe-v2). To enable the new Scribe for your account, contact CleverTap Support.
 </Callout>
 
 # How Scribe Works

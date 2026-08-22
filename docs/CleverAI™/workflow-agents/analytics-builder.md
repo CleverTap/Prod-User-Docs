@@ -21,7 +21,7 @@ Use this feature to quickly explore user behavior or product usage by entering a
 <Callout icon="📘" theme="info">
   ### Availability
 
-  Analytics Builder is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Analytics Builder is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 Analytics Builder has three stages:

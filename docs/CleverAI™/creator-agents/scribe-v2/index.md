@@ -24,7 +24,7 @@ Scribe helps you instantly create, edit, or refine message copy for your campaig
 <Callout icon="📘" theme="info">
   ### Availability
 
-  Scribe is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Scribe is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 Scribe reduces manual effort, speeds up campaign creation, and helps you produce consistent, on-brand copy that is aligned with your engagement goals. With Scribe, you can do the following:

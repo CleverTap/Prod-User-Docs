@@ -25,7 +25,9 @@ The catalog item does not explicitly include structured attributes such as color
 <Callout icon="📘" theme="info">
   #### Availability
 
-  Product Catalog is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Product Catalog is included on the Pro and Ultimate plans and available as a paid add-on on the Core plan. To access the feature, contact your Customer Success Manager.
+
+  [Catalog](doc:catalogs) is available on all plans.
 </Callout>
 
 # Use Cases

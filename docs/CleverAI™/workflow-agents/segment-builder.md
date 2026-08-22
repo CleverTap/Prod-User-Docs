@@ -17,7 +17,7 @@ This feature helps marketing and product teams create granular segments without 
 <Callout icon="📘" theme="info">
   ### Availability
 
-  Segment Builder is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Segment Builder is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 Prompt-Based Segmentation has the following stages:

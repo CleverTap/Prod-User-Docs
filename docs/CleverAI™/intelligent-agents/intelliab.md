@@ -28,7 +28,7 @@ For example, you are running a flash sale. You create 4 push notification varian
 <Callout icon="📘" theme="info">
   #### Availability
 
-  IntelliAB is available in Pro and Ultimate plans. To access the feature, contact Customer Success Manager.
+  IntelliAB is available on Pro and Ultimate plans. To access the feature, contact Customer Success Manager.
 </Callout>
 
 # Manual A/B Test vs. IntelliAB Test

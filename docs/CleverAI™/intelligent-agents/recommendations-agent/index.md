@@ -28,7 +28,7 @@ The following image illustrates how Recommendations works, from the inputs that 
 <Callout icon="📘" theme="info">
   #### Availability
 
-  Recommendations is available in Ultimate plan. To access this feature, contact your Customer Success Manager.
+  The new and enhanced Recommendations feature is available only on the _Ultimate_ plan. Accounts on other plans continue to use the existing [Recommendations](doc:recommendations). To access the feature, contact your Customer Success Manager.
 </Callout>
 
 # Challenges Recommendations Solve

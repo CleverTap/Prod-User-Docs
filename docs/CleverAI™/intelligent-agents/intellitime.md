@@ -20,6 +20,12 @@ _IntelliTime_ is a feature that identifies the contextual Best Time for users. T
 - Personalized Experience
 - Improved Conversion Rates
 
+<Callout icon="📘" theme="info">
+  #### Availability
+
+  IntelliTime is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+</Callout>
+
 # IntelliTime Overview Video
 
 Learn how to send campaigns based on contextual IntelliTime for users with a sample use case.

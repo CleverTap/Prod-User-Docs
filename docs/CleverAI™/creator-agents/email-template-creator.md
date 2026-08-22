@@ -23,7 +23,7 @@ This experience is designed to reduce time-to-live while keeping marketers in fu
 <Callout icon="📘" theme="info">
   #### Private Beta
 
-  Email Template Creator agent is currently released in Private Beta and is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Email Template Creator agent is currently released in Private Beta and is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 # Create Campaign Using Email Template Creator Agent

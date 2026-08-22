@@ -1,7 +1,6 @@
 - amazon-simple-email-service
 - mandrill
 - postmark
-- sendgrid-delivered
 - sendgrid
 - generic-http
 - generic-http-with-attachments

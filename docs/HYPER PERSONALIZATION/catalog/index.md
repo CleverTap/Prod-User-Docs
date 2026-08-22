@@ -19,7 +19,7 @@ Catalog provides the ability to send personalized recommendations using catalogs
 <Callout icon="📘" theme="info">
   #### Availability
 
-  Catalog is available on all plans. [Product Catalog](doc:product-catalog), is included on the Pro and Ultimate plans and available as a paid add-on on the Core plan. To access the feature, contact your Customer Success Manager.
+  Catalog is available on all plans. [Product Catalog](doc:product-catalog) is included on the Pro and Ultimate plans and available as a paid add-on on the Core plan. To access the feature, contact your Customer Success Manager.
 </Callout>
 
 The following are two types of catalogs you can upload:

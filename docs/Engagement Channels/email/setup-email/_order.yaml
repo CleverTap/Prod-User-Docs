@@ -6,7 +6,6 @@
 - one-click-unsubscribe
 - group-unsubscribe
 - handling-unsubscribes
-- setup-request-id
 - track-domain-reputation
 - email-open-tracking
 - bot-activity-filter

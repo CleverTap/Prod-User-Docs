@@ -27,7 +27,7 @@ The catalog item does not explicitly include structured attributes such as color
 
   Product Catalog is included on the Pro and Ultimate plans and available as a paid add-on on the Core plan. To access the feature, contact your Customer Success Manager.
 
-  [Catalog](doc:catalogs) is available on all plans.
+  [Catalog](doc:catalog) is available on all plans.
 </Callout>
 
 # Use Cases

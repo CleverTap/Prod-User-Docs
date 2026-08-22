@@ -21,7 +21,7 @@ Clever.AI analyzes user interactions over a rolling 90-day window to determine t
 <Callout icon="📘" theme="info">
   ### Availability
 
-  IntelliChannel is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  IntelliChannel is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 With IntelliChannel, marketers can:

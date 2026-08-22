@@ -15,7 +15,7 @@ Journey Agent lets you create customer journeys using natural-language prompts. 
 <Callout icon="📘" theme="info">
   #### Availability
 
-  Journey Agent is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Journey Agent is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 Creating a journey using Journey Agent includes the following four key stages:

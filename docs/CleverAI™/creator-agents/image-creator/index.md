@@ -28,7 +28,7 @@ Image Creator helps you instantly create, edit, or refine images for your campai
 <Callout icon="📘" theme="info">
   ### Availability
 
-  Image Creator is available in Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
+  Image Creator is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 With Image Creator, you can do the following:

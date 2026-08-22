@@ -3,7 +3,6 @@
 - postmark
 - sendgrid
 - generic-smtp
-- generic-smtp-v2-payload
 - deeplinking-with-branch
 - email_providers_operations
 - email-provider-operations-delivered

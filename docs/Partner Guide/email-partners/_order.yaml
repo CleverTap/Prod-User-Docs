@@ -2,7 +2,6 @@
 - mandrill
 - postmark
 - sendgrid
-- generic-http-with-attachments
 - generic-smtp
 - generic-smtp-v2-payload
 - deeplinking-with-branch

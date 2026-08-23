@@ -14,18 +14,18 @@ metadata:
 
 Integrating Outgrow with CleverTap via Zapier allows you to:
 
-* Automatically sync user responses from Outgrow into CleverTap.
-* Create or update user profiles based on Outgrow submissions.
-* Trigger CleverTap journeys, such as follow-up or thank-you campaigns, based on user actions.
-* Enrich profiles by adding response attributes to CleverTap profiles for improved segmentation and personalization.
+- Automatically sync user responses from Outgrow into CleverTap.
+- Create or update user profiles based on Outgrow submissions.
+- Trigger CleverTap journeys, such as follow-up or thank-you campaigns, based on user actions.
+- Enrich profiles by adding response attributes to CleverTap profiles for improved segmentation and personalization.
 
 # Prerequisites for Integration
 
 The following are the prerequisites for this integration:
 
-* Access to your **Outgrow** account
-* Access to an active **Zapier** account
-* A CleverTap account with a valid **Account ID** and **Passcode**
+- Access to your **Outgrow** account
+- Access to an active **Zapier** account
+- A CleverTap account with a valid **Account ID** and **Passcode**
 
 # Integrate Outgrow with CleverTap Using Zapier
 
@@ -50,9 +50,11 @@ You can capture user details such as Name, Email, and Feedback through an Outgro
 
 1. Log in to your Outgrow dashboard and create the content type you want (such as a survey, quiz, or poll). For more information on creating interactive content in Outgrow, refer to [Introduction to The Outgrow Builder](https://support.outgrow.co/docs/studio).
 2. Once the content is ready, select the _CONFIGURE_ tab.
-3. Select _Launch in an Email_ and click **Copy** to copy the HTML Snippet**.
+3. Select _Launch in an Email_ and click **Copy** to copy the HTML Snippet\*\*.
 
-<Image align="center" alt="Copy HTML Snippet" border={true} caption="Copy HTML Snippet" src="https://files.readme.io/cdfafb464c859f586d3110d9865d16072fa7beb5f2f727f883fdaf4a3e30429f-Screen_Recording_2025-07-14_at_12.31.29_PM_1.gif" width="75% " />
+
+<Image src="https://files.readme.io/cdfafb464c859f586d3110d9865d16072fa7beb5f2f727f883fdaf4a3e30429f-Screen_Recording_2025-07-14_at_12.31.29_PM_1.gif" alt="Copy HTML Snippet" align="center" width="75% " caption="Copy HTML Snippet" border={true} />
+
 
 The snippet can be used to embed your Outgrow content in a CleverTap campaign.
 
@@ -63,7 +65,9 @@ Configure a CleverTap campaign to display your survey form inside the CleverTap 
 1. In the CleverTap dashboard, create a new [Email](doc:create-message-email) or [In-App Message](doc:create-message-in-app) campaign that supports HTML.
 2. In the _What_ section, select _Email with rich media_ template and click **Source**.
 
-<Image align="center" alt="Custom HTML Template in CleverTap" border={true} caption="Custom HTML Template in CleverTap" src="https://files.readme.io/91d335af2bd4a6a53d06c594d0be17ddbf64e3de5feeb190f7e973c2c55ed6e9-Screen_Recording_2025-07-14_at_12.36.30_PM_1.gif" width="75% " />
+
+<Image src="https://files.readme.io/91d335af2bd4a6a53d06c594d0be17ddbf64e3de5feeb190f7e973c2c55ed6e9-Screen_Recording_2025-07-14_at_12.36.30_PM_1.gif" alt="Custom HTML Template in CleverTap" align="center" width="75% " caption="Custom HTML Template in CleverTap" border={true} />
+
 
 3. Replace the existing code with the HTML snippet copied from _Step 3_ of [Create Interactive Content in Outgrow](doc:outgrow#create-interactive-content-in-outgrow).
 4. Add dynamic personalization using [Liquid tags](https://docs.clevertap.com/docs/personalize-message-webhooks#liquid-tags) to insert CleverTap profile attributes such as name and email.
@@ -83,8 +87,8 @@ Zapier acts as a bridge between Outgrow and CleverTap. When a user submits a res
 
 The integration supports the following two use cases:
 
-* [Create/Update User Profiles](doc:outgrow#createupdate-user-profiles)
-* [Upload Event](doc:outgrow#upload-event)
+- [Create/Update User Profiles](doc:outgrow#createupdate-user-profiles)
+- [Upload Event](doc:outgrow#upload-event)
 
 ### Create/Update User Profiles
 
@@ -92,19 +96,24 @@ Use this option to update user profiles in CleverTap with Outgrow responses for 
 
 1. Log in to the [Zapier dashboard](https://zapier.com/app/home) and click **+ Create Zap**. Zapier can connect various applications, including Outgrow.
 
-<Image align="center" alt="Create a Zap on Zapier Dashboard" border={true} caption="Create a Zap on Zapier Dashboard" src="https://files.readme.io/830b60a9c8f926bca524bfae5fa8a9aa021dad3d7e712f438b95c0486994e000-image.png" width="75% " />
+
+<Image src="https://files.readme.io/830b60a9c8f926bca524bfae5fa8a9aa021dad3d7e712f438b95c0486994e000-image.png" alt="Create a Zap on Zapier Dashboard" align="center" width="75% " caption="Create a Zap on Zapier Dashboard" border={true} />
+
 
 2. **Set up a Trigger** in Zapier to start the workflow when a user submits a response in Outgrow. To do so, perform the following steps:
    1. Select Outgrow from the App section. This starts the Zap when a trigger event occurs on Outgrow.
-   2. Select _Trigger Event_ from the dropdown list, then select the appropriate event for this use case. (@amrita: the example is inconsistent)
+   2. Select _Trigger Event_ from the dropdown list, then select the appropriate event for this use case.&#x20;
    3. Select Account and sign in using your Outgrow account credentials.
 
-<Image align="center" alt="Set Up Trigger Event" border={true} caption="Set Up Trigger Event" src="https://files.readme.io/2c5275b198e5947496f2e668b05c22c5a8bfda877fc0e28969f806c49e5e551c-image.png" width="75% " />
 
-3. Click **Test Trigger**. This ensures that the correct account is connected and the trigger is set up correctly.  
-   After testing the trigger, you will see a sample of the most recent responses to the form.
+<Image src="https://files.readme.io/2c5275b198e5947496f2e668b05c22c5a8bfda877fc0e28969f806c49e5e551c-image.png" alt="Set Up Trigger Event" align="center" width="75% " caption="Set Up Trigger Event" border={true} />
 
-<Image align="center" alt="Details of Pulled Records" border={true} caption="Details of Pulled Records" src="https://files.readme.io/05746faf45694c70d54370287a2e6be540c990239babc49f8b720cfd36154814-dd84be73-d931-4fd4-b519-0ed7892c2747.png" width="50% " />
+
+3. Click **Test Trigger**. This ensures that the correct account is connected and the trigger is set up correctly.<br />After testing the trigger, you will see a sample of the most recent responses to the form.
+
+
+<Image src="https://files.readme.io/05746faf45694c70d54370287a2e6be540c990239babc49f8b720cfd36154814-dd84be73-d931-4fd4-b519-0ed7892c2747.png" alt="Details of Pulled Records" align="center" width="50% " caption="Details of Pulled Records" border={true} />
+
 
 4. Click **Continue with selected record**.
 5. **Select the Action** that the zap must perform after the trigger event occurs. To do so, perform the following steps:
@@ -113,7 +122,9 @@ Use this option to update user profiles in CleverTap with Outgrow responses for 
    3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create a Passcode on CleverTap Dashboard](doc:outgrow#create-passcode-on-clevertap-dashboard) step.
    4. Click **Continue** after successfully connecting your account.
 
-<Image align="center" alt="Select the Action for Zap" border={true} caption="Select the Action for Zap" src="https://files.readme.io/56eca313456b36ad4977c1ad6ae44025ddb3ddb09334ce3e143c72eb36c61c54-2025-10-05_12-17-25_1.gif" width="75% " />
+
+<Image src="https://files.readme.io/56eca313456b36ad4977c1ad6ae44025ddb3ddb09334ce3e143c72eb36c61c54-2025-10-05_12-17-25_1.gif" alt="Select the Action for Zap" align="center" width="75% " caption="Select the Action for Zap" border={true} />
+
 
 6. **Configure the Action**. Map Outgrow data fields to CleverTap fields as follows:
 
@@ -132,11 +143,15 @@ Use this option to update user profiles in CleverTap with Outgrow responses for 
 
 7. Click **Continue**, and click **Test Step** to test the Zap after mapping the fields.
 
-<Image align="center" alt="Test Zap" border={true} caption="Test Zap" src="https://files.readme.io/577d4059c2ab5d94ca101e57af0a211d283959fcc408efefc45c7170276d69f3-image.png" width="75% " />
+
+<Image src="https://files.readme.io/577d4059c2ab5d94ca101e57af0a211d283959fcc408efefc45c7170276d69f3-image.png" alt="Test Zap" align="center" width="75% " caption="Test Zap" border={true} />
+
 
 8. Click **Publish**. Also, publish the campaign you have created in [Configure CleverTap Campaign](doc:outgrow#configure-clevertap-campaign). After this, users will receive the survey you have created, and the responses will be reflected in your CleverTap dashboard. If the user doesn’t exist, a new user will be created.
 
-<Image align="center" alt="Verify on the CleverTap dashboard" border={true} caption="Verify on the CleverTap dashboard" src="https://files.readme.io/7dbb8c68c217ef474abdc60133cfab4ad64e55ee6b30271693989ef06af97d81-image.png" width="75% " />
+
+<Image src="https://files.readme.io/7dbb8c68c217ef474abdc60133cfab4ad64e55ee6b30271693989ef06af97d81-image.png" alt="Verify on the CleverTap dashboard" align="center" width="75% " caption="Verify on the CleverTap dashboard" border={true} />
+
 
 ### Upload Event
 
@@ -150,7 +165,9 @@ Consider an example where you want to track form submissions as events in Clever
    3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create a Passcode on CleverTap Dashboard](doc:outgrow#create-passcode-on-the-clevertap-dashboard) step.
    4. Click **Continue** after successfully connecting your account.
 
-<Image align="center" alt="Select the Action for Zap" border={true} caption="Select the Action for Zap" src="https://files.readme.io/f0cf2f86c09089d9993dd29b8ca95ff5c2fff6f8e467dfccf3a2733f40ff5bca-2025-10-05_12-26-06_1.gif" width="75% " />
+
+<Image src="https://files.readme.io/f0cf2f86c09089d9993dd29b8ca95ff5c2fff6f8e467dfccf3a2733f40ff5bca-2025-10-05_12-26-06_1.gif" alt="Select the Action for Zap" align="center" width="75% " caption="Select the Action for Zap" border={true} />
+
 
 3. **Configure the Action**. Map Outgrow data fields to CleverTap fields as follows:
 

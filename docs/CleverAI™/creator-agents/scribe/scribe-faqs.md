@@ -2,7 +2,7 @@
 title: Scribe FAQs
 excerpt: Discover the answers to frequently asked questions about Scribe.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

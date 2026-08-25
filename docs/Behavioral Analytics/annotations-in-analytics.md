@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to add contextual notes directly to trend charts to capture the
   story behind your data.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

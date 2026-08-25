@@ -195,7 +195,7 @@ Each strategy has the following actions available:
 
 ## Filter Strategies
 
-Click the <img src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" valign="middle" height=“30”> icon to open the _Filters_ panel. You can filter by:
+Click the <img src="https://files.readme.io/fdeb9b35ac9c63a8bacfad4ad5ad81a51f95854ee40216d792fa59ff9e929a13-Filter_icon.png" valign="middle" height="30" /> icon to open the _Filters_ panel. You can filter by:
 
 
 <Image src="https://files.readme.io/60e4c3edb8dd16ded35e440797a6bc857c075ae00a123384e8d9fe4396d2b854-image.png" align="center" caption="Strategies- Filters" border={true} />

@@ -99,9 +99,9 @@ Journeys created with Journey Agent land on the same Journey canvas used for man
 
 # Threads
 
-Every Journey Builder agent session is saved as a thread under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20"> panel. A thread captures your prompts, refinements, and the resulting conversation, so you can return to a session and continue building from where you left off.&#x20;
+Every Journey Builder agent session is saved as a thread under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20" /> panel. A thread captures your prompts, refinements, and the resulting conversation, so you can return to a session and continue building from where you left off.&#x20;
 
-Click <img src="https://files.readme.io/4ce730d20d0f4d879c8d272499d564cc1c0b9b9649413b634c914a63dbb72c48-New_Thread_Icon.png" valign="middle" height="30"> to start a fresh session, or click <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20"> to see previous sessions, listed by _Thread Name_, _Created On_, and _Last Updated_. Click **Load Thread** to reopen a session and continue the conversation.
+Click <img src="https://files.readme.io/4ce730d20d0f4d879c8d272499d564cc1c0b9b9649413b634c914a63dbb72c48-New_Thread_Icon.png" valign="middle" height="30" /> to start a fresh session, or click <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20" /> to see previous sessions, listed by _Thread Name_, _Created On_, and _Last Updated_. Click **Load Thread** to reopen a session and continue the conversation.
 
 <br />
 

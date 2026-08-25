@@ -18,7 +18,7 @@ Use this feature to:
 - Experiment with tone, offers, or calls to action.
 - Accelerate template creation without writing content from scratch.
 
-This experience is designed to reduce time-to-live while keeping you in full control of the final template.&#x20;
+This experience is designed to reduce time-to-live while keeping you in full control of the final template.
 
 <Callout icon="📘" theme="info">
   ### Availability
@@ -28,10 +28,10 @@ This experience is designed to reduce time-to-live while keeping you in full con
 
 This document covers the following:
 
-- [Create a WhatsApp Template Using the Template Builder Agent](doc:whatsapp-template-creator#create-a-whatsapp-template)
-- [Configure Content Settings](doc:whatsapp-template-creator#configure-content-settings)
-- [Customize Templates for Brand Consistency](doc:whatsapp-template-creator#customize-templates-for-brand-consistency)
-- [Manage Generated Templates](doc:whatsapp-template-creator#manage-generated-templates)
+- [Create a WhatsApp Template Using the Template Builder Agent](/docs/whatsapp-template-creator#create-a-whatsapp-template)
+- [Configure Content Settings](/docs/whatsapp-template-creator#configure-content-settings)
+- [Customize Templates for Brand Consistency](/docs/whatsapp-template-creator#customize-templates-for-brand-consistency)
+- [Manage Generated Templates](/docs/whatsapp-template-creator#manage-generated-templates)
 
 ## Create a WhatsApp Template
 
@@ -45,7 +45,7 @@ Consider an example where you want to create a limited-time offer template annou
 
 4. In the **AskAI** panel, enter a prompt that explains what you want to create. For example:
 
-   ```
+   ```text
    Create a limited-time offer template for a Diwali sale offering 20% off for existing customers. Use a festive, friendly tone. Include an offer expiration timer and a clear call-to-action to shop the sale.
    ```
 
@@ -58,9 +58,7 @@ Consider an example where you want to create a limited-time offer template annou
 
 7. Review the message in the _Preview_ panel, then click **Send for Approval**.
 
-
    <Image src="https://files.readme.io/10b350811733b65ae2372c2dc1f3bdc8ce7f6cd882daf9f40111bfbacdac72b6-ask_AI_Whatsapp.png" align="center" caption="Create Template with AI" border={true} />
-
 
 <Callout icon="🚧" theme="warn">
   ### Availability
@@ -71,11 +69,11 @@ Consider an example where you want to create a limited-time offer template annou
 
 ## Configure Content Settings
 
-[Content Settings](doc:scribe-1#content-settings) let you control how the Template Builder Agent generates your template content before you prompt it.
+[Content Settings](/docs/scribe-1#content-settings) let you control how the Template Builder Agent generates your template content before you prompt it.
 
 ## Customize Templates for Brand Consistency
 
-The Template Builder Agent integrates with Brand Kit, so generated templates follow your predefined brand colors, tone, and guidelines. You can select a Brand Kit from the AskAI panel before you prompt. For availability, access, and setup, refer to [Brand Context](doc:brand-context).
+The Template Builder Agent integrates with Brand Kit, so generated templates follow your predefined brand colors, tone, and guidelines. You can select a Brand Kit from the AskAI panel before you prompt. For availability, access, and setup, refer to [Brand Context](/docs/brand-context).
 
 ## Manage Generated Templates
 
@@ -83,9 +81,7 @@ WhatsApp templates generated with AI persist only when you submit them, and you 
 
 You can retrieve any previous version generated during a session by clicking **Click to restore this version**.
 
-
 <Image src="https://files.readme.io/61250dbb8f4b89b57fbcd30969e0de3a361014a805360bed4225c4eeec275b83-restore_version.png" align="center" caption="Restore Version" border={true} />
-
 
 <Callout icon="🚧" theme="warn">
   ### Unsubmitted Content Is Not Saved
@@ -95,7 +91,7 @@ You can retrieve any previous version generated during a session by clicking **C
 
 ### Threads
 
-Once you start generating Templates, it automatically saves your sessions under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20"> panel. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context. If you clear your browser storage or use a different browser or device, your threads will not be available.
+Once you start generating Templates, it automatically saves your sessions under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" style={{ verticalAlign: "middle", height: "20px" }} /> panel. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context. If you clear your browser storage or use a different browser or device, your threads will not be available.
 
 #### Thread Behavior
 
@@ -107,9 +103,7 @@ If multiple users from the same account use AI tools, each user sees only their 
 
 The **All Threads** popup lists each thread with its _Thread Name_, _Created On_, and _Last Updated_ dates. From this view, you can:
 
-
 <Image src="https://files.readme.io/0227727a7e39055adfc0b85b24db696c91645bb4885e08f6b883dde5e9749376-all_threads_-_ask_ai.png" align="center" caption="All Threads" border={true} />
-
 
 - Select a thread and click **Load Thread** to continue generating or editing templates using the same context.
 - Review and compare multiple template versions created during that session.
@@ -124,11 +118,11 @@ The **All Threads** popup lists each thread with its _Thread Name_, _Created On_
 ## Additional Resources
 
 <Cards columns="2">
-  <Card title="Brand Context" href="doc:brand-context" target="https://docs.clevertap.com/docs/brand-kit">
+  <Card title="Brand Context" href="/docs/brand-context" target="https://docs.clevertap.com/docs/brand-kit">
     Apply predefined visual assets and typography for brand consistency.
   </Card>
 
-  <Card title="AI-Enabled Feature Disclaimer & Terms" href="doc:clevertapai-terms-disclaimer" target="https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms">
+  <Card title="AI-Enabled Feature Disclaimer & Terms" href="/docs/clevertapai-terms-disclaimer" target="https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms">
     Review the terms that apply to CleverTap's AI-enabled features.
   </Card>
 </Cards>

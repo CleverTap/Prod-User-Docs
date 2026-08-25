@@ -161,11 +161,11 @@ There are multiple ways to add users to a CleverTap project.
 
    The X-CleverTap-Account-Id and X-CleverTap-Passcode authenticate the request.
 
-   | Header                 | Description                                             | Type   | Example Value                         |
-   | :--------------------- | :------------------------------------------------------ | :----- | :------------------------------------ |
-   | X-CleverTap-Account-Id | Your CleverTap Account ID                               | string | "X-CleverTap-Account-Id: ACCOUNT\_ID" |
-   | X-CleverTap-Passcode   | Your CleverTap Account Passcode.                        | string | "X-CleverTap-Passcode: PASSCODE"      |
-   | Content-Type           | Request content-type is always set to application/json. | string | "Content-Type: application/json"      |
+   | Header                 | Description                                             | Type   | Example Value                        |
+   | :--------------------- | :------------------------------------------------------ | :----- | :----------------------------------- |
+   | X-CleverTap-Account-Id | Your CleverTap Account ID                               | string | "X-CleverTap-Account-Id: ACCOUNT_ID" |
+   | X-CleverTap-Passcode   | Your CleverTap Account Passcode.                        | string | "X-CleverTap-Passcode: PASSCODE"     |
+   | Content-Type           | Request content-type is always set to application/json. | string | "Content-Type: application/json"     |
 
    Refer to the [API Authentication](https://developer.clevertap.com/docs/authentication) to obtain the header values. To understand the common queries and concerns related to CleverTap APIs, refer to [API FAQs](https://developer.clevertap.com/docs/api-faqs).
 
@@ -228,218 +228,12 @@ To configure the CleverTap dashboard:
 
 Add a WhatsApp Provider
 
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
 3. Enter the following details:
 
    | Field                        | Description                                                                                                                                                 |
    | :--------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | Provider                     | Select _Other (Generic)_ from the dropdown list.                                                                                                            |
-   | Nickname                     | Enter the nickname \<10-digit phone number> for easy reference.                                                                                             |
+   | Nickname                     | Enter the nickname `<10-digit phone number>` for easy reference.                                                                                             |
    | Mobile Number                | Enter your phone number onboarded to WhatsApp API by your BSP.                                                                                              |
    | Request Type                 | Ensure the Request Type is _Post_.                                                                                                                          |
    | HTTP Endpoint                | Enter HTTP Endpoint as provided by your BSP.                                                                                                                |
@@ -848,9 +642,9 @@ CleverTap sends this payload for sending the template message notification.<br /
 | to                        | Recipient's phone number                                                  | String    | "919876543210", "+919876543210"                                                    |
 | wabaNumber                | WhatsApp Business Account number                                          | String    | "1234567890"                                                                       |
 | isTemplate                | Indicates if the message is a template                                    | Boolean   | TRUE                                                                               |
-| msgId                     | Unique identifier for the message                                         | String    | "i\|campaignID\|batchID\|j\|campaign\_variant"                                     |
-| template.namespace        | Identifier for the template in CleverTap Dashboard                        | String    | "my\_template\_namespace"                                                          |
-| template.languageCode     | Language and locale code for the template                                 | String    | "en\_US"                                                                           |
+| msgId                     | Unique identifier for the message                                         | String    | "i\|campaignID\|batchID\|j\|campaign_variant"                                      |
+| template.namespace        | Identifier for the template in CleverTap Dashboard                        | String    | "my_template_namespace"                                                            |
+| template.languageCode     | Language and locale code for the template                                 | String    | "en_US"                                                                            |
 | components.type           | Type of component, like header, body, button, and so on.                  | String    | "header", "body", "button"                                                         |
 | header.type               | Type of header like text, video, image, file, location                    | String    | "text", "video", "image", "file", "location"                                       |
 | header.text.text          | Text content for text header                                              | String    | "Hello, World!"                                                                    |
@@ -868,7 +662,7 @@ CleverTap sends this payload for sending the template message notification.<br /
 | button.buttonText         | Text displayed on the button                                              | String    | "Click Here", "Copy Offer Code"                                                    |
 | button.index              | Position of the button                                                    | Integer   | 1, 2                                                                               |
 | button.parameters         | Parameters for the button, like URL suffix, phone number, and so on.      | Array     | Depends on button.type                                                             |
-| customProps               | Custom key-value pairs defined at the time of creating campaigns          | Array     | \[<br />{<br />"key1": "Value1"<br />},<br />{<br />"Key2": "Value2"<br />}<br />] |
+| customProps               | Custom key-value pairs defined at the time of creating campaigns          | Array     | `[{"key1": "Value1"}, {"Key2": "Value2"}]` |
 
 #### Payload Samples for Template Message
 
@@ -1498,21 +1292,21 @@ CleverTap will send this payload for sending the Freeform message notification.<
 
 #### Payload Description for Freeform Message
 
-| Parameter        | Description                                                                              | Example Value                                                       |              |            |          |
-| :--------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------ | :----------- | :--------- | :------- |
-| to               | Targeted user’s phone number                                                             | 9199XXXXXXXX                                                        |              |            |          |
-| "payloadversion" | Version of the payload being sent to CleverTap                                           | 0.1                                                                 |              |            |          |
-| wabaNumber       | Business’s WABA number                                                                   | 9189XXXXXXXX                                                        |              |            |          |
-| isTemplate       | Used to highlight the whether the payload being sent is for templates or freeform        | true/false                                                          |              |            |          |
-| msgId            | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\\                                                          | 1639561857\\ | 20220227\\ | 25596363 |
-| audio.mediaURL   | Media URL of the file                                                                    | [www.example.com/audio.mp3](http://www.example.com/audio.mp3)       |              |            |          |
-| file.mediaURL    | Media URL of the file                                                                    | [www.example.com/document.pdf](http://www.example.com/document.pdf) |              |            |          |
-| file.caption     | Message body                                                                             | “This is message body”                                              |              |            |          |
-| file.filename    | Title of the file                                                                        | “sample\_document.pdf”                                              |              |            |          |
-| image.mediaURL   | Media URL of the file                                                                    | [www.example.com/image.png](http://www.example.com/image.png)       |              |            |          |
-| image.caption    | Message body                                                                             | “This is message body”                                              |              |            |          |
-| video.mediaURL   | Media URL of the file                                                                    | [www.example.com/video.mp4](http://www.example.com/video.mp4)       |              |            |          |
-| video.caption    | Message body                                                                             | “This is message body”                                              |              |            |          |
+| Parameter        | Description                                                                              | Example Value                                                       |
+| :--------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------------------------|
+| to               | Targeted user’s phone number                                                             | 9199XXXXXXXX                                                        |
+| "payloadversion" | Version of the payload being sent to CleverTap                                           | 0.1                                                                  |
+| wabaNumber       | Business’s WABA number                                                                   | 9189XXXXXXXX                                                        |
+| isTemplate       | Used to highlight the whether the payload being sent is for templates or freeform        | true/false                                                          |
+| msgId            | Unique identifier for message being sent and expected to be present in callback payloads | `25596363\|1639561857\|20220227\|25596363`                          |
+| audio.mediaURL   | Media URL of the file                                                                    | [www.example.com/audio.mp3](http://www.example.com/audio.mp3)       |
+| file.mediaURL    | Media URL of the file                                                                    | [www.example.com/document.pdf](http://www.example.com/document.pdf) |
+| file.caption     | Message body                                                                             | “This is message body”                                              |
+| file.filename    | Title of the file                                                                        | “sample_document.pdf”                                               |
+| image.mediaURL   | Media URL of the file                                                                    | [www.example.com/image.png](http://www.example.com/image.png)       |
+| image.caption    | Message body                                                                             | “This is message body”                                              |
+| video.mediaURL   | Media URL of the file                                                                    | [www.example.com/video.mp4](http://www.example.com/video.mp4)       |
+| video.caption    | Message body                                                                             | “This is message body”                                              |
 
 #### Payload Samples For Freeform Message
 
@@ -1520,7 +1314,7 @@ CleverTap will send this payload for sending the Freeform message notification.<
 {
 "payloadVersion":0.1,
 "to": "919999999999",
-“msg_id”:"25596363|1639561857|20220227|25596363",
+"msg_id":"25596363|1639561857|20220227|25596363",
 "wabaNumber": "91999999XXXX",
 "type": "audio",
 "isTemplate": false,
@@ -1534,7 +1328,7 @@ CleverTap will send this payload for sending the Freeform message notification.<
 "payloadVersion":0.1,
 "to": "919999999999",
 "wabaNumber": "91999999XXXX",
-“msg_id”:"25596363|1639561857|20220227|25596363",
+"msg_id":"25596363|1639561857|20220227|25596363",
 "type": "image",
 "isTemplate": false,
 "image": {"mediaURL": "www.example.com/image.png","caption": "This is body"} }
@@ -1544,7 +1338,7 @@ CleverTap will send this payload for sending the Freeform message notification.<
 "payloadVersion":0.1,
 "to": "919999999999",
 "wabaNumber": "91999999XXXX",
-“msg_id”:"25596363|1639561857|20220227|25596363",
+"msg_id":"25596363|1639561857|20220227|25596363",
 "type": "file",
 "isTemplate": false,
 "file": {
@@ -1661,31 +1455,31 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 
 #### Payload Description for Incoming Message Callbacks
 
-| Parameter          | Description                                                | Example Value                                                 |              |            |          |
-| :----------------- | :--------------------------------------------------------- | :------------------------------------------------------------ | :----------- | :--------- | :------- |
-| from               | Source number for incoming message                         | “9199XXXXXXXX”                                                |              |            |          |
-| payloadVersion     | version of the callback payload being sent to CleverTap    | “0.1“                                                         |              |            |          |
-| wabaNumber         | Destination business WABA number to which message was sent | “9199XXXXXXXX”                                                |              |            |          |
-| timestamp          | Timestamp when the message was sent                        | “1647441774”                                                  |              |            |          |
-| type               | Type of incoming message                                   | “text/audio/video/image”                                      |              |            |          |
-| context.id         | `Msg_id` of the message to which the user has responded    | 25596363\\                                                    | 1639561857\\ | 20220227\\ | 25596363 |
-| text.body          | Text received from end user                                | “Hey, This is message”                                        |              |            |          |
-| location.lattitude | Latitude of the location shared                            | 2.457476548                                                   |              |            |          |
-| location.Longitude | Longitude of the location shared                           | 1.565867657                                                   |              |            |          |
-| location.name      | Name of the location shared                                | Joe’s House                                                   |              |            |          |
-| location.address   | Address of the location shared                             | 102, Parker street, USA                                       |              |            |          |
-| location.url       | Address URL                                                | [www.example.com](http://www.example.com)                     |              |            |          |
-| image.mediaURL     | Media File URL                                             | [www.example.com/image.png](http://www.example.com/image.png) |              |            |          |
-| image.mimetype     | Media file mime type                                       | .png/.jpeg                                                    |              |            |          |
-| image.caption      | Image caption                                              | “This is caption”                                             |              |            |          |
-| file.mediaURL      | Media File URL                                             | [www.example.com/file.pdf](http://www.example.com/file.pdf)   |              |            |          |
-| file.mimetype      | Media file mime type                                       | .pdf                                                          |              |            |          |
-| file.caption       | Image caption                                              | “This is caption”                                             |              |            |          |
-| audio.mediaURL     | Media File URL                                             | [www.example.com/audio.mp3](http://www.example.com/audio.mp3) |              |            |          |
-| video.mimetype     | Media file mime type                                       | .mp3                                                          |              |            |          |
-| video.mediaURL     | Media File URL                                             | [www.example.com/image.png](http://www.example.com/image.png) |              |            |          |
-| video.mimetype     | Media file mime type                                       | .mp4                                                          |              |            |          |
-| video.caption      | Image caption                                              | “This is caption”                                             |              |            |          |
+| Parameter          | Description                                                | Example Value                                                  |
+| :------------------ | :--------------------------------------------------------- | :--------------------------------------------------------------|
+| from               | Source number for incoming message                         | “9199XXXXXXXX”                                                 |
+| payloadVersion     | version of the callback payload being sent to CleverTap    | “0.1“                                                           |
+| wabaNumber         | Destination business WABA number to which message was sent | “9199XXXXXXXX”                                                 |
+| timestamp          | Timestamp when the message was sent                        | “1647441774”                                                    |
+| type               | Type of incoming message                                   | “text/audio/video/image”                                       |
+| context.id         | `Msg_id` of the message to which the user has responded    | `25596363\|1639561857\|20220227\|25596363`                     |
+| text.body          | Text received from end user                                | “Hey, This is message”                                          |
+| location.lattitude | Latitude of the location shared                            | 2.457476548                                                     |
+| location.Longitude | Longitude of the location shared                            | 1.565867657                                                    |
+| location.name      | Name of the location shared                                | Joe’s House                                                     |
+| location.address   | Address of the location shared                              | 102, Parker street, USA                                        |
+| location.url       | Address URL                                                 | [www.example.com](http://www.example.com)                      |
+| image.mediaURL     | Media File URL                                              | [www.example.com/image.png](http://www.example.com/image.png)  |
+| image.mimetype     | Media file mime type                                        | .png/.jpeg                                                      |
+| image.caption      | Image caption                                               | “This is caption”                                               |
+| file.mediaURL      | Media File URL                                              | [www.example.com/file.pdf](http://www.example.com/file.pdf)    |
+| file.mimetype      | Media file mime type                                        | .pdf                                                            |
+| file.caption       | Image caption                                               | “This is caption”                                               |
+| audio.mediaURL     | Media File URL                                              | [www.example.com/audio.mp3](http://www.example.com/audio.mp3)  |
+| video.mimetype     | Media file mime type                                        | .mp3                                                            |
+| video.mediaURL     | Media File URL                                              | [www.example.com/image.png](http://www.example.com/image.png)  |
+| video.mimetype     | Media file mime type                                        | .mp4                                                            |
+| video.caption      | Image caption                                               | “This is caption”                                               |
 
 #### Sample Payload for Incoming Message Callbacks
 
@@ -1886,14 +1680,14 @@ BSPs must add  CleverTap's message status callback URL at their end and forward 
 
 #### Payload Description for Message Status Callbacks
 
-| Parameter                | Description                                                                              | Example Value                                       |              |            |          |
-| :----------------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------- | :----------- | :--------- | :------- |
-| payloadversion           | Version of the payload being sent to CleverTap                                           | 0.1                                                 |              |            |          |
-| statuses\[X].status      | Notification status                                                                      | “sent/delivered/read/failed/clicked”                |              |            |          |
-| statuses\[X].timestamp   | Timestamp of the event                                                                   | “1647441774”                                        |              |            |          |
-| statuses\[X].msgId       | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\\                                          | 1639561857\\ | 20220227\\ | 25596363 |
-| statuses\[X].error.code  | Failure Error code                                                                       | 1001                                                |              |            |          |
-| statuses\[X].error.title | Description of error                                                                     | Message specified does not match with any template. |              |            |          |
+| Parameter                | Description                                                                              | Example Value                                        |
+| :------------------------ | :----------------------------------------------------------------------------------------| :-----------------------------------------------------|
+| payloadversion           | Version of the payload being sent to CleverTap                                           | 0.1                                                   |
+| statuses[X].status      | Notification status                                                                      | “sent/delivered/read/failed/clicked”                  |
+| statuses[X].timestamp   | Timestamp of the event                                                                   | “1647441774”                                          |
+| statuses[X].msgId       | Unique identifier for message being sent and expected to be present in callback payloads | `25596363\|1639561857\|20220227\|25596363`             |
+| statuses[X].error.code  | Failure Error code                                                                       | 1001                                                  |
+| statuses[X].error.title | Description of error                                                                     | Message specified does not match with any template.  |
 
 #### Sample Payload for Message Status Callbacks
 

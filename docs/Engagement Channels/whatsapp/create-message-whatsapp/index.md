@@ -338,7 +338,7 @@ Let us understand how to track a click for various template fields in WhatsApp c
 ##### Headers
 
 - Click tracking support is available only for text headers.
-- When using custom variables (for example, {{1}}) in text headers, the system automatically detects URLs in the input box and provides an option to enable click tracking.
+- When using custom variables (for example, `{{1}}`) in text headers, the system automatically detects URLs in the input box and provides an option to enable click tracking.
 
 
 <Image src="https://files.readme.io/e14bea3-Whatsapp_editor_click_track_header_.jpg" alt="Click Track Text Header" align="center" caption="Click Track Text Header" border={true} />
@@ -348,7 +348,7 @@ Let us understand how to track a click for various template fields in WhatsApp c
 
 ##### Body
 
-- When using custom variables (for example, {{1}}) in the message body, the system automatically detects URLs in the input box and provides an option to enable click tracking.
+- When using custom variables (for example, `{{1}}`) in the message body, the system automatically detects URLs in the input box and provides an option to enable click tracking.
 
 
 <Image src="https://files.readme.io/3234965-Whatsapp_editor_click_track_body.jpg" alt="Click Track Message Body" align="center" caption="Click Track Message Body" border={true} />

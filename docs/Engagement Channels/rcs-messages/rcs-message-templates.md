@@ -39,9 +39,9 @@ A button that redirects users to a specific webpage. Opens a specific URL when t
 
 
 - **Button Text**: Enter a label for the button (maximum 25 characters, no special characters).
-- **URL Type**: The destination URL (maximum 2,048 characters). For dynamic URLs, use placeholders, for example: [https://example.com/{{1}}](https://example.com/{{1}}) . Choose from the following options:
+- **URL Type**: The destination URL (maximum 2,048 characters). For dynamic URLs, use placeholders, for example: `https://example.com/{{1}}`. Choose from the following options:
   - **Static**: Fixed URL entered at the time of template creation.
-  - **Dynamic**: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Uses dynamic parameters, for example: [https://www.clevertap.com/{{1}}](https://www.clevertap.com/{{1}}).
+  - **Dynamic**: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Uses dynamic parameters, for example: `https://www.clevertap.com/{{1}}`.
   - **CleverTap Link Tracking**: Brands can leverage CleverTap link tracking functionality to monitor details of the user who clicked the URL. The entire URL can be personalized for each user during campaign creation.
 - **URL Appearance for Users**: Choose how the URL opens when the user taps the button:
   - **Browser**: Opens the URL in the user's default browser.
@@ -216,7 +216,7 @@ A Rich Card Template allow businesses to send RCS messages with images, videos, 
      <Image src="https://files.readme.io/8830d548d31fad83a7cc9396501ef692a63ac98bbdc41badaa9ba45931e721b0-media_url_type.png" align="center" caption="Static" border={true} />
 
 
-   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. For example: [https://www.clevertap.com/{{1}}](https://www.clevertap.com/{{1}}). Enter Media URL. \ <br />
+   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. For example: `https://www.clevertap.com/{{1}}`. Enter Media URL. \ <br />
 
 
      <Image src="https://files.readme.io/340af88035abbb3c12affb00de344bbf76a32a3f76423121bf479b1cb148fdb7-dynamic.png" align="center" caption="Dynamic" border={true} />
@@ -235,7 +235,7 @@ A Rich Card Template allow businesses to send RCS messages with images, videos, 
      <Image src="https://files.readme.io/ae6c329c049b4c351ef8a00706c429634fa410167637fe00e6679365710c0cba-static_media_type_rich_card.png" align="center" caption="Static Media for Video with Thumbnail" border={true} />
 
 
-- Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Select between Image, Video, or PDF and enter the dynamic media URL. For example: [https://www.clevertap.com/{\\\\\\\\\\\\\\\\{\1}}](https://www.clevertap.com/{\\{\1}}). \ <br />
+- Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Select between Image, Video, or PDF and enter the dynamic media URL. For example: `https://www.clevertap.com/{{1}}`. \ <br />
 
 
   <Image src="https://files.readme.io/4dd009f5ea9a4d8b508d838b3245931799593de70e0170e67274ec19e480f444-dynamic_media_type_rich_card.png" align="center" caption="Dynamic Media for Video with Thumbnail" border={true} />
@@ -247,9 +247,9 @@ A Rich Card Template allow businesses to send RCS messages with images, videos, 
 <Image src="https://files.readme.io/89125ce0ac2a8b6dd9d03d7ac31fccb4267b9ee2579d63f42bfc37fa0f48664f-upload_in_campaign_rich_card_with_thumbnail.png" align="center" caption="Upload in Campaign for Video with Thumbnail" border={true} />
 
 
-5. **Add a Title**: The title will be displayed in bold and can be up to 200 characters long. To add dynamic parameters, use {{1}}, {{2}}, etc., in sequence, where values will be replaced at runtime.
+5. **Add a Title**: The title will be displayed in bold and can be up to 200 characters long. To add dynamic parameters, use `{{1}}`, `{{2}}`, etc., in sequence, where values will be replaced at runtime.
 
-6. **Add a Description**: Enter the text message content, with a maximum limit of 2000 characters. To add dynamic parameters {{1}}, {{2}}, etc., for personalization.
+6. **Add a Description**: Enter the text message content, with a maximum limit of 2000 characters. To add dynamic parameters `{{1}}`, `{{2}}`, etc., for personalization.
 
    - **For body text formatting**:
 
@@ -306,7 +306,7 @@ Follow the steps below to create a Carousel Template on CleverTap. You can add u
      <Image src="https://files.readme.io/92265cd337d4947574125a912c4fcc303c5cdede3840f5f73c976519fd849fed-Carousel_-_Static_media.png" align="center" caption="Static" border={true} />
 
 
-   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Select between Image, Video, or PDF and enter the dynamic media URL. For example: [https://www.clevertap.com/{{1}}](https://www.clevertap.com/{{1}}). \ <br />
+   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. Select between Image, Video, or PDF and enter the dynamic media URL. For example: `https://www.clevertap.com/{{1}}`. \ <br />
 
 
      <Image src="https://files.readme.io/78b0d7431da8d66f6d35fee21a44ea665ab2f72a595f23f6710fbf090a305e02-dynamic_-_carousel.png" align="center" caption="Dynamic" border={true} />
@@ -328,7 +328,7 @@ Follow the steps below to create a Carousel Template on CleverTap. You can add u
      <Image src="https://files.readme.io/807cb3df84f5aee4bb8349594e362fb686f6a0177108c7e04fe8a916742a19f5-static_-_carousel_1.png" align="center" caption="Static - thumbnail" border={true} />
 
 
-   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. For example: [https://www.clevertap.com/{{1}}](https://www.clevertap.com/{{1}}). \ <br />
+   - Dynamic: Brands must provide the URL prefix (URL domain), and the URL suffix can be personalized for each user. For example: `https://www.clevertap.com/{{1}}`. \ <br />
 
 
      <Image src="https://files.readme.io/5a2e9ed016ebdbd6868830cd43cc270ed83fdc5d3ec704529b5d0ab39bcbd98b-dynamic_thumbnail_carousel.png" align="center" caption="Dynamic - thumbnail" border={true} />

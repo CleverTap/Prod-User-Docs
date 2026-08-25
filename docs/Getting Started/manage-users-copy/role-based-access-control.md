@@ -138,9 +138,11 @@ CleverTap provides four standard system roles. These roles are predefined and _c
   </tbody>
 </Table>
 
-> 📘 Note
->
-> The Approver role can only be accessed when the [Campaign Approval Workflow](https://docs.clevertap.com/docs/campaign-approval-workflow) feature is turned on.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  The Approver role can only be accessed when the [Campaign Approval Workflow](https://docs.clevertap.com/docs/campaign-approval-workflow) feature is turned on.
+</Callout>
 
 ## Custom Roles
 
@@ -237,13 +239,15 @@ A user should first have access to the Campaigns or Journeys in general. From th
 - **Read access**: Users with read access to Campaigns or Journeys can view content across all channels. This ensures a consistent experience within Journeys.
 - **Write access**: If users have write access to Campaigns or Journeys, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
 
-> 📘 Channel Write Restrictions
->
-> - For example, if a user role has write access to Push Notifications but not to Emails, the user can:
->   - Create and edit Push Notification campaigns.
->   - View Email campaigns but cannot create, edit, or clone them.
->   - Drag and drop only Push Notification nodes (not Email nodes) inside Journeys.
->   - Campaign actions such as labeling, archiving, pausing, stopping, and publishing can only be performed on Push Notification campaigns.
+<Callout icon="📘" theme="info">
+  ### Channel Write Restrictions
+
+  - For example, if a user role has write access to Push Notifications but not to Emails, the user can:
+    - Create and edit Push Notification campaigns.
+    - View Email campaigns but cannot create, edit, or clone them.
+    - Drag and drop only Push Notification nodes (not Email nodes) inside Journeys.
+    - Campaign actions such as labeling, archiving, pausing, stopping, and publishing can only be performed on Push Notification campaigns.
+</Callout>
 
 If a user does not have the necessary permissions to access campaigns or journeys, contact the admin to request access.
 
@@ -255,9 +259,11 @@ If a user does not have the necessary permissions to access campaigns or journey
 
 Custom roles can be mapped to user groups for advanced role-based access control. You can give various users access to different datasets and restrict access to the data you do not want them to view on the CleverTap dashboard. Administrators can also restrict data access to new custom roles based on selected user properties, such as geographies. Users assigned to these roles are limited to only reading or modifying the data available to the particular role.<br />For example, you can grant the _US Campaign Manager_ role write access to campaigns only for United States users. This role cannot create campaigns for users in other geographies.
 
-> 📘 Private Beta
->
-> Currently, this is a Private Beta Release. If you want access to this feature, contact your Account Manager.
+<Callout icon="📘" theme="info">
+  ### Private Beta
+
+  Currently, this is a Private Beta Release. If you want access to this feature, contact your Account Manager.
+</Callout>
 
 ### Data Access and Segment Restrictions
 
@@ -288,11 +294,15 @@ This ensures that the user can only access data for a specified user base, even 
 <Image src="https://files.readme.io/f62296e501c9f46c71b55f805bed20ce877d6f369ac56638d3654a5e34e923b4-image.png" align="center" caption="Map User Properties and Events" border={true} />
 
 
-> 📘 **Note**
->
-> When you restrict access using a user property or segment, the limitation applies globally—even if the role attempts to view _All Users_.
->
-> You _cannot assign more than one segment role per user_.
+<Callout icon="📘" theme="info">
+  ### **Note**
+
+  When you restrict access using a user property or segment, the limitation applies globally—even if the role attempts to view _All Users_.
+
+  You _cannot assign more than one segment role per user_.
+</Callout>
+
+</details>
 
 ### Masking Personally Identifiable Information and Events
 
@@ -372,7 +382,8 @@ No, RBAC restrictions for campaigns do not apply to API-created campaigns.
 <details>
 <summary>What happens if a user has multiple roles with conflicting channel access?</summary>
 
-- If one role grants <strong>write access</strong> and another does not, the most restrictive permission is applied.
+\- If one role grants <strong>write access</strong> and another does not, the most restrictive permission is applied.
+
 - For example, if Role A grants write access and Role B is read-only, the user will only have <strong>read-only</strong> access.
 
 </details>
@@ -390,5 +401,3 @@ Yes. All users have <strong>read or view-only access</strong> to all campaign ch
 No. If a user does not have write access to Campaigns and Journeys, CleverTap blocks them from creating campaigns directly from the Analytics or Segments sections.<br />An error message is shown when the user tries to initiate the action.
 
 </details>
-
-<br />

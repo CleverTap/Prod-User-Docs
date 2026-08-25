@@ -644,7 +644,7 @@ The following is a sample of the exported CSV file with all fields included:
 
 | eventName           | eventTime  | identity | all\_identities | clevertapId | Email | Phone | Name | Gender  | DOB | platform | token | make | model | appVersion | sdkVersion | osVersion | browser   | dpi | dimensions | subscriptionGroups | MSG-webpush | MSG-push | MSG-email | MSG-sms | MSG-whatsapp | wzrk\_id | Campaign type | Campaign id | wzrk\_pivot   | User Agent | Client Name | Campaign name | Campaign labels | Journey id | Journey labels | Journey Version ID | Journey name |
 | ------------------- | ---------- | -------- | --------------- | ----------- | ----- | ----- | ---- | ------- | --- | -------- | ----- | ---- | ----- | ---------- | ---------- | --------- | --------- | --- | ---------- | ------------------ | ----------- | -------- | --------- | ------- | ------------ | -------- | ------------- | ----------- | ------------- | ---------- | ----------- | ------------- | --------------- | ---------- | -------------- | ------------------ | ------------ |
-| Notification Viewed | 1780914785 | \[...]   | \[...]          | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | {...}      | {...}              | false       | true     | true      | false   | false        | ...      | Email         | ...         | wzrk\_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
+| Notification Viewed | 1780914785 | \[...]   | \[...]          | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | `{...}`    | `{...}`            | false       | true     | true      | false   | false        | ...      | Email         | ...         | wzrk\_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
 
 # Manage Export
 
@@ -707,10 +707,10 @@ Follow these best practices to ensure your event exports are reliable, organized
         | Access Disabled  | The storage account has been locked or disabled      |
         | Bucket Not Found | The destination bucket or container no longer exists |
 
-* **Validate Exported Data**
+- **Validate Exported Data**
   Run data quality checks to confirm exported files match your expectations before loading them into downstream systems.
 
-* **Monitoring & Error Handling**: If your export fails:
+- **Monitoring & Error Handling**: If your export fails:
   - Check that your storage credentials (IAM policy, service account key, or SAS token) are valid.
   - Ensure the bucket or container exists and is accessible.
   - For GCP exports, a 403 error often indicates that the service account key is invalid.
@@ -773,21 +773,22 @@ Check that the bucket or container name matches exactly and that the IAM policy,
 
 If your export fails, follow these steps to troubleshoot the issue:
 
-_Verify your storage credentials  -  Make sure your IAM policy (AWS), service account key (GCP), or SAS token (Azure) is valid and has the required write permissions._ Check bucket or container access  -  Ensure the target bucket or container exists and is reachable from CleverTap.
-_Check for the following error codes:_ A 403 error in GCP usually indicates an invalid or expired service account key.
-\* For other platforms, refer to your cloud provider's error documentation for further guidance.
+- _Verify your storage credentials_ — Make sure your IAM policy (AWS), service account key (GCP), or SAS token (Azure) is valid and has the required write permissions.
+- _Check bucket or container access_ — Ensure the target bucket or container exists and is reachable from CleverTap.
+- _Check for the following error codes_ — A 403 error in GCP usually indicates an invalid or expired service account key.
+- For other platforms, refer to your cloud provider's error documentation for further guidance.
 
 ### What other ways can I export event data from CleverTap?
 
-\* [**Export via API**](https://developer.clevertap.com/docs/): Use the CleverTap Events API to programmatically query and download event data.
-\* [**Find People**](doc:find-people): Download user-level data directly from the CleverTap dashboard through _Segments_ > _Find People_.
+- [**Export via API**](https://developer.clevertap.com/docs/): Use the CleverTap Events API to programmatically query and download event data.
+- [**Find People**](doc:find-people): Download user-level data directly from the CleverTap dashboard through _Segments_ > _Find People_.
 
 ### What are the Campaign Type values in the new export?
 
 The `Campaign type` field value has changed between the legacy export and the new export. The old format returned human-readable strings; the new format returns internal enum values.
 
 | Channel            | Old value             | New value           |
-| ------------------ | --------------------- | ------------------- |
+| ------------------ | ---------------------- | -------------------- |
 | Android push       | Mobile Push - Android | `Push`              |
 | iOS push           | Mobile Push - iOS     | `Push`              |
 | Windows push       | Mobile Push - Windows | `Push`              |
@@ -841,15 +842,15 @@ The old format prefixed event property columns with their type, for example `eve
 **Summary**
 
 | Aspect                     | Old export                                                 | New export                                 |
-| -------------------------- | ---------------------------------------------------------- | ------------------------------------------ |
-| Schema                     | Fixed, always-present fields                               | Configurable, only selected fields present |
-| Timestamp                  | `ts` (Long, root level)                                    | `timestamp` (Map, root level)              |
-| Identity fields            | Inside `profile{}` object                                  | Separate `identity{}` map                  |
-| Profile attributes         | Inside `profile{}` object                                  | Separate `profile{}` map                   |
-| Device info                | Fixed typed fields                                         | Flexible map, same keys                    |
-| Communication preferences  | Not present                                                | New `commPrefs{}` map                      |
-| Campaign type field        | Human-readable string (for example, Mobile Push - Android) | Enum name (for example, Push)              |
-| CSV event property headers | Prefixed (for example, `eventproperties.product_id`)       | Flat (for example, `product_id`)           |
+| -------------------------- | ------------------------------------------------------------ | --------------------------------------------- |
+| Schema                     | Fixed, always-present fields                                | Configurable, only selected fields present |
+| Timestamp                  | `ts` (Long, root level)                                     | `timestamp` (Map, root level)              |
+| Identity fields            | Inside `profile{}` object                                   | Separate `identity{}` map                  |
+| Profile attributes         | Inside `profile{}` object                                   | Separate `profile{}` map                   |
+| Device info                | Fixed typed fields                                          | Flexible map, same keys                    |
+| Communication preferences  | Not present                                                  | New `commPrefs{}` map                      |
+| Campaign type field        | Human-readable string (for example, Mobile Push - Android)  | Enum name (for example, Push)              |
+| CSV event property headers | Prefixed (for example, `eventproperties.product_id`)        | Flat (for example, `product_id`)           |
 
 ### Can I edit an event export after creation?
 

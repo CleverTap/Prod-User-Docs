@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-An AI-powered email template creator agent helps marketers create email templates and campaigns faster using generative AI. Instead of starting from a blank canvas, you can describe your intent in natural language and let AI generate an email template that you can further customize using the visual editor.&#x20;
+An AI-powered email template creator agent helps marketers create email templates and campaigns faster using generative AI. Instead of starting from a blank canvas, you can describe your intent in natural language and let AI generate an email template that you can further customize using the visual editor.
 
 Use this feature to:
 
@@ -40,58 +40,47 @@ Consider an example where you want to create a promotional email announcing a ne
 
 4. Select _Drag and Drop_ editor.
 
-
    <Image src="https://files.readme.io/268194e9dafcf4c0bf2e2169f992e65fa972c6b50be096a24d5d2f15603dd3f0-Access_Email_Campaign_Agent.gif" align="center" caption="Access Email Template Creator Agent" border={true} />
-
 
 5. In the AskAI section, enter a prompt that explains what you want to create. For example,
 
-   ```
+   ```text
    Create a promotional email for a social media platform announcing a new analytics feature for existing customers. Use a friendly but professional tone. Highlight one key benefit and include a clear call-to-action to explore the feature.
-   ```
 
+<Image src="https://files.readme.io/48aeed6cba8296d549a239a65c1bb25523ecbf56f75611959116b03add906dc1-Campaign_using_Template_Buileder_Agent.gif" align="center" caption="Generate Template Using Email Template Creator Agent" border={true} />
 
-   <Image src="https://files.readme.io/48aeed6cba8296d549a239a65c1bb25523ecbf56f75611959116b03add906dc1-Campaign_using_Template_Buileder_Agent.gif" align="center" caption="Generate Template Using Email Template Creator Agent" border={true} />
+<Callout icon="📘" theme="info">
+  #### Template Images in Email Campaign
 
-
-   <Callout icon="📘" theme="info">
-     #### Template Images in Email Campaign
-
-     Images generated as part of email campaigns count towards monthly image generation limit of 100.&#x20;
-   </Callout>
+  Images generated as part of email campaigns count towards monthly image generation limit of 100.
+</Callout>
 
 6. Review the generated template and refine the template using follow-up prompts. For example, "Make the tone friendly", "Change the CTA to focus on urgency", and so on.
 
-7. (Optional) Customize the layout in the Email Editor after the template is generated. For example,
-   - Edit text directly in the visual editor.
-   - Add or remove sections, images, or buttons.
-   - Replace AI-generated copy with custom messaging where needed.
+7. (Optional) Customize the layout in the Email Editor after the template is generated. For example:
+- Edit text directly in the visual editor.
+- Add or remove sections, images, or buttons.
+- Replace AI-generated copy with custom messaging where needed.
 
-Save the generated template to reuse individual sections or the entire template in future campaigns. You can also retrieve any previous version by clicking **Click to restore this version**.&#x20;
-
+Save the generated template to reuse individual sections or the entire template in future campaigns. You can also retrieve any previous version by clicking **Click to restore this version**.
 
 <Image src="https://files.readme.io/f41c4534b925feb27ef6fdea179eb5c9b857dc5cc87917ebd67ffef16bbac2e8-Click_to_restore_version_1.gif" align="center" caption="Click to Restore Version" border={true} />
 
-
 # Customize Template for Brand Consistency
 
-Email Template Creator agent supports integration with [Brand Kit](doc:brand-kit) to help you maintain consistent branding across all messages. Using this feature, you can apply pre-defined visual assets, color palettes, and typography to maintain brand consistency across campaign messages.&#x20;
-
+Email Template Creator agent supports integration with [Brand Kit](/docs/brand-kit) to help you maintain consistent branding across all messages. Using this feature, you can apply pre-defined visual assets, color palettes, and typography to maintain brand consistency across campaign messages.
 
 <Image src="https://files.readme.io/a8d1e54bd1e5d7f2abc905fd8507627f460f83dd71320afda2754ade8c394705-Access_Brand_Kit.png" align="center" caption="Customize Template Using Brand Kit for Brand Consistency" border={true} />
 
-
 # Manage Generated Templates
 
-All AI-generated templates will be saved under the _Saved Templates_ section of the email editor, and images generated as a part of this process can be accessed via [AI Generated Images Folder](doc:image-creator).
+All AI-generated templates will be saved under the _Saved Templates_ section of the email editor, and images generated as a part of this process can be accessed via [AI Generated Images Folder](/docs/image-creator).
 
 # Threads
 
-Once you start generating Templates, it automatically saves your sessions under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" valign="middle" height="20"> panel. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
-
+Once you start generating Templates, it automatically saves your sessions under the <img src="https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png" alt="Threads Icon" style={{ verticalAlign: "middle", height: "20px" }} /> panel. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
 
 <Image src="https://files.readme.io/e18467fe443fb9cfb9105b317084b72c3fa08175240f3a71972d6b8d07a060d1-All_Email_Template_Threads.png" alt="All Threads" align="center" caption="All Threads" border={true} />
-
 
 ### How Threads Work
 
@@ -108,23 +97,15 @@ From the **All Threads** view, you can:
 - Restore or reuse previously generated templates without regenerating them.
 
 <Callout icon="💡" theme="default">
-  #### **Tip**
+#### **Tip**
 
-  For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing template while maintaining your brand styling and earlier visual tone.
+For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing template while maintaining your brand styling and earlier visual tone.
 </Callout>
 
 # Additional Resources
 
 <Cards>
-  <Card title="Brand Kits" target="https://docs.clevertap.com/docs/brand-kit">
-
-  </Card>
-
-  <Card title="Image Creator">
-
-  </Card>
-
-  <Card title="CleverAI Terms & Disclaimer" target="https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms">
-
-  </Card>
+<Card title="Brand Kits" href="/docs/brand-kit" />
+<Card title="Image Creator" href="/docs/image-creator" />
+<Card title="CleverAI Terms & Disclaimer" href="https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms" />
 </Cards>

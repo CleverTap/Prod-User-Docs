@@ -50,6 +50,10 @@ You can create a new agent with a five-step workflow:&#x20;
 
 ##
 
-<br />
+To view the agent performance and activity, refer to the following:
+
+- [Agent Statuses](https://docs.clevertap.com/docs/lifecycle-agent-statuses)
+- [Agent Performance](https://docs.clevertap.com/docs/lifecycle-agent-stats)
+- [Agent Activity](https://docs.clevertap.com/docs/lifecycle-agent-activity)
 
 ##

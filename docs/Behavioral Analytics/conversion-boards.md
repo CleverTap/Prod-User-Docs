@@ -1,5 +1,5 @@
 ---
-title: Conversionss
+title: Conversions Board
 excerpt: >-
   Learn how to configure, analyze, and interpret conversions for your campaigns
   from the CleverTap dashboard.

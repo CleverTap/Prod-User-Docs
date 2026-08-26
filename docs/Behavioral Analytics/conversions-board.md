@@ -1,5 +1,5 @@
 ---
-title: Conversions Board
+title: Conversions
 excerpt: >-
   Learn how to configure, analyze, and interpret conversions for your campaigns
   from the CleverTap dashboard.
@@ -10,9 +10,9 @@ metadata:
 ---
 # Overview
 
-Conversion Boards connects your campaign to real business outcomes, such as conversions, revenue, and custom KPIs from a single dashboard.
+Conversions Board connects your campaign to real business outcomes, such as conversions, revenue, and custom KPIs from a single dashboard.
 
-With Conversion Boards, you can:
+With Conversions Board, you can:
 
 - Track up to five conversion events (purchases, subscriptions, bookings, and so on)
 - Measure revenue impact alongside engagement metrics
@@ -23,26 +23,26 @@ With Conversion Boards, you can:
 <Callout icon="📘" theme="info">
   ### Public Beta
 
-  Conversion Boards is available in Public Beta. To get access, contact your Customer Success Manager or the [CleverTap Support.](https://help.clevertap.com/hc/en-us/requests/new)
+  Conversions Board is available in Public Beta. To get access, contact your Customer Success Manager or the [CleverTap Support.](https://help.clevertap.com/hc/en-us/requests/new)
 </Callout>
 
 # Attribution Model
 
-Conversion Boards uses a Last Touch Attribution model for attributing conversions to campaigns and journeys. In this model, attribution is based on the most recent Notification Clicked or Notification Viewed event that occurs before a conversion. This means the conversion is credited to the last campaign or journey message the user clicked on before completing the configured conversion event. The Last Touch model attributes conversions based on the recency of the click, not the relevance of the campaign content to the conversion event.
+Conversions Board uses a Last Touch Attribution model for attributing conversions to campaigns and journeys. In this model, attribution is based on the most recent Notification Clicked or Notification Viewed event that occurs before a conversion. This means the conversion is credited to the last campaign or journey message the user clicked on before completing the configured conversion event. The Last Touch model attributes conversions based on the recency of the click, not the relevance of the campaign content to the conversion event.
 
 For example, if a user clicks a push notification promoting shoes and then purchases a mobile phone within the set lookback window, the conversion is still attributed to the Shoes campaign. This is because the promotional push for  Shoes was the last touchpoint before the conversion.
 
 <Callout icon="📘" theme="info">
   ### Data Recency
 
-  Conversion Boards data is refreshed periodically and may take up to 6 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the _[Engagement Performance Table](doc:roi-insights#engagement-performance-table)_ because attribution models update conversion metrics only after processing both the interaction event (click or view) and the conversion event.
+  Conversions Board data is refreshed periodically and may take up to 6 hours to reflect recent campaign activity, conversions, or custom metric updates. Custom metrics may also take additional processing time before appearing in the [Engagement Performance Table](doc:conversions-board#engagement-performance-table) because attribution models update conversion metrics only after processing both the interaction event (click or view) and the conversion event.
 </Callout>
 
 ## Attribution Criteria
 
 Attribution criteria define the type of user interaction that qualifies as a touchpoint. It controls how conversions are credited to campaigns and journeys.
 
-Conversion Boards supports two attribution criteria:
+Conversions Board supports two attribution criteria:
 
 - **Click through**:**&#x20;**&#x47;ives credit to an engagement when a user clicks a notification and then converts within the lookback window. Attribution is based on the _Notification Clicked_ event.
 - **View through:&#x20;**&#x47;ives credit to an engagement when a user only views a notification, without clicking, and then converts within the lookback window. Attribution is based on the _Notification Viewed_ event or a Push Impression.
@@ -55,16 +55,16 @@ Conversion Boards supports two attribution criteria:
 
 # Prerequisites
 
-Before using Conversion Boards, you must configure at least one global conversion event, such as _Charged_, in the Schema. You can configure up to five conversion events to track different business goals simultaneously. These conversion events apply across all campaigns and journeys and serve as the basis for attribution and conversion calculations.  Each event supports its own filters to narrow qualifying conversions, and its own lookback window to define how long after a click or view a conversion counts.
+Before using Conversions Board, you must configure at least one global conversion event, such as _Charged_, in the Schema. You can configure up to five conversion events to track different business goals simultaneously. These conversion events apply across all campaigns and journeys and serve as the basis for attribution and conversion calculations.  Each event supports its own filters to narrow qualifying conversions, and its own lookback window to define how long after a click or view a conversion counts.
 
 # Configure Conversions Events
 
-Before analyzing Conversion Boards, you must define what constitutes a conversion for your business. A conversion event represents a meaningful user action, such as a purchase, subscription, booking, or app upgrade. You can configure up to five conversion events.
+Before analyzing the Conversions Board, you must define what constitutes a conversion for your business. A conversion event represents a meaningful user action, such as a purchase, subscription, booking, or app upgrade. You can configure up to five conversion events.
 
 To add a conversion event from the CleverTap dashboard:
 
-1. Go to Conversion Boards in the CleverTap dashboard, then click **Add conversion event**.
-2. Select the required event that represents a meaningful user action, such as _Charged_ for purchases or _Subscription Started&#x20;_&#x66;or subscriptions. You can optionally add a display nickname to identify the event clearly in the Conversion Boards dashboard.
+1. Go to Conversion Conversions Board in the CleverTap dashboard, then click **Add conversion event**.
+2. Select the required event that represents a meaningful user action, such as _Charged_ for purchases or _Subscription Started&#x20;_&#x66;or subscriptions. You can optionally add a display nickname to identify the event clearly in the Conversions Board dashboard.
 3. (Optional) Apply filters to narrow qualifying conversions. For example, filter a _Purchase_ event by product category or transaction value.
 4. Enter the _Lookback window_ to define the time period during which a user action is attributed to a campaign.
 5. Click **Save**.
@@ -76,12 +76,12 @@ To add a conversion event from the CleverTap dashboard:
 <Callout icon="📘" theme="info">
   #### Changing a Conversion Event
 
-  Changes such as updating filters, renaming, or modifying the lookback window for a conversion event may take time to reflect on the dashboard. If you delete a conversion event, associated metrics will no longer be visible in Conversion Boards.
+  Changes such as updating filters, renaming, or modifying the lookback window for a conversion event may take time to reflect on the dashboard. If you delete a conversion event, associated metrics will no longer be visible in Conversions Board.
 </Callout>
 
 ## Apply Filters
 
-Filters help you narrow down the Conversions analysis to specific campaigns by name, channel, time period, owner, and more. When you apply filters on the Conversion Board, both the [Metric tiles](doc:roi-insights#metric-tiles) and the [Engagement performance table](doc:roi-insights#engagement-performance-table) update dynamically to reflect only the data that matches your selected criteria.
+Filters help you narrow down the Conversions analysis to specific campaigns by name, channel, time period, owner, and more. When you apply filters on the Conversions Board, both the [Metric tiles](doc:conversions-board#metric-tiles) and the [Engagement performance table](doc:conversions-board#engagement-performance-table) update dynamically to reflect only the data that matches your selected criteria.
 
 Use filters to focus on relevant business questions, such as:
 
@@ -129,7 +129,7 @@ The filter fields are organized into the following groups:
 
 After selecting your required filters, click **Apply** to update the dashboard. To reset all filters to their defaults, click **Reset**.
 
-## Bookmark Conversion Boards
+## Bookmark Conversions Board
 
 Saved Views (also called Bookmarks) let you save a configured filter state so you can return to the same analysis without re-applying filters each time.
 
@@ -146,7 +146,7 @@ To save the current filter configuration as a view:
 <Image src="https://files.readme.io/b979a85f27d8601201a2567355ceaf57eb6547508b763d491293edfd291429f2-2026-08-26_12-26-33_1.gif" align="center" caption="Bookmark a Conversions View" border={true} />
 
 
-Saved views are public by default, meaning all users with access to Conversion Boards in your account can view and use them.
+Saved views are public by default, meaning all users with access to Conversions Board in your account can view and use them.
 
 <Callout icon="📘" theme="info">
   ### Delete a Bookmark
@@ -154,12 +154,12 @@ Saved views are public by default, meaning all users with access to Conversion B
   Deleting a saved bookmark removes it for all users. This action cannot be undone. You can rename, duplicate, or delete any bookmark from the options next to the view name.
 </Callout>
 
-# Understand the Conversion Boards
+# Understand the Conversions Board
 
-After conversion events are configured, the Conversion Boards display campaign performance in two primary sections:
+After conversion events are configured, the Conversions Board display campaign performance in two primary sections:
 
-- [Metric Tiles](doc:roi-insights#metric-tiles)
-- [Engagement Performance Table](doc:roi-insights#engagement-performance-table)
+- [Metric Tiles](doc:conversions-board#metric-tiles)
+- [Engagement Performance Table](doc:conversions-board#engagement-performance-table)
 
 ## Metric Tiles
 
@@ -214,9 +214,9 @@ The following table describes each column in the _Engagement Performance Table_:
 <Callout icon="📘" theme="info">
   #### Note
 
-  In the [Engagement Performance Table](doc:roi-insights#engagement-performance-table):
+  In the [Engagement Performance Table](doc:conversions-board#engagement-performance-table):
 
-  - You can click on any campaign in the table row to open its campaign stats page. This gives you quick access to detailed performance data without leaving the Conversion Boards.
+  - You can click on any campaign in the table row to open its campaign stats page. This gives you quick access to detailed performance data without leaving the Conversions Board.
   - By default, the table is sorted by Conversion Count in descending order, so the highest-converting engagements appear at the top.
   - The engagement performance table also includes archived campaigns so that your historical Conversion data remains accessible even after campaigns are archived.
 </Callout>
@@ -233,7 +233,7 @@ To view journey performance broken down by individual nodes, enable the **Show I
 
 # Custom Metrics
 
-Custom Metrics let you create derived metrics from the engagement and conversion data available in the Conversion Boards. These metrics help you track business-specific performance indicators that are not available as default tiles or table columns.
+Custom Metrics let you create derived metrics from the engagement and conversion data available in the Conversions Board. These metrics help you track business-specific performance indicators that are not available as default tiles or table columns.
 
 Once created, custom metrics appear as additional columns in the Engagement Performance Table and can be used alongside standard metrics. For example, a Revenue metric calculated using `PROPSUM(Purchase.amount)`&#x20;
 
@@ -241,7 +241,7 @@ Once created, custom metrics appear as additional columns in the Engagement Perf
 
 To create a custom metric:
 
-1. Click **Add Metric** in the top-right corner of the Conversion Boards.
+1. Click **Add Metric** in the top-right corner of the Conversions Board.
 2. Enter a clear and descriptive name for the KPI. For example, name the KPI as _Revenue_ if you are measuring total purchase value.
 3. In the formula builder, select a metric from the list. For example, select `PROPSUM` from the function list and select the amount property of your _Charged_ event.
 4. Click **Save**.
@@ -274,7 +274,7 @@ The following examples illustrate how Custom Metrics can be built from conversio
 <Callout icon="⚠️" theme="warn">
   ### **Custom Metric Aggregation at the Journey Level**
 
-  Custom metrics are calculated at the journey-node level during public beta. Aggregated custom metric values at the overall journey level are not yet available and will be added in a future release. If you view Conversion Boards with the journey toggle enabled, custom metric columns display node-level data only.
+  Custom metrics are calculated at the journey-node level during public beta. Aggregated custom metric values at the overall journey level are not yet available and will be added in a future release. If you view Conversions Board with the journey toggle enabled, custom metric columns display node-level data only.
 </Callout>
 
 ### Formula Functions
@@ -307,11 +307,11 @@ When creating a custom metric, keep the following in mind:
 
 # Operations
 
-You can edit or delete any existing metric directly from the Conversion Boards.
+You can edit or delete any existing metric directly from the Conversions Board.
 
 ## Export
 
-Conversion Boards lets you export both the Metrics summary and the Engagements table as CSV files for offline reporting and analysis. Each section has its own export option.
+Conversions Board lets you export both the Metrics summary and the Engagements table as CSV files for offline reporting and analysis. Each section has its own export option.
 
 ### Export Metrics Tiles Data
 
@@ -386,7 +386,7 @@ Follow these best practices to ensure that your Conversions analysis remains acc
 
 # FAQs
 
-Find answers to the following common questions about using Conversion Boards:
+Find answers to the following common questions about using Conversions Board:
 
 ### How many conversion events can I configure?
 
@@ -398,24 +398,24 @@ No. Revenue metrics require a numeric property associated with the conversion ev
 
 ### Do filters affect exports?
 
-Yes. Exports reflect the current filter state and selected conversion event. For more information, refer to [Export Engagement Data](doc:roi-insights#export-engagement-data).
+Yes. Exports reflect the current filter state and selected conversion event. For more information, refer to [Export Engagement Data](doc:conversions-board#export-engagement-data).
 
 ### Can I compare multiple conversion events at once?
 
 Yes. You can select multiple conversion events simultaneously. Each selected event appears as its own set of columns in the Engagement Performance Table, so you can compare performance across events side by side.
 
-### What attribution model does Conversion Boards use?
+### What attribution model does Conversions Board use?
 
-Conversion Boards uses a Last Touch Attribution model based on the most recent Notification Clicked or Notification Viewed event prior to conversion. For more information, refer to [Attribution Model](doc:roi-insights#attribution-model).
+Conversions Board uses a Last Touch Attribution model based on the most recent Notification Clicked or Notification Viewed event prior to conversion. For more information, refer to [Attribution Model](doc:conversions-board#attribution-model).
 
 ### Can I use a different attribution model?
 
-Currently, Conversion Boards supports the Last Touch attribution model, and the other attribution models, such as First Touch and Multi Touch attribution (including Linear/Equal, Time Decay, and Custom Values splits), are coming soon.
+Currently, Conversions Board supports the Last Touch attribution model, and the other attribution models, such as First Touch and Multi Touch attribution (including Linear/Equal, Time Decay, and Custom Values splits), are coming soon.
 
 ### Are conversion goals campaign-specific?
 
-No. Conversion Boards uses account-level conversion events configured. These apply across all campaigns and journeys in your CleverTap account.
+No. Conversions Board uses account-level conversion events configured. These apply across all campaigns and journeys in your CleverTap account.
 
-### **Why is my Campaign Stats conversion count higher than&#x20;**&#x43;onversion Board&#x73;**?**
+### **Why is my Campaign Stats conversion count higher than the&#x20;**&#x43;onversions Boar&#x64;**?**
 
-Campaign Stats counts influenced conversions. This means a single conversion event can be credited to multiple campaigns if the user interacted with more than one. Conversion Boards uses true attribution, in which each conversion is credited to exactly one campaign or journey, based on the selected attribution model (for example, last touch). This means the total conversion count in Conversion Boards will be lower than the sum shown in individual Campaign Stats pages.
+Campaign Stats counts influenced conversions. This means a single conversion event can be credited to multiple campaigns if the user interacted with more than one. Conversions Board uses true attribution, in which each conversion is credited to exactly one campaign or journey, based on the selected attribution model (for example, last touch). This means the total conversion count in the Conversions Board will be lower than the sum shown in individual Campaign Stats pages.

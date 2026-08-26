@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to configure, analyze, and interpret conversions for your campaigns
   from the CleverTap dashboard.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

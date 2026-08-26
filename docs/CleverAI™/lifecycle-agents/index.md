@@ -40,13 +40,13 @@ The following image shows the _Create New Agent_ workflow with the five-step nav
 
 You can create a new agent with a five-step workflow:&#x20;
 
-| Window Section                                               | What You Configure                                                          |
-| ------------------------------------------------------------ | --------------------------------------------------------------------------- |
-| [**Goals**](doc:set-goals-in-lifecycle-agent)                | The conversion goal, guiding events, and the conversion window              |
-| [**Target Segment**](doc:define-the-target-segment)          | Which users enter the agent and the control group                           |
-| [**Engagement Strategy**](doc:configure-the-engagement-plan) | The engagement strategy and stage rules                                     |
-| [**Messages**](doc:add-messages-for-the-lifecyle-agent)      | The messages across different channels available to the agent for selection |
-| [**Guardrails**](doc:set-guardrails)                         | Channel limits, Frequency caps, and Do Not Disturb (DND) windows            |
+| Window Section                                                     | What You Configure                                                          |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| [**Goals**](doc:lifecycle-agent-goals)                             | The conversion goal, guiding events, and the conversion window              |
+| [**Target Segment**](doc:lifecycle-agent-target-segment)           | Which users enter the agent and the control group                           |
+| [**Engagement Strategy**](doc:lifecycle-agent-engagement-strategy) | The engagement strategy and stage rules                                     |
+| [**Messages**](doc:lifecyle-agent-messages)                        | The messages across different channels available to the agent for selection |
+| [**Guardrails**](doc:lifecycle-agent-guardrails)                   | Channel limits, Frequency caps, and Do Not Disturb (DND) windows            |
 
 ##
 

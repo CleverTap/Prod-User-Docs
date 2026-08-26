@@ -162,6 +162,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## August
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="analytics" id="conversions-board-in-analytics">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#conversions-board-in-analytics"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Conversions Board in Analytics</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge beta">BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now attribute conversions and revenue to the campaigns and journeys that drove them with <em>Conversions Board</em>, giving your team a clear, configurable view of what's actually working.</p>
+    <p>With Conversions Board, you can:</p>
+    <p><ul>
+    <li>Define conversion events like Charged, Booking Successful, or Video Watched, each with its own look-back window and optional aggregation property.</li>
+    <li>View attributed conversions and revenue at the campaign level, or drill down to the journey node that drove them.</li>
+    <li>Choose click-through or view-through attribution to define what counts as influence.</li>
+    <li>Build custom metrics from your conversion event properties, alongside standard engagement metrics.</li>
+    <li>Filter and bookmark views, and export the full attributed dataset for analysis outside the dashboard.</li>
+    </ul></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/conversions-board" target="_blank">Conversions Board</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## July
 
 <HTMLBlock>{`

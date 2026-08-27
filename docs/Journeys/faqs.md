@@ -34,7 +34,7 @@ A. You will see them on the following node under 'Waiting users.'
 
 ### Q. Why is the number of users on nodes not matching or adding up?
 
-A. The count of the users depends on the selected date range. If the original date range of the Journey does not match the date range in your search, then the numbers will differ from the original.
+A. The count of the users depends on the selected date range. If the original date range of the Journey does not match the date range in your search, the numbers will differ from the original.
 
 ### Q. How do I verify the number of users entering a specific node?
 
@@ -44,9 +44,9 @@ A. The number of users moving forward from a node will always match the number o
 
 A. There can be discrepancies between the users who qualified for a Journey and those who entered a Journey due to the Control Group.
 
-### Q. Why my stats at the last node are not matching?
+### Q. Why are my stats at the last node not matching?
 
-A. In the journeys created before Dec 27, 2019, You might see a mismatch of user counts or a drop in users. This is because earlier, we used a dummy wait step to post the last node, where users will move and wait for the goal to be met. In the new journeys (created post-Dec 27, 2019), the dummy step no longer exists, and this mismatch should not happen.
+A. In the journeys created before Dec 27, 2019, you might see a mismatch of user counts or a drop in users. This is because earlier, we used a dummy wait step to post the last node, where users will move and wait for the goal to be met. In the new journeys (created post-Dec 27, 2019), the dummy step no longer exists, and this mismatch should not happen.
 
 ### Q. What are 'Non-Targetable' profiles?
 

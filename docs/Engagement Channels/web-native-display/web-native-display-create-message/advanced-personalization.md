@@ -18,6 +18,12 @@ Advanced Personalization in CleverTap lets you customize and personalize your we
 
 The Visual Editor template empowers marketers to tailor specific elements on their website, enhancing the user experience for their target audience. This feature lets marketers personalize various content types, such as text or images, using custom HTML or JSON. For instance, marketers can modify the textual content to better resonate with their audience or adjust image content to be more visually appealing and relevant, all through a user-friendly interface and zero development effort.
 
+<Callout icon="📘" theme="info">
+  ### Note
+
+  CleverTap offers Visual Editor as a paid add-on. Contact your customer success manager to enable this feature for your account.
+</Callout>
+
 ### Prerequisites
 
 Before you start using the Visual Editor, ensure the following prerequisites are met:
@@ -124,6 +130,8 @@ The Click Tracking feature allows element-wise tracking. Click **Track Clicks**,
 
 <Image src="https://files.readme.io/e83e2b0506a6544ae5a677cefd8600276b1284beaec04d0bd43161445c411a6b-2025-03-23_16-44-30.png" alt="Web Size" align="center" width="100% " caption="Web Resolution" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/11942134a1cbf707b76db0af2cb7af5270b9dc263423a0f588cf575deb7ddd21-2025-03-23_16-46-17.png" alt="Mobile Size" align="center" width="100% " caption="Mobile Resolution" border={true} />

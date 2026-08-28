@@ -96,25 +96,25 @@ Creator Agents generate on-brand content, such as copy, images, and templates, d
 
 Intelligent Agents run continuously in the background, using your account's data to personalize content, predict behavior, or optimize journeys.
 
-| Agent                                                                    | What it does                                                                                                                                             | How it is billed                                                                               |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [Recommendations](https://docs.clevertap.com/docs/recommendations-agent) | Surfaces the most relevant products or content for each user based on their browsing and purchase history, for use across Push, Email, In-App, and more. | 1 Block = 2 active recommendations (fixed capacity, does not reset)                            |
-| [Predictions](https://docs.clevertap.com/docs/predictions)               | Forecasts user behaviors such as churn, conversion, uninstalls, and so on to build dynamic segments that update continuously.                            | 1 Block = 5 active predictions (fixed capacity, does not reset)                                |
-| [IntelliChannel](https://docs.clevertap.com/docs/intellichannel)         | Identifies the channel each user engages with most across Push, Email, SMS, and WhatsApp, and keeps it updated as behavior changes.                      | Fair-usage capacity of 1,000 sends/month, expandable in Blocks of 1,000/month (resets monthly) |
-| [IntelliNode](https://docs.clevertap.com/docs/intellinode)               | Tests up to seven journey paths at once and automatically routes users toward the best-converting path.                                                  | 1 Block = 7 active IntelliNodes (fixed capacity, does not reset)                               |
-| [IntelliAB](https://docs.clevertap.com/docs/intelliab)                   | Continuously tests message variants and automatically shifts more traffic to the best-performing one, eliminating the need to manually declare a winner. | Block-based (capacity varies by configuration)                                                 |
+| Agent                                                                    | What it does                                                                                                                                             | How it is billed                                                    |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Recommendations](https://docs.clevertap.com/docs/recommendations-agent) | Surfaces the most relevant products or content for each user based on their browsing and purchase history, for use across Push, Email, In-App, and more. | 1 Block = 2 active recommendations (fixed capacity, does not reset) |
+| [Predictions](https://docs.clevertap.com/docs/predictions)               | Forecasts user behaviors such as churn, conversion, uninstalls, and so on to build dynamic segments that update continuously.                            | 1 Block = 5 active predictions (fixed capacity, does not reset)     |
+| [IntelliChannel](https://docs.clevertap.com/docs/intellichannel)         | Identifies the channel each user engages with most across Push, Email, SMS, and WhatsApp, and keeps it updated as behavior changes.                      | Block-based (capacity varies by configuration)                      |
+| [IntelliNode](https://docs.clevertap.com/docs/intellinode)               | Tests up to seven journey paths at once and automatically routes users toward the best-converting path.                                                  | 1 Block = 7 active IntelliNodes (fixed capacity, does not reset)    |
+| [IntelliAB](https://docs.clevertap.com/docs/intelliab)                   | Continuously tests message variants and automatically shifts more traffic to the best-performing one, eliminating the need to manually declare a winner. | 1 Block = 5 active IntelliAB (fixed capacity, does not reset)       |
 
 ## Workflow Agents
 
 Workflow Agents speed up day-to-day tasks such as building segments, analyzing data, and setting up journeys.
 
-| Agent                                                                  | What it does                                                                                                                                                                       | Cost per response |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| [Analytics Builder](https://docs.clevertap.com/docs/analytics-builder) | Turns a plain-language question into instant charts, trends, or breakdowns. It is the same analysis you would otherwise build manually.                                            | 5 Tokens          |
-| [Segment Builder](https://docs.clevertap.com/docs/segment-builder)     | Describes your audience criteria in a prompt and returns a ready-to-use segment, using the same AND/OR logic as CleverTap's NextGen Segment Builder.                               | 5 Tokens          |
-| [Journey Builder](https://docs.clevertap.com/docs/journey-builder)     | Describes your goal and target users, and builds an engagement journey with pre-filled nodes and scheduling.                                                                       | 13 Tokens         |
-| [AI Schema](https://docs.clevertap.com/docs/schema#ai-generated-schema-descriptions)                                                          | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Token           |
-| [NPS Insights](https://docs.clevertap.com/docs/nps-insights)           | Analyzes open-ended NPS survey responses to surface themes, sentiment, and what is driving your promoters and detractors, requiring no manual reading.                             | 2 Tokens          |
+| Agent                                                                                | What it does                                                                                                                                                                       | Cost per response |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [Analytics Builder](https://docs.clevertap.com/docs/analytics-builder)               | Turns a plain-language question into instant charts, trends, or breakdowns. It is the same analysis you would otherwise build manually.                                            | 5 Tokens          |
+| [Segment Builder](https://docs.clevertap.com/docs/segment-builder)                   | Describes your audience criteria in a prompt and returns a ready-to-use segment, using the same AND/OR logic as CleverTap's NextGen Segment Builder.                               | 5 Tokens          |
+| [Journey Builder](https://docs.clevertap.com/docs/journey-builder)                   | Describes your goal and target users, and builds an engagement journey with pre-filled nodes and scheduling.                                                                       | 13 Tokens         |
+| [AI Schema](https://docs.clevertap.com/docs/schema#ai-generated-schema-descriptions) | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Token           |
+| [NPS Insights](https://docs.clevertap.com/docs/nps-insights)                         | Analyzes open-ended NPS survey responses to surface themes, sentiment, and what is driving your promoters and detractors, requiring no manual reading.                             | 2 Tokens          |
 
 ## Other Agents
 
@@ -222,25 +222,25 @@ To do so:
    - **CleverAI**<sup>TM</sup> **Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
 
-     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI<sup>TM</sup> Tokens Usage" border={true} />
+     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAIleverAI<sup>T Tokens Usage" border={true} />
 
 
    - **CleverAI**<sup>TM</sup>**&#x20;Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
 
-     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI<sup>TM</sup> Blocks & Capacity" border={true} />
+     <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAIleverAI<sup>T Blocks & Capacity" border={true} />
 
 
 3. Click **View Detailed Breakdown** to open the _CleverAI_<sup>TM</sup>_&#x20;Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 
 
-<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI<sup>TM</sup> Token and Block Capacity" border={true} />
+<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAIM</sup> is a  Token and Block Capacity" border={true} />
 
 
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
 
-<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI<sup>TM</sup> Token and Agent Capacity Usage by Projects" border={true} />
+<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAIleverAI<sup>T Token and Agent Capacity Usage by Projects" border={true} />
 
 
 <Callout icon="📘" theme="info">
@@ -307,7 +307,7 @@ To do so:
 
 Your CleverAI<sup>TM</sup> Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI<sup>TM</sup> Token and Block balances will both show as expired.
 
-<Callout icon="&#128077;" theme="okay">
+<Callout icon="👍" theme="okay">
   #### **Renewing before expiry keeps your Tokens**
 
   If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.

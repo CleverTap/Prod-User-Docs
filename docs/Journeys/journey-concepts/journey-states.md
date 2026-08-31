@@ -19,225 +19,21 @@ Journey States in CleverTap refer to the distinct phases a user experiences with
 
 The following table gives a quick overview of key aspects for each journey state:
 
-* User Entry
-* User Movement
-* Possible Next Actions
-* Possible Next States
-* Editing Permissions
+- User Entry
+- User Movement
+- Possible Next Actions
+- Possible Next States
+- Editing Permissions
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        State Name
-      </th>
-
-      <th>
-        User Entry
-      </th>
-
-      <th>
-        User Movement
-      </th>
-
-      <th>
-        Possible Next Actions
-      </th>
-
-      <th>
-        Possible Next States
-      </th>
-
-      <th>
-        Editing Options
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Draft**
-      </td>
-
-      <td>
-        Not Applicable
-      </td>
-
-      <td>
-        Not Applicable
-      </td>
-
-      <td>
-        Edit, Save, Publish, Clone
-      </td>
-
-      <td>
-        Scheduled, Running
-      </td>
-
-      <td>
-        Full editing allowed
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Scheduled**
-      </td>
-
-      <td>
-        Not Applicable
-      </td>
-
-      <td>
-        Not Applicable
-      </td>
-
-      <td>
-        Edit, Clone, Pause, Stop
-      </td>
-
-      <td>
-        Running, Paused, Stopped
-      </td>
-
-      <td>
-        Partial edit (What section).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Running**
-      </td>
-
-      <td>
-        Users enter the journey as per the entry criteria
-      </td>
-
-      <td>
-        Users progress as per the defined flow
-      </td>
-
-      <td>
-        Edit, Clone, Pause, Stop
-      </td>
-
-      <td>
-        Paused, Stopped, Restricted, Completed
-      </td>
-
-      <td>
-        <li>Partial edit (What section).</li><li>Full edit creates a new version.</li>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Paused**
-      </td>
-
-      <td>
-        No new user entry
-      </td>
-
-      <td>
-        Existing users continue to move through the flow
-      </td>
-
-      <td>
-        Edit, Clone, Resume, Stop
-      </td>
-
-      <td>
-        Running, Stopped, Restricted, Completed
-      </td>
-
-      <td>
-        <li>Partial edit (What section).</li><li>Full edit creates a new version.</li>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Completed**
-      </td>
-
-      <td>
-        No new user entry
-      </td>
-
-      <td>
-        Existing users progress until they exit
-      </td>
-
-      <td>
-        Edit, Clone, Stop
-      </td>
-
-      <td>
-        Stopped
-      </td>
-
-      <td>
-        Full edit creates a new version.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Stopped**
-      </td>
-
-      <td>
-        No new user entry
-      </td>
-
-      <td>
-        No further progression; users are exited over 30–60 days
-      </td>
-
-      <td>
-        Edit, Clone
-      </td>
-
-      <td>
-        None
-      </td>
-
-      <td>
-        Full edit creates a new version.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Restricted**
-      </td>
-
-      <td>
-        No new entry
-      </td>
-
-      <td>
-        Existing users continue the movement
-      </td>
-
-      <td>
-        Edit, Stop
-      </td>
-
-      <td>
-        Stopped
-      </td>
-
-      <td>
-        <li>Partial edit (What section).</li><li>Full edit creates a new version.</li>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| State Name     | User Entry                                        | User Movement                                            | Possible Next Actions      | Possible Next States                    | Editing Options                                                                |
+| -------------- | ------------------------------------------------- | -------------------------------------------------------- | -------------------------- | --------------------------------------- | ------------------------------------------------------------------------------ |
+| **Draft**      | Not Applicable                                    | Not Applicable                                           | Edit, Save, Publish, Clone | Scheduled, Running                      | Full editing allowed                                                           |
+| **Scheduled**  | Not Applicable                                    | Not Applicable                                           | Edit, Clone, Pause, Stop   | Running, Paused, Stopped                | Partial edit (What section).                                                   |
+| **Running**    | Users enter the journey as per the entry criteria | Users progress as per the defined flow                   | Edit, Clone, Pause, Stop   | Paused, Stopped, Restricted, Completed  | <li>Partial edit (What section).</li><li>Full edit creates a new version.</li> |
+| **Paused**     | No new user entry                                 | Existing users continue to move through the flow         | Edit, Clone, Resume, Stop  | Running, Stopped, Restricted, Completed | <li>Partial edit (What section).</li><li>Full edit creates a new version.</li> |
+| **Completed**  | No new user entry                                 | Existing users progress until they exit                  | Edit, Clone, Stop          | Stopped                                 | Full edit creates a new version.                                               |
+| **Stopped**    | No new user entry                                 | No further progression; users are exited over 30–60 days | Edit, Clone                | None                                    | Full edit creates a new version.                                               |
+| **Restricted** | No new entry                                      | Existing users continue the movement                     | Edit, Stop                 | Stopped                                 | <li>Partial edit (What section).</li><li>Full edit creates a new version.</li> |
 
 # Draft
 
@@ -245,11 +41,13 @@ The Draft State in CleverTap refers to a Journey created but not published. Any 
 
 If you restore the cached Journey, the most recent version saved in your browser cache loads, enabling you to continue editing from where you stopped. The cache is specific to each user and depends on the web browser, ensuring that only the user who created the Journey can access it while preventing accidental data loss.
 
-The *Created By* and *Published By* columns on the Journeys List page identify the users responsible for creating and publishing a journey or its versions. The *Created By* column shows the user who initially created the journey or its latest draft version, while the *Published By* column indicates the user who published that specific version. When a draft is published, the journey transitions to the Scheduled or Running state based on its setup. Each version maintains its own creation and publishing metadata to enable accurate version tracking.
+The _Created By_ and _Published By_ columns on the Journeys List page identify the users responsible for creating and publishing a journey or its versions. The _Created By_ column shows the user who initially created the journey or its latest draft version, while the _Published By_ column indicates the user who published that specific version. When a draft is published, the journey transitions to the Scheduled or Running state based on its setup. Each version maintains its own creation and publishing metadata to enable accurate version tracking.
 
-> 📘 Draft Management
->
-> Only one draft is allowed per Journey entity at any time. Creating a new draft version replaces the existing one.
+<Callout icon="📘" theme="info">
+  ### Draft Management
+
+  Only one draft is allowed per Journey entity at any time. Creating a new draft version replaces the existing one.
+</Callout>
 
 # Scheduled
 
@@ -268,34 +66,34 @@ If the journey is stopped while in the Scheduled state, it will not go live, and
 
 ## Editing Journey in Scheduled State
 
-To edit a scheduled journey, click the ![](https://files.readme.io/8f45b08c7f55c17da382ee310aa5def046dab2b3d740a837ce8e39e61ea57240-Edit_icon.png) icon. In this state, you can only do limited edits to the *What* section of engagement nodes, such as message content, providers, and manual distribution percentages.
+To edit a scheduled journey, click the ![](https://files.readme.io/8f45b08c7f55c17da382ee310aa5def046dab2b3d740a837ce8e39e61ea57240-Edit_icon.png) icon. In this state, you can only do limited edits to the _What_ section of engagement nodes, such as message content, providers, and manual distribution percentages.
 
 # Running
 
 The Running state indicates that the journey is active, and the users execute actions as defined. In this state, users enter the Journey as they qualify and progress through it according to the flow after qualifying (refer to the following GIF).
 
-<Image alt="User Entry and Movement in Running State" align="center" border={true} src="https://files.readme.io/5aa5ea778cb2e4c2a73b283535a56b64413f776a1ca3379792ba2b4766364f3b-Running.gif">
-  User Entry and Movement in Running State
-</Image>
+
+<Image src="https://files.readme.io/5aa5ea778cb2e4c2a73b283535a56b64413f776a1ca3379792ba2b4766364f3b-Running.gif" alt="User Entry and Movement in Running State" align="center" border={true} />
+
 
 As users move through the Journey nodes (for example, receiving a message, meeting a condition, or dropping off), the stats are updated immediately in the dashboard. The date range selection in the calendar widget directly influences the Node stats. Consider an example where the Journey running from January 1 to January 10 sends push notifications to users. On January 5, you use the calendar widget to filter data for January 1–January 4. The Node stats update to reflect only the number of users who entered, dropped off, or converted during that time frame. Always ensure you are analyzing the correct time frame. For nodes with scheduled actions (for example, if a campaign is scheduled to run after two days), stats are updated only when those actions are triggered.
 
 ## Editing Journey in Running State
 
-You can edit the *What* section of engagement nodes, such as message content, provider configuration, or manual distribution settings, without creating a new version. You must create a new version to modify other journey aspects (for example, entry criteria, goal logic, and journey structure).
+You can edit the _What_ section of engagement nodes, such as message content, provider configuration, or manual distribution settings, without creating a new version. You must create a new version to modify other journey aspects (for example, entry criteria, goal logic, and journey structure).
 
 Once you publish a new version, you can:
 
-* **Stop the older version**, if you want all users to move to the new version immediately
-* **Mark the old version Restricted** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey.
+- **Stop the older version**, if you want all users to move to the new version immediately
+- **Mark the old version Restricted** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey.
 
 # Paused
 
 The Paused state indicates that already qualified users or users who have entered the journey continue to advance through the journey. However, no new users qualify for the journey until it resumes (refer to the following GIF). For example, consider a Journey targeting users who abandon their cart without completing a purchase within 30 minutes. If you pause the Journey, users who are already qualified continue to progress and receive notifications as per the Journey setup, such as receiving a discount after 24 hours. However, new users who meet the criteria during the pause do not enter. Once the Journey resumes, new users qualify again based on the cart abandonment trigger. Existing user progress remains unaffected by the paused period.
 
-<Image alt="User Entry and Movement in Paused State" align="center" border={true} src="https://files.readme.io/8f53f43f6d2bf593957d3fd51ab66753c3d0a36009497ab9f6a31af58422c7c9-Paused.gif">
-  User Entry and Movement in Paused State
-</Image>
+
+<Image src="https://files.readme.io/8f53f43f6d2bf593957d3fd51ab66753c3d0a36009497ab9f6a31af58422c7c9-Paused.gif" alt="User Entry and Movement in Paused State" align="center" border={true} />
+
 
 ## Editing Journey in Paused State
 
@@ -303,20 +101,52 @@ While updates to the What section, such as message content or provider settings,
 
 When you publish the new version, CleverTap prompts you to choose how to handle the paused version:
 
-* **Stop the older version**, if you want all users to move to the new version immediately
-* **Mark the old version Restricted** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey. Once you move the older journey to Restricted, it cannot be resumed. 
+- **Stop the older version**, if you want all users to move to the new version immediately
+- **Mark the old version Restricted** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey. Once you move the older journey to Restricted, it cannot be resumed.
 
-> 📘 Note
->
-> Only one version of a journey can be in the Paused/Running state at a time.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Only one version of a journey can be in the Paused/Running state at a time.
+</Callout>
+
+#
 
 # Stopped
 
-The Stopped state indicates that the journey has been permanently deactivated. Users currently in the journey do not progress further, and actions are halted. 
+The Stopped state indicates that the journey has been permanently deactivated. Users currently in the journey do not progress further, and actions are halted.
 
-<Image alt="User Entry and Movement in Stopped State" align="center" border={true} src="https://files.readme.io/d37e56e4b883fcc1cbf6eaf85b1ba34bb3f4c462b274b7f6528058564920684b-Stopped.gif">
-  User Entry and Movement in Stopped State
-</Image>
+
+<Image src="https://files.readme.io/d37e56e4b883fcc1cbf6eaf85b1ba34bb3f4c462b274b7f6528058564920684b-Stopped.gif" alt="User Entry and Movement in Stopped State" align="center" caption="User Entry and Movement in Stopped State" border={true} />
+
+
+## Automatic Journey Stoppage
+
+CleverTap can automatically identify and stop journeys that are in the Completed State, that is, when no new users can enter, and all existing users have exited. This helps maintain performance and optimize system resources.
+
+**Journey moves to a Completed State when the user entry for the journey finishes**, based on its configuration. This can happen in the following scenarios:
+
+- The journey is configured as a One-Time Entry journey.
+- The journey is a recurring PBS journey with a defined entry end date.
+- The journey is a Live journey with a defined end date.
+
+In all these cases, once the entry closes, no new users can qualify for the journey.
+
+### Criteria for Automatic Journey Stoppage
+
+A journey in the Completed state becomes eligible for automatic stoppage when all users who entered the journey have fully exited it. This means:
+
+- All users have exited the journey:
+  - Either they met the goal
+  - They timeout of the journey
+  - They exited the journey via Force exit
+  - No new users are entering the journey
+- There are no users currently active in any journey node.
+- No pending scheduled actions remain for any user.
+
+Once these conditions are met, CleverTap automatically transitions the journey from **Completed** to **Stopped**, ensuring completed journeys no longer occupy active processing slots.
+
+Journeys that stop automatically behave the same as those that are stopped manually; no new users can enter, and existing users exit over time.
 
 ## Editing Journey in Stopped State
 
@@ -328,9 +158,9 @@ Once the new version is published, it becomes the active version of the journey.
 
 The Completed state signifies that the user entry is marked complete. The already qualified users continue to progress and exit the journey once they have timed out (refer to the following GIF).
 
-<Image alt="User Entry and Movement in Completed State" align="center" border={true} src="https://files.readme.io/854ba478e8cd88e48cda04e1e449cbf26cf26ebb353e680b83dbebbf24a8125e-Completed.gif">
-  User Entry and Movement in Completed State
-</Image>
+
+<Image src="https://files.readme.io/854ba478e8cd88e48cda04e1e449cbf26cf26ebb353e680b83dbebbf24a8125e-Completed.gif" alt="User Entry and Movement in Completed State" align="center" border={true} />
+
 
 ## Editing Journey in Completed State
 
@@ -338,12 +168,12 @@ You can make changes to a Journey in the Completed State by creating a new draft
 
 Once you publish a new version, you can:
 
-* **Force exit from version**, if you want all users to move to the new version immediately
-* **Keep moving in version** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey.
+- **Force exit from version**, if you want all users to move to the new version immediately
+- **Keep moving in version** if you want to allow existing users to continue moving through it. The new users who meet the updated entry criteria are routed into the new version of the journey.
 
-<Image alt="Edit a Journey in Completed State" align="center" border={true} src="https://files.readme.io/b18a8d5c4aea555b1672fe3ac6404078cb7e21f819b8cd894e9dece8b2b35cf2-Edit_a_Journey_in_Completed_State.png">
-  Edit a Journey in Completed State
-</Image>
+
+<Image src="https://files.readme.io/b18a8d5c4aea555b1672fe3ac6404078cb7e21f819b8cd894e9dece8b2b35cf2-Edit_a_Journey_in_Completed_State.png" alt="Edit a Journey in Completed State" align="center" border={true} />
+
 
 # Restricted
 
@@ -351,12 +181,12 @@ The Restricted state indicates that the journey version is no longer accepting n
 
 For example, consider a running journey that you edit and publish as a new version. If you choose not to stop the previous version, it enters the Restricted state. In this state, the journey flow remains active only for users already inside the journey; no new users will be able to enter.
 
-<Image alt="User Entry and Movement in Restricted State " align="center" width="90% " border={true} src="https://files.readme.io/6ed85c1e970478e35469e9dd240d3f26c4babbd9935d531e4d75b55f112f338c-Restricted_state_-_Static_New_Journey.png">
-  User Entry and Movement in Restricted State 
-</Image>
+
+<Image src="https://files.readme.io/6ed85c1e970478e35469e9dd240d3f26c4babbd9935d531e4d75b55f112f338c-Restricted_state_-_Static_New_Journey.png" alt="User Entry and Movement in Restricted State " align="center" width="90% " border={true} />
+
 
 A version in the Restricted state cannot be made active again. This state exists solely to ensure continuity for users already in the journey, while new users are directed to the latest active version.
 
 ## Editing Journey in Restricted State
 
-Journey in the Restricted state supports limited edits to the *What* section. To edit the journey beyond the What section, select *Full editing* to create a new version. This initiates a new draft version. Once published, the older version remains restricted, and only the new version will remain active.
+Journey in the Restricted state supports limited edits to the _What_ section. To edit the journey beyond the What section, select _Full editing_ to create a new version. This initiates a new draft version. Once published, the older version remains restricted, and only the new version will remain active.

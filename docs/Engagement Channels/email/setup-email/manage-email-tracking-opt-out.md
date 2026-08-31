@@ -49,9 +49,9 @@ To turn off tracking for a recipient, you must explicitly set both attributes to
 
 You can set _Email Open Tracking_ and _Email Click Tracking_ using the keys `ct_email_open_tracking` and `ct_email_click_tracking`. through any of the following methods:
 
-- [Upload User Profiles API](https://docs.clevertap.com/docs/upload-past-user-profiles)
-- [Update Profile via SDK](https://staging.docs.dev.clevertap.net/docs/concepts-user-profiles)
-- [SFTP](https://staging.docs.dev.clevertap.net/docs/imports-via-sftp)
+- [Upload User Profiles API](https://developer.clevertap.com/docs/upload-user-profiles-api)
+- [Update Profile via SDK](https://developer.clevertap.com/docs/concepts-user-profiles)
+- [SFTP](https://developer.clevertap.com/docs/imports-via-sftp)
 - [CSV Upload](doc:csv-upload)
 - [Integrated Customer Data Platform](doc:customer-data-platform)
 

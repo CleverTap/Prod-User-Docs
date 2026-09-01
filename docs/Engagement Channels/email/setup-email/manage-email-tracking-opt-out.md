@@ -1,10 +1,12 @@
 ---
-title: Manage Email Tracking Opt Out
+title: Manage Email Tracking
 excerpt: >-
   Learn how to control email open and click tracking for individual recipients
   using two profile properties.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

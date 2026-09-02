@@ -149,8 +149,6 @@ To view the AI allocation for your organization:
 
 <Image src="https://files.readme.io/7891f7e98854147f24b06911f8f5b122bd6ff088db92994e7dbd94e386b37987-image.png" align="center" caption="View AI Allocation for an Organization" border={true} />
 
-_View AI Allocation for an Organization_
-
 ## Manage Allocation
 
 The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capacity_ across projects. To do so:
@@ -161,7 +159,7 @@ The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capaci
 4. To add a new capability to a project's custom allocation, click **Add Agent**, choose the agent(s) to add, and click **Add**.
 5. Select **Save** on each project card you have edited, or click **Done** when you have finished editing all projects.
 
-_(Image: Manage Custom Allocation)_
+<Image src="https://files.readme.io/a82a24883e0f942f9c8e66bd872e240eee36aae33e7cf7bbbd0236667ae31731-image.png" align="center" caption="Manage Custom Allocation" border={true} />
 
 <Callout icon="🚧" theme="warn">
   #### **You can not allocate less than a project has already used**

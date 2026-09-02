@@ -514,7 +514,7 @@ The following events are supported via the Shopify Webhook:
     <tr>
       <td>
         - **DRAFT_ORDERS_CREATE**
-        - **DRAFT_ORDERS_UPDATE**
+        - **DRAFT_ORDERS_UPDATE (@dronal, why not jsut add these events to the previous row then ?)**
       </td>
 
       <td>
@@ -761,6 +761,8 @@ To create a Web campaign:
 3. Create a [Web Push](doc:web-push) , [Web Pop-up](doc:web-pop-ups) , or [Web Exit Intent](doc:web-exit-intent) campaign to engage your users.
 
 # FAQs
+
+(@dronal, check how faqs are formatted in our docs and emulate them here)
 
 ### Does my current billing plan include integration with the Shopify plugin?
 

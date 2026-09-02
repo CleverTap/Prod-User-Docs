@@ -123,11 +123,17 @@ The following is an agent that fits into the "other agents" category:
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
 | [Product Catalog](https://docs.clevertap.com/docs/product-catalog) | Manages your entire product catalog, such as names, prices, images, and attributes, in one place, powering personalized recommendations and dynamic content. | Block-based (1 block = 500K rows) |
 
-> **🚧 Chained agent calls add to the total cost**
-> A response can cost more than the base agent price. If an agent calls on another agent to complete your request, you are charged for all of it. For example, if Journey Builder (13 Tokens) also generates an email header using Scribe (3 Tokens) and a hero image using Image Creator (5 Tokens) as part of building your journey, the total cost for that one action is 13 + 3 + 5 = 21 Tokens. This is shown as a single entry in your usage history.
+<Callout icon="🚧" theme="warn">
+  #### Chained agent calls add to the total cost
 
-> **📘 Multiple outputs in one prompt**
-> If you ask an agent for multiple outputs in a single prompt, you are charged per output, not per prompt. For example, 5 image variations from Image Creator will be calculated as 5 images × 5 Tokens = 25 Tokens for that one request.
+  A response can cost more than the base agent price.**&#x20;**&#x49;f an agent calls on another agent to complete your request, you are charged for all of it. For example, if Journey Builder (13 Tokens) also generates an email header using Scribe (3 Tokens) and a hero image using Image Creator (5 Tokens) as part of building your journey, the total cost for that one action is 13 + 3 + 5 = 21 Tokens. This is shown as a single entry in your usage history.
+</Callout>
+
+<Callout icon="📘" theme="info">
+  #### **Multiple outputs in one prompt**
+
+  If you ask an agent for multiple outputs in a single prompt, you are charged per output, not per prompt. For example, 5 image variations from Image Creator will be calculated as 5 images × 5 Tokens = 25 Tokens for that one request.
+</Callout>
 
 # View AI Allocation
 

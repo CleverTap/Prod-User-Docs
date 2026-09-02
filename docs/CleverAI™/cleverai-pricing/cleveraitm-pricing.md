@@ -29,7 +29,7 @@ CleverAI Billing works on two models, depending on the type of agent:
 | **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
 <Callout icon="📘" theme="info">
-  ### **Who can manage CleverAI**<sup>TM</sup>**&#x20;billing?**
+  ### **Who can manage CleverAI™ billing?**
 
   Only Admins can view CleverAI<sup>TM</sup> Token and Block balances, turn agents on or off, manage allocation across projects, or request more quota. If you are not an admin, you can still use any agent your admin has enabled.
 </Callout>
@@ -246,7 +246,7 @@ To do so:
 
 
 <Callout icon="📘" theme="info">
-  #### **Promotional CleverAI**<sup>TM</sup>**&#x20;Tokens**
+  #### **Promotional CleverAI™ Tokens**
 
   Promotional CleverAI<sup>TM</sup> Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
 </Callout>

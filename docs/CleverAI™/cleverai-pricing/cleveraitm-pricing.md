@@ -1,5 +1,9 @@
 ---
 title: CleverAI™ Pricing
+excerpt: >-
+  Understand how CleverAI™ Tokens and Blocks work, what each CleverAI™ agent
+  costs to run, and how to manage, monitor, and expand your organization's AI
+  usage from the CleverTap dashboard.
 deprecated: false
 hidden: true
 link:
@@ -7,8 +11,6 @@ link:
 metadata:
   robots: index
 ---
-Understand how CleverAI™ Tokens and Blocks work, what each CleverAI™ agent costs to run, and how to manage, monitor, and expand your organization's AI usage from the CleverTap dashboard.
-
 # Overview
 
 CleverAI™ is a group of AI agents built into CleverTap that includes agents such as Scribe, Image Creator, Segment Builder, Predictions, Recommendations, and more. This document explains how CleverTap measures and manages usage of these agents so your organization always knows what it has access to, how much it has used, and how to get more.

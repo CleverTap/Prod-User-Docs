@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-When a chart in Analytics shows a sudden spike or dip, the chart itself does not always tell you the reason for the sudden spike or dip. The reason usually lives elsewhere, such as in an email/Slack thread, a marketing calendar, or the memory of whoever ran the campaign that week. A few weeks later, that context is gone.
+When a chart in Analytics shows a sudden spike or dip, the chart itself does not always tell you the reason for the sudden spike or dip. The reason usually lives elsewhere, such as in an email/Slack thread, a marketing calendar, or the memory of whoever ran the campaign that week. A few weeks later, that context is gone. Annotations solve this problem for an analysis.
 
 An annotation is a note attached to a specific date, or a range of dates, on a Trends chart. Once added, it appears as a small marker below the trendline for everyone in your account. Hover over the marker to read the note. Annotations persist across sessions, so a note added today is still there for a teammate who opens the same chart next quarter.
 

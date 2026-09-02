@@ -195,8 +195,11 @@ To enable an Agent:
 
 _(Image: Turn On an Agent)_
 
-> **📘 What do non-admins see?**
-> Non-admins can open the same _Settings > CleverAI™_ page to browse agents and read their descriptions, but the enable/disable toggle is not available to them. If a non-admin needs an agent turned on, they will need to ask their admin directly.
+<Callout icon="📘" theme="info">
+  ### What Non-admins see?
+
+  Non-admins can open the same _Settings > CleverAI_<sup>TM</sup> page to browse agents and read their descriptions, but the enable/disable toggle is not available to them. If a non-admin needs an agent turned on, they will need to ask their admin directly.
+</Callout>
 
 ## View CleverAI™ Usage
 
@@ -223,8 +226,11 @@ _(Image: View Breakdown of CleverAI™ Usage)_
 
 _(Image: View CleverAI™ Token and Agent Capacity Usage by Projects)_
 
-> **📘 Promotional CleverAI™ Tokens**
-> Promotional CleverAI™ Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
+<Callout icon="📘" theme="info">
+  #### **Promotional CleverAI**<sup>TM</sup>**&#x20;Tokens**
+
+  Promotional CleverAI<sup>TM</sup> Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
+</Callout>
 
 # Request More Quota
 

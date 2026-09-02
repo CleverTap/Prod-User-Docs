@@ -275,8 +275,11 @@ To do so:
 
 5. Select **Request**.
 
-> **📘 Note**
-> Once Tokens hit 100% for a project, prompt-based agents stop responding in that project until an admin reallocates existing Tokens or adds more.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Once Tokens hit 100% for a project, prompt-based agents stop responding in that project until an admin reallocates existing Tokens or adds more.
+</Callout>
 
 ## View Usage History with Audit Logs
 
@@ -289,7 +292,7 @@ To do so:
 3. Select any row to open its _Log Details_ panel, showing the full response and metadata, including Tokens consumed and any chained agent calls that contributed to the total.
 4. Select the export icon to download the current filtered view as a CSV.
 
-_(Image: View Audit Logs)_
+<Image src="https://files.readme.io/4489dfe2cf692717262bf311491181b99afe2e63009854e3a9db1ebe284c9002-image.png" align="center" caption="View Audit Logs" border={true} />
 
 <Callout icon="📘" theme="info">
   ### Note

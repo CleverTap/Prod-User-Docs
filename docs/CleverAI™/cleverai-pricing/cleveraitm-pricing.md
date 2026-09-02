@@ -147,7 +147,9 @@ To view the AI allocation for your organization:
    * **CleverAI™ Blocks & Capacity**: A card showing the number of Blocks and the capacity for each Block-based agent.
 3. Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using — either a specific number or _Shared_ if it is drawing from the organization's common pool.
 
-_(Image: View AI Allocation for an Organization)_
+<Image src="https://files.readme.io/7891f7e98854147f24b06911f8f5b122bd6ff088db92994e7dbd94e386b37987-image.png" align="center" caption="View AI Allocation for an Organization" border={true} />
+
+_View AI Allocation for an Organization_
 
 ## Manage Allocation
 
@@ -279,7 +281,7 @@ _(Image: View Audit Logs)_
 
 Your CleverAI™ Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI™ Token and Block balances will both show as expired.
 
-<Callout icon="&#128077;" theme="okay">
+<Callout icon="👍" theme="okay">
   #### **Renewing before expiry keeps your Tokens**
 
   If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.

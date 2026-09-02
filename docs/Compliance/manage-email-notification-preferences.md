@@ -30,7 +30,7 @@ Notification Management groups related alerts into categories. Click the arrow n
 
 1. Click your profile avatar in the top-right corner of the dashboard.
 2. Click your name in the list to open _My Profile_.
-3. Switch to the _Notification_ tab. The _Notification Management&#x20;_&#x70;age opens, which lists the notification categories available to you.
+3. Switch to the _Notification_ tab. <br />The _Notification Management&#x20;_&#x70;age opens, which lists the notification categories available to you.
 
 The following image shows the Notification categories:
 
@@ -41,7 +41,7 @@ The following image shows the Notification categories:
 <Callout icon="📘" theme="info">
   ### Role-Based Visibility
 
-  The categories you view depend on your role. Non-admin users see only the categories that apply to them, admin-only categories such as Billing & Payments and Downtime & Outages do not appear in their list.
+  The categories you see depend on your role. Non-admin users cannot view admin-only categories, such as Billing & Payments, Downtime & Outages, and so on.
 </Callout>
 
 The following table lists the notification categories and alerts with the descriptions:

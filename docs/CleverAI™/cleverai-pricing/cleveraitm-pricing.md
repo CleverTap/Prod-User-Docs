@@ -25,7 +25,7 @@ CleverAI Billing works on two models, depending on the type of agent:
 
 | Model                 | How does it work?                                                                                                                                                                                                                     | Used by                                                                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **CleverAI™ Tokens**  | Every time you ask a prompt-based agent to do something, it uses a set number of Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
+| **CleverAI™ Tokens**  | Every time you ask a prompt-based agent to do something, it uses a set number oYou can not allocate less than a project has already usedf Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
 | **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
 > **📘 Who can manage CleverAI™ billing?**
@@ -161,8 +161,11 @@ The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capaci
 
 _(Image: Manage Custom Allocation)_
 
-> **🚧 You cannot allocate less than a project has already used**
-> A project's allocation can never be set below what it has already consumed. If you need to reduce a project's Tokens or Blocks, first make sure its usage is below your target number.
+<Callout icon="🚧" theme="warn">
+  #### **You can not allocate less than a project has already used**
+
+  A project's allocation can never be set below what it has already consumed. If you need to reduce a project's Tokens or Blocks, first make sure its usage is below your target number.
+</Callout>
 
 ## Delete a Project's Custom Allocation
 

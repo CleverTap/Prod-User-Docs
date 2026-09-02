@@ -222,10 +222,10 @@ To do so:
 
      <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAIleverA<sup>TM Tokens Usage" border={true} />
 
+
    * **CleverAI™ Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
-      <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAIleverA<sup>TM Blocks & Capacity" border={true} />
-
+     _(Image: View CleverAI™ Blocks & Capacity)_
 
 3. Click **View Detailed Breakdown** to open the _CleverAI™ Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 

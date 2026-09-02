@@ -470,8 +470,6 @@ The following events are supported via the Shopify Webhook:
         - **CHECKOUTS_CREATE**
         - **CHECKOUTS_UPDATE**
         - **CHECKOUTS_DELETE**
-        - **DRAFT_ORDERS_CREATE**
-        - **DRAFT_ORDERS_UPDATE**
       </td>
 
       <td>
@@ -510,6 +508,17 @@ The following events are supported via the Shopify Webhook:
         - default address city
         - default address province code
         - default address country code
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        - **DRAFT_ORDERS_CREATE**
+        - **DRAFT_ORDERS_UPDATE**
+      </td>
+
+      <td>
+        Same as **CHECKOUTS_CREATE**, <br />**CHECKOUTS_UPDATE** and **CHECKOUTS_DELETE**
       </td>
     </tr>
 
@@ -751,15 +760,13 @@ To create a Web campaign:
 2. Click **+ Campaign**.
 3. Create a [Web Push](doc:web-push) , [Web Pop-up](doc:web-pop-ups) , or [Web Exit Intent](doc:web-exit-intent) campaign to engage your users.
 
-## FAQs
+# FAQs
 
-Find answers to the following common questions about how to integrate Shopify with your CleverTap account.
-
-### Does my current billing plan include integration with the Shopify plugin?
+### Q. Does my current billing plan include integration with the Shopify plugin?
 
 Yes. This Shopify plugin is available for all CleverTap billing plans.
 
-### I have a Shopify web store and a mobile app. How do I target users who have performed an event on my Shopify store?
+### Q. I have a Shopify web store and a mobile app. How do I target users who have performed an event on my Shopify store?
 
 To target the users who have performed the event on your store:
 
@@ -770,10 +777,10 @@ To target the users who have performed the event on your store:
 <Image src="https://files.readme.io/f955291-shopify_segment_identify.png" alt="1005" align="center" caption="Filtering Shopify Users from Find People Page" border={true} />
 
 
-### I see a warning _Shopify installation seems to have a few missing files_ displayed at the end of the Project page. How do I resolve this warning?
+### Q. I see a warning _Shopify installation seems to have a few missing files_ displayed at the end of the Project page. How do I resolve this warning?
 
 CleverTap recommends reinstalling the plugin by clicking **Reinstall**.
 
-### Will this plugin work for Shopify Plus customers?
+### Q. Will this plugin work for Shopify Plus customers?
 
 Yes. This Plugin works for Shopify Plus customers too.

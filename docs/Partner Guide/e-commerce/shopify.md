@@ -470,6 +470,8 @@ The following events are supported via the Shopify Webhook:
         - **CHECKOUTS_CREATE**
         - **CHECKOUTS_UPDATE**
         - **CHECKOUTS_DELETE**
+        - **DRAFT_ORDERS_CREATE**
+        - **DRAFT_ORDERS_UPDATE**
       </td>
 
       <td>
@@ -508,17 +510,6 @@ The following events are supported via the Shopify Webhook:
         - default address city
         - default address province code
         - default address country code
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        - **DRAFT_ORDERS_CREATE**
-        - **DRAFT_ORDERS_UPDATE (@dronal, why not jsut add these events to the previous row then ?)**
-      </td>
-
-      <td>
-        Same as **CHECKOUTS_CREATE**, <br />**CHECKOUTS_UPDATE** and **CHECKOUTS_DELETE**
       </td>
     </tr>
 

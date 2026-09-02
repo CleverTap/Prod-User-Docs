@@ -147,7 +147,9 @@ To view the AI allocation for your organization:
    * **CleverAI™ Blocks & Capacity**: A card showing the number of Blocks and the capacity for each Block-based agent.
 3. Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using — either a specific number or _Shared_ if it is drawing from the organization's common pool.
 
+
 <Image src="https://files.readme.io/7891f7e98854147f24b06911f8f5b122bd6ff088db92994e7dbd94e386b37987-image.png" align="center" caption="View AI Allocation for an Organization" border={true} />
+
 
 ## Manage Allocation
 
@@ -159,7 +161,9 @@ The _Manage Allocation_ page allows you to distribute _Tokens_ and _Agent Capaci
 4. To add a new capability to a project's custom allocation, click **Add Agent**, choose the agent(s) to add, and click **Add**.
 5. Select **Save** on each project card you have edited, or click **Done** when you have finished editing all projects.
 
+
 <Image src="https://files.readme.io/a82a24883e0f942f9c8e66bd872e240eee36aae33e7cf7bbbd0236667ae31731-image.png" align="center" caption="Manage Custom Allocation" border={true} />
+
 
 <Callout icon="🚧" theme="warn">
   #### **You can not allocate less than a project has already used**
@@ -177,7 +181,9 @@ To remove all of a project's custom allocation at once:
 2. Click the **Delete** icon.
 3. Click **Delete** to confirm.
 
-_(Image: Delete a Project's Custom Allocation)_
+
+<Image src="https://files.readme.io/baf7c6932dc77ba41a35dd7a2aae6003a704d854a12b2c18042ab1b819f8832b-2026-08-17_19-45-47_1.gif" align="center" caption="Delete a Project's Custom Allocation" border={true} />
+
 
 # Enable/Disable Agents
 

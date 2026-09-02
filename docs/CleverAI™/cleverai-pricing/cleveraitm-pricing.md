@@ -199,7 +199,9 @@ To enable an Agent:
    4. Token usage (cost per query), for prompt-based agents, or Agent capacity, for Block-based agents
 3. Turn on the toggle next to the agent's status to enable it for this project.
 
-_(Image: Turn On an Agent)_
+
+<Image src="https://files.readme.io/0e034d7d6797ea09306616c5de37546a3c5ebea032fed2e76c6994d0ed9fd290-2026-08-17_19-05-20_1.gif" align="center" caption="Turn On an Agent" border={true} />
+
 
 <Callout icon="📘" theme="info">
   ### What Non-admins see?
@@ -218,7 +220,8 @@ To do so:
 2. On the _Overview_ tab, you will see two balance cards:
    * **CleverAI™ Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
-     _(Image: View CleverAI™ Tokens Usage)_
+     <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAIleverA<sup>TM Tokens Usage" border={true} />
+
 
    * **CleverAI™ Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 

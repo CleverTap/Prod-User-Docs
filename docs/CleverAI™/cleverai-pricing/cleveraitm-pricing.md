@@ -226,15 +226,21 @@ To do so:
 
 * **CleverAI™ Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
+
   <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI™ Blocks & Capacity" border={true} />
+
 
 3. Click **View Detailed Breakdown** to open the _CleverAI™ Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 
+
 <Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI™ is a" border={true} />
+
 
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
+
 <Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI™ Token and Agent Capacity Usage by Projects" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### **Promotional CleverAI**<sup>TM</sup>**&#x20;Tokens**
@@ -250,16 +256,22 @@ To do so:
 
 1. Click **Request More Quota** from the _AI Allocation_ page, and a two-step form opens.
 
-_(Image: Request More Quota for an Organization)_
+
+<Image src="https://files.readme.io/49d7d45433644e9905a524ca2e3b37b360b5e534273d0bb04492009709237b0b-image.png" align="center" caption="Request More Quota for an Organization" border={true} />
+
 
 2. Select the required amount of CleverAI™ Tokens and Blocks. For example, 50,000 tokens, 7 blocks of Recommendations, 5 blocks of Predictions, and 4 blocks of IntelliNode.
 
-_(Image: Add Tokens and Blocks Requirements)_
+
+<Image src="https://files.readme.io/868a2b2c76b52612986689b07e6ea674c736463c025020c638916df889d4194c-image.png" align="center" caption="Add Tokens and Blocks Requirements" border={true} />
+
 
 3. Select **Next**.
 4. Confirm your email, add a mobile number, and optionally add any notes about your specific request.
 
-_(Image: Add Contact Details to Request More Quota)_
+
+<Image src="https://files.readme.io/022da6f2418f2eb81c4c13be7bc4739aecdfcbe33c30620efa6492f523e058d0-image.png" align="center" caption="Add Contact Details to Request More Quota" border={true} />
+
 
 5. Select **Request**.
 

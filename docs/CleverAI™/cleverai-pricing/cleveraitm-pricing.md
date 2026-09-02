@@ -25,7 +25,7 @@ CleverAI Billing works on two models, depending on the type of agent:
 
 | Model                 | How does it work?                                                                                                                                                                                                                     | Used by                                                                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **CleverAI™ Tokens**  | Every time you ask a prompt-based agent to do something, it uses a set number oYou can not allocate less than a project has already usedf Tokens.                                                                                                                                              | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
+| **CleverAI™ Tokens**  | Every time you ask a prompt-based agent to do something, it uses a set number oYou can not allocate less than a project has already usedf Tokens.                                                                                     | Scribe, Image Creator, Email Template Creator, WhatsApp Template Creator, Segment Builder, Journey Builder, Analytics Builder, AI Schema, NPS Insights |
 | **Blocks & Capacity** | You configure a certain number of active recommendations, predictions, or journey experiments. Once configured, you can use them as much as you want, and you are billed for the capacity you have set up, not for each time it runs. | Recommendations, Predictions, IntelliNode, IntelliAB, IntelliChannel                                                                                   |
 
 > **📘 Who can manage CleverAI™ billing?**
@@ -269,15 +269,21 @@ To do so:
 
 _(Image: View Audit Logs)_
 
-> **📘 Note**
-> Audit Logs are only available to admins. Non-admins who need this information should ask their admin.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Audit Logs are only available to admins. Non-admins who need this information should ask their admin.
+</Callout>
 
 # Contract Renewal and Expiry
 
 Your CleverAI™ Tokens and Block capacity are tied to your contract term. If your contract lapses without renewal, your CleverAI™ Token and Block balances will both show as expired.
 
-> **👍 Renewing before expiry keeps your Tokens**
-> If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.
+<Callout icon="&#128077;" theme="okay">
+  #### **Renewing before expiry keeps your Tokens**
+
+  If you renew your contract before it lapses, any unused Tokens carry forward with their validity extended to match your new contract term. If your contract expires first, remaining balances are lost.
+</Callout>
 
 # CleverTap for Startups
 

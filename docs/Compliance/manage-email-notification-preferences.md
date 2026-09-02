@@ -63,7 +63,7 @@ The following table lists the notification categories and alerts with the descri
 | Data & Integration         | Data Import/Export          | SFTP, CSV, parse, and export notifications                         | Optional           | All users   |
 | Data & Integration         | Other Integrations          | Facebook, domain, and subscription management                      | Optional           | All users   |
 
-## Edit your Preferences
+## Edit Your Preferences
 
 Perform the following steps to edit your preferences:
 

@@ -220,7 +220,7 @@ To do so:
 2. On the _Overview_ tab, you will see two balance cards:
    * **CleverAI™ Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
-     \<Image src="https\://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI™ Tokens Usage" border=\{true\} />
+\<Image src="[https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png](https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png)" align="center" caption="View CleverAI™ Tokens Usage" border=\{true\} />
 
    * **CleverAI™ Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 

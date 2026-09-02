@@ -162,6 +162,37 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## September
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="security-project-settings" id="notification-preference-management">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#notification-preference-management"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Notification Preference Management</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now choose which system emails you receive from CleverTap, so only the notifications that matter to you land in your inbox. Subscribe or unsubscribe from specific email categories, scoped per user and per account, without affecting critical account communications.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Turn off optional categories such as campaign and journey reports, integration alerts, and collaboration emails.</li>
+        <li>Keep essential communications uninterrupted, since Billing and Payments, security, and onboarding emails remain mandatory and cannot be unsubscribed.</li>
+        <li>Manage email categories, including data import/export, segments and catalogs, integrations, and admin-focused account and operations categories.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/manage-email-notification-preferences" target="_blank">Notification Preferences</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## August
 
 <HTMLBlock>{`

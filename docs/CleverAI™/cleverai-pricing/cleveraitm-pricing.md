@@ -220,19 +220,21 @@ To do so:
 2. On the _Overview_ tab, you will see two balance cards:
    * **CleverAI™ Tokens**: Shows total, used, and remaining tokens, split into Promotional and Purchased, each with a percentage-used bar.
 
+
 <Image src="https://files.readme.io/8e6ed80a039cf3a80ed3edf6693020aeb2e1f6397ce3fddae0d45aab598ef0a7-image.png" align="center" caption="View CleverAI™ Tokens Usage" border={true} />
+
 
 * **CleverAI™ Blocks & Capacity**: Shows the total number of blocks, capacity, and capacity used for each Block-based agent, such as Recommendations, Predictions, IntelliNode, and IntelliAB.
 
-  _(Image: View CleverAI™ Blocks & Capacity)_
+  <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI™ Blocks & Capacity" border={true} />
 
 3. Click **View Detailed Breakdown** to open the _CleverAI™ Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
 
-_(Image: View Breakdown of CleverAI™ Usage)_
+<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI™ is a" border={true} />
 
 4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
-_(Image: View CleverAI™ Token and Agent Capacity Usage by Projects)_
+<Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI™ Token and Agent Capacity Usage by Projects" border={true} />
 
 <Callout icon="📘" theme="info">
   #### **Promotional CleverAI**<sup>TM</sup>**&#x20;Tokens**

@@ -751,9 +751,9 @@ To create a Web campaign:
 2. Click **+ Campaign**.
 3. Create a [Web Push](doc:web-push) , [Web Pop-up](doc:web-pop-ups) , or [Web Exit Intent](doc:web-exit-intent) campaign to engage your users.
 
-# FAQs
+## FAQs
 
-(@dronal, check how faqs are formatted in our docs and emulate them here)
+Find answers to the following common questions about how to integrate Shopify with your CleverTap account.
 
 ### Does my current billing plan include integration with the Shopify plugin?
 

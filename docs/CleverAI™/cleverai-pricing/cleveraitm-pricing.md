@@ -1,5 +1,5 @@
 ---
-title: CleverAI™ Pricing
+title: CleverAI™ Pricing Fix
 excerpt: >-
   Understand how CleverAI™ Tokens and Blocks work, what each CleverAI™ agent
   costs to run, and how to manage, monitor, and expand your organization's AI
@@ -292,7 +292,9 @@ To do so:
 3. Select any row to open its _Log Details_ panel, showing the full response and metadata, including Tokens consumed and any chained agent calls that contributed to the total.
 4. Select the export icon to download the current filtered view as a CSV.
 
+
 <Image src="https://files.readme.io/4489dfe2cf692717262bf311491181b99afe2e63009854e3a9db1ebe284c9002-image.png" align="center" caption="View Audit Logs" border={true} />
+
 
 <Callout icon="📘" theme="info">
   ### Note

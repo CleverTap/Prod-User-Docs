@@ -22,7 +22,7 @@ Annotations help across roles in the following ways:
 
 # Annotations Access Controls
 
-Annotations are public within your CleverTap account. There are no private annotations. Every note is read by the entire team.
+Annotations are public within your CleverTap account. There are no private annotations. The entire team reads every note.
 
 The following table shows who can perform each action on an annotation:
 
@@ -96,7 +96,7 @@ To annotate it:
 3. Select **Single** under _Entry type_.
 4. Enter a name for the Annotation. For example, Weekly Flash Sale.
 5. Enter a description for the Annotation. For example, Weekly Sale (July 28 to August 5).
-6. Select **Date range** in the _Date selection&#x20;_&#x66;ield, and set the duration from July 28 to August 6 because the sale spanned for nearly 9 days.
+6. Select **Date range** in the _Date selection&#x20;_&#x66;ield, and set the duration from July 28 to August 6, since the sale spanned nearly 9 days.
 7. Click **Add**.
 
 
@@ -230,7 +230,7 @@ The page lists the following columns for every Annotation:
 
 ## Edit an Annotation
 
-Annotations may need to be updated if event details change after they are added. For example, if a campaign was rescheduled, a description was entered incorrectly, or the date needs to be adjusted.
+Annotations may need to be updated if event details change after they are added. For example, if a campaign was rescheduled, a description was entered incorrectly, or the date needs adjustment.
 
 To edit an annotation:
 

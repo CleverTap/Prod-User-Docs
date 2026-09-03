@@ -18,7 +18,7 @@ A Board is a configurable view of tiles from different analyses, such as [Trends
 
 When working with product analytics, users often juggle across multiple reports or analyses simultaneously, each in a separate view. Boards solve this by bringing all your analyses into a single, shareable view.
 
-Boards are particularly useful for teams that regularly monitor performance metrics but share analysis by exporting or screenshotting charts. For example, product managers tracking feature adoption, marketers reviewing campaign funnels, growth teams analyzing retention, or executives reviewing KPIs.
+Boards are particularly useful for teams that regularly monitor performance metrics but share analysis by exporting charts or taking screenshots. For example, product managers tracking feature adoption, marketers reviewing campaign funnels, growth teams analyzing retention, or executives reviewing KPIs.
 
 With Boards 2.0, you can do the following:
 
@@ -47,7 +47,9 @@ To create a new board:
 3. Enter a descriptive _Board name_.
 4. Click **Create**.
 
-<Image align="center" border={true} caption="Create a Board" src="https://files.readme.io/ca1511293f0c3f5dda32180d3a3996f6e073651e3f4ca29900d887537d4706bc-2026-04-13_11-53-53_1.gif" />
+
+<Image src="https://files.readme.io/ca1511293f0c3f5dda32180d3a3996f6e073651e3f4ca29900d887537d4706bc-2026-04-13_11-53-53_1.gif" align="center" caption="Create a Board" border={true} />
+
 
 The board opens immediately as an empty dashboard, ready for you to add tiles.
 
@@ -61,7 +63,9 @@ The board opens immediately as an empty dashboard, ready for you to add tiles.
 
 Once you have boards set up, you can perform several management operations to keep your boards page organized. Access these options from the board menu by clicking the ![](https://files.readme.io/c538b4435fb5f68ee8201296aa64c4fa97e4d6a4443aa3f3665d947a260f4e2d-Ellipsis_icon_Boards.png)icon in the top-right corner of any board.
 
-<Image align="center" border={true} caption="Board Operations" src="https://files.readme.io/795c0c41a4facdc5ab3f1209efd41f0f331ee64e526b426fa0eccd59cdba3ba9-image.png" />
+
+<Image src="https://files.readme.io/795c0c41a4facdc5ab3f1209efd41f0f331ee64e526b426fa0eccd59cdba3ba9-image.png" align="center" caption="Board Operations" border={true} />
+
 
 The following operations are available from the board menu:
 
@@ -88,7 +92,9 @@ To share a board:
 3. Assign an [access type](doc:boards-v2#access-type) for each invited user.
 4. Click **Done**.
 
-<Image align="center" border={true} caption="Share a Board" src="https://files.readme.io/8ae5b3d58555f550a40e18ecf0598e96b903889426075d7056567ab6a9eef173-image.png" />
+
+<Image src="https://files.readme.io/8ae5b3d58555f550a40e18ecf0598e96b903889426075d7056567ab6a9eef173-image.png" align="center" caption="Share a Board" border={true} />
+
 
 ## Access Type
 
@@ -97,7 +103,9 @@ When inviting users to a board, you control what they can do with it using the f
 * **Viewer**: A Viewer can open the board, explore tile data, hover over data points, and apply filters for their own session. However, they cannot make any permanent changes, add, edit, rename, or delete tiles, and modify board settings. A _Viewer_ access is best for stakeholders, executives, or anyone who only requires insights without modifying the board.
 * **Editor**: An _Editor_ has full access to modify the board. They can add and remove tiles, rename tiles, apply saved filters, and change board settings. Editors can also invite other users. Editor access is best for teammates who are actively contributing to or maintaining the analysis.
 
-<Image align="center" border={true} caption="Access Types on Board" src="https://files.readme.io/b52316435f6efad76a6374d0722f246460113a3f960bc974e378b096eb4da8bc-image.png" />
+
+<Image src="https://files.readme.io/b52316435f6efad76a6374d0722f246460113a3f960bc974e378b096eb4da8bc-image.png" align="center" caption="Access Types on Board" border={true} />
+
 
 ## Visibility Settings
 
@@ -107,7 +115,9 @@ Beyond individual invites, you can set a board's overall visibility to control w
 * **Anyone can view**: Any user in your organization with the link can open and view the board, without needing an explicit invite. They are automatically granted _Viewer_ access. The board may also appear in shared directories.
 * **Anyone can edit**: Any user in your organization with the link can view and edit the board. Use this setting carefully. It is best suited for highly collaborative boards where the entire team is expected to contribute.
 
-<Image align="center" border={true} caption="Visibility Settings for a Board" src="https://files.readme.io/ac54ea100335b7f5104daa401434bdc68ee87cad0e155aa45ce81dad6480ef37-image.png" />
+
+<Image src="https://files.readme.io/ac54ea100335b7f5104daa401434bdc68ee87cad0e155aa45ce81dad6480ef37-image.png" align="center" caption="Visibility Settings for a Board" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Important
@@ -131,7 +141,9 @@ For example, if you want to build a Trends analysis tracking daily active users 
 6. (Optional) Enter a _Tile name_ (for example, Daily Active Users in Last 30 Days).
 7. Click **Save**.
 
-<Image align="center" border={true} caption="Add Tile to a Board" src="https://files.readme.io/dfb9b2c542fe787794bf8e348a30411d856e028429a00b2618a17330069ee188-image.png" />
+
+<Image src="https://files.readme.io/dfb9b2c542fe787794bf8e348a30411d856e028429a00b2618a17330069ee188-image.png" align="center" caption="Add Tile to a Board" border={true} />
+
 
 You can add tiles from any of the following analyses:
 
@@ -178,7 +190,9 @@ Each filter targets a different dimension of your data. You can apply one or bot
 
 Restrict each tile's data to a specific time window. For example, on a `Product Metrics` board, you might apply a date range of March 1 to March 31 to view all tile data scoped to March.
 
-<Image align="center" border={true} caption="Filter Board Data for a Date Range" src="https://files.readme.io/98b9036244cb74bb6d188951b23ea701c3fcd2f09335308c98b47f1e2b60e8cd-2026-04-13_13-29-03_1.gif" />
+
+<Image src="https://files.readme.io/98b9036244cb74bb6d188951b23ea701c3fcd2f09335308c98b47f1e2b60e8cd-2026-04-13_13-29-03_1.gif" align="center" caption="Filter Board Data for a Date Range" border={true} />
+
 
 You can select preset ranges (Last 7 days, Last 30 days, etc.) or a custom date range.
 
@@ -186,7 +200,9 @@ You can select preset ranges (Last 7 days, Last 30 days, etc.) or a custom date 
 
 Filter tiles by a defined user segment. For example, applying a `Churn After Purchase` segment to the board will update all supported tiles to show data only for users on mobile devices.
 
-<Image align="center" border={true} caption="Filter Board Data for a Segment" src="https://files.readme.io/321dbb82de394b3c58fd5809a3e6b0aa9858134410baf384f07626145af350be-2026-04-13_13-31-43_1.gif" />
+
+<Image src="https://files.readme.io/321dbb82de394b3c58fd5809a3e6b0aa9858134410baf384f07626145af350be-2026-04-13_13-31-43_1.gif" align="center" caption="Filter Board Data for a Segment" border={true} />
+
 
 Segments must be pre-configured in your workspace before they can be applied here.
 
@@ -208,7 +224,9 @@ Each tile on a board has its own set of actions, accessible from the tile menu. 
 
 To access the tile menu, click the ![](https://files.readme.io/e4c0310e2942b4fdf5b775b1a2cec22665f0af13cf4ab4aaae2802abef36d28b-Ellipsis_icon_Boards.png) icon in the top-right corner of any tile.
 
-<Image align="center" border={true} caption="Tile Operations In a Board" src="https://files.readme.io/d25577affd29ff3f44f41380c0576bcc7e9686d5dcb19934983585334fbbd792-image.png" />
+
+<Image src="https://files.readme.io/d25577affd29ff3f44f41380c0576bcc7e9686d5dcb19934983585334fbbd792-image.png" align="center" caption="Tile Operations In a Board" border={true} />
+
 
 The following sections describe each operation in detail.
 
@@ -232,7 +250,9 @@ Use _Edit_ when the tile configuration needs to change. For example, when you wa
   Editing a tile opens the original saved analysis. Any changes saved in edit mode will update the analysis itself, not just the tile instance on the board.
 </Callout>
 
-<Image align="center" border={true} caption="Editing a Funnel Tile" src="https://files.readme.io/c91ffb6ceb1932b1ab128dcdfd68dbc7a186ec23809f106bd14d219a893597bf-2026-05-19_23-26-52_1.gif" />
+
+<Image src="https://files.readme.io/c91ffb6ceb1932b1ab128dcdfd68dbc7a186ec23809f106bd14d219a893597bf-2026-05-19_23-26-52_1.gif" align="center" caption="Editing a Funnel Tile" border={true} />
+
 
 ## Rename Tile
 
@@ -240,7 +260,9 @@ Updates a tile's display name as it appears on the board. This does not affect t
 
 Use _Rename Tile_ when the default analysis name is not descriptive enough for the board context. For example, rename _Untitled Trends_ to _Weekly Signups by Channel_.
 
-<Image align="center" border={true} caption="Renaming a Note Tile" src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" />
+
+<Image src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" align="center" caption="Renaming a Note Tile" border={true} />
+
 
 ## Rename Legend
 
@@ -248,7 +270,9 @@ Updates the legend labels displayed on a Trends tile's chart. This is useful whe
 
 Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions. For example, rename _Engaged Users_ to _Engaged Users in Last 30 Days_.
 
-<Image align="center" border={true} caption="Renaming Legend of a Trends Tile" src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" />
+
+<Image src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" align="center" caption="Renaming Legend of a Trends Tile" border={true} />
+
 
 ## Rename Legend & Steps
 
@@ -256,7 +280,9 @@ Updates both the legend labels and the step names displayed on a Funnels tile. T
 
 Use _Rename Legend & Steps_ when sharing a Funnels tile with stakeholders who are unfamiliar with the internal event names used to define funnel steps.
 
-<Image align="center" border={true} caption="Renaming Legends and Steps of a Funnel Tile" src="https://files.readme.io/1a895588fd520171681321b710344b98e09b6dec0a3ef07f8720eb0f45fc2f1a-2026-05-19_23-33-03_1.gif" />
+
+<Image src="https://files.readme.io/1a895588fd520171681321b710344b98e09b6dec0a3ef07f8720eb0f45fc2f1a-2026-05-19_23-33-03_1.gif" align="center" caption="Renaming Legends and Steps of a Funnel Tile" border={true} />
+
 
 ## Clone
 
@@ -264,7 +290,9 @@ Creates a duplicate of the tile on the same board. The cloned tile retains all c
 
 Use _Clone_ when creating a variant of an existing tile is required. For example, clone a Trends tile and edit it to display data for a different user segment.
 
-<Image align="center" border={true} caption="Cloning a Pivot Tile" src="https://files.readme.io/b068f180a3b75568ba746a26f9747650b687f14df2108a59870f60c9bdbfb696-2026-05-19_23-35-56_1.gif" />
+
+<Image src="https://files.readme.io/b068f180a3b75568ba746a26f9747650b687f14df2108a59870f60c9bdbfb696-2026-05-19_23-35-56_1.gif" align="center" caption="Cloning a Pivot Tile" border={true} />
+
 
 ## Export
 
@@ -272,7 +300,9 @@ Downloads the tile's data as a file for offline use or sharing. The export forma
 
 Use _Export_ when sharing a specific chart or table with someone outside the platform, or when including it in a presentation or report.
 
-<Image align="center" border={true} caption="Exporting a Funnel Tile as a PDF" src="https://files.readme.io/1ee60fa1c2b8dd588be4a989524dd2659ad20a788ccc463b92457982c5854b82-2026-05-19_23-38-55_1.gif" />
+
+<Image src="https://files.readme.io/1ee60fa1c2b8dd588be4a989524dd2659ad20a788ccc463b92457982c5854b82-2026-05-19_23-38-55_1.gif" align="center" caption="Exporting a Funnel Tile as a PDF" border={true} />
+
 
 ## Delete
 
@@ -284,7 +314,9 @@ Permanently removes a tile from the board. This does not delete the original ana
   Deleted tiles cannot be restored. If a tile is accidentally deleted, it must be added again from the original analysis.
 </Callout>
 
-<Image align="center" border={true} caption="Deleting a Pivot Tile" src="https://files.readme.io/27cc0b11c0e1a80c6a4a3d62f9652eaec96a416ec52261cf3d133b57ec7fb066-2026-05-19_23-41-31_1.gif" />
+
+<Image src="https://files.readme.io/27cc0b11c0e1a80c6a4a3d62f9652eaec96a416ec52261cf3d133b57ec7fb066-2026-05-19_23-41-31_1.gif" align="center" caption="Deleting a Pivot Tile" border={true} />
+
 
 # Example Use Case: Monitoring Campaign Performance
 

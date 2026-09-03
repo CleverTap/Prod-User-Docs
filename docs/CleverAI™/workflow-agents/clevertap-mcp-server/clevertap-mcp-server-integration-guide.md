@@ -61,7 +61,7 @@ The CleverTap MCP server is compatible with the following AI clients:
     The following image shows the _Add custom connector:_
 
 
-    <Image src="https://files.readme.io/2bf1eb316e3d20774c2bd7ffb09b90052ff55e870e5505e879e017a8cf8eddd9-image.png" alt="Claude's Add custom connector dialog showing &quot;CleverTap MCP&quot; in the name field and the MCP server URL in the URL field, with Cancel and Add buttons at the bottom." align="center" width="60% " caption="Add Custom Connector" border={true} />
+    <Image src="https://files.readme.io/1e1bd979d354eb99986841a834c968a288cc54c7ea655218be8d8f7590dc1188-image.png" align="center" width="40%" caption="Add Custom Connector" border={true} />
 
 
     ### Connect the CleverTap MCP
@@ -70,10 +70,9 @@ The CleverTap MCP server is compatible with the following AI clients:
 
     1. Go to _Customize > Connectors > Browse Connectors_.
     2. Click **Connect** on CleverTap MCP.
-    3. Click **Configure** after connecting. This shows the full list of tools and functionality available through the MCP.<br />The following image shows the _us1_ endpoint connector:
+    3. Click **Configure** after connecting. This shows the full list of tools and functionality available through the MCP.<br />The following image shows a sample endpoint connector:
 
-
-    <Image src="https://files.readme.io/e7dd99a6f0c9dd5256c92535514714cf6f19bd9636b5e9262ee86c381a9d384a-image.png" align="center" width="60% " border={true} />
+       <Image src="https://files.readme.io/06a65f6ff4c2e55cc626c5521dc6a7f123a1346b4f8b83dc95c9d947cec67700-image.png" align="center" caption="Add Custom Connector" border={true} />
 
 
     ## Enable in a Chat
@@ -91,7 +90,7 @@ The CleverTap MCP server is compatible with the following AI clients:
     The following image shows the chat screen connector with CleverTap MCP toggle enabled:
 
 
-    <Image src="https://files.readme.io/421fb802ee44bd2dd28b4dcb14a638c0cc5174808ef0580f7cc051437ad60bcf-image.png" alt="Claude's chat input menu with Connectors expanded, showing the CleverTap MCP toggle switched on and an &quot;Add from CleverTap MCP&quot; option below it." align="center" width="65% " caption="Enable Connector" border={true} />
+    <Image src="https://files.readme.io/7d62301b966f3c49365c26f023e0f40761acb0f0a3fc68dd3e5288a33736f5de-image.png" align="center" width="60%" caption="Enable Connector" border={true} />
 
 
     ## Verify the Connection

@@ -12,7 +12,7 @@ The _Goals_ tab defines the success for this agent. You set the conversion goal,
 
 To complete the _Goals_ tab:
 
-1. From the _CleverTap dashboard_, navigate to _Decisioning_, and then click **Create New Agent**. The _Create New Agent&#x20;_&#x73;ection appears.
+1. From the _CleverTap dashboard_, go to _Decisioning_, and then click **Create New Agent**. The _Create New Agent&#x20;_&#x73;ection appears.
 
 
    <Image src="https://files.readme.io/75c643e8f6edc0d7123a4f57ea5d6e0acbc843b7273265e41c3e9812e2b4eb73-image.png" alt="Define Goal" align="center" caption="Define Goal" border={true} />

@@ -143,7 +143,7 @@ The CleverTap MCP server is compatible with the following AI clients:
     The following image shows the ChatGPT settings:
 
 
-    <Image src="https://files.readme.io/6b28f67ecb5ed0e3ef8be733846bc6e0efca921e8a87dced3389eb7d7afe7cf8-image.png" alt="ChatGPT's New App dialog with the app name, description, MCP server URL, and OAuth authentication fields filled in, and the risk-acknowledgment checkbox selected." align="center" width="60% " caption="New App" border={true} />
+    <Image src="https://files.readme.io/e222e4df83e2aa9e6c98c6bd7598169fa7a45560874001ab49698d315fe8d8de-image.png" align="center" width="50%" caption="Add Custom Connector" border={true} />
 
 
     ## Enable in a Chat

@@ -354,7 +354,7 @@ An admin needs to either reallocate unused Tokens from another project (via _Man
 
 ### I tried to create a 3rd Recommendation, but the system won't let me.
 
-You have reached your project's Recommendations capacity. Existing Recommendations keep working, but you cannot create a new one until capacity is freed up (by removing/reassigning an existing one) or expanded (via _Request More Quota_).
+You have reached your project's Recommendations capacity. Existing Recommendations keep working, but you cannot create a new one until capacity is freed up (by removing/reassigning an existing one) or expanded via [Request More Quota.](doc:cleverai-pricing#request-more-quota)
 
 ### Why did one action cost more Tokens than the agent's listed price?
 

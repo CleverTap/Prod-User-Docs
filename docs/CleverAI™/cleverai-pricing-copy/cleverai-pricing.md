@@ -115,12 +115,12 @@ Workflow Agents speed up day-to-day tasks such as building segments, analyzing d
 | [Analytics Builder](https://docs.clevertap.com/docs/analytics-builder)               | Turns a plain-language question into instant charts, trends, or breakdowns. It is the same analysis you would otherwise build manually.                                            | 5 Tokens          |
 | [Segment Builder](https://docs.clevertap.com/docs/segment-builder)                   | Describes your audience criteria in a prompt and returns a ready-to-use segment, using the same AND/OR logic as CleverTap's NextGen Segment Builder.                               | 5 Tokens          |
 | [Journey Builder](https://docs.clevertap.com/docs/journey-builder)                   | Describes your goal and target users, and builds an engagement journey with pre-filled nodes and scheduling.                                                                       | 13 Tokens         |
-| [AI Schema](https://docs.clevertap.com/docs/schema#ai-generated-schema-descriptions) | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Tokens          |
+| [AI Schema](https://docs.clevertap.com/docs/schema#ai-generated-schema-descriptions) | Automatically generates clear, consistent descriptions for your custom events and properties as you create them, improving results from Segment Builder and Analytics Builder too. | 0 Token           |
 | [NPS Insights](https://docs.clevertap.com/docs/nps-insights)                         | Analyzes open-ended NPS survey responses to surface themes, sentiment, and what is driving your promoters and detractors, requiring no manual reading.                             | 2 Tokens          |
 
 ## Other Agents
 
-The following is an agent that fits into the "other agents" category:
+The following is an agent that fits into the other agents category:
 
 | Agent                                                              | What it does                                                                                                                                                 | How it is billed                  |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
@@ -142,17 +142,18 @@ The following is an agent that fits into the "other agents" category:
 
 The _AI Allocation_ page allows admins to view organization-wide balances and decide how much of each project gets. By default, all projects consume tokens and agent capacities from the organization's shared pool.
 
-To view the AI allocation for your organization:
+To view the AI allocation for your organization, go to _Organization_ > _AI Allocation_ from the CleverTap dashboard.
 
-1. Go to _Organization_ > _AI Allocation_ from the CleverTap dashboard.
-2. At the top, you will see:
-   * **CleverAI™ Tokens**: A card showing the Promotional and Purchased Token balances, and their expiry date.
-   * **CleverAI™ Blocks & Capacity**: A card showing the number of Blocks and the capacity for each Block-based agent.
-3. Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using — either a specific number or _Shared_ if it is drawing from the organization's common pool.
+At the top, you will see:
+
+* **CleverAI™ Tokens**: A card showing the Promotional and Purchased Token balances, and their expiry date.
+* **CleverAI™ Blocks & Capacity**: A card showing the number of Blocks and the capacity for each Block-based agent.
 
 
 <Image src="https://files.readme.io/7891f7e98854147f24b06911f8f5b122bd6ff088db92994e7dbd94e386b37987-image.png" align="center" caption="View AI Allocation for an Organization" border={true} />
 
+
+Below both cards, the _Blocks & Capacity Allocation_ table lists every project, showing how much of each Token/Block type it is using, either a specific number or _Shared_ if it draws from the organization's common pool.
 
 ## Manage Allocation
 
@@ -233,22 +234,22 @@ To do so:
   <Image src="https://files.readme.io/a56f1e28e08286512a07f90ae4dce785f8bd0f968ec72615efeca28b356c9475-image.png" align="center" caption="View CleverAI™ Blocks & Capacity" border={true} />
 
 
-3. Click **View Detailed Breakdown** to open the _CleverAI™ Usage_ panel showing exactly how your Tokens or Block capacity usage is split across categories.
-
-
-<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI™ is a" border={true} />
-
-
-4. Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
+  * Below the balance cards, two donut charts show _Tokens and Blocks & Capacity Usage by Projects_. You can toggle each chart between project and user views.
 
 
 <Image src="https://files.readme.io/6d8105ca27dab80af66ff89318a0494090178d901f53b0b6f15b1eded9dc3e55-image.png" align="center" caption="View CleverAI™ Token and Agent Capacity Usage by Projects" border={true} />
 
 
+3. Click **View Detailed Breakdown** to open the _CleverAI™ Usage by Projects_ showing exactly how your Tokens or Block capacity usage is split across categories.
+
+
+<Image src="https://files.readme.io/02826ada4ed413a08983c9bcefbd307e84be9f8a83e7579157b161422cba9f6b-2026-08-17_17-14-13_1.gif" align="center" caption="View Breakdown of CleverAI™ Tokens and Capacity" border={true} />
+
+
 <Callout icon="📘" theme="info">
   #### **Promotional CleverAI™ Tokens**
 
-  Promotional CleverAI<sup>TM</sup> Tokens are a one-time grant included with your contract, valid until your contract's end date. They are used before your Purchased Tokens and do not reset monthly.
+  Promotional CleverAI<sup>TM</sup> Tokens are a one-time grant included with your contract, valid until your contract's end date. They are us ed before your Purchased Tokens and do not reset monthly.
 </Callout>
 
 # Request More Quota
@@ -269,7 +270,7 @@ To do so:
 <Image src="https://files.readme.io/868a2b2c76b52612986689b07e6ea674c736463c025020c638916df889d4194c-image.png" align="center" caption="Add Tokens and Blocks Requirements" border={true} />
 
 
-3. Select **Next**.
+3. Click **Next**.
 4. Confirm your email, add a mobile number, and optionally add any notes about your specific request.
 
 
@@ -337,17 +338,17 @@ Follow these recommendations to get the most out of your CleverAI™ Tokens and 
 * **Check your My Plan page monthly:** Especially if you are running high-volume campaigns with Scribe, Image Creator, or Journey Builder, since these carry higher per-response Token costs.
 * **Reallocate before you request more:** If one project is under its Token allocation while another is running low, reallocate from Manage Allocation as it is instant.
 * **Watch for chained-agent costs:** Journey Builder and other orchestrating agents can invoke other agents behind the scenes, hence a single action may cost more Tokens than the base agent price suggests.
-* **Renew before expiry, not after:** Renewing early preserves your unused Token balance; letting your contract lapse does not.
+* **Renew before expiry, not after:** Renewing early preserves your unused Token balance, letting your contract lapse does not.
 
 # Troubleshooting
 
-If you run into one of the following common issues, check these troubleshooting steps before contacting support:
+If you run into one of the following common issues, check the troubleshooting steps before contacting support:
 
 ### An agent I need is greyed out and shows a _disabled_ message.
 
 Ask your admin to enable it in _Settings > CleverAI™_, or, if you are the admin, refer to [Enable/Disable an Agent](https://docs.clevertap.com/docs/cleverai-pricing#enabledisable-agents).
 
-### My team hit 100% of Tokens and cannot use the prompt-based agents.
+### My team hit 100% of Tokens and can not use the prompt-based agents.
 
 An admin needs to either reallocate unused Tokens from another project (via _Manage Allocation_) or request more Tokens (via _Request More Quota_). Prompt-based agents will not respond again in that project until one of these happens.
 
@@ -359,7 +360,7 @@ You have reached your project's Recommendations capacity. Existing Recommendatio
 
 Some agents call other agents behind the scenes. Check the _Audit Logs_ detail panel for that action to see the full breakdown.
 
-### My contract expired, and I cannot access anything.
+### My contract expired, and I can not access anything.
 
 This is expected. Token and Block balances are tied to your contract term. Contact your Customer Success Manager to renew the contract, as nothing else in the dashboard can restore access until then.
 

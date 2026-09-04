@@ -253,7 +253,7 @@ To map Charged event items, perform the following steps:
    Each item in the array must be an object with its own sub-properties, such as category, product name, and quantity, for example:
 
 
-   <Image src="https://files.readme.io/740975f2f8a042c1ba5a20c50dc9af3f8c42179b5aa56d267c04c1e1ac033a4c-Items_Data_Mapping.png" align="center" caption="Items Data Mapping" border={true} />
+   <Image src="https://files.readme.io/28e20edb4512c816ba82b3a73846fd6e2bd0a925e1605799546736c0c1af92de-Items_Data_Mapping.png" align="center" caption="Items Data Mapping" border={true} />
 
 
    ```json

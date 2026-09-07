@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to connect and configure the CleverTap MCP with your preferred AI
   client to interact with your CleverTap account using natural language.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

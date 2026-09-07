@@ -5,7 +5,9 @@ excerpt: >-
   segments, and explore customer data using natural language through AI clients
   such as Claude, ChatGPT, and Cursor.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -277,6 +277,34 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 ## July
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="content-manager" id="push-templates-in-content-manager">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#push-templates-in-content-manager"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Push Templates in Content Manager</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now create, organize, and reuse Push notification templates centrally in Content Manager, helping launch Push engagements faster without rebuilding similar messages every time.</p>
+    <p>Push Templates in Content Manager improves campaign velocity and messaging consistency by giving teams a shared, governed template library instead of rebuilding similar messages from scratch each time.</p>
+    <p>With Push Templates in Content Manager, you can:</p>
+    <p><ul>
+    <li>Create reusable Push templates directly in Content Manager, with support for Standard, Advanced, Auto Carousel, Timer, and Text over Image layouts.</li>
+    <li>Save a Push message created inside the campaign editor directly to Content Manager for future reuse.</li>
+    <li>Select a saved template from the Pre-built section while creating a Push campaign, with title, message, media, deep links, and other configured fields pre-filled automatically.</li>
+    <li>Assign read-only permissions, so team members can view, preview, and apply templates in campaigns without editing the original template in Content Manager.</li>
+    </ul></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/push-templates" target="_blank">Push Templates</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="user-re-entry-in-control-groups-for-recurring-journeys">
   <div class="release-note-header">
     <div class="anchor-link-icon">

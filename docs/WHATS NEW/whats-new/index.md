@@ -246,33 +246,6 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="journeys" id="extended-personalization-with-journey-context">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#extended-personalization-with-journey-context"><i class="fa-light fa-anchor"></i></a>
-    </div>
-    <div>
-      <img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">Extended Personalization with Journey Context</h3>
-    <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge private-beta">PRIVATE BETA</div>
-  </div>
-  <div class="release-note-body">
-    <p>You can now save selected event properties as a named Journey Context. You can reuse those values at any later node in the same Journey, well beyond the standard 24-hour personalization window.</p>
-<p>With this enhancement, you can:</p>
-    <p><ul>
-    <li>Save up to 10 properties per Context, on up to 5 nodes in a Journey.</li>
-    <li>Personalize any later message with those saved values.</li>
-    <li>Map a Goal to a saved Context, so a Journey ends only for the exact order or transaction that started it.</li>
-    </ul></p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/journey-context" target="_blank">Journey Context</a>.</p>
-  </div>
-  <hr/>
-</div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="conversions-board-in-analytics">
   <div class="release-note-header">
     <div class="anchor-link-icon">

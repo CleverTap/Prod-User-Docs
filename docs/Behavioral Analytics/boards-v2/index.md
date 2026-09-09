@@ -38,7 +38,7 @@ With Boards 2.0, you can do the following:
 
 Creating a board gives you a blank canvas to start organizing your analyses. You can create as many boards as you need, be it one per team, product area, or campaign.
 
-For example, suppose you are a product manager for an e-commerce app. You can create a board called _Checkout Performance_ to track add-to-cart rates (Trends), checkout drop-off steps (Funnels), and repeat purchase behavior (Cohorts), all in one view that your team can access any time.
+For example, suppose you are a product manager for an e-commerce app. You can create a board called _Checkout Performance_ to track add-to-cart rates (Trends), checkout drop-off steps (Funnels), and repeat purchase behavior (Cohorts), all in one view that your team can access anytime.
 
 To create a new board:
 

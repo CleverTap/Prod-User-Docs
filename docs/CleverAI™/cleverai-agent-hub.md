@@ -48,14 +48,6 @@ Generates on-brand, contextual content in seconds: Copy, Images, and Templates.
   <Card title="Image Creator" href="https://docs.clevertap.com/docs/image-creator">
 
   </Card>
-
-  <Card title="Email Template Creator" href="https://docs.clevertap.com/docs/email-template-creator">
-
-  </Card>
-
-  <Card title="WhatsApp Template Creator" href="https://docs.clevertap.com/docs/whatsapp-template-creator">
-
-  </Card>
 </Cards>
 
 # Intelligent Agents
@@ -110,10 +102,6 @@ Automates core platform workflows to reduce time-to-live: Segment creation, Jour
   </Card>
 
   <Card title="NPS Insights" href="https://docs.clevertap.com/docs/nps-insights">
-
-  </Card>
-
-  <Card title="CleverTap MCP" href="https://docs.clevertap.com/docs/clevertap-mcp">
 
   </Card>
 </Cards>

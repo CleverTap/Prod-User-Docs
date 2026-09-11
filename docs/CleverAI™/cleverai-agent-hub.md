@@ -20,7 +20,7 @@ This document is the directory for everything. Use it to find the right agent fo
 
 This section explains how to view and control agents from the _Agents_ page.
 
-Each agent, whether a Creator, Intelligent, or Workflow agent, has an enable/disable toggle in its detail panel. To view or change an agent's status, go to _Settings_ > _CleverAI_ > _Agents_, where all agents are listed. Select an agent from the list, and toggle its status on or off in the top-right corner of the detail panel.
+Each agent, whether a Creator, Intelligent, or Workflow agent, has an enable/disable toggle in its detail panel. To view or change an agent's status, go to _Settings_ > _CleverAI_ > _Agents_, where all agents are listed. Select an agent from the list, and toggle its status on or off in the top-right corner of the detail panel. The status toggle is OFF by default.
 
 <Callout icon="📘" theme="info">
   #### Permissions and Scope

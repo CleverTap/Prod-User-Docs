@@ -31,7 +31,7 @@ Each agent, whether a Creator, Intelligent, or Workflow agent, has an enable/dis
 The following image shows the status of the Image Creator Agent disabled:
 
 
-<Image src="https://files.readme.io/6c8b2625034250dc399eb9a928fafb5e900f5d17121d84b78da8986409c9fd3b-2026-09-07_12-35-38_1.gif" alt="CleverTap Agents settings page showing a list of Creator and Intelligent agents, with Image Creator selected and its configuration details displayed on the right." align="center" caption="Turning Off an Agent" border={true} />
+<Image src="https://files.readme.io/d7a23f29546703bfa3b387b88fdbeb8f24d87a3b00db12b4993c58cb90951132-Turning_Off_an_Agent.gif" alt="CleverTap Agents settings page showing a list of Creator and Intelligent agents, with Image Creator selected and its configuration details displayed on the right." align="center" caption="Turning Off an Agent" border={true} />
 
 
 Disabling an agent blocks it from starting any new activity, but does not stop work already in progress. For example, if you disable IntelliNode after publishing a journey that uses it, the journey's existing nodes continue running, and jobs already dispatched by other agents complete normally. Only new invocations, such as publishing a new journey or scheduling a new job, are blocked once the agent is off.

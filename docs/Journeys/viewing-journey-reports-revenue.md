@@ -9,13 +9,13 @@ metadata:
 ---
 # Overview
 
-Journey reports provide detailed insights into how your users move through journeys. You can analyze metrics such as entries, exits, goal conversions, and engagement trends, helping you understand the effectiveness of your journeys over time.
+Journey reports provide detailed insights into how your users move through journeys. You can analyze metrics such as entries, exits, goal conversions, and engagement trends to understand the effectiveness of your journeys over time.
 
-In the case of multiple journey versions, it also provides performance insights for each version of your journey. Whether you are analyzing a live journey or reviewing how an older version performed, the reports help you make data-driven decisions and track engagement trends over time. You can do the following:
+For multiple journey versions, it also provides performance insights for each version. Whether you are analyzing a live journey or reviewing how an older version performed, the reports help you make data-driven decisions and track engagement trends over time. You can do the following:
 
-* Track metrics for the current published version in real time.
-* Access historical data for previously published versions.
-* Compare engagement, conversions, and goal completions across versions.
+- Track metrics for the current published version in real time.
+- Access historical data for previously published versions.
+- Compare engagement, conversions, and goal completions across versions.
 
 # Export Journey Reports
 
@@ -24,21 +24,25 @@ You can export Journey reports as CSV files directly from the dashboard. You can
 To export journey reports, perform the following steps:
 
 1. Select the period and the required Journeys from the Journeys list page.
+
 2. Click the ![](https://files.readme.io/6ebe7ff9d9fd0298735dcf535f24dda429e4460884bfd033578853cee22270db-Email_Report_icon.png) icon. The _Email Report_ popup opens.
 
 
-   <Image src="https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png" alt="Email Journey Reports" align="center" border={true} />
+   <Image src="https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png" alt="Email Journey Reports" align="center" caption="Export Journey Reports" border={true} />
+
 
 3. Choose _All versions_ or _Selected versions_ of the selected journeys.
-   * Choose to include only specific versions of the selected journeys when:
-     * You only want to review performance for the most recent version.
-     * You need data for a particular published version that was live during a specific campaign or test.
-   * Choose to include _All versions_ of the selected journey when:
-     * You want to analyze how the journey evolved over time.
-     * You are comparing performance trends across multiple published versions.
-     * You need a comprehensive dataset for audit, reporting, or analytics.
-     * You are exporting reports for long-running journeys edited and republished multiple times.<br />In this case, only active versions within the selected date range are available for export in the report.
+   - Choose to include only specific versions of the selected journeys when:
+     - You only want to review performance for the most recent version.
+     - You need data for a particular published version that was live during a specific campaign or test.
+   - Choose to include _All versions_ of the selected journey when:
+     - You want to analyze how the journey evolved over time.
+     - You are comparing performance trends across multiple published versions.
+     - You need a comprehensive dataset for audit, reporting, or analytics.
+     - You are exporting reports for long-running journeys edited and republished multiple times.<br />In this case, only active versions within the selected date range are available for export in the report.
+
 4. Select the report type: _Summary_ or _Node wise_.
+
 5. Enter a report name.
 
 Once configured, the report is emailed to your registered email address.
@@ -51,18 +55,18 @@ Once configured, the report is emailed to your registered email address.
 
 # Schedule Journey Exports
 
-You can choose to get daily or weekly reports for any Journeys with the _running_ status. You can choose the period and frequency from the reports section in Settings.  Go to _Settings_ > _Setup_ > _Reports_.
+You can choose to get daily or weekly reports for any Journeys with the _Running_ status. You can choose the period and frequency in the _Reports_ section of _Settings_.  Go to _Settings_ > _Setup_ > _Reports_.
 
 
-<Image src="https://files.readme.io/463b609-Journey-reports.jpg" alt="1000" align="center" border={true} />
+<Image src="https://files.readme.io/32a1b483a71cdb35251eed8ac551a67e75843078f3a931e951dfd887ad957309-Journey_Reports_page.png" alt="1000" align="center" caption="Journey Reports Page" border={true} />
 
 
 # Types of Journey Reports
 
 There are two types of Journey Reports available:
 
-* Journey Summary Report
-* Journey Nodewise Report
+- Journey Summary Report
+- Journey Nodewise Report
 
 ## Journey Summary Report
 
@@ -97,29 +101,41 @@ This section contains journey-level metadata and configuration details. It helps
 
 This section includes user-level metrics such as entries, completions, goal conversions, and control group stats, which reflect how users engaged with a specific journey version.
 
-| Report Column                                 | Description                                   |
-| :-------------------------------------------- | :-------------------------------------------- |
-| **Qualified**                                 | Total users who qualified for the journey.    |
-| **Entered**                                   | Total users who entered the journey.          |
-| **Goal Met**                                  | Total users who met any goal.                 |
-| **Goal 1 Name**                               | Name of the first goal.                       |
-| **Goal 1 Conversions**                        | Users converted for goal 1.                   |
-| **Goal 1 Control Group Conversions**          | Control group users who converted for goal 1. |
-| **Goal 2 Name**                               | Name of the second goal.                      |
-| **Goal 2 Conversions**                        | Users converted for goal 2.                   |
-| **Goal 2 Control Group Conversions**          | Control group users who converted for goal 2. |
-| **Goal 3 Name**                               | Name of the third goal.                       |
-| **Goal 3 Conversions**                        | Users converted for goal 3.                   |
-| **Goal 3 Control Group Conversions**          | Control group users who converted for goal 3. |
-| **Journey Timeout**                           | Users who timed out of the journey.           |
-| **Force Exits**                               | Users exited using the Force Exit node.       |
-| **Version Exit**                              | Users who exited the version from this node.  |
-| **Completed**                                 | Users who completed the journey.              |
-| **Control Group (Total)**                     | Total users in all control groups.            |
-| **System Control Group Conversions**          | Conversions in the system control group.      |
-| **Journey version Control Group Conversions** | Conversions in journey-level control group.   |
-| **Custom Control Group Conversions**          | Conversions in a custom control group.        |
-| **Custom Control Group Name**                 | Name of the custom control group.             |
+| Report Column                                 | Description                                            |
+| :-------------------------------------------- | :----------------------------------------------------- |
+| **Qualified**                                 | Total users who qualified for the journey.             |
+| **Entered**                                   | Total users who entered the journey.                   |
+| **Goal Met**                                  | Total users who met any goal.                          |
+| **Goal 1 Name**                               | Name of the first goal.                                |
+| **Goal 1 Conversions**                        | Users converted for goal 1.                            |
+| **Goal 1 Revenue**                            | Total revenue from Target Group users who met Goal 1.  |
+| **Goal 1 Control Group Conversions**          | Control group users who converted for goal 1.          |
+| **Goal 1 Control Group Revenue**              | Total revenue from Control Group users who met Goal 1. |
+| **Goal 2 Name**                               | Name of the second goal.                               |
+| **Goal 2 Conversions**                        | Users converted for goal 2.                            |
+| **Goal 2 Revenue**                            | Total revenue from Target Group users who met Goal 2.  |
+| **Goal 2 Control Group Conversions**          | Control group users who converted for goal 2.          |
+| **Goal 2 Control Group Revenue**              | Total revenue from Control Group users who met Goal 2. |
+| **Goal 3 Name**                               | Name of the third goal.                                |
+| **Goal 3 Conversions**                        | Users converted for goal 3.                            |
+| Goal 3 Revenue                                | Total revenue from Target Group users who met Goal 3.  |
+| **Goal 3 Control Group Conversions**          | Control group users who converted for goal 3.          |
+| **Goal 3 Control Group Revenue**              | Total revenue from Control Group users who met Goal 3. |
+| **Journey Timeout**                           | Users who timed out of the journey.                    |
+| **Force Exits**                               | Users exited using the Force Exit node.                |
+| **Version Exit**                              | Users who exited the version from this node.           |
+| **Completed**                                 | Users who completed the journey.                       |
+| **Control Group (Total)**                     | Total users in all control groups.                     |
+| **System Control Group Conversions**          | Conversions in the system control group.               |
+| **Journey version Control Group Conversions** | Conversions in journey-level control group.            |
+| **Custom Control Group Conversions**          | Conversions in a custom control group.                 |
+| **Custom Control Group Name**                 | Name of the custom control group.                      |
+
+<Callout icon="📘" theme="info">
+  #### Revenue Columns
+
+  Revenue columns are included only when a goal has a revenue property configured during goal setup. If a goal has no revenue property configured, its Revenue and Control Group Revenue columns show `0`. Goals using Past Behavior Segment (PBS) criteria always show `0` in revenue columns, since revenue tracking is not supported for PBS goals.
+</Callout>
 
 ## Journey Nodewise Report
 
@@ -130,7 +146,7 @@ If a journey includes multiple campaigns, variants, or connector paths, each var
 The data included in the Nodewise Report can be broadly categorized into: Journey Data, Node Data, Node User Data, and Campaign Data.
 
 <Callout icon="📘" theme="info">
-  ### Multiple Values for Report Column
+  #### Multiple Values for Report Column
 
   The columns may contain multiple values separated by delimiters `|`, depending on the node configuration (for example, multiple variants, paths, or goal definitions). Such columns have been marked with \* in the tables included in the sections to follow.
 </Callout>
@@ -148,7 +164,7 @@ This section contains journey-level metadata and configuration details. It helps
 | **Journey Labels**                 | Tags associated with the journey.                                                                       |
 | **Version Number**                 | Version number of the journey.                                                                          |
 | **Version Name**                   | Display name for the journey version.                                                                   |
-| **Version Entry Type**             | Entry criteria: Live or Past Behaviour.                                                                 |
+| **Version Entry Type**             | Entry criteria: Live or Past Behavior.                                                                  |
 | **Re-entry Allowed**               | Indicates whether users can re-enter the journey.                                                       |
 | **Version Status**                 | Status of the version. Possible values: Scheduled, Running, Paused, Stopped, Completed, and Restricted. |
 | **Version Created by / on**        | Creator and creation timestamp for the version.                                                         |
@@ -160,18 +176,18 @@ This section contains journey-level metadata and configuration details. It helps
 
 This section describes the node-specific attributes within a journey version.
 
-| Report Column                            | Description                                                                    |
-| ---------------------------------------- | ------------------------------------------------------------------------------ |
-| **Node Type**                            | Type of node, for example, Segment, Email, SMS, Push, and so on.               |
-| **Node ID**                              | Unique identifier of the node.                                                 |
-| **Previous Node\***                      | IDs of preceding nodes connected to this node.                                 |
-| **Delay before Node\***                  | Time delay before this node is executed.                                       |
-| **Connector from Previous\***            | Connector logic used to enter the node. Possibe values: Yes, No, and  Timeout. |
-| **Qualifying Window**                    | Time window to meet entry conditions at the segment node.                      |
-| **Campaign / Segment / Controller Name** | Name of the campaign, segment, or controller associated with the node.         |
-| **Campaign / Segment / Controller ID**   | Unique ID for the associated campaign or segment.                              |
-| **Channel / Segment / Controller Type**  | Type of messaging or segmentation logic, for example, Push, Email, and so on.  |
-| **Campaign URL**                         | Link to the campaign in the dashboard.                                         |
+| Report Column                            | Description                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------- |
+| **Node Type**                            | Type of node, for example, Segment, Email, SMS, Push, and so on.                |
+| **Node ID**                              | Unique identifier of the node.                                                  |
+| **Previous Node\***                      | IDs of preceding nodes connected to this node.                                  |
+| **Delay before Node\***                  | Time delay before this node is executed.                                        |
+| **Connector from Previous\***            | Connector logic used to enter the node. Possible values: Yes, No, and  Timeout. |
+| **Qualifying Window**                    | Time window to meet entry conditions at the segment node.                       |
+| **Campaign / Segment / Controller Name** | Name of the campaign, segment, or controller associated with the node.          |
+| **Campaign / Segment / Controller ID**   | Unique ID for the associated campaign or segment.                               |
+| **Channel / Segment / Controller Type**  | Type of messaging or segmentation logic, for example, Push, Email, and so on.   |
+| **Campaign URL**                         | Link to the campaign in the dashboard.                                          |
 
 ### Node User Data
 

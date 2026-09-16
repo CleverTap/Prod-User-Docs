@@ -1,5 +1,5 @@
 ---
-title: Copy of CleverTap Overview for Users
+title: Documentation Access for AI Agents
 deprecated: false
 hidden: true
 metadata:
@@ -7,44 +7,350 @@ metadata:
 ---
 # Overview
 
-CleverTap is a customer engagement and retention platform that provides the functionality to integrate app analytics and marketing. The platform helps customers increase user engagement in three ways: 
+Give AI agents and coding assistants access to CleverTap documentation through machine-readable documentation formats.
 
-* Tracks actions users are taking and analyze how people use the product.
-* [Segment](doc:segmentation) users based on their actions and run targeted [campaigns](doc:intro-to-campaigns) to these segments. 
-* [Analyze](doc:intro-to-reports) each campaign to understand their effect on user engagement and business metrics.
+CleverTap documentation supports AI-friendly access through:
 
-# Platform Features
+* `llms.txt` — an index of documentation pages.
+* Markdown pages — documentation content without the HTML page interface.
+* User Documentation — information about using CleverTap.
+* Developer Documentation — information about integrating CleverTap.
+* CleverTap MCP — access to your CleverTap account through supported AI clients.
 
-The CleverTap platform has five parts: 
+<Callout icon="❕" theme="warn">
+  ### MCP Information
 
-* CleverTap's dashboard provides the functionality to [segment](doc:segmentation) users based on their actions and profile properties, run [targeted campaigns](doc:intro-to-campaigns) to these segments, and [analyze](doc:intro-to-reports)  each campaign’s performance. 
-* [SDKs](https://developer.clevertap.com/docs/clevertap-sdks) track users’ actions within mobile apps and websites. CleverTap's SDKs also allow customers to personalize apps by giving them access to user profile data.
-* [APIs](https://developer.clevertap.com/docs/api-overview) push user profile or event data from any source to CleverTap. Our APIs also export user data from CleverTap for analysis in BI tools and enrich customer information in CRMs.
-* Integrations with communication platforms such as [SendGrid](doc:sendgrid), [Twilio](doc:twilio), attributions provider such as [Branch](doc:branch), [AppsFlyer](https://developer.clevertap.com/docs/appsflyer), and remarketing platforms such as [Facebook Audience Network](doc:facebook-audience-network-1).
-* [Webhooks](https://developer.clevertap.com/docs/webhooks) trigger workflows in backend systems as soon as qualifying events occur.
+  - CleverTap MCP and documentation access serve different purposes.
+  - **Documentation access** helps an AI agent find and understand CleverTap documentation.
+  - **CleverTap MCP** lets an AI client interact with a connected CleverTap account.
+</Callout>
 
-# Core Concepts
+## Quick start
 
-Users, events, segments, campaigns, and reports are central to CleverTap, so it is important to understand each role. 
+Choose the option that matches your task.
 
-* **Users:** After [integrating the CleverTap SDK](https://developer.clevertap.com/docs), a [user profile](doc:user-profiles) is created for each person who launches the app or visits your website. The CleverTap user profile has a set of default fields, such as device and location. You can also extend the default user profile data model by adding custom fields specific to their business.
-* **Events:** The CleverTap SDK tracks the actions users perform in your app or website, such as a user viewing a product, listening to a song, or making a purchase. [Events](doc:events) are associated with a user profile.
-* **Segments:** CleverTap allows users to create segments, which are groups of users whose actions or user profile properties match a set of criteria you have defined. Once a user has created a segment, they can target it with a campaign or create a report to analyze it. 
-* **Campaigns:** CleverTap [campaigns](doc:intro-to-campaigns) communicate with your users at scale. CleverTap offers 13 different messaging channels to reach your users on the optimal channel.
-* **Reports:** CleverTap provides the ability to build [reports](doc:intro-to-reports) to understand the effect of campaigns on your users. You can use these reports to analyze your user engagement and guide product decisions.
+| If you want to...                                        | Use                     |
+| -------------------------------------------------------- | ----------------------- |
+| Find relevant CleverTap documentation                    | `llms.txt`              |
+| Read a specific documentation page                       | `.md`                   |
+| Ask about CleverTap features                             | User Documentation      |
+| Ask about SDKs, APIs, or integrations                    | Developer Documentation |
+| Work with data or perform actions in a CleverTap account | CleverTap MCP           |
 
-## Example Use Case
+### Find documentation
 
-The following is an example of how a CleverTap customer in the retail industry is using our platform to increase sales:
+Use the User Documentation index for questions about CleverTap features:
 
-When a person launches the company’s app for the first time, we automatically create a CleverTap [user profile](doc:user-profiles) for the person with our SDK. As the person navigates through product pages in the app, we log these actions as [events](doc:events) associated with the user’s profile. 
+`https://docs.clevertap.com/llms.txt`
 
-The user’s interaction with the company extends beyond the app. To complete a purchase, the user contacts the company’s call center, and the company adds this purchase event to the user’s profile with our [server-side API](https://developer.clevertap.com/docs/api-overview). 
+Use the Developer Documentation index for questions about SDKs, APIs, and integrations:
 
-Now, the marketer at the company wants to reward its most loyal users and incentivize them to buy more. Through CleverTap’s dashboard, the marketer can [create a campaign](doc:intro-to-campaigns) to show an [In-App](doc:in-app) to users who recently made a purchase above a certain price. The next time the user launches the app, they will see a personalized message thanking them for buying that specific product and a discount code for their next purchase. 
+`https://developer.clevertap.com/llms.txt`
 
-To close this loop, the marketer can create a [report](doc:intro-to-reports) in the CleverTap dashboard to measure the campaign's impact in terms of both user engagement and product sales. 
+### Read a specific page
 
-# Getting Started
+Append `.md` to a documentation page URL.
 
-The best place to get started with CleverTap is the [Quick Start Guide](doc:quickstart-guide) which shows how to create a segment, build a campaign, and run a report in ten minutes.
+For example:
+
+`https://docs.clevertap.com/docs/getting-started.md`
+
+or:
+
+`https://developer.clevertap.com/docs/android-quickstart-guide.md`
+
+Markdown provides the page content without the surrounding website interface.
+
+## How AI agents should use CleverTap documentation
+
+Use a two-step workflow:
+
+1. **Find the relevant documentation.** Start with the appropriate `llms.txt` index.
+2. **Read the relevant page.** Retrieve the Markdown version of the page you need.
+
+This keeps the agent focused on relevant documentation instead of loading the entire documentation site.
+
+### Find the right documentation source
+
+Use **User Documentation** when the question is about using CleverTap.
+
+Examples include:
+
+* Creating and managing segments
+* Creating campaigns
+* Building Journeys
+* Configuring messaging channels
+* Analyzing campaign performance
+* Understanding user profiles and events
+* Using CleverTap features and workflows
+
+Use **Developer Documentation** when the question is about implementing CleverTap.
+
+Examples include:
+
+* Integrating an SDK
+* Tracking events
+* Managing user profiles
+* Using APIs
+* Configuring webhooks
+* Troubleshooting an integration
+* Working with a specific platform or SDK
+
+## User Documentation
+
+The User Documentation explains how to use the CleverTap platform.
+
+Core topics include:
+
+* Users and user profiles
+* Events and event properties
+* Segments
+* Campaigns
+* Messaging channels
+* Journeys
+* Analytics and reports
+* Data management
+* Integrations
+* Personalization
+
+Start with:
+
+`https://docs.clevertap.com/llms.txt`
+
+For example, an AI agent can use the documentation to answer:
+
+* How do I create a segment of users who purchased in the last 30 days?
+* What is the difference between Past Behavior and Live User Behavior segments?
+* How do I create a Journey for users who viewed a product but did not purchase it?
+* How do Journey versions work?
+* How do I measure campaign conversions?
+* Which messaging channel should I use for a particular use case?
+
+## Developer Documentation
+
+The Developer Documentation explains how to integrate CleverTap into applications and backend systems.
+
+Core topics include:
+
+* SDKs
+* Events
+* User profiles
+* APIs
+* Authentication
+* Webhooks
+* SDK configuration
+* Platform-specific integrations
+* Developer implementation and troubleshooting
+
+Start with:
+
+`https://developer.clevertap.com/llms.txt`
+
+For example, an AI agent can use the documentation to answer:
+
+* How do I integrate the CleverTap Android SDK?
+* How do I track a custom event?
+* How do I update a user profile?
+* How do I authenticate a CleverTap API request?
+* How do I troubleshoot missing events?
+* How do I configure CleverTap for a React Native application?
+
+## Use Markdown pages
+
+Use a Markdown page when you already know which documentation page contains the information you need.
+
+To get a Markdown version, append `.md` to the page URL.
+
+For example:
+
+`https://docs.clevertap.com/docs/getting-started.md`
+
+This is useful when you want to:
+
+* Give an AI agent a specific documentation page.
+* Reduce unnecessary context.
+* Use documentation in a coding assistant.
+* Read documentation without the website navigation and other interface elements.
+
+## Use documentation indexes
+
+The `llms.txt` files provide an index of CleverTap documentation that AI agents can use to discover relevant pages.
+
+### User Documentation
+
+`https://docs.clevertap.com/llms.txt`
+
+Use this index for product and platform documentation.
+
+### Developer Documentation
+
+`https://developer.clevertap.com/llms.txt`
+
+Use this index for SDK, API, and implementation documentation.
+
+When the index contains a page that matches the question, retrieve that page directly.
+
+When the question is broader, search the index for the relevant topic and then retrieve the matching pages.
+
+## Give documentation to an AI coding assistant
+
+You can add the appropriate `llms.txt` URL to your AI tool's project instructions or rules.
+
+For product-related work, use:
+
+`https://docs.clevertap.com/llms.txt`
+
+For development-related work, use:
+
+`https://developer.clevertap.com/llms.txt`
+
+Tell the AI tool to use CleverTap documentation as the source of truth for CleverTap-specific questions.
+
+For example:
+
+Use the current CleverTap Developer Documentation as the source of truth. Find the relevant documentation before generating code. Do not assume SDK or API behavior that is not documented.
+
+## Example prompts
+
+### Product and marketing teams
+
+Use the User Documentation for questions about campaigns, segments, Journeys, messaging, and analytics.
+
+Examples:
+
+* "Use the CleverTap documentation to explain how Past Behavior Segments work."
+* "Create a Journey for users who viewed a product but did not purchase it. Use the current Journey documentation."
+* "What is the difference between Push Notifications, In-App, and App Inbox?"
+* "How are campaign conversions measured?"
+* "What conditions can I use to qualify users for a campaign?"
+
+### Developers
+
+Use the Developer Documentation for implementation questions.
+
+Examples:
+
+* "Use the current CleverTap Android documentation to show me how to integrate the SDK."
+* "Show me how to track a custom event and pass event properties."
+* "How do I update a user profile using the CleverTap API?"
+* "Use the current API documentation to generate a request for this use case."
+* "My events are not appearing in CleverTap. Use the Developer Documentation to help me troubleshoot the integration."
+
+## CleverTap MCP
+
+CleverTap MCP provides a live connection between supported AI clients and a CleverTap account.
+
+It is different from `llms.txt` and Markdown documentation access.
+
+Use **documentation access** when the AI agent needs to understand how CleverTap works.
+
+Use **CleverTap MCP** when the AI client needs to access or interact with a CleverTap account.
+
+CleverTap MCP currently supports AI clients including Claude, ChatGPT, and Cursor. Access requires CleverTap SSO, and RBAC permissions apply in the same way as they do in the CleverTap dashboard.
+
+### What CleverTap MCP can do
+
+CleverTap MCP supports account-specific workflows through natural language. Depending on the tools available to your account, you can use it to perform tasks such as:
+
+* Explore CleverTap projects.
+* Query CleverTap data.
+* Create segments.
+* Retrieve analytics.
+* Check campaign performance.
+* Perform other supported CleverTap operations.
+
+CleverTap MCP is currently available as a public beta for selected customers. Contact your Customer Success Manager or raise a support ticket to enable it.
+
+### Use documentation and MCP together
+
+Documentation access and CleverTap MCP work together.
+
+For example:
+
+1. Use the CleverTap documentation to understand how a feature works.
+2. Use CleverTap MCP to access the relevant account data or perform a supported action.
+3. Use the documentation again when you need implementation or feature details.
+
+This gives the AI agent both **CleverTap product knowledge** and **account context**.
+
+## Recommended workflow
+
+Follow this workflow when using an AI agent with CleverTap documentation.
+
+### 1. Identify the task
+
+Determine whether you need product or developer documentation.
+
+* Product or marketing task → User Documentation
+* SDK, API, or integration task → Developer Documentation
+* Account-specific task → CleverTap MCP
+
+### 2. Find the relevant documentation
+
+Start with the appropriate `llms.txt` index.
+
+Do not load the entire documentation set unless you need broad coverage.
+
+### 3. Read the relevant pages
+
+Retrieve the Markdown version of the pages that match the task.
+
+### 4. Ask the AI agent to use the documentation
+
+Tell the agent to use the current CleverTap documentation as its source of truth.
+
+### 5. Verify account-specific information
+
+Documentation explains how CleverTap works. It does not describe the current configuration or data in your CleverTap account.
+
+For account-specific information, use CleverTap MCP or verify the information directly in the CleverTap dashboard.
+
+## Best practices
+
+### Use the current documentation
+
+CleverTap features, SDKs, and APIs change over time.
+
+Use the current documentation when generating code or making implementation decisions.
+
+### Specify the platform
+
+For SDK questions, tell the AI agent which platform you are using.
+
+For example:
+
+* Android
+* iOS
+* Web
+* React Native
+* Flutter
+* Unity
+* Cordova
+
+### Provide the relevant context
+
+Include information such as:
+
+* The CleverTap feature you are using
+* Your SDK or platform
+* The API or endpoint you are working with
+* The behavior you expect
+* The problem you are seeing
+
+This helps the AI agent identify the right documentation.
+
+### Do not treat AI output as the source of truth
+
+Ask the AI agent to use the current CleverTap documentation when answering questions.
+
+If the generated answer conflicts with the documentation, follow the current documentation.
+
+## Resources
+
+| Resource                      | URL                                            |
+| ----------------------------- | ---------------------------------------------- |
+| User Documentation            | `https://docs.clevertap.com`                   |
+| User Documentation index      | `https://docs.clevertap.com/llms.txt`          |
+| Developer Documentation       | `https://developer.clevertap.com`              |
+| Developer Documentation index | `https://developer.clevertap.com/llms.txt`     |
+| CleverTap MCP                 | See the CleverTap MCP Server Integration Guide |

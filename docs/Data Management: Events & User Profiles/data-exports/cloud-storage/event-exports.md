@@ -16,9 +16,11 @@ CleverTap supports event exports to the following destinations:
 - **Analytics**: mParticle, Mixpanel, Amplitude, and Segment
 - **Data Warehouses**: Snowflake and BigQuery
 
-> 📘 Note
->
-> This document covers event exports to [Amazon S3](doc:data-export-to-aws-s3), [Google Cloud Storage](doc:data-export-to-gcp), and [Microsoft Azure](doc:microsoft-azure) only. For exports to analytics partners or data warehouses, refer to their respective documentation linked above.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  This document covers event exports to [Amazon S3](doc:data-export-to-aws-s3), [Google Cloud Storage](doc:data-export-to-gcp), and [Microsoft Azure](doc:microsoft-azure) only. For exports to analytics partners or data warehouses, refer to their respective documentation linked above.
+</Callout>
 
 With Event Exports, you can:
 
@@ -80,13 +82,15 @@ To create an export, perform the following steps:
    4. [Edit Properties & Order](doc:event-exports#edit-properties--order): Select, rename, and reorder event properties for each selected event individually.
    5. [Define Schedule](doc:event-exports#define-schedule-for-export): Set up one-time or recurring export schedules.
 
-> 📘 Legacy Exports Migration
->
-> - Legacy exports continue to run without interruption. You can view and edit legacy exports using the **Switch to legacy** option.
-> - You cannot migrate legacy exports to the new flow directly. You must do the following:
->   1. Stop the legacy export and create a new export using the enhanced flow with the same or improved settings. For more information about what has changed, refer to this [FAQ](doc:event-export#what-has-changed-between-the-legacy-export-and-the-new-export).
->   2. Verify the new export runs successfully and produces the expected output.
->   3. Update your downstream pipelines to process files from the new export location.
+<Callout icon="📘" theme="info">
+  ### Legacy Exports Migration
+
+  - Legacy exports continue to run without interruption. You can view and edit legacy exports using the **Switch to legacy** option.
+  - You cannot migrate legacy exports to the new flow directly. You must do the following:
+    1. Stop the legacy export and create a new export using the enhanced flow with the same or improved settings. For more information about what has changed, refer to this [FAQ](doc:event-export#what-has-changed-between-the-legacy-export-and-the-new-export).
+    2. Verify the new export runs successfully and produces the expected output.
+    3. Update your downstream pipelines to process files from the new export location.
+</Callout>
 
 ## Configure Storage & File Details
 
@@ -112,9 +116,11 @@ In this section, you will define the destination, folder organization, file form
 
      _Example_: `{{date}}/{{event-name}}/run-{{export-id}}` _Preview_: `/{bucket-name}/2025-10-03/App-Launched/run-1761650178/file.csv.gz`
 
-     > 📘 Note
-     >
-     > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore(\_).
+     <Callout icon="📘" theme="info">
+       ### Note
+
+       Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore(\_).
+     </Callout>
 
 
      <Image src="https://files.readme.io/394b2e66be4967c9006fc9366df33762d79ba400a38dc4a5c4c3749c8fe6141a-event_export_s3.png" align="center" caption="Set Up Sub-Folder Structure" border={true} />
@@ -130,10 +136,12 @@ In this section, you will define the destination, folder organization, file form
 
    - **XML**: A structured format suited for systems that need nested data.
 
-   > 📘 Note
-   >
-   > - Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
-   > - CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     - Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
+     - CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+   </Callout>
 
 4. **Define File Name Convention** Define how each file is named inside the innermost folder created by _Sub-folder structure_. If you select _Default_, CleverTap applies a standard naming structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
 
@@ -154,9 +162,11 @@ In this section, you will define the destination, folder organization, file form
 
      - `{{Event-name}}`: Name of the exported event.
 
-   > 📘 Note
-   >
-   > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscores (\_).
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscores (\_).
+   </Callout>
 
 
 <Image src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" alt="Select File Format and Define File Name" align="center" caption="Select File Format and Define File Name" border={true} />
@@ -182,9 +192,11 @@ Choose which user identifiers to include in each exported event record and how t
      <Image src="https://files.readme.io/1a28ae6ee64add0430f7cbc2338843b9ff4dd7633e0bf6330e72fc70f9c97f40-Select_Identity.gif" alt="Select Identity" align="center" caption="Select Identity" border={true} />
 
 
-   > 📘 Note
-   >
-   > The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   </Callout>
 
 2. **Define Export Preference**: Choose how identifier values are written and define priority, as follows:
 
@@ -196,7 +208,7 @@ Choose which user identifiers to include in each exported event record and how t
 
      - **Export all values**: Exports all selected identifiers in the **identity** column, listed in order of priority. Missing values are omitted. Select this option when reconciliation, deduplication, or identity joins are required downstream.
 
-3. **(Optional) Select Account-Defined User Identity**: Turn ON the toggle to add **all\_identities**, which exports all [account-defined identifiers](https://developer.clevertap.com/docs/developer-go-live-checklist) such as **Identity**, **Email**, **Phone**, for each event record. If a user does not have a value for one or more of these identifiers, those values are omitted from the list. _Example:_ If a profile has identities user\_123, user\_456, and email [user@example.com](mailto:user@example.com), the output will be: `[user_123, user_456, [user@example.com](user@example.com)]`.
+3. **(Optional) Select Account-Defined User Identity**: Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](https://developer.clevertap.com/docs/developer-go-live-checklist) such as **Identity**, **Email**, **Phone**, for each event record. If a user does not have a value for one or more of these identifiers, those values are omitted from the list. _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be: `[user_123, user_456, [user@example.com](user@example.com)]`.
 
 4. **Select CleverTap ID**: Select this option to include **clevertapId** in your export. It is a unique, system-generated identifier assigned to each user profile. For more information, refer to [User Profile Data Model](https://docs.clevertap.com/docs/user-profiles#user-profile-data-model).&#x20;
 
@@ -225,9 +237,11 @@ Configure which data fields and events to include in the export. Use the live _P
    <Image src="https://files.readme.io/ae45778d5a6e2bbb05aaf87a881aadade28c62d7d94b2a8cccd78f55eb0994aa-2026-04-20_15-42-26_1.gif" align="center" caption="Select, Rename and Reorder User Properties" border={true} />
 
 
-   > 📘 Note
-   >
-   > User properties exported here reflect the profile state at the time of export, not at the time the event occurred.
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     User properties exported here reflect the profile state at the time of export, not at the time the event occurred.
+   </Callout>
 
 3. **Select Device Attributes** Choose which device-level attributes captured at event time to include.
 
@@ -238,9 +252,11 @@ Configure which data fields and events to include in the export. Use the live _P
       <Image src="https://files.readme.io/f7873892572b155ff85de6e555f7767510c68182b5e251256e06ade017342a20-device_info.png" align="center" caption="Include Device Attributes" border={true} />
 
 
-      > 📘 Note
-      >
-      > If a device attribute is unavailable for a given event record, the corresponding column appears blank in the exported file.
+      <Callout icon="📘" theme="info">
+        ### Note
+
+        If a device attribute is unavailable for a given event record, the corresponding column appears blank in the exported file.
+      </Callout>
 
 4. **Add Communication Preferences** Include the user's opt-in/opt-out status across messaging channels alongside each event record.
 
@@ -262,9 +278,11 @@ Configure which data fields and events to include in the export. Use the live _P
 
 7. **Rename Events (optional)**: After selecting events, each event in the list displays an editable _Rename_ field on the right. You can enter a custom display name for any event to use in the export output instead of the original event name. For example, rename `Notification Sent` to `Push Notification Sent` or any name that suits your data pipeline conventions.
 
-   > 📘 Note
-   >
-   > Renaming Events only affects the event name in the export; it does not change the original property name in CleverTap. Also, the file name will have the original filename instead of the renamed one.
+   <Callout icon="📘" theme="info">
+     ### Note
+
+     Renaming Events only affects the event name in the export; it does not change the original property name in CleverTap. Also, the file name will have the original filename instead of the renamed one.
+   </Callout>
 
 
 <Image src="https://files.readme.io/64d66dc74417bd694ea611341d2d03904f217cd391d7f069b7d7b07d5bedbc3c-2026-04-20_16-05-24_1.gif" align="center" caption="Select Events to Export" border={true} />
@@ -290,15 +308,17 @@ Configure event properties for each selected event  -  choose which properties t
 
    - To prioritize push notification properties, drag `Campaign type`, `Campaign id`, and `Campaign name` to the top of the list and `Journey id` and `Journey name` to the bottom.
 
-   > 📘 Points to Consider
-   >
-   > - Renaming only affects the column header in the export; it does not change the original property name in CleverTap.
-   > - Use the search bar above the property list to find specific fields.
-   > - Drag rows to rearrange columns, or use the **Reorder** button to set the export sequence.
-   > - Use the **Copy** icon to apply a property rename to all other selected events that share the same property name.
-   > - If a property is missing for a given event record, the column still appears but remains blank. The key is removed from the JSON file.
-   > - Reordering does not impact data collection or internal storage  -  it only affects the file structure.
-   > - If two or more properties share the same name, their values are merged in data order, the first non-null value is exported. If all values are null, `null` is exported. If you rename multiple properties to the same name, the duplicate is skipped and the next property in the order is exported in its place.
+   <Callout icon="📘" theme="info">
+     ### Points to Consider
+
+     - Renaming only affects the column header in the export; it does not change the original property name in CleverTap.
+     - Use the search bar above the property list to find specific fields.
+     - Drag rows to rearrange columns, or use the **Reorder** button to set the export sequence.
+     - Use the **Copy** icon to apply a property rename to all other selected events that share the same property name.
+     - If a property is missing for a given event record, the column still appears but remains blank. The key is removed from the JSON file.
+     - Reordering does not impact data collection or internal storage  -  it only affects the file structure.
+     - If two or more properties share the same name, their values are merged in data order, the first non-null value is exported. If all values are null, `null` is exported. If you rename multiple properties to the same name, the duplicate is skipped and the next property in the order is exported in its place.
+   </Callout>
 
 3. **Manage Schema Updates** At the bottom of the right panel for each event, choose how new event properties are handled in future export runs:
 
@@ -310,9 +330,11 @@ Configure event properties for each selected event  -  choose which properties t
      <Image src="https://files.readme.io/303bdc2c551e500dcd4f7050dc9c783e334f777bb9cddde16effabdd201b8759-schema_.png" align="center" caption="Schema Updates" border={true} />
 
 
-   > 📘 Tip
-   >
-   > Choose _Add new properties at the end_ if you want to capture all event data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure and cannot tolerate new columns being appended.
+   <Callout icon="📘" theme="info">
+     ### Tip
+
+     Choose _Add new properties at the end_ if you want to capture all event data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure and cannot tolerate new columns being appended.
+   </Callout>
 
 4. Repeat steps 1 through 3 for each event in the **Selected Events** panel. Click **Preview** to review the complete data structure and click **Next** to configure the export schedule.
 
@@ -357,9 +379,11 @@ Define how often event data should be exported to your destination.
 
      For example, if you set up a recurring export starting today and select a historical range of the last 90 days, the historical export immediately backfills the last 90 days of event data while the recurring export begins capturing new events going forward. This ensures there are no gaps in your data when you first set up the pipeline.
 
-     > 📘 Note
-     >
-     > The historical date range is limited to the last 365 days. For data beyond 365 days, contact your CSM or TAM.
+     <Callout icon="📘" theme="info">
+       ### Note
+
+       The historical date range is limited to the last 365 days. For data beyond 365 days, contact your CSM or TAM.
+     </Callout>
 
 4. Click **Create Export** to complete the creation of your export.
 
@@ -451,8 +475,8 @@ The following sample shows the exported file structure with all fields included:
     "extra": null
   },
   {
-    "column_name": "timestamp",
-    "column_type": "MAP(VARCHAR, VARCHAR)",
+    "column_name": "eventTime",
+    "column_type": "VARCHAR",
     "null": "YES",
     "key": null,
     "default": null,
@@ -642,9 +666,9 @@ The following sample shows the exported file structure with all fields included:
 
 The following is a sample of the exported CSV file with all fields included:
 
-| eventName           | eventTime  | identity | all\_identities | clevertapId | Email | Phone | Name | Gender  | DOB | platform | token | make | model | appVersion | sdkVersion | osVersion | browser   | dpi | dimensions | subscriptionGroups | MSG-webpush | MSG-push | MSG-email | MSG-sms | MSG-whatsapp | wzrk\_id | Campaign type | Campaign id | wzrk\_pivot   | User Agent | Client Name | Campaign name | Campaign labels | Journey id | Journey labels | Journey Version ID | Journey name |
-| ------------------- | ---------- | -------- | --------------- | ----------- | ----- | ----- | ---- | ------- | --- | -------- | ----- | ---- | ----- | ---------- | ---------- | --------- | --------- | --- | ---------- | ------------------ | ----------- | -------- | --------- | ------- | ------------ | -------- | ------------- | ----------- | ------------- | ---------- | ----------- | ------------- | --------------- | ---------- | -------------- | ------------------ | ------------ |
-| Notification Viewed | 1780914785 | \[...]   | \[...]          | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | `{...}`    | `{...}`            | false       | true     | true      | false   | false        | ...      | Email         | ...         | wzrk\_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
+| eventName           | eventTime  | identity | all_identities | clevertapId | Email | Phone | Name | Gender  | DOB | platform | token | make | model | appVersion | sdkVersion | osVersion | browser   | dpi | dimensions | subscriptionGroups | MSG-webpush | MSG-push | MSG-email | MSG-sms | MSG-whatsapp | wzrk_id | Campaign type | Campaign id | wzrk_pivot   | User Agent | Client Name | Campaign name | Campaign labels | Journey id | Journey labels | Journey Version ID | Journey name |
+| ------------------- | ---------- | -------- | -------------- | ----------- | ----- | ----- | ---- | ------- | --- | -------- | ----- | ---- | ----- | ---------- | ---------- | --------- | --------- | --- | ---------- | ------------------ | ----------- | -------- | --------- | ------- | ------------ | ------- | ------------- | ----------- | ------------ | ---------- | ----------- | ------------- | --------------- | ---------- | -------------- | ------------------ | ------------ |
+| Notification Viewed | 1780914785 | \[...]   | \[...]         | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | `{...}`    | `{...}`            | false       | true     | true      | false   | false        | ...     | Email         | ...         | wzrk_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
 
 # Manage Export
 
@@ -788,7 +812,7 @@ If your export fails, follow these steps to troubleshoot the issue:
 The `Campaign type` field value has changed between the legacy export and the new export. The old format returned human-readable strings; the new format returns internal enum values.
 
 | Channel            | Old value             | New value           |
-| ------------------ | ---------------------- | -------------------- |
+| ------------------ | --------------------- | ------------------- |
 | Android push       | Mobile Push - Android | `Push`              |
 | iOS push           | Mobile Push - iOS     | `Push`              |
 | Windows push       | Mobile Push - Windows | `Push`              |
@@ -842,15 +866,15 @@ The old format prefixed event property columns with their type, for example `eve
 **Summary**
 
 | Aspect                     | Old export                                                 | New export                                 |
-| -------------------------- | ------------------------------------------------------------ | --------------------------------------------- |
-| Schema                     | Fixed, always-present fields                                | Configurable, only selected fields present |
-| Timestamp                  | `ts` (Long, root level)                                     | `timestamp` (Map, root level)              |
-| Identity fields            | Inside `profile{}` object                                   | Separate `identity{}` map                  |
-| Profile attributes         | Inside `profile{}` object                                   | Separate `profile{}` map                   |
-| Device info                | Fixed typed fields                                          | Flexible map, same keys                    |
-| Communication preferences  | Not present                                                  | New `commPrefs{}` map                      |
-| Campaign type field        | Human-readable string (for example, Mobile Push - Android)  | Enum name (for example, Push)              |
-| CSV event property headers | Prefixed (for example, `eventproperties.product_id`)        | Flat (for example, `product_id`)           |
+| -------------------------- | ---------------------------------------------------------- | ------------------------------------------ |
+| Schema                     | Fixed, always-present fields                               | Configurable, only selected fields present |
+| Timestamp                  | `ts` (Long, root level)                                    | `timestamp` (Map, root level)              |
+| Identity fields            | Inside `profile{}` object                                  | Separate `identity{}` map                  |
+| Profile attributes         | Inside `profile{}` object                                  | Separate `profile{}` map                   |
+| Device info                | Fixed typed fields                                         | Flexible map, same keys                    |
+| Communication preferences  | Not present                                                | New `commPrefs{}` map                      |
+| Campaign type field        | Human-readable string (for example, Mobile Push - Android) | Enum name (for example, Push)              |
+| CSV event property headers | Prefixed (for example, `eventproperties.product_id`)       | Flat (for example, `product_id`)           |
 
 ### Can I edit an event export after creation?
 

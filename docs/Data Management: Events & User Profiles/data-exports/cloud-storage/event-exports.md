@@ -245,7 +245,7 @@ Configure which data fields and events to include in the export. Use the live _P
 
 3. **Select Device Attributes** Choose which device-level attributes captured at event time to include.
 
-   1. Click the **Select device information** dropdown and select from the following available attributes: `platform`, `token`, `make`, `model`, `appVersion`, `sdkVersion`, `osVersion`, `browser`, `dpi`, and `dimensions`.
+   1. Click the **Select device information** dropdown and select from these available attributes: `platform`, `token`, `make`, `model`, `appVersion`, `sdkVersion`, `osVersion`, `browser`, `dpi`, `dimensions`, `width`, `height`, and `unit`. `width`, `height`, and `unit` can be selected as standalone columns in addition to, or instead of, the bundled `dimensions` object. Select `dimensions` if you want the three values nested together as a single object in the export; select `width`, `height`, or `unit` individually if you want them as separate top-level columns.
    2. Click **Apply** to confirm your selection.
 
 

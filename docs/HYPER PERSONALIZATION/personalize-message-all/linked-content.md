@@ -419,7 +419,7 @@ CleverTap supports personalization in Linked Content, allowing you to dynamicall
 
 With this feature, you can send highly targeted messages across multiple languages using profile attributes and event properties, improving user engagement and relevance.
 
-# Supported and Unsupported Variables
+## Supported and Unsupported Variables
 
 ### Supported Variables
 

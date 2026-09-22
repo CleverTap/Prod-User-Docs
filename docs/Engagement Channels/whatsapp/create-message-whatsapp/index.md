@@ -225,6 +225,36 @@ Fill in the details and click **Done**. For information about using WhatsApp edi
 <Image src="https://files.readme.io/98aa909-Whatsapp_editor_create_message.png" alt="Personalize the placeholders based on user/event properties and craft the template" align="center" caption="Personalizing Message" border={true} />
 
 
+### Maximum Price Multiplier
+
+<Callout icon="📘" theme="info">
+  ### Private Beta
+
+  The Maximum Price Multiplier is currently in Private Beta. Contact your Customer Success Manager for access.
+</Callout>
+
+The _Maximum Price Multiplier_ card displays in the _What_ section after you select a template. It lets you raise or lower the template's maximum price for this campaign only, without editing the template. This applies to Marketing category templates only. For more information about maximum pricing, refer to [WhatsApp Template Pricing](doc:whatsapp-template-pricing).
+
+
+<Image src="https://files.readme.io/57c7759115fd6b23448e26e6d558114e74d6e7f1b3dc4c03e8a99d977fd11a03-max_price_multiplier_in_campaign.png" align="center" caption="Maximum Price Multiplier" border={true} />
+
+
+The _Max Price_ field displays the maximum price set on the selected template in USD per 1,000 messages. This field is read-only. To change the template's maximum price, refer to [WhatsApp Template Pricing](doc:whatsapp-template-pricing).
+
+To set the maximum price multiplier for this campaign, follow these steps:
+
+1. Select the **Max Price Multiplier** checkbox.
+
+2. Enter a value between 0.1 and 3.0 in the multiplier field. The value you enter is multiplied by the maximum price set in the template to get this campaign's maximum price. For example, entering 2 on a template with a maximum price of 0.015 USD sets this campaign's maximum price at 0.030 USD.
+
+3. (Optional) Click **View Price Trend** to view estimated delivery rates at different maximum prices for your target countries and decide the multiplier you need. Select your target countries to analyze.
+
+<Callout icon="🚧" theme="warn">
+  ### Estimates Only
+
+  Recommended multipliers and delivery rates in Price Trend are estimates based on historic data for the time period you select. They do not represent actual or fixed delivery costs. Rates are determined solely by Meta, not by CleverTap.
+</Callout>
+
 ### Custom Key-Value Pair
 
 Marketers utilizing Generic integration can leverage custom Key-Value pairs to transmit additional data within the message payload.
@@ -418,6 +448,3 @@ After previewing the appearance of your overall campaign, finalize your campaign
 
 
 <Image src="https://files.readme.io/b521e92-campaign_Publish.png" alt="After setting up the overall campaign, click the Publish Campaign button" align="center" caption="Publish Campaign" border={true} />
-
-
-<br />

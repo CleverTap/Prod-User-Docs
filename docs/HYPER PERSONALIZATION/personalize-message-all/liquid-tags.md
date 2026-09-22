@@ -45,7 +45,14 @@ If the user's preferred language is English, the greeting will appear in English
 Hello!
 ```
 
-Liquid tags also support nested object personalization, allowing you to access structured profile and event data (for example, subscription.plan.name) for deeper personalization. For more information, refer to [Liquid Personalization with Nested Objects](liquid-tags#liquid-personalization-with-nested-objects).
+<Callout icon="📘" theme="info">
+  #### Key Points to Remember
+
+  - Liquid terms are adapted from [shopify's documentation](https://shopify.github.io/liquid/basics/introduction/) for use in CleverTap.  However, CleverTap supports only the terms listed in the document below.
+  - When referencing properties, use `Profile.` and `Event.` with capital “P” and “E”, followed by a period.
+  - Profile properties are available for all segments. Liquid tags for Event properties are available for live user segments, including Inaction campaigns with a delay greater than 24 hours. If the campaign uses Constant Event Property with a delay greater than 24 hours, `{{Event.*}}` tags fall back to their default values. For more information on using a constant event property, refer to [Constant Event Property](doc:constant-property).
+  - The @ Personalization is supported only outside the tags.
+</Callout>
 
 # Getting Started
 
@@ -53,7 +60,9 @@ You can personalize your messages for [Events](doc:events) and [User Profiles](d
 
 Let us create a Liquid tag in an email campaign. To create a tag, select the "New email with rich media" template when you create an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps). You can use Liquid Tags within this template.
 
-<Image align="center" alt={2878} border={true} caption="Select a Rich Media Template" title="Select a Rich Media Template" src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png" />
+
+<Image src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png" alt="2878" align="center" caption="Select a Rich Media Template" border={true} />
+
 
 The Liquid Tags work within the email editor. However, you can also combine the power of HTML with Liquid Tags.  You can paste your HTML code directly in the HTML editor by clicking the Source button and then personalize it with Liquid Tags. For more information, see [Liquid Tags with HTML](https://docs.clevertap.com/docs/liquid-tags#section-liquid-tags-with-htmll)
 
@@ -165,8 +174,7 @@ Hello!
 
 ### Switch case
 
-You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.  
-For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer_type".  You can change the displayed message based on the type of customers.
+You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.<br />For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer_type".  You can change the displayed message based on the type of customers.
 
 ```liquid Switch case Tag
 {% case Profile.customer_type %}
@@ -366,11 +374,13 @@ format: A string format for time (same as the standard date filter).
 
 timezone: An IANA timezone string (for example, Asia/Singapore, America/Los_Angeles).
 
-> 📘 Note
->
-> Daylight saving time adjustments are handled automatically for time zones that observe Daylight Saving Time (DST).
->
-> The date_tz filter is supported across all channels: Email, Mobile Push, SMS, Webhooks, App Inbox, In-App, and WhatsApp.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Daylight saving time adjustments are handled automatically for time zones that observe Daylight Saving Time (DST).
+
+  The date_tz filter is supported across all channels: Email, Mobile Push, SMS, Webhooks, App Inbox, In-App, and WhatsApp.
+</Callout>
 
 For example, you can use multiple date_tz calls within a single message to display time across different timezones simultaneously:
 
@@ -471,8 +481,7 @@ When using nested personalization, you must use the Preview & Test option to val
 
 Nested personalization is especially useful when your profile or event data is stored in structured objects such as subscription details, order information, travel bookings, or product metadata.
 
-For example, suppose your profile stores subscription information in the following structure:  
-subscription > plan > name
+For example, suppose your profile stores subscription information in the following structure:<br />subscription > plan > name
 
 You can reference the plan name using`{{ Profile.subscription.plan.name | default: "your current plan" }}`
 
@@ -493,7 +502,9 @@ You can combine your HTML code with Liquid Tags to create beautiful and personal
 1. Open the message editor and paste your HTML code.
 2. Click the ![](https://files.readme.io/651c228-Liquid_tag_icon.png) icon and add your Liquid Tags.
 
-<Image align="center" alt={2876} border={true} caption="Add Liquid Tags" title="Add Liquid Tags" src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" />
+
+<Image src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" alt="2876" align="center" caption="Add Liquid Tags" border={true} />
+
 
 # Linked Content and Liquid Tags in Drag and Drop Editor
 
@@ -503,19 +514,27 @@ Perform the following steps to personalize drag and drop editor templates with l
 
 1. Select a template.
 
-<Image align="center" alt={2878} border={true} caption="Select Media Template" title="Select Media Template" src="https://files.readme.io/0fc50d2-Select_Media_Template.png" />
+
+<Image src="https://files.readme.io/0fc50d2-Select_Media_Template.png" alt="2878" align="center" caption="Select Media Template" border={true} />
+
 
 2. Click the Row item in _Preview_.
 
-<Image align="center" alt={1047} border={true} caption="Select the Row Tab" title="Select the Row Tab" src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png" />
+
+<Image src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png" alt="1047" align="center" caption="Select the Row Tab" border={true} />
+
 
 3. Click _More_ dropdown and select **Customize with Liquid Tags**. The _Personalize messages with Liquid tags and Linked Content_ popup displays.
 
-<Image align="center" alt={2862} border={true} caption="Customize with Liquid Tags" title="Select Customize with Liquid Tags" src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png" />
+
+<Image src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png" alt="2862" align="center" caption="Customize with Liquid Tags" border={true} />
+
 
 4. Add the liquid script inside the popup.
 
-<Image align="center" alt={2856} border={true} caption="Add Liquid Script" title="Add Liquid Script" src="https://files.readme.io/57f0cf4-Add_liquid_script.png" />
+
+<Image src="https://files.readme.io/57f0cf4-Add_liquid_script.png" alt="2856" align="center" caption="Add Liquid Script" border={true} />
+
 
 5. Click **Add**.
 
@@ -525,11 +544,15 @@ When creating a campaign message with Liquid tags, errors appear in real time if
 
 Here is an example of how to add Liquid Tags in the message editor:
 
-<Image align="center" alt="Add Liquid Tags" border={true} caption="Message Editor" src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" />
+
+<Image src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png" alt="Add Liquid Tags" align="center" caption="Message Editor" border={true} />
+
 
 Here is an example of how CleverTap validates the Liquid Tag syntax from the campaign creation page:
 
-<Image align="center" alt="Validating the Liquid Tag Syntax" border={true} caption="Validating the Liquid Tag Syntax" src="https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png" />
+
+<Image src="https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png" alt="Validating the Liquid Tag Syntax" align="center" caption="Validating the Liquid Tag Syntax" border={true} />
+
 
 # Video Tutorial
 
@@ -553,5 +576,3 @@ You can watch the following video to learn more about Liquid Tags personalizatio
               allow="autoplay; fullscreen"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
-
-<br />

@@ -53,9 +53,16 @@ You must indicate the target audience for your push campaign. You can target you
 You can also create the target based on past user behavior and user properties or live (ongoing) user behavior. the latter is useful to send out real-time, triggered SMS campaigns.
 
 <Callout icon="🚧" theme="warn">
-  ### Delay > 24 Hours
+  #### Inaction Campaigns with Delay > 24 hours
 
-  We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
+  - Live Inaction campaigns support delays greater than 24 hours, as follows:
+    - Scheduling: Messages are sent after the configured delay.
+    - Per-event triggering: One message is sent per qualifying event occurrence.
+    - Event personalization: Trigger event properties are available in message content, including via Linked Content.
+    - Message frequency: If the trigger event occurs frequently, configure limits under Delivery Preferences to control how many messages a user receives.
+  - Constant Event Property: If the campaign uses Constant Event Property personalization with a delay greater than 24 hours, default values are sent.
+
+  For more information, refer to​ [Event Personalization by Campaign Type.](doc:personalize-message-all#event-personalization-by-campaign-type)
 </Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users when they add a product to their cart but do not finish transacting within 10 minutes.

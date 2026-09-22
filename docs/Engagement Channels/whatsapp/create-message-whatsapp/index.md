@@ -239,13 +239,13 @@ The _Maximum Price Multiplier_ card displays in the _What_ section after you sel
 <Image src="https://files.readme.io/57c7759115fd6b23448e26e6d558114e74d6e7f1b3dc4c03e8a99d977fd11a03-max_price_multiplier_in_campaign.png" align="center" caption="Maximum Price Multiplier" border={true} />
 
 
-The _Max Price_ field displays the maximum price set on the selected template in USD per 1,000 messages. This field is read-only. To change the template's maximum price, refer to [WhatsApp Template Pricing](doc:whatsapp-template-pricing).
+The _Max Price_ field displays the maximum price set on the selected template in the selected WABA currency per 1,000 messages. This field is read-only. To change the template's maximum price, refer to [WhatsApp Template Pricing](doc:whatsapp-template-pricing).
 
 To set the maximum price multiplier for this campaign, follow these steps:
 
 1. Select the **Max Price Multiplier** checkbox.
 
-2. Enter a value between 0.1 and 3.0 in the multiplier field. The value you enter is multiplied by the maximum price set in the template to get this campaign's maximum price. For example, entering 2 on a template with a maximum price of 0.015 USD sets this campaign's maximum price at 0.030 USD.
+2. Enter a value that is greater than 0 and at most 10. The value you enter is multiplied by the maximum price set in the template to get this campaign's maximum price. For example, entering 2 on a template with a maximum price of 0.015 USD sets this campaign's maximum price at 0.030 USD.
 
 3. (Optional) Click **View Price Trend** to view estimated delivery rates at different maximum prices for your target countries and decide the multiplier you need. Select your target countries to analyze.
 

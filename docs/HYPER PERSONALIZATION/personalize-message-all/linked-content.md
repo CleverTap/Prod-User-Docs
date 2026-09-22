@@ -419,26 +419,25 @@ CleverTap supports personalization in Linked Content, allowing you to dynamicall
 
 With this feature, you can send highly targeted messages across multiple languages using profile attributes and event properties, improving user engagement and relevance.
 
-<Callout icon="📘" theme="info">
-  ### Supported and Unsupported Variables
+# Supported and Unsupported Variables
 
-  **Supported Variables**
+### Supported Variables
 
-  You can personalize Linked Content responses using the following placeholders with Liquid syntax:
+You can personalize Linked Content responses using the following placeholders with Liquid syntax:
 
-  * Profile attributes: `{{Profile.name}}`, `{{Profile.accounttype}}`
-  * Event properties: `{{Event["offerPercentage"]}}` (only for actions delayed by less than 24 hours)
-  * Campaign ID: `{{Campaign.campaignId}}`
-  * External Trigger values: `{{ExternalTrigger.somekey}}`
-  * Identity: `{{Profile.Identity}}`
+- Profile attributes: `{{Profile.name}}`, `{{Profile.accounttype}}`
+- Event properties: `{{Event["offerPercentage"]}}` (supported for live campaigns and for inaction campaigns with a delay greater than 24 hours configured for multiple occurrences)
+- Campaign ID: `{{Campaign.campaignId}}`
+- External Trigger values: `{{ExternalTrigger.somekey}}`
+- Identity: `{{Profile.Identity}}`
 
-  **Unsupported Variables**
+### Unsupported Variables
 
-  * For Event Personalization with a delay of more than 24 hours, default values are used.
-  * Catalog and recommendation variables fall back to default values.
-  * As @ Personalization is not supported, any variable prefixed with @ (for example, @Profile - Name) is not parsed, that is, the variable is not replaced with a value.
-  * Messages with invalid Liquid syntax are flagged as errors to prevent delivery with unresolved placeholders.
-</Callout>
+- Event properties are supported in Inaction campaigns with a delay greater than 24 hours.&#x20;
+- If the campaign uses Constant Event Property with a delay greater than 24 hours, \`{{Event.*}}\` tags fall back to their default value when the campaign is configured for a single occurrence. For multiple occurrences, event personalization is supported and resolves to the properties of each triggering event. For more information on using a constant event property, refer to [Constant Event Property](doc:constant-property).
+- Catalog and recommendation variables fall back to default values.
+- As @ Personalization is not supported, any variable prefixed with @ (for example, @Profile - Name) is not parsed, that is, the variable is not replaced with a value.
+- Messages with invalid Liquid syntax are flagged as errors to prevent delivery with unresolved placeholders.
 
 ## Syntax
 

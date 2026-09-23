@@ -12,30 +12,36 @@ next:
 ---
 Welcome to the Events changelog document for CleverTap. This changelog provides insights into system event updates in CleverTap, ensuring you use CleverTap effectively and monitor your metrics with greater accuracy.
 
-We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we update this changelog regularly, informing our customers about any changes to existing system events or the introduction of new ones.
+We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we regularly update this changelog to inform our customers about any changes to existing system events or the introduction of new ones.
+
+# September 2026
+
+| Change Release Date | Event Name           | Property Name    | Update Type          | Description                                                                                                                                      |
+| ------------------- | -------------------- | ---------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| September 22, 2026  | Notification Clicked | Delivery Channel | Event Property Added | Indicates the messaging channel through which the notification was sent to the user. <br /><br />It will be populated only for SMS/RCS campaigns |
 
 # February 2026
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Change Release Date
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Event Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Property Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Update Type
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Description
       </th>
     </tr>
@@ -43,45 +49,45 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         February 26, 2026
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Push Impression, Notification Clicked
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         wzrk_sif
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Event Property Added
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Boolean property that indicates whether the push notification was delivered silently (no popup shown when the app is open). For more information, refer to [Push Editor](doc:push-editor#android-options).
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
 
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
 
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         wzrk_dismiss
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Event Property Added
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         This property enables automatic dismissal of a push notification from the notification tray after a specified duration.
 
         On Android 8.0 or later, you can configure the dismissal time (in seconds). Once the set duration elapses, the notification is removed from the tray even if the user has not interacted with it.
@@ -93,23 +99,23 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
 
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
 
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         wzrk_sticky
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Event Property Added
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         This property controls whether a push notification remains pinned in the notification tray and cannot be dismissed by swiping.
 
         For Android 14 and above, you can configure a notification as sticky using `wzrk_sticky` with a value of true or false. When set to true, the notification persists in the tray and cannot be swiped away by the user.
@@ -178,7 +184,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        * <br />
+        *
       </td>
 
       <td>

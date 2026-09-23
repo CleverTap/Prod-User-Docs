@@ -27,7 +27,7 @@ Here are some of the common cases:
 <Callout icon="📘" theme="info">
   #### Private Beta
 
-  The Email Attachments feature is currently released in Private Beta. The feature is currently available for Amazon SES, **SendGrid** and **Infobip** (with Advanced Email Add-on) providers. For early access, contact Customer Success Manager.
+  The Email Attachments feature is currently released in Private Beta. The feature is currently available for **Amazon SES**, **SendGrid** and **Infobip** (with Advanced Email Add-on) providers. For early access, contact Customer Success Manager.
 </Callout>
 
 # Supported File Types and Limits
@@ -99,10 +99,12 @@ From the campaign creation setup, select **Attachments** from the _What_ section
 
   <Image src="https://files.readme.io/882556886d9cd2ef6e23343f0d727779bb7de8f7c3c1f61474de12ffcbaf7b55-Personalized_Attachment_in_Email_Campaigns.gif" align="center" caption="Send Personalized Attachment by Inserting User Property" border={true} />
 
+
 * **Device Storage**: Click to open your file browser and select the file you want to upload. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
 
   <Image src="https://files.readme.io/62da02e6ec808f8157f580ef1148abad6422ad7187a5df360b80371e4eafbbae-Attach_Files_via_Device_Storage.gif" alt="Attach Files via Device Storage" align="center" caption="Attach Files via Device Storage" border={true} />
+
 
 * **Content Manager**: Click **Browse** to attach previously uploaded assets to the email campaign.
 

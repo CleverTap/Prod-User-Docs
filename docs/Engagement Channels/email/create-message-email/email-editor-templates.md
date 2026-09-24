@@ -237,7 +237,7 @@ Confirms a successful subscription or entices users to upgrade by highlighting p
 - Change the Theme or Background Color
 - Update Social Media Links and Download Links
 
-For more information about customizing these templates, refer to Template Customization Options.
+For more information about customizing these templates, refer to [Customize Out-of-the-Box Templates](doc:customize-out-of-the-box-templates).
 
 # Saved Templates
 
@@ -281,7 +281,7 @@ You can customize the following elements for the Spin and Win template:
 - Update Links in Header/Footer
 - Update Social Media and Download Links
 
-For more information about customizing these templates, refer to Template Customization Options.
+For more information about customizing these templates, refer to [Customize Out-of-the-Box Templates](doc:customize-out-of-the-box-templates).
 
 # Template Operations
 

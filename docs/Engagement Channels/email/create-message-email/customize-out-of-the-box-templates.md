@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to customize Basic and AMP email templates available out-of-the box
   on the CleverTap dashboard.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
@@ -16,16 +16,16 @@ While the entire template is customizable, CleverTap highlights a set of key com
 
 The following are the key customization options:
 
-* [Replace Logo](https://docs.clevertap.com/docs/ootb-email-templates#replace-logo)
-* [Replace Background](https://docs.clevertap.com/docs/ootb-email-templates#replace-background)
-* [Update Banner/Product Images](https://docs.clevertap.com/docs/ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](https://docs.clevertap.com/docs/ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in Header/Footer](https://docs.clevertap.com/docs/ootb-email-templates#update-links-in-headerfooter)
-* [Change Theme or Background Color](https://docs.clevertap.com/docs/ootb-email-templates#change-theme-or-background-color)
-* [Update Privacy Policy](https://docs.clevertap.com/docs/ootb-email-templates#update-privacy-policy)
-* [Update Social Media and Download Links](https://docs.clevertap.com/docs/ootb-email-templates#update-social-media-links-and-download-links)
-* [Countdown Timer (Flash Sale Only)](https://docs.clevertap.com/docs/ootb-email-templates#countdown-timer-flash-sale-only)
-* [Add or Modify Filters](https://docs.clevertap.com/docs/ootb-email-templates#add-or-modify-filters)
+* [Replace Logo](doc:customize-out-of-the-box-templates#replace-logo)
+* [Replace Background](doc:customize-out-of-the-box-templates#replace-background)
+* [Update Banner/Product Images](doc:customize-out-of-the-box-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:customize-out-of-the-box-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:customize-out-of-the-box-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:customize-out-of-the-box-templates#change-theme-or-background-color)
+* [Update Privacy Policy](doc:customize-out-of-the-box-templates#update-privacy-policy)
+* [Update Social Media and Download Links](doc:customize-out-of-the-box-templates#update-social-media-links-and-download-links)
+* [Countdown Timer (Flash Sale Only)](doc:customize-out-of-the-box-templates#countdown-timer-flash-sale-only)
+* [Add or Modify Filters](doc:customize-out-of-the-box-templates#add-or-modify-filters)
 
 ## Replace Logo
 

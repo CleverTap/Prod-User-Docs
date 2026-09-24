@@ -34,7 +34,7 @@ Use the date range selector to filter stats within a specific time window, then 
 <Image src="https://files.readme.io/b691134948afaa7c90cc6072550458939635f321b5b1428d7fcfce50a2a2ba2a-image.png" align="center" caption="Request-Level Stats" border={true} />
 
 
-## Channel- Level Stats
+## Channel-Level Stats
 
 The _Channels&#x20;_&#x73;ection provides a detailed breakdown of SMS-specific performance, helping you understand how recipients interact with transactional messages post-delivery.
 

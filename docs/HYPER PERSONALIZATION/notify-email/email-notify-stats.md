@@ -12,8 +12,8 @@ The _Stats_ tab provides a comprehensive view of your Notify campaign performanc
 
 The _Stats_ section can be classified into two parts:
 
-- [Request-Level Stats](doc:notify-email-stats#request-level-stats)
-- [Channel-Level Stats](doc:notify-email-stats#channel-performance)&#x20;
+- [Request-Level Stats](doc:email-notify-stats#request-level-stats)
+- [Channel-Level Stats](doc:email-notify-stats#channel-performance)&#x20;
 
 ## Request-Level Stats
 
@@ -51,7 +51,7 @@ Use the Trends view to analyze how performance changes over time, including spik
 - **Viewed**: Number of times users viewed the email.
 - **Clicked**: Number of times users clicked on any links within the email.
 
-You can click the ![](https://files.readme.io/94031640d02b525c886f55910f9367fc3e7798ed5cf84387a8d8456277239892-Hide_icon.png) icon to view or hide a specific metric. For more information on email stats, refer to [Email Stats](doc:email-stats).
+You can click the ![](https://files.readme.io/94031640d02b525c886f55910f9367fc3e7798ed5cf84387a8d8456277239892-Hide_icon.png) icon to view or hide a specific metric.
 
 For Message by User Property campaigns, the Trends view also includes a per-variant breakdown showing performance across variants, including the default. Use the Sent, Delivered, Viewed, and Clicked tabs above the chart to switch which metric is plotted for each variant over time. The table below the chart lists all four metrics for every variant regardless of the selected tab. You can export the full table using **Export As CSV**.
 

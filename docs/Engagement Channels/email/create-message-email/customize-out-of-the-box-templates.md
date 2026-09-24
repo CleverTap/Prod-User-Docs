@@ -4,7 +4,9 @@ excerpt: >-
   Learn how to customize Basic and AMP email templates available out-of-the-box
   on the CleverTap dashboard.
 deprecated: false
-hidden: true
+hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -1,7 +1,7 @@
 ---
-title: Customize Out-of-the Box Templates
+title: Customize Out-of-the-Box Templates
 excerpt: >-
-  Learn how to customize Basic and AMP email templates available out-of-the box
+  Learn how to customize Basic and AMP email templates available out-of-the-box
   on the CleverTap dashboard.
 deprecated: false
 hidden: true

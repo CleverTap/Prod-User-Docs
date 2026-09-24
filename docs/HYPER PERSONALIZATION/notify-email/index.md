@@ -172,7 +172,7 @@ Click any campaign from the _Notify_ page to view it. The Notify campaign opens 
 <Image src="https://files.readme.io/2e14f4c1e1fab9ba142e7b93d613efe266eb6fef8bf852f70853763d35d9ce53-image.png" alt="API Details" align="center" caption="API Details" border={true} />
 
 
-- **Stats**: Displays a comprehensive view of your Notify campaign performance, helping you track requests, message delivery, user engagement, and any errors encountered. For more information, refer to [Notify Stats](doc:notify-stats).
+- **Stats**: Displays a comprehensive view of your Notify campaign performance, helping you track requests, message delivery, user engagement, and any errors encountered. For more information, refer to [Notify Stats](doc:email-notify-stats).
 
 ## Edit Notify Campaign
 

@@ -13,7 +13,7 @@ The _Stats_ tab provides a comprehensive view of your Notify campaign performanc
 The _Stats_ section can be classified into two parts:
 
 - [Request-Level Stats](doc:email-notify-stats#request-level-stats)
-- [Channel-Level Stats](doc:email-notify-stats#channel-performance)&#x20;
+- [Channel-Level Stats](doc:email-notify-stats#channel-level-stats)&#x20;
 
 ## Request-Level Stats
 

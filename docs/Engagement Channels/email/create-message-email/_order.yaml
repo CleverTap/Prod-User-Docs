@@ -4,6 +4,7 @@
 - create-message-private-beta
 - create-message-override-opt-out
 - email-editor-templates
+- customize-out-of-the-box-templates
 - email-templates
 - email-editor-upload-html-zip
 - ootb-email-templates
@@ -18,4 +19,3 @@
 - override-link-tracking
 - using-attachments-in-email
 - send-test-with-custom-user-property-value
-- customize-out-of-the-box-templates

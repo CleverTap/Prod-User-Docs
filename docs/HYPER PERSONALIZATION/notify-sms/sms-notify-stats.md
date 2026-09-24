@@ -12,8 +12,8 @@ The _Stats_ tab provides a comprehensive view of your Notify campaign performanc
 
 The _Stats_ section can be classified into two parts:
 
-- [Request-Level Stats](doc:notify-sms-stats#request-level-stats)
-- [Channel-Level Stats](doc:notify-sms-stats#channel-performance)
+- [Request-Level Stats](doc:sms-notify-stats#request-level-stats)
+- [Channel-Level Stats](doc:sms-notify-stats#channel-level-stats)
 
 ## Request-Level Stats
 
@@ -59,6 +59,3 @@ The _Errors_ section provides visibility into issues encountered during SMS deli
 
 
 <Image src="https://files.readme.io/ab926184697ebea0e283d7e57e21e86dec097f7f28aed1c48062d84faf2d0b3e-image.png" align="center" caption="SMS Notify Errors" border={true} />
-
-
-<br />

@@ -18,20 +18,20 @@ CleverTap's Segmentation feature helps personalize user experiences and optimize
 
 Before creating any segment on the CleverTap dashboard, default system segments are already present. To view these system segments:
 
-1. Navigate to *Segments* > *Segments* from the CleverTap dashboard.
+1. Navigate to _Segments_ > _Segments_ from the CleverTap dashboard.
 2. Click the ![Filter icon](https://files.readme.io/1d37ff4-Filter_Icon.png) icon.
-3. From the *Created By* dropdown, select *System*.
+3. From the _Created By_ dropdown, select _System_.
 
-   <Image alt="Filter System User Segments" align="center" border={true} src="https://files.readme.io/7614538-System_Segments.png">
-     Filter System User Segments
-   </Image>
-4. Click *Apply*, and all the system user segments display.
 
-<Image alt="View All System User Segments" align="center" border={true} src="https://files.readme.io/46f2bf6-View_System_Segments.png">
-  View All System User Segments
-</Image>
+   <Image src="https://files.readme.io/7614538-System_Segments.png" alt="Filter System User Segments" align="center" border={true} />
 
-The following are the system-defined user segments that are available for your use: 
+4. Click _Apply_, and all the system user segments display.
+
+
+<Image src="https://files.readme.io/46f2bf6-View_System_Segments.png" alt="View All System User Segments" align="center" border={true} />
+
+
+The following are the system-defined user segments that are available for your use:
 
 * **First time App Users - Live View**: This system segment includes users who have recently installed and launched the app for the first time. First-time app users are crucial for businesses to understand, as they represent potential new customers or users. Analyzing this segment can help organizations tailor onboarding experiences, send targeted welcome messages, and implement strategies to encourage further engagement.
 * **Engaged Users - at least 4 times in the past week**: This segment comprises users who have demonstrated high engagement with the app. To qualify for this segment, users must have interacted with the app at least four times within the past week. Analyzing the behavior of these users provides insights into the features that are popular and help businesses design targeted campaigns or promotions to retain and further engage this user segment.
@@ -46,9 +46,9 @@ The following are the three types of segments that can be created from the Cleve
 * [Live User Segments](doc:types-of-segments#live-user-segments)
 * [Custom List Segments](doc:types-of-segments#custom-list-segments)
 
-<Image alt="Types of Segments" align="center" border={true} src="https://files.readme.io/9adfb41-All_Segments.png">
-  Types of Segments
-</Image>
+
+<Image src="https://files.readme.io/9adfb41-All_Segments.png" alt="Types of Segments" align="center" border={true} />
+
 
 ## Past Behavior Segments
 
@@ -59,7 +59,12 @@ Past behavior segments include users grouped by their actions in the past. You c
 While past behavior segments let you evaluate users based on historical criteria, live user segments allow you to track what is happening in your app right now. When you define a set of behaviors of interest, CleverTap monitors them as they occur in your app and immediately adds a user to a segment when their behavior matches your action criteria. You can create the following types of live user segments:
 
 * **Live - User Actions**: Add users to a segment as soon as they perform an event. For example, users who booked a movie ticket from your app.
-* **Live - Inaction in Time Frame**: Add users to a segment when they perform an event but not another within a specific time. For example, users who have added a product to the cart but did not purchase it within 10 minutes of adding it.
+* **Live - Inaction in Time Frame**: Add users to a segment when they perform an event, but not another within a specific time. For example, users who have added a product to the cart but did not purchase it within 10 minutes of adding it.
+  <Callout icon="📘" theme="info">
+    ### Live - Inaction in Time Frame Support in Offline Channels
+
+    Live - Inaction in Time Frame segments now support an _event property_ filter, so you can scope the inaction to a specific property value rather than the event as a whole. For example, users who add shoes to their cart but do not purchase shoes within 10 minutes. This filter is available for Push, SMS, Email, WhatsApp, Web Push, and Webhooks. For details, see [Segmentation Rules](doc:segment-rules#filter-inaction-events-by-event-property).
+  </Callout>
 * **Live - On a Date or Time**: Add users to a segment based on date and time property value. For example, users who have an appointment five days from today.
 * **Live - Page Visit**: Add users to a segment as soon as they visit a specific URL on your website. For example, users who have viewed the landing page of a festival sale.
 * **Live - Referrer Entry**: Add users to a segment based on a referring website or campaign. For example, users who have visited your website via a specific external referrer URL.

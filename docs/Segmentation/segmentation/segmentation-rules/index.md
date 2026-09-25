@@ -136,7 +136,7 @@ The following table lists the channels for which this filter is currently availa
 
 #### **Use Case**
 
-- Media and OTT: target users who add a show or movie to their watchlist but do not start streaming it.
+Media and OTT: target users who add a show or movie to their watchlist but do not start streaming it.
 
 ## User Interests
 

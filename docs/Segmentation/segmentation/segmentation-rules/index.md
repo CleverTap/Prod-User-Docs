@@ -22,37 +22,53 @@ User property refers to a user's demographic attributes, such as age, gender, lo
 
 * **User property**: Segment users based on custom user property values such as email, phone number, customer type, etc. For example, you can create a segment of users whose _customertype_ is _Gold_.
 
-<Image align="center" alt="Users Property Rule" border={true} caption="Segment by User Property Rule" src="https://files.readme.io/26e646e-User_Property_Rule.png" />
+
+<Image src="https://files.readme.io/26e646e-User_Property_Rule.png" alt="Users Property Rule" align="center" caption="Segment by User Property Rule" border={true} />
+
 
 * **User bucket**: Segment users based on a system user property called [User Bucket](doc:user-bucket). For example, you can create a segment of users with bucket numbers 7, 100, and 999.
 
-<Image align="center" alt="Segment by User Bucket Rule" border={true} caption="Segment by User Bucket Rule" src="https://files.readme.io/b86aea6-User_Bucket.png" />
+
+<Image src="https://files.readme.io/b86aea6-User_Bucket.png" alt="Segment by User Bucket Rule" align="center" caption="Segment by User Bucket Rule" border={true} />
+
 
 * **Demographic**: Segment users based on demographic user property values such as gender, age, etc. For example, you can segment your users based on their gender.
 
-<Image align="center" alt="Demographics Rule" border={true} caption="Segment by Demographics Rule" src="https://files.readme.io/dc14c9a-Demographics_Rule.png" />
+
+<Image src="https://files.readme.io/dc14c9a-Demographics_Rule.png" alt="Demographics Rule" align="center" caption="Segment by Demographics Rule" border={true} />
+
 
 * **Geography**: Segment users based on their location. For example, you can create a segment of users living in Los Angeles, California, the United States, and so on.
 
-<Image align="center" alt="Geography Rule" border={true} caption="Segment by Geography Rule" src="https://files.readme.io/fe644d9-Geography_Rules.png" />
+
+<Image src="https://files.readme.io/fe644d9-Geography_Rules.png" alt="Geography Rule" align="center" caption="Segment by Geography Rule" border={true} />
+
 
 * **Geography Radius**: Segment users that are located at a certain distance from the particular location. For example, you can create a segment of users within a particular retail store's radius.
 
-<Image align="center" alt="Geography Radius Rule" border={true} caption="Segment by Geography Radius Rule" src="https://files.readme.io/64478f1-Gegraphy_Radius_Rule.png" />
+
+<Image src="https://files.readme.io/64478f1-Gegraphy_Radius_Rule.png" alt="Geography Radius Rule" align="center" caption="Segment by Geography Radius Rule" border={true} />
+
 
 * **Technographics**: Segments users based on the technical specifications of their devices. For example, you can create a segment of users who use your App on a mobile device with an Android OS.
 
-<Image align="center" alt="Technographics Rule" border={true} caption="Segment by Technographics Rule" src="https://files.readme.io/c83a72f-Technographics_Rule.png" />
+
+<Image src="https://files.readme.io/c83a72f-Technographics_Rule.png" alt="Technographics Rule" align="center" caption="Segment by Technographics Rule" border={true} />
+
 
 * **Reachability**: Segment users based on their reachability via different messaging channels such as push notifications, SMS, or email. For example, you can create a segment of unsubscribed users to receive emails.
 
-<Image align="center" alt="Reachability Rule" border={true} caption="Segment by Reachability Rule" src="https://files.readme.io/b8b831a-Reachability_Rule.png" />
+
+<Image src="https://files.readme.io/b8b831a-Reachability_Rule.png" alt="Reachability Rule" align="center" caption="Segment by Reachability Rule" border={true} />
+
 
 * **App fields** Segment users by app version or type. For example, you can create a segment of users with a Samsung device using app version 5.2.0.
 
-<Image align="center" border={true} caption="Segment by App Fields Rule" src="https://files.readme.io/05e8306b52d56c32cfdd44f98cd46f6c18f0b485c89384036c89a6faac2bcb57-image.png" />
 
-You can now use greater than ( > ), less than ( < ), and between operators to create more precise segments based on version numbers. These operators are available for the following attributes:
+<Image src="https://files.readme.io/05e8306b52d56c32cfdd44f98cd46f6c18f0b485c89384036c89a6faac2bcb57-image.png" align="center" caption="Segment by App Fields Rule" border={true} />
+
+
+You can now use greater than ( > ), less than ( \< ), and between operators to create more precise segments based on version numbers. These operators are available for the following attributes:
 
 * App version
 * OS version
@@ -62,14 +78,18 @@ For instance, you can target users with an app version greater than 5.2.0, those
 
 * **Segments**: Segment users based on their membership in a particular segment. For example, you can create a segment of users who have purchased in the past 30 days and save it as _Charged Users_. You can then include and exclude this segment based on your target audience while creating a new segment, rather than creating a complex query each time.
 
-<Image align="center" alt="Segments Rule" border={true} caption="Segment by Segments Rule" src="https://files.readme.io/0904d67-Segments_Rules.png" />
 
-> 📘 Include and Exclude
->
-> The following are some of the points that you consider when you include and exclude segments:
->
-> * The include and exclude segments are currently unavailable for bulletins and A/B Testing.
-> * You can only include or exclude  [PBS](https://docs.clevertap.com/docs/segments#section-past-behavior-segments) and [Custom List](https://docs.clevertap.com/docs/custom-list-segments) segments.
+<Image src="https://files.readme.io/0904d67-Segments_Rules.png" alt="Segments Rule" align="center" caption="Segment by Segments Rule" border={true} />
+
+
+<Callout icon="📘" theme="info">
+  ### Include and Exclude
+
+  The following are some of the points that you consider when you include and exclude segments:
+
+  * The include and exclude segments are currently unavailable for bulletins and A/B Testing.
+  * You can only include or exclude  [PBS](https://docs.clevertap.com/docs/segments#section-past-behavior-segments) and [Custom List](https://docs.clevertap.com/docs/custom-list-segments) segments.
+</Callout>
 
 ## User Behavior
 
@@ -77,15 +97,46 @@ User behavior refers to a user's actions within your App or Website, such as com
 
 * **Event (Did)**: Segment users based on the events they have done. For example, you can create a segment of users who have performed the _App Installed_ event in the last 30 days.
 
-<Image align="center" alt="Segment by Did Rule" border={true} caption="Segment by Did Rule" src="https://files.readme.io/18dda8d-Did.png" />
+
+<Image src="https://files.readme.io/18dda8d-Did.png" alt="Segment by Did Rule" align="center" caption="Segment by Did Rule" border={true} />
+
 
 * **Event (Have not done)**: Segment users based on the events they have not done. For example, you can create a segment of users who have not performed the _App launched_ event in the last 30 days.
 
-<Image align="center" alt="Segment by Have Not Done Rule" border={true} caption="Segment by Have Not Done Rule" src="https://files.readme.io/7d2fa6e-Have_Not_Done.png" />
+
+<Image src="https://files.readme.io/7d2fa6e-Have_Not_Done.png" alt="Segment by Have Not Done Rule" align="center" caption="Segment by Have Not Done Rule" border={true} />
+
 
 * **Combination of (Did any of)**: Segment users based on any of the events they have done in a specified period of time. For example, you can create a segment of users who have performed any of the events, such as Product Viewed, Added to Cart, or Charged in the last 30 days.
 
-<Image align="center" alt="Segment by Did Any Of Rule" border={true} caption="Segment by Did Any Of Rule" src="https://files.readme.io/fbef063-Did_Any_Of.png" />
+
+<Image src="https://files.readme.io/fbef063-Did_Any_Of.png" alt="Segment by Did Any Of Rule" align="center" caption="Segment by Did Any Of Rule" border={true} />
+
+
+### Filter Inaction Events by Event Property
+
+When you segment users on an event they did not do, you can now narrow that inaction down to a specific event property. This lets you go beyond a general _did not purchase_ condition to a more precise one, such as users who add a specific item to their cart but do not purchase it.
+
+For example, you can create a segment of users who add shoes to their carts but do not purchase them. Without this filter, CleverTap could only detect that a user added something to their cart and did not complete a purchase, without distinguishing which item.
+
+To apply this filter:
+
+1. From the _Create Segments&#x20;_&#x70;ag&#x65;_&#x20;> Live Inaction in Time Frame_, select **Event (Does not do)** as your behavior rule.
+2. Choose the event you want to track.
+3. Add a property filter on that event and specify the value to match.
+4. Save your segment.
+
+The following table lists the channels for which this filter is currently available:
+
+| Channel                                                                    | Availability         |
+| :------------------------------------------------------------------------- | :------------------- |
+| In-App                                                                     | Available (existing) |
+| Push, SMS, Email, WhatsApp, Web Push, Webhooks                             | Available (new)      |
+| Native Display, App Inbox, Web Pop-up, Web Native Display, Web Exit Intent | Not available        |
+
+#### **Use Case**
+
+- Media and OTT: target users who add a show or movie to their watchlist but do not start streaming it.
 
 ## User Interests
 
@@ -97,9 +148,11 @@ There are three types of rules provided by CleverTap:
 * **Time of the day**: Interest by Time of the Day allows you to segment users based on when they usually perform actions during the day. For example, you can segment users who typically shop online between 8 PM and 10 PM. This allows you to send targeted promotions or reminders during their preferred shopping hours.
 * **Day of the week**: Interest by Day of the Week allows you to segment users based on which day of the week they usually perform actions. For example, you can segment users who usually order food delivery on Fridays. This enables you to send special weekend offers or discounts to encourage repeat orders.
 
-> 📘 Predominantly vs. At Least
->
-> The _Predominantly_ option means the event property you select will only include users, where that event property is the most frequently occurring event property for the user. The _At Least_ option lets you specify the specific percentage you need.
+<Callout icon="📘" theme="info">
+  ### Predominantly vs. At Least
+
+  The _Predominantly_ option means the event property you select will only include users, where that event property is the most frequently occurring event property for the user. The _At Least_ option lets you specify the specific percentage you need.
+</Callout>
 
 # AND/OR Rules
 
@@ -111,7 +164,9 @@ The _AND_ operator combines multiple conditions that must be met simultaneously 
 
 For example, if you want to target users who are both male and have purchased at least one product in the last 30 days. In this case, the _AND_ rule would be as follows:
 
-<Image align="center" alt="Segmenting with AND Operator" border={true} caption="Segmenting with AND Operator" src="https://files.readme.io/ae30ff4-Segment_with_AND_Operator.png" />
+
+<Image src="https://files.readme.io/ae30ff4-Segment_with_AND_Operator.png" alt="Segmenting with AND Operator" align="center" caption="Segmenting with AND Operator" border={true} />
+
 
 In this case, the audience will only include users who match both the specified conditions.
 
@@ -121,7 +176,9 @@ The _OR_ operator combines multiple conditions where at least one must be true t
 
 For example, if you want to target users who have either made a purchase in the last 30 days or have added items to their cart but have not completed the purchase. In this case, the _OR_ rule would look like this:
 
-<Image align="center" alt="Segmenting with OR Operator" border={true} caption="Segmenting with OR Operator" src="https://files.readme.io/9c0b2ec-OR_Operator.png" />
+
+<Image src="https://files.readme.io/9c0b2ec-OR_Operator.png" alt="Segmenting with OR Operator" align="center" caption="Segmenting with OR Operator" border={true} />
+
 
 In this case, the segment will include users who match either of the specified conditions.
 
@@ -131,7 +188,9 @@ Both _AND_ and _OR_ operators can be combined to create more complex segmentatio
 
 The following image shows how you can create the above segment query using the combination of  AND/OR operators:
 
-<Image align="center" alt="Combining AND/OR Operators" border={true} caption="Combining AND/OR Operators" src="https://files.readme.io/519ac77-Combining_ANDOR_Rules.png" />
+
+<Image src="https://files.readme.io/519ac77-Combining_ANDOR_Rules.png" alt="Combining AND/OR Operators" align="center" caption="Combining AND/OR Operators" border={true} />
+
 
 # Additional Filters
 
@@ -141,13 +200,17 @@ These filters allow customers to segment users based on count, average, or total
 
 It allows customers to filter users by event count. The following query finds all users who performed a _Charged_ event greater than five times in the past 30 days:
 
-<Image align="center" alt="Filter by Count" border={true} caption="Filter by Count" src="https://files.readme.io/72dc3a3-Count_Filter.png" />
+
+<Image src="https://files.readme.io/72dc3a3-Count_Filter.png" alt="Filter by Count" align="center" caption="Filter by Count" border={true} />
+
 
 ## Total Sum of Property
 
 It allows customers to filter users by the sum of a chosen event property. The following query finds all users who performed a _Charged_ event such that the _Revenue_ event property is greater than $10:
 
-<Image align="center" alt="Filter by Total Sum of Property" border={true} caption="Filter by Total Sum of Property" src="https://files.readme.io/8b92312-image_13.png" />
+
+<Image src="https://files.readme.io/8b92312-image_13.png" alt="Filter by Total Sum of Property" align="center" caption="Filter by Total Sum of Property" border={true} />
+
 
 ## Average Sum of Property Filter
 
@@ -159,4 +222,5 @@ If you want to exclude all the events that do not have event properties, you can
 
 The following query finds all users who performed a _Charged_ event such that the _Average sum of property_ per event is _greater or equal_ to $10:
 
-<Image align="center" alt={1192} border={true} caption="Filter by Average Sum of Property" title="2020-11-24_17-52-22_Average of property.png" src="https://files.readme.io/cbadd22-Filter_by_Average_Sum_of_Property.png" />
+
+<Image src="https://files.readme.io/cbadd22-Filter_by_Average_Sum_of_Property.png" alt="1192" align="center" caption="Filter by Average Sum of Property" border={true} />

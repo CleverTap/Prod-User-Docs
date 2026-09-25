@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-## Overview
+# Overview
 
 A _Constant Property_ is an event property that can be tracked across multiple events. Segmentation is done if multiple events are done with the same value of the event property held constant. This feature enables a marketer to create a single Campaign for all the values of the property held constant instead of individual campaigns for each value of the property.
 

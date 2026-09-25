@@ -4,7 +4,9 @@ excerpt: >-
   Learn how to precisely target your audience by excluding users in real time
   using the Global Exclusion Filter in the Query Builder.
 deprecated: false
-hidden: true
+hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

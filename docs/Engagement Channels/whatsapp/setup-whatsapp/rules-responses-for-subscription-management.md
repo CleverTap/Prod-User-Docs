@@ -2,7 +2,9 @@
 title: Rules & Responses for Subscription Management
 excerpt: Learn how to automate WhatsApp subscription actions using keywords.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -13,9 +13,9 @@ metadata:
 CleverTap MCP (Model Context Protocol) connects CleverTap directly to AI clients, including Anthropic Claude, ChatGPT, and Cursor. This guide helps you get the CleverTap MCP up and running in your preferred AI client so you can start interacting with your CleverTap account using natural language. For more information on MCP Tools, refer to [CleverTap Tools Reference](doc:clevertap-mcp).
 
 <Callout icon="📘" theme="info">
-  ### Public Beta
+  ### Private Beta
 
-  This feature is currently available in Public Beta for selected customers. To enable CleverTap MCP, contact your Customer Success Manager or raise a support ticket.
+  This feature is currently available in Private Beta for selected customers. To enable CleverTap MCP, contact your Customer Success Manager or raise a support ticket.
 </Callout>
 
 # Supported AI Clients
@@ -71,6 +71,7 @@ The CleverTap MCP server is compatible with the following AI clients:
     1. Go to _Customize > Connectors > Browse Connectors_.
     2. Click **Connect** on CleverTap MCP.
     3. Click **Configure** after connecting. This shows the full list of tools and functionality available through the MCP.<br />The following image shows a sample endpoint connector:
+
 
        <Image src="https://files.readme.io/06a65f6ff4c2e55cc626c5521dc6a7f123a1346b4f8b83dc95c9d947cec67700-image.png" align="center" caption="Add Custom Connector" border={true} />
 

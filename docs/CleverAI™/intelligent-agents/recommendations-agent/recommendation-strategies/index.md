@@ -93,11 +93,12 @@ The following table lists the algorithms and the CleverTap recommendation strate
       </td>
 
       <td>
-        Based on What You Viewed, Because You Viewed, Frequently Bought Together, Frequently Viewed Together
+        Based on What You Viewed, Because You Viewed, Frequently Viewed Together
       </td>
 
       <td>
-        - **ECommerce**: Send a cart abandonment push suggesting accessories frequently bought with the item left in the cart.
+
+
         - **OTT**: Recommend episodes of a new series based on the user's most recently engaged genres, even if the series just launched.
         - **Travel**: Surface hotel upgrades for a destination the user has repeatedly viewed, combining their browsing history with property attributes.
       </td>

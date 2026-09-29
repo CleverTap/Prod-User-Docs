@@ -32,7 +32,7 @@ To delete a user profile, perform the following steps:
 <Image src="https://files.readme.io/b8d9fbf-1_Delete_Profile.png" alt="1415" align="center" border={true} />
 
 
-4. In the window pop-up, select the checkbox to agree to delete profile data.
+4. In the pop-up window, select the checkbox to agree to the deletion of profile data.
 5. Click **Delete**.
 
 

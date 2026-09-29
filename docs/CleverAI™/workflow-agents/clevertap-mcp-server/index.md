@@ -18,7 +18,7 @@ MCP tools are pre-built functions that AI clients invoke using natural language 
 <Callout icon="📘" theme="info">
   ### Private Beta
 
-  This feature is currently available in Private Beta for selected customers.&#x20;
+  This feature is currently available in Private Beta for selected customers. To enable CleverTap MCP, contact your Customer Success Manager or raise a support ticket.
 </Callout>
 
 The following table lists all available tool categories and the tools within each category:

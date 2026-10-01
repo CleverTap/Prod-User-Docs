@@ -2,7 +2,9 @@
 title: G2 Deals Offer (Core)
 excerpt: Understand the terms and conditions of the G2 deals offer.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -33,7 +33,7 @@ Wallet Basic defines the core rules of your loyalty wallet: its name, the curren
 Enter the following details:
 
 
-<Image src="https://files.readme.io/8e29d67cbf8ceb4bd6aeaa8880ce37171f6448308734e7618e17681a989aa3f3-Wallet_Basic_Details.png" align="center" caption="Wallet Basic Details" border={true} />
+<Image src="https://files.readme.io/9c9dd26ccfaa5bcd157f9b415233bf57e394528dbd1f71fb0fee9980637e6248-Create_Wallet.png" align="center" caption="Wallet Basic Details" border={true} />
 
 
 1. Enter a unique name for the loyalty wallet. For example, _CleverTap Coins_. Once created, the wallet name cannot be changed.
@@ -70,7 +70,7 @@ Enter the following details:
 
 6. Click **Next** to continue to _Redemption Settings_.
 
-## Redemption Settings (Optional)
+## Points Redemption Setup (Optional)
 
 <Callout icon="📘" theme="info">
   #### Private Beta
@@ -92,7 +92,7 @@ You can also use Redemption Settings to encourage higher order values. For examp
 To configure the settings, enter the following details:
 
 
-<Image src="https://files.readme.io/64ba7c52f1854c126f2c1ec9e928349a935e8aa87c0554009e02cb9179463ae3-Redemption_Settings.png" align="center" caption="Redemption Settings" border={true} />
+<Image src="https://files.readme.io/b47975dea60410116013826b8cbc6b15a92df15276c1e7d5f5b8c4e7423320a9-Points_Redemtion_Setup.png" align="center" caption="Points Redemption Setup" border={true} />
 
 
 1. Under Redemption Conditions, set the order requirements, product requirements, and minimum active points. For more information, refer to [Setting Up Redemption Eligibility Criteria](doc:create-loyalty-wallet#redemption-eligibility-criteria)​.

@@ -4,7 +4,9 @@ excerpt: >-
   Learn more about the Refer-a-Friend: Promotional Credit offer for new and
   existing Core Plan customers.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -1,7 +1,9 @@
 ---
 title: CleverTap Core to Enterprise Migration
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

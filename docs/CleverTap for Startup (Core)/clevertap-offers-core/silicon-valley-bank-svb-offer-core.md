@@ -2,7 +2,9 @@
 title: Silicon Valley Bank (SVB) Offer (Core)
 excerpt: Understand the terms and conditions of the SVB offer.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

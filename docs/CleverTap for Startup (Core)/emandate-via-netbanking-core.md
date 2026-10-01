@@ -2,7 +2,9 @@
 title: eMandate via Netbanking (Core)
 excerpt: Learn about CleverTap's eMandate via Netbanking (eNACH) payment method.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

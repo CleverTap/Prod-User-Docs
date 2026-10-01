@@ -4,7 +4,9 @@ excerpt: >-
   Understand how to set up eMandate using cards that comply with the RBI
   guidelines for recurring payments.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

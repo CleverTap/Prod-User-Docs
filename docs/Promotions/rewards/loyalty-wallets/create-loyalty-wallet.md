@@ -202,7 +202,7 @@ To add the conditional ratios, perform the following steps:
    - Combine multiple conditions with **AND** or **OR**.
      You can add **multiple overrides**; they are evaluated in rank order. The first override whose conditions fully match is used, and evaluation stops.
      <Callout icon="📘" theme="info">
-       ### Validation
+       #### Validation
 
        All ratio values (default + overrides) must be unique. CleverTap rejects duplicate ratios with the error.
      </Callout>

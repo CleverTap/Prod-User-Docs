@@ -1,7 +1,9 @@
 ---
 title: Events Excluded from Billing in CleverTap Core
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

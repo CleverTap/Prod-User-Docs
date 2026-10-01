@@ -26,10 +26,6 @@ To create a wallet, perform the following steps:
    - [Wallet Basic](doc:create-loyalty-wallet#wallet-basic)
    - [Redemption Settings](doc:create-loyalty-wallet#redemption-settings-optional)
 
-
-<Image src="https://files.readme.io/04a9fc2fb30bc4cd87d28fd222f3b64e51af5a6ec457f075a967d5ccf799fab0-Create_Wallet.png" align="center" caption="Wallet Creation" border={true} />
-
-
 ## Wallet Basic
 
 Wallet Basic defines the core rules of your loyalty wallet: its name, the currency or points system it uses, when points expire, the order in which points are redeemed, and how point values are rounded.&#x20;

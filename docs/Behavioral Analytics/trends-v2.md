@@ -45,11 +45,15 @@ The Trends dashboard enables you to visualize data by segmenting events based on
 
 Results can be displayed in various formats, such as trendlines, pie charts, and more, and can be viewed over different time periods, such as days, or months. You also have the option to download the resulting visualizations or pin the analysis to a board for continuous updates. Additionally, you can download these results in a CSV file.
 
-> 📘 Event and Segment Limit
->
-> You can select up to five events and five segments for analysis.
+<Callout icon="📘" theme="info">
+  ### Event and Segment Limit
 
-<Image align="center" alt="Trend Analysis" border={true} caption="Trend Analysis" src="https://files.readme.io/79923bce74d05b0178c3541a856d3dc7bc7315b9d7ea2b06e75e5fb0e7668587-image.png" />
+  You can select up to five events and five segments for analysis.
+</Callout>
+
+
+<Image src="https://files.readme.io/79923bce74d05b0178c3541a856d3dc7bc7315b9d7ea2b06e75e5fb0e7668587-image.png" alt="Trend Analysis" align="center" caption="Trend Analysis" border={true} />
+
 
 # View a Trend
 
@@ -60,13 +64,17 @@ To view a trend:
 1. Go to _Analytics_ > _Trends_ and select an event to analyze from the _EVENTS_ section to view a trend. For example, you want to analyze all the users who launched the app.
 2. Click **View Analysis**.
 
-<Image align="center" alt="View a Trend" border={true} caption="View a Trend" src="https://files.readme.io/f07eb1911a1e56da4f0f3fbe668a21f313b57abfd37ce778851a4fd5beeb5c0c-View_Trends_Main.jpg" />
+
+<Image src="https://files.readme.io/f07eb1911a1e56da4f0f3fbe668a21f313b57abfd37ce778851a4fd5beeb5c0c-View_Trends_Main.jpg" alt="View a Trend" align="center" caption="View a Trend" border={true} />
+
 
 The trend results are displayed. Hovering over the trendline shows the percentage increase or decrease for the selected time frame and other event information.
 
 You can change the view period of the trend on a daily or monthly basis:
 
-<Image align="center" alt="Viewing period" border={true} caption="Viewing period" src="https://files.readme.io/4430a0dfe39b74984c3aa6b32c7e07ac3f23831f4c38b5838a148f3755d33ea6-image.png" />
+
+<Image src="https://files.readme.io/4430a0dfe39b74984c3aa6b32c7e07ac3f23831f4c38b5838a148f3755d33ea6-image.png" alt="Viewing period" align="center" caption="Viewing period" border={true} />
+
 
 * _Daily_: The trend and data points are plotted on a daily basis.
 * _Monthly_: The trend and data points are plotted on a daily basis.
@@ -92,7 +100,9 @@ _Total Events_ displays the sum of event occurrences during the selected time pe
 
 For example, if a user places 3 orders in one day, all 3 `Order Placed` events are counted.
 
-<Image align="center" border={true} caption="Measure by Total Events" src="https://files.readme.io/f14752741c967e3d7f9e740f64e96d85d060a272c2ad46344219f8e61c13e0aa-image.png" />
+
+<Image src="https://files.readme.io/f14752741c967e3d7f9e740f64e96d85d060a272c2ad46344219f8e61c13e0aa-image.png" align="center" caption="Measure by Total Events" border={true} />
+
 
 Use this measure when you want to understand overall activity volume, such as:
 
@@ -106,7 +116,9 @@ _Unique Users_ displays the number of distinct users who performed the selected 
 
 For example, if a user places multiple orders in a single day, they are counted once for that day in the trend.
 
-<Image align="center" border={true} caption="Measure by Unique Users" src="https://files.readme.io/b61527e787f0b50129a68a77dfa97bcff0de733c64ebe199a1add2aba983814c-image.png" />
+
+<Image src="https://files.readme.io/b61527e787f0b50129a68a77dfa97bcff0de733c64ebe199a1add2aba983814c-image.png" align="center" caption="Measure by Unique Users" border={true} />
+
 
 Use this measure when you want to understand user participation, such as:
 
@@ -120,7 +132,9 @@ _Average per User_ displays the average number of times each unique user perform
 
 For example, if 1,000 users placed 5,000 orders during the selected period, the average per user is 5 orders.
 
-<Image align="center" border={true} caption="Measure by Average per Users" src="https://files.readme.io/1de717c723d5f607e9aa52b7819d41629d88889bf2530d4743b89fcda638d279-image.png" />
+
+<Image src="https://files.readme.io/1de717c723d5f607e9aa52b7819d41629d88889bf2530d4743b89fcda638d279-image.png" align="center" caption="Measure by Average per Users" border={true} />
+
 
 Use this measure when you want to analyze engagement intensity, such as:
 
@@ -134,12 +148,18 @@ _Summarize By_ allows you to aggregate trends using a numeric event property rat
 
 This option becomes available when the selected event contains a numeric property, such as, `order_amount`, `delivery_time`, `discount_value`, `duration` and so on.
 
-<Image align="center" border={true} caption="Measure by Summarize by (Event Property)" src="https://files.readme.io/9a79d96f6ea417505a373e038eee7a6ef80ac7ed2fcfeafae5e937728bd4992f-image.png" />
+
+<Image src="https://files.readme.io/9a79d96f6ea417505a373e038eee7a6ef80ac7ed2fcfeafae5e937728bd4992f-image.png" alt="Measure by Summarize by (Event Property)" align="center" caption="Measure by Summarize by (Event Property)" border={true} />
+
 
 You can summarize the trend using:
 
 * [Sum of Property Value](doc:trends-v2#sum-of-property-value)
 * [Average of Property Value](doc:trends-v2#average-of-property-value)
+
+
+<Image src="https://files.readme.io/a15a0fc8337db2823db99c2bdac8f07d754e8bb2509e629da22ba3cf84bdcdb7-image.png" alt="Measure Sum and Average of a Trend Analysis" align="center" caption="Measure Sum and Average of a Trend Analysis" border={true} />
+
 
 ### Sum of Property Value
 
@@ -153,15 +173,15 @@ Displays the average value of the selected property per event occurrence.
 
 For example, summarizing `Order Placed` by `order_amount` using average shows the average order value over time.
 
-<Image align="center" border={true} src="https://files.readme.io/a15a0fc8337db2823db99c2bdac8f07d754e8bb2509e629da22ba3cf84bdcdb7-image.png" className="border" />
-
 ## Active Percentage (%)
 
 Active Percentage displays the proportion of users who performed the selected event out of the total active users during the selected period.
 
 For example, if 10,000 users launched the app (qualifying event) and 4,000 users placed an order, the Active Percentage for `Order Placed` is 40%.
 
-<Image align="center" border={true} caption="Measure by Active Percentage (%)" src="https://files.readme.io/21bf244d0982952c0be416bbef173e699fc8bfb7d86e9e258c1a4411ef5be98f-image.png" />
+
+<Image src="https://files.readme.io/21bf244d0982952c0be416bbef173e699fc8bfb7d86e9e258c1a4411ef5be98f-image.png" align="center" caption="Measure by Active Percentage (%)" border={true} />
+
 
 Use this measure to understand behavioral penetration among active users, such as:
 
@@ -214,7 +234,7 @@ You can use predefined event-level and property-level functions to create meanin
 
 When creating a custom metric, follow these guidelines:
 
-* You can combine available metrics using operators such as +, -, *, /, and parentheses ().
+* You can combine available metrics using operators such as +, -, \*, /, and parentheses ().
 * You can compare up to four formulas in the same configuration by separating them with a semicolon (;).
 * The formula must be mathematically valid.
 
@@ -226,19 +246,23 @@ You can define the following formula as:
 
 `PROPSUM ( Charged.Amount) / TOTALS ( Charged )`
 
-<Image align="center" border={true} caption="Measure by Formula" src="https://files.readme.io/950fd5560b351627bc469a195d0ce630ad318bb8933f3ea63c042ce98f73eb80-image.png" />
+
+<Image src="https://files.readme.io/950fd5560b351627bc469a195d0ce630ad318bb8933f3ea63c042ce98f73eb80-image.png" align="center" caption="Measure by Formula" border={true} />
+
 
 ### Using Multiple Formulas in One Analysis
 
 Trends 2.0 allows you to compare up to four formulas in a single chart. Each formula is calculated independently and plotted as its own series on the same chart. This allows you to visually compare related business metrics without creating multiple analyses. Keep formulas logically related to avoid clutter and improve interpretability.
 
-<Image align="center" border={true} caption="Multiple Formulas in One Analysis" src="https://files.readme.io/efbd2f5b3aa77f09d8d86b48791b61159e1be6b908441f7683bb092cc1426fdf-image.png" />
+
+<Image src="https://files.readme.io/efbd2f5b3aa77f09d8d86b48791b61159e1be6b908441f7683bb092cc1426fdf-image.png" align="center" caption="Multiple Formulas in One Analysis" border={true} />
+
 
 Use multiple formulas when you want to:
 
 * Compare volume vs value (for example, orders vs revenue)
 * Compare totals vs averages
-* Analyze both numerator and denominator of a ratio
+* Analyze both the numerator and the denominator of a ratio
 * Identify what is driving growth (more users vs higher spend per user)
 
 To add multiple formulas, separate each formula using a semicolon (;).
@@ -251,11 +275,13 @@ This will display the following three separate trend lines:
 * Total Purchasing Users
 * Revenue per Purchasing User
 
-<Image align="center" border={true} caption="Measure by Multiple Formulas in One Trend" src="https://files.readme.io/d8faa03164c0e2cdde28a3cad4999a844d4a0b0e61b0918fcc887f6fd0f2e809-image.png" />
+
+<Image src="https://files.readme.io/d8faa03164c0e2cdde28a3cad4999a844d4a0b0e61b0918fcc887f6fd0f2e809-image.png" align="center" caption="Measure by Multiple Formulas in One Trend" border={true} />
+
 
 ### Using the Y-Axis Title Field Effectively
 
-When using formulas, especially ratio or derived metrics, the Y-axis may no longer represent simple counts. The Y-axis Title field allows you to clearly describe what the chart is measuring. The axis title should reflect the metric being calculated, not the underlying event. Using clear axis titles ensures that anyone viewing the chart can immediately understand what the trend represents without needing to interpret the formula itself.
+When using formulas, especially ratio or derived metrics, the Y-axis may no longer represent simple counts. The Y-axis Title field lets you clearly describe what the chart measures. The axis title should reflect the metric being calculated, not the underlying event. Using clear axis titles ensures that anyone viewing the chart can immediately understand what the trend represents without needing to interpret the formula itself.
 
 The following examples illustrate how to translate formulas into stakeholder-friendly axis titles:
 
@@ -266,11 +292,11 @@ The following examples illustrate how to translate formulas into stakeholder-fri
 
 ### Best Practices for Y-Axis Titles
 
-Follow these best practices when writing Y-Axis Titles for your formulas::
+Follow these best practices when writing Y-Axis Titles for your formulas:
 
 * Use business-friendly language instead of function names
 * Avoid technical terms like PROPSUM or UNIQUES
-* Clearly indicate if the metric is a percentage or ratio
+* Clearly indicate if the metric is a percentage or a ratio
 * Keep titles concise but descriptive
 * If comparing multiple formulas, choose a neutral but descriptive title such as:
   * Revenue & User Metrics
@@ -286,7 +312,9 @@ To view a trend, perform the following steps:
 2. Click **Add Event** to add another event for comparison.
 3. Click **View Analysis**.
 
-<Image align="center" alt="Compare Trends for different events" border={true} caption="Compare Trends" title="Select Trend Options and Click View Trend" src="https://files.readme.io/9123233f0a9485ce41f62ece0f3a3f26421a450f9da8233d9bf4933d4c16384d-Compare_Trends.jpg" width="100%" />
+
+<Image src="https://files.readme.io/9123233f0a9485ce41f62ece0f3a3f26421a450f9da8233d9bf4933d4c16384d-Compare_Trends.jpg" alt="Compare Trends for different events" align="center" width="100%" caption="Compare Trends" border={true} />
+
 
 ## Filter by Event Property
 
@@ -300,11 +328,13 @@ To filter a trend by event property:
 
 The resulting trend filters users who viewed notifications from an in-app notification. It does not include users who viewed other types of notifications, such as Email or the Web. Any further analysis of this event will focus exclusively on users who viewed notifications from the In-App campaign.
 
-<Image align="center" alt="Filter Event by Property" border={true} caption="Filter Event by Property" src="https://files.readme.io/0ae068a6ae0702833c24dff297308064596016dc0cd218f9416d585b4b4028ff-Trends_filter_by_event.jpg" />
+
+<Image src="https://files.readme.io/0ae068a6ae0702833c24dff297308064596016dc0cd218f9416d585b4b4028ff-Trends_filter_by_event.jpg" alt="Filter Event by Property" align="center" caption="Filter Event by Property" border={true} />
+
 
 ## Split by Event Property
 
-You can split the analysis of your event based on specific event properties. For example, consider the `Charged` event, which indicates a user has made a purchase. You can split this event by its underlying properties, such as `Payment Mode` and `Amount`. This divides your single `Charged` trend line into multiple lines, with each trend line representing the value of a different event property. This allows you to visualize the payment method your users prefer.
+You can split your event analysis by specific event properties. For example, consider the `Charged` event, which indicates a user has made a purchase. You can split this event by its underlying properties, such as `Payment Mode`, `Amount`. This divides your single `Charged` trend line into multiple lines, with each trend line representing the value of a different event property. This allows you to visualize the payment method your users prefer.
 
 To split a trend by event property:
 
@@ -312,7 +342,9 @@ To split a trend by event property:
 2. Click **+ Split by** to divide the trend by the event properties, such as `payment method`.
 3. Click **View Analysis**.
 
-<Image align="center" alt="Compare trends by event properties" border={true} caption="Compare trends by event properties" src="https://files.readme.io/d5b72c9af7314d6543c2acc901717ba58a02e2d1c194ce415390b80799b7ee36-image.png" />
+
+<Image src="https://files.readme.io/d5b72c9af7314d6543c2acc901717ba58a02e2d1c194ce415390b80799b7ee36-image.png" alt="Compare trends by event properties" align="center" caption="Compare trends by event properties" border={true} />
+
 
 The trend for each event property is displayed.
 
@@ -322,23 +354,11 @@ All the split event properties are listed at the bottom of the right pane. You c
 * Select or deselect event properties from the trend by selecting the corresponding boxes.
 * Sort the event properties from highest to lowest values, or vice versa, by clicking the arrows.
 
-> 📘 Maximum Split
->
-> You can split an event by up to two event properties at a time.
+<Callout icon="📘" theme="info">
+  ### Maximum Split
 
-# Compare Trends Between Time Periods
-
-You can compare event trends against the previous period, such as day, week, month, and year.
-
-To compare trends across time periods, perform the following steps:
-
-1. Go to _Analytics_ > _Trends_ and select an event to analyze and view a trend. You can also filter your analysis further by the event property.
-2. Select the date range for the trend. The trend displays.
-3. From the _Analysis_ pane, select the relevant time period from the _Compare_ list.
-
-A new dotted line appears for each series of the event data to display the difference in the values.
-
-<Image align="center" alt="Compare across time periods" border={true} caption="Compare across Time Periods" src="https://files.readme.io/ab0516780fae8f74f51e41ffbabc0bb0ca9d0f303dc43b9802d2ca69991800ff-Compare_across_timelines.gif" />
+  You can split an event by up to two event properties at a time.
+</Callout>
 
 # Compare Trends for Segments
 
@@ -351,15 +371,19 @@ To compare trends across segments:
 3. Select a segment from the list or create an Ad hoc segment.
 4. Click **View Analysis**.
 
-<Image align="center" alt="Compare Trends Across Segments" border={true} caption="Compare Trends Across Segments" src="https://files.readme.io/372d2522452f6264308263ee5c232a65feca2aef22f238c82cb8e5c4433993ba-image.png" />
 
-> 📘 Comparison Considerations
->
-> You must consider the following when comparing trends across different segments:
->
-> * You can compare a saved or an ad-hoc segment.
-> * You can compare a maximum of five segments.
-> * You cannot split the trend by user property and compare it by segments simultaneously.
+<Image src="https://files.readme.io/372d2522452f6264308263ee5c232a65feca2aef22f238c82cb8e5c4433993ba-image.png" alt="Compare Trends Across Segments" align="center" caption="Compare Trends Across Segments" border={true} />
+
+
+<Callout icon="📘" theme="info">
+  ### Comparison Considerations
+
+  You must consider the following when comparing trends across different segments:
+
+  * You can compare a saved or an ad-hoc segment.
+  * You can compare a maximum of five segments.
+  * You cannot split the trend by user property and compare it by segments simultaneously.
+</Callout>
 
 ## Ad hoc Segments
 
@@ -367,11 +391,15 @@ When performing a trend analysis, you can use available user segments or create 
 
 1. From the _SEGMENT_ section, click the edit icon.
 
-<Image align="center" alt="Create Adhoc Segment" border={true} caption="Create Adhoc Segment" src="https://files.readme.io/3eb2702d462e999b6155fa3b76bce5ff4dd9efb5e9265c676f5ef8bb7d452046-image.png" width="40% " />
+
+<Image src="https://files.readme.io/3eb2702d462e999b6155fa3b76bce5ff4dd9efb5e9265c676f5ef8bb7d452046-image.png" alt="Create Adhoc Segment" align="center" width="40% " caption="Create Adhoc Segment" border={true} />
+
 
 2. Click **Add Rule** to add a condition or click [Add Rule Group](doc:segmentation-rules) to add multiple conditions.
 
-<Image align="center" alt="Add Rules" border={true} caption="Add Rules" src="https://files.readme.io/0f6c55c2577f3d86d157776fcb521eff4938a783049e90261cd57c621105ee11-image.png" width="70% " />
+
+<Image src="https://files.readme.io/0f6c55c2577f3d86d157776fcb521eff4938a783049e90261cd57c621105ee11-image.png" alt="Add Rules" align="center" width="70% " caption="Add Rules" border={true} />
+
 
 For information about creating segments, refer to [Segmentation](https://docs.clevertap.com/docs/segmentation).
 
@@ -387,7 +415,9 @@ To split a trend by user property:
 2. Select the user property from the _Split by user_ property list under the _SEGMENT_ section
 3. Click **View Analysis**.
 
-<Image align="center" alt="Split Segment by User Property" border={true} caption="Split Segment by User Property" src="https://files.readme.io/1729dee2d0d09682ba1fcef09cfdad337364111ec2c738a9271690c1cb046d75-image.png" />
+
+<Image src="https://files.readme.io/1729dee2d0d09682ba1fcef09cfdad337364111ec2c738a9271690c1cb046d75-image.png" alt="Split Segment by User Property" align="center" caption="Split Segment by User Property" border={true} />
+
 
 The trend for each user property displays.  All the split user properties are listed at the bottom. You can do the following:
 
@@ -395,9 +425,11 @@ The trend for each user property displays.  All the split user properties are li
 * Select or clear the user properties from the trend by selecting the specific checkbox.
 * Sort the user properties from highest to lowest value and vice versa using the arrows.
 
-> 📘 Maximum Split
->
-> You can split by a maximum of two user properties. Split by properties is not available when comparing two or more segments.
+<Callout icon="📘" theme="info">
+  ### Maximum Split
+
+  You can split by a maximum of two user properties. Split by properties is not available when comparing two or more segments.
+</Callout>
 
 # Operations
 
@@ -405,26 +437,20 @@ Once you generate a trend analysis, you can perform several actions from the Ana
 
 The available operations help you move from analysis to action without rebuilding the query.
 
-## Compare with Previous Period
+## Compare with the Previous Period
 
-You can compare the selected trend against a previous time period to understand whether the metric is increasing, decreasing, or remaining stable.
+You can compare the selected trend with a previous period to determine whether the metric is increasing, decreasing, or remaining stable.
 
-From the **Compare** list, you can compare the current analysis with:
+From the **Compare** dropdown, you can compare the current analysis with:
 
 * Previous Day
 * Previous Week
 * Previous Month
 * Previous Year
 
-<Image align="center" border={true} caption="Compare Trends with Previous Period" src="https://files.readme.io/20f0e7b4063f57f2b83fe2c10285b82346729a5c8f819b732953ddf6ff7727c9-image.png" />
 
-When a comparison is selected, the chart displays an additional comparison series for each event, for example, two trend lines denoting different weeks. It allows you to visually compare how the selected metric has changed relative to the earlier period.
+<Image src="https://files.readme.io/f6594b38d2ec432dcda05ce29d00943f1a0c19eba037b41e47ddfaf8e7aa3b9b-image.png" alt="Compare Trends with the Previous Period" align="center" caption="Compare Trends with the Previous Period" border={true} />
 
-Use comparison when you want to:
-
-* Measure week-over-week or month-over-month changes
-* Identify growth or decline trends
-* Evaluate the impact of launches, campaigns, or seasonality
 
 ## Change Chart Type
 
@@ -437,31 +463,41 @@ The available chart types are:
 * [Pie](doc:trends-v2#pie)
 * [Number](doc:trends-v2#number)
 
-<Image align="center" border={true} caption="View Trend Types" src="https://files.readme.io/176733ea271f70bf590c0233bfb9a73d74bbf0503d3bc62acc05feb20ca8f95f-image.png" />
+
+<Image src="https://files.readme.io/176733ea271f70bf590c0233bfb9a73d74bbf0503d3bc62acc05feb20ca8f95f-image.png" align="center" caption="View Trend Types" border={true} />
+
 
 ### Line
 
 Use the line chart to analyze how the selected metric changes over time. This is the default view for most trend analyses.
 
-<Image align="center" border={true} caption="View Trend in Line Chart" src="https://files.readme.io/0cb962f9b78703ad8162a873ba119def4544d5024930ad043e29a29dc71f82f0-image.png" />
+
+<Image src="https://files.readme.io/0cb962f9b78703ad8162a873ba119def4544d5024930ad043e29a29dc71f82f0-image.png" align="center" caption="View Trend in Line Chart" border={true} />
+
 
 ### Bar
 
 Use the bar chart to clearly compare metric values across selected events or time buckets.
 
-<Image align="center" border={true} caption="View Trend in Bar Chart" src="https://files.readme.io/d0fce7cdd59a06cf9707586781d1ce3c63a87971596dec0d9d46f635434456db-image.png" />
+
+<Image src="https://files.readme.io/d0fce7cdd59a06cf9707586781d1ce3c63a87971596dec0d9d46f635434456db-image.png" align="center" caption="View Trend in Bar Chart" border={true} />
+
 
 ### Pie
 
 Use the pie chart to understand the contribution to the total value across selected events or categories.
 
-<Image align="center" border={true} caption="View Trend in Pie Chart" src="https://files.readme.io/fa7d097d372f350aaab73ee299f1f59a57091c04f01ef1d6bba944477d3556b5-image.png" />
+
+<Image src="https://files.readme.io/fa7d097d372f350aaab73ee299f1f59a57091c04f01ef1d6bba944477d3556b5-image.png" align="center" caption="View Trend in Pie Chart" border={true} />
+
 
 ### Number
 
 Use the number view when you want to display the selected metric as a single summarized value rather than as a time-series chart.
 
-<Image align="center" border={true} caption="View Trend in Number Chart" src="https://files.readme.io/09a86c3584af383e55aaee28467fe7317a6254e4b2640878a8f4ade5c3569cdf-image.png" />
+
+<Image src="https://files.readme.io/09a86c3584af383e55aaee28467fe7317a6254e4b2640878a8f4ade5c3569cdf-image.png" align="center" caption="View Trend in Number Chart" border={true} />
+
 
 ## Inspect Data Points
 
@@ -474,17 +510,22 @@ The tooltip can show information such as:
 * Metric value
 * Split-by value, if applicable
 
-<Image align="center" border={true} caption="Inspect Data Points from a Trend" src="https://files.readme.io/d9d8608d1145f67105e821f4846f3e0c962ffacb41917adf6c26f590dd480453-image.png" />
+
+<Image src="https://files.readme.io/dbb69c34c27970e90cc91f5ba998174b805ab1e28ea4bfee751514c6b1b8af9a-image.png" alt="Inspect Data Points from a Trend" align="center" caption="Inspect Data Points from a Trend" border={true} />
+
 
 ## Save as Segment
 
-You can create a user segment directly from a data point in the Trend chart to analyze or target users who performed a specific action during a selected time interval.
+You can create a user segment directly from a data point in the Trend chart to analyze or target users who performed a specific action during a selected time interval. Once you save a segment from Trend Analysis, it becomes available across the CleverTap dashboard and can be used in campaign targeting, analytics, segmentation, and other product features.
 
-Click a data point (for example, a point on a line chart or a bar in a bar chart), and an action menu with _Save as Segment_ appears. Selecting _Save as Segment_ opens the Segment Builder, where the system automatically generates a segment query based on the event, filters, segment conditions, and the specific data point you selected.
+To save as a segment:
 
-For example, if you click a data point representing the Charged event on a specific date, the segment builder generates a query for users who perfomed the Charged event during that selected time range.
+1. Click a data point on the Trends chart.
+2. Click **Save as Segment**. The dashboard opens the Segment Builder, where the system automatically generates a segment query based on the event, filters, segment conditions, and the selected data point.
 
-<Image align="center" border={true} caption="Save as Segment" src="https://files.readme.io/ede8326f92de86fee80bef29dd969edfba28ab927c2905ff80eed0de10ed5040-image.png" />
+
+<Image src="https://files.readme.io/ec1d2f535006f7284fc68933bf2be3c970900b3c5669099aaf066f22faf6f687-2026-09-10_15-12-18_1.gif" alt="Save as Segment" align="center" caption="Save as Segment" border={true} />
+
 
 You can then:
 
@@ -498,7 +539,44 @@ This feature is useful when you want to:
 * Retarget users who performed a specific event within a time window
 * Build campaigns based on behavioral insights discovered in the trend analysis
 
-Once save a segment from Trend Analysis, it becomes available across the CleverTap dashboard and can be used in campaign targeting, analytics, segmentation, and other product features.
+## Create Campaign
+
+Engage users directly from your Trends analysis behind a data point, without rebuilding a separate segment.
+
+To create a campaign from a data point:
+
+1. Click a data point on the Trends chart.
+2. Click **Create Campaign**.
+3. Review the _Reachable users_ section. It displays the total number of targetable users and their channel-wise reachability across Mobile Push, Email, SMS, WhatsApp, and Web Push.
+4. Select the channel for your engagement, for example, Email.
+5. Click **Continue**. The campaign creation page opens with the selected users as your target audience.
+
+
+<Image src="https://files.readme.io/905ee448da025ed25bdc25176fb19c883e4faf1ab66175210e514941c831c550-2026-09-10_15-06-45_1.gif" alt="Create Campaign" align="center" caption="Create Campaign" border={true} />
+
+
+For more information, refer to [Create Message](doc:create-message-email).
+
+## View Sample Users
+
+View a sample of the users behind any data point in your Trends analysis. This helps you validate your analysis by inspecting the real user profiles that contributed to the numbers.
+
+To view sample users:
+
+1. Click a data point on the Trends chart.
+2. Click **View Sample Users**. The _Sample users_ window displays a sample of the user profiles that performed the event on the selected date.
+
+
+<Image src="https://files.readme.io/42483c974b6e7833881eb87a2403d6058f2a7b3d6a696d739cf36c316cb97e73-2026-09-10_15-07-40_1.gif" alt="View Sample Users" align="center" caption="View Sample Users" border={true} />
+
+
+You can click a user to open their user profile page and inspect their events and properties. Use it to spot-check your analysis rather than as a complete user list.
+
+<Callout icon="📘" theme="info">
+  ### Sample Users Are Indicative
+
+  The _Sample Users_ window displays up to 20 sample users.
+</Callout>
 
 ## Add to Board
 
@@ -510,7 +588,9 @@ To add a trend to a board:
 2. Enter the Trend Analysis name in _Chart name_ and select an existing board or create a new one.
 3. Click **Add to board**.
 
-<Image align="center" border={true} caption="Add a Trend Analysis to the Board" src="https://files.readme.io/e8c2b75e4edea678d552504241a8bc32a1904441e7183f11c011af9e93ebfc40-2026-03-09_11-00-18_1.gif" />
+
+<Image src="https://files.readme.io/e8c2b75e4edea678d552504241a8bc32a1904441e7183f11c011af9e93ebfc40-2026-03-09_11-00-18_1.gif" align="center" caption="Add a Trend Analysis to the Board" border={true} />
+
 
 Use boards when you want to:
 
@@ -530,7 +610,9 @@ To bookmark a Trend:
 2. Enter a descriptive name to help you identify the analysis later.
 3. Click **Bookmark**.
 
-<Image align="center" border={true} caption="Bookmark a Trend Analysis" src="https://files.readme.io/995c8821d9737cb62e89dd0f456fd44fbbc254178a0b7b84bb36296b1e3ca1ef-2026-03-09_11-06-23_1.gif" />
+
+<Image src="https://files.readme.io/995c8821d9737cb62e89dd0f456fd44fbbc254178a0b7b84bb36296b1e3ca1ef-2026-03-09_11-06-23_1.gif" align="center" caption="Bookmark a Trend Analysis" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Note
@@ -542,7 +624,9 @@ To bookmark a Trend:
 
 You can export the generated trend analysis for reporting or offline analysis.
 
-<Image align="center" border={true} caption="Export a Trend Analysis" src="https://files.readme.io/876685f7bb8d6ea2a8796f2009e3d7aa66b34b4c14e5ef7b85ce8f78de852fb4-image.png" />
+
+<Image src="https://files.readme.io/876685f7bb8d6ea2a8796f2009e3d7aa66b34b4c14e5ef7b85ce8f78de852fb4-image.png" align="center" caption="Export a Trend Analysis" border={true} />
+
 
 Depending on the selected view, Trends supports export options such as:
 

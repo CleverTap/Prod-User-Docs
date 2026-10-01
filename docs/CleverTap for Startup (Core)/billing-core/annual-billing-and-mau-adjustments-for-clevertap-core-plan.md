@@ -4,7 +4,9 @@ excerpt: >-
   Understand how billing is adjusted with time and MAU usage in the CleverTap
   Core Annual Plan.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -2,7 +2,9 @@
 title: CleverTap Leap Program Offer (Core)
 excerpt: Learn more about the terms and conditions of the CleverTap Leap Program offer.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

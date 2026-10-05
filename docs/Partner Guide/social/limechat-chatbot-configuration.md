@@ -46,7 +46,7 @@ After saving, CleverTap generates a _token_ and displays the _Proxy Endpoints_ f
 The following fields are available in the _Add Chatbot configuration_ form:
 
 
-<Image src="https://files.readme.io/3d6d919e5b1c123bc5cf494f0ce336fcafc0ddee9a0ffe107c8dee5ba3ff6b91-Chatbot_add_config.png" align="center" caption="Add Chatbot Configuration (@krishna, alt+text missing)" border={true} />
+<Image src="https://files.readme.io/3d6d919e5b1c123bc5cf494f0ce336fcafc0ddee9a0ffe107c8dee5ba3ff6b91-Chatbot_add_config.png" align="center" caption="Add Chatbot Configuration" border={true} />
 
 
 | Field            | Required | Description                                                                                                                                                                                                                                                              |

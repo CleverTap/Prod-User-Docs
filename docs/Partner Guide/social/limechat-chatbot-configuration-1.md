@@ -3,6 +3,8 @@ title: Limechat Chatbot Configuration
 excerpt: Learn how to integrate Limechat with CleverTap for WhatsApp Chatbot.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -3,6 +3,8 @@ title: Target Segment
 excerpt: Define the user segment to reach your users.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

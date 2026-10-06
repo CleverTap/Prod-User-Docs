@@ -1,6 +1,6 @@
 ---
-title: Lifecycle Agents
-excerpt: Learn how to create and manage Lifecycle Agents
+title: Lifecycle Decisioning Agents
+excerpt: Learn how to create and manage Lifecycle Decisioning Agents
 deprecated: false
 hidden: true
 metadata:
@@ -8,34 +8,34 @@ metadata:
 ---
 # Overview
 
-Lifecycle Agent is an always-on, AI-powered marketing agent that manages a single lifecycle goal, such as First Purchase, Repeat Purchase, or Winback for your user segment. You only have to configure the agent once by specifying a goal, a user segment, messaging templates, and guardrails. The agent then continuously decides what to send, on which channel, and when, for each individual user, until that user converts or exits.
+Lifecycle Decisioning Agent is an always-on, AI-powered marketing agent that manages a single lifecycle goal, such as First Purchase, Repeat Purchase, or Winback for your user segment. You only have to configure the agent once by specifying a goal, a user segment, messaging templates, and guardrails. The agent then continuously decides what to send, on which channel, and when, for each individual user, until that user converts or exits.
 
-A traditional user Journey is a static messaging path for all users in that journey.  However, a Lifecycle Agent creates a unique messaging path for each user. It operates in a continuous cycle: it reads each user's real-time behavior, decides the next-best action, sends it automatically, and uses reinforcement learning models to improve future decisions autonomously.
+A traditional user Journey is a static messaging path for all users in that journey.  However, a Lifecycle Decisioning Agent creates a unique messaging path for each user. It operates in a continuous cycle: it reads each user's real-time behavior, decides the next-best action, sends it automatically, and uses reinforcement learning models to improve future decisions autonomously.
 
 ## Prerequisites
 
-Confirm the following before you create a Lifecycle Agent:
+Confirm the following before you create a Lifecycle Decisioning Agent:
 
-- You have Lifecycle Agent access enabled on your CleverTap account.
-- You have a few message templates ready for the agent to use across different channels. Lifecycle Agent supports the following channels: Push Notifications, Email, SMS, WhatsApp, Web Push, and Inbox.
+- You have Lifecycle Decisioning Agent access enabled on your CleverTap account.
+- You have a few message templates ready for the agent to use across different channels. Lifecycle Decisioning Agent supports the following channels: Push Notifications, Email, SMS, WhatsApp, Web Push, and Inbox.
 - You have the necessary permissions to create Campaigns and agents on your CleverTap account.
 
 <Callout icon="📘" theme="info">
   ### **Note**
 
-  Lifecycle Agent is currently in Private Beta. Contact your CleverTap account manager to request access.
+  Lifecycle Decisioning Agent is currently in Private Beta. Contact your CleverTap account manager to request access.
 </Callout>
 
-## Create a Lifecycle Agent
+## Create a Decisioning Lifecycle Agent
 
-Creating a Lifecycle Agent involves defining your goal, identifying your user segment, choosing an engagement strategy, adding messages across different channels, and configuring guardrails.&#x20;
+Creating a Lifecycle Decisioning Agent involves defining your goal, identifying your user segment, choosing an engagement strategy, adding messages across different channels, and configuring guardrails.&#x20;
 
-To create a Lifecycle Agent, go to _Decisioning_ > _Agents_ > _Create Agent._
+To create a Lifecycle Decisioning Agent, go to _Decisioning_ > _Agents_ > _Create Agent._
 
 The following image shows the _Create New Agent_ workflow with the five-step navigation bar:
 
 
-<Image src="https://files.readme.io/9bdc70422b03a572e4a7181692bf8e7a4499cc3f1054148d3d9d1f95b03b766f-image.png" alt="Create new lifecycle agent" align="center" caption="Create new LIfecycle Agent" border={true} />
+<Image src="https://files.readme.io/9bdc70422b03a572e4a7181692bf8e7a4499cc3f1054148d3d9d1f95b03b766f-image.png" alt="Create new lifecycle decisioning agent" align="center" caption="Create new LIfecycle Decisioning Agent" border={true} />
 
 
 You can create a new agent with a five-step workflow:&#x20;

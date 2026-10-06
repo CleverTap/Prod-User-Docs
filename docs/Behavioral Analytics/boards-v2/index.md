@@ -154,7 +154,7 @@ You can add tiles from any of the following analyses:
 | Pivots  | Tabular breakdowns of metrics by properties                    |
 | Cohorts | Retention tables for user groups over time                     |
 | Flows   | User path visualizations between events                        |
-| Note    | Gives context, ownership, or instructions right inside a board |
+| Text    | Gives context, ownership, or instructions right inside a board |
 
 <Callout icon="📘" theme="info">
   #### Important
@@ -216,7 +216,7 @@ The table below shows how board-level filters respond to the board-level filters
 | :------------------------------- | :---------------------- | :------------------------- |
 | Trends, Funnels, Pivots, Cohorts | Yes                     | Yes                        |
 | Flows                            | No                      | No                         |
-| Note                             | No                      | No                         |
+| Text                             | No                      | No                         |
 
 # Tile Operations
 
@@ -261,7 +261,7 @@ Updates a tile's display name as it appears on the board. This does not affect t
 Use _Rename Tile_ when the default analysis name is not descriptive enough for the board context. For example, rename _Untitled Trends_ to _Weekly Signups by Channel_.
 
 
-<Image src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" align="center" caption="Renaming a Note Tile" border={true} />
+<Image src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" align="center" caption="Renaming a Text Tile" border={true} />
 
 
 ## Rename Legend
@@ -355,7 +355,7 @@ Yes. When you click _Edit_ on a tile, it opens the original analysis. Any change
 
 ### Q. Why is my board-level filter not affecting some tiles?
 
-The _Flows_ and _Note_ tiles do not respond to date or segment filters. For more information, refer to the [Filter Behavior by File Types](doc:boards-v2#filter-behavior-by-file-types).
+The _Flows_ and _Text_ tiles do not respond to date or segment filters. For more information, refer to the [Filter Behavior by File Types](doc:boards-v2#filter-behavior-by-file-types).
 
 ### Q. Who can delete a board?
 

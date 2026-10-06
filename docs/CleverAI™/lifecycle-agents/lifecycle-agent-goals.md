@@ -26,7 +26,7 @@ To complete the _Goals_ tab:
 
 5. (Optional) Select the **User Re-entry** option to allow users who have already completed the goal, or whose timeout window has expired, to re-enter the agent as a new episode. Enable this when users can achieve the goal more than once. For example, if your goal is Repeat Purchase, a user who completes a purchase must re-enter the agent so the agent can nudge them toward a second purchase. If your goal is First Purchase, re-entry is typically not required.
 
-6. Set the _Timeout_ (in days). This is the maximum duration the agent keeps trying to convert each user. When a user's timeout window expires without a goal completion, the user exits the agent.
+6. Set the _Timeout_ (in days). This is the maximum duration the agent keeps trying to convert each user. When a user's timeout window expires without completing a goal, the user exits the agent.
 
 7. Under _Guiding Events_, configure the user behavioral signals the agent uses for reinforcement learning. The agent's decisions are rewarded or penalized based on the favorable or unfavorable events, respectively.<br />a. Click **Add Event** under _Favorable Events_ to add events that show a positive user intent (for example, `Product Viewed`, `Add to Cart`). Each favorable event sends a positive signal to the agent.<br />b. Click **Add Unfavorable Event** under _Unfavorable Events_ to add events that show negative user intent (for example, `Channel Unsubscribed`, `App Uninstalled`).&#x20;
 

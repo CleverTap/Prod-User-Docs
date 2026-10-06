@@ -3,6 +3,8 @@ title: Activity
 excerpt: Learn how to view the interaction and messages between the agent and the user.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

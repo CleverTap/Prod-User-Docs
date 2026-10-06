@@ -387,12 +387,30 @@ The following table displays all the events supported by the CleverTap Web SDK:
 </Table>
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   The Charged and Checkout events are received through Shopify Webhooks. Therefore, these events are be received at CleverTap only for the users who have logged in.
 </Callout>
 
-##### Webhook Supported Events
+#### Webhooks for Updating Profile Properties
+
+The following Shopify webhooks update the corresponding customer profile properties in CleverTap. These webhooks do not create events in CleverTap.
+
+| Webhooks to Subscribe                           | Profile property           |
+| ----------------------------------------------- | -------------------------- |
+| **CUSTOMER_EMAIL_MARKETING_CONSENT_UPDATED**    | Email Marketing Consent    |
+| **CUSTOMER_MARKETING_CONSENT_UPDATED**          | SMS Marketing Consent      |
+| **CUSTOMER_WHATSAPP_MARKETING_CONSENT_UPDATED** | WhatsApp Marketing Consent |
+| **CUSTOMER_TAGS_ADDED**                         | Tags                       |
+| **CUSTOMER_TAGS_REMOVED**                       | Tags                       |
+
+<Callout icon="📘" theme="info">
+  #### Customer Purchasing Summary
+
+  The `CUSTOMER_PURCHASING_SUMMARY` webhook updates the Total Spent, Orders Count, and Last Order ID profile properties and also raises an event in CleverTap.
+</Callout>
+
+#### Webhook Supported Events
 
 The following events are supported via the Shopify Webhook:
 
@@ -603,9 +621,13 @@ The following events are supported via the Shopify Webhook:
 </Table>
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
-  All the above-listed Webhook events will only be captured for logged-in users.
+  - All the above-listed Webhook events are captured only for logged-in users.
+  - Items will be a part of event properties if ORDERS_PAID is selected as charged.
+  - If a checkout webhook (CHECKOUTS_CREATE/UPDATE/DELETE) has an associated `customer` object, the full customer property set is prepended to the payload: customer id, email, accepts marketing, created at, updated at, first name, last name, orders count, total spent, phone, tags. If no `customer` object is present (e.g., guest checkout), these are omitted.
+  - The block (Amount, Currency, email, Ship_country/region/city, Items, Checkout token, Charged ID) is not exclusive to `ORDERS_PAID` — it's appended to every order webhook variant, triggered by whichever event is configured as "Charged" in the dashboard, not the ORDERS_PAID topic specifically.
+  - The checkout token stored in the Order webhook is mapped to the corresponding Checkout webhook, linking the Order event to the Checkout event.
 </Callout>
 
 ### Catalog Sync

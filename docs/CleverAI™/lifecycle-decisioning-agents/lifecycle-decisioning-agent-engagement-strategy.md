@@ -21,10 +21,10 @@ If you selected Manually defined, the Engagement stages section appears. Use it 
 
 Every user enters Stage 1 upon entering the agent and exits to the next stage when the stage's exit rules are met. Users move to any of the subsequent stages when they perform the event defined by the stage's entry rules.&#x20;
 
-The following image shows the _Engagement Strategy_ tab with stages:
+The following image shows the _Engagement Strategy_ tab with steps:
 
 
-<Image src="https://files.readme.io/92d16040bf2a172e18e5081e39489608ec831bb8669d9b662cb80eaa785314b7-image.png" alt="Engagement Strategy" align="center" caption="Engagement Strategy" border={true} />
+<Image src="https://files.readme.io/81324db4f19eda5ec92b012a51ccc288d120e8df2696257c94d6d8465e46a472-image.png" alt="Engagement Strategy" align="center" caption="Engagement Strategy" border={true} />
 
 
 <br />

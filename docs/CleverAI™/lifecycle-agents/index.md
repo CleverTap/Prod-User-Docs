@@ -3,6 +3,8 @@ title: Lifecycle Decisioning Agents
 excerpt: Learn how to create and manage Lifecycle Decisioning Agents
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

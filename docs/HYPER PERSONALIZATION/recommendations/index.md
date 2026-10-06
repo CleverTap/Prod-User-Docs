@@ -17,9 +17,11 @@ The recommendations feature is key in helping marketers engage and retain their 
 Using recommendations in campaigns and journeys will boost overall engagement throughout the user’s lifecycle across multiple channels such as, in-apps, batch campaigns, or push notifications. Powered by a scalable architecture, this feature can cater to the millions of users you are trying to reach.
 
 <Callout icon="📘" theme="info">
-  ### Availability
+  #### Availability
 
-  Recommendations feature is available on the all plans. Acounts on Ultimate plan can use the new and enhanced [Recommendations](doc:recommendations-agent) feature instead. To access the feature, contact you Customer Success Manager.
+  Recommendations feature is available only on the _Cutting Edge_ plan.&#x20;
+
+  The new and enhanced [Recommendations](doc:recommendations-agent) feature is available only on the _Ultimate_ plan. To access this feature, contact your Customer Success Manager.
 </Callout>
 
 # How it Works

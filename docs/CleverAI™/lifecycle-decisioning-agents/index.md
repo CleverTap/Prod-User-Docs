@@ -30,7 +30,7 @@ Confirm the following before you create a Lifecycle Decisioning Agent:
   Lifecycle Decisioning Agent is currently in Beta. Contact your CleverTap account manager to request access.
 </Callout>
 
-## Create a Decisioning Lifecycle Agent
+## Create a Lifecycle Decisioning Agent
 
 Creating a Lifecycle Decisioning Agent involves defining your goal, identifying your user segment, choosing an engagement strategy, adding messages across different channels, and configuring guardrails.&#x20;
 

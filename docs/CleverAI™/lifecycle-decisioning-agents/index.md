@@ -48,7 +48,7 @@ You can create a new agent with a five-step workflow:&#x20;
 | ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
 | [**Goals**](doc:lifecycle-agent-goals)                             | The conversion goal, guiding events, and the conversion window              |
 | [**Target Segment**](doc:lifecycle-agent-target-segment)           | Which users enter the agent and the control group                           |
-| [**Engagement Strategy**](doc:lifecycle-agent-engagement-strategy) | The engagement strategy and stage rules                                     |
+| [**Engagement Strategy**](doc:lifecycle-agent-engagement-strategy) | The engagement strategy and step rules                                      |
 | [**Messages**](doc:lifecyle-agent-messages)                        | The messages across different channels available to the agent for selection |
 | [**Guardrails**](doc:lifecycle-agent-guardrails)                   | Channel limits, Frequency caps, and Do Not Disturb (DND) windows            |
 

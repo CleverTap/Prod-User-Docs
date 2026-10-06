@@ -20,12 +20,14 @@ Confirm the following before you create a Lifecycle Decisioning Agent:
 
 - You have Lifecycle Decisioning Agent access enabled on your CleverTap account.
 - You have a few message templates ready for the agent to use across different channels. Lifecycle Decisioning Agent supports the following channels: Push Notifications, Email, SMS, WhatsApp, Web Push, and Inbox.
-- You have the necessary permissions to create Campaigns and agents on your CleverTap account.
+- Your role must have the following _write_ permissions:&#x20;
+  - Campaign Creation&#x20;
+  - Lifecycle Decisioning Agent Creation
 
 <Callout icon="📘" theme="info">
   ### **Note**
 
-  Lifecycle Decisioning Agent is currently in Private Beta. Contact your CleverTap account manager to request access.
+  Lifecycle Decisioning Agent is currently in Beta. Contact your CleverTap account manager to request access.
 </Callout>
 
 ## Create a Decisioning Lifecycle Agent

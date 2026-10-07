@@ -442,6 +442,7 @@ The following events are supported via the Shopify Webhook:
         - customer first name
         - customer last name
         - customer phone
+        - Checkout token
       </td>
     </tr>
 
@@ -526,6 +527,7 @@ The following events are supported via the Shopify Webhook:
         - default address city
         - default address province code
         - default address country code
+        - Checkout token (applicable for **CHECKOUTS_CREATE and CHECKOUTS_UPDATE&#x20;**&#x6F;nly)
       </td>
     </tr>
 
@@ -581,7 +583,6 @@ The following events are supported via the Shopify Webhook:
         - landing site ref
         - order number
         - processing method
-        - checkout id
         - source name
         - fulfilment status
         - contact email
@@ -597,6 +598,7 @@ The following events are supported via the Shopify Webhook:
         - Total Price currency
         - Total Tax amount
         - Total Tax currency
+        - Token
       </td>
     </tr>
 
@@ -613,8 +615,21 @@ The following events are supported via the Shopify Webhook:
         - Ship_region
         - Ship_city
         - Items
-        - Checkout ID
+        - Checkout token
         - Charged ID
+        - Token
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **CUSTOMER_PURCHASING_SUMMARY**
+      </td>
+
+      <td>
+        - Total Spent
+        - Orders Count
+        - Last Order ID
       </td>
     </tr>
   </tbody>

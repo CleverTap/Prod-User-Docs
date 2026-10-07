@@ -43,7 +43,7 @@ Build campaign templates that reference catalog attributes instead of static cop
 
 The following table lists example use cases by domain:
 
-| Domain        | Use case                                                                                                                                                                        |
+| Domain        | Use Case                                                                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OTT           | Feature a new release whose title, synopsis, and thumbnail are drawn from the catalog, so no template edits are needed when the lineup changes.                                 |
 | E-commerce    | Run a flash-sale campaign that pulls featured product names and prices from the catalog at send time, eliminating the need to rebuild the campaign each time inventory changes. |

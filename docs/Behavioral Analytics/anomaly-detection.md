@@ -22,9 +22,9 @@ This feature is available on Trends charts and supports the following metrics:
 - Unique users
 
 <Callout icon="📘" theme="info">
-  ### Private Beta
+  ### Public Beta
 
-  This feature is released in Private Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
 </Callout>
 
 # How Anomaly Detection Works?

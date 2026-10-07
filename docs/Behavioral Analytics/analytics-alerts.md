@@ -30,9 +30,9 @@ You can choose between two alert types:
 When an alert is triggered, CleverTap delivers notifications based on the selected delivery options, such as a Dashboard Notification, Email, or a Slack channel.
 
 <Callout icon="📘" theme="info">
-  ### **Private Beta**
+  ### **Public Beta**
 
-  This feature is released in Private Beta. For more information or any queries, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+  This feature is released in Public Beta. For more information or any queries, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
 </Callout>
 
 # Alerts Evaluation Process

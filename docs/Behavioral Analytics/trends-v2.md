@@ -435,18 +435,19 @@ The trend for each user property displays.  All the split user properties are li
 
 Age is available as a user property in the _Split by user_ property list. Age is a derived property. CleverTap calculates it from the user's Date of Birth at the time you run the analysis. Users are then grouped into the following fixed age groups:
 
-| Age group |
-| --------- |
-| Unknown   |
-| `<18`     |
-| 18-24     |
-| 25-40     |
-| 41-60     |
-| 60+       |
+- Unknown
 
-These age groups are fixed.
+- \<18
 
-After you split a trend by Age, you can create a segment from any data point in the trend. For more information, refer to [Save as Segment](doc:trends-v2#save-as-segment).
+- 18-24
+
+- 25-40
+
+- 41-60
+
+- 60+
+
+These age groups are fixed. After you split a trend by Age, you can create a segment from any data point in the trend. For more information, refer to [Save as Segment](doc:trends-v2#save-as-segment).
 
 # Operations
 

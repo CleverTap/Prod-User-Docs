@@ -129,6 +129,20 @@ Splitting helps you understand how retention varies within a segment based on at
 * Geography (for example, country or city)
 * Device or OS
 * Campaign or source
+* Age (user property)
+
+#### Split by Age
+
+Age is a derived user property. CleverTap calculates it from the user's Date of Birth at the time you run the analysis and groups users into the following fixed age groups:
+
+* Unknown
+* \<18
+* 18-24
+* 25-40
+* 41-60
+* 60+
+
+These age groups are fixed. After you split a cohort analysis by Age, you can create a segment from a cell in the results. For more information, refer to [Save as Segment](doc:cohorts-v2#save-as-segment).
 
 
 <Image src="https://files.readme.io/8c4fcb235539726ee842b47fa8a8c0ac475495e6c2a81065f45f480d24aace34-image.png" align="center" width="55% " caption="Split By Properties" border={true} />

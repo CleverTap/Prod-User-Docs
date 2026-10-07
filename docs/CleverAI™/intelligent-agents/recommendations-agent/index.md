@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-CleverTap Recommendations automatically surfaces the most relevant products, videos, articles, or items to each user at the right moment. Instead of manually curating product lists or applying static rules, Recommendations uses behavioral signals and product attributes to deliver dynamic, context-aware suggestions across every channel, including Push, Email, SMS, In-app, and Webhooks.
+CleverTap Recommendations automatically surfaces the most relevant products, videos, articles, or items to each user at the right moment. Instead of manually curating product lists or applying static rules, Recommendations uses behavioral signals and product attributes to deliver dynamic, context-aware suggestions across every channel, including Push, Email, SMS, Native Display, In-app, and Webhooks.
 
 At its core, the feature works by connecting two data sources:
 

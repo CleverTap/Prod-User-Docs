@@ -5,7 +5,9 @@ excerpt: >-
   notifications when anomalies or threshold breaches occur in your analytics
   data.
 deprecated: false
-hidden: true
+hidden: false
+link:
+  new_tab: false
 metadata:
   robots: noindex
 ---

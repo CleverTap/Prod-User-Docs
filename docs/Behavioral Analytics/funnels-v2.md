@@ -16,7 +16,7 @@ next:
 
 Funnels are a series of actions that a user performs in a particular order. They show users' progress through defined paths in your app and identify where they drop off between steps.
 
-A typical example is a user onboarding sequence, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase sequence, in which a user progresses through the shopping cart experience to complete a purchase.
+A typical example is a user onboarding sequence, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase sequence, where a user progresses through a shopping cart experience to complete a purchase.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
@@ -101,19 +101,6 @@ Here, the analysis shows that some products have higher overall conversion rates
 In the following example, the funnel is split by the _Language_ user property. Each row represents a language group, enabling you to compare conversion behavior across different user demographics.
 
 Here, the analysis shows that users with different language preferences convert at different rates. These insights can help identify which language segments are performing well and which may benefit from localized content, messaging, or onboarding improvements.
-
-#### Split by Age
-
-Age is also available as a user property for splitting. Age is a derived property. CleverTap calculates it from the user's Date of Birth at the time you run the analysis. Each row in the funnel represents one of the following fixed age groups:
-
-* Unknown
-* \<18
-* 18-24
-* 25-40
-* 41-60
-* 60+
-
-These age groups are fixed. Because Age always has these six groups, the top 20 value limit does not apply to it. You can create a segment from an age-split funnel in the same way as from any other funnel. For more information, refer to [Save as Segment](doc:funnels-v2#save-as-segment).
 
 
 <Image src="https://files.readme.io/f15ab33b060fb45d97ab16faf8cb588771d9fa415f16d816d26f26560f2b0c2c-image.png" alt="Split Funnel by User Property" align="center" caption="Split Funnel by User Property" border={true} />

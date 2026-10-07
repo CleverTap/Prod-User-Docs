@@ -8,21 +8,23 @@ link:
 metadata:
   robots: index
 ---
-The _Activity_ tab shows what the Lifecycle Agent is doing for individual users. Use it to inspect a sample of users the agent has reached, view the sequence of engagements for each user, and view the specific message the agent sent them.&#x20;
+The Activity tab shows the messages the Lifecycle Agent sent to individual users. Use it to check which users the agent reached, the order in which each user received messages, and the content of each message.
 
-The following image shows the _Activity_ tab with a user selected in _Sample Users_.
+<Callout> Example To confirm the agent is working as intended, select a user who hasn't purchased and check that the 10% off reminder appears in their timeline.
+
+The following image shows the Activity tab with a user selected in the Sample Users panel. (@soumya, please verify the screenshot so that the UI is recent)
 
 
-<Image src="https://files.readme.io/68b4df947ebc40b821434593f84e58c66824f11a3c288b6702ef21872354fb79-image.png" align="center" caption="Activity Tab" border={true} />
+<Image src="https://files.readme.io/68b4df947ebc40b821434593f84e58c66824f11a3c288b6702ef21872354fb79-image.png" align="center" border={true} />
 
 
 The tab is organized into three panels:
 
-| Panel          | Purpose                                                 |
-| -------------- | ------------------------------------------------------- |
-| _Sample Users_ | Browse and select a user from the agent's audience.     |
-| _Engagement_   | View the timeline of engagements for the selected user. |
-| _Message_      | View the specific message sent to the user.             |
+| Panel          | Purpose                                                     |
+| -------------- | ----------------------------------------------------------- |
+| _Sample Users_ | Select a user from a sample of users the agent has reached. |
+| _Engagement_   | View the messages sent to the selected user, newest first.  |
+| _Message_      | Preview the selected message.                               |
 
 ## Sample Users
 
@@ -46,7 +48,7 @@ The _Timeline_ view lists engagements in reverse chronological order, grouped by
 - The delivery timestamp (for example, _12:50:30 PM_).
 - The message name (for example, _Push Notification Recovery_, _SMS Cart Alert_, _WhatsApp Cart Reminder_).
 
-Select any entry to view the corresponding message.
+Select an entry to preview the message.
 
 ## Message
 

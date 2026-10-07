@@ -274,8 +274,6 @@ When inviting users to a board, you control what they can do with it using the f
   #### Deleting a Shared Team
 
   If a team that a board is shared with is deleted, only that team's access is removed. The board remains available to its _Owner_ and to anyone who still has access through an individual grant, another team, or general access. Users who could open the board only through the deleted team lose access to it.
-
-  @Saurav The PRD says users can share only with teams they belong to, but I checked with Alfred and the code does not enforce this. Please confirm if we should add this information to the doc or not.
 </Callout>
 
 ### Visibility Settings
@@ -355,8 +353,6 @@ The text is visible to everyone who can view the board.
 
   A note tile must contain at least one character and supports up to 1,000 characters. Only users with _Editor_ or _Owner_ access can add or edit note tiles.
 </Callout>
-
-@Saurav, the Jira (PA-226) says 500 characters, but Alfred says the default is 1,000. Also, confirm whether Add a Link is shipped to production or not? I check in Alfred, the codebase shows it is disabled.
 
 # Explore Data on Tiles
 

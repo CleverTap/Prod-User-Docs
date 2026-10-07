@@ -34,6 +34,124 @@ With Boards 2.0, you can do the following:
   This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
 </Callout>
 
+# View Boards
+
+The Boards page lists only the boards you can access. This includes the boards you own, those shared with you directly or through a team you belong to, and those open to everyone in your account. Only an Admin can access all the boards created in an account.
+
+To open Boards 2.0, go to _Analytics_ > All _Boards_ from the CleverTap dashboard.
+
+
+<Image src="https://files.readme.io/03fc0e5a7fbd691f89705f5f41fda6e27fc111812baeb664922d715d6fb61f32-image.png" alt="View Boards List Page" align="center" caption="View Boards List Page" border={true} />
+
+
+The following table describes each column on the Boards page:
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Column
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Board Name
+      </td>
+
+      <td>
+        The name of the board. For example, _Product KPIs_.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created By
+      </td>
+
+      <td>
+        The user who created the board.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Access
+      </td>
+
+      <td>
+        The board's current access state, such as:
+
+        * **Restricted**: Only invited users and teams can access it.
+        * **Anyone can view**: Any user in your account can open the board.
+        * **Anyone can edit**: Any user in your account can view and edit the board.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Tiles
+      </td>
+
+      <td>
+        The number of tiles on the board.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Last Edited
+      </td>
+
+      <td>
+        The date the board was last modified.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created On
+      </td>
+
+      <td>
+        The date the board was created.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<Callout icon="📘" theme="info">
+  #### Board Visibility
+
+  A new board is private by default. Only you can view it, and you are its Owner, whether you create the board from the Boards page or save a chart to a new board from an analysis. You can always share a board to make it visible to others. For more information, refer to [Share Boards](doc:boards-v2#share-boards).
+</Callout>
+
+# Filter and Sort Boards
+
+Filters help you find the right board quickly as your list of boards grows. Filters narrow down the boards you can already access without changing which boards you are allowed to see.
+
+To filter the boards list, select any of the following filters and click **Apply**:
+
+- **Created By**: Shows boards created by specific users.
+- **Last Modified**: Shows boards edited within a selected date range.
+- **Teams Shared With**: Shows boards shared with specific teams.
+
+
+<Image src="https://files.readme.io/e1dd2165d50e7c86fa2ab8a2d692bcb61ecbc69070e92696e27f80d2e048fb6a-image.png" alt="View Board Filters" align="center" width="50%" caption="View Board Filters" border={true} />
+
+
+<Callout icon="📘" theme="info">
+  #### Teams Filter Availability
+
+  The _Teams Shared With_ filter appears only for accounts that use the Teams feature in CleverTap.
+</Callout>
+
 # Create a Board
 
 Creating a board gives you a blank canvas to start organizing your analyses. You can create as many boards as you need, be it one per team, product area, or campaign.
@@ -48,7 +166,7 @@ To create a new board:
 4. Click **Create**.
 
 
-<Image src="https://files.readme.io/ca1511293f0c3f5dda32180d3a3996f6e073651e3f4ca29900d887537d4706bc-2026-04-13_11-53-53_1.gif" align="center" caption="Create a Board" border={true} />
+<Image src="https://files.readme.io/ca1511293f0c3f5dda32180d3a3996f6e073651e3f4ca29900d887537d4706bc-2026-04-13_11-53-53_1.gif" alt="Create a Board" align="center" caption="Create a Board" border={true} />
 
 
 The board opens immediately as an empty dashboard, ready for you to add tiles.
@@ -64,54 +182,107 @@ The board opens immediately as an empty dashboard, ready for you to add tiles.
 Once you have boards set up, you can perform several management operations to keep your boards page organized. Access these options from the board menu by clicking the ![](https://files.readme.io/c538b4435fb5f68ee8201296aa64c4fa97e4d6a4443aa3f3665d947a260f4e2d-Ellipsis_icon_Boards.png)icon in the top-right corner of any board.
 
 
-<Image src="https://files.readme.io/795c0c41a4facdc5ab3f1209efd41f0f331ee64e526b426fa0eccd59cdba3ba9-image.png" align="center" caption="Board Operations" border={true} />
+<Image src="https://files.readme.io/726eeed0c465dbbf90e885bd5e1aecbd0ddf8cec5796189e7218066e6c47c3fd-image.png" alt="Manage Boards Operations" align="center" caption="Manage Boards Operations" border={true} />
 
 
 The following operations are available from the board menu:
 
 * **Rename**: Update the name of an existing board at any time. This is useful when a board's focus evolves. For example, renaming _Q2 Funnel Review_ to _Q3 Funnel Review_ at the beginning of a new quarter.
-* **Clone**: Create an exact copy of a board, including all its tiles and configurations. Cloning is helpful when you want to reuse a board structure for a different time period, region, or audience segment without rebuilding it from scratch. The cloned board appears in your board list with a  _Cloned_ prefix. You can then rename it as required.
+* **Clone**: Create an exact copy of a board, including all its tiles and configurations. Cloning is helpful when you want to reuse a board structure for a different time period, region, or audience segment without rebuilding it from scratch. The cloned board appears in your board list with _the_ prefix _Cloned_. You can then rename it as required.
 * **Delete**: Permanently remove a board and all its tiles. This action cannot be undone; use it only when the board is no longer needed.
 
 <Callout icon="📘" theme="info">
   #### Cloned Board Ownership
 
-  When you clone a board, you become the owner of the cloned copy, regardless of who owned the original. You will have full edit and delete permissions on the clone.
+  When you clone a board, it creates a private copy and you become the owner of the cloned board, regardless of who owned the original. You will have full edit and delete permissions on the clone. Also, the original board's users and teams are not carried over, and general access resets to _Restricted_. If the original board contains tiles built on segments you cannot access, those tiles are copied but display the limited-access state in your clone.
 </Callout>
 
-# Share Boards
+## Set a Board as Your Default View
 
-Sharing a board lets your teammates view or collaborate on the same set of analyses without needing to set up their own. This is especially useful for cross-functional reviews, stakeholder reporting, or async collaboration.
+You can set one board to open automatically every time you log in to CleverTap, so your most important metrics open at first. The default view is personal. It applies only to your login and does not affect other users. You can set only one default board at a time, and setting a new default replaces the previous one. If you lose access to your default board, the dashboard opens the Boards page instead.
+
+To set or remove a default view, click the flag icon in the board.
+
+
+<Image src="https://files.readme.io/46d8eb5f1f2f97b1c3885971ca9c005f824918d12f69c41037f73d52567467b7-2026-10-06_17-20-18_1.gif" alt="Set or Remove a Default Board View" align="center" caption="Set or Remove a Default Board View" border={true} />
+
+
+## View Boards in Full-Screen
+
+The full-screen view is designed for displays and shared screens. It keeps a board up to date without manual refreshes, so a team can monitor live metrics at a glance.
+
+To view a board in full-screen view:
+
+1. Open a board.
+2. Click the full-screen icon in the board header.
+
+
+<Image src="https://files.readme.io/05aa8411aa2925dd8e395f60185bfdb89c948dad0594327bf124c51b838ee90d-2026-10-06_18-13-23_1.gif" alt="Viewing a Board in Full-Screen" align="center" caption="Viewing a Board in Full-Screen" border={true} />
+
+
+### Tiles Refresh in Full-Screen View
+
+In Full-screen view, each tile refreshes independently every 10 minutes. Refreshes run in the background, meaning the current chart stays visible until fresh data is ready, so the screen never drops into a loading state. You can also click the refresh control in the board header to refresh all tiles at once, or refresh an individual tile.
+
+<Callout icon="📘" theme="info">
+  #### No Refresh for Note Tiles
+
+  Note tiles have no refresh indicator because they do not query data.
+
+  #### Full-Screen View Settings
+
+  Tiles that fail to load or that you have limited access to are hidden automatically in the Full-screen view. Your session does not expire while Full-screen view is running. Access is revalidated on every refresh cycle, so if a viewer loses access to a segment, the affected tiles stop displaying data.
+</Callout>
+
+## Share Boards
+
+Boards are private to their creator until shared. You can share a board with individual users, teams, or everyone in your account, and assign each a role that controls what they can do on the board. Sharing a board lets your teammates view or collaborate on the same set of analyses without needing to set up their own. This is especially useful for cross-functional reviews, stakeholder reporting, or async collaboration.
+
+<Callout icon="📘" theme="info">
+  #### Using the Teams Feature
+
+  If your account has the Teams feature enabled, you can share a board with an entire team instead of adding members one by one. Every member of the team receives the role you assign.
+</Callout>
 
 To share a board:
 
 1. Click the ![](https://files.readme.io/ac4b6e3242b25813de0bc371e8ab741cb8019cfc928c3ff287499a192155dce6-Share_Boards_Icon.png) icon of the board you want to share.
-2. In the _Share_ modal, either:
-   1. Add users by selecting their email addresses from the _Select People_ dropdown, or
-   2. Copy the board link to share directly via chat, email, or documents.
-3. Assign an [access type](doc:boards-v2#access-type) for each invited user.
+2. In the _Share_ window, either:
+   1. Add a team name from the _Select people or teams_ dropdown
+   2. Add users by selecting their email addresses from the _Select people and team_ dropdown, or
+   3. Copy the board link to share directly via chat, email, or documents.
+3. Select the role, such as _Viewer_ or _Editor,_ for each invited team or user.
 4. Click **Done**.
 
 
-<Image src="https://files.readme.io/8ae5b3d58555f550a40e18ecf0598e96b903889426075d7056567ab6a9eef173-image.png" align="center" caption="Share a Board" border={true} />
+<Image src="https://files.readme.io/c146f5b0e05d4d4d0e6f9e31c53421903d1132c77a083d2093f6834f37d050c5-image.png" alt="Share a Board" align="center" caption="Share a Board" border={true} />
 
 
-## Access Type
+### Access Types
 
 When inviting users to a board, you control what they can do with it using the following options:
 
+* **Owner**: The user who created the board. _Owners_ have full control over the board, meaning they can edit it, manage who it is shared with, change its general access, and delete it.
 * **Viewer**: A Viewer can open the board, explore tile data, hover over data points, and apply filters for their own session. However, they cannot make any permanent changes, add, edit, rename, or delete tiles, and modify board settings. A _Viewer_ access is best for stakeholders, executives, or anyone who only requires insights without modifying the board.
 * **Editor**: An _Editor_ has full access to modify the board. They can add and remove tiles, rename tiles, apply saved filters, and change board settings. Editors can also invite other users. Editor access is best for teammates who are actively contributing to or maintaining the analysis.
 
 
-<Image src="https://files.readme.io/b52316435f6efad76a6374d0722f246460113a3f960bc974e378b096eb4da8bc-image.png" align="center" caption="Access Types on Board" border={true} />
+<Image src="https://files.readme.io/1b5af2184ff8cf3de669197d2530e99625588b5b77212e40825a59d25113e05a-image.png" alt="Access Types for a Board" align="center" caption="Access Types for a Board" border={true} />
 
 
-## Visibility Settings
+<Callout icon="📘" theme="info">
+  #### Deleting a Shared Team
+
+  If a team that a board is shared with is deleted, only that team's access is removed. The board remains available to its _Owner_ and to anyone who still has access through an individual grant, another team, or general access. Users who could open the board only through the deleted team lose access to it.
+
+  @Saurav The PRD says users can share only with teams they belong to, but I checked with Alfred and the code does not enforce this. Please confirm if we should add this information to the doc or not.
+</Callout>
+
+### Visibility Settings
 
 Beyond individual invites, you can set a board's overall visibility to control who can discover and access it using the following options:
 
-* **Restricted (default)**: Only users explicitly invited can access the board. It will not appear in search or directory listings for others. This is the most secure setting and is recommended for sensitive or work-in-progress boards.
+* **Restricted (default)**: Only users explicitly invited can access the board. It does not appear in search or directory listings for others. This is the most secure setting and is recommended for sensitive or work-in-progress boards.
 * **Anyone can view**: Any user in your organization with the link can open and view the board, without needing an explicit invite. They are automatically granted _Viewer_ access. The board may also appear in shared directories.
 * **Anyone can edit**: Any user in your organization with the link can view and edit the board. Use this setting carefully. It is best suited for highly collaborative boards where the entire team is expected to contribute.
 
@@ -120,16 +291,16 @@ Beyond individual invites, you can set a board's overall visibility to control w
 
 
 <Callout icon="📘" theme="info">
-  #### Important
+  #### Sharing a Copied Board Link
 
   When sharing a copied board link, recipients view that board based on its current visibility setting. If the board is set to _Restricted_, only users who have already been invited can open the link. Changing a board from _Restricted_ to _Anyone can view_ or _Anyone can edit_ immediately grants access to all users who have the link or edit access. If the board contains sensitive data, confirm with your team before changing visibility.
 </Callout>
 
-# Add a Tile to a Board
+## Add Tiles from Board
 
 Tiles are the building blocks of a board. Each tile represents a saved visualization or a table from one of the supported analysis types. You can add as many tiles as you need, mix different analysis types on the same board, and rearrange them to suit your layout.
 
-You can add a tile to a board from within the individual analysis screens (for example, Trends or Funnels) or from the board itself. Once added, the tile appears on the board and reflects the configuration you set in the analysis when you added it.
+You can add a tile to a board from within the individual analysis screens (for example, Trends or Funnels) or directly from the board. Once added, the tile appears on the board and reflects the configuration you set in the analysis.
 
 For example, if you want to build a Trends analysis tracking daily active users over the past 30 days and want to add it to your _Product Health_ board:
 
@@ -142,7 +313,7 @@ For example, if you want to build a Trends analysis tracking daily active users 
 7. Click **Save**.
 
 
-<Image src="https://files.readme.io/dfb9b2c542fe787794bf8e348a30411d856e028429a00b2618a17330069ee188-image.png" align="center" caption="Add Tile to a Board" border={true} />
+<Image src="https://files.readme.io/4dd607da23edeb1fd417f966768c6e494f900dfde7045ca6bc6552e04586a3be-2026-10-06_17-38-38_1.gif" alt="Add a Tile from Board" align="center" caption="Add a Tile from Board" border={true} />
 
 
 You can add tiles from any of the following analyses:
@@ -154,13 +325,38 @@ You can add tiles from any of the following analyses:
 | Pivots  | Tabular breakdowns of metrics by properties                    |
 | Cohorts | Retention tables for user groups over time                     |
 | Flows   | User path visualizations between events                        |
-| Text    | Gives context, ownership, or instructions right inside a board |
+| Note    | Gives context, ownership, or instructions right inside a board |
 
 <Callout icon="📘" theme="info">
-  #### Important
+  #### Modifying a Tile Query Added to a Board
 
   Each tile reflects the exact configuration applied in the analysis at the time it was added, including events, filters, breakdown properties, and chart type. If you later modify the original analysis, the tile does not automatically update unless you add it again or edit it from the board.
 </Callout>
+
+### Note Tiles
+
+Note tiles let you add context directly on a board, such as a summary of what the board tracks, reading instructions for stakeholders, or callouts for a specific campaign period.
+
+To add a note tile:
+
+1. Open a board and click **Add Tile**.
+2. Select **Note**. An empty note tile is added to the board.
+3. Click the ellipsis icon, select edit, and enter your text. You can format it with bold, italics, and bulleted lists.
+4. Click **Done**.
+
+
+<Image src="https://files.readme.io/3638f5522b2e3a8c50b3e4d20293559573294ce7ca4d3d43cd32aa33f5d679c2-2026-10-06_17-52-39_1.gif" alt="Add and Edit a Text Tile to Board" align="center" caption="Add and Edit a Text Tile to Board" border={true} />
+
+
+The text is visible to everyone who can view the board.
+
+<Callout icon="📘" theme="info">
+  #### Note Tile Character Limits
+
+  A note tile must contain at least one character and supports up to 1,000 characters. Only users with _Editor_ or _Owner_ access can add or edit note tiles.
+</Callout>
+
+@Saurav, the Jira (PA-226) says 500 characters, but Alfred says the default is 1,000. Also, confirm whether Add a Link is shipped to production or not? I check in Alfred, the codebase shows it is disabled.
 
 # Explore Data on Tiles
 
@@ -173,7 +369,7 @@ For example, you can:
 
 This in-board interactivity is especially useful during team reviews or when presenting data live, as you can explore the data without losing the board context.
 
-## Apply Filters
+## Apply Filters on Tiles
 
 Board-level filters let you update data across all supported tiles simultaneously, without reconfiguring each tile individually. This makes it easy to slice the same board for different time periods, geographies, user segments, or other dimensions.
 
@@ -191,17 +387,17 @@ Each filter targets a different dimension of your data. You can apply one or bot
 Restrict each tile's data to a specific time window. For example, on a `Product Metrics` board, you might apply a date range of March 1 to March 31 to view all tile data scoped to March.
 
 
-<Image src="https://files.readme.io/98b9036244cb74bb6d188951b23ea701c3fcd2f09335308c98b47f1e2b60e8cd-2026-04-13_13-29-03_1.gif" align="center" caption="Filter Board Data for a Date Range" border={true} />
+<Image src="https://files.readme.io/98b9036244cb74bb6d188951b23ea701c3fcd2f09335308c98b47f1e2b60e8cd-2026-04-13_13-29-03_1.gif" alt="Filter Board Data for a Date Range" align="center" caption="Filter Board Data for a Date Range" border={true} />
 
 
 You can select preset ranges (Last 7 days, Last 30 days, etc.) or a custom date range.
 
 ### Segment
 
-Filter tiles by a defined user segment. For example, applying a `Churn After Purchase` segment to the board will update all supported tiles to show data only for users on mobile devices.
+Filter tiles by a defined user segment. For example, applying a `Churn After Purchase` segment to the board updates all supported tiles to show data only for users on mobile devices.
 
 
-<Image src="https://files.readme.io/321dbb82de394b3c58fd5809a3e6b0aa9858134410baf384f07626145af350be-2026-04-13_13-31-43_1.gif" align="center" caption="Filter Board Data for a Segment" border={true} />
+<Image src="https://files.readme.io/321dbb82de394b3c58fd5809a3e6b0aa9858134410baf384f07626145af350be-2026-04-13_13-31-43_1.gif" alt="Filter Board Data for a Segment" align="center" caption="Filter Board Data for a Segment" border={true} />
 
 
 Segments must be pre-configured in your workspace before they can be applied here.
@@ -216,7 +412,15 @@ The table below shows how board-level filters respond to the board-level filters
 | :------------------------------- | :---------------------- | :------------------------- |
 | Trends, Funnels, Pivots, Cohorts | Yes                     | Yes                        |
 | Flows                            | No                      | No                         |
-| Text                             | No                      | No                         |
+| Note                             | No                      | No                         |
+
+<Callout icon="📘" theme="info">
+  #### Tile-Level Access
+
+  A board can contain tiles built on segments you do not have access to, for example, segments scoped to a team you are not part of. When you open such a board, the tiles you can access load normally, while restricted tiles display a limited-access error, and their titles and data remain hidden.
+
+  This check runs for every viewer, even on boards set to _Anyone can view_ or _Anyone can edit_. Opening these boards does not grant access to the data behind each tile.
+</Callout>
 
 # Tile Operations
 
@@ -240,18 +444,18 @@ The following sections describe each operation in detail.
 
 ## Edit
 
-Opens the underlying analysis (for example, Trends or Funnels) in edit mode, where you can make changes to events, filters, date ranges, or chart types. Once saved, the tile on the board updates to reflect the changes.
+Opens the underlying analysis (for example, Trends or Funnels) in edit mode, where you can modify events, filters, date ranges, or chart types. Once saved, the tile on the board updates to reflect the changes.
 
 Use _Edit_ when the tile configuration needs to change. For example, when you want to add a new event to a Trends chart or modify the steps in a Funnel.
 
 <Callout icon="📘" theme="info">
   #### Edit Tile Behavior
 
-  Editing a tile opens the original saved analysis. Any changes saved in edit mode will update the analysis itself, not just the tile instance on the board.
+  Editing a tile opens the original saved analysis. Any changes saved in edit mode updates the analysis itself, not just the tile instance on the board.
 </Callout>
 
 
-<Image src="https://files.readme.io/c91ffb6ceb1932b1ab128dcdfd68dbc7a186ec23809f106bd14d219a893597bf-2026-05-19_23-26-52_1.gif" align="center" caption="Editing a Funnel Tile" border={true} />
+<Image src="https://files.readme.io/c91ffb6ceb1932b1ab128dcdfd68dbc7a186ec23809f106bd14d219a893597bf-2026-05-19_23-26-52_1.gif" alt="Editing a Funnel Tile" align="center" caption="Editing a Funnel Tile" border={true} />
 
 
 ## Rename Tile
@@ -261,7 +465,7 @@ Updates a tile's display name as it appears on the board. This does not affect t
 Use _Rename Tile_ when the default analysis name is not descriptive enough for the board context. For example, rename _Untitled Trends_ to _Weekly Signups by Channel_.
 
 
-<Image src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" align="center" caption="Renaming a Text Tile" border={true} />
+<Image src="https://files.readme.io/5dd576d4d092136f2512b42af9b7efcd8b409a3816c3081127b506e9f52a777b-2026-05-19_23-28-48_1.gif" alt="Renaming a Note Tile" align="center" caption="Renaming a Note Tile" border={true} />
 
 
 ## Rename Legend
@@ -271,7 +475,7 @@ Updates the legend labels displayed on a Trends tile's chart. This is useful whe
 Use _Rename Legend_ when presenting boards to non-technical stakeholders who may not recognize internal event naming conventions. For example, rename _Engaged Users_ to _Engaged Users in Last 30 Days_.
 
 
-<Image src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" align="center" caption="Renaming Legend of a Trends Tile" border={true} />
+<Image src="https://files.readme.io/adebeb8eb75e5ff2b064faff32dc7ebb9ef7aedd0286acd49da33105651ff78b-2026-05-19_23-31-03_1.gif" alt="Renaming Legend of a Trends Tile" align="center" caption="Renaming Legend of a Trends Tile" border={true} />
 
 
 ## Rename Legend & Steps
@@ -281,7 +485,7 @@ Updates both the legend labels and the step names displayed on a Funnels tile. T
 Use _Rename Legend & Steps_ when sharing a Funnels tile with stakeholders who are unfamiliar with the internal event names used to define funnel steps.
 
 
-<Image src="https://files.readme.io/1a895588fd520171681321b710344b98e09b6dec0a3ef07f8720eb0f45fc2f1a-2026-05-19_23-33-03_1.gif" align="center" caption="Renaming Legends and Steps of a Funnel Tile" border={true} />
+<Image src="https://files.readme.io/1a895588fd520171681321b710344b98e09b6dec0a3ef07f8720eb0f45fc2f1a-2026-05-19_23-33-03_1.gif" alt="Renaming Legends and Steps of a Funnel Tile" align="center" caption="Renaming Legends and Steps of a Funnel Tile" border={true} />
 
 
 ## Clone
@@ -291,7 +495,7 @@ Creates a duplicate of the tile on the same board. The cloned tile retains all c
 Use _Clone_ when creating a variant of an existing tile is required. For example, clone a Trends tile and edit it to display data for a different user segment.
 
 
-<Image src="https://files.readme.io/b068f180a3b75568ba746a26f9747650b687f14df2108a59870f60c9bdbfb696-2026-05-19_23-35-56_1.gif" align="center" caption="Cloning a Pivot Tile" border={true} />
+<Image src="https://files.readme.io/b068f180a3b75568ba746a26f9747650b687f14df2108a59870f60c9bdbfb696-2026-05-19_23-35-56_1.gif" alt="Cloning a Pivot Tile" align="center" caption="Cloning a Pivot Tile" border={true} />
 
 
 ## Export
@@ -301,7 +505,7 @@ Downloads the tile's data as a file for offline use or sharing. The export forma
 Use _Export_ when sharing a specific chart or table with someone outside the platform, or when including it in a presentation or report.
 
 
-<Image src="https://files.readme.io/1ee60fa1c2b8dd588be4a989524dd2659ad20a788ccc463b92457982c5854b82-2026-05-19_23-38-55_1.gif" align="center" caption="Exporting a Funnel Tile as a PDF" border={true} />
+<Image src="https://files.readme.io/1ee60fa1c2b8dd588be4a989524dd2659ad20a788ccc463b92457982c5854b82-2026-05-19_23-38-55_1.gif" alt="Exporting a Funnel Tile as a PDF" align="center" caption="Exporting a Funnel Tile as a PDF" border={true} />
 
 
 ## Delete
@@ -309,28 +513,30 @@ Use _Export_ when sharing a specific chart or table with someone outside the pla
 Permanently removes a tile from the board. This does not delete the original analysis. Only the tile instance on the board is removed.
 
 <Callout icon="📘" theme="info">
-  #### Important
+  #### Deleting a Tile
 
   Deleted tiles cannot be restored. If a tile is accidentally deleted, it must be added again from the original analysis.
 </Callout>
 
 
-<Image src="https://files.readme.io/27cc0b11c0e1a80c6a4a3d62f9652eaec96a416ec52261cf3d133b57ec7fb066-2026-05-19_23-41-31_1.gif" align="center" caption="Deleting a Pivot Tile" border={true} />
+<Image src="https://files.readme.io/27cc0b11c0e1a80c6a4a3d62f9652eaec96a416ec52261cf3d133b57ec7fb066-2026-05-19_23-41-31_1.gif" alt="Deleting a Pivot Tile" align="center" caption="Deleting a Pivot Tile" border={true} />
 
 
 # Example Use Case: Monitoring Campaign Performance
 
+Consider you are running a summer email campaign and want to see engagement, sign-up drop-off, and retention in one place. This example shows how to build a board that answers all three questions at a glance.
+
 Here is a practical end-to-end example of how you might use Boards 2.0 to monitor a marketing campaign:
 
-1. Create a board called _Summer Campaign Performance_.
+1. Create a board named _Summer Campaign Performance_.
 2. Add the following tiles:
-   1. A Trends tile tracking daily click-through rates from campaign emails
-   2. A Funnel tile showing drop-off at each step of the sign-up flow
-   3. A Cohorts tile measuring 7-day retention for users acquired during the campaign
-3. Apply a date filter scoped to the campaign period (for example, July 1 to July 31) to view data only for that window.
-4. Share the board with your marketing team, assigning _Viewer_ access to stakeholders and providing _Editor_ access to analysts who will maintain the board.
+   1. **Trends tile**: Tracks the daily click-through rate of your campaign emails to see how engagement changes over time.
+   2. **Funnel tile**: Maps each step of the sign-up flow to pinpoint where users drop off.
+   3. **Cohorts tile**: Measures 7-day retention for users acquired during the campaign to see whether they stay.
+3. Apply a date filter that matches the campaign period (for example, July 1 to July 31), so every tile reflects only that window.
+4. Share the board with your marketing team. Assign _Viewer_ access to stakeholders who only need to review results, and _Editor_ access to analysts who maintain the board.
 
-With everything in one place, your team can track campaign performance in real time, identify funnel drop-off points, and understand retention, all without switching between separate reports.
+Your team now has one cohesive view of the campaign. They can see which emails drive clicks, where sign-ups stall, and whether the users you acquired keep coming back, without moving between separate reports.
 
 # Best Practices
 
@@ -343,7 +549,7 @@ To ensure smooth board management and avoid disruptions in analysis, follow thes
 
 # FAQs
 
-Find answers to the following common questions about managing Boards:
+Find answers to the following common questions that you may have while using Boards 2.0 in CleverTap:
 
 ### Q. Can I add the same analysis to multiple boards?
 
@@ -355,7 +561,7 @@ Yes. When you click _Edit_ on a tile, it opens the original analysis. Any change
 
 ### Q. Why is my board-level filter not affecting some tiles?
 
-The _Flows_ and _Text_ tiles do not respond to date or segment filters. For more information, refer to the [Filter Behavior by File Types](doc:boards-v2#filter-behavior-by-file-types).
+The _Flows_ and _Note_ tiles do not respond to date or segment filters. For more information, refer to the [Filter Behavior by File Types](doc:boards-v2#filter-behavior-by-file-types).
 
 ### Q. Who can delete a board?
 
@@ -368,3 +574,19 @@ Yes. You can drag and drop tiles to rearrange them on the board layout.
 ### Q. Is there a limit on the number of tiles per board?
 
 Yes. You can add a maximum of 20 tiles per board.
+
+### Q. Can I share a board with a team?
+
+Yes. If your account uses Teams, you can share a board with a team and assign it _Viewer_ or _Editor_ access. Every member of the team receives that role. For more information, refer to Share with Teams.
+
+### Q. Why does a tile show _You have limited access_?
+
+When a tile uses an event or segment you do not have access to, such as a segment scoped to a team you are not part of, the limited access error occurs. The rest of the board loads normally. To resolve this error, contact your admin for the necessary permissions.
+
+### Q. What happens to a shared board if a team is deleted?
+
+Only the deleted team's access is removed. The board remains available to its Owner and to anyone with access through individual access, another team, or general access.
+
+### Q. Can I set more than one default board?
+
+No. You can set one default board per user. Setting a new default replaces the previous one.

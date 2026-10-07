@@ -63,11 +63,13 @@ The following image shows the variant-level trends:
 
 ### Errors
 
-The _Errors_ section provides visibility into issues encountered during Email delivery to the recipient. Use this section to identify and investigate failed deliveries. You can view the number of errors, a breakdown by error type, and the count for each.
+The _Errors_ section provides visibility into issues encountered during Email delivery to the recipient. Use this section to identify and investigate failed deliveries. You can view the total number of errors, a breakdown by error type, and the count for each type.
 
--
-  <Image src="https://files.readme.io/c299d937c4cd5030f64bc08ed536b2f34c8d2aa1ea1ee236803614558f2e4b35-image.png" align="center" caption="Email Notify Errors" border={true} />
 
+<Image src="https://files.readme.io/559bfd2cf571a26b64d1971c689073dbab7441d2f04220e55d491dd453cbc6b0-image.png" align="center" caption="Errors" border={true} />
+
+
+<br />
 
 <br />
 

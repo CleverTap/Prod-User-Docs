@@ -22,6 +22,12 @@ Annotations help across roles in the following ways:
 - A data analyst marks the date range of a data pipeline incident so a dip in event volume is not mistaken for a real drop in user activity.
 - A product manager scans the chart, sees every Annotation at a glance, and clicks into one to read the full note.
 
+<Callout icon="📘" theme="info">
+  ### Public Beta
+
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
+</Callout>
+
 # Annotations Access Controls
 
 Annotations are public within your CleverTap account. There are no private annotations. The entire team reads every note.

@@ -431,24 +431,6 @@ The trend for each user property displays.  All the split user properties are li
   You can split by a maximum of two user properties. Split by properties is not available when comparing two or more segments.
 </Callout>
 
-### Split by Age
-
-Age is available as a user property in the _Split by user_ property list. Age is a derived property. CleverTap calculates it from the user's Date of Birth at the time you run the analysis. Users are then grouped into the following fixed age groups:
-
-- Unknown
-
-- \<18
-
-- 18-24
-
-- 25-40
-
-- 41-60
-
-- 60+
-
-These age groups are fixed. After you split a trend by Age, you can create a segment from any data point in the trend. For more information, refer to [Save as Segment](doc:trends-v2#save-as-segment).
-
 # Operations
 
 Once you generate a trend analysis, you can perform several actions from the Analysis pane to compare results, change visualizations, save the analysis, and take follow-up actions based on the chart data.

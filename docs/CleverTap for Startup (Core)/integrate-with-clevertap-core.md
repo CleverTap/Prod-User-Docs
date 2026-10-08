@@ -1,5 +1,5 @@
 ---
-title: Integrate with CleverTap (Core)
+title: Integrate with CleverTap
 deprecated: false
 hidden: true
 link:
@@ -7,6 +7,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 This document includes a guided video series that walks you through the complete CleverTap setup—from initial understanding to activating user engagement. It is designed to help you integrate CleverTap correctly and use it effectively.

@@ -1,5 +1,5 @@
 ---
-title: eMandate via Netbanking (Core)
+title: eMandate via Netbanking
 excerpt: Learn about CleverTap's eMandate via Netbanking (eNACH) payment method.
 deprecated: false
 hidden: true
@@ -8,6 +8,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 eMandate via NetBanking (eNACH) helps schedule automatic transfers from your bank account for recurring payments, providing flexibility for INR payments. You must complete a one-time authentication with your NetBanking, Debit Card, or Aadhaar details. After the eMandate is set up, all future payments are processed automatically without intervention.

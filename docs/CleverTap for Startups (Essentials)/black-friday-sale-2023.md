@@ -1,14 +1,13 @@
 ---
 title: Black Friday Sale 2023
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 CleverTap for Startups is running a special offer under the Black Friday Sale. You can enjoy the CleverTap Essential Plan with 5000 MAUs for free during the first six months of registration. After this initial period, the plan typically costs $75 per month (₹6000 INR + Taxes). To register, visit the [Sign Up ](https://clevertap.com/startup-pricing/) page.
 

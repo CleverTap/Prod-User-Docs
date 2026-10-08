@@ -3,6 +3,8 @@ title: Mid Year Sale 2026
 excerpt: 'Learn more about CleverTap’s Mid Year Sale 2026: 90% Off for New Customers'
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: noindex
 ---

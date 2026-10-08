@@ -5,12 +5,12 @@ excerpt: >-
   integrate early
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 We offer a credit worth $200 (INR 14,000) to our new CleverTap Basic customers who complete the Integration Checklist within 21 days of signing up. All eligible customers receive the credits at the start of the third month.
 

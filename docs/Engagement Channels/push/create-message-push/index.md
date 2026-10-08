@@ -59,16 +59,17 @@ For Past Behavior segments, you also calculate the estimated reach.
 If you want to create an ad-hoc segment, you can select a type of segment on which to base your campaign. You can create the target based on past user behavior and user properties or live (ongoing) user behavior. The latter is helpful to send out real-time, triggered campaigns.
 
 <Callout icon="🚧" theme="warn">
-  #### Inaction Campaigns with Delay > 24 hours
+  #### Live Campaigns with Delay > 24 Hours
 
-  - Live Inaction campaigns support delays greater than 24 hours, as follows:
+  - Live campaigns support delays greater than 24 hours, as follows:
     - Scheduling: Messages are sent after the configured delay.
-    - Per-event triggering: One message is sent per qualifying event occurrence.
-    - Event personalization: Trigger event properties are available in message content, including via Linked Content.
-    - Message frequency: If the trigger event occurs frequently, configure limits under Delivery Preferences to control how many messages a user receives.
-  - Constant Event Property: If the campaign uses Constant Event Property personalization with a delay greater than 24 hours, default values are sent.
+    - **Per-event triggering**: One message is sent per qualifying event occurrence.
+    - **Event personalization**: Trigger event properties are available in message content, including via Linked Content.
+    - **Message frequency**: If the trigger event occurs frequently, configure limits under Delivery Preferences to control how many messages a user receives.
+  - **Constant Event Property**: If the campaign uses Constant Event Property personalization with a delay greater than 24 hours, default values are sent.
+  - **Delay calculation**: The delay is counted from each user's trigger event, not from the campaign's go-live date. Users who performed the trigger event before the campaign went live are also eligible and will receive the message once their delay period elapses.
 
-  For more information, refer to​ [Event Personalization by Campaign Type.](doc:personalize-message-all#event-personalization-by-campaign-type)
+  For more information, refer to​ [Event Personalization by Campaign Type.](https://staging.docs.user.clevertap.net/docs/personalize-message-all#event-personalization-by-campaign-type)
 </Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes; that is the golden window within which most users transact on iOS and Android app platforms.

@@ -55,16 +55,18 @@ The following table lists the tools for viewing and selecting your CleverTap acc
 
 # Analytics
 
-Runs an `analytics` query from a natural language prompt. Use it for Trends, Funnels, Cohorts, Flows, and Pivots. The tool returns the CleverTap Query Language (CQL) query and the results. For example, the prompt,_&#x20;Show me the daily trend of Charged events for the last 30 days_ is handled by the `Analytics` tool. For simple counts, use tools such as `get_event_count` or `get_profile_count` instead.
+Runs an `analytics` query from a natural language prompt. Use it for Trends, Funnels, Cohorts, Flows, and Pivots. The tool returns the CleverTap Query Language (CQL) query and the results.&#x20;
+
+For example, the prompt,_&#x20;Show me the daily trend of Charged events for the last 30 days_ is handled by the `Analytics` tool. For simple counts, use tools such as `get_event_count` or `get_profile_count` instead.
 
 ## Event Analytics
 
 The following table lists the tools for querying event counts and property value distributions:
 
-| Tool / Function           | Description                                                                                                                                                                                                               |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `get_event_count`         | Returns the total number of times an event occurred within a date range, with optional filters on event properties. <br />For example: How many App Launched events occurred last week?                                   |
-| `get_top_property_counts` | Returns the most or least frequent values of an event property, which shows how a property is distributed across users. <br />For example: What are the most common values of a property of the Charged event this month? |
+| Tool / Function           | Description                                                                                                                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `get_event_count`         | Returns the total number of times an event occurred within a date range, with optional filters on event properties. <br />For example: How many App Launched events occurred last week?                      |
+| `get_top_property_counts` | Returns the most or least frequent values of an event property, which shows how the values are distributed.<br />For example: What are the most common values of a property of the Charged event this month? |
 
 ## Profile Analytics
 
@@ -83,7 +85,7 @@ The following table lists the tools for viewing saved segments and defining audi
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `list_segments`     | Lists the saved segments in your account, with names and basic metadata. You can filter by segment type or status. <br />For example: List all my past behavior segments.                                                                                                                                                |
 | `get_segment`       | Returns the details of one segment, including its definition, current size, reachability, and size trend. <br />For example: Show me the definition and size of the Lapsed Buyers segment.                                                                                                                               |
-| `resolve_audience`  | Converts a plain-English audience description into a verified query and a readable summary that you can check before use. The tool does not save the audience. <br />For example: Build an audience of users who added an item to their cart in the last 7 days but did not purchase.                                    |
+| `resolve_audience`  | Converts a natural language audience description into a verified query and a readable summary that you can check before use. The tool does not save the audience.<br />For example: Build an audience of users who added an item to their cart in the last 7 days but did not purchase.                                  |
 | `estimate_audience` | Estimates the reach of an audience, showing the total matching users and the reachable users on each channel after opt-outs and Do Not Disturb (DND) are applied. The tool does not save the audience and does not support Live audiences. <br />For example: How many users does this audience reach on push and email? |
 
 # Campaigns

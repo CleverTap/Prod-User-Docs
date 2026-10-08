@@ -1,5 +1,5 @@
 ---
-title: Refer-a-Friend (Core)
+title: Refer-a-Friend
 excerpt: >-
   Learn more about the Refer-a-Friend: Promotional Credit offer for new and
   existing Core Plan customers.
@@ -10,9 +10,11 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
-CleverTap for Startups is thrilled to unveil the **Refer-A-Friend** program, where our Core Plan customers can refer leads — such as friends, peers, fellow cohort founders, or anyone from your network — and earn credits when a referred startup lead converts into a C4S customer. Build our community while earning promotional credits for each successful referral—everyone, including you and your network, wins.
+CleverTap for Startups is thrilled to unveil the **Refer-A-Friend** program, where our Core Plan customers can refer leads, such as friends, peers, fellow cohort founders, or anyone from your network, and earn credits when a referred startup lead converts into a C4S customer. Build our community while earning promotional credits for each successful referral—everyone, including you and your network, wins.
 
 ## Offer Name
 
@@ -20,7 +22,7 @@ CleverTap for Startups is thrilled to unveil the **Refer-A-Friend** program, whe
 
 ## Offer Eligibility
 
-Available to all new and existing customers on the **CleverTap Core Plan**. The referrer and referred customer must fulfil the eligibility criteria specified in [How Referral Works](doc:refer-a-friend#how-referral-works).
+Available to all new and existing customers on the **CleverTap Core Plan**. The referrer and referred customer must fulfill the eligibility criteria specified in [How Referral Works](doc:refer-a-friend#how-referral-works).
 
 ## How Referral Works
 

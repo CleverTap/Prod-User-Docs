@@ -1,14 +1,13 @@
 ---
 title: Events Excluded from Billing in CleverTap Essentials
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

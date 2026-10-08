@@ -15,7 +15,9 @@ next:
 1. Select **Journeys**. This takes you to the _All Journeys_ page.
 2. Select a journey's checkbox to manage its functioning.
 
-<Image align="center" alt={1345} border={true} caption="Manage Journeys" title="View and manage Journeys on the All Journeys page" src="https://files.readme.io/821ac308207ce2eab2f2d89959c008dac88da604f9fa8cc017b38fe24df58c23-Manage_Journeys.png" width="90% " />
+
+<Image src="https://files.readme.io/821ac308207ce2eab2f2d89959c008dac88da604f9fa8cc017b38fe24df58c23-Manage_Journeys.png" alt="1345" align="center" width="90% " caption="Manage Journeys" border={true} />
+
 
 This activates the _Action Buttons_ displayed on the top left. The buttons are:
 
@@ -35,7 +37,7 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
   <tbody>
     <tr>
       <td>
-        **Pause and Resume![Pause\_Resume](https://files.readme.io/70f33f0-Pause_Resume.png)**
+        **Pause and Resume**![Pause\_Resume](https://files.readme.io/70f33f0-Pause_Resume.png)
       </td>
 
       <td>
@@ -61,7 +63,7 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
 
     <tr>
       <td>
-        **Ellipsis![Ellipsis](https://files.readme.io/38242f5-ellipsis.png)**
+        **Ellipsis**![Ellipsis](https://files.readme.io/38242f5-ellipsis.png)
       </td>
 
       <td>
@@ -84,16 +86,67 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
       </td>
 
       <td>
-        Using keyboard shortcuts, you can manage journeys. Click the ![](https://files.readme.io/62eb9da-Keyboard_Shortcuts.png) icon to learn about the keyboard shortcuts.  
+        Using keyboard shortcuts, you can manage journeys. Click the ![](https://files.readme.io/62eb9da-Keyboard_Shortcuts.png) icon to learn about the keyboard shortcuts.
 
-                <Image border={true} src="https://files.readme.io/49b92ca83dec3c82f02d06660743508c38824ab6bcc59a5966193cbd9d8419e8-Journey_Keyboard_Shortcuts.png" className="border" />
+        <Image border={true} src="https://files.readme.io/49b92ca83dec3c82f02d06660743508c38824ab6bcc59a5966193cbd9d8419e8-Journey_Keyboard_Shortcuts.png" className="border" />
 
-        For example, press **Shift** and select the nodes you want to copy, and then press **Option/Alt** and drag the selected nodes to copy them, as shown in the following gif:  
+        For example, press **Shift** and select the nodes you want to copy, and then press **Option/Alt** and drag the selected nodes to copy them, as shown in the following gif:
 
-                <Image border={true} src="https://files.readme.io/2e6e7b0589b29da37c97677845d1457caecce7417c7abe4e7fd10899908ae8a1-Multi-select_Nodes_to_copy_1.gif" className="border" />
+        <Image border={true} src="https://files.readme.io/2e6e7b0589b29da37c97677845d1457caecce7417c7abe4e7fd10899908ae8a1-Multi-select_Nodes_to_copy_1.gif" className="border" />
       </td>
     </tr>
   </tbody>
 </Table>
 
-<br />
+## Summarize a Journey
+
+Journeys with many nodes, conditions, and paths can be hard to read at a glance. Journey Summarizer generates a short, plain-language summary of a journey so you can understand who qualifies, what the goal is, and what messages users receive without opening every node.
+
+Use it to:
+
+* Get up to speed on a journey a teammate built.
+* Explain a journey to a stakeholder without walking through the canvas.
+* Confirm that a journey does what you intended before you share it.
+
+### Features
+
+* The summary is generated in English.
+* Journey Summarizer describes how a journey is set up. It doesn't show performance numbers. To see how a journey is performing, refer to the _Journey Stats_ and _Node Stats_ tabs.
+
+### View a Journey Summary
+
+1. Select **Journeys**. This takes you to the _All Journeys_ page.
+
+2. Select the journey you want to summarize. The journey details page opens.
+
+3. Click the **Journey Summarizer icon**.
+
+
+   <Image src="https://files.readme.io/6f1673ea723ced51a176fd2ec3b9ef9f7d023ec9b77ae3e89aad29cd9a300a3d-Screenshot_2026-10-07_at_12.34.43.png" alt="The Journey Detauks page with the Journey Summarizer icon" align="center" caption="Journey Details page with the Journey Summarizer Icon" border={true} />
+
+
+   A **Summary** pop-up opens.
+
+   ![](https://files.readme.io/2c870d79b78aee6d0800db96f63bbf97e9ae333bf321c037492226d237da1fd4-Screenshot_2026-10-07_at_12.37.27.png)
+
+### Journey Summary Properties
+
+| Field               | Description                                                                                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Journey Name**    | The name of the journey.                                                                                                                                                   |
+| **Qualification**   | The condition users must meet to enter the journey.                                                                                                                        |
+| **Goal**            | The goal is configured for the journey. If the journey has no goal, the summary says so.                                                                                   |
+| **Engagement Flow** | The order users move through the journey, and the messages they receive, if any. Some journeys don't send messages to users. They are used only to update user properties. |
+
+For example, a summary might read: "Users qualify when they have done Charged Today at least once." The **Engagement Flow** might read: "Qualified users enter the journey, receive one webhook immediately, then move to a second webhook after the first is sent."
+
+<Callout icon="📘" theme="info">
+  #### **Journey Summarizer Distinction**
+
+  The summary is separate from journey comments. It doesn't replace the comments your team adds to a journey.
+</Callout>
+
+### Best Practices
+
+* Check the summary against what you intended. If **the Qualification** or **Engagement Flow** doesn't match your plan, review the journey before publishing it.
+* Give your journeys clear names and descriptive node labels. The summary is built from your journey's setup, so clear naming makes it easier to read.

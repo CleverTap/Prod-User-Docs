@@ -1,5 +1,5 @@
 ---
-title: G2 Deals Offer (Core)
+title: G2 Deals Offer
 excerpt: Understand the terms and conditions of the G2 deals offer.
 deprecated: false
 hidden: true
@@ -8,6 +8,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 CleverTap for Startups presents an exclusive offer from [G2 Deals](https://www.g2.com/deals). After you utilize the free trial on the **CleverTap Core Plan**, you can get 75% off for the first six months.
 
 Check the following terms and conditions to avail this offer:

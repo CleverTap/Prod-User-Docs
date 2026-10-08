@@ -1,14 +1,13 @@
 ---
 title: Black Friday Sale 2022
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 CleverTap for Startups is introducing a new tier of 5000 MAUs under the CleverTap Basic Plan. As a part of the Black Friday Sale, you can avail this tier for $8/month (₹640 INR + Taxes) for the first six months instead of $99/month. To register, visit the [sign up page](https://clevertap.com/startup-pricing/).
 

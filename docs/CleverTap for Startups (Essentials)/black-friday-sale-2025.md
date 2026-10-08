@@ -3,12 +3,12 @@ title: Black Friday Sale 2025
 excerpt: 'Learn more about CleverTap’s Black Friday Sale 2025: 90% Off for New Customers'
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

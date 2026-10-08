@@ -2,7 +2,7 @@
 title: Setup and Integration
 excerpt: Integrate CleverTap's SDK for user understanding and retention.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

@@ -21,12 +21,6 @@ This feature is available on Trends charts and supports the following metrics:
 - Event count (Total)
 - Unique users
 
-<Callout icon="📘" theme="info">
-  ### Public Beta
-
-  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
-</Callout>
-
 # How Anomaly Detection Works?
 
 CleverTap uses a Prophet-based detection model to identify anomalies. The algorithm builds a confidence band around the expected trendline based on historical data and seasonality patterns. Any data point that falls outside this band is flagged as an anomaly.

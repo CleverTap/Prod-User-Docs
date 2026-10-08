@@ -1,5 +1,5 @@
 ---
-title: Billing (Core)
+title: Billing
 excerpt: >-
   The CleverTap for Startups helps early to mid-stage startups looking for an
   all-in-one engagement platform to grow their business.
@@ -8,6 +8,8 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 This document provides information about billing terminologies and calculations for CleverTap Core users. The billing is based on the Monthly Billable Users, derived from Monthly Active Users and the Data Points as explained in the following sections.

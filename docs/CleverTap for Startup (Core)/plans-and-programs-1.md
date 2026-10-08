@@ -1,5 +1,5 @@
 ---
-title: Plans and Programs (Core)
+title: Plans and Programs
 excerpt: >-
   The Core Plan is a package designed for early to mid-stage startups with
   customizable add-ons.
@@ -10,13 +10,17 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
+# Overview
+
 Here are the essential components of CleverTap for Startup customers: the Core Plan and the Leap Program. Whether you require comprehensive solutions or strategic partnerships, these offerings are tailored to empower your startup's growth and success.
 
 # Core Plan
 
 The [Core Plan](https://clevertap.com/clevertap-for-startups-features/?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB) helps early to mid-stage startups looking for an all-in-one engagement platform to grow their business. Pricing starts at a base rate of $75/month with an MAU tier of up to 5,000 users. The plan can support up to 100,000 MAU (Monthly Active Users), and the user history is retained for one year. To make this more customizable to the specific requirements of your business, you can choose to add paid [add-ons](https://clevertap.com/clevertap-for-startups-features?utm_source=C4S\&utm_medium=doc\&utm_campaign=KB) as per your use case.
 
-The billing is based on the Monthly Billable Users, derived from Monthly Active Users and the processed Data Points, whichever is higher. For more information, refer to the  [Billing](doc:payments-and-overagescopy).
+The billing is based on the Monthly Billable Users, derived from Monthly Active Users and the processed Data Points, whichever is higher. For more information, refer to the [Billing](doc:payments-and-overagescopy).
 
 To get a comprehensive and supervised understanding of how the product works, register [here](https://bit.ly/c4sdemo?utm_source=C4S\&utm_medium=doc\&utm_campaign=KB) for our interactive webinars. You can also sign up with the Core Plan and get access to a demo account that has been populated with sample data for you to understand and explore the platform’s features and functionalities.
 

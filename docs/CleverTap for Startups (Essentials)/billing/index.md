@@ -5,12 +5,12 @@ excerpt: >-
   all-in-one engagement platform to grow their business.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

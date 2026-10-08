@@ -1,5 +1,5 @@
 ---
-title: Compliance with RBI eMandate Regulations (Core)
+title: Compliance with RBI eMandate Regulations
 excerpt: >-
   Understand how CleverTap complies with new Reserve Bank of India (RBI)
   eMandate regulations on recurring card payments
@@ -10,6 +10,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 With the new regulations from RBI coming into effect, payment processing for India-issued cards will get affected. This section provides information about changes done to CleverTap Core payment workflows to comply with the new regulations.

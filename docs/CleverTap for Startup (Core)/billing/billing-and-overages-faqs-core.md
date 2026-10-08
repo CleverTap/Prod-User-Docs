@@ -1,5 +1,5 @@
 ---
-title: 'Billing and Overages: FAQs (Core)'
+title: 'Billing and Overages: FAQs'
 excerpt: >-
   Frequently Asked Questions related to Billing and Overages for CleverTap for
   Startups users.
@@ -8,6 +8,8 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 ## Can I access additional features outside of the CleverTap Core plan?
 
 CleverTap Core plan provides additional features available as either free or paid add-ons to help you grow. After you have mastered the basics, we recommend getting our [lifecycle optimizer](https://docs.clevertap.com/docs/lifecycle-optimizer?utm_source=C4S\&utm_medium=doc\&utm_id=KB), where you can map the user lifecycle and nudge users from one engagement stage to the next. Check out all the available add-ons under the My Plan section of the platform. For more information on including or removing add-ons, refer to the [add-ons](https://docs.clevertap.com/docs/billing?utm_source=C4S\&utm_medium=doc\&utm_id=KB#section-add-ons-inclusion) section.

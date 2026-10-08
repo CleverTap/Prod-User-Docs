@@ -9,6 +9,8 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Admin & Support
 
 ## Add New User

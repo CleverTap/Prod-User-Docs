@@ -1,14 +1,13 @@
 ---
 title: Christmas Sale 2022
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 This Christmas, *CleverTap for Startups* offers early-stage startups a special offer. We offer a flat 50% off on our CleverTap Basic plan giving you access to Clevertap for as low as $49/month. 
 

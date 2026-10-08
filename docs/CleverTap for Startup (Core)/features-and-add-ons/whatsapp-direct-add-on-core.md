@@ -1,5 +1,5 @@
 ---
-title: WhatsApp Direct Add-on (Core)
+title: WhatsApp Direct Add-on
 excerpt: >-
   Learn how the WhatsApp Direct add-on for CleverTap Core Plan empowers you to
   streamline customer engagement with built-in WhatsApp capabilities.
@@ -8,6 +8,8 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 The WhatsApp Direct Add-on for CleverTap Core enables your business to engage with customers on WhatsApp without a separate Business Solution Provider (BSP). With this add-on, you get direct access to CleverTap’s WhatsApp BSP, allowing you to send campaigns, trigger journeys, and manage conversations seamlessly within CleverTap.

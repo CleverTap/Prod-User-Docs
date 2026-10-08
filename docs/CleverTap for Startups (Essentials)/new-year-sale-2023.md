@@ -1,14 +1,13 @@
 ---
 title: New Year Sale 2023
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 This New Year, *CleverTap for Startups* offers early-stage startups a special discount. We are giving a flat 50% off on our CleverTap Basic plan giving you access to CleverTap for as low as $49 per month. 
 

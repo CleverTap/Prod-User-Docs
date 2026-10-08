@@ -29,12 +29,6 @@ You can choose between two alert types:
 
 When an alert is triggered, CleverTap delivers notifications based on the selected delivery options, such as a Dashboard Notification, Email, or a Slack channel.
 
-<Callout icon="📘" theme="info">
-  ### **Public Beta**
-
-  This feature is released in Public Beta. For more information or any queries, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/en-US/clevertapsupport/tickets/create).
-</Callout>
-
 # Alerts Evaluation Process
 
 When you create an alert, CleverTap saves the event, filters, and metric you are monitoring as the alert's query. CleverTap then runs this query automatically at the schedule you set.

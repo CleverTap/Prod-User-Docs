@@ -1,14 +1,13 @@
 ---
 title: Overview
-excerpt: ''
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 The CleverTap for Startups Program is created to help early-stage startups leverage the benefits of CleverTap. Under this program, we offer the [Essentials Plan](doc:plans-and-programs), which starts at $75 a month for 5,000  Monthly Active Users(MAU). It is a pay-as-you-grow model that offers the flexibility of choosing the add-ons and provides the flexibility of monthly payments with no annual commitment. 
 

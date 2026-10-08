@@ -1,11 +1,13 @@
 ---
-title: 'CleverTap for Startups: Technology Partners (Core)'
+title: 'CleverTap for Startups: Technology Partners'
 excerpt: CleverTap partners with leading platforms to offer a seamless user experience.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Technology Partner Integration
 
 ## Analytics

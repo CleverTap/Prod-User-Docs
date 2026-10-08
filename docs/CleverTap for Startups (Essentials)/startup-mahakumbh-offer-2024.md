@@ -3,12 +3,12 @@ title: Startup Mahakumbh Offer 2024
 excerpt: Explore all about Startup Mahakumbh Offer 2024
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 CleverTap for Startups is running a special offer for **Startup Mahakumbh** participants. You can get **75% off for the first six months** after you utilize the free trial on the **CleverTap Essentials** Plan.
 

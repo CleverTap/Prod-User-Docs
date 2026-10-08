@@ -1,5 +1,5 @@
 ---
-title: CleverTap Leap Program Offer (Core)
+title: CleverTap Leap Program Offer
 excerpt: Learn more about the terms and conditions of the CleverTap Leap Program offer.
 deprecated: false
 hidden: true
@@ -8,6 +8,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # CleverTap Leap Program Offer
 
 CleverTap for Startups presents an exclusive offer for all new users. After you complete your free trial on the **CleverTap Core Plan**, you can enjoy **75% off for the first 12 months**.

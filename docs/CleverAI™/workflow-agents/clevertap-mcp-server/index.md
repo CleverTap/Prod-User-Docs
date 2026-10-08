@@ -13,7 +13,7 @@ metadata:
 ---
 # Overview
 
-Model Context Protocol (MCP) tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides these tools for Claude, ChatGPT, and Cursor, enabling you to query analytics, create campaign drafts, and explore customer data without leaving your AI interface.&#x20;
+Model Context Protocol (MCP) tools are pre-built functions that AI clients invoke using natural language to perform actions within a connected platform. The CleverTap MCP server provides these tools for Claude, ChatGPT, and Cursor, enabling you to query analytics, create campaign drafts, and explore customer data without leaving your AI interface.
 
 For more information on how to integrate CleverTap MCP, refer to [CleverTap MCP Server Integration Guide](doc:clevertap-mcp-server-integration-guide).
 
@@ -37,7 +37,7 @@ The following table lists the categories and the tools within each category:
 | [Templates](doc:clevertap-mcp#templates)                   | `create_email_template`, `update_email_template`, `list_email_templates`, `get_email_template` |
 
 <Callout icon="📘" theme="info">
-  ### **Access Limitations**
+  ### Access Limitations
 
   MCP access requires CleverTap SSO login. RBAC authorization is applied same as dashboard.
 </Callout>
@@ -77,7 +77,7 @@ The following table lists the tools available for analyzing user profile data, f
 
 # Segments
 
-The following table lists the tools for viewing saved segments and defining audiences before you use them in a campaign draft.
+The following table lists the tools for viewing saved segments and defining audiences before you use them in a campaign draft:
 
 | Tool / Function     | Description                                                                                                                                                                                                                                                                                                              |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -120,7 +120,7 @@ The following table lists the tools available for managing email templates:
 | `get_email_template`    | Returns the full details of one email template, identified by its ID, including the HTML body and settings. <br />For example: Show me the HTML body of the Monthly Newsletter template.                                   |
 
 <Callout icon="📘" theme="info">
-  ### **Support and Feedback**
+  ### Support and Feedback
 
   For questions, issues, or feedback, contact your CleverTap Customer Success Manager.
 </Callout>

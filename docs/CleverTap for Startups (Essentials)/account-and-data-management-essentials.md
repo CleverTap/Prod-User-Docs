@@ -5,7 +5,7 @@ excerpt: >-
   free trial access, plan changes, data management, privacy policies, and user
   support.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

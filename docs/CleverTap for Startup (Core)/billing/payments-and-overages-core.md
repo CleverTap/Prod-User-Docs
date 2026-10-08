@@ -1,11 +1,13 @@
 ---
-title: Payments and Overages (Core)
+title: Payments and Overages
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Payment Methods
+<EssentialsPlanIsNowCorePlan />
+
+# Overview
 
 Under the CleverTap Core plan, CleverTap accepts all major credit or debit cards (for example, Visa, Mastercard, Discover, and JCB).<br />We also allow eNACH (eMandate via Net Banking) for Indian customers paying in INR. For more information about how it works, refer to the [eMandate via NetBanking](https://docs.clevertap.com/docs/emandate-via-netbanking?utm_source=C4S\&utm_medium=doc\&utm_id=KB).
 

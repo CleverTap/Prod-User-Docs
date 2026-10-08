@@ -101,23 +101,23 @@ The max price you set on a template acts as the default for every campaign and j
 
 ### Q. Why was I charged less than my max price?
 
-A. The max price you set is only a ceiling, not a fixed charge. Meta determines the actual price for each delivered message through its own delivery-optimization process. This price is not tied to Meta's published rate, and it isn't something CleverTap controls or can see into, that is, you can be charged well below your max price, and the price can vary from one message to the next even within the same country.
+The max price you set is only a ceiling, not a fixed charge. Meta determines the actual price for each delivered message through its own delivery-optimization process. This price is not tied to Meta's published rate, and it isn't something CleverTap controls or can see into, that is, you can be charged well below your max price, and the price can vary from one message to the next even within the same country.
 
 ### Q. Is the max price my contract price?
 
-A. No. The max price affects how Meta prioritizes delivery and caps what Meta can charge per delivered message. Your invoices are calculated according to your contract terms.
+No. The max price affects how Meta prioritizes delivery and caps what Meta can charge per delivered message. Your invoices are calculated according to your contract terms.
 
 ### Q. What happens if I do not set a max price?
 
-A. Meta charges its published rate for each delivered message, with no upper limit.
+Meta charges its published rate for each delivered message, with no upper limit.
 
 ### Q. Can I set a different max price for each campaign or journey?
 
-A. Yes. Use the _Max Price Multiplier_ in the builder to adjust the template's max price for a single campaign or journey node. For more information, refer to [Adjust the Max Price in a Campaign or Journey](#adjust-the-max-price-in-a-campaign-or-journey).
+Yes. Use the _Max Price Multiplier_ in the builder to adjust the template's max price for a single campaign or journey node. For more information, refer to [Adjust the Max Price in a Campaign or Journey](#adjust-the-max-price-in-a-campaign-or-journey).
 
 ### Q. Does max pricing apply to Utility or Authentication templates?
 
-A. No. Max pricing applies only to templates in the _Marketing_ category. Utility and Authentication templates are charged at Meta's standard per-message rates.
+No. Max pricing applies only to templates in the _Marketing_ category. Utility and Authentication templates are charged at Meta's standard per-message rates.
 
 ## Next Steps
 

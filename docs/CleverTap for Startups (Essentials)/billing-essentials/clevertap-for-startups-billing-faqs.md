@@ -5,12 +5,12 @@ excerpt: >-
   Startups users.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 ## Can I access additional features outside of the CleverTap Essentials plan?
 

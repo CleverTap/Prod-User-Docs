@@ -3,12 +3,12 @@ title: Silicon Valley Bank (SVB) Offer
 excerpt: Understand the terms and conditions of the SVB offer.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 CleverTap for Startups presents an offer for SVB clients. After you utilize the free trial on the **CleverTap Essentials Plan**, you can get 75% off for the first 12 months.
 

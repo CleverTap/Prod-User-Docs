@@ -44,7 +44,7 @@ The following table lists the categories and the tools within each category:
 
 # Account Management
 
-You can use the following tools to manage your CleverTap account:
+The Account Management tools list the CleverTap accounts you can access and set the active account for your session.&#x20;
 
 The following table lists the tools for viewing and selecting your CleverTap accounts:
 

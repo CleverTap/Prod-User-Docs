@@ -1,5 +1,5 @@
 ---
-title: Features and Add-ons (Core)
+title: Features and Add-ons
 excerpt: >-
   CleverTap's Core plan provides crucial tools for early-stage businesses,
   enabling thorough user analysis and personalized engagement strategies.
@@ -8,6 +8,10 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
+# Overview
+
 The Core plan offers features and add-ons that are essential for early-stage businesses to maximize retention and customer lifetime value. Read on to find out what’s included.
 
 # Features
@@ -278,7 +282,7 @@ After you create an account, you can find in-depth information about the platfor
 
 Product add-ons removal will be effective at the end of your current billing period. You can cancel the removal request anytime.
 
-### Can we run A/B tests on Clevertap?
+### Can we run A/B tests on CleverTap?
 
 To run A/B tests on the messaging you send in campaigns, A/B Multivariate Testing can be used. More details can be found [here](https://docs.clevertap.com/docs/ab-multivariate-testing?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB).
 

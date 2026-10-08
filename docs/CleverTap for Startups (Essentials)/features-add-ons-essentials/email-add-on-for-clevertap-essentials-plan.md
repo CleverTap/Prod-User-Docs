@@ -5,12 +5,12 @@ excerpt: >-
   streamline customer engagement with built-in email capabilities.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

@@ -98,20 +98,16 @@ This activates the _Action Buttons_ displayed on the top left. The buttons are:
   </tbody>
 </Table>
 
-## Summarize a Journey
+## Summarize Journey
 
-Journeys with many nodes, conditions, and paths can be hard to read at a glance. Journey Summarizer generates a short, plain-language summary of a journey so you can understand who qualifies, what the goal is, and what messages users receive without opening every node.
+Journeys with many nodes, conditions, and paths can be hard to read at a glance. Journey Summarizer generates a short, plain-language summary of a journey so you can understand who qualifies, what the goal is, and how users move through the journey without opening every node.
 
 Use it to:
 
 * Get up to speed on a journey a teammate built.
 * Explain a journey to a stakeholder without walking through the canvas.
 * Confirm that a journey does what you intended before you share it.
-
-### Features
-
-* The summary is generated in English.
-* Journey Summarizer describes how a journey is set up. It doesn't show performance numbers. To see how a journey is performing, refer to the _Journey Stats_ and _Node Stats_ tabs.
+* Get information on how a journey is set up. It doesn't show performance numbers. To see how a journey is performing, refer to the _Journey Stats_ and _Node Stats_ tabs.
 
 ### View a Journey Summary
 
@@ -121,32 +117,28 @@ Use it to:
 
 3. Click the **Journey Summarizer icon**.
 
-
-   <Image src="https://files.readme.io/6f1673ea723ced51a176fd2ec3b9ef9f7d023ec9b77ae3e89aad29cd9a300a3d-Screenshot_2026-10-07_at_12.34.43.png" alt="The Journey Detauks page with the Journey Summarizer icon" align="center" caption="Journey Details page with the Journey Summarizer Icon" border={true} />
-
-
    A **Summary** pop-up opens.
 
-   ![](https://files.readme.io/2c870d79b78aee6d0800db96f63bbf97e9ae333bf321c037492226d237da1fd4-Screenshot_2026-10-07_at_12.37.27.png)
+
+   <Image src="https://files.readme.io/72a8841d8c723042933b73e372e67cfb3ff6ec87576ac1177bb3811b2a86efaf-Journey_Summarizer.gif" alt="A gif showing how Journey Summarizer works" align="center" caption="Journey Summarizer Workflow" border={true} />
+
 
 ### Journey Summary Properties
 
-| Field               | Description                                                                                                                                                                |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Journey Name**    | The name of the journey.                                                                                                                                                   |
-| **Qualification**   | The condition users must meet to enter the journey.                                                                                                                        |
-| **Goal**            | The goal is configured for the journey. If the journey has no goal, the summary says so.                                                                                   |
-| **Engagement Flow** | The order users move through the journey, and the messages they receive, if any. Some journeys don't send messages to users. They are used only to update user properties. |
-
-For example, a summary might read: "Users qualify when they have done Charged Today at least once." The **Engagement Flow** might read: "Qualified users enter the journey, receive one webhook immediately, then move to a second webhook after the first is sent."
+| Field               | Description                                                                                                                                                                                                                                                                                                                                                       |
+| :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Journey Name**    | The name of the journey.                                                                                                                                                                                                                                                                                                                                          |
+| **Qualification**   | The condition users must meet to enter the journey. For example, a summary might read: "Users qualify when they have done Charged Today at least once."                                                                                                                                                                                                           |
+| **Goal**            | The goal is configured for the journey. If the journey has no goal, the summary says so.                                                                                                                                                                                                                                                                          |
+| **Engagement Flow** | The order in which users move through the journey and the messages they receive, if any. Some journeys do not send messages to users. They are used only to update user properties. For example, the **Engagement Flow** might read: "Qualified users enter the journey, receive one webhook immediately, then move to a second webhook after the first is sent." |
 
 <Callout icon="📘" theme="info">
   #### **Journey Summarizer Distinction**
 
-  The summary is separate from journey comments. It doesn't replace the comments your team adds to a journey.
+  The summary is separate from journey comments. It does not replace the comments your team adds to a journey.
 </Callout>
 
 ### Best Practices
 
-* Check the summary against what you intended. If **the Qualification** or **Engagement Flow** doesn't match your plan, review the journey before publishing it.
+* Check the summary against what you intended. If **the Qualification** or **Engagement Flow** does not match your plan, review the journey before publishing it.
 * Give your journeys clear names and descriptive node labels. The summary is built from your journey's setup, so clear naming makes it easier to read.

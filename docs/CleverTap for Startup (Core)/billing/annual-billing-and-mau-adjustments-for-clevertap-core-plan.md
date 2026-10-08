@@ -10,6 +10,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 The CleverTap Core Plan provides flexible billing through pro-rata adjustments and upgrades to Monthly Active Users (MAUs). In the CleverTap Core Annual Plan, if you upgrade or downgrade your MAU tier during the billing cycle, charges are adjusted based on the elapsed time and the actual number of MAUs used. This ensures that your billing accurately reflects your usage rather than charging the full amount upfront. This document outlines the billing calculations for the annual plan, focusing on pro-rata billing and MAU adjustments across various scenarios.

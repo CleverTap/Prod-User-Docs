@@ -1,5 +1,5 @@
 ---
-title: CleverTap Offers (Core)
+title: CleverTap Offers
 deprecated: false
 hidden: true
 link:

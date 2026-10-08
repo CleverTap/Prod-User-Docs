@@ -1,5 +1,5 @@
 ---
-title: Events Excluded from Billing in CleverTap Core
+title: Events Excluded from Billing in CleverTap
 deprecated: false
 hidden: true
 link:
@@ -7,6 +7,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 Some system events are excluded from the MAU and Data Point calculations for CleverTap Core users.

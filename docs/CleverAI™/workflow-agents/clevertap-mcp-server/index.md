@@ -32,7 +32,7 @@ The following table lists the categories and the tools within each category:
 | [Event Analytics](doc:clevertap-mcp#event-analytics)       | `get_event_count`, `get_top_property_counts`                                                   |
 | [Profile Analytics](doc:clevertap-mcp#profile-analytics)   | `get_profile_count`, `get_realtime_count`                                                      |
 | [Segments](doc:clevertap-mcp#segments)                     | `list_segments`, `get_segment`, `resolve_audience`, `estimate_audience`                        |
-| [Campaigns](doc:clevertap-mcp#campaigns)                   | `list_campaigns`, `get_campaign_report`, `create_campaign_draft`<br />`get_channel_providers`  |
+| [Campaigns](doc:clevertap-mcp#campaigns)                   | `list_campaigns`, `get_campaign_report`, `create_campaign_draft`,<br />`get_channel_providers` |
 | [Journeys](doc:clevertap-mcp#journeys)                     | `list_journeys`, `get_journey_report`                                                          |
 | [Templates](doc:clevertap-mcp#templates)                   | `create_email_template`, `update_email_template`, `list_email_templates`, `get_email_template` |
 
@@ -55,7 +55,7 @@ The following table lists the tools for viewing and selecting your CleverTap acc
 
 # Analytics
 
-Runs an `analytics` query from a natural language prompt. This tool supports Trends, Funnels, Cohorts, Flows, and Pivots, and returns the CleverTap Query Language (CQL) and the results. For example, the prompt,_&#x20;Show me the daily trend of Charged events for the last 30 days_ is handled by the `Analytics` tool. For simple counts, use tools such as `get_event_count` or `get_profile_count` instead.
+Runs an `analytics` query from a natural language prompt. Use it for Trends, Funnels, Cohorts, Flows, and Pivots. The tool returns the CleverTap Query Language (CQL) query and the results. For example, the prompt,_&#x20;Show me the daily trend of Charged events for the last 30 days_ is handled by the `Analytics` tool. For simple counts, use tools such as `get_event_count` or `get_profile_count` instead.
 
 ## Event Analytics
 

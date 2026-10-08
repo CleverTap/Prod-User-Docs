@@ -1,5 +1,5 @@
 ---
-title: eMandate via Cards (Core)
+title: eMandate via Cards
 excerpt: >-
   Understand how to set up eMandate using cards that comply with the RBI
   guidelines for recurring payments.
@@ -10,6 +10,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 **eMandate** allows businesses to automate recurring payments directly from a registered account, eliminating the need for manual intervention. Introduced by the RBI and NPCI, it streamlines transactions while ensuring regulatory compliance.

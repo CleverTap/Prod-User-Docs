@@ -5,12 +5,12 @@ excerpt: >-
   offer for F6S members.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

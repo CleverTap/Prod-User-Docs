@@ -4,7 +4,7 @@ excerpt: >-
   Learn how the Email Add-on for CleverTap Essentials Plan empowers you to
   streamline customer engagement with built-in email capabilities.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

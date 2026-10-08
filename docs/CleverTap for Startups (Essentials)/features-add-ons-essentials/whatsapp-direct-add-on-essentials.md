@@ -4,7 +4,7 @@ excerpt: >-
   Learn how the WhatsApp Direct add-on for CleverTap Essentials Plan empowers
   you to streamline customer engagement with built-in WhatsApp capabilities.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

@@ -1,11 +1,13 @@
 ---
-title: Employee Referral Program 2025 (Core)
+title: Employee Referral Program 2025
 excerpt: 'Know more about CleverTap for Startup: Employee Referral Program 2025'
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 CleverTap for Startups (C4S) is introducing an internal **Employee Referral Program** to encourage CleverTap employees to refer early-stage startups to the **CleverTap Core Plan**. Eligible employees can earn incentives for each qualified referral that signs up and activates post-trial.

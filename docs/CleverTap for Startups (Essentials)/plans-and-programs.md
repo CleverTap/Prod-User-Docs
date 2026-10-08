@@ -5,12 +5,12 @@ excerpt: >-
   customizable add-ons.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 Here are the essential components of CleverTap for Startup customers: the Essentials Plan and the Leap Program. Whether you require comprehensive solutions or strategic partnerships, these offerings are tailored to empower your startup's growth and success.
 

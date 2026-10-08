@@ -5,12 +5,12 @@ excerpt: >-
   Essentials Annual Plan.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

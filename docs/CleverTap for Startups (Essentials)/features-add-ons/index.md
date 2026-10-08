@@ -5,12 +5,12 @@ excerpt: >-
   enabling thorough user analysis and personalized engagement strategies.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

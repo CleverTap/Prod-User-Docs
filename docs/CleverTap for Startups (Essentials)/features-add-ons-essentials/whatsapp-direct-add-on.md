@@ -5,12 +5,12 @@ excerpt: >-
   you to streamline customer engagement with built-in WhatsApp capabilities.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

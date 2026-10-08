@@ -7,6 +7,8 @@ link:
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 CleverTap Core users can easily migrate to the enterprise plan with a self-served process without creating a new project/org in the CleverTap dashboard.

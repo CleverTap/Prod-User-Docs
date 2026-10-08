@@ -4,7 +4,7 @@ excerpt: >-
   CleverTap's Essentials plan provides crucial tools for early-stage businesses,
   enabling thorough user analysis and personalized engagement strategies.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

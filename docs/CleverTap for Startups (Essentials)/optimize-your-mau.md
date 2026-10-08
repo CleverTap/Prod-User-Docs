@@ -1,14 +1,13 @@
 ---
 title: Optimize your Monthly Active Users
-excerpt: ''
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Monthly Active User (MAU)
 

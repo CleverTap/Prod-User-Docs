@@ -3,12 +3,12 @@ title: Employee Referral Program 2025
 excerpt: 'Know more about CleverTap for Startup: Employee Referral Program 2025'
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 

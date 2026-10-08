@@ -4,7 +4,7 @@ excerpt: >-
   Frequently Asked Questions related to Billing and Overages for CleverTap for
   Startups users.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

@@ -1,7 +1,7 @@
 ---
 title: Payments and Overages
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

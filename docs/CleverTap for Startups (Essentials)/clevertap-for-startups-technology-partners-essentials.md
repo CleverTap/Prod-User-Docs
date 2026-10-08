@@ -2,7 +2,7 @@
 title: 'CleverTap for Startups: Technology Partners'
 excerpt: CleverTap partners with leading platforms to offer a seamless user experience.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

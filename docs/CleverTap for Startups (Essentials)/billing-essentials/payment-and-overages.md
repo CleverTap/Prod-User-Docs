@@ -1,14 +1,13 @@
 ---
 title: Payments and Overages
-excerpt: ''
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Payment Methods
 

@@ -32,14 +32,14 @@ Annotations are public within your CleverTap account. There are no private annot
 
 The following table shows who can perform each action on an annotation:
 
-| Action                                   | Account Admin       | Annotation Creator        | Other Members |
-| ---------------------------------------- | ------------------- | ------------------------- | ------------- |
-| Create an annotation                     | Yes                 | Yes                       | Yes           |
-| View annotations on a chart              | Yes                 | Yes                       | Yes           |
-| Bulk upload annotations using a CSV file | Yes                 | Yes                       | Yes           |
-| Edit an annotation                       | Yes, any annotation | Yes, own annotations only | No            |
-| Delete an annotation                     | Yes, any annotation | Yes, own annotations only | No            |
-| Open the _Manage Annotations_ page       | Yes                 | Yes                       | Yes           |
+| Action                                   | Admin               | Creator                   | Member |
+| ---------------------------------------- | ------------------- | ------------------------- | ------ |
+| Create an annotation                     | Yes                 | Yes                       | Yes    |
+| View annotations on a chart              | Yes                 | Yes                       | Yes    |
+| Bulk upload annotations using a CSV file | Yes                 | Yes                       | Yes    |
+| Edit an annotation                       | Yes, any annotation | Yes, own annotations only | No     |
+| Delete an annotation                     | Yes, any annotation | Yes, own annotations only | No     |
+| Open the _Manage Annotations_ page       | Yes                 | Yes                       | Yes    |
 
 <Callout icon="📘" theme="info">
   ### Maximum Annotations Per Account

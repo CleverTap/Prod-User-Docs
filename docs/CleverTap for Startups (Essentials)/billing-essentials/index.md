@@ -4,7 +4,7 @@ excerpt: >-
   The CleverTap for Startups helps early to mid-stage startups looking for an
   all-in-one engagement platform to grow their business.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

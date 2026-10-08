@@ -4,7 +4,7 @@ excerpt: >-
   The Essentials plan is a package designed for early to mid-stage startups with
   customizable add-ons.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:

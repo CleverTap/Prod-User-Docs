@@ -1,11 +1,13 @@
 ---
-title: Setup and Integration (Core)
+title: Setup and Integration
 excerpt: Integrate CleverTap's SDK for user understanding and retention.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Integration
 
 Integrating the CleverTap SDK with your mobile app or website is the first step to understanding and retaining users while igniting growth.

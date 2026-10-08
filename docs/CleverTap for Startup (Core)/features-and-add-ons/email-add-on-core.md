@@ -1,5 +1,5 @@
 ---
-title: Email Add-on (Core)
+title: Email Add-on
 excerpt: >-
   Learn how the Email Add-on for CleverTap Core Plan empowers you to streamline
   customer engagement with built-in email capabilities.
@@ -8,6 +8,8 @@ hidden: false
 metadata:
   robots: index
 ---
+<EssentialsPlanIsNowCorePlan />
+
 # Overview
 
 The Email Add-on for the CleverTap Core Plan offers a built-in Email Service Provider (ESP) designed to simplify email communication. With this add-on, businesses can send emails directly from CleverTap without relying on third-party integrations.

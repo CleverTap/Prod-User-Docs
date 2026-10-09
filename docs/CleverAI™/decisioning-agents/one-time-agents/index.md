@@ -1,7 +1,9 @@
 ---
-title: One Time Agents
+title: One-Time Decisioning Agents
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

@@ -1,5 +1,8 @@
 ---
 title: Variant Decisioning Agent
+excerpt: >-
+  Learn how to select the Best Variant for your campaign using Variant
+  Decisioning Agent.
 deprecated: false
 hidden: true
 metadata:
@@ -7,7 +10,7 @@ metadata:
 ---
 ## Overview
 
-Manual A/B testing picks one winning message variant and sends it to everyone. In practice, different users respond to different triggers, one user clicks on urgency-driven copy, another responds better to a savings-focused message, a third to something more personal. A single "winner" can't be the best message for all of them.
+Manual A/B testing picks one winning message variant and sends it to everyone. In practice, different users respond to different triggers; one user clicks on urgency-driven copy, another responds better to a savings-focused message, and a third to something more personal. A single "winner" can't be the best message for all of them.
 
 Variant Decisioning Agent is a Message Type in the What section of your campaign that solves this differently: instead of picking one winning variant for your whole audience, it uses your account's Agent, a scoring model set up in the Campaign Ranker project, to predict, for every individual user, which of your variants they're personally most likely to engage with. At send time, each user gets their own best-matched variant.
 

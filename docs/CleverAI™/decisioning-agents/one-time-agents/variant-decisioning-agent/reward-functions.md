@@ -1,5 +1,6 @@
 ---
 title: Reward Functions
+excerpt: Learn how to create and manage Reward Functions.
 deprecated: false
 hidden: true
 link:
@@ -11,9 +12,24 @@ metadata:
 
 A Reward Function defines which user actions count as good outcomes (positive signals) and which count as bad outcomes (negative signals).
 
-Without a shared Reward Function, you'd have to define "what counts as success" separately inside every agent, and there'd be nothing stopping two agents from quietly defining the same goal in two slightly different ways — which makes it harder for the underlying model to learn cleanly from your account's full engagement history.
+Without a shared Reward Function, you would have to define "what counts as success" separately inside every agent, and there'd be nothing stopping two agents from quietly defining the same goal in two slightly different ways, which makes it harder for the underlying model to learn cleanly from your account's full engagement history.
 
-A Reward Function reduces that redundancy: you don't need to redefine your business goal for every agent you set up. Reward Functions are independent of any single agent. You create a Reward Function once for your account, and any agent that needs one, a One-Time Agent or a Lifecycle Agent, selects it from a list.
+A Reward Function reduces that redundancy: you do not need to redefine your business goal for every agent you set up. Reward Functions are independent of any single agent. You create a Reward Function once for your account, and any agent that needs one, a One-Time Agent or a Lifecycle Agent, selects it from a list.
+
+## How agents use a Reward Function
+
+When you create an agent, you select a Reward Function in the Goals step. The agent works toward the positive signals in that Reward Function.
+
+- **Campaign Decisioning:** When several campaigns compete for the same user, the agent scores each campaign by how likely it is to lead to your positive signals for that user. It delivers the highest-scoring campaign within your message limits.
+- **Variant Decisioning:** For a campaign that uses the Optimal variant message type, the agent scores each variant in the same way. Each user receives the variant that scores highest for them.
+
+An agent of type **Both** uses the same Reward Function for both.
+
+<Callout icon="far fa-circle-info" theme="info">
+  ### Note
+
+  An agent cannot rank campaigns or score variants until it has learned from your account's data. After you publish an agent, this usually takes up to 24 hours.
+</Callout>
 
 ## Types of Reward Functions
 
@@ -26,17 +42,17 @@ CleverTap provides System and Custom Reward Functions. Every account starts with
 
 These come with every account and need no setup. Their name, description, and overall structure are locked and cannot be changed.
 
-| Reward Function                  | Positive Signal      | Negative Signal(s)                                                    | Editable                 |
-| -------------------------------- | -------------------- | --------------------------------------------------------------------- | ------------------------ |
-| **Notification Click Optimizer** | Notification Clicked | App Uninstalled (highest priority); channel unsubscribe (any channel) | No                       |
-| **Conversion Event**             | Charged (default)    | App Uninstalled (highest priority); channel unsubscribe (any channel) | Only the positive signal |
+| Reward Function      | Positive Signal      | Negative Signal(s)                                                    | Editable                 |
+| -------------------- | -------------------- | --------------------------------------------------------------------- | ------------------------ |
+| **Click Optimizer**  | Notification Clicked | App Uninstalled (highest priority); channel unsubscribe (any channel) | No                       |
+| **Conversion Event** | Charged (default)    | App Uninstalled (highest priority); channel unsubscribe (any channel) | Only the positive signal |
 
 <Callout icon="ℹ️" theme="info">
   ### Tip
 
   - If your business tracks conversions under a different event name, such as "Order Placed," "Subscription Started," "Booking Confirmed", update the Conversion Event Reward Function's positive event to match. Its name and structure stay fixed; only the event itself changes.&#x20;
-  - You can also add a second and third priority level here.&#x20;
-  - This edit is only available when the Reward Function isn't currently in use by a running Agent.
+  - The Conversion Reward Function ships with two positive priority levels: Priority 1 (Charged/Bought/Purchased) and Priority 2 (Added To Cart). Edit these to match your own events.
+  - This edit is only available when the Reward Function is not currently in use by a running Agent.
 </Callout>
 
 ## Custom Reward Function
@@ -58,9 +74,12 @@ To create a Custom Reward Function:
 
 
 3. Enter a _Description_, up to 500 characters, explaining the business goal this Reward Function optimizes for. For example, a retailer might name theirs _Maximize Purchases_, described as: _"Optimizes for users completing a purchase. Penalizes channel unsubscribes to reduce communication fatigue."_
-4. Under _Positive Signals_, add at least one positive signal, which is a user action you want the agent to optimize toward.<br />a. Click **Add Positive Signal** to add a signal. Each signal you add is its own priority level; drag a signal using its handle to reorder priority, the topmost signal is Priority 1, the highest.<br />b. Click **+** next to a signal to add another event to it. Any one event within a signal satisfies that priority level, events within a signal are evaluated as OR, not AND.
+4. Under _Positive Signals_, add at least one positive signal, which is a user action you want the agent to optimize toward.
 
-   For example:
+   1. Click **Add Positive Signal** to add a signal. Each signal you add is its own priority level; drag a signal using its handle to reorder priority, the topmost signal is Priority 1, the highest.
+   2. Click **+** Next to a signal to add another event to it. Any one event within a signal satisfies that priority level, events within a signal are evaluated as OR, not AND.
+
+      For example:
 
 | Priority             | Event(s)                         | What It Means                             |
 | -------------------- | -------------------------------- | ----------------------------------------- |
@@ -68,12 +87,11 @@ To create a Custom Reward Function:
 | Priority 2           | Add to Cart _or_ Add to Wishlist | Mid-funnel intent — either counts equally |
 | Priority 3           | Product Viewed                   | Top-of-funnel engagement                  |
 
-4. Under _Negative Signals_, optionally add signal(s) that may adversely affect conversion. Click **Add Negative Signal**, following the same pattern as positive signals.
-
-5) Click **Save**.
+5. Under _Negative Signals_, optionally add signal(s) that may adversely affect conversion. Click **Add Negative Signal**, following the same pattern as positive signals.
+6. Click **Save**.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   Your account can have up to 5 Reward Functions in total: the 2 built-in System ones (always present and do not count against your custom quota) plus up to 3 Custom ones you create.&#x20;
 

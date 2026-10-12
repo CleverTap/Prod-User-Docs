@@ -134,6 +134,33 @@ Splitting helps you understand how retention varies within a segment based on at
 <Image src="https://files.readme.io/8c4fcb235539726ee842b47fa8a8c0ac475495e6c2a81065f45f480d24aace34-image.png" align="center" width="55% " caption="Split By Properties" border={true} />
 
 
+#### Split by Age Handling
+
+Age is a derived user property. CleverTap calculates it from the user's Date of Birth at the time you run the analysis.
+
+Users are then grouped into the following fixed age groups:
+
+* Unknown
+* \<18
+* 18-24
+* 25-40
+* 41-60
+* 60+
+
+
+<Image src="https://files.readme.io/087816d67144819fe9847e92de6b737594b91c5033940454685c0fc326812718-image.png" alt="Split a Cohort Analysis by Age" align="center" caption="Split a Cohort Analysis by Age" border={true} />
+
+
+These age groups are fixed. After you split a cohort analysis by Age, you can create a segment from a cell in the results. For more information, refer to [Save as Segment](doc:cohorts-v2#save-as-segment).
+
+<Callout icon="far fa-circle-info" theme="info">
+  #### Note
+
+  Age is available only when a Date of Birth (DOB) property is set for your users. The dashboard shows this property as _Birthday_. For more information, refer to [User Profiles](doc:user-profiles).
+
+  Users who do not have a valid Date of Birth are grouped under _Unknown_.
+</Callout>
+
 ## Select Analysis Type
 
 The _Analysis Type_ defines how user return behavior is measured over time after the start event. It determines whether Cohorts tracks exact-day returns, cumulative returns, or return frequency, allowing you to analyze different engagement and retention patterns.

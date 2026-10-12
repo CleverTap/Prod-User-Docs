@@ -106,6 +106,38 @@ Here, the analysis shows that users with different language preferences convert 
 <Image src="https://files.readme.io/f15ab33b060fb45d97ab16faf8cb588771d9fa415f16d816d26f26560f2b0c2c-image.png" alt="Split Funnel by User Property" align="center" caption="Split Funnel by User Property" border={true} />
 
 
+#### Split by Age Handling
+
+Age is a derived property. It is also available as a user property for splitting. CleverTap calculates it from the user's Date of Birth at the time you run the analysis.
+
+Each row in the funnel represents one of the following fixed age groups:
+
+- Unknown
+
+- \<18
+
+- 18-24
+
+- 25-40
+
+- 41-60
+
+- 60+
+
+
+<Image src="https://files.readme.io/38eaed45f65c70fce1e36062bc5f67e46e44c00ff9c11345d74635b382638b91-image.png" alt="Split a Funnel Analysis by Age" align="center" caption="Split a Funnel Analysis by Age" border={true} />
+
+
+These age groups are fixed. Because Age always has these six groups, the top 20 value limit does not apply to it. To save a segment for a specific age group, click the step bar for that age group on the funnel chart and click **Save as Segment**. The segment includes the age group as a condition, in addition to the funnel step conditions. For more information, refer to [Save as Segment](doc:funnels-v2#save-as-segment).
+
+<Callout icon="far fa-circle-info" theme="info">
+  #### Note
+
+  Age is available only when a Date of Birth (DOB) property is set for your users. The dashboard shows this property as _Birthday_. Users who do not have a valid Date of Birth are grouped under _Unknown_.
+
+  For more information, refer to [User Profiles](doc:user-profiles).
+</Callout>
+
 ## Select Measured By Options
 
 The _MEASURED BY_ options control how funnel conversions are calculated, grouped, and evaluated. These settings directly impact how users are counted and how funnel results are displayed.

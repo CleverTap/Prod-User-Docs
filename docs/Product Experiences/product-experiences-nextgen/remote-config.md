@@ -226,7 +226,7 @@ To define the variable behavior for an existing segment:
 <Image src="https://files.readme.io/a6dd6a3-small-Users_in_Germany.png" align="center" border={true} />
 
 
-3. Click **Publish** to make these changes live on your application. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to [Publish Variables](<doc:\<doc: remote-config#Publish-Variable>). (@murtaza, please review)
+3. Click **Publish** to make these changes live on your application. This publishes only the variable you are currently editing. Other variables in draft state are not affected. For more information about publishing options, refer to [Publish Variables](<doc:\<doc: remote-config#Publish-Variable>).&#x20;
 
 You can also test your application's variable behavior in the draft version using the _Preview & Test_ feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
 
@@ -306,5 +306,3 @@ After a Remote Config draft version is published, all the previous live versions
 
 
 #
-
-<br />

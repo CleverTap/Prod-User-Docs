@@ -340,12 +340,6 @@ For example, in the funnel _App Launched > Product Viewed > Added to Cart > Char
 <Image src="https://files.readme.io/80671c76edfa747e4eb38971b9daffbcd2f55a16187bb8c49ddb0722e41c4f91-image.png" alt="Hold Property Constant Checkbox" align="center" width="60%" caption="Hold Property Constant Checkbox" border={true} />
 
 
-<Callout icon="📘" theme="info">
-  #### Selected Property Values Consideration
-
-  If the selected property has more than 20 distinct values, only the top 20 values are considered when evaluating the held property.
-</Callout>
-
 # Reading Funnel Analysis
 
 CleverTap offers multiple views to help you interpret funnel performance effectively. Based on whether you want a visual overview or a detailed comparison, you can analyze funnel data using [Chart View](doc:funnels-v2#chart-view) or [Table View](doc:funnels-v2#chart-view). Each view highlights different aspects of user progression and conversion behavior.

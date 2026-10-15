@@ -5,6 +5,8 @@ excerpt: >-
   personalized targeting and optimized campaigns.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

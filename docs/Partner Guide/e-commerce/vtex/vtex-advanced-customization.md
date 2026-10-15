@@ -2,7 +2,7 @@
 title: VTEX Advanced Customization
 excerpt: Learn how to configure VTEX based on your customizations.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -2,8 +2,7 @@
 title: Map Data for Import
 excerpt: >-
   Learn how to map user profile attributes and event attributes from your Cloud
-  Storage to CleverTap for accurate identity resolution and seamless data
-  ingestion.
+  Storage to CleverTap.
 deprecated: false
 hidden: true
 link:

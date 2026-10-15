@@ -55,13 +55,13 @@ This section lists the file-based import sources that CleverTap supports, whethe
   }
 </style>
 <div class="grid">
-  <a href="https://staging.docs.user.clevertap.net/docs/aws-s3-for-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/cloud-storage-for-file-based-imports" class="integration-card">
     <div class="name">Cloud Storages</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/aws-s3-for-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/csv-upload" class="integration-card">
     <div class="name">CSV Upload</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/aws-s3-for-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/imports-via-sftp" class="integration-card">
     <div class="name">SFTP</div>
   </a>
 </div>

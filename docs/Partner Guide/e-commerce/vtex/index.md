@@ -2,7 +2,9 @@
 title: VTEX
 excerpt: Learn how to integrate your VTEX store with CleverTap.
 deprecated: false
-hidden: true
+hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

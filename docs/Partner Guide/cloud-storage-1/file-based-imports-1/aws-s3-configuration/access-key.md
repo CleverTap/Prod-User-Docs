@@ -10,39 +10,48 @@ metadata:
 ---
 # Overview
 
-This document covers how to configure your Amazon S3 connection in CleverTap using Access Key authentication. This method uses an Access Key ID and Secret Access Key of an AWS IAM user to grant CleverTap access to your bucket. It applies to both import and export connections.
-
-Before you begin, complete Create an _S3 Bucket on AWS_ and _Add the Bucket_ on the CleverTap Dashboard in [Amazon S3](doc:amazon-s3), and select Access Key under Configure with.
+Access Key authentication grants CleverTap access to your Amazon S3 bucket through the access key ID and secret access key of an AWS IAM user. This method applies to both import and export connections.
 
 <Callout icon="📘" theme="info">
-  ### **Note**
+  ### Note
 
-  AWS recommends short-lived credentials over long-term access keys. If your security policy allows it, use the IAM Role method instead; it requires no credentials in CleverTap and fewer steps on AWS.
+  AWS recommends short-lived credentials over long-term access keys. If your security policy allows it, use the [IAM Role](doc:iam-role) method instead. The IAM Role method requires no credentials in CleverTap and fewer steps on AWS. For a comparison of all three methods, refer to [Choose Configuration Method](doc:aws-s3-configuration#choose-configuration-method).
 </Callout>
 
-The configuration involves the following major steps:
+The configuration involves creating an IAM policy and an IAM user, generating an access key, and entering the key in CleverTap.
 
-1. Create an IAM User and Attach the Policy
-2. Generate an Access Key
-3. Configure the Connection on CleverTap
+This document covers the following:
 
-If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](#use-existing-aws-credentials).
+- [Prerequisites for Integration](#prerequisites-for-integration)
+- [Set Up Amazon S3 for Integration](#set-up-amazon-s3-for-integration)
+- [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap)
+- [Verify Integration](#verify-integration)
+- [FAQs](#faqs)
+- [Next Steps](#next-steps)
 
-## Prerequisites
+<Accordion title="Quick Start Guide for Existing Users">
+  An existing IAM user for CleverTap shortens the setup to three steps.
 
-Ensure the following are in place before proceeding:
+  1. Verify the permissions of your IAM user. For more information, refer to [Verify IAM User Permissions](#verify-iam-user-permissions).
+  2. Retrieve or rotate the access key. For more information, refer to [Retrieve or Rotate Access Key](#retrieve-or-rotate-access-key).
+  3. Enter the access key credentials in CleverTap. For more information, refer to [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap).
+</Accordion>
 
-- An S3 bucket has already been created on AWS. Refer to Create an S3 Bucket on AWS.
+## Prerequisites for Integration
 
-- The bucket details entered on the CleverTap dashboard with Access Key selected. Refer to Add the Bucket on the CleverTap Dashboard.
+Before you configure Access Key authentication, ensure that the AWS bucket, the CleverTap bucket details, and the required AWS access are available.
 
-- AWS console access with permissions to create IAM policies, IAM users, and access keys.
+- An Amazon S3 bucket created on AWS. For more information, refer to [Create S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws).
+- Bucket details entered on the CleverTap dashboard with **Access Key** selected as the _Configure with_ method. For more information, refer to [Add Bucket on CleverTap Dashboard](doc:aws-s3-configuration#add-bucket-on-clevertap-dashboard).
+- One of the following, depending on whether you use a new or an existing IAM user:
+  - **New IAM user**: AWS console access with permissions to create IAM policies, IAM users, and access keys
+  - **Existing IAM user**: The access key ID and secret access key of an IAM user that has the required S3 permissions. If you did not store the secret access key, generate a new one. For more information, refer to [Use Existing AWS Credentials](#use-existing-aws-credentials).
 
-# Configure with Access Key
+## Set Up Amazon S3 for Integration
 
 Setting up Amazon S3 for Access Key authentication requires an IAM policy, an IAM user with that policy attached, and an access key for the user. If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](#use-existing-aws-credentials).
 
-**Create an IAM Policy**
+### Create IAM Policy
 
 The IAM policy defines the S3 permissions that CleverTap needs on your bucket. For more information about AWS IAM, refer to [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html).
 
@@ -55,12 +64,13 @@ The IAM policy defines the S3 permissions that CleverTap needs on your bucket. F
 2. Select **Policies** from the left navigation and click **Create policy**.
 
 
-   <Image src="https://files.readme.io/b499b19c10f08d62c4bcff40e250316b03fe7a1d6b0bd285435e3df459519b10-policies.png" align="center" caption="Create policy - AWS S3" border={true} />
+   <Image src="https://files.readme.io/b499b19c10f08d62c4bcff40e250316b03fe7a1d6b0bd285435e3df459519b10-policies.png" align="center" caption="Create Policy - AWS S3" border={true} />
 
 
-3. Select the _JSON_ tab and paste the policy for your use case into the editor.&#x20;
+3. Select the **JSON** tab.
 
-4. Replace `bucket-name` with the name of your S3 bucket.<br />
+4. Select the tab that matches your connection type, and paste the policy into the editor.
+
    <Tabs>
      <Tab title="Import">
        ```json
@@ -112,197 +122,170 @@ The IAM policy defines the S3 permissions that CleverTap needs on your bucket. F
      </Tab>
    </Tabs>
 
-5. Click **Next**.
+5. Replace every occurrence of `bucket-name` in the policy with the name of your S3 bucket, including the occurrence that ends in `/*`.
+
+6. Click **Next**.
 
 
    <Image src="https://files.readme.io/7645db1db4a18cd0b8f20def69854a4c42c5c8df663099fb2ac5193626b44b1f-specify_permission.png" align="center" caption="Policy Editor - AWS S3" border={true} />
 
 
-6. Enter a name for your policy under _Policy name_ and click **Create policy**.
+7. Enter a name for your policy under _Policy name_ and click **Create policy**.
 
-#### Create an IAM User and Attach the Policy
+### Create IAM User and Attach Policy
 
-This section covers creating an IAM user for CleverTap and attaching the policy you created.
+The IAM user holds the policy and provides the credentials that CleverTap uses to access your bucket.
 
-To create the user, perform the following steps:
-
-1. Select IAM users from the left navigation and click Create user.
+1. Select **Users** from the left navigation and click **Create user**.
 
 
    <Image src="https://files.readme.io/b9791cf6474ad4e9d95e65d6bc67351598e68be66bdcc4fe834373fc9bbc6ed3-IAM_Users.png" align="center" caption="Create User" border={true} />
 
 
-2. Enter a value for _User name_ and click **Next**. Leave Provide user access to the AWS Management Console cleared; CleverTap only needs programmatic access.
+2. Enter a value for _User name_ and click **Next**. Leave the _Provide user access to the AWS Management Console_ checkbox cleared because CleverTap requires only programmatic access.
 
 
    <Image src="https://files.readme.io/25f2e870defe093546f77743678425d50c13a046ed8781d8a3384876c7735780-User_details.png" align="center" caption="Add User Name - AWS S3" border={true} />
 
 
-3. Search for the policy you created in [Create an IAM Policy](#create-a-IAM-policy), select it, and click **Next**.
+3. Under _Permissions options_, select **Attach policies directly**. This option attaches the policy to the user itself, so the permissions apply to this user without a user group.
+
+4. Search for the policy you created in [Create IAM Policy](#create-iam-policy), select the policy, and click **Next**.
 
 
    <Image src="https://files.readme.io/6658e55cf63528f0bdf2bafb6b397fbe7656e72d6c330674728e970724d00163-set_permissions.png" align="center" caption="Attach Policies Directly - AWS S3" border={true} />
 
 
-4. Click **Create user**.
+5. Click **Create user**.
 
 
    <Image src="https://files.readme.io/2f4af6ae5986c5dc63ba0f8e47bb1402231dbe23bdd9943fd5b58237cc824d9f-CREATE_USER.png" align="center" caption="Create User" border={true} />
 
 
-#### Generate Access Key
+### Generate Access Key
 
-This section covers generating an access key that CleverTap uses to authenticate.
+The access key consists of an access key ID and a secret access key that CleverTap uses to authenticate with AWS.
 
-1. Open the user you just created in the _Users_ list, and go to the _Security credentials_ tab.
+1. Open the user that you created from the _Users_ list and go to the **Security credentials** tab.
+
 2. Under _Access keys_, click **Create access key**.
 
 
-<Image src="https://files.readme.io/8b9962a6b0f6d73e8f56e305b4ab1228aadaa71cc5572641b297134c7a8677be-create_access_key.png" align="center" caption="Create Access Key" border={true} />
+   <Image src="https://files.readme.io/8b9962a6b0f6d73e8f56e305b4ab1228aadaa71cc5572641b297134c7a8677be-create_access_key.png" align="center" caption="Create Access Key" border={true} />
 
 
-2. Under Use Case, select **Third-party service.&#x20;**&#x55;nder Confirmation, select I understand the above recommendation and want to proceed to create an access key, and then click Next.
+3. Under _Use case_, select **Third-party service**. Under _Confirmation_, select **I understand the above recommendation and want to proceed to create an access key** and click **Next**.
 
 
    <Image src="https://files.readme.io/556144f8689c588c52db2d995d9f7d492db76abdc55cee8f5fac6d2561c9b83d-third_party_services.png" align="center" caption="Third-Party Service" border={true} />
 
 
-3. (Optional) Enter a Description tag value, for example, `CleverTap S3 export`.&#x20;
+4. (Optional) Enter a description for the access key under _Description tag value_, for example, `CleverTap S3 export`.
 
-4. Click **Create access key**.
+5. Click **Create access key**.
 
 
    <Image src="https://files.readme.io/7d6c6af07f0bd0796ed7c5526462518ab8a022db340cd1dee398fef0cfbea14b-set_description_tag.png" align="center" caption="Create Access Key" border={true} />
 
 
-5. Copy the _Access Key_ and _Secret Access Key_ values. You will need these to [configure the connection](#configure-the-connection) on CleverTap.
+6. Copy the _Access key_ and _Secret access key_ values. You enter these values when you [configure the connection](#configure-amazon-s3-in-clevertap) in CleverTap.
 
 <Callout icon="🚧" theme="warn">
   ### Important
 
-  The **Secret Access Key** is shown only on this screen and cannot be retrieved later. Store it securely before you leave the page. If you lose it, create a new access key.
+  The secret access key appears only on this screen, and you cannot retrieve it later. Store the key securely before you leave the page. If you lose the key, create a new access key.
 </Callout>
 
 ### Use Existing AWS Credentials
 
-If you already have an IAM user for CleverTap, verify its permissions and retrieve or rotate its access key.
+An existing IAM user for CleverTap requires verified permissions and a stored access key before you configure the connection.
 
 #### Verify IAM User Permissions
 
-This section covers finding an existing access key or generating a new one if you haven't stored the Secret Access Key.
+The IAM user needs, at minimum, the permissions in the policy for your connection type for CleverTap to access your S3 bucket.
+
+1. Log in to your AWS console, go to _Identity and Access Management (IAM)_, and select **Users** from the left navigation.
 
 2. Open the IAM user that CleverTap uses and select the **Permissions** tab.
 
-To ensure CleverTap can access your S3 bucket, verify that the IAM user has at minimum the following permissions.
+3. Confirm that an attached policy grants at least the actions in the [policy for your connection type](#create-iam-policy), with `bucket-name` replaced by the name of your S3 bucket. If the user lacks such a policy, [create the policy](#create-iam-policy) and attach it to the user.
 
-1. Open the user from the Users list and select the Permissions tab.
-2. Confirm that an attached policy grants at least the actions listed below. If not, [create the policy](#create-a-IAM-policy) and attach it. Replace `bucket-name` with your actual bucket name.
+#### Retrieve or Rotate Access Key
 
-<Tabs>
-  <Tab title="Import">
-    ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "s3:GetObject",
-                    "s3:ListBucket"
-                ],
-                "Resource": [
-                    "arn:aws:s3:::bucket-name",
-                    "arn:aws:s3:::bucket-name/*"
-                ]
-            }
-        ]
-    }
-    ```
-  </Tab>
+You can retrieve the access key ID of an existing key, or you can create a new key if you did not store the secret access key.
 
-  <Tab title="Export">
-    ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "s3:ListBucket"
-                ],
-                "Resource": [
-                    "arn:aws:s3:::bucket-name"
-                ]
-            },
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "s3:PutObject"
-                ],
-                "Resource": [
-                    "arn:aws:s3:::bucket-name/*"
-                ]
-            }
-        ]
-    }
-    ```
-  </Tab>
-</Tabs>
+1. Go to the **Security credentials** tab of the IAM user and scroll to _Access keys_.
 
-#### Retrieve or rotate the access key
+2. If an active access key exists and you stored its secret access key, note the _Access key ID_ and continue to [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap).
 
-1. Select the Security credentials tab and scroll to Access keys.
-2. If an active access key exists and you have its Secret Access Key stored, note the Access Key ID and continue to Configure the Connection on CleverTap.
-3. If you did not store the Secret Access Key, click **Create access key**, then follow [Generate an Access Key](doc:generate-an-access-key#generate-an-access-key) from step 3.
-
-<Callout icon="⚠️" theme="warn">
-  ### Note
-
-  An IAM user can have at most two access keys. Deactivate or delete keys that are no longer used.
-</Callout>
-
-## Configure the Connection on CleverTap
-
-Once your AWS credentials are in place, return to the CleverTap dashboard to complete the connection.
-
-1. Return to the CleverTap dashboard. For import, navigate to _Settings_ > _Partners_ > _Import centre_ and select Amazon S3 connection. For export, go to _Settings_ > _Partners_ > Export centre, select **Amazon S3 connection.**
-
-2. Go to the **Security credentials** tab of the IAM user and scroll to _Access keys_.
-
-3. If an active access key exists and you stored its secret access key, note the _Access key ID_ and continue to [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap).
-
-
-   <Image src="https://files.readme.io/c4846538ba9ffe95a2deeab6a2191c344f937a1510a7d5c5610d0316f0117138-Bucket_details.png" border={true} />
-
-
-4. Verify and save:
-   - For import, click Test Connection. When the test succeeds, click Save.
-   - For export, click Save.
+3. If you did not store the secret access key, click **Create access key**, and then complete steps 3 to 6 in [Generate Access Key](#generate-access-key).
 
 <Callout icon="🚧" theme="warn">
   ### Note
 
-  For export, when you click **Save**, CleverTap uploads a test file to the specified bucket and region to verify the configuration. The configuration is saved only if the test file upload succeeds.
+  An IAM user can have at most two access keys. Deactivate or delete keys that you no longer use.
 </Callout>
 
-The Amazon S3 bucket is now configured on both the AWS console and the CleverTap dashboard.
+## Configure Amazon S3 in CleverTap
 
-## Troubleshooting
+The CleverTap dashboard accepts the access key credentials that you created or retrieved on AWS.
 
-| Issue                                                                         | Cause                                                                                      | Resolution                                                                                                                       |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| Export **Save** fails with an access-denied error                             | The IAM policy grants read (`s3:GetObject`) but not write (`s3:PutObject`).                | Attach the export policy from _Create an IAM Policy_.                                                                            |
-| Import **Test Connection** fails with an access-denied error                  | The IAM policy grants write but not read, or `s3:ListBucket` is missing on the bucket ARN. | Attach the import policy from _Create an IAM Policy_. Note that `s3:ListBucket` applies to `arn:aws:s3:::bucket-name` (no `/*`). |
-| Connection fails immediately with an invalid-credentials error                | The Secret Access Key was mistyped, or the key was deactivated or deleted in IAM.          | Create a new access key and update the connection.                                                                               |
-| **Next** is disabled on the _Access key best practices & alternatives_ screen | The confirmation checkbox is not selected.                                                 | Select **I understand the above recommendation and want to proceed to create an access key**.                                    |
-| Policy validation fails in the JSON editor                                    | `bucket-name` was not replaced, or only one occurrence was replaced.                       | Replace every occurrence of `bucket-name,` including the one ending in `/*`.                                                     |
+1. Return to the CleverTap dashboard and open your Amazon S3 connection:
+   - For import, go to _Settings > Partners > Import Center_ and select your Amazon S3 connection.
+   - For export, go to _Settings > Partners > Export Center_ and select your Amazon S3 connection.
 
-# Verification Checklist
+2. Under _Configure with_, select **Access Key**.
 
-Confirm the following before using the connection in production:
+3. Enter the _Access Key_ and _Secret Key_ values that you copied from AWS.
 
-- The IAM policy contains only the actions required for the connection type (read for import, write for export).
-- The policy's `Resource` values reference the correct bucket, with `/*` for object-level actions.
-- The IAM user has no console access and no permissions beyond this policy.
-- The Secret Access Key is stored in your organization's secrets manager.
-- **Test Connection (import)** or **Save (export)** succeeded on the CleverTap dashboard.
+
+   <Image src="https://files.readme.io/c4846538ba9ffe95a2deeab6a2191c344f937a1510a7d5c5610d0316f0117138-Bucket_details.png" align="center" caption="Paste Access Key and Secret Key" border={true} />
+
+
+## Verify Integration
+
+CleverTap verifies the connection when you test or save it, and the verification method depends on the connection type.
+
+- **Import**: Click **Test Connection**. When the test succeeds, click **Save**.
+- **Export**: Click **Save**. CleverTap uploads a test file to the bucket and region that you specified, and it saves the connection only if the upload succeeds.
+
+After the connection saves successfully, you have configured the Amazon S3 bucket on both the AWS console and the CleverTap dashboard.
+
+### Review Security Configuration
+
+The following checks confirm that the connection follows least-privilege practices before you use it in production.
+
+- Confirm that the IAM policy contains only the actions that the connection type requires (read for import, write for export).
+- Confirm that the `Resource` values reference the correct bucket, with `/*` for object-level actions.
+- Confirm that the IAM user has no console access and no permissions beyond this policy.
+- Confirm that your organization's secrets manager stores the secret access key.
+- Confirm that **Test Connection** (import) or **Save** (export) succeeded on the CleverTap dashboard.
+
+## FAQs
+
+### Why does Save fail with an access-denied error for an export connection?
+
+The IAM policy grants read access (`s3:GetObject`) but not write access (`s3:PutObject`). Attach the export policy from [Create IAM Policy](#create-iam-policy) to the IAM user.
+
+### Why does Test Connection fail with an access-denied error for an import connection?
+
+The IAM policy grants write access but not read access, or the policy omits `s3:ListBucket` on the bucket ARN. Attach the import policy from [Create IAM Policy](#create-iam-policy). Note that `s3:ListBucket` applies to the bucket ARN `arn:aws:s3:::bucket-name`, without the `/*` suffix.
+
+### Why does the connection fail immediately with an invalid-credentials error?
+
+You mistyped the secret access key, or someone deactivated or deleted the key in IAM. Create a new access key and update the connection with the new credentials.
+
+### Why is Next disabled when I create an access key?
+
+The confirmation checkbox on the _Access key best practices & alternatives_ screen is not selected. Select **I understand the above recommendation and want to proceed to create an access key** to enable **Next**.
+
+### Why does policy validation fail in the JSON editor?
+
+You did not replace `bucket-name`, or you replaced only one occurrence. Replace every occurrence of `bucket-name`, including the occurrence that ends in `/*`.
+
+## Next Steps
+
+After you configure the connection, you can create imports and exports that use it.
+
+- Create an import that reads from this connection. For more information, refer to [Create Import](doc:create-file-based-import), [Map Data for Import](doc:map-data-for-file-based-import), [Schedule Import](doc:schedule-file-based-import), and [Import Listing and Stats](doc:import-listing-and-stats-for-file-based-import).
+- Create an export that writes to this connection. For more information, refer to [Cloud Storage](doc:cloud-storage), [Event Exports](doc:event-exports), or [Profile Exports](doc:profile-exports).

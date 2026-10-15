@@ -198,6 +198,7 @@ The following table describes each column in the _Engagement Performance Table_:
 | --------------------------- | ------------------------------------------------------------------------------------------------------ |
 | Name                        | The campaign name. (for example, Welcome Email with Offer)                                             |
 | Status                      | The current campaign status (for example, Running or Completed).                                       |
+| Channel                     | The delivery channel of the campaign (for example, Email, Push, In-App, or SMS).                       |
 | Created by                  | The user who created the campaign.                                                                     |
 | Campaign Label              | The campaign label for grouping or categorization.                                                     |
 | Journey Id                  | The associated journey ID, if available.                                                               |

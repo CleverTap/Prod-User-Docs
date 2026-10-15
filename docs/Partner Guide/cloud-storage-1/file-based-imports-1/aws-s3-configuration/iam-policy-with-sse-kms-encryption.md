@@ -1,0 +1,229 @@
+---
+title: IAM Policy with SSE-KMS Encryption
+excerpt: >-
+  Understand how to encrypt CleverTap exports to Amazon S3 using your own AWS
+  KMS key.
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+# Overview
+
+The IAM Policy with SSE-KMS Encryption method writes your exported files to a bucket whose default encryption uses a customer-managed AWS Key Management Service (KMS) key that you own. AWS encrypts the files with your key, and only principals that you authorize can decrypt them. The method applies to export connections only.
+
+This method extends the [IAM Role](doc:iam-role) method with three additions:
+
+- A symmetric KMS key that you create, with a CleverTap-generated key policy statement that allows CleverTap to encrypt with the key
+- SSE-KMS default encryption on the bucket, using that key
+- The KMS key ARN entered on the CleverTap dashboard
+
+The configuration involves copying the generated policies, creating a KMS key, enabling SSE-KMS encryption on the S3 bucket, applying the bucket policy, and entering the KMS key ARN in CleverTap. For a comparison of all three methods, refer to [Choose Configuration Method](doc:amazon-s3#choose-configuration-method).
+
+This document covers the following:
+
+- [Prerequisites for Integration](#prerequisites-for-integration)
+- [Set Up Amazon S3 for Integration](#set-up-amazon-s3-for-integration)
+- [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap)
+- [Verify Integration](#verify-integration)
+- [FAQs](#faqs)
+- [Next Steps](#next-steps)
+
+## Prerequisites for Integration
+
+Before you configure IAM Policy with SSE-KMS Encryption, ensure that the CleverTap bucket details, the AWS permissions, and the key administrator are available.
+
+- Bucket details entered on the CleverTap dashboard with **IAM Policy with SSE-KMS Encryption** selected under _Configure with_. For more information, refer to [Add Bucket on CleverTap Dashboard](doc:amazon-s3#add-bucket-on-clevertap-dashboard) and [Enter Folder Name](doc:amazon-s3#enter-folder-name).
+- AWS console access with permissions to create KMS keys (`kms:CreateKey`, `kms:PutKeyPolicy`), create or edit S3 buckets, and edit bucket policies
+- An IAM user or role in your AWS account that administers the key, which you select as the key administrator during key creation
+- The AWS region of the bucket, because you must create the KMS key in the same region
+
+## Set Up Amazon S3 for Integration
+
+Setting up Amazon S3 for SSE-KMS encryption requires four tasks. You can create the S3 bucket before or after the KMS key, and the steps in this document create the key first so that you can select it during bucket creation.
+
+### Copy KMS Policies from CleverTap Dashboard
+
+When you select IAM Policy with SSE-KMS Encryption, the dashboard shows three items under _Configure with_: a generated _KMS Key Policy_ (a single policy statement), a _KMS Key ARN_ field, and a generated _IAM policy_ (the bucket policy).
+
+1. On the _Connect to Amazon S3 for export_ page, confirm that _Folder_ contains your exact bucket name.
+
+2. Under _Configure with_, select **IAM Policy with SSE-KMS Encryption**.
+
+3. Under _KMS Key Policy_, click the copy icon and save the statement in a text editor. You use the statement in [Create KMS Key on AWS](#create-kms-key-on-aws).
+
+4. Under _IAM policy_, click the copy icon and save the policy in a text editor. You use the policy in [Apply IAM Policy to S3 Bucket](#apply-iam-policy-to-s3-bucket).
+
+<Callout icon="📘" theme="info">
+  ### Note
+
+  The _KMS Key Policy_ is a single statement, not a complete key policy document. In [Create KMS Key on AWS](#create-kms-key-on-aws), you add the statement to the existing `Statement` array of the key policy and do not replace the policy. Keep this page open, and return to it to enter the KMS key ARN and save the connection.
+</Callout>
+
+### Create KMS Key on AWS
+
+A symmetric KMS key encrypts the data that CleverTap exports, and the CleverTap statement in the key policy allows CleverTap to encrypt with the key. If you already have a symmetric KMS key with _Encrypt and decrypt_ usage in the region of your bucket, open the key from _Key Management Service (KMS) > Customer managed keys_, click **Edit** under _Key policy_, add the CleverTap statement as described in step 7, save the policy, copy the ARN of the key, and skip to [Enable SSE-KMS Encryption on S3 Bucket](#enable-sse-kms-encryption-on-s3-bucket).
+
+<Callout icon="🚧" theme="warn">
+  ### Important
+
+  CleverTap supports only symmetric keys with _Encrypt and decrypt_ usage, and you cannot change the key type or usage after creation. CleverTap does not support asymmetric keys, HMAC keys, or multi-region keys in a different primary region.
+</Callout>
+
+1. Log in to your AWS console, confirm that the console region matches the region of your bucket, and go to **Key Management Service (KMS)**.
+
+
+   <Image src="https://files.readme.io/76662242df3572cec8c982b9db29c08a0767a1a6dd8103edceda00dce05cf449-KMS.png" align="center" caption="Key Management Service (KMS) - AWS S3" border={true} />
+
+
+2. Select **Customer managed keys** from the left navigation and click **Create key**.
+
+3. On _Step 1: Configure key_, under _Key type_, select **Symmetric**, and under _Key usage_, select **Encrypt and decrypt**. Under _Advanced options_, keep **KMS** as the key material origin and **Single-Region key** as the regionality. Click **Next**.
+
+
+   <Image src="https://files.readme.io/b1f94674609a8433ada778c20348b166dfa5902967bd2ac57d87f287b2fda983-configure_-_kms.png" align="center" caption="Configure KMS - AWS S3" border={true} />
+
+
+4. On _Step 2: Add labels_, enter an _Alias_ for the key, for example, `clevertap-export-key`, and click **Next**.
+
+5. On _Step 3: Define key administrative permissions_, select the IAM user or role that administers the key and click **Next**.
+
+6. On _Step 4: Define key usage permissions_, optionally select the IAM users or roles in your account that read (decrypt) the exported files, and click **Next**. CleverTap's access comes from the key policy statement in the next step, not from this step.
+
+7. On _Step 5: Edit key policy_, click **Edit**, and add the KMS key policy statement that you copied from CleverTap to the existing `Statement` array. Separate the new statement from the previous statement with a comma.
+
+
+   <Image src="https://files.readme.io/80174e234046b7418d93c2bfc521018c721c63525fe7afe2fdf6031d3fc84288-edit_key_policy.png" align="center" caption="Paste Key Policy from CleverTap Dashboard" border={true} />
+
+
+8. Click **Next**, review the configuration, and click **Finish**.
+
+9. Open the key from the _Customer managed keys_ list and copy its _ARN_. You use the ARN in [Enable SSE-KMS Encryption on S3 Bucket](#enable-sse-kms-encryption-on-s3-bucket) and in [Configure Amazon S3 in CleverTap](#configure-amazon-s3-in-clevertap).
+
+
+   <Image src="https://files.readme.io/9c664afc1518e9eaa598f339cc568a25aea95d41677d594b706a8d6006131174-arn.png" align="center" caption="Copy ARN - AWS S3" border={true} />
+
+
+### Enable SSE-KMS Encryption on S3 Bucket
+
+The default encryption setting of the S3 bucket applies your KMS key to every object that CleverTap exports.
+
+<Callout icon="🚧" theme="warn">
+  ### Important
+
+  The key must be in the same AWS region as the bucket. S3 does not accept a single-region key from another region.
+</Callout>
+
+#### Enable SSE-KMS Encryption on New Bucket
+
+A new bucket takes the KMS key during creation. Follow the steps in [Create S3 Bucket on AWS](doc:amazon-s3#create-s3-bucket-on-aws). In step 9, select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)**, select **Enter AWS KMS key ARN**, paste the key ARN, and keep _Bucket Key_ set to **Enable**.
+
+#### Enable SSE-KMS Encryption on Existing Bucket
+
+An existing bucket takes the KMS key through its default encryption setting.
+
+1. In your AWS console, go to **S3** and open the bucket.
+
+2. Select the **Properties** tab and click **Edit** under _Default encryption_.
+
+3. Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)**.
+
+4. Under _AWS KMS key_, select **Enter AWS KMS key ARN** and paste the key ARN.
+
+5. Keep _Bucket Key_ set to **Enable** and click **Save changes**.
+
+
+   <Image src="https://files.readme.io/160893692ac9868ad5b9c3d5bcfd37e1c6df4736ae0b65fbfdd4be1b5c07cb13-2026-05-31_22-51-14_1.gif" align="center" caption="Select Server-Side Encryption with AWS Key Management Service Keys (SSE-KMS)" border={true} />
+
+
+### Apply IAM Policy to S3 Bucket
+
+The IAM policy that CleverTap generates grants CleverTap write access to export data to your bucket.
+
+1. In your AWS console, go to **S3** and open the bucket that you created or updated in [Enable SSE-KMS Encryption on S3 Bucket](#enable-sse-kms-encryption-on-s3-bucket).
+
+2. Select the **Permissions** tab and click **Edit** under _Bucket policy_.
+
+
+   <Image src="https://files.readme.io/4a7efa337fb62f0c255f136b1647b0e6ef2c0dec33e88ea66e372f0090b76a89-edit_bucket_policy_2.png" align="center" caption="Edit Bucket Policy" border={true} />
+
+
+3. Add the CleverTap policy to the bucket policy:
+   - If the bucket has no bucket policy, paste the policy that you copied from CleverTap.
+   - If the bucket has a bucket policy, add the CleverTap statements to the existing `Statement` array.
+
+4. Click **Save changes**.
+
+<Callout icon="🚧" theme="warn">
+  ### Important
+
+  Do not remove or replace existing statements in the bucket policy. Replacing the policy removes permissions that other systems depend on.
+</Callout>
+
+## Configure Amazon S3 in CleverTap
+
+The CleverTap dashboard needs the ARN of the KMS key that your bucket uses.
+
+1. Return to the _Connect to Amazon S3 for export_ page that you left open.
+
+2. Under _Configure with_, confirm that **IAM Policy with SSE-KMS Encryption** is selected.
+
+3. In _KMS Key ARN_, paste the ARN that you copied in [Create KMS Key on AWS](#create-kms-key-on-aws). The ARN uses the following format:
+
+   ```text
+   arn:aws:kms:<region>:<account-id>:key/<key-id>
+   ```
+
+## Verify Integration
+
+CleverTap verifies the connection when you save it after you save both the key policy and the bucket policy on AWS.
+
+1. Confirm that you saved the key policy and the bucket policy on AWS.
+
+2. Click **Save**. CleverTap uploads a test file to the bucket, encrypted with your KMS key, and it saves the connection only if the upload succeeds.
+
+After the connection saves successfully, the Amazon S3 bucket is configured with SSE-KMS encryption on both the AWS console and the CleverTap dashboard.
+
+### Review Security Configuration
+
+The following checks confirm that the key, the bucket, and the CleverTap connection match before you use the connection in production.
+
+- Confirm that the KMS key is symmetric, has _Encrypt and decrypt_ usage, and is in the same region as the bucket.
+- Confirm that the key policy contains the CleverTap `AllowCleverTapExportEncryption` statement and at least one statement that lets your account administer the key.
+- Confirm that the default encryption of the bucket is SSE-KMS with this key and that _Bucket Key_ is enabled.
+- Confirm that the bucket policy contains the CleverTap statements and all pre-existing statements.
+- Confirm that the _KMS Key ARN_ on the CleverTap dashboard matches the key that the bucket uses.
+- Confirm that **Save** succeeded on the CleverTap dashboard.
+- Confirm that a principal in your account with `kms:Decrypt` can open the test file.
+
+## FAQs
+
+### Why does Finish fail with a MalformedPolicyDocumentException error?
+
+The error message reads `The new key policy will not allow you to update the key policy in the future`. You replaced the default `Enable IAM User Permissions` statement with the CleverTap statement, or you did not select a key administrator. Click **Previous** to _Step 3_ and select a key administrator, or restore the default statement and add the CleverTap statement alongside it.
+
+### Why does Finish fail with a JSON syntax error?
+
+You pasted the CleverTap statement without a separating comma, or outside the `Statement` array. Ensure that the statement sits inside `"Statement": [ ... ]` and that a comma separates it from the previous statement.
+
+### Why does S3 not accept the KMS key ARN under Default encryption?
+
+The key is in a different region from the bucket, or you truncated the ARN. Create the key in the region of the bucket, and paste the complete ARN.
+
+### Why does Save fail on CleverTap even though the bucket policy is correct?
+
+The CleverTap statement is missing from the key policy, so S3 cannot obtain a data key on CleverTap's behalf, or the _KMS Key ARN_ field is empty or points to a different key than the bucket uses. Confirm that the `AllowCleverTapExportEncryption` statement exists on the key that the bucket uses, and that you entered the same ARN on CleverTap.
+
+### Why can't my team open the exported files?
+
+The readers lack `kms:Decrypt` on the key. Add the readers as key users (_Step 4_ of key creation), or grant `kms:Decrypt` in the key policy.
+
+### Why is the bucket name that I want unavailable?
+
+S3 bucket names are unique across all AWS accounts. Choose another name, and update _Folder_ on CleverTap before you copy the policies.
+
+## Next Steps
+
+After you configure the connection, you can create exports that use it.
+
+- Create an export that writes to this connection. For more information, refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).

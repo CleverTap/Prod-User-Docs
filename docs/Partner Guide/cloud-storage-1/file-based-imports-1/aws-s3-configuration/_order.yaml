@@ -1,2 +1,3 @@
 - access-key
 - iam-role
+- iam-policy-with-sse-kms-encryption

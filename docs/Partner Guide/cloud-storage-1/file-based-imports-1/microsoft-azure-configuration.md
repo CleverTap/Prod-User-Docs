@@ -2,7 +2,9 @@
 title: Microsoft Azure
 excerpt: Understand how to integrate CleverTap dashboard to Microsoft Azure.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

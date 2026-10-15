@@ -4,7 +4,9 @@ excerpt: >-
   Understand how to encrypt CleverTap exports to Amazon S3 using your own AWS
   KMS key.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

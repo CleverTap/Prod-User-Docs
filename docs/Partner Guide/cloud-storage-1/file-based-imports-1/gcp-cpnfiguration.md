@@ -4,7 +4,9 @@ excerpt: >-
   Understand how to integrate CleverTap dashboard to Google Cloud Platform
   (GCP).
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

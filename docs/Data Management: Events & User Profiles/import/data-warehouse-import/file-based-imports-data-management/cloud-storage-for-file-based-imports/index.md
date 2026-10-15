@@ -21,11 +21,11 @@ This section lists the Cloud Storage that CleverTap supports for data ingestion.
 
   </Card>
 
-  <Card title="Google Cloud Storage" href="https://docs.clevertap.com/docs/gcp-configuration">
+  <Card title="Google Cloud Platform (GCP)" href="https://docs.clevertap.com/docs/gcp-configuration">
 
   </Card>
 
-  <Card title="Microsoft Azure Blob Storage" href="https://docs.clevertap.com/docs/microsoft-azure-configuration">
+  <Card title="Microsoft Azure" href="https://docs.clevertap.com/docs/microsoft-azure-configuration">
 
   </Card>
 </Cards>

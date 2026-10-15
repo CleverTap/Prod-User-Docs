@@ -3,6 +3,8 @@ title: Cloud Storage
 excerpt: Learn how to import data from Cloud Storage into CleverTap
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

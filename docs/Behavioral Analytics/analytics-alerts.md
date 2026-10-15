@@ -27,7 +27,7 @@ You can choose between two alert types:
 - **Anomaly alerts**: Triggered when the metric deviates from its expected range, as determined by CleverTap's seasonality-aware detection model.
 - **Threshold alerts**: Triggered when the metric crosses a fixed value or changes by a defined percentage relative to the same period last week.
 
-When an alert is triggered, CleverTap delivers notifications based on the selected delivery options, such as a Dashboard Notification, Email, or a Slack channel.
+When an alert is triggered, CleverTap delivers notifications based on the selected delivery options, such as a Dashboard Notification, Email, or a Slack channel. Each notification states the period that was evaluated and the numbers behind the alert. For more information, refer to [Alert Notifications](doc:analytics-alerts#alert-notifications).
 
 # Alerts Evaluation Process
 
@@ -45,13 +45,19 @@ Each time CleverTap evaluates the alert, it does the following:
   Choose the alert type that suits your metric. Use _anomaly alerts_ for metrics that change frequently and unpredictably. Use _threshold alerts_ when you have a specific value or percentage change in mind that you always want to know about.
 </Callout>
 
+## Evaluation Periods
+
+CleverTap evaluates alerts on calendar-aligned periods, such as a full hour, a full day, a Monday-to-Sunday week, or a full calendar month. It compares a complete period with another complete period and evaluates an alert only after the period it covers has closed. This means a partial period, such as Monday to Wednesday, is never compared with a full week.
+
+For the time at which each alert frequency is evaluated, refer to [Delivery Options](doc:analytics-alerts#delivery-options).
+
 # Prerequisites
 
 Before you create an alert, make sure you meet the following requirements:
 
 - You have access to the CleverTap Analytics module.
 - You have a Trends chart configured with at least one supported metric (Event count or Unique users).
-- To send alerts to Slack, a user with admin access must first connect your project to Slack. For more information, refer to [Connect Slack](doc:alerts#connect-slack).
+- To send alerts to Slack, a user with admin access must first connect your project to Slack. For more information, refer to [Connect Slack](doc:analytics-alerts#connect-slack).
 
 # Create an Alert
 
@@ -69,8 +75,8 @@ To create an alert:
 
 The **Create Alert** window opens, which follows the following two-step process:
 
-1. [Criteria](doc:alerts#criteria)
-2. [Delivery Options](doc:alerts#delivery-options)
+1. [Criteria](doc:analytics-alerts#criteria)
+2. [Delivery Options](doc:analytics-alerts#delivery-options)
 
 ## Criteria
 
@@ -169,6 +175,8 @@ The following fields appear in this step:
         - **Drop**: Triggers an alert only when the metric falls below the lower bound of the expected range.
         - **Both**: Triggers an alert on both upward and downward deviations.
 
+        An alert set to _Drop_ never triggers when the metric rises, and an alert set to _Spike_ never triggers when the metric falls.
+
         Use these options to reduce noise when you only care about one type of movement in your metric. For example,**&#x20;**&#x69;&#x66;**&#x20;**&#x79;ou monitor a _Payment Failed_ event and only care about spikes in failure&#x73;_, but&#x20;_&#x61; drop in failures is not a problem. Set an alert for _Spike_ so that naturally quieter periods do not generate false alerts.
       </td>
     </tr>
@@ -200,7 +208,7 @@ The following fields appear in this step:
   </tbody>
 </Table>
 
-After configuring the criteria, click **Next** to proceed to [Delivery Options](doc:alerts#delivery-options).
+After configuring the criteria, click **Next** to proceed to [Delivery Options](doc:analytics-alerts#delivery-options).
 
 ## Delivery Options
 
@@ -234,10 +242,10 @@ The following fields appear in this step:
       <td>
         Determines how often CleverTap checks whether the alert condition is met. The following options are available:
 
-        - **Hourly**: Evaluates once per hour, approximately 20 minutes after each hour closes.
-        - **Daily**: Evaluates once per day at approximately 6:00 AM in your account's timezone.
-        - **Weekly**: Evaluates once per week at approximately 6:00 AM on the first day of the new week in your account's timezone.
-        - **Monthly**: Evaluates once per month at approximately 6:00 AM on the first day of the new month in your account's timezone.
+        - **Hourly**: Evaluates once per hour for the hour that just closed, at least 20 minutes after the hour closes.
+        - **Daily**: Evaluates once per day at approximately 6:00 AM in your account's timezone, for the previous full day.
+        - **Weekly**: Evaluates once per week at approximately 6:00 AM on Monday in your account's timezone, for the previous full week (Monday to Sunday).
+        - **Monthly**: Evaluates once per month at approximately 6:00 AM on the 1st of the month in your account's timezone, for the previous full calendar month. This applies even when the 1st falls on a weekend.
       </td>
     </tr>
 
@@ -281,6 +289,52 @@ After configuring delivery options, click **Create** to save the alert.
   The 20-minute delay applies to hourly alerts only. It allows event data to fully settle before evaluation runs. For example, if you set an hourly alert with an evaluation window of 3:00 to 4:00 PM, CleverTap evaluates the metric at approximately 4:20 PM once that hour is fully closed.
 
   For all alert frequencies (hourly, daily, weekly, and monthly), CleverTap only evaluates complete, closed periods. It never evaluates a partial period. This is important when interpreting a metric value of 0. A value of 0 in a completed, evaluated period means no events occurred. It does not mean data has not arrived yet, because CleverTap waits for the period to close before running any evaluation.
+</Callout>
+
+# Alert Notifications
+
+When an alert triggers, CleverTap sends a notification to each delivery destination you select, such as Dashboard, Email, or Slack. Every notification tells you what was evaluated and why the alert triggered, so you can understand the change without opening the dashboard.
+
+## Evaluation Window and Breach Details
+
+Each notification includes the following:
+
+- **Evaluation window**: The exact period CleverTap evaluated when the alert triggered. For example, _Jul 6, 09:00 to 10:00_ for an hourly alert, _Jun 30 (full day)_ for a daily alert, _Jun 23–29_ for a weekly alert, or _June 2026_ for a monthly alert.
+- **Metric and series**: The event, segment, and metric on which CleverTap found the change.
+- **Breach details**: The numbers behind the alert. The details depend on the alert type:
+  - **Threshold alerts**: The actual value, the threshold you set, and the baseline value, which is the value from the same period last week.
+  - **Anomaly alerts**: The actual value, the expected value or range, the percentage spike or drop compared with the baseline, and the direction of the change (increase or decrease).
+
+All timestamps in Dashboard notifications and the evaluation window labels in every notification use your account's time zone.
+
+### Dashboard Notification Alert
+
+The following is the sample dashboard notification alert:
+
+
+<Image src="https://files.readme.io/7792b597e006b3dd76368174f9c5baf9dfb0a7ff841d35625b2b081bf7d9e1b1-image.png" alt="View Anomaly Alert on Dashboard Notification" align="center" caption="View Anomaly Alert on Dashboard Notification" border={true} />
+
+
+### Email Alert
+
+Email alert includes an image of the alert's chart. The image shows the metric line, the point at which the alert triggered, and the expected range (for anomaly alerts) or the threshold (for threshold alerts).
+
+
+<Image src="https://files.readme.io/6d642cc0b8892896d4001a84849dbb0d7a1a46057cc6fbaad219d9ba2e78c283-image.png" alt="View Anomaly Alert on Email" align="center" caption="View Anomaly Alert on Email" border={true} />
+
+
+### Slack Alert
+
+Slack notifications include an image of the alert's chart. The image shows the metric line, the point at which the alert triggered, and the expected range (for anomaly alerts) or the threshold (for threshold alerts).
+
+
+<Image src="https://files.readme.io/bdae1de2edf08d626eff3bdc145eb4ff3e9490375c149b938c7ee94294b8fb68-image.png" alt="View Anomaly Alert on Slack" align="center" caption="View Anomaly Alert on Slack" border={true} />
+
+
+<Callout icon="📘" theme="info">
+  ### **Chart Generation Failure**
+
+  If CleverTap cannot generate the chart image, the notification is still delivered without the image.
 </Callout>
 
 # Manage Alerts
@@ -447,7 +501,7 @@ The following limits apply to Alerts:
 | Threshold percent-change baseline | Same period last week only         |
 
 <Callout icon="💡" theme="default">
-  ### **Note**
+  ### **Alert Limits Per Project**
 
   When you reach the 10-alert limit, the **Create alert** option is disabled. To create a new alert, go to **Manage Alerts** and delete or pause any active alerts first. Paused alerts do not count toward the 10-alert limit. Only alerts with **ACTIVE** status count against the project limit.
 </Callout>
@@ -462,7 +516,7 @@ The alert frequency determines how often CleverTap evaluates the alert. Hourly e
 
 ### What is the baseline for percentage-change threshold alerts?
 
-The baseline is always the same period from the previous week. For example, if your alert evaluates on a Wednesday, CleverTap compares Wednesday's value to the previous Wednesday's value. This applies regardless of whether your alert frequency is set to Hourly, Daily, Weekly, or Monthly. The comparison always looks back to the equivalent period one week prior. Comparison with any other period, such as the previous day or month, is not supported. This keeps comparisons consistent with the weekly seasonality patterns common in most product metrics.
+The baseline is always the same period from the previous week. For example, if your alert evaluates on a Wednesday, CleverTap compares Wednesday's value to the previous Wednesday's value. This applies regardless of whether your alert frequency is set to Hourly, Daily, Weekly, or Monthly. The comparison always looks back to the equivalent period one week prior. Comparison with any other period, such as the previous day or month, is not supported. This keeps comparisons consistent with the weekly seasonality patterns common in most product metrics. CleverTap always compares complete periods, such as a full day with a full day, so a partial period is never compared with a full one.
 
 ### Can I receive alerts on multiple channels at once?
 
@@ -484,4 +538,14 @@ The anomaly algorithm may not have flagged the drop if it falls within the expec
 
 No. The event, filters, and metric are saved when the alert is created and cannot be changed afterward. To monitor a different event or metric, delete the existing alert and create a new one.
 
-<br />
+### What time period does a notification cover?
+
+Every notification states the evaluation window, which is the exact period CleverTap evaluated. For example, a daily alert that triggers on the morning of July 1 covers the full day of June 30. For more information, refer to [Alert Notifications](doc:analytics-alerts#alert-notifications).
+
+### Which timezone do alert notifications use?
+
+Dashboard notification timestamps and evaluation window labels use your account's time zone.
+
+### Why does the chart image not appear in an older alert email?
+
+CleverTap stores chart images for 30 days. After that, the image in an older email may no longer be displayed. To see the chart, click **View Chart** in the notification.

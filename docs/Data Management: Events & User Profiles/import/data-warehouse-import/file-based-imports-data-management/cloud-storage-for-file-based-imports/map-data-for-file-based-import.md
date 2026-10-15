@@ -47,10 +47,10 @@ The mapping of user profile data consists of the following two steps:
 
 This step determines how incoming records are matched to user profiles, using either a unique Identity field (such as email, phone number, or user ID) or the system-generated CleverTap ID.
 
-- [Identity](https://docs.clevertap.com/docs/user-profiles#identifiers): A unique identifier, such as email, phone number, or custom ID, used to match profiles in CleverTap. When using Identity:
+- [Identity](doc:user-profiles#user-profile-data-model): A unique identifier, such as email, phone number, or custom ID, used to match profiles in CleverTap. When using Identity:
   - If a profile with the same identity already exists, CleverTap updates or adds properties to it.
   - If a matching profile is not available, CleverTap creates a new profile and captures properties to that profile.
-- [CleverTap ID](https://docs.clevertap.com/docs/user-profiles#identifiers): A system-generated unique identifier assigned to each user profile in CleverTap. When using CleverTap ID, and if a profile with the same CleverTap ID exists, CleverTap updates or adds properties to that profile.
+- [CleverTap ID](doc:user-profiles#user-profile-data-model): A system-generated unique identifier assigned to each user profile in CleverTap. When using CleverTap ID, and if a profile with the same CleverTap ID exists, CleverTap updates or adds properties to that profile.
   <Callout icon="📘" theme="info">
     #### Note
 
@@ -78,7 +78,7 @@ To map user profile properties, perform the following steps:
   - **MSG Properties** (for example, MSG-Email, MSG-SMS): Accepts only `"0"`, `"1"`, `"true"`, or `"false"`.
   - **Property Names**: Cannot include these characters: `%`, `>`, `<`, `!`, `|`, `&`, `.`, `:`, `;`, `$`, `'`, `"`, `\`, `#`.
 
-  For more information, refer to [System User Properties](https://docs.clevertap.com/docs/user-profiles#system-user-properties).
+  For more information, refer to [System User Properties](doc:user-profiles#system-user-properties).
 </Callout>
 
 3. **Select a Data Type**: Use the table below to determine when and how each type should be used.
@@ -107,16 +107,16 @@ The mapping process consists of the following four steps:
 1. [Map Identity](doc:map-data-for-file-based-import#map-identity-1)
 2. [Define When Each Event Occurred](doc:map-data-for-file-based-import#define-when-each-event-occurred-created-on-timestamp)
 3. [Choose How Events Are Named](doc:map-data-for-file-based-import#choose-how-events-are-named)
-4. [Map Columns to Event Properties](doc:map-data-for-file-based-import#map-event-properties)
+4. [Map Columns to Event Properties](doc:map-data-for-file-based-import#map-columns-to-event-properties)
 
 ## Map Identity
 
 This step specifies how incoming records are matched to user profiles, using either a unique Identity field (such as email, phone number, or user ID) or the system-generated CleverTap ID.
 
-- [Identity](https://docs.clevertap.com/docs/user-profiles#identifiers): A unique identifier, such as email, phone number, or custom ID, used to match profiles in CleverTap. When using Identity:
+- [Identity](doc:user-profiles#user-profile-data-model): A unique identifier, such as email, phone number, or custom ID, used to match profiles in CleverTap. When using Identity:
   - If a profile with the same identity already exists, CleverTap captures the event against that profile.
   - If a matching profile is not available, CleverTap creates a new profile and captures the event against that profile.
-- [CleverTap ID](https://docs.clevertap.com/docs/user-profiles#identifiers): A system-generated unique identifier assigned to each user profile in CleverTap. When using CleverTap ID:
+- [CleverTap ID](doc:user-profiles#user-profile-data-model): A system-generated unique identifier assigned to each user profile in CleverTap. When using CleverTap ID:
   - If a profile with the same CleverTap ID exists, CleverTap captures the event against that profile.
 
     <Callout icon="📘" theme="info">
@@ -181,7 +181,7 @@ This step maps file columns to CleverTap event properties, providing context and
 
 # Supported Date Formats
 
-You can select from the following date format patterns when mapping **Date-**&#x74;ype fields and configuring the **Created On** timestamp for event data. These formats apply to date values inside your file columns, not the timestamp in the file name. For file-name timestamp formats, refer to the <Anchor target="_blank" href="doc:create-file-based-import#supported-date-time-formats">Supported Date-Time Formats</Anchor> section in _Create Import_.
+You can select from the following date format patterns when mapping **Date-**&#x74;ype fields and configuring the **Created On** timestamp for event data. These formats apply to date values inside your file columns, not the timestamp in the file name. For file-name timestamp formats, refer to the <Anchor target="_blank" href="doc:create-file-based-import#review-supported-date-time-formats">Review Supported Date-Time Formats</Anchor> section in _Create Import_.
 
 | **Format**             | **Example**            |
 | ---------------------- | ---------------------- |
@@ -211,7 +211,7 @@ After completing the mapping step, click Perform Dry Run. The system validates y
 
 ## Dry Run Results
 
-After the dry run completes, your mapping validation results are displayed in two panels.&#x20;
+After the dry run completes, your mapping validation results are displayed in two panels.
 
 
 <Image src="https://files.readme.io/a6aec3e5cb3d560825968bb12d86b2f53d8c8bd40d1b8a5ba662e64e6525c22e-Dry_Run_Results.png" align="center" caption="Dry Run Results" border={true} />
@@ -219,7 +219,7 @@ After the dry run completes, your mapping validation results are displayed in tw
 
 <br />
 
-The left panel provides a detailed row-by-row breakdown of each mapped field and its validation status.&#x20;
+The left panel provides a detailed row-by-row breakdown of each mapped field and its validation status.
 
 | **Column**             | **Description**                                                                                                                                                                                  |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -241,7 +241,7 @@ The right panel shows the overall validation summary and indicates whether the m
 
 After mapping data fields from your file to CleverTap, the system runs a validation check to assess configuration accuracy, data quality, and identity alignment. The outcomes are categorized as follows:
 
-- **Successful Validation (Green)**: Indicates that the mapping is correctly configured and ready for import.&#x20;
+- **Successful Validation (Green)**: Indicates that the mapping is correctly configured and ready for import.
 - **Error Detection (Red)**: Indicates that the mapping contains issues that must be resolved before proceeding. Common causes include:
   - Invalid data types or formatting issues.
   - Identity/CleverTap ID validation failures.

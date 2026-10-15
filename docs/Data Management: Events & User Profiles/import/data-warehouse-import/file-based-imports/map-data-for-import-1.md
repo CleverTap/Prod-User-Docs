@@ -5,7 +5,9 @@ excerpt: >-
   Storage to CleverTap for accurate identity resolution and seamless data
   ingestion.
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---

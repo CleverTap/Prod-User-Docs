@@ -1,5 +1,5 @@
-- gcp-configuration
 - data-export-to-aws-s3
+- gcp-configuration
 - microsoft-azure-configuration
 - data-export-to-gcp
 - microsoft-azure

@@ -12,7 +12,7 @@ metadata:
 
 You can view your File-Based Imports by selecting the _Import Center_ tab on the _Partners_ page. This page lists every import, its current state, run health, and per-file statistics, and is where you operate imports after creation.
 
-The Import Listing page displays all Import jobs and their current state. The following details are displayed for each import:
+The Import Listing page displays all import jobs and their current state. The following table lists the details that the page displays for each import:
 
 | **Field**  | **Description**                                                                                                     |
 | ---------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ Each import run may process multiple files. The Stats table displays one row per
 | ---------------- | ---------------------------------------------------------------------------------------------------------- |
 | Imported On      | The date and time when the file was processed.                                                             |
 | Filename         | The name of the file processed during the import run.                                                      |
-| Status           | The processing status of the file: Processing, Completed or Failed.                                        |
+| Status           | The processing status of the file: Processing, Completed, or Failed.                                       |
 | Health           | The health percentage for that file. For more information, refer to [Health Indicator](#health-indicator). |
 | Total Records    | The total number of records the import attempted to process from that file.                                |
 | Successful Syncs | The number of records successfully imported without errors.                                                |
@@ -68,9 +68,9 @@ Each import run may process multiple files. The Stats table displays one row per
 
 CleverTap applies the following rules when processing files during an import run:
 
-- **File size limit**: CSV Files larger than 5 GB and Parquet Files larger than 1 GB are not processed and are marked as Failed.
-- **File modified during Fetching from your Cloud Storage**: If a file is modified (its size in bytes changes) while CleverTap is actively fetching it, the file is marked as Failed to ensure data integrity.
-- **File modified after being fetched by CleverTap**: If a file is modified in the cloud storage after CleverTap has already fetched it, CleverTap processes the version it has at the time of the run. Changes made after the file has been fetched are not reflected in that run.
+- **File size limit**: CleverTap does not process CSV files larger than 5 GB or Parquet files larger than 1 GB, and it marks them as Failed.
+- **File modified during fetching from your cloud storage**: If a file changes (its size in bytes changes) while CleverTap is actively fetching it, CleverTap marks the file as Failed to ensure data integrity.
+- **File modified after CleverTap fetches it**: If a file changes in the cloud storage after CleverTap has already fetched it, CleverTap processes the version that it fetched at the time of the run. CleverTap does not reflect changes made after the fetch in that run.
 
 ## Import Stats
 
@@ -114,15 +114,15 @@ Before configuring and running your import, ensure your source files are ready f
 - Ensure phone numbers include a valid country code in E.164 format (for example, +919876543210) and that email addresses are properly formatted.
 - Avoid including system event names, such as App Launched, in the event name column of your source files, as these cannot be imported from external sources.
 - Remove or replace reserved or placeholder identity values such as null, 0, N/A, undefined, or none in the source before the import runs.
-- Ensure each file is fully written and closed before it is placed in the storage bucket. CleverTap picks up files based on the timestamp mentioned in the file name and throws an error if the file is still being written when CleverTap start fetching the files.&#x20;
-- Keep each file under 5 GB. Files larger than 5 GB will be marked as Failed and will not be processed.
+- Ensure each file is fully written and closed before it is placed in the storage bucket. CleverTap picks up files based on the timestamp in the file name and marks a file as Failed if the file is still being written when CleverTap starts fetching it.
+- Keep each file under its size limit: 5 GB for CSV and 1 GB for Parquet. CleverTap marks larger files as Failed and does not process them.
 - Confirm that your storage bucket credentials are valid and have not been rotated or updated since the import was last configured.
 
 # Monitor Imports
 
-Review the following practices to esnure a better import health and catch issues early:&#x20;
+Review the following practices to ensure better import health and catch issues early:
 
-- Review Stats after each run, especially for scheduled imports, to confirm the health percentage is at expected levels.&#x20;
+- Review Stats after each run, especially for scheduled imports, to confirm the health percentage is at expected levels.
 - For imports scheduled at short intervals, such as every 15 minutes, be aware that if a run takes longer than the scheduled interval to complete, the next run will be skipped automatically and resume from the one after. This will appear as a gap in the Stats table and is expected behavior.
 - Stats are available for runs completed within the last 30 days. For long-term monitoring, note down or export health and record counts periodically if historical tracking is important for your team.
 - If an import in a running state is manually stopped, stats will not be available for that run, even if some records were partially ingested. Allow imports to complete before stopping them where possible.
@@ -133,16 +133,16 @@ Use this section to identify and resolve validation errors that appear in the de
 
 ## Common Errors
 
-The following errors apply to both user profiles and event imports:&#x20;
+The following errors apply to both user profiles and event imports:
 
-| **Error**                                                                      | **Cause**                                                                                                                                            | **Resolution**                                                                                                                                           |
-| :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Invalid identity or CleverTap ID                                               | The value is invalid or reserved (for example, null, undefined, 0, or empty) or exceeds 1024 characters.                                             | Remove or replace invalid values in the identity column. Ensure each value is valid and within the character limit.                                      |
-| Value should be an Integer or a Float, but a different data type was received. | A field mapped as Integer or Float contains a non-numeric value.                                                                                     | Ensure the source column contains only numeric values or remap the field to the correct data type.                                                       |
-| Value for Boolean data type needs to be 0, 1, true, or false                   | A Boolean field contains unsupported values.                                                                                                         | Use only 0, 1, true, or false in the source column.                                                                                                      |
-| Field mapped as Date contains invalid values                                   | A field mapped as Date contains non-date values.                                                                                                     | Ensure the source column contains valid date values or remap the field to the correct data type. See Map Data for Import > Supported Date Formats.       |
-| File exceeds maximum size limit                                                | The CSV file is larger than 5 GB or the Parquet file is larger than 1 GB                                                                             | Split the file into smaller files, each under 5 GB or 1 GB, and re-upload them to the storage bucket.                                                    |
-| File was modified during processing                                            | The file was modified while CleverTap was fetching the file, such as the number of records changed, added, or removed, file size changed, and so on. | Ensure files are fully written and closed before they are placed in the storage bucket. Do not overwrite or modify files while we are fetching the file. |
+| **Error**                                                                      | **Cause**                                                                                                                                            | **Resolution**                                                                                                                                                                                                       |
+| :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Invalid identity or CleverTap ID                                               | The value is invalid or reserved (for example, null, undefined, 0, or empty) or exceeds 1024 characters.                                             | Remove or replace invalid values in the identity column. Ensure each value is valid and within the character limit.                                                                                                  |
+| Value should be an Integer or a Float, but a different data type was received. | A field mapped as Integer or Float contains a non-numeric value.                                                                                     | Ensure the source column contains only numeric values or remap the field to the correct data type.                                                                                                                   |
+| Value for Boolean data type needs to be 0, 1, true, or false                   | A Boolean field contains unsupported values.                                                                                                         | Use only 0, 1, true, or false in the source column.                                                                                                                                                                  |
+| Field mapped as Date contains invalid values                                   | A field mapped as Date contains non-date values.                                                                                                     | Ensure the source column contains valid date values or remap the field to the correct data type. For more information, refer to [Supported Date Formats](doc:map-data-for-file-based-import#supported-date-formats). |
+| File exceeds maximum size limit                                                | The CSV file is larger than 5 GB or the Parquet file is larger than 1 GB                                                                             | Split the file into smaller files, each under 5 GB or 1 GB, and re-upload them to the storage bucket.                                                                                                                |
+| File was modified during processing                                            | The file was modified while CleverTap was fetching the file, such as the number of records changed, added, or removed, file size changed, and so on. | Ensure files are fully written and closed before they are placed in the storage bucket. Do not overwrite or modify files while CleverTap is fetching the file.                                                       |
 
 ## User Profile Import Errors
 

@@ -25,7 +25,7 @@ This document covers the following:
 
 Before you create an import, ensure that a connected storage bucket and correctly formatted files are available.
 
-- A connected storage bucket from a supported cloud storage partner (AWS S3, Google Cloud Platform, or Microsoft Azure). For more information, refer to the partner-specific configuration document, for example, [Amazon S3](doc:amazon-s3).
+- A connected storage bucket from a supported cloud storage partner. For more information, refer to the configuration document for your partner: [AWS S3](doc:aws-s3-configuration), [Google Cloud Platform](doc:gcp-configuration), or [Microsoft Azure](doc:microsoft-azure-configuration).
 - Files in CSV or Parquet format that meet the requirements in [Review File Requirements](#review-file-requirements)
 
 ### Review File Requirements

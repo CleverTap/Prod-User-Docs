@@ -17,15 +17,15 @@ This section introduces integrations that enable you to bring large volumes of d
 This section lists the Cloud Storage that CleverTap supports for data ingestion.
 
 <Cards>
-  <Card title="Amazon S3">
+  <Card title="Amazon S3" href="https://docs.clevertap.com/docs/aws-s3-configuration">
 
   </Card>
 
-  <Card title="Google Cloud Storage">
+  <Card title="Google Cloud Storage" href="https://docs.clevertap.com/docs/gcp-configuration">
 
   </Card>
 
-  <Card title="Microsoft Azure Blob Storage">
+  <Card title="Microsoft Azure Blob Storage" href="https://docs.clevertap.com/docs/microsoft-azure-configuration">
 
   </Card>
 </Cards>
@@ -73,19 +73,19 @@ This section outlines the essential steps involved in setting up and executing a
   }
 </style>
 <div class="grid">
-  <a href="https://staging.docs.user.clevertap.net/docs/create-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/create-file-based-import" class="integration-card">
     <div class="name">Set Up Import</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/map-data-for-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/map-data-for-file-based-import" class="integration-card">
     <div class="name">Map Data</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/map-data-for-file-based-import#perform-dry-run-recommended" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/map-data-for-file-based-import#perform-dry-run-recommended" class="integration-card">
     <div class="name">Perform Dry Run</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/schedule-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/schedule-file-based-import" class="integration-card">
     <div class="name">Schedule Import</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/import-listing-and-stats-for-file-based-import" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/import-listing-and-stats-for-file-based-import" class="integration-card">
     <div class="name">View Import Stats</div>
   </a>
 </div>

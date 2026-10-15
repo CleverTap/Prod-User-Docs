@@ -666,3 +666,19 @@ Use exports when you want to:
 * Share the chart in presentations or documents
 * Download the raw tabular values for further analysis
 * Archive analysis snapshots for reporting
+
+### Export Split Trend Data
+
+When you split a trend by an event property or a user property, you can download the complete split data as a CSV file. The export contains up to 10,000 rows, not only the values currently displayed on the chart. For example, you can export every `CustomerID` value for the `Charged` event for offline analysis.
+
+
+<Image src="https://files.readme.io/26be10959fa0c8411e5e591af87560113c25ce66c7a9219175c9b2ef68313529-image.png" alt="View Split Property Trend Data in Others Row" align="center" caption="View Split Property Trend Data in Others Row" border={true} />
+
+
+<Callout icon="📘" theme="info">
+  ### What the Export Contains
+
+  When a user property has many unique values, the trend shows only the top values and groups the remaining values into a single value named _Others_. _Others_ is not selected on the chart by default, because it is typically the largest value and can flatten the other trend lines. Select the _Others_ checkbox in the list to add it to the chart.
+
+  The same export applies to a Trends tile on a board. For more information, refer to [Add to Board](doc:trends-v2#add-to-board).
+</Callout>

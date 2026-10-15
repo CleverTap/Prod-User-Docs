@@ -136,7 +136,7 @@ A general-purpose bucket stores the files that CleverTap reads or writes.
 
 6. Under _Choose how to control access to objects_, keep **Enforce public access prevention on this bucket** selected, keep **Uniform** access control, and click **Continue**. CleverTap does not use object ACLs.
 
-7. Under _Choose how to protect object data_, keep the default soft delete policy and keep object versioning and retention policy off. Under _Data encryption_, keep **Google-managed encryption key**. If your organization requires a customer-managed encryption key, refer to the [FAQs](#faqs) before you select it.
+7. Under _Choose how to protect object data_, keep the default soft delete policy and keep object versioning and retention policy off. Under _Data encryption_, keep **Google-managed encryption key**. If your organization requires a customer-managed encryption key, refer to [Can I use a customer-managed encryption key on the bucket?](#can-i-use-a-customer-managed-encryption-key-on-the-bucket) before you select it.
 
 8. Click **Create**.
 
@@ -330,6 +330,10 @@ No. You configure import and export connections separately under _Import Connect
 
 No. Any Google Cloud location type and location works.
 
+### Can I use a customer-managed encryption key on the bucket?
+
+You can set a customer-managed encryption key (CMEK) from Cloud KMS as the default encryption key of the bucket. Cloud Storage performs the encryption and decryption through the Cloud Storage service agent of your project, so grant that service agent the **Cloud KMS CryptoKey Encrypter/Decrypter** (`roles/cloudkms.cryptoKeyEncrypterDecrypter`) role on the key. Create the key ring in the same location as the bucket. If the service agent loses access to the key, Cloud Storage cannot decrypt the objects that the key encrypts. For more information, refer to Google Cloud's [Use customer-managed encryption keys](https://docs.cloud.google.com/storage/docs/encryption/using-customer-managed-keys) documentation.
+
 ### How can I limit which files CleverTap reads from my bucket?
 
 Use the _Subfolder_ field on the import connection to point CleverTap to a specific directory within your bucket. CleverTap reads only from that path. For stricter isolation, create a dedicated bucket for CleverTap and grant the service account a role on that bucket only.
@@ -390,5 +394,5 @@ The _Subfolder_ points to a path that contains no CSV or Parquet files, the file
 
 After you configure the connection, you can create imports and exports that use it.
 
-- Create an import that reads from this connection. For more information, refer to [Create Import](doc:create-file-based-import), [Map Data for Import](doc:map-data-for-file-based-import), and [Schedule Import](doc:schedule-file-based-import).
-- Create an export that writes to this connection. For more information, refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).
+- Create an import that reads from this connection. For more information, refer to [Create Import](doc:create-file-based-import), [Map Data for Import](doc:map-data-for-file-based-import), [Schedule Import](doc:schedule-file-based-import), and [Import Listing and Stats](doc:import-listing-and-stats-for-file-based-import).
+- Create an export that writes to this connection. For more information, refer to [Cloud Storage](doc:cloud-storage), [Event Exports](doc:event-exports), or [Profile Exports](doc:profile-exports).

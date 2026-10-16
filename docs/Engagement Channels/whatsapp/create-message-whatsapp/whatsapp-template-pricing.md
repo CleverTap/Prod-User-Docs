@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-Max pricing lets you control the amount Meta can charge for each delivered marketing message. When you create a Marketing template, the _Pricing_ step displays the rate-determining details for the template and lets you set a maximum price per 1,000 delivered messages. The max price you set is an upper limit, that is, Meta charges this amount or lower for each delivered message. If you do not set a max price, Meta charges its published rate, that is, Meta's standard rate for delivered messages.
+Max pricing lets you control the amount Meta can charge for each delivered marketing message. When you create a Marketing template, the _Pricing_ step displays the rate-determining details for the template and lets you set a maximum price per delivered message. The max price you set is an upper limit, that is, Meta charges this amount or lower for each delivered message. If you do not set a max price, Meta charges its published rate, that is, Meta's standard rate for delivered messages.
 
 Setting a max price also affects delivery. A higher max price may improve delivery rates when Meta is experiencing high message traffic in the recipient's country. Max pricing is part of Meta's per-message pricing model for marketing messages. For more information, refer to [Pricing on the WhatsApp Business Platform](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing).
 
@@ -40,8 +40,10 @@ The _Pricing_ step appears after you configure the template content and before y
 </Callout>
 
 
-<Image src="https://files.readme.io/22f9b841ad31331659002bfbfb1298a53762572719509d9f97d490bf2daf4c4f-Max_price_template.png" align="center" caption="Max Price - WhatsApp Template" border={true} />
+<Image src="https://files.readme.io/5881db8f9bec6d5f8c86355093a74fc922b0f346b4adce7793830b3d66ce2138-MAX_PRICE_.png" align="center" caption="Max price - WhatsApp Template" border={true} />
 
+
+<br />
 
 To set the max price for a template, follow these steps:
 
@@ -49,15 +51,15 @@ To set the max price for a template, follow these steps:
 
 2. Review the following details. These fields are read-only on the _Pricing_ step and reflect the values you configured during template creation:
 
-   | Field      | Description                                                                                                                                                                                                                   |
-   | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | _Category_ | The template category. Max pricing applies only to the _Marketing_ category.                                                                                                                                                  |
-   | _WABA_     | The WhatsApp Business Account under which the template is created.                                                                                                                                                            |
-   | _Currency_ | The currency associated with your WhatsApp Business Account, selected during onboarding. CleverTap converts the max price you enter to the smallest unit of this currency, multiplied by 1,000, before submitting it to Meta. |
+   | Field      | Description                                                                              |
+   | :--------- | :--------------------------------------------------------------------------------------- |
+   | _Category_ | The template category. Max pricing applies only to the _Marketing_ category.             |
+   | _WABA_     | The WhatsApp Business Account under which the template is created.                       |
+   | _Currency_ | The currency associated with your WhatsApp Business Account, selected during onboarding. |
 
 3. (Optional) Select the **Max pricing** checkbox.
 
-4. Enter the max price per 1,000 delivered messages in the _Max price_ field.
+4. Enter the max price per delivered message in the _Max price_ field.
 
 5. (Optional) Click **View Price Trend** to compare estimated delivery rates at different max prices for your target countries. For more information, refer to [Analyze Prices with Price Trend](#analyze-prices-with-price-trend).
 

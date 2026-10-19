@@ -15,8 +15,7 @@ The _Logs_ tab provides a per-message delivery log for a specific Notify campaig
 The following image shows the _Logs&#x20;_&#x74;ab:
 
 
-<Image src="https://files.readme.io/1e95e8e44ee438a126b47ce0bfdaf96b1c27949f02c2c07f4d46f25abacb5b25-image.png" align="center" caption="Notify Logs" border={true} />
-
+<Image src="https://files.readme.io/753dcbfec326af86413ccb291246388c2112d4758e5b4770b3d6331b886a4432-image.png" align="center" caption="Notify Logs" border={true} />
 
 # Log Table
 

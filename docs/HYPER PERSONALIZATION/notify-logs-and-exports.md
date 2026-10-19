@@ -71,7 +71,7 @@ The Notify page has two tabs: _List&#x20;_&#x61;nd _Log export._
 
 - **Log export**: Lets you export delivery log data across your Notify campaigns as a file. You can configure a one-time or recurring export, choose how the file is delivered, select the columns to include, and download the data in CSV or JSON format. Log exports are not limited to a single campaign. You can export data for selected campaigns or all campaigns at once.
 
-To create a new export, go to the _List_ tab, select one or more campaigns, and click the log export icon in the action bar.
+To create a new export, go to the _List_ tab, select one or more campaigns, and click the **Export Logs&#x20;**&#x69;con in the action bar.
 
 The following image shows the _Logs&#x20;_&#x74;ab:
 
@@ -173,6 +173,9 @@ You can perform the following actions on an export from the listing:
 | Stop   | Stops a recurring export. Once stopped, all future runs for this export are stopped.                                                        |
 
 You can search for a specific export by name or ID using the search bar. Use the filter icon to narrow results by additional criteria.
+
+
+<Image src="https://files.readme.io/375cb260ec22431fcd511f5fbdc02a165cc2726b212d3e23d98cb1f6da13f65c-image.png" align="center" caption="Search Log Exports" border={true} />
 
 <br />
 

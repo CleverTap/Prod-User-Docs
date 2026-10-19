@@ -21,14 +21,14 @@ The following image shows the _Logs&#x20;_&#x74;ab:
 
 Each row in the Log table represents a single Notify API request and displays the following information:
 
-| Column         | Description                                                                                            |
-| :------------- | :----------------------------------------------------------------------------------------------------- |
-| Request ID     | The unique identifier for the individual Notify API request.                                           |
-| Received At    | The date and time when CleverTap received the API request.                                             |
-| Recipient ID   | The email ID of the message recipient.                                                                 |
-| Status         | The current delivery status of the request.                                                            |
-| Delivery Time  | The time taken for successful delivery to the user, measured from when CleverTap received the request. |
-| Failure Reason | The reason the message could not be delivered, if applicable.                                          |
+| Column          | Description                                                                                                                                                                                       |
+| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Request ID      | The unique identifier for the individual Notify API request.                                                                                                                                      |
+| Received At     | The date and time when CleverTap received the API request.                                                                                                                                        |
+| Recipient ID    | The email ID of the message recipient.                                                                                                                                                            |
+| Status          | The current delivery status of the request.                                                                                                                                                       |
+| Time to Deliver | The time taken for successful delivery to the user, measured from when CleverTap received the request. This column is populated only if delivery callbacks are set up correctly for your account. |
+| Failure Reason  | The reason the message could not be delivered, if applicable.                                                                                                                                     |
 
 ### Message Timeline
 
@@ -55,17 +55,17 @@ The following image shows the Message Timeline:
 Use the _Filters_ panel to narrow results by the following:
 
 - **Status**: Filter by one or more delivery statuses.
-- **Time Period**: Select a date range to filter logs by the request received date. The default view shows the last 30 days.
+- **Time Period**: Select a date range to filter logs by the request received date.
 
 <Callout icon="📘" theme="info">
   ### Log Data Availability
 
-  The default view shows the last 30 days. To access log data beyond this range, you can use export data using Log Exports.
+  Log data is available for the last 30 days. To access log data beyond this range, us&#x65;_&#x20;Log Exports_.
 </Callout>
 
 # Log Exports
 
-<br />The Notify page has two tabs: _List&#x20;_&#x61;nd _Log export._
+The Notify page has two tabs: _List&#x20;_&#x61;nd _Log export._
 
 - **List**: Displays all your Notify campaigns with their name, Notify ID, channel, status, start date, and creator. Use this tab to view, manage, and filter your campaigns. You can also select one or more campaigns from this tab to create a log export.
 
@@ -73,8 +73,7 @@ Use the _Filters_ panel to narrow results by the following:
 
 To create a new export, go to the _List_ tab, select one or more campaigns, and click the log export icon in the action bar.
 
-The following image shows _Logs&#x20;_&#x74;ab:
-
+The following image shows the _Logs&#x20;_&#x74;ab:
 
 <Image src="https://files.readme.io/b01bf0dc16c91506b4f000a5049e06cd2adef182b172fd0eeb6559845713e872-image.png" align="center" caption="Logs Tab" border={true} />
 

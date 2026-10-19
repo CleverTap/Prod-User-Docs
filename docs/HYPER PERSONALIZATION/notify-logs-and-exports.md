@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-The _Logs_ tab provides a per-message delivery log for a specific Notify campaign, allowing you to trace individual API requests from receipt through final delivery
+The _Logs_ tab provides a per-message delivery log for a specific Notify campaign, allowing you to trace individual API requests from receipt through final delivery.
 
 The following image shows the _Logs&#x20;_&#x74;ab:
 

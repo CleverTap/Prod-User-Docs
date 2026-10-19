@@ -37,8 +37,7 @@ Expand any log entry to view the full message Timeline, a step-by-step trace of 
 The following image shows the Message Timeline:
 
 
-<Image src="https://files.readme.io/1bd814923883d5d311ab62e368054b1b210ee0c801257ad0b3fa5e3a6eef0454-image.png" align="center" caption="Message Timeline" border={true} />
-
+<Image src="https://files.readme.io/79fa6fda43e560851e5e126bf72e4ad3dfe00fc41cf8fcd1cbda2d2b0462e538-image.png" align="center" caption="Message Timeline" border={true} />
 
 ## Delivery Statuses
 

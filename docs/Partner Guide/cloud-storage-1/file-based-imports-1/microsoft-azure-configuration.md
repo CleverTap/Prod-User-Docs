@@ -88,15 +88,15 @@ The storage account holds your container and provides the Blob Storage endpoint 
 
 3. On the **Basics** tab, under _Project details_, select your _Subscription_, and select an existing _Resource group_ or click **Create new** to create one.
 
-4. Under _Instance details_, enter a _Storage account name_. You enter this value as the _Default endpoint_ on the CleverTap dashboard.
+4. Under _Instance details_, enter a _Storage account name_. You enter this value as the _Default endpoint_ on the CleverTap dashboard. For a custom domain, refer to the _Custom domain_ field.
 
    <Callout icon="📘" theme="info">
      #### Note
 
-     Storage account names must be 3 to 24 characters, contain only lowercase letters and numbers, and be unique across all of Azure. For more information, refer to Microsoft's [storage account name](https://learn.microsoft.com/azure/storage/common/storage-account-overview#storage-account-name) rules.
+     Storage account names must be 3 to 24 characters, contain only lowercase letters and numbers, and be unique across all of Azure. For more information, refer to Microsoft's [storage account name rules](https://learn.microsoft.com/azure/storage/common/storage-account-overview#storage-account-name).
    </Callout>
 
-5. Select any _Region_. CleverTap does not require a specific region for the storage account.
+5. Select any _Region_. CleverTap does not check the region.
 
 6. Keep _Primary service_ as **Azure Blob Storage or Azure Data Lake Storage Gen 2**, keep _Performance_ as **Standard**, and select the _Redundancy_ that your organization requires. The default is sufficient for CleverTap.
 
@@ -104,22 +104,22 @@ The storage account holds your container and provides the Blob Storage endpoint 
    <Image src="https://files.readme.io/9304d54-Enter_Storage_Account_Name.png" alt="Enter Storage Account Name" align="center" caption="Enter Storage Account Name" border={true} />
 
 
-7. On the **Advanced** tab, under _Security_, keep **Enable storage account key access** selected. You sign the CleverTap SAS token with the account key, and the token stops working if you later disable this setting.
+7. On the _Advanced_ tab, under _Security_, select _Allow storage account key access_. You sign the CleverTap SAS token with the account key, and the token stops working if you later disable this setting.
 
-8. On the **Networking** tab, keep _Public network access_ as **Enable from all networks**. If your organization requires **Enable from selected virtual networks and IP addresses**, add the CleverTap IP ranges for your connection type under _Firewall_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+8. On the _Networking_ tab, select _Public network access_ and set it to _Enable from all networks_. If your organization requires _Enable from selected virtual networks and IP addresses_, add the CleverTap IP ranges for your connection type under _Firewall_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
 
-9. Keep the default settings on the **Data protection**, **Encryption**, and **Tags** tabs. If your organization requires customer-managed keys for encryption, refer to [Can I use customer-managed keys to encrypt the storage account?](#can-i-use-customer-managed-keys-to-encrypt-the-storage-account) before you select them.
+9. Keep the default settings as is for the _Data protection_, _Encryption_, and _Tags_ tabs. Do not enable immutable storage on a container that you use for export. If your organization requires customer-managed keys for encryption, refer to [Can I use customer-managed keys to encrypt the storage account?](#can-i-use-customer-managed-keys-to-encrypt-the-storage-account) before you select them.
 
 10. Click **Review + create**, and after validation passes, click **Create**.
 
-11. When the deployment completes, click **Go to resource** and note the storage account name.
+11. When the deployment is complete, click **Go to resource** and note the storage account name.
 
 
     <Image src="https://files.readme.io/102207f-Storage_Account_created_successfully.png" alt="Storage Account Created Successfully" align="center" caption="Storage Account Created Successfully" border={true} />
 
 For more information, refer to Microsoft's [Create a storage account](https://learn.microsoft.com/azure/storage/common/storage-account-create) documentation.
 
-### Create Container
+## Create Container
 
 CleverTap reads from or writes to a container within your storage account.
 
@@ -137,22 +137,22 @@ CleverTap reads from or writes to a container within your storage account.
    <Image src="https://files.readme.io/9763f96-Create_Blob_Service_Container.gif" alt="Create a Blob Storage Container" align="center" caption="Create Container" border={true} />
 
 
-6. Note the container name. You enter it in the _Folder path_ field on the CleverTap dashboard.
+6. Copy the container name as you need to enter it in the _Folder path_ field on the CleverTap dashboard.
 
    <Callout icon="📘" theme="info">
-     ### Note
+     #### Note
 
      Container names must be 3 to 63 characters, contain only lowercase letters, numbers, and hyphens (-), begin with a letter or number, and not contain consecutive hyphens. For more information, refer to Microsoft's [container naming rules](https://learn.microsoft.com/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata).
    </Callout>
 
 For more information, refer to Microsoft's [Create a container](https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) documentation.
 
-### Create Folder for Import
+### Create Subfolder for Import
 
-For an import connection, you can optionally point CleverTap at a specific folder within the container.
+For an import connection, you can optionally point CleverTap at a specific subfolder within the container.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   For an export connection, you set the folder path when you create the export job, and Blob Storage creates the path when CleverTap writes the first file, so you do not need to create a folder in advance.
 </Callout>
@@ -167,11 +167,11 @@ Blob Storage folders are virtual: a folder exists only while at least one blob h
 
 4. Select a file to upload, such as your first CSV file, and click **Upload**.
 
-5. Note the folder name. You enter it in the _Subfolder path_ field on the CleverTap dashboard.
+5. Copy the folder name as you need to enter it in the _Subfolder path_ field on the CleverTap dashboard.
 
 If your storage account has _Hierarchical namespace_ enabled (Azure Data Lake Storage Gen2), you can instead click **+ Add Directory** inside the container to create an empty folder. For more information, refer to Microsoft's [Upload a block blob](https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob) documentation.
 
-### Generate SAS Token
+## Generate SAS Token
 
 A Shared Access Signature (SAS) token grants CleverTap limited, time-bound access to the container without exposing your storage account key. You generate the token on the container so that CleverTap has no access to any other container in the account. For more information, refer to Microsoft's [Grant limited access to Azure Storage resources using shared access signatures](https://learn.microsoft.com/azure/storage/common/storage-sas-overview) documentation.
 
@@ -179,36 +179,116 @@ A Shared Access Signature (SAS) token grants CleverTap limited, time-bound acces
 
 2. On the row for your container, click the ellipsis (...) at the right end and select **Generate SAS**. The _Generate SAS_ pane opens.
 
-3. Enter the details in the following table:
+3. Enter the following details:
 
 
-   <Image src="https://files.readme.io/6e76239-Generate_SAS_Token.png" alt="Generate SAS Popup" align="center" caption="Generate SAS" border={true} />
+   <Image src="https://files.readme.io/6e76239-Generate_SAS_Token.png" alt="Generate SAS Popup" align="center" width="76%" caption="Generate SAS" border={true} />
 
 
-   | Field                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-   | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | _Signing method_             | Select **Account key**. Do not select **User delegation key**, because a user delegation SAS expires after a maximum of 7 days.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-   | _Signing key_                | Select **Key 1** or **Key 2** and note which key you selected. If you later rotate that key, every SAS token signed with it stops working, and you must regenerate the tokens.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-   | _Stored access policy_       | Keep **None** unless your organization uses stored access policies. If you select a policy, the token inherits the permissions and expiry of the policy, so the policy must grant the permissions that the _Permissions_ row lists. A stored access policy lets you revoke the token later without rotating the key.<br />For more information, refer to [Define a stored access policy](https://learn.microsoft.com/en-us/rest/api/storageservices/define-stored-access-policy).                                                                                                                                                                                                |
-   | _Permissions_                | Required. Select only the permissions that your connection needs.<br />Import: **Read** and **List**<br />Export: **Read** and **Write**<br />Do not grant **Delete** or any other permission. If you use the same container for both import and export, generate a separate token for each connection.<br />For more information, refer to [Account SAS Permissions by Operation](https://learn.microsoft.com/en-us/rest/api/storageservices/create-account-sas#account-sas-permissions-by-operation).                                                                                                                                                                          |
-   | _Start and expiry date/time_ | Leave _Start_ blank, or set it at least 15 minutes in the past, because a start time of "now" causes intermittent failures for the first few minutes due to clock differences between systems.<br />Set _Expiry_ to the longest duration that your organization's policy allows, and record the date, because imports and exports fail once the token expires.<br />If the storage account has a SAS expiration policy, that policy limits the maximum expiry.<br />For more information, refer to [Configure a SAS Expiration Policy](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal#how-to-configure-a-sas-expiration-policy). |
-   | _Allowed IP address_         | Leave blank unless your organization requires IP restrictions. If you enter a range, enter the CleverTap IP ranges for your connection type. The import and export ranges differ. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)                                                                                                                                                                                                                                                                                                                                                                     |
-   | _Allowed protocols_          | Keep **HTTPS only**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+   <Table>
+     <thead>
+       <tr>
+         <th>
+           Field
+         </th>
+
+         <th>
+           Description
+         </th>
+       </tr>
+     </thead>
+
+     <tbody>
+       <tr>
+         <td>
+           _Signing method_
+         </td>
+
+         <td>
+           Select **Account key**. Do not select **User delegation key** because a user delegation SAS expires after 7 days.
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Signing key_
+         </td>
+
+         <td>
+           Select **Key 1** or **Key 2** and note which key you selected. If you later rotate that key, every SAS token signed with it stops working, and you must regenerate the tokens.
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Stored access policy_
+         </td>
+
+         <td>
+           Keep **None** unless your organization uses stored access policies. If you select a policy, the token inherits the permissions and expiry of the policy, so the policy must grant the permissions that the _Permissions_ row lists. A stored access policy lets you revoke the token later without rotating the key.<br />For more information, refer to [Define a stored access policy](https://learn.microsoft.com/en-us/rest/api/storageservices/define-stored-access-policy).
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Permissions_
+         </td>
+
+         <td>
+           Required. Select only the permissions that your connection needs.
+
+           - Import: **Read** and **List**
+           - Export: **Read** and **Write**
+
+           Do not grant **Delete** or any other permission. If you use the same container for both import and export, generate a separate token for each connection.<br />For more information, refer to [Account SAS Permissions by Operation](https://learn.microsoft.com/en-us/rest/api/storageservices/create-account-sas#account-sas-permissions-by-operation).
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Start and expiry date/time_
+         </td>
+
+         <td>
+           Leave _Start_ blank, or set it at least 15 minutes in the past, because a start time of "now" causes intermittent failures for the first few minutes due to clock differences between systems.<br /><br />Set _Expiry_ to the longest duration that your organization's policy allows, and record the date, because imports and exports fail once the token expires. CleverTap checks the expiry before it connects and reports "Azure SAS token is expired".<br /><br />If the storage account has a SAS expiration policy, that policy limits the maximum expiry.<br /><br />For more information, refer to [Configure a SAS Expiration Policy](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal#how-to-configure-a-sas-expiration-policy).
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Allowed IP addresses_
+         </td>
+
+         <td>
+           Leave blank unless your organization requires IP restrictions. If you enter a range, enter the CleverTap IP ranges for your connection type. The import and export ranges differ. <br /><br />For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           _Allowed protocols_
+         </td>
+
+         <td>
+           Keep **HTTPS only**.
+         </td>
+       </tr>
+     </tbody>
+   </Table>
 
 4. Click **Generate SAS token and URL**.
 
-5. Copy the value under _Blob SAS token_, which begins with `?sv=`. You enter this value on the CleverTap dashboard, and you do not need the _Blob SAS URL_.
+5. Copy the value under _Blob SAS token_, beginning with `?sv=`. Enter this value on the CleverTap dashboard; you do not need the _Blob SAS URL_.
+   <Callout icon="🚧" theme="warn">
+     #### Security Best Practice
+
+     Save the SAS token securely. Azure does not display the token again after you leave the pane, so generate a new token if you lose it. Never share the storage account key itself. If you believe a token has leaked, rotate the signing key under _Security + networking > Access keys_, or delete the stored access policy of the token, and then generate a new token.
+   </Callout>
 
 For more information, refer to Microsoft's [Create a service SAS](https://learn.microsoft.com/rest/api/storageservices/create-service-sas) and [Configure an expiration policy for shared access signatures](https://learn.microsoft.com/azure/storage/common/sas-expiration-policy) documentation.
 
-<Callout icon="📘" theme="info">
-  ### Security Best Practice
-
-  Save the SAS token securely. Azure does not display the token again after you leave the pane, so generate a new token if you lose it. Never share the storage account key itself. If you believe a token has leaked, rotate the signing key under _Security + networking > Access keys_, or delete the stored access policy of the token, and then generate a new token.
-</Callout>
-
 <Callout icon="🚧" theme="warn">
-  ### Account Key Signing Unavailable
+  #### Account Key Signing Unavailable
 
   If **Account key** is not offered under _Signing method_, or Azure returns "Key based authentication is not permitted on this storage account," the storage account has **Allow storage account key access** turned off. Ask your Azure administrator to enable the setting under _Settings > Configuration_, or to exempt the storage account from the Azure Policy that disables it. For more information, refer to Microsoft's [Prevent Shared Key authorization](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent) documentation.
 </Callout>

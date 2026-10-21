@@ -1,4 +1,5 @@
 - export-via-api
 - cloud-storage
+- sftp-exports
 - data-warehouse-exports
 - export-partners

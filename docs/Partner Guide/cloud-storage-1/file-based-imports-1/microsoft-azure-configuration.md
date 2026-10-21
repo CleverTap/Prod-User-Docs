@@ -295,11 +295,7 @@ For more information, refer to Microsoft's [Create a service SAS](https://learn.
 
 ## Configure Microsoft Azure in CleverTap
 
-The CleverTap dashboard needs the storage account details and the SAS token to complete the connection.
-
-### Add Container on CleverTap Dashboard
-
-Adding the container registers the endpoint, the container name, the optional subfolder, and the SAS token for the connection.
+Add the container details and the SAS token on the CleverTap dashboard to complete the connection, as follows:
 
 1. On the CleverTap dashboard, go to _Settings > Partners_ and select **Microsoft Azure** on the **Integrations** tab.
 
@@ -309,21 +305,21 @@ Adding the container registers the endpoint, the container name, the optional su
 
 3. Click **Add Microsoft Azure Bucket**.
 
-4. Under _Bucket Details_, enter the details in the following table:
+4. Under _Bucket Details_, enter the following details:
 
-   | Field                         | Import | Export | Description                                                                                                                                                                                                                                                                                                                  |
-   | ----------------------------- | ------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | _Connection name_             | Yes    | Yes    | A unique name that identifies this connection in CleverTap, for example, `events-prod-azure`.                                                                                                                                                                                                                                |
-   | _Azure Blob storage endpoint_ | Yes    | Yes    | Select **Default** to connect through the standard Blob Storage endpoint of your storage account, or **Custom** to connect through a custom domain that you mapped to it.                                                                                                                                                    |
-   | _Default endpoint_            | Yes    | Yes    | Visible when you select **Default**. Enter your storage account name exactly as it appears in the Azure portal, for example, `contosostorage`, not the full endpoint URL.                                                                                                                                                    |
-   | _Custom endpoint_             | Yes    | Yes    | Visible when you select **Custom**. Enter the custom domain mapped to your Blob Storage endpoint. The domain must serve HTTPS. For more information, refer to Microsoft's [Map a custom domain to an Azure Blob Storage endpoint](https://learn.microsoft.com/azure/storage/blobs/storage-custom-domain-name) documentation. |
-   | _Folder path_                 | Yes    | Yes    | Required. The name of the container. The name must match your container name in Azure exactly, for example, `data`.                                                                                                                                                                                                          |
-   | _Subfolder path_              | Yes    | No     | Optional. A folder within the container if your import files are in a subdirectory, for example, `imports`. CleverTap reads only from this path. For export, you set the folder path when you create the export job.                                                                                                         |
-   | _Preview_                     | Yes    | Yes    | Displays the resulting path that CleverTap uses. Verify the path before you proceed.                                                                                                                                                                                                                                         |
-   | _SAS token_                   | Yes    | Yes    | Required. The _Blob SAS token_ that you copied in [Generate SAS Token](#generate-sas-token), in full, beginning with `?sv=`. Do not paste the _Blob SAS URL_.                                                                                                                                                                |
+   | Field                         | Description                                                                                                                                                                                                                                                                                                                  | Import | Export |
+   | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+   | _Connection name_             | A unique name that identifies this connection in CleverTap, for example, `events-prod-azure`.                                                                                                                                                                                                                                | Yes    | Yes    |
+   | _Azure Blob storage endpoint_ | Select **Default** to connect through the standard Blob Storage endpoint of your storage account, or **Custom** to connect through a custom domain that you mapped to it.                                                                                                                                                    | Yes    | Yes    |
+   | _Default endpoint_            | Visible when you select **Default**. Enter your storage account name exactly as it appears in the Azure portal, for example, `contosostorage`, not the full endpoint URL.                                                                                                                                                    | Yes    | Yes    |
+   | _Custom endpoint_             | Visible when you select **Custom**. Enter the custom domain mapped to your Blob Storage endpoint. The domain must serve HTTPS. For more information, refer to Microsoft's [Map a custom domain to an Azure Blob Storage endpoint](https://learn.microsoft.com/azure/storage/blobs/storage-custom-domain-name) documentation. | Yes    | Yes    |
+   | _Folder path_                 | Required. The name of the container. The name must match your container name in Azure exactly, for example, `data`.                                                                                                                                                                                                          | Yes    | Yes    |
+   | _Subfolder path_              | Optional. A folder within the container if your import files are in a subdirectory, for example, `imports`. CleverTap reads only from this path. For export, you set the folder path when you create the export job.                                                                                                         | Yes    | No     |
+   | _Preview_                     | Displays the resulting path that CleverTap uses. Verify the path before you proceed.                                                                                                                                                                                                                                         | Yes    | Yes    |
+   | _SAS token_                   | Required. The _Blob SAS token_ that you copied in [Generate SAS Token](#generate-sas-token), beginning with `?sv=`. Do not paste the _Blob SAS URL_.                                                                                                                                                                         | Yes    | Yes    |
 
    <Callout icon="📘" theme="info">
-     ### Field Mapping
+     #### Field Mapping
 
      The CleverTap dashboard does not have fields labeled "Storage account" or "Container." Enter your storage account name under _Default endpoint_, and enter your container name under _Folder path_, for example, `data`. For import connections, use _Subfolder path_ only if CleverTap should read from a folder nested inside that container.
    </Callout>
@@ -331,12 +327,11 @@ Adding the container registers the endpoint, the container name, the optional su
 
    <Image src="https://files.readme.io/435931a76c874f22a948e44cd5f427d9a50bfff980bf02439c967aad283126a1-Azure_Configuration_on_CleverTap.png" align="center" caption="Microsoft Azure Bucket Details" border={true} />
 
-
 ## Verify Integration
 
 The SAS token already carries the permissions that CleverTap needs, so you can verify the connection immediately.
 
-- **Import**: Click **Test Connection**. CleverTap lists the container, and the subfolder if you entered one, using the SAS token. When the test succeeds, click **Save**.
+- **Import**: Click **Test Connection**. CleverTap lists the container and the subfolder, if you entered one, using the SAS token. When the test succeeds, click **Save**.
 - **Export**: Click **Save**. CleverTap uploads a test file to the container that you specified, and it saves the connection only if the upload succeeds.
 
 If the test or save fails, refer to the [FAQs](#faqs).

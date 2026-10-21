@@ -23,10 +23,10 @@ Use Microsoft Azure Blob Storage to import data from files in a container that y
 
 The setup involves the following five steps:
 
-1. Create Storage Account.
-2. Create Container and, for Import, an optional subfolder.
-3. Generate SAS Token for Container.
-4. Add Container and SAS Token on CleverTap Dashboard.
+1. [Create Storage Account](doc:microsoft-azure-configuration#create-storage-account).
+2. [Create Container](doc:microsoft-azure-configuration#create-container) and, for Import, an optional subfolder.
+3. [Generate SAS Token for Container](doc:microsoft-azure-configuration#generate-sas-token).
+4. [Add Container and SAS Token on CleverTap Dashboard](doc:microsoft-azure-configuration#configure-microsoft-azure-in-clevertap).
 
 If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
 

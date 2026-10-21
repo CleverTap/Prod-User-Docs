@@ -87,34 +87,31 @@ The service account is the identity that CleverTap uses to read files from or wr
 
 5. Click **Create and continue**.
 
-6. (Optional) Under _Grant this service account access to project_, leave the role empty. You grant the role on the bucket in [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket), which limits CleverTap to that one bucket. If your organization requires project-level grants instead, select the role here, using the table in that section.
+6. (Optional) Under _Grant this service account access to project_, leave the role empty. You grant the role on the bucket in [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket), which limits CleverTap to that one bucket. If your organization requires project-level grants, grant **Storage Object Viewer** here for import, or a custom role for export. A project-level grant gives CleverTap access to every bucket in the project, and you can grant legacy roles only on a bucket.
 
-7. Click **Continue**, leave _Grant users access to this service account_ empty, and click **Done**.
-
-8. Note the service account email, which uses the following format. You need the email to grant access to the bucket.
-
+   Note the service account email, which uses the following format. You need the email to grant access to the bucket.
    ```text
    <service-account-id>@<project-id>.iam.gserviceaccount.com
    ```
 
 For more information, refer to Google Cloud's [Create service accounts](https://cloud.google.com/iam/docs/service-accounts-create) documentation.
 
-### Create Bucket
+## Create Bucket
 
 A general-purpose bucket stores the files that CleverTap reads or writes.
 
-1. From the navigation menu, select _Cloud Storage > Buckets_.
+1. From the left navigation, select _Cloud Storage > Browser_.
 
-2. Click **Create**.
+2. Click **Create Bucket**.
 
 
    <Image src="https://files.readme.io/8d026fe-Screenshot_2020-04-06_at_4.12.33_PM.png" align="center" caption="Create Bucket" border={true} />
 
 
-3. Under _Name your bucket_, enter the bucket name that you specify under _Folder_ on the CleverTap dashboard, and click **Continue**.
+3. Under _Name your bucket_, enter the bucket name. You enter this same name in _Folder_ on the CleverTap dashboard, which identifies your bucket, and click **Continue**.
 
    <Callout icon="📘" theme="info">
-     ### Note
+     #### Note
 
      Bucket names must be 3 to 63 characters, contain only lowercase letters, numbers, dashes (-), underscores (\_), and dots (.), and begin and end with a letter or number. Bucket names must be unique across all Google Cloud projects globally. For more information, refer to Google Cloud's [bucket naming guidelines](https://cloud.google.com/storage/docs/buckets#naming).
    </Callout>
@@ -123,35 +120,39 @@ A general-purpose bucket stores the files that CleverTap reads or writes.
    <Image src="https://files.readme.io/c696063-Screenshot_2020-04-06_at_4.14.53_PM.png" align="center" caption="Name Your Bucket" border={true} />
 
 
-4. Under _Choose where to store your data_, select any location type and location, and click **Continue**. CleverTap does not require a specific bucket location.
+4. Under _Choose where to store your data_, select any location type and location, and click **Continue**. CleverTap does not check the bucket location.
 
-5. Under _Choose a storage class for your data_, keep **Standard** and click **Continue**. Import connections read files on every import run, and colder storage classes add retrieval costs and latency.
+5. Under _Choose a storage class for your data_, select _Standard_ and click **Continue**. Standard is recommended for import buckets, because colder storage classes add retrieval costs and latency. CleverTap does not check the storage class.
 
-6. Under _Choose how to control access to objects_, keep **Enforce public access prevention on this bucket** selected, keep **Uniform** access control, and click **Continue**. CleverTap does not use object ACLs.
+6. Under _Choose how to control access to objects_, select _Enforce public access prevention on this bucket_ selected, _Uniform_ access control, and click **Continue**. CleverTap does not use object ACLs.
 
-7. Under _Choose how to protect object data_, keep the default soft delete policy and keep object versioning and retention policy off. Under _Data encryption_, keep **Google-managed encryption key**. If your organization requires a customer-managed encryption key, refer to [Can I use a customer-managed encryption key on the bucket?](#can-i-use-a-customer-managed-encryption-key-on-the-bucket) before you select it.
+7. Under _Choose how to protect object data_, keep the default soft delete policy and keep object versioning off, and do not enable a retention policy if the bucket is for export.&#x20;
 
-8. Click **Create**.
+8. Under _Data encryption_, select _Google-managed encryption key_. If your organization requires a customer-managed encryption key, refer to [Can I use a customer-managed encryption key on the bucket?](#can-i-use-a-customer-managed-encryption-key-on-the-bucket) before you select it.
 
-9. Note the bucket name. You enter it during the CleverTap configuration.
+9. Click **Create**.
+
+Copy the bucket name, as you will need to enter it during the CleverTap configuration.
 
 For more information, refer to Google Cloud's [Create a bucket](https://cloud.google.com/storage/docs/creating-buckets) documentation.
 
 <Callout icon="🚧" theme="warn">
-  ### Caution
+  #### Caution
 
-  Do not enable a _Retention policy_ on a bucket that you use for export. CleverTap writes export files in chunks, and a retention policy causes uploads to fail with `403: retentionPolicyNotMet`. You cannot remove a locked retention policy, so you must create a new bucket. For more information, refer to Google Cloud's [Use and lock retention policies](https://cloud.google.com/storage/docs/using-bucket-lock) documentation.
+  Do not enable a _Retention policy_ on a bucket that you use for export. A retention policy prevents CleverTap from replacing existing files, and the export fails with `403: retentionPolicyNotMet`. You cannot remove a locked retention policy, so you must create a new bucket. For more information, refer to Google Cloud's [Use and lock retention policies](https://cloud.google.com/storage/docs/using-bucket-lock) documentation.
 </Callout>
 
-### Create Folder for Import
+### Create Subfolder for Import
 
-For an import connection, you can optionally create a folder so that CleverTap reads only from a specific path within the bucket.
+For an import connection, you can optionally create a subfolder so that CleverTap reads only from a specific path within the bucket.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
-  For an export connection, you set the folder path when you create the export job, and Cloud Storage creates the path when CleverTap writes the first file, so you do not need to create a folder in advance.
+  For an export connection, you set the folder path when you create the export job, and Cloud Storage creates the path when CleverTap writes the first file, so you do not need to create a subfolder in advance.
 </Callout>
+
+To create a subfolder, perform the following steps:
 
 1. Select your bucket from the _Buckets_ list.
 
@@ -159,9 +160,32 @@ For an import connection, you can optionally create a folder so that CleverTap r
 
 3. Enter a folder name and click **Create**.
 
-4. Note the folder name. You enter it in the _Subfolder_ field on the CleverTap dashboard.
+4. Copy the folder name as you need to enter it in the _Subfolder_ field on the CleverTap dashboard.
 
 For more information, refer to Google Cloud's [Folders overview](https://docs.cloud.google.com/storage/docs/objects#namespace) documentation.
+
+### Create Custom Role for Export (Optional)
+
+A custom role gives the service account only the permissions that CleverTap uses for export, which matters when your security policy does not permit the `storage.objects.delete` permission in **Storage Legacy Bucket Writer**. Creating a custom role requires the **Role Administrator** (`roles/iam.roleAdmin`) role on the project.
+
+1. From the navigation menu, select _IAM & Admin > Roles_.
+
+2. Select your project from the dropdown at the top of the page.
+
+3. Click **Create custom role**.
+
+4. Enter a _Title_ (for example, `CleverTap Export Writer`), a _Description_, and an _ID_. Keep the _Role launch stage_ as **General Availability**.
+
+5. Click **Add permissions**.
+
+6. In the _Filter_ box, enter each of the following permissions, select the permission, and click **Add**:
+   - `storage.buckets.get`
+   - `storage.objects.create`
+   - `storage.objects.list`
+
+7. Click **Create**.
+
+The custom role now appears under _Assign roles_ when you grant access on the bucket. For more information, refer to Google Cloud's [Create and manage custom roles](https://cloud.google.com/iam/docs/creating-custom-roles) documentation.
 
 ### Grant Service Account Access to Bucket
 
@@ -209,28 +233,7 @@ Grant the role that matches your connection type:
 
 For more information, refer to Google Cloud's [Set and manage IAM policies on buckets](https://cloud.google.com/storage/docs/access-control/using-iam-permissions) and [IAM roles for Cloud Storage](https://cloud.google.com/storage/docs/access-control/iam-roles) documentation.
 
-### Create Custom Role for Export
-
-A custom role gives the service account only the permissions that CleverTap uses for export, which matters when your security policy does not permit the `storage.objects.delete` permission in **Storage Legacy Bucket Writer**. Creating a custom role requires the **Role Administrator** (`roles/iam.roleAdmin`) role on the project.
-
-1. From the navigation menu, select _IAM & Admin > Roles_.
-
-2. Select your project from the dropdown at the top of the page.
-
-3. Click **Create custom role**.
-
-4. Enter a _Title_ (for example, `CleverTap Export Writer`), a _Description_, and an _ID_. Keep the _Role launch stage_ as **General Availability**.
-
-5. Click **Add permissions**.
-
-6. In the _Filter_ box, enter each of the following permissions, select the permission, and click **Add**:
-   - `storage.buckets.get`
-   - `storage.objects.create`
-   - `storage.objects.list`
-
-7. Click **Create**.
-
-The custom role now appears under _Assign roles_ when you grant access on the bucket. For more information, refer to Google Cloud's [Create and manage custom roles](https://cloud.google.com/iam/docs/creating-custom-roles) documentation.
+###
 
 ### Create Service Account Key
 

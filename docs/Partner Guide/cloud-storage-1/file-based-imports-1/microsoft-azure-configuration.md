@@ -31,12 +31,12 @@ The setup involves the following five steps:
 If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
 
 <Accordion title="Quick Start Guide for Existing Users">
-  If you previously configured an Azure storage account and container and you know the CleverTap dashboard, the setup requires the following details and steps.
+  If you previously configured an Azure storage account and container and are familiar with the CleverTap dashboard, the setup requires the following details and steps.
 
   Have the following details ready:
 
   - The storage account name, which you enter as _Default endpoint_ on the CleverTap dashboard, or a custom domain mapped to your Blob Storage endpoint
-  - The container name, which you enter as _Folder path_ on the CleverTap dashboard
+  - The container name, which you enter as _Folder path_ (for import) or _Container Name (_&#x66;or expor&#x74;_)&#x20;_&#x6F;n the CleverTap dashboard
   - (Import only, optional) The subfolder path within the container
   - A container-level SAS token, signed with the account key, with the permissions that your connection needs:
     - Import: **Read** and **List**

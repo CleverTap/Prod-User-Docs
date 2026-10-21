@@ -202,11 +202,11 @@ CleverTap uses the following Cloud Storage permissions:
 
 Grant the role that matches your connection type:
 
-| Connection type              | Role to grant on the bucket                                                                             | Permissions included                                                                              | Notes                                                                                                                                                                                                                                       |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Import**                   | **Storage Object Viewer** (`roles/storage.objectViewer`)                                                | `storage.objects.get`, `storage.objects.list`                                                     | Includes exactly the permissions that import requires.                                                                                                                                                                                      |
-| **Export** (Recommended)     | **Storage Legacy Bucket Writer** (`roles/storage.legacyBucketWriter`)                                   | `storage.buckets.get`, `storage.objects.list`, `storage.objects.create`, `storage.objects.delete` | The smallest predefined role that includes both `storage.buckets.get` and `storage.objects.create`. It also includes `storage.objects.delete`, which CleverTap does not use. You can grant legacy roles only on a bucket, not on a project. |
-| **Export** (Least Privilege) | A custom role that contains `storage.buckets.get`, `storage.objects.create`, and `storage.objects.list` | Only the listed permissions                                                                       | Use this role when your security policy does not permit the extra `storage.objects.delete` permission. For more information, refer to [Create Custom Role for Export](#create-custom-role-for-export).                                      |
+| Connection Type              | Description                                                                                                                                                                                                                                 | Role to Grant                                                                                           | Permissions Included                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Import**                   | Includes exactly the permissions that import requires.                                                                                                                                                                                      | **Storage Object Viewer** (`roles/storage.objectViewer`)                                                | `storage.objects.get`, `storage.objects.list`                                                     |
+| **Export** (Recommended)     | The smallest predefined role that includes both `storage.buckets.get` and `storage.objects.create`. It also includes `storage.objects.delete`, which CleverTap does not use. You can grant legacy roles only on a bucket, not on a project. | **Storage Legacy Bucket Writer** (`roles/storage.legacyBucketWriter`)                                   | `storage.buckets.get`, `storage.objects.list`, `storage.objects.create`, `storage.objects.delete` |
+| **Export** (Least Privilege) | Use this role when your security policy does not permit the extra `storage.objects.delete` permission. For more information, refer to [Create Custom Role for Export](#create-custom-role-for-export).                                      | A custom role that contains `storage.buckets.get`, `storage.objects.create`, and `storage.objects.list` | Only the listed permissions                                                                       |
 
 <Callout icon="🚧" theme="warn">
   #### Important
@@ -215,7 +215,9 @@ Grant the role that matches your connection type:
   - Do not grant **Storage Admin** to the service account. The role includes `storage.buckets.*` and `storage.objects.*`, and when you grant it at the project level, it lets the key holder delete or change the IAM policy on every bucket in the project. CleverTap never requires it.
 </Callout>
 
-1. From the navigation menu, select _Cloud Storage > Buckets_ and select your bucket.
+To grant access to the bucket, perform the following steps:
+
+1. From the left navigation, select _Cloud Storage > Buckets_ and select your bucket.
 
 2. Select the **Permissions** tab.
 
@@ -230,16 +232,13 @@ Grant the role that matches your connection type:
 
    <Image src="https://files.readme.io/dae6adc67f34ec6ff7699e0d1eb139796138ec38080a006582776d7f0f0e723e-Screenshot_2026-10-06_at_8.24.18_PM.png" align="center" caption="Grant Access" border={true} />
 
-
 For more information, refer to Google Cloud's [Set and manage IAM policies on buckets](https://cloud.google.com/storage/docs/access-control/using-iam-permissions) and [IAM roles for Cloud Storage](https://cloud.google.com/storage/docs/access-control/iam-roles) documentation.
 
-###
-
-### Create Service Account Key
+## Create Service Account Key
 
 The Service Account Key is the credential that you provide to CleverTap.
 
-1. From the navigation menu, select _IAM & Admin > Service Accounts_.
+1. From the left navigation, select _IAM & Admin > Service Accounts_.
 
 2. Click the email address of the service account that you created.
 
@@ -249,22 +248,21 @@ The Service Account Key is the credential that you provide to CleverTap.
 
 5. Under _Key type_, keep **JSON** and click **Create**. The JSON key file downloads to your machine automatically.
 
+   <Callout icon="🚧" theme="warn">
+     #### Important
+
+     Save the downloaded JSON key securely, because Google Cloud does not let you download it again. If you believe the key has leaked, delete it from the _Keys_ tab, create a new one, and update the connection on the CleverTap dashboard.
+   </Callout>
+
 
    <Image src="https://files.readme.io/e5bc98b-Screenshot_2020-04-06_at_4.04.32_PM.png" align="center" caption="Create Service Account Key" border={true} />
 
-
 For more information, refer to Google Cloud's [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
 
-<Callout icon="📘" theme="info">
-  ### Security Best Practice
-
-  Save the downloaded JSON key securely, because Google Cloud does not let you download it again. If you believe the key has leaked, delete it from the _Keys_ tab, create a new one, and update the connection on the CleverTap dashboard.
-</Callout>
-
 <Callout icon="🚧" theme="warn">
-  ### Key Creation Disabled
+  #### Key Creation Disabled
 
-  If **Create new key** is unavailable or Google Cloud shows "Service account key creation is disabled," your organization enforces the `iam.managed.disableServiceAccountKeyCreation` policy. Ask an Organization Policy Administrator to add an exception for your project under _IAM & Admin > Organization Policies > Disable service account key creation_, and then repeat these steps. For more information, refer to the _Allow service account key creation_ section of Google Cloud's [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
+  If **Create new key** is unavailable or Google Cloud shows "Service account key creation is disabled," your organization enforces the _Disable service account key creation_ policy (`iam.managed.disableServiceAccountKeyCreation`) policy. Ask an Organization Policy Administrator to add an exception for your project under _IAM & Admin > Organization Policies > Disable service account key creation_, and then repeat these steps. For more information, refer to the _Allow service account key creation_ section of Google Cloud's [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
 </Callout>
 
 ## Configure Google Cloud Storage in CleverTap

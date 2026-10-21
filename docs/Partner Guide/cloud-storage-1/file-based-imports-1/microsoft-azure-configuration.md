@@ -324,16 +324,16 @@ Add the container details and the SAS token on the CleverTap dashboard to comple
    <Image src="https://files.readme.io/435931a76c874f22a948e44cd5f427d9a50bfff980bf02439c967aad283126a1-Azure_Configuration_on_CleverTap.png" align="center" caption="Microsoft Azure Bucket Details" border={true} />
 
 
+   <Callout icon="📘" theme="info">
+     #### Field Mapping
+
+     The CleverTap dashboard does not have fields labeled "Storage account" or "Container." Enter your storage account name under _Default endpoint_, and enter your container name under _Folder path_, for example, `data`. For import connections, use _Subfolder path_ only if CleverTap should read from a folder nested inside that container.
+   </Callout>
+
 5. Verify and save:
    - **Import**: Click **Test Connection**. CleverTap lists the container and the subfolder, if you entered one, using the SAS token. When the test succeeds, click **Save**.
    - **Export**: Click **Save**. CleverTap uploads a test file to the container you specified and saves the connection only if the upload succeeds.
    If the test or save fails, refer to [FAQs](#faqs).
-
-<Callout icon="📘" theme="info">
-  #### Field Mapping
-
-  The CleverTap dashboard does not have fields labeled "Storage account" or "Container." Enter your storage account name under _Default endpoint_, and enter your container name under _Folder path_, for example, `data`. For import connections, use _Subfolder path_ only if CleverTap should read from a folder nested inside that container.
-</Callout>
 
 The Microsoft Azure container is now configured on both Azure and the CleverTap dashboard.
 

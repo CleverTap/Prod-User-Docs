@@ -55,22 +55,14 @@ If you already have a storage account and container, skip to [Generate SAS Token
 
 ## Prerequisites for Integration
 
-Before you set up the integration, ensure that the required Azure permissions, settings, and CleverTap access are available.
+Ensure the following are in place before you begin:
 
 - An active Azure subscription and permissions to create a storage account and containers in a resource group. The **Contributor** role on the resource group covers these permissions.
 - Permission to generate a SAS token signed with the account key. The permission requires `Microsoft.Storage/storageAccounts/listkeys/action`, which the **Contributor**, **Owner**, and **Storage Account Key Operator Service Role** roles include. Without the permission, the portal does not offer **Account key** as a signing method.
-- The _Allow storage account key access_ setting enabled on the storage account. Azure enables the setting by default, but an Azure Policy or an administrator may disable it to enforce Microsoft Entra authentication. When the setting is off, Azure does not let you generate or use account-key SAS tokens. For more information, refer to Microsoft's [Prevent Shared Key authorization](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent) documentation.
-- A CleverTap account with the Microsoft Azure partner enabled
-- A globally unique storage account name and a container name that follow the naming rules in [Create Storage Account](#create-storage-account) and [Create Container](#create-container)
-- The CleverTap IP ranges to allow, if your organization restricts access to Blob Storage by source IP. For more information, refer to the [FAQs](#faqs).
-
-### Review Authentication Method
-
-CleverTap authenticates to Azure Blob Storage with a container SAS token, which works for both import and export connections.
-
-| Method                  | Import | Export | What you create on Azure                                                    | Credentials stored in CleverTap | Permissions in the SAS token                                      |
-| ----------------------- | ------ | ------ | --------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------- |
-| **Container SAS token** | Yes    | Yes    | A storage account, a container, and a SAS token generated on that container | SAS token                       | Import: **Read** and **List**<br />Export: **Read** and **Write** |
+- The _Allow storage account key access_ setting is enabled on the storage account. Azure enables the setting by default, but an Azure Policy or an administrator may disable it to enforce Microsoft Entra authentication. When the setting is off, Azure does not let you generate or use account-key SAS tokens. For more information, refer to Microsoft's [Prevent Shared Key authorization](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent) documentation. If the **Account key** is unavailable, refer to [Generate SAS Token]()​.
+- A CleverTap account with the Microsoft Azure partner enabled. To enable the feature for your account, contact your CleverTap account manager.
+- A globally unique storage account name and a container name that follow the naming rules in [Create Storage Account](#create-storage-account) and [Create Container](#create-container)​.
+- The CleverTap IP ranges to allow, if your organization restricts access to Blob Storage by source IP. For more information, refer to [FAQs](#faqs).
 
 <Callout icon="🚧" theme="warn">
   ### Important
@@ -78,11 +70,11 @@ CleverTap authenticates to Azure Blob Storage with a container SAS token, which 
   Sign the SAS token with the **Account key**, not a **User delegation key**. A user delegation SAS expires after a maximum of 7 days, so a connection that uses one stops working within a week.
 </Callout>
 
-## Set Up Microsoft Azure for Integration
+# Set Up Microsoft Azure for Integration
 
-Setting up Microsoft Azure for the integration involves creating a storage account and a container, optionally creating a folder for import, and generating a SAS token. If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
+Setting up Microsoft Azure for the integration involves creating a storage account and a container, optionally creating an import folder, and generating a SAS token. If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
 
-### Create Storage Account
+## Create Storage Account
 
 The storage account holds your container and provides the Blob Storage endpoint for the CleverTap connection.
 

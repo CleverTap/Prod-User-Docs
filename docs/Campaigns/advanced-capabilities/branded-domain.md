@@ -198,7 +198,7 @@ CleverTap supports two types of branded domains:
        | Domain Type        | Your own subdomain (for example, links.yourbrand.com) that requires DNS configuration.                   |
        | Domain             | Enter your own subdomain to be used for branding and tracking.                                           |
        | Branded URL Schema | Defines the structure of the branded tracking URL. It defines the structure of the branded tracking URL. |
-    3. Click **Save & Generate DNS&#x20;**&#x61;fter adding all the details. The domain status is set to **Pending Verification** immediately, and DNS Records are generated to add it on your Domain provider dashboard. The generated records include two CNAME records and one TXT record.
+    3. Click **Save & Generate DNS&#x20;**&#x61;fter adding all the details. The domain status is set to **Pending Verification** immediately, and DNS Records are generated to add them to your Domain provider dashboard. The generated records include two CNAME records and one TXT record.
 
     ## Best Practices for Custom Domain
 

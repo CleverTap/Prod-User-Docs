@@ -18,7 +18,7 @@ The Google Cloud Storage (GCS) integration connects CleverTap to a bucket that y
 - Export profile and event data to your GCS bucket for analysis in BI tools or storage in a data warehouse.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about aloowed IP ranges, refer to [FAQs](#faqs).
 </Callout>

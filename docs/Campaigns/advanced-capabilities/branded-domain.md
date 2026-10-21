@@ -513,7 +513,7 @@ CleverTap supports two types of branded domains:
       * Regularly review and update cache behaviors as needed.
       * Test the domain periodically to ensure proper functioning.
     * DNS Configuration:
-      * Copy the exact TXT record from your CleverTap dashboard — do not modify the value. Use the copy option to avoid any errors.
+      * Copy the exact TXT record from your CleverTap dashboard; do not modify the value. Use the copy option to avoid any errors.
       * Allow up to 24 hours for DNS propagation before verifying
       * Do not use this domain in other tools/services (avoid DNS conflicts)
       * (Optional) Verify DNS is correctly configured by executing this command: `nslookup -type=TXT _clevertap-verify.track.yourbrand.com`&#x20;

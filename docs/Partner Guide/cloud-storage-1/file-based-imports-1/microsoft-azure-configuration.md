@@ -16,7 +16,7 @@ Use Microsoft Azure Blob Storage to import data from files in a container that y
 - Export profile and event data to your Blob Storage container for analysis in BI tools or storage in a data warehouse.
 
 <Callout icon="📘" theme="info">
-  ### Note
+  #### Note
 
   CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](#faqs).
 </Callout>
@@ -65,7 +65,7 @@ Ensure the following are in place before you begin:
 - The CleverTap IP ranges to allow, if your organization restricts access to Blob Storage by source IP. For more information, refer to [FAQs](#faqs).
 
 <Callout icon="🚧" theme="warn">
-  ### Important
+  #### Important
 
   Sign the SAS token with the **Account key**, not a **User delegation key**. A user delegation SAS expires after a maximum of 7 days, so a connection that uses one stops working within a week.
 </Callout>

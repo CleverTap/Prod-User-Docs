@@ -367,7 +367,7 @@ CleverTap supports two types of branded domains:
 
     Request a public SSL certificate for your custom domain.
 
-    1. Go to _AWS Certificate Manager_ (required for CloudFront).
+    1. Go to _AWS Certificate Manager_ in the `us-east-1` region (required for CloudFront).
     2. Request a public certificate for your custom domain (for example, links.yourbrand.com).
     3. Choose DNS validation.
     4. Add the required DNS CNAME record to your domain provider.

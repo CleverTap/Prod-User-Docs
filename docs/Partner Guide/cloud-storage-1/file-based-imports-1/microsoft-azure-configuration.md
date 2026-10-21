@@ -91,7 +91,7 @@ The storage account holds your container and provides the Blob Storage endpoint 
 4. Under _Instance details_, enter a _Storage account name_. You enter this value as the _Default endpoint_ on the CleverTap dashboard.
 
    <Callout icon="📘" theme="info">
-     ### Note
+     #### Note
 
      Storage account names must be 3 to 24 characters, contain only lowercase letters and numbers, and be unique across all of Azure. For more information, refer to Microsoft's [storage account name](https://learn.microsoft.com/azure/storage/common/storage-account-overview#storage-account-name) rules.
    </Callout>
@@ -116,7 +116,6 @@ The storage account holds your container and provides the Blob Storage endpoint 
 
 
     <Image src="https://files.readme.io/102207f-Storage_Account_created_successfully.png" alt="Storage Account Created Successfully" align="center" caption="Storage Account Created Successfully" border={true} />
-
 
 For more information, refer to Microsoft's [Create a storage account](https://learn.microsoft.com/azure/storage/common/storage-account-create) documentation.
 

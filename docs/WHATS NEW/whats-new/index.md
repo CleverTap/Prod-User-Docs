@@ -409,6 +409,31 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="whatsapp-business-username">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#whatsapp-business-username"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">WhatsApp Business Username</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now supports WhatsApp Business Usernames for WhatsApp BSP users, allowing you to establish a unique, brand-friendly identity for your business beyond just a phone number.</p>
+    <p>With this feature, you can:</p>
+    <p><ul>
+    <li>Claim a new username or update an existing one for your WhatsApp Business phone number.</li>
+    <li>Transfer usernames between phone numbers within the same Business Portfolio.</li>
+    </ul></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/clevertap-bsp#configure-whatsapp-username" target="_blank">Configure WhatsApp Username</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="segments" id="edit-past-behavior-segments">
   <div class="release-note-header">
     <div class="anchor-link-icon">

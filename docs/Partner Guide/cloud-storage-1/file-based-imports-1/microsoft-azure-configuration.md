@@ -18,7 +18,7 @@ Use Microsoft Azure Blob Storage to import data from files in a container that y
 <Callout icon="📘" theme="info">
   #### Note
 
-  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](doc:microsoft-azure-configuration#faqs).
 </Callout>
 
 The setup involves the following five steps:
@@ -28,7 +28,7 @@ The setup involves the following five steps:
 3. [Generate SAS Token for Container](doc:microsoft-azure-configuration#generate-sas-token).
 4. [Add Container and SAS Token on CleverTap Dashboard](doc:microsoft-azure-configuration#configure-microsoft-azure-in-clevertap).
 
-If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
+If you already have a storage account and container, skip to [Generate SAS Token](doc:microsoft-azure-configuration#generate-sas-token).
 
 <Accordion title="Quick Start Guide for Existing Users">
   If you previously configured an Azure storage account and container and are familiar with the CleverTap dashboard, the setup requires the following details and steps.
@@ -50,7 +50,7 @@ If you already have a storage account and container, skip to [Generate SAS Token
   4. Enter the _SAS token_ that you generated for the container.
   5. Click Save to save the connection. For imports, you can test your connection before saving.
 
-  After you save the connection, continue with [Next Steps](#next-steps).
+  After you save the connection, continue with [Next Steps](doc:microsoft-azure-configuration#next-steps).
 </Accordion>
 
 ## Prerequisites for Integration
@@ -59,10 +59,10 @@ Ensure the following are in place before you begin:
 
 - An active Azure subscription and permissions to create a storage account and containers in a resource group. The **Contributor** role on the resource group covers these permissions.
 - Permission to generate a SAS token signed with the account key. The permission requires `Microsoft.Storage/storageAccounts/listkeys/action`, which the **Contributor**, **Owner**, and **Storage Account Key Operator Service Role** roles include. Without the permission, the portal does not offer **Account key** as a signing method.
-- The _Allow storage account key access_ setting is enabled on the storage account. Azure enables the setting by default, but an Azure Policy or an administrator may disable it to enforce Microsoft Entra authentication. When the setting is off, Azure does not let you generate or use account-key SAS tokens. For more information, refer to Microsoft's [Prevent Shared Key authorization](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent) documentation. If the **Account key** is unavailable, refer to [Generate SAS Token]()​.
+- The _Allow storage account key access_ setting is enabled on the storage account. Azure enables the setting by default, but an Azure Policy or an administrator may disable it to enforce Microsoft Entra authentication. When the setting is off, Azure does not let you generate or use account-key SAS tokens. For more information, refer to Microsoft's [Prevent Shared Key authorization](https://learn.microsoft.com/azure/storage/common/shared-key-authorization-prevent) documentation. If the **Account key** is unavailable, refer to [Generate SAS Token](doc:doc:microsoft-azure-configuration#generate-sas-token)​.
 - A CleverTap account with the Microsoft Azure partner enabled. To enable the feature for your account, contact your CleverTap account manager.
-- A globally unique storage account name and a container name that follow the naming rules in [Create Storage Account](#create-storage-account) and [Create Container](#create-container)​.
-- The CleverTap IP ranges to allow, if your organization restricts access to Blob Storage by source IP. For more information, refer to [FAQs](#faqs).
+- A globally unique storage account name and a container name that follow the naming rules in [Create Storage Account](doc:microsoft-azure-configuration#create-storage-account) and [Create Container](doc:microsoft-azure-configuration#create-container)​.
+- The CleverTap IP ranges to allow, if your organization restricts access to Blob Storage by source IP. For more information, refer to [FAQs](doc:microsoft-azure-configuration#faqs).
 
 <Callout icon="🚧" theme="warn">
   #### Important
@@ -72,7 +72,7 @@ Ensure the following are in place before you begin:
 
 # Set Up Microsoft Azure for Integration
 
-Setting up Microsoft Azure for the integration involves creating a storage account and a container, optionally creating an import folder, and generating a SAS token. If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
+Setting up Microsoft Azure for the integration involves creating a storage account and a container, optionally creating an import folder, and generating a SAS token. If you already have a storage account and container, skip to [Generate SAS Token](doc:microsoft-azure-configuration#generate-sas-token).
 
 ## Create Storage Account
 
@@ -106,9 +106,9 @@ The storage account holds your container and provides the Blob Storage endpoint 
 
 7. On the _Advanced_ tab, under _Security_, select _Allow storage account key access_. You sign the CleverTap SAS token with the account key, and the token stops working if you later disable this setting.
 
-8. On the _Networking_ tab, select _Public network access_ and set it to _Enable from all networks_. If your organization requires _Enable from selected virtual networks and IP addresses_, add the CleverTap IP ranges for your connection type under _Firewall_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+8. On the _Networking_ tab, select _Public network access_ and set it to _Enable from all networks_. If your organization requires _Enable from selected virtual networks and IP addresses_, add the CleverTap IP ranges for your connection type under _Firewall_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](doc:microsoft-azure-configuration#how-do-i-whitelist-clevertaps-ip-addresses)
 
-9. Keep the default settings as is for the _Data protection_, _Encryption_, and _Tags_ tabs. Do not enable immutable storage on a container that you use for export. If your organization requires customer-managed keys for encryption, refer to [Can I use customer-managed keys to encrypt the storage account?](#can-i-use-customer-managed-keys-to-encrypt-the-storage-account) before you select them.
+9. Keep the default settings as is for the _Data protection_, _Encryption_, and _Tags_ tabs. Do not enable immutable storage on a container that you use for export. If your organization requires customer-managed keys for encryption, refer to [Can I use customer-managed keys to encrypt the storage account?](doc:microsoft-azure-configuration#can-i-use-customer-managed-keys-to-encrypt-the-storage-account) before you select them.
 
 10. Click **Review + create**, and after validation passes, click **Create**.
 
@@ -262,7 +262,7 @@ A Shared Access Signature (SAS) token grants CleverTap limited, time-bound acces
          </td>
 
          <td>
-           Leave blank unless your organization requires IP restrictions. If you enter a range, enter the CleverTap IP ranges for your connection type. The import and export ranges differ. <br /><br />For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+           Leave blank unless your organization requires IP restrictions. If you enter a range, enter the CleverTap IP ranges for your connection type. The import and export ranges differ. <br /><br />For more information, refer to [How do I whitelist CleverTap's IP addresses?](doc:microsoft-azure-configuration#how-do-i-whitelist-clevertaps-ip-addresses)
          </td>
        </tr>
 
@@ -318,7 +318,7 @@ Add the container details and the SAS token on the CleverTap dashboard to comple
    | _Folder path_                 | Required. The name of the container. The name must match your container name in Azure exactly, for example, `data`.                                                                                                                                                                                                          | Yes    | Yes    |
    | _Subfolder path_              | Optional. A folder within the container if your import files are in a subdirectory, for example, `imports`. CleverTap reads only from this path. For export, you set the folder path when you create the export job.                                                                                                         | Yes    | No     |
    | _Preview_                     | Displays the resulting path that CleverTap uses. Verify the path before you proceed.                                                                                                                                                                                                                                         | Yes    | Yes    |
-   | _SAS token_                   | Required. The _Blob SAS token_ that you copied in [Generate SAS Token](#generate-sas-token), beginning with `?sv=`. Do not paste the _Blob SAS URL_.                                                                                                                                                                         | Yes    | Yes    |
+   | _SAS token_                   | Required. The _Blob SAS token_ that you copied in [Generate SAS Token](doc:microsoft-azure-configuration#generate-sas-token), beginning with `?sv=`. Do not paste the _Blob SAS URL_.                                                                                                                                        | Yes    | Yes    |
 
 
    <Image src="https://files.readme.io/435931a76c874f22a948e44cd5f427d9a50bfff980bf02439c967aad283126a1-Azure_Configuration_on_CleverTap.png" align="center" caption="Microsoft Azure Bucket Details" border={true} />
@@ -333,7 +333,7 @@ Add the container details and the SAS token on the CleverTap dashboard to comple
 5. Verify and save:
    - **Import**: Click **Test Connection**. CleverTap lists the container and the subfolder, if you entered one, using the SAS token. When the test succeeds, click **Save**.
    - **Export**: Click **Save**. CleverTap uploads a test file to the container you specified and saves the connection only if the upload succeeds.
-   If the test or save fails, refer to [FAQs](#faqs).
+     If the test or save fails, refer to [FAQs](doc:microsoft-azure-configuration#faqs).
 
 The Microsoft Azure container is now configured on both Azure and the CleverTap dashboard.
 
@@ -378,11 +378,11 @@ For the storage account firewall, refer to Microsoft's [Configure Azure Storage 
 
 ### Can I use a storage account with hierarchical namespace (Azure Data Lake Storage Gen2) enabled?
 
-CleverTap connects through the Blob Storage endpoint, which remains available on storage accounts with hierarchical namespace enabled, and container SAS tokens work the same way. Run a one-time export or a test import against the container, and confirm the result before you schedule recurring jobs.
+CleverTap connects via the Blob Storage endpoint, which remains available on storage accounts with hierarchical namespace enabled; container SAS tokens work the same way. Run a one-time export or a test import against the container, and confirm the result before you schedule recurring jobs.
 
 ### Why is Account key unavailable under Signing method?
 
-The storage account has **Allow storage account key access** turned off, or you lack the `listkeys` permission. Ask your Azure administrator to enable the setting under _Settings > Configuration_, or to grant you the **Storage Account Key Operator Service Role**. For more information, refer to [Generate SAS Token](#generate-sas-token).
+The storage account has **Allow storage account key access** turned off, or you lack the `listkeys` permission. Ask your Azure administrator to enable the setting under _Settings > Configuration_, or to grant you the **Storage Account Key Operator Service Role**. For more information, refer to [Generate SAS Token](doc:microsoft-azure-configuration#generate-sas-token).
 
 ### Why does Test Connection fail for an import connection?
 
@@ -390,7 +390,7 @@ The _Default endpoint_ contains a URL instead of the account name, the _Folder p
 
 ### Why does Save fail for an export connection when CleverTap cannot upload the test file?
 
-The SAS token lacks **Write** or **Read**, has expired or is not yet valid, or the storage account firewall or the _Allowed IP addresses_ field of the token blocks the export IP ranges of CleverTap. Confirm that the token includes `sp=rw` (or a superset), confirm its `st=` and `se=` values, and confirm that your organization allows the export IP ranges if it restricts access by IP. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+The SAS token lacks **Write** or **Read**, has expired or is not yet valid, or the storage account firewall or the _Allowed IP addresses_ field of the token blocks the export IP ranges of CleverTap. Confirm that the token includes `sp=rw` (or a superset), confirm its `st=` and `se=` values, and confirm that your organization allows the export IP ranges if it restricts access by IP. For more information, refer to [How do I whitelist CleverTap's IP addresses?](doc:microsoft-azure-configuration#how-do-i-whitelist-clevertaps-ip-addresses)
 
 ### Why does an export stop with an "Azure SAS token is not yet valid" email?
 
@@ -406,7 +406,7 @@ Azure Blob Storage does not serve HTTPS on a custom domain by itself, so the dom
 
 ### Why does Azure reject requests although the SAS token is valid?
 
-The storage account restricts _Public network access_ and the firewall omits the CleverTap IP ranges, or the _Allowed IP addresses_ field of the token omits them. Add the CleverTap IP ranges for the connection type under _Security + networking > Networking > Firewall_, or regenerate the token with the ranges under _Allowed IP addresses_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](#how-do-i-whitelist-clevertaps-ip-addresses)
+The storage account restricts _Public network access_ and the firewall omits the CleverTap IP ranges, or the _Allowed IP addresses_ field of the token omits them. Add the CleverTap IP ranges for the connection type under _Security + networking > Networking > Firewall_, or regenerate the token with the ranges under _Allowed IP addresses_. For more information, refer to [How do I whitelist CleverTap's IP addresses?](doc:microsoft-azure-configuration#how-do-i-whitelist-clevertaps-ip-addresses)
 
 ### Why does an import run but read no files?
 

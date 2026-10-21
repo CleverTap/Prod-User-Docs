@@ -250,7 +250,7 @@ A Shared Access Signature (SAS) token grants CleverTap limited, time-bound acces
          </td>
 
          <td>
-           Leave _Start_ blank, or set it at least 15 minutes in the past, because a start time of "now" causes intermittent failures for the first few minutes due to clock differences between systems.<br /><br />Set _Expiry_ to the longest duration that your organization's policy allows, and record the date, because imports and exports fail once the token expires. CleverTap checks the expiry before it connects and reports "Azure SAS token is expired".<br /><br />If the storage account has a SAS expiration policy, that policy limits the maximum expiry.<br /><br />For more information, refer to [Configure a SAS Expiration Policy](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal#how-to-configure-a-sas-expiration-policy).
+           Leave _Start_ blank, or set it at least 15 minutes in the past, because a start time of "now" causes intermittent failures for the first few minutes due to clock differences between systems.<br /><br />Set _Expiry_ to the longest duration allowed by your organization's policy, and record the date, as imports and exports fail once the token expires. CleverTap checks the expiry before it connects and reports "Azure SAS token is expired".<br /><br />If the storage account has a SAS expiration policy, that policy limits the maximum expiry.<br /><br />For more information, refer to [Configure a SAS Expiration Policy](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal#how-to-configure-a-sas-expiration-policy).
          </td>
        </tr>
 

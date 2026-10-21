@@ -36,19 +36,19 @@ If you already have a storage account and container, skip to [Generate SAS Token
   Have the following details ready:
 
   - The storage account name, which you enter as _Default endpoint_ on the CleverTap dashboard, or a custom domain mapped to your Blob Storage endpoint
-  - The container name, which you enter as _Folder path_ (for import) or _Container Name (_&#x66;or expor&#x74;_)&#x20;_&#x6F;n the CleverTap dashboard
+  - The container name, which you enter as _Folder path_ on the CleverTap dashboard
   - (Import only, optional) The subfolder path within the container
-  - A container-level SAS token, signed with the account key, with the permissions that your connection needs:
+  - A container-level SAS token, signed with the account key, with the permissions that your connection needs. For more information, refer to [Generate SAS Token](#generate-sas-token)​.
     - Import: **Read** and **List**
     - Export: **Read** and **Write**
 
-  Then configure the connection:
+  Then configure the connection as follows:
 
   1. Go to _Settings > Partners_ and select **Microsoft Azure** on the **Integrations** tab.
   2. Select the **Import Connections** or **Export Connections** tab, and then click **Add Microsoft Azure Bucket**.
   3. Enter the _Connection name_, select the _Azure Blob storage endpoint_ (**Default** or **Custom**), enter your storage account name or custom domain, and enter the _Folder path_ (your container name). For an import connection, optionally enter a _Subfolder path_.
   4. Enter the _SAS token_ that you generated for the container.
-  5. For import, click **Test Connection** and then **Save**. For export, click **Save**.
+  5. Click Save to save the connection. For imports, you can test your connection before saving.
 
   After you save the connection, continue with [Next Steps](#next-steps).
 </Accordion>

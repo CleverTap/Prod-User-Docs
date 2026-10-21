@@ -57,90 +57,27 @@ If you already have a service account and bucket, skip to [Grant Service Account
 
 ## Prerequisites for Integration
 
-Before you set up the integration, ensure that the required Google Cloud permissions, CleverTap access, and bucket name are available.
+Ensure the following are in place before you begin:
 
 - An active Google Cloud account with a project, and permissions in that project to create service accounts and keys, create buckets, and grant IAM roles on buckets. The **Service Account Admin**, **Service Account Key Admin**, and **Storage Admin** roles on the project together cover these actions. If you plan to create a custom role for export, you also need **Role Administrator** (`roles/iam.roleAdmin`) on the project.
-- Permission to create service account keys. Google Cloud organizations created on or after May 3, 2024 enforce the _Disable service account key creation_ organization policy (`constraints/iam.managed.disableServiceAccountKeyCreation`) by default. If your organization enforces this policy, an Organization Policy Administrator must exempt your project before you can create the key in [Create Service Account Key](#create-service-account-key). For more information, refer to Google Cloud's [Manage Google Cloud security baseline constraints](https://cloud.google.com/resource-manager/docs/secure-by-default-organizations) documentation.
+- Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. Refer to [Create Service Account Key](#create-service-account-key).&#x20;
 - A CleverTap account with the Google Cloud partner enabled. To enable the feature for your account, contact your CleverTap account manager.
-- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](#create-bucket)
-- The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQs](#faqs).
+- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](#create-bucket).
+- The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcs-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
 
-### Review Authentication Method
-
-CleverTap authenticates to Google Cloud Storage with a Service Account Key, the only supported method for both import and export connections, and CleverTap does not support Workload Identity Federation.
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Method
-      </th>
-
-      <th>
-        Import
-      </th>
-
-      <th>
-        Export
-      </th>
-
-      <th>
-        What you create on Google Cloud
-      </th>
-
-      <th>
-        Credentials stored in CleverTap
-      </th>
-
-      <th>
-        Role to grant on the bucket
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Service Account Key**
-      </td>
-
-      <td>
-        Yes
-      </td>
-
-      <td>
-        Yes
-      </td>
-
-      <td>
-        A service account, an IAM role grant on the bucket for that service account, and a JSON key for the account
-      </td>
-
-      <td>
-        Service Account Key (JSON)
-      </td>
-
-      <td>
-        - Import: **Storage Object Viewer**
-        - Export: **Storage Legacy Bucket Writer**, or a custom role. For more information, refer to [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket).
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-## Set Up Google Cloud Storage for Integration
+# Set Up Google Cloud Storage for Integration
 
 Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket).
 
-### Create Service Account
+## Create Service Account
 
 The service account is the identity that CleverTap uses to read files from or write files to your bucket.
 
 1. Log in to the Google Cloud console and select the project for your bucket. If you do not have a project, create a new one.
 
-2. From the navigation menu, select _IAM & Admin > Service Accounts_.
+2. From the left navigation, select _IAM & Admin > Service Accounts_.
 
-3. Click **Create service account**.
+3. Click **Create**.
 
 
    <Image src="https://files.readme.io/fb49ce9-Screenshot_2020-04-06_at_3.57.40_PM.png" align="center" caption="Create Service Account" border={true} />

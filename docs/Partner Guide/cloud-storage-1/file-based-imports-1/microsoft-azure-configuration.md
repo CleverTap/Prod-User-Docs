@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-The Microsoft Azure integration connects CleverTap to an Azure Blob Storage container that you own, so you can move user and event data in both directions. With the integration, you can:
+Use Microsoft Azure Blob Storage to import data from files in a container that you own and to export CleverTap data to that container. CleverTap authenticates with a SAS token that you generate for the container. This is the only supported authentication method for both import and export. With the integration, you can:
 
 - Import user profiles and events from CSV or Parquet files stored in your Blob Storage container.
 - Export profile and event data to your Blob Storage container for analysis in BI tools or storage in a data warehouse.

@@ -319,7 +319,7 @@ The storage account has **Allow storage account key access** turned off, or you 
 
 ### Why does Test Connection fail for an import connection?
 
-The _Default endpoint_ contains a URL instead of the account name, the _Folder path_ does not match the container name, the _Subfolder path_ does not exist, or the SAS token lacks **Read** or **List**, has expired, or you pasted it incompletely. Confirm that _Default endpoint_ contains only the storage account name, confirm that _Folder path_ matches the container name exactly, confirm that the subfolder contains at least one file, and confirm that the SAS token begins with `?sv=`, includes `sp=rl` (or a superset), and has an `se=` expiry in the future.
+The _Default endpoint_ contains a URL instead of the account name, the _Folder path_ does not match the container name, the _Subfolder path_ does not exist, or the SAS token lacks **Read** or **List**, has expired, or you pasted it incompletely. Confirm that the _Default endpoint_ contains only the storage account name, confirm that the _Folder path_ matches the container name exactly, confirm that the subfolder contains at least one file, and confirm that the SAS token begins with `?sv=`, includes `sp=rl` (or a superset), and has an `se=` expiry in the future.
 
 ### Why does Save fail for an export connection when CleverTap cannot upload the test file?
 

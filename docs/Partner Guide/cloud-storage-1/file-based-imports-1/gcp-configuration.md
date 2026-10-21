@@ -20,7 +20,7 @@ The Google Cloud Storage (GCS) integration connects CleverTap to a bucket that y
 <Callout icon="📘" theme="info">
   ### Note
 
-  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For the ranges to allow, refer to the [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about aloowed IP ranges, refer to [FAQs](#faqs).
 </Callout>
 
 This document covers the following:
@@ -30,7 +30,6 @@ This document covers the following:
 - [Configure Google Cloud Storage in CleverTap](#configure-google-cloud-storage-in-clevertap)
 - [Verify Integration](#verify-integration)
 - [FAQs](#faqs)
-- [Next Steps](#next-steps)
 
 <Accordion title="Quick Start Guide for Existing Users">
   If you previously configured a Google Cloud service account and bucket and you know the CleverTap dashboard, the setup requires the following details and steps.

@@ -249,7 +249,7 @@ The Service Account Key is the credential that you provide to CleverTap.
 5. Under _Key type_, keep **JSON** and click **Create**. The JSON key file downloads to your machine automatically.
 
    <Callout icon="🚧" theme="warn">
-     #### Important
+     #### Security Best Practice
 
      Save the downloaded JSON key securely, because Google Cloud does not let you download it again. If you believe the key has leaked, delete it from the _Keys_ tab, create a new one, and update the connection on the CleverTap dashboard.
    </Callout>

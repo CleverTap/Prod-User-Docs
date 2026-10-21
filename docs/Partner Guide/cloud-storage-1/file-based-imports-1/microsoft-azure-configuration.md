@@ -18,17 +18,17 @@ Use Microsoft Azure Blob Storage to import data from files in a container that y
 <Callout icon="📘" theme="info">
   ### Note
 
-  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For the ranges to allow, refer to [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](#faqs).
 </Callout>
 
-This document covers the following:
+The setup involves the following five steps:
 
-- [Prerequisites for Integration](#prerequisites-for-integration)
-- [Set Up Microsoft Azure for Integration](#set-up-microsoft-azure-for-integration)
-- [Configure Microsoft Azure in CleverTap](#configure-microsoft-azure-in-clevertap)
-- [Verify Integration](#verify-integration)
-- [FAQs](#faqs)
-- [Next Steps](#next-steps)
+1. Create Storage Account.
+2. Create Container and, for Import, an optional subfolder.
+3. Generate SAS Token for Container.
+4. Add Container and SAS Token on CleverTap Dashboard.
+
+If you already have a storage account and container, skip to [Generate SAS Token](#generate-sas-token).
 
 <Accordion title="Quick Start Guide for Existing Users">
   If you previously configured an Azure storage account and container and you know the CleverTap dashboard, the setup requires the following details and steps.

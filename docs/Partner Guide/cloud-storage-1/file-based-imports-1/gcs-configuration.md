@@ -267,13 +267,9 @@ For more information, refer to Google Cloud's [Create and delete service account
 
 ## Configure Google Cloud Storage in CleverTap
 
-The CleverTap dashboard needs the bucket details and the Service Account Key to complete the connection.
+Add the bucket details and the Service Account Key on the CleverTap dashboard to complete the connection, as follows:
 
-### Add Bucket on CleverTap Dashboard
-
-Adding the bucket registers the bucket name, the optional subfolder, and the Service Account Key for the connection.
-
-1. On the CleverTap dashboard, go to _Settings > Partners_ and select **Google Cloud** on the **Integrations** tab.
+1. On the CleverTap dashboard, go to _Settings > Partners_ and select _Google Cloud_ on the **Integrations** tab.
 
 2. Select the connection type:
    - For import, select the **Import Connections** tab.
@@ -283,16 +279,16 @@ Adding the bucket registers the bucket name, the optional subfolder, and the Ser
 
 4. Under _Bucket Details_, enter the details in the following table:
 
-   | Field                        | Import | Export | Description                                                                                                                                                                                                                                        |
-   | ---------------------------- | ------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | _Connection name_            | Yes    | Yes    | A unique name that identifies this connection in CleverTap, for example, `events-prod-gcp`.                                                                                                                                                        |
-   | _Folder_                     | Yes    | Yes    | Required. The name of the GCS bucket. The name must match your bucket name in Google Cloud exactly, for example, `product_integration`.                                                                                                            |
-   | _Subfolder_                  | Yes    | No     | Optional. A path within the bucket if your import files are in a subdirectory, for example, `file_based`. CleverTap reads only from this path. For export, you set the folder path when you create the export job.                                 |
-   | _Preview_                    | Yes    | Yes    | Displays the resulting path that CleverTap uses: `gs://<folder>/<subfolder>` for import and `gs://<folder>` for export. Verify the path before you proceed.                                                                                        |
-   | _Google Service Account Key_ | Yes    | Yes    | Required. Select **Upload JSON file** to upload your downloaded Service Account Key file (1 MB maximum, JSON only), or select **Custom key** to paste the key contents instead. Paste the complete file, including the opening and closing braces. |
+   | Field                        | Description                                                                                                                                                                                                                                        | Import | Export |
+   | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+   | _Connection name_            | A unique name that identifies this connection in CleverTap, for example, `events-prod-gcp`.                                                                                                                                                        | Yes    | Yes    |
+   | _Folder_                     | Required. The name of the GCS bucket. The name must match your bucket name in Google Cloud exactly, for example, `product_integration`.                                                                                                            | Yes    | Yes    |
+   | _Subfolder_                  | Optional. A path within the bucket if your import files are in a subdirectory, for example, `file_based`. CleverTap reads only from this path. For export, you set the folder path when you create the export job.                                 | Yes    | No     |
+   | _Preview_                    | Displays the resulting path that CleverTap uses: `gs://<folder>/<subfolder>` for import and `gs://<folder>` for export. Verify the path before you proceed.                                                                                        | Yes    | Yes    |
+   | _Google Service Account Key_ | Required. Select **Upload JSON file** to upload your downloaded Service Account Key file (1 MB maximum, JSON only), or select **Custom key** to paste the key contents instead. Paste the complete file, including the opening and closing braces. | Yes    | Yes    |
 
    <Callout icon="📘" theme="info">
-     ### Field Mapping
+     #### Field Mapping
 
      The CleverTap dashboard does not have a separate field labeled "Bucket name." The _Folder_ field identifies your bucket, so enter your bucket name there, for example, `product_integration`. For import connections, use _Subfolder_ only if CleverTap should read from a directory nested inside that bucket.
    </Callout>
@@ -301,14 +297,13 @@ Adding the bucket registers the bucket name, the optional subfolder, and the Ser
    <Image src="https://files.readme.io/a424fa5d1774394ddf4b87a6be53863010a8f16f22c1cc906f59109e420e1692-Screenshot_2026-10-08_at_3.51.04_PM.png" align="center" caption="Google Cloud Bucket Details" border={true} />
 
 
-## Verify Integration
+5. Verify and save:
+   - **Import**: Click **Test Connection**. CleverTap lists the bucket and the subfolder, if you entered one, using the Service Account Key. When the test succeeds, click **Save**.
+   - **Export**: Click **Save**. CleverTap uploads a test file to the bucket you specified and saves the connection only if the upload succeeds.
 
-CleverTap verifies the connection when you test or save it, and the verification method depends on the connection type.
+If the test or save fails, refer to [FAQs](#faqs).
 
-- **Import**: Click **Test Connection**. CleverTap lists the bucket, and the subfolder if you entered one, using the Service Account Key. When the test succeeds, click **Save**.
-- **Export**: Click **Save**. CleverTap uploads a test file to the bucket that you specified, and it saves the connection only if the upload succeeds.
-
-If the test or save fails, refer to the [FAQs](#faqs).
+The Google Cloud Storage bucket is now configured on both Google Cloud and the CleverTap dashboard.
 
 ## FAQs
 

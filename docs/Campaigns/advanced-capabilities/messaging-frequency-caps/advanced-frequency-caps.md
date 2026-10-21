@@ -387,6 +387,8 @@ To configure Session Limits:
 
 <Image align="center" border={true} caption="Session Limits" src="https://files.readme.io/6b82e67170ba2602fb6b12794c8722483fb3ccd2832ad124d027d7fb8383b99f-image.png" />
 
+# Colombian Limits
+
 # FAQs
 
 ### What happens when a frequency cap applies to a user?

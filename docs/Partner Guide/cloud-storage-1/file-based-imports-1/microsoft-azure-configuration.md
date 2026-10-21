@@ -345,7 +345,7 @@ If the test or save fails, refer to the [FAQs](#faqs).
 
 ### What permissions does CleverTap need?
 
-For import, the SAS token needs **Read** (to read file contents) and **List** (to list files in the container and subfolder). For export, the SAS token needs **Read** and **Write** (to upload files). CleverTap never needs **Delete**, and it never needs the storage account key itself.
+For import, the SAS token needs **the Read** (to read file contents) and **List** (to list files in the container and its subfolders) permissions. For export, the SAS token needs **Read** and **Write** (to upload files). CleverTap never needs **Delete&#x20;**&#x70;ermission, and it never needs the storage account key itself.
 
 ### Can I use one connection for both import and export?
 

@@ -21,18 +21,18 @@ Use Google Cloud Storage (GCS) to import data from files in a bucket that you ow
 <Callout icon="📘" theme="info">
   #### Note
 
-  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](doc:gcs-configuration#faqs).
 </Callout>
 
 The setup involves the following five steps:
 
 1. Create Service Account.
-2. Create Bucket and, for import, an optional subfolder..
-3. Grant Service Account Access to Bucket. For export, you can create a custom role first.
-4. Create Service Account Key.
-5. Add the bucket and key on the CleverTap dashboard, and then save the connection.
+2. [Create Bucket and, for import, an optional subfolder](doc:gcs-configuration#create-bucket).
+3. [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket). For export, you can first create a custom role.
+4. [Create Service Account Key](doc:gcs-configuration#create-service-account-key).
+5. [Add the bucket and key on the CleverTap dashboard](doc:gcs-configuration#configure-google-cloud-storage-in-clevertap), and then save the connection.
 
-If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket).
+If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket).
 
 <Accordion title="Quick Start Guide for Existing Users">
   If you previously configured a Google Cloud service account and bucket and you know the CleverTap dashboard, the setup requires the following details and steps.
@@ -52,7 +52,7 @@ If you already have a service account and bucket, skip to [Grant Service Account
   3. Enter the _Connection name_ and the _Folder_ (your bucket name). For an import connection, optionally enter a _Subfolder_.
   4. Under _Google Service Account Key_, select _Upload JSON file_ and upload your downloaded key, or select _Custom key_ and paste the key contents.
   5. For import, click **Test Connection.&#x20;**&#x20;
-  6. Click **Save** to save the connection, and continue with [Next Steps](#next-steps).
+  6. Click **Save** to save the connection, and continue with [Next Steps](doc:gcs-configuration#next-steps).
 </Accordion>
 
 ## Prerequisites for Integration
@@ -60,18 +60,18 @@ If you already have a service account and bucket, skip to [Grant Service Account
 Ensure the following are in place before you begin:
 
 - An active Google Cloud account with a project, and permissions in that project to create service accounts and keys, create buckets, and grant IAM roles on buckets. The **Service Account Admin**, **Service Account Key Admin**, and **Storage Admin** roles on the project together cover these actions. If you plan to create a custom role for export, you also need **Role Administrator** (`roles/iam.roleAdmin`) on the project.
-- Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. Refer to [Create Service Account Key](#create-service-account-key).&#x20;
+- Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. For more information, refer to [Create Service Account Key](doc:gcs-configuration#create-service-account-key).&#x20;
 - A CleverTap account with the Google Cloud partner enabled. To enable the feature for your account, contact your CleverTap account manager.
-- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](#create-bucket).
+- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](doc:gcs-configuration#create-bucket).
 - The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcs-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
 
 ## Set Up Google Cloud Storage for Integration
 
-Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket).
+Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket).
 
 ### Create Service Account
 
-The service account is the identity that CleverTap uses to read files from or write files to your bucket.
+The service account is the identity CleverTap uses to read from or write to your bucket.
 
 1. Log in to the Google Cloud console and select the project for your bucket. If you do not have a project, create a new one.
 
@@ -223,7 +223,7 @@ To grant access to the bucket, perform the following steps:
 
 3. Click **Grant access**.
 
-4. Under _Add principals_, paste the service account email that you noted in [Create Service Account](#create-service-account).
+4. Under _Add principals_, paste the service account email that you noted in [Create Service Account](doc:gcs-configuration#create-service-account).
 
 5. Under _Assign roles_, select **Storage Object Viewer** for an import connection, or **Storage Legacy Bucket Writer** (or your custom role) for an export connection. If you use the same bucket for both import and export, add both roles.
 
@@ -301,7 +301,7 @@ Add the bucket details and the Service Account Key on the CleverTap dashboard to
    - **Import**: Click **Test Connection**. CleverTap lists the bucket and the subfolder, if you entered one, using the Service Account Key. When the test succeeds, click **Save**.
    - **Export**: Click **Save**. CleverTap uploads a test file to the bucket you specified and saves the connection only if the upload succeeds.
 
-If the test or save fails, refer to [FAQs](#faqs).
+If the test or save fails, refer to [FAQs](doc:gcs-configuration#faqs).
 
 The Google Cloud Storage bucket is now configured on both Google Cloud and the CleverTap dashboard.
 

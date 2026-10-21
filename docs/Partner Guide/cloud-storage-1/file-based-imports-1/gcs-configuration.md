@@ -12,15 +12,16 @@ metadata:
 ---
 # Overview
 
-The Google Cloud Storage (GCS) integration connects CleverTap to a bucket that you own, so you can move user and event data in both directions. With the integration, you can:
+Use Google Cloud Storage (GCS) to import data from files in a bucket that you own and to export CleverTap data to that bucket. CleverTap authenticates with the Service Account Key of a Google Cloud service account that you create. This is the only supported authentication method for both import and export.
 
 - Import user profiles and events from CSV or Parquet files stored in your GCS bucket.
-- Export profile and event data to your GCS bucket for analysis in BI tools or storage in a data warehouse.
+
+* Export profile and event data to your GCS bucket for analysis in BI tools or storage in a data warehouse.
 
 <Callout icon="📘" theme="info">
   #### Note
 
-  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about aloowed IP ranges, refer to [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Google Cloud Storage connections. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For more information about allowed IP ranges, refer to [FAQs](#faqs).
 </Callout>
 
 This document covers the following:

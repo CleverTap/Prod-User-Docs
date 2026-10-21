@@ -18,7 +18,7 @@ The Microsoft Azure integration connects CleverTap to an Azure Blob Storage cont
 <Callout icon="📘" theme="info">
   ### Note
 
-  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For the ranges to allow, refer to the [FAQs](#faqs).
+  CleverTap supports IP whitelisting for Microsoft Azure connections, either through the _Allowed IP addresses_ field on the SAS token or through the storage account firewall. CleverTap connects from fixed IP ranges, and the ranges for import and export differ. For the ranges to allow, refer to [FAQs](#faqs).
 </Callout>
 
 This document covers the following:

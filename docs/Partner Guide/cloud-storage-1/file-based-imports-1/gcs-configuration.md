@@ -65,11 +65,11 @@ Ensure the following are in place before you begin:
 - A globally unique bucket name that follows the bucket naming rules in [Create Bucket](#create-bucket).
 - The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcs-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
 
-# Set Up Google Cloud Storage for Integration
+## Set Up Google Cloud Storage for Integration
 
 Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket).
 
-## Create Service Account
+### Create Service Account
 
 The service account is the identity that CleverTap uses to read files from or write files to your bucket.
 
@@ -77,7 +77,7 @@ The service account is the identity that CleverTap uses to read files from or wr
 
 2. From the left navigation, select _IAM & Admin > Service Accounts_.
 
-3. Click **Create**.
+3. Click **Create service account**.
 
 
    <Image src="https://files.readme.io/fb49ce9-Screenshot_2020-04-06_at_3.57.40_PM.png" align="center" caption="Create Service Account" border={true} />

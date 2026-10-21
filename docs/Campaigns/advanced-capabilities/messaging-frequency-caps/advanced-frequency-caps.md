@@ -14,10 +14,11 @@ Frequency Management helps you control how often users receive messages across c
 
 To address this, CleverTap provides multiple frequency control capabilities that help you manage message volume, spacing, and delivery:
 
-* [Message Limits](https://staging.docs.user.clevertap.net/docs/messaging-frequency-caps#message-limits): control how many messages a user can receive over a defined time period
-* [Message Gaps](https://staging.docs.user.clevertap.net/docs/messaging-frequency-caps#message-gaps): control the minimum time interval between messages
-* [Throttle Limits](https://staging.docs.user.clevertap.net/docs/messaging-frequency-caps#throttle-limits): control the rate at which messages are delivered
-* [Session Limits](https://staging.docs.user.clevertap.net/docs/messaging-frequency-caps#session-limits): control how many messages a user receives within a single session
+* [Message Limits](#Message-Limits): control how many messages a user can receive over a defined time period
+* [Message Gaps](#message-gaps): control the minimum time interval between messages
+* [Throttle Limits](#throttle-limits): control the rate at which messages are delivered
+* [Session Limits](#session-limits): control how many messages a user receives within a single session
+* [Columbian Limits](https://docs.clevertap.com/docs/advanced-frequency-caps#colombian-limits): comply with Colombian Law for recovery campaigns
 
 Together, these controls ensure that users receive relevant communication without being overwhelmed.
 

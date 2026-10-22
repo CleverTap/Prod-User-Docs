@@ -47,7 +47,7 @@ Configuring an SFTP export destination requires access to your own SFTP server a
 
 - Your SFTP server needs a publicly resolvable hostname or a public Internet Protocol (IP) address. CleverTap doesn't support private, VPC, or internal-only hosts in this release; support for those is planned through a future tunnel or controlled-egress option. If your host isn't in public DNS, use a public IP address instead.
 - CleverTap's export traffic comes from a fixed set of per-region egress IP addresses that your server or firewall needs to allowlist.
-- A directory on that server where CleverTap writes export files, and a user account with write and rename permission on it. A small number of older SFTP servers also need delete permission; see the note under Configure Server Details.
+- A directory on that server where CleverTap can write export files, and a user account with write and rename permission on it.
 - The ability to add a public key to that account's `authorized_keys` file.
 
 <Callout icon="🚧" theme="warn">
@@ -74,19 +74,11 @@ Under _Server Details_, add the following details:
 The _Preview_ field shows the resulting path as you fill in these fields: `sftp://<host>:<port>/<remote-directory>`.
 
 <Callout icon="📘" theme="info">
-  ### Remote Directory by Server Type
+  ### Remote Directory Details
 
-  On managed SFTP, such as AWS Transfer Family or Azure Blob SFTP, the account's home directory is writable, so `/` or any sub-directory works without extra setup. A remote directory of `/` writes to the account's home prefix; `exports/daily` writes to `<home>/exports/daily/`.
+  On managed SFTP, such as AWS Transfer Family or Azure Blob SFTP, any directory you enter typically works without extra setup. On a self-managed server, make sure the directory already exists and is writable by the SFTP user; chrooted accounts especially may need a writable sub-directory rather than the account root, since the root is often non-writable by design.
 
-  On a standalone, self-managed SFTP server, the remote directory must already exist and be writable by the SFTP user, or be creatable under a writable parent; this is your responsibility to set up. Chrooted SFTP-only accounts, common with OpenSSH `ChrootDirectory`, make the account root non-writable by design, so `/` fails there. Use a writable sub-directory instead: for example, if `/home/ct-sftp-user` is root-owned and non-writable, create a writable `uploads/` inside it and enter `uploads` as the remote directory.
-
-  If the remote directory isn't writable, **Test Connection** fails up front with a clear message, including a prompt to use a writable sub-directory when the target is the home directory.
-</Callout>
-
-<Callout icon="📘" theme="info">
-  ### Directory Permissions
-
-  Your SFTP user needs write and rename permission in the remote directory; CleverTap uploads to a temporary name and renames it into place. On OpenSSH, AWS Transfer Family, and Azure, overwriting a file on a retry is atomic and needs no delete permission. Delete permission is only needed on strict SFTP v3 servers without the `posix-rename@openssh.com` extension, typically older or proprietary managed file transfer appliances, where replacing an existing file on a retry requires it. A first-time write never needs delete.
+  If the remote directory isn't writable, **Test Connection** fails up front with a clear message telling you so.
 </Callout>
 
 # Configure User Credentials
@@ -100,22 +92,13 @@ Under _User Credentials_, add the following details:
 | _Host Key Fingerprint_ | An optional value that lets CleverTap verify it's connecting to the correct server instead of trusting it on first connect. Accepts a `SHA256:`-prefixed fingerprint, which is recommended, or a `SHA1:`- or `MD5:`-prefixed or bare colon-separated hex value, which CleverTap normalizes and stores as the canonical SHA-256 form. Leave this field blank to trust the server's key on first connection, after which it's pinned. |
 
 <Callout icon="📘" theme="info">
-  ### Generating and Installing the Key
+  ### Key Ownership and Host Trust
 
-  CleverTap generates the key pair and gives you only the public key, in OpenSSH `authorized_keys` format, to install yourself. The private key never leaves CleverTap. Add the public key to the _Username_ account's `authorized_keys` file on your server.
-
-  Most servers, including OpenSSH and all cloud-managed SFTP, accept this format directly. On RFC 4716, or "SSH2"-only, servers such as older Tectia installations, convert it first with `ssh-keygen -e -m RFC4716 -f your_key.pub`. If your server has RSA authentication disabled entirely, choose Ed25519 or ECDSA instead of an RSA key type.
+  - CleverTap generates the key pair and gives you only the public key, in OpenSSH `authorized_keys` format, to install yourself. The private key never leaves CleverTap.
+  - If you provide a _Host Key Fingerprint_, CleverTap verifies it at save and at every **Test Connection**, rejects a mismatch with the fingerprint the server actually presented, and never silently re-trusts a changed key; re-pin from the connection settings if your server's key legitimately changes.
 </Callout>
 
-<Callout icon="📘" theme="info">
-  ### Host Key Verification and Re-Pinning
-
-  If you provide a fingerprint, CleverTap verifies it against the server at save and at every **Test Connection**; a mismatch is rejected with an error that includes the fingerprint the server actually presented, so you can copy the correct value. A server can present different host keys by type, for example Ed25519 versus RSA; if your fingerprint doesn't match the type CleverTap negotiates, verification fails even if the fingerprint itself is otherwise correct. Use the value from the error message, or leave the field blank to trust whichever key is negotiated.
-
-  To get your server's fingerprint directly, run `ssh-keygen -lf` against the relevant host key file, for example `ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub`.
-
-  If your server's host key legitimately changes, re-pin it from the connection settings: clear the _Host Key Fingerprint_ field to trust the new key on first connect, or paste the new fingerprint. CleverTap never silently re-trusts a changed key; a later mismatch fails the export run.
-</Callout>
+If your server has RSA authentication disabled, choose Ed25519 or ECDSA instead. To get your server's fingerprint, run `ssh-keygen -lf` against the relevant host key file, for example `ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub`.
 
 # Test and Save Connection
 
@@ -127,7 +110,7 @@ To confirm CleverTap can reach your server before you rely on it for exports, pe
 Both steps run the same checks: connect, verify the host key, authenticate, and write a small test file to confirm permissions.
 
 <Callout icon="📘" theme="info">
-  ### What the Connection Test Writes
+  ### Connection Test File
 
   **Test Connection**, and the pre-flight check CleverTap runs before every scheduled export, write a small file of about 27 bytes to your remote directory to confirm write and rename access. CleverTap uploads it under a random temporary name ending in `.part`, then renames it onto a fixed marker file named `dummy-auth-ct`, left in place and overwritten on each run. You may notice this file in your remote directory; it's harmless, safe to leave or delete, and is recreated on the next test or export.
 </Callout>
@@ -152,18 +135,13 @@ Once saved, an SFTP connection appears as a Partner option wherever you create a
 4. Under _Partner_, select your saved SFTP connection.
 5. Click **Start**, then configure _Storage & File Details_, _User Identifiers_, _Data Fields & Event_, _Edit Properties & Order_, and _Schedule_ the same way you would for a cloud storage export.
 
-<Callout icon="📘" theme="info">
-  ### Storage and File Details
-
-  Under _Sub-Folder Structure_, choose how CleverTap organizes files on your server: _Server Base Path_ (the connection name as a folder prefix, for example `Conn2/`), _Split by Data Type_, _Split by Export Run Date_, _Split by Export Unique ID_, _Split by Event Name_, or _Custom_. The _Folder Structure Preview_ shows the resulting path as you choose.
-
-  Under _File Format_, choose CSV, JSON, Parquet, or XML. Parquet has its own _Gzip After Parquet_ toggle, off by default, to additionally compress the file; the other formats don't offer this option.
-</Callout>
+Under _Sub-Folder Structure_, choose how CleverTap organizes files on your server: _Server Base Path_ (the connection name as a folder prefix, for example `Conn2/`), _Split by Data Type_, _Split by Export Run Date_, _Split by Export Unique ID_, _Split by Event Name_, or _Custom_. The _Folder Structure Preview_ shows the resulting path as you choose. Under _File Format_, choose CSV, JSON, Parquet, or XML; Parquet has its own _Gzip After Parquet_ toggle, off by default, that the other formats don't offer.
 
 <Callout icon="📘" theme="info">
-  ### How Files Are Written
+  ### Export File Behavior
 
-  CleverTap writes a separate file per event name rather than combining all events into one file; SFTP event exports use `eventTime` as the event-timestamp column. Each file uploads under a temporary `.part` name and is renamed once complete, so a process watching the remote directory should ignore `.part` files and only treat renamed files as final. A retried or restarted run overwrites the same file name with fresh content rather than leaving a stale partial file behind.
+  - CleverTap writes a separate file per event name rather than combining all events into one file; SFTP event exports use `eventTime` as the event-timestamp column.
+  - Each file uploads under a temporary `.part` name and is renamed once complete, so a process watching the remote directory should ignore `.part` files; a retried run overwrites the same file name rather than leaving a stale partial file behind.
 </Callout>
 
 # Encrypt Export Files

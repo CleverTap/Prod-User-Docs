@@ -26,7 +26,7 @@ Use Google Cloud Storage (GCS) to import data from files in a bucket that you ow
 
 The setup involves the following five steps:
 
-1. Create Service Account.
+1. [Create Service Accoun](doc:gcp-configuration#create-service-account)t.
 2. [Create Bucket and, for import, an optional subfolder](doc:gcp-configuration#create-bucket).
 3. [Grant Service Account Access to Bucket](doc:gcp-configuration#grant-service-account-access-to-bucket). For export, you can first create a custom role.
 4. [Create Service Account Key](doc:gcp-configuration#create-service-account-key).

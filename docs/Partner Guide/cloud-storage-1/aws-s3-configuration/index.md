@@ -2,7 +2,7 @@
 title: Amazon S3
 excerpt: Understand how to connect your S3 bucket into CleverTap
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

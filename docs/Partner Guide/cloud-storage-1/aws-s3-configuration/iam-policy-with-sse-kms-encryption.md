@@ -228,8 +228,4 @@ The readers lack `kms:Decrypt` on the key. Add the readers as key users (_Step 4
 
 S3 bucket names are unique across all AWS accounts. Choose another name, and update _Folder_ on CleverTap before you copy the policies.
 
-## Next Steps
-
-After you configure the connection, you can create an export that writes to this connection. For more information, refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).
-
 <br />

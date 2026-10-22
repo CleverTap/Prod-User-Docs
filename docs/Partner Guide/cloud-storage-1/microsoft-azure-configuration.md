@@ -412,6 +412,8 @@ The storage account restricts _Public network access_ and the firewall omits the
 
 The _Subfolder path_ points to a folder that contains no CSV or Parquet files, or the files are in a different folder. Verify that the path under _Preview_ matches the location where your pipeline writes the files. Blob Storage folders are virtual, so a folder with no files does not exist.
 
+##
+
 ## Next Steps
 
 After you configure the connection, you can create imports and exports that use it.

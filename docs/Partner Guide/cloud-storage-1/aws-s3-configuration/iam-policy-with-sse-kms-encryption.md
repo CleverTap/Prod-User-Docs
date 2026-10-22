@@ -38,7 +38,7 @@ The setup involves the following four steps:
 3. &#x20;[Apply Bucket Policy to Your S3 Bucket](doc:authenticate-with-iam-policy-using-sse-kms-encryption#apply-bucket-policy-to-your-s3-bucket)​.
 4. [Configure Connection on CleverTap](doc:authenticate-with-iam-policy-using-sse-kms-encryption#configure-connection-on-clevertap)​.
 
-If you already have a suitable KMS key, skip to [Use an Existing KMS Key](#use-an-existing-kms-key)​.
+If you already have a suitable KMS key, skip to [Use an Existing KMS Key](doc:iam-policy-with-sse-kms-encryption#existing-bucket)​.
 
 ### Copy KMS Policies from CleverTap Dashboard
 

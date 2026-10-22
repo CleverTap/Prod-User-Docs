@@ -2,7 +2,7 @@
 title: Google Cloud Platform (GCP)
 excerpt: Data Warehousing and Analytics Platform
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

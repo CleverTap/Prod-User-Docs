@@ -5,11 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-* ​[Amazon EventBridge](doc:amazon-eventbridge)
-* [AWS S3](doc:data-export-to-aws-s3)
-* [Google Cloud Platform](doc:data-export-to-gcp)
-* [Microsoft Azure](https://docs.clevertap.com/docs/microsoft-azure)
-
 # Overview
 
 CleverTap integrates with major cloud storage platforms to support both data import and export. You can bring customer data into CleverTap from files stored in your cloud bucket, or export CleverTap profile and event data directly to your preferred storage destination. &#x20;

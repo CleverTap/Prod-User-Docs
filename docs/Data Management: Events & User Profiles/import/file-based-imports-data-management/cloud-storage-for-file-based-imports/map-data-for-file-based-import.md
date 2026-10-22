@@ -278,3 +278,9 @@ When configuring import mapping in CleverTap, keep the following best practices 
 - **Limit Data to What Is Needed**: Import only the columns you want in CleverTap. Avoid mapping extraneous fields or properties. This makes the process faster and reduces risk.
 - **Naming Conventions**: Use consistent names for properties and events. Avoid special characters in property keys. CleverTap does not allow the characters in property names: `%`, `<`, `>`, `!`, `|`, `&`, `:`, `;`, `$`, `'`, `"`, `\`, `#`.
 - **Segmentation of Data**: Consider filtering your data to exclude obsolete or inactive users and events before import. This keeps your CleverTap instance clean and focused on relevant data.
+
+## Next Steps
+
+After you configure the import, CleverTap saves the import job, and you can view and manage all import jobs from the _Import Center_.
+
+- Schedule the import. For more information, refer to [Schedule Import](doc:schedule-file-based-import).

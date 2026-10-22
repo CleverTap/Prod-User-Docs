@@ -2,7 +2,7 @@
 title: AWS S3
 excerpt: Data Warehousing and Analytics Platform
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

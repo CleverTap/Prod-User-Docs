@@ -2,6 +2,5 @@
 - aws-s3-configuration
 - gcp-configuration
 - microsoft-azure-configuration
-- data-export-to-gcp
 - file-based-imports-1
 - microsoft-azure

@@ -4,7 +4,7 @@ excerpt: >-
   Understand how to configure Amazon S3 in CleverTap using Access Key
   authentication.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

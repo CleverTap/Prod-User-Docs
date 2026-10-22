@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to map user profile attributes and event attributes from your Cloud
   Storage to CleverTap.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

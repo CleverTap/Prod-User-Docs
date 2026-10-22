@@ -2,7 +2,7 @@
 title: Import Listing and Stats
 excerpt: Understand how to import data into CleverTap from files.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

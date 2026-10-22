@@ -1,4 +1,5 @@
 - amazon-eventbridge
 - aws-s3-configuration
 - gcp-configuration
+- data-export-to-gcp
 - file-based-imports-1

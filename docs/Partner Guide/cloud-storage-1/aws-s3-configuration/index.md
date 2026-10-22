@@ -138,9 +138,9 @@ To add the bucket, perform the following steps:
 
 
 4. Under Configure with, select one of the following methods and refer to the corresponding document to complete the configuration:
-   - [Access Key](doc:authenticate-with-access-key)
-   - [IAM Role](doc:authenticate-with-iam-role)
-   - [IAM Policy with SSE-KMS Encryption](doc:authenticate-with-iam-policy-using-sse-kms-encryption)
+   - [Access Key](doc:authenticate-with-access-key#configure-connection-on-clevertap)
+   - [IAM Role](doc:iam-role#configure-connection-on-clevertap)
+   - [IAM Policy with SSE-KMS Encryption](doc:iam-policy-with-sse-kms-encryption#configure-amazon-s3-in-clevertap)
 
 <Callout icon="📘" theme="info">
   #### Caution

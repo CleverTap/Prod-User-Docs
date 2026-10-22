@@ -39,7 +39,7 @@ Ensure the following before you begin:
 
 - An active AWS account with permissions to create S3 buckets. Depending on your method, you also need permissions to create IAM policies and users (Access Key) or KMS keys (SSE-KMS).
 - A CleverTap account with the Amazon S3 partner enabled.
-- A globally unique bucket name. Refer to the bucket naming rules in [Create S3 Bucket on AWS](doc:data-export-to-aws-s3#create-s3-bucket-on-aws#create-an-s3-bucket-on-aws).
+- A globally unique bucket name. Refer to the bucket naming rules in [Create S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws).
 
 # Set Up Amazon S3 Bucket with CleverTap
 
@@ -53,7 +53,7 @@ The following are the major steps to add an Amazon S3 bucket:
 
 This section covers how to create a general-purpose S3 bucket.&#x20;
 
-If you are using IAM Policy with SSE-KMS Encryption, complete steps 1 to 8, create a KMS key as described in [IAM Policy with SSE-KMS Encryption](doc:iam-policy-with-sse-kms-encryption), and then complete steps 9 and 10.
+If you are using IAM Policy with SSE-KMS Encryption, complete steps 1 to 8, create a KMS key as described in [IAM Policy with SSE-KMS Encryption](doc:doc:authenticate-with-iam-policy-using-sse-kms-encryption), and then complete steps 9 and 10.
 
 To create an S3 bucket, perform the following steps:
 
@@ -106,9 +106,7 @@ To create an S3 bucket, perform the following steps:
 9. Under _Default encryption_, select the encryption type that matches your configuration method:
    - **Access Key** or **IAM Role**: Keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
 
-   - **IAM Policy with SSE-KMS Encryption**: Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN that you copied in [Create KMS Key on AWS](doc:iam-policy-with-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
-
-   -
+   - **IAM Policy with SSE-KMS Encryption**: Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN that you copied in [Create KMS Key on AWS](doc:doc:authenticate-with-iam-policy-using-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
    <Callout icon="📘" theme="info">
      #### Note
 
@@ -140,9 +138,9 @@ To add the bucket, perform the following steps:
 
 
 4. Under Configure with, select one of the following methods and refer to the corresponding document to complete the configuration:
-   - [**Access Key**](doc:access-key)
-   - [IAM Role](doc:iam-role)
-   - [IAM Policy with SSE-KMS Encryption](doc:iam-policy-with-sse-kms-encryption)
+   - [Access Key](doc:authenticate-with-access-key)
+   - [IAM Role](doc:authenticate-with-iam-role)
+   - [IAM Policy with SSE-KMS Encryption](doc:authenticate-with-iam-policy-using-sse-kms-encryption)
 
 <Callout icon="📘" theme="info">
   #### Caution
@@ -159,7 +157,7 @@ After you complete the steps on AWS, return to the CleverTap dashboard.
 - **Import**: Click **Test Connection**. CleverTap checks access by listing the bucket (and the subfolder, if specified) using the configured method. When the test succeeds, click **Save**.
 - **Export**: Click **Save**. CleverTap uploads a test file to the bucket and region you specified. The connection is saved only if the upload succeeds.
 
-If the test or save fails, refer to [Troubleshooting](doc:troubleshooting).
+If the test or save fails, refer to [Troubleshooting](doc:aws-s3-configuration#troubleshooting).
 
 # Troubleshooting
 
@@ -188,4 +186,4 @@ No. Any AWS region works.
 # Next Steps
 
 - **Import**: Create an import that reads from this connection. Refer to Create Import, Map Data for Import, Schedule Import, and Import Listing and Stats.
-- **Export**: Create an export that writes to this connection. Refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).
+- **Export**: Create an export that writes to this connection. For more information, refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).

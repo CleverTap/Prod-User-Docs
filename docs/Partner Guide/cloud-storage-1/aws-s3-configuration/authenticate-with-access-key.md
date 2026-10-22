@@ -20,10 +20,10 @@ Use Access Key authentication to let CleverTap read from or write to your Amazon
 
 The setup has four parts:
 
-1. Create IAM policy.
-2. Create IAM User and Attach Policy.
-3. Generate an access key for the user.
-4. Enter Access Key in CleverTap Connection.
+1. [Create IAM policy](doc:authenticate-with-access-key#create-iam-policy).
+2. [Create IAM User and Attach Policy](doc:authenticate-with-access-key#create-iam-user-and-attach-policy).
+3. [Generate Access Key for User](doc:authenticate-with-access-key#generate-access-key).
+4. [Configure Connection on CleverTap](doc:authenticate-with-access-key#configure-connection-on-clevertap).
 
 If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](doc:authenticate-with-access-key#use-existing-aws-credentials).
 

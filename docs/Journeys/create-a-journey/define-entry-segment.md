@@ -219,4 +219,54 @@ The following table explains the various user interest types:
 | **Time of the day** | Time of day when the event was raised. It contains the start and end times.            | 12 PM - 6 PM                                   |
 | **Day of the week** | Day of the week when the event was raised, such as Sunday, Monday, Tuesday, and so on. | Day of the week = Sunday                       |
 
+## Estimate Reach for Entry Segments
+
+Estimated reach shows the total count of users who match the rules in your Past behavior, Action, or Inaction entry segment. It helps you check the audience before you publish a Journey. You can use Estimated reach to check the audience size without creating a separate segment.
+
+<Callout icon="📘" theme="info">
+  #### Estimated Reach Availability
+
+  Estimated reach is available only on Entry nodes that find users based on past behavior:
+
+  - A Past behavior segment
+  - An Action or Inaction node, when you select **Live behavior** in Setup and select the _Filter on past behavior and user properties_ checkbox
+
+  It isn't shown for nodes later in the Journey.
+</Callout>
+
+Estimated reach appears in the _Estimated reach_ section, to the right of _Target Segment_ in the _Who_ section.
+
+If you select **Past behavior/Custom list** in _Setup_, complete the following steps to estimate reach for a Past behavior segment:
+
+1. In the _Who_ section, under _Target Segment_, click **Add Rule** and define your criteria. For example, select **Demographics**, **Gender**, and **Male**.
+2. In the _Estimated reach_ section, click **Calculate**. The number of users who match your criteria appears under _Estimated reach_.
+
+
+<Image src="https://files.readme.io/6bd848d74c5326b0bcf63b7668cd56d16f46f9a377cbf2b077e119d7ac2f693d-Screenshot_2026-10-14_at_18.55.32.png" alt="Shows the Estimated reach based on the demographic selected." align="center" caption="Estimated reach based on the Demographic selected" border={true} />
+
+
+3. Click **Continue**, and then click **Save & Close**.
+
+If you select **Live behavior** in _Setup_, complete the following steps to estimate reach for an Action or Inaction segment:
+
+1. In the _Who_ section, define the event for your segment. For example, select the _Charged_ event.
+
+2. Select the _Filter on past behavior and user properties_ checkbox.
+
+3. Add rules to define your criteria. For example, add a rule for users who first completed the _Charged_ event in the last 30 days.
+
+4. In the _Estimated reach_ section, click **Calculate**. The number of users who match your criteria appears under _Estimated reach_. The following image shows a calculated number.
+
+
+   <Image src="https://files.readme.io/c599754f9d562b7d340b6e4f66f119c652c080f085ec0eb56f75ddff060f3bf8-Screenshot_2026-10-15_at_16.10.23_2.png" alt="The Estimated reach section in the Action Entry node." align="center" caption="Estimated reach section in the Action Entry Node" border={true} />
+
+
+5. Click **Save & Close**.
+
+<Callout icon="📘" theme="info">
+  #### Calculation Update Rule
+
+  The number does not change when you edit your rules. It updates only when you click **Calculate** again.
+</Callout>
+
 After defining the entry segment criteria, you can choose how you want to communicate with the users. For more information about Journey paths, refer to the [Define Journey Path](https://docs.clevertap.com/docs/construct-a-journey) section

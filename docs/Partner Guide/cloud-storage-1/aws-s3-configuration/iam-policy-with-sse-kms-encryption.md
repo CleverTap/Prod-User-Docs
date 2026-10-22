@@ -29,7 +29,7 @@ Before you configure IAM Policy with SSE-KMS Encryption, ensure that the CleverT
 
 ## Set Up Amazon S3 for Integration
 
-Setting up Amazon S3 for SSE-KMS encryption requires four tasks. You can create the S3 bucket before or after the KMS key, and the steps in this document create the key first so that you can select it during bucket creation.
+Setting up Amazon S3 for SSE-KMS encryption requires four tasks. You can create the S3 bucket before or after creating the KMS key.
 
 The setup involves the following four steps:
 

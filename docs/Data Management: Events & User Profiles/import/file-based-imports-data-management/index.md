@@ -2,7 +2,7 @@
 title: File-based Imports
 excerpt: 'Importing Data into CleverTap: Manual and Automated Options'
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

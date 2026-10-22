@@ -45,10 +45,9 @@ Ensure the following before you begin:
 
 The following are the major steps to add an Amazon S3 bucket:
 
-1. [Create S3 Bucket on AWS](doc:data-export-to-aws-s3#create-s3-bucket-on-aws#create-an-s3-bucket-on-aws)
-2. [Add Bucket on CleverTap Dashboard](doc:data-export-to-aws-s3#add-bucket-on-clevertap-dashboard#add-the-bucket-on-clevertap-dashboard)
-3. [Complete Configuration for Method](doc:data-export-to-aws-s3#complete-configuration-for-method#complete-the-configuration-for-your-method)
-4. [Verify Connection](doc:data-export-to-aws-s3#verify-connection#verify-the-connection)
+1. [Create S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws)
+2. [Add Bucket on CleverTap Dashboard](doc:aws-s3-configuration#add-bucket-on-clevertap-dashboard)
+3. [Verify Connection](doc:aws-s3-configuration#verify-connection)
 
 ## Create S3 Bucket on AWS
 

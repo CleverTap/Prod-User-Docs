@@ -27,12 +27,12 @@ Use Google Cloud Storage (GCS) to import data from files in a bucket that you ow
 The setup involves the following five steps:
 
 1. Create Service Account.
-2. [Create Bucket and, for import, an optional subfolder](doc:gcs-configuration#create-bucket).
-3. [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket). For export, you can first create a custom role.
-4. [Create Service Account Key](doc:gcs-configuration#create-service-account-key).
-5. [Add the bucket and key on the CleverTap dashboard](doc:gcs-configuration#configure-google-cloud-storage-in-clevertap), and then save the connection.
+2. [Create Bucket and, for import, an optional subfolder](doc:gcp-configuration#create-bucket).
+3. [Grant Service Account Access to Bucket](doc:gcp-configuration#grant-service-account-access-to-bucket). For export, you can first create a custom role.
+4. [Create Service Account Key](doc:gcp-configuration#create-service-account-key).
+5. [Add the bucket and key on the CleverTap dashboard](doc:gcp-configuration#configure-google-cloud-storage-in-clevertap), and then save the connection.
 
-If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket).
+If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcp-configuration#grant-service-account-access-to-bucket).
 
 <Accordion title="Quick Start Guide for Existing Users">
   If you previously configured a Google Cloud service account and bucket and you know the CleverTap dashboard, the setup requires the following details and steps.
@@ -52,7 +52,7 @@ If you already have a service account and bucket, skip to [Grant Service Account
   3. Enter the _Connection name_ and the _Folder_ (your bucket name). For an import connection, optionally enter a _Subfolder_.
   4. Under _Google Service Account Key_, select _Upload JSON file_ and upload your downloaded key, or select _Custom key_ and paste the key contents.
   5. For import, click **Test Connection.&#x20;**&#x20;
-  6. Click **Save** to save the connection, and continue with [Next Steps](doc:gcs-configuration#next-steps).
+  6. Click **Save** to save the connection, and continue with [Next Steps](doc:gcp-configuration#next-steps).
 </Accordion>
 
 ## Prerequisites for Integration
@@ -60,14 +60,14 @@ If you already have a service account and bucket, skip to [Grant Service Account
 Ensure the following are in place before you begin:
 
 - An active Google Cloud account with a project, and permissions in that project to create service accounts and keys, create buckets, and grant IAM roles on buckets. The **Service Account Admin**, **Service Account Key Admin**, and **Storage Admin** roles on the project together cover these actions. If you plan to create a custom role for export, you also need **Role Administrator** (`roles/iam.roleAdmin`) on the project.
-- Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. For more information, refer to [Create Service Account Key](doc:gcs-configuration#create-service-account-key).&#x20;
+- Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. For more information, refer to [Create Service Account Key](doc:gcp-configuration#create-service-account-key).&#x20;
 - A CleverTap account with the Google Cloud partner enabled. To enable the feature for your account, contact your CleverTap account manager.
-- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](doc:gcs-configuration#create-bucket).
-- The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcs-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
+- A globally unique bucket name that follows the bucket naming rules in [Create Bucket](doc:gcp-configuration#create-bucket).
+- The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcp-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
 
 ## Set Up Google Cloud Storage for Integration
 
-Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcs-configuration#grant-service-account-access-to-bucket).
+Setting up Google Cloud Storage for the integration involves creating a service account and a bucket, granting the service account access to the bucket, and creating a Service Account Key. If you already have a service account and bucket, skip to [Grant Service Account Access to Bucket](doc:gcp-configuration#grant-service-account-access-to-bucket).
 
 ### Create Service Account
 
@@ -87,9 +87,10 @@ The service account is the identity CleverTap uses to read from or write to your
 
 5. Click **Create and continue**.
 
-6. (Optional) Under _Grant this service account access to project_, leave the role empty. You grant the role on the bucket in [Grant Service Account Access to Bucket](#grant-service-account-access-to-bucket), which limits CleverTap to that one bucket. If your organization requires project-level grants, grant **Storage Object Viewer** here for import, or a custom role for export. A project-level grant gives CleverTap access to every bucket in the project, and you can grant legacy roles only on a bucket.
+6. (Optional) Under _Grant this service account access to project_, leave the role empty. You grant the role on the bucket in [Grant Service Account Access to Bucket](doc:gcp-configuration#grant-service-account-access-to-bucket), which limits CleverTap to that one bucket. If your organization requires project-level grants, grant **Storage Object Viewer** here for import, or a custom role for export. A project-level grant gives CleverTap access to every bucket in the project, and you can grant legacy roles only on a bucket.
 
    Note the service account email, which uses the following format. You need the email to grant access to the bucket.
+
    ```text
    <service-account-id>@<project-id>.iam.gserviceaccount.com
    ```
@@ -128,7 +129,7 @@ A general-purpose bucket stores the files that CleverTap reads or writes.
 
 7. Under _Choose how to protect object data_, keep the default soft delete policy and keep object versioning off, and do not enable a retention policy if the bucket is for export.&#x20;
 
-8. Under _Data encryption_, select _Google-managed encryption key_. If your organization requires a customer-managed encryption key, refer to [Can I use a customer-managed encryption key on the bucket?](#can-i-use-a-customer-managed-encryption-key-on-the-bucket) before you select it.
+8. Under _Data encryption_, select _Google-managed encryption key_. If your organization requires a customer-managed encryption key, refer to [Can I use a customer-managed encryption key on the bucket?](doc:gcp-configuration#can-i-use-a-customer-managed-encryption-key-on-the-bucket) before you select it.
 
 9. Click **Create**.
 
@@ -223,7 +224,7 @@ To grant access to the bucket, perform the following steps:
 
 3. Click **Grant access**.
 
-4. Under _Add principals_, paste the service account email that you noted in [Create Service Account](doc:gcs-configuration#create-service-account).
+4. Under _Add principals_, paste the service account email that you noted in [Create Service Account](doc:gcp-configuration#create-service-account).
 
 5. Under _Assign roles_, select **Storage Object Viewer** for an import connection, or **Storage Legacy Bucket Writer** (or your custom role) for an export connection. If you use the same bucket for both import and export, add both roles.
 

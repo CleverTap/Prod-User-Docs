@@ -139,8 +139,6 @@ CleverTap reads from or writes to a container within your storage account.
 
 6. Copy the container name as you need to enter it in the _Folder path_ field on the CleverTap dashboard.
 
-7.
-
    <Callout icon="📘" theme="info">
      #### Note
 

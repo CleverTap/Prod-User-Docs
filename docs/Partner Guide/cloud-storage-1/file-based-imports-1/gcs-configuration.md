@@ -1,5 +1,5 @@
 ---
-title: Google Cloud Storage (GCS)
+title: Google Cloud Platform (GCP)
 excerpt: >-
   Understand how to integrate CleverTap dashboard to Google Cloud Platform
   (GCP).

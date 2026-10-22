@@ -2,7 +2,7 @@
 title: Microsoft Azure
 excerpt: Understand how to export data from CleverTap dashboard to Microsoft Azure.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''

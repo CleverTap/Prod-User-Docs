@@ -8,6 +8,8 @@ hidden: true
 metadata:
   robots: index
 ---
+# SFTP Exports
+
 # Overview
 
 The SSH File Transfer Protocol (SFTP) integration connects CleverTap to a file server that you control, so you can export profile and event data to it. With the integration, you can export data to your server for analysis in Business Intelligence (BI) tools or storage in a data warehouse.
@@ -45,8 +47,8 @@ This document covers the following:
 
 Configuring an SFTP export destination requires access to your own SFTP server and the ability to install a public key on it.
 
-- Your SFTP server needs a publicly resolvable hostname or a public Internet Protocol (IP) address. CleverTap doesn't support private, VPC, or internal-only hosts in this release; support for those is planned through a future tunnel or controlled-egress option. If your host isn't in public DNS, use a public IP address instead.
-- CleverTap's export traffic comes from a fixed set of per-region egress IP addresses that your server or firewall needs to allowlist.
+- A publicly resolvable hostname or public Internet Protocol (IP) address for your SFTP server; CleverTap doesn't support private, VPC, or internal-only hosts in this release.
+- A fixed set of per-region egress IP addresses from CleverTap, allowlisted on your server or firewall.
 - A directory on that server where CleverTap can write export files, and a user account with write and rename permission on it.
 - The ability to add a public key to that account's `authorized_keys` file.
 
@@ -58,7 +60,9 @@ Configuring an SFTP export destination requires access to your own SFTP server a
 
 # Create SFTP Connection
 
-To create an SFTP connection, go to _Settings > Partners_ and click **Connect to SFTP for Export**.
+To create an SFTP connection, perform the following step:
+
+1. Go to _Settings > Partners_ and click **Connect to SFTP for Export**.
 
 # Configure Server Details
 
@@ -67,7 +71,7 @@ Under _Server Details_, add the following details:
 | Field              | Description                                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Connection Name_  | A unique name to identify this connection among your other export destinations.                                                                                                                                                                                                                                                                                                           |
-| _Host_             | Your SFTP server's public hostname or IP address. Do not include a scheme prefix such as `sftp://`.                                                                                                                                                                                                                                                                                       |
+| _Host_             | Your SFTP server's public hostname or IP address. Do not include a scheme prefix such as `sftp://`. If your hostname isn't in public DNS, use a public IP address instead.                                                                                                                                                                                                                |
 | _Port_             | The port on which your SFTP server listens, from 1 to 65535. The default SFTP port is 22.                                                                                                                                                                                                                                                                                                 |
 | _Remote Directory_ | The directory on your server where CleverTap writes export files. Required: enter `/` to write to the connection's home directory, or a sub-directory path such as `uploads` or `exports/daily`. The directory must exist, and the SFTP user needs write access to it; CleverTap creates missing sub-directories automatically, but only where the SFTP user is permitted to create them. |
 
@@ -117,7 +121,7 @@ Both steps run the same checks: connect, verify the host key, authenticate, and 
 
 Common setup errors and what they mean:
 
-| Problem                          | What you'll see                                                                                                                                       |
+| Problem                          | Message                                                                                                                                               |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Wrong username, password, or key | An authentication error naming the user, with a prompt to check the credentials or confirm the public key is installed.                               |
 | Remote directory not writable    | A write-test failure naming the directory and user; if the target is the home directory, the message suggests using a writable sub-directory instead. |
@@ -150,7 +154,7 @@ You can PGP-encrypt your export files before CleverTap writes them to your SFTP 
 
 Choose one encryption method per export:
 
-| Method         | How it works                                                                                                                                 | Requirements                        |
+| Method         | Description                                                                                                                                  | Requirements                        |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | PGP public key | Paste your ASCII-armored public key. CleverTap encrypts to it, and you decrypt with your matching private key, which never leaves your side. | Requires the PGP-encryption add-on. |
 | Password       | Supply a passphrase of at least 12 characters. CleverTap symmetrically encrypts the file, and you decrypt with the same passphrase.          | No add-on required.                 |

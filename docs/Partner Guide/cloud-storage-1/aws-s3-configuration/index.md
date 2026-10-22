@@ -104,14 +104,14 @@ To create an S3 bucket, perform the following steps:
 
 
 9. Under _Default encryption_, select the encryption type that matches your configuration method:
-   - **Access Key** or **IAM Role**: Keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
+   - [**Access Key**](doc:authenticate-with-access-key) or [**IAM Role**](doc:authenticate-with-iam-role): Keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
 
    - **IAM Policy with SSE-KMS Encryption**: Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN that you copied in [Create KMS Key on AWS](doc:doc:authenticate-with-iam-policy-using-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
-   <Callout icon="📘" theme="info">
-     #### Note
+     <Callout icon="📘" theme="info">
+       #### Note
 
-     The integration works with the default settings. Check your organization's internal policies to determine whether any setting requires a change.
-   </Callout>
+       The integration works with the default settings. Check your organization's internal policies to determine whether any setting requires a change.
+     </Callout>
 
 10. Click **Create bucket**.
 

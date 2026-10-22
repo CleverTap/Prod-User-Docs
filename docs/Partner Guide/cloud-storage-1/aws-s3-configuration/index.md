@@ -183,7 +183,9 @@ No. Import and export connections are configured separately under _Import Connec
 
 No. Any AWS region works.
 
-# Next Steps
+## Next Steps
 
-- **Import**: Create an import that reads from this connection. Refer to Create Import, Map Data for Import, Schedule Import, and Import Listing and Stats.
-- **Export**: Create an export that writes to this connection. For more information, refer to [Events Exports](doc:event-exports) or [Profile Exports](doc:profile-exports).
+After you configure the connection, you can create imports and exports that use it.
+
+- Create an import that reads from this connection. For more information, refer to [Create Import](doc:create-file-based-import), [Map Data for Import](doc:map-data-for-file-based-import), [Schedule Import](doc:schedule-file-based-import), and [Import Listing and Stats](doc:import-listing-and-stats-for-file-based-import).
+- Create an export that writes to this connection. For more information, refer to [Cloud Storage](doc:cloud-storage), [Event Exports](doc:event-exports), or [Profile Exports](doc:profile-exports).

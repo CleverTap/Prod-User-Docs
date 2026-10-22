@@ -18,15 +18,6 @@ Use Access Key authentication to let CleverTap read from or write to your Amazon
   AWS recommends short-lived credentials over long-term access keys. If your security policy allows it, use the [IAM Role ](doc:)method instead; it requires no credentials in CleverTap and fewer steps on AWS.
 </Callout>
 
-The setup has four parts:
-
-1. [Create IAM policy](doc:authenticate-with-access-key#create-iam-policy).
-2. [Create IAM User and Attach Policy](doc:authenticate-with-access-key#create-iam-user-and-attach-policy).
-3. [Generate Access Key for User](doc:authenticate-with-access-key#generate-access-key).
-4. [Configure Connection on CleverTap](doc:authenticate-with-access-key#configure-connection-on-clevertap).
-
-If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](doc:authenticate-with-access-key#use-existing-aws-credentials).
-
 # Prerequisites
 
 Ensure the following before proceeding:
@@ -39,7 +30,16 @@ Ensure the following before proceeding:
 
 # Configure with Access Key
 
-Setting up Amazon S3 for Access Key authentication requires an IAM policy, an IAM user with that policy attached, and an access key for the user. If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](#use-existing-aws-credentials).
+Setting up Amazon S3 for Access Key authentication requires an IAM policy, an IAM user with that policy attached, and an access key for the user.&#x20;
+
+The setup has four parts:
+
+1. [Create IAM policy](doc:authenticate-with-access-key#create-iam-policy).
+2. [Create IAM User and Attach Policy](doc:authenticate-with-access-key#create-iam-user-and-attach-policy).
+3. [Generate Access Key for User](doc:authenticate-with-access-key#generate-access-key).
+4. [Configure Connection on CleverTap](doc:authenticate-with-access-key#configure-connection-on-clevertap).
+
+If you already have an IAM user for CleverTap, skip to [Use Existing AWS Credentials](doc:authenticate-with-access-key#use-existing-aws-credentials).
 
 ## **Create IAM Policy**
 

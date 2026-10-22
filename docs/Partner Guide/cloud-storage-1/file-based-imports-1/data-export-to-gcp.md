@@ -14,9 +14,11 @@ next:
 
 The GCP Export feature enables you to bulk export your CleverTap event or profile data to a GCP bucket. You can export your CleverTap data to analyze it with Business Intelligence (BI) tools or store it in your data warehouse for future analysis.
 
-> 📘 Feature Availability
->
-> This capability is a part of the *Enterprise*, *Advanced*, and *Cutting Edge* plan. To activate this for your account, contact your Account Manager.
+<Callout icon="📘" theme="info">
+  #### Feature Availability
+
+  This capability is a part of the _Enterprise_, _Advanced_, and _Cutting Edge_ plan. To activate this for your account, contact your Account Manager.
+</Callout>
 
 # Integrate GCP with CleverTap
 

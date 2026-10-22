@@ -41,7 +41,7 @@ The setup involves the following three steps:
 2. [Apply IAM Policy to S3 Bucket on AWS](doc:authenticate-with-iam-role#apply-iam-policy-to-s3-bucket-on-aws)
 3. [Configure Connection on CleverTap](doc:authenticate-with-iam-role#configure-connection)
 
-If you already have a bucket policy on the bucket, add the CleverTap statements to it instead of replacing it. For more information, refer to [Apply Bucket Policy to Your S3 Bucket]().
+If you already have a bucket policy on the bucket, add the CleverTap statements to it instead of replacing it. For more information, refer to [Apply Bucket Policy to Your S3 Bucket](doc:iam-role#apply-iam-policy-to-s3-bucket-on-aws).
 
 ## Copy IAM Policy from CleverTap
 

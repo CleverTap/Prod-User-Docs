@@ -1,8 +1,8 @@
 ---
 title: SFTP Exports
 excerpt: >-
-  Learn how to configure an SFTP connection and select it as a destination for
-  Profile and Event exports from CleverTap.
+  Learn how to configure an SFTP connection for Profile and Event exports from
+  CleverTap.
 deprecated: false
 hidden: true
 metadata:

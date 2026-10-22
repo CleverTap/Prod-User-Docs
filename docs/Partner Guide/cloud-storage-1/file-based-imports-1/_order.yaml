@@ -1,4 +1,3 @@
-- aws-s3-configuration
 - gcs-configuration
 - microsoft-azure-configuration
 - data-export-to-gcp

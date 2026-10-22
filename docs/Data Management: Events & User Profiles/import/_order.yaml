@@ -1,6 +1,6 @@
 - imports-via-api
 - csv-upload
 - imports-via-sftp
-- file-based-imports-data-management
 - data-warehouse-import
+- file-based-imports-data-management
 - import-faqs

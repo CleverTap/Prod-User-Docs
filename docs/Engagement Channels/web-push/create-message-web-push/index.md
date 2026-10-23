@@ -253,8 +253,29 @@ For example, for a date event property, you can select **Date Time** and define 
 
 <Image src="https://files.readme.io/089932c40e599b0bb842ef35c1343ae706351aec0e84ea2f5f0d67d528ee0d62-Who.png" alt="Who Section" align="center" caption="Who Section" border={true} />
 
+<Callout icon="📘" theme="info">
+  #### First-Day Delivery Behavior
 
-### Delivery preferences
+  Recurring campaigns have first-day exceptions:
+
+  - Daily or weekly repeat
+    - If you publish before the scheduled send time, the first send is today at the scheduled time. For weekly campaigns, today must be one of the selected days.
+    - If you publish after the scheduled send time, today is skipped. A daily campaign first sends the next day. A weekly campaign first sends on the next selected day, which can fall in the following week.
+    - The first send is not delayed by the repeat interval. For example, with “Repeat every 2 weeks”, the first send still happens in the first applicable week.
+      For example, you publish at 10 AM and schedule the send for 2 PM. The first send is today at 2 PM. If you publish at 3 PM, the first send is tomorrow at 2 PM.
+
+  **Monthly Repeat:**
+
+  Monthly recurring campaigns do not send on the day you publish, even if that day matches the schedule. The first send is the next matching date. This applies to all monthly repeat options.
+
+  - **Day of the month**: You publish amd start a campaign on January 20 and repeat on the 20th. No messages are sent on January 20. The first send is February 20.
+  - **Days of the week**: If you publish and start a campaign on Sunday, May 10, 2026, at 10:30 AM and repeat it on the second Sunday, no messages are sent on May 10. The first send is on Sunday, June 14, 2026.
+  - **Last Day of the month**: If a campaign is scheduled for Last day of the month and created on June 30, it does not run on June 30. It runs on July 31 only. To also run it on June 30, create it on June 29 or earlier.
+
+  To send on a matching day in the first month, publish the campaign before that day.
+</Callout>
+
+### Delivery Preferences
 
 You can also set the _Do Not Disturb_ (DND) hours during which notifications from this Web Push campaign are prevented from going out, either by discarding them or delaying delivery to after DND hours complete, such as 9 PM to 9 AM.
 

@@ -496,6 +496,17 @@ CleverTap supports two types of branded domains:
 
     * CloudFront passes the response directly back without caching. User's browser follows the redirect to the final destination. All tracking data is recorded in CleverTap analytics and visible in the campaign report.
 
+    ### Implement Click Tracking for Mobile Apps
+
+    When Universal Links / Android App Links are active on the branded domain, the OS opens the app directly, bypassing the browser redirect chain that normally records click events. To implement click tracking for your apps, perform the following steps:
+
+    - For iOS Apps
+
+      Add the branded domain to Associated Domains in Xcode `applinks:links.yourbrand.com`). In `SceneDelegate`, receive the Universal Link URL, make a background HTTP request to it (to record the CleverTap click event and resolve the redirect chain), then go to the final deep link destination.
+    - For Android Apps
+
+      Add an intent filter with `android:autoVerify="true"` for the branded domain in `AndroidManifest.xml`. In the handling Activity, receive the intent URL and make a background HTTP request to resolve redirects and record the click event before you go to the final destination.
+
     ## Best Practices **For Self-Managed Domain**
 
     * CloudFront Configuration:

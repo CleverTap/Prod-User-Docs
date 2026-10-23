@@ -297,7 +297,7 @@ Besides, you can also define a delay (by seconds, minutes, hours, or days) once 
 
 <br />
 
-### Delivery preferences
+### Delivery Preferences
 
 Global frequency caps operate on a per-channel basis and let you specify the message cadence, dwell time between messages, and throttle limits (delivery rates). To control the maximum number of messages users receive for a given channel of communication, select _Global campaign limits_. And, to control the delivery rates for your campaigns, select _Global throttle limits_. For more information about _Global campaign limits_ and _Global throttle limits_, refer to [Messaging Frequency Caps](doc:messaging-frequency-caps).
 

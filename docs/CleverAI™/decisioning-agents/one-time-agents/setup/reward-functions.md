@@ -2,7 +2,7 @@
 title: Reward Functions
 excerpt: Learn how to create and manage Reward Functions.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

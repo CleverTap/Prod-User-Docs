@@ -2,7 +2,7 @@
 title: Holdout and Exploration
 excerpt: Learn more about Holdout and Exploration in agents.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

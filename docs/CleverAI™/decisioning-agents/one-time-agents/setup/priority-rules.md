@@ -2,7 +2,7 @@
 title: Priority Rules
 excerpt: Learn more about how to create and manage Priority Rules.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

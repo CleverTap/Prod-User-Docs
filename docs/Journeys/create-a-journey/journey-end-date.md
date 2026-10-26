@@ -157,7 +157,7 @@ Define when the journey should automatically stop. The Journey End Date section 
 <Callout icon="📘" theme="info">
   #### Private Beta
 
-  Conversion Revenue Tracking is currently released in Private Beta. If you want to enable this for your account, contact Customer Success Manager.
+  End date  is currently released in Private Beta. If you want to enable this for your account, contact Customer Success Manager.
 </Callout>
 
 Select one of three options:

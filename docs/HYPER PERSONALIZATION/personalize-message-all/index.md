@@ -201,3 +201,15 @@ For example, you can map the _prod_name_ property of the _charged_ event to the 
 
 
 For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
+
+## Event Personalization by Campaign Type
+
+Event property personalization (via `@` tags, `{{ }}`) is not available uniformly across all campaign types. Support depends on the trigger type, delay configuration, and whether Constant Event Property is enabled. Refer to the following table to learn more:
+
+| Camapign Type | Single occurrence, delay ≤ 24 hours     | Multiple occurrences, delay ≤ 24 hours            | Single occurrence, delay > 24 hours                                                                                                                                                                  | Multiple occurrences, delay > 24 hours                                                                                                                                                           |
+| ------------- | --------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Action**    | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS. Starts on Publish with trigger event personalization                                                                                                                                   | Works as PBS. Starts on Publish; triggered per event with event personalization                                                                                                                  |
+| **Date Time** | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS with trigger event personalization                                                                                                                                                      | Works as PBS; triggered per event with event personalization                                                                                                                                     |
+| **Inaction**  | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS. On Publish, checks messages for the last X minutes/days and sends with trigger. **Exception**: Constant Event Property campaigns remain on the old flow with no event personalization. | Works as PBS. On Publish, checks the actual delay and sends; multiple messages triggered per event occurrence with event personalization. To limit sends, use Limits under Delivery Preferences. |
+
+Inaction campaigns with a delay greater than 24 hours are the same as live campaign types for all occurrence configurations.

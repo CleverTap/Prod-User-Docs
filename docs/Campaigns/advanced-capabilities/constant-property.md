@@ -237,23 +237,3 @@ Nautical White T-shirt is rated 4-star and is currently priced at $69.
 
 Nautical White T-shirt is rated 4-star and is currently priced at $69.
 ```
-
-#### Event Personalization in Triggered Campaigns
-
-The availability of trigger event personalization in inaction campaigns depends on the delay duration and whether the campaign is configured for single or multiple occurrences. Refer to the following table:
-
-|               | Single occurrence, delay ≤ 24 hours     | Multiple occurrences, delay ≤ 24 hours            | Single occurrence, delay > 24 hours                                                          | Multiple occurrences, delay > 24 hours                                                                                                                                                                       |
-| ------------- | --------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Action**    | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS. Starts on Publish with trigger event personalization                           | Works as PBS. Starts on Publish; triggered per event with event personalization                                                                                                                              |
-| **Date Time** | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS with trigger event personalization                                              | Works as PBS; triggered per event with event personalization                                                                                                                                                 |
-| **Inaction**  | Live trigger with event personalization | Live trigger with event personalization per event | Works as PBS. On Publish, checks messages for the last X minutes/days and sends with trigger | Works as PBS. On Publish, checks the actual delay and sends, and multiple messages triggered per event occurrence with event personalization. To limit sends, use Message Limits under Delivery Preferences. |
-
-Inaction campaigns with a delay greater than 24 hours are the same as live campaign types for all occurrence configurations.
-
-####
-
-##
-
-<br />
-
-<br />

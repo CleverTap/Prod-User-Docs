@@ -69,7 +69,7 @@ If you want to create an ad-hoc segment, you can select a type of segment on whi
   - **Constant Event Property**: If the campaign uses Constant Event Property personalization with a delay greater than 24 hours, default values are sent.
   - **Delay calculation**: The delay is counted from each user's trigger event, not from the campaign's go-live date. Users who performed the trigger event before the campaign went live are also eligible and will receive the message once their delay period elapses.
 
-  For more information, refer to​ [Event Personalization by Campaign Type.](https://staging.docs.user.clevertap.net/docs/personalize-message-all#event-personalization-by-campaign-type)
+  For more information, refer to​ [Event Personalization by Campaign Type.](https://docs.clevertap.com/docs/personalize-message-all#event-personalization-by-campaign-type)
 </Callout>
 
 For instance, you can create a live _Inaction within time_ campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes; that is the golden window within which most users transact on iOS and Android app platforms.

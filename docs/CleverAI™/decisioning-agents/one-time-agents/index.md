@@ -2,7 +2,7 @@
 title: One-Time Decisioning Agents
 excerpt: Learn how to create and manage One-Time Decisioning Agents.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

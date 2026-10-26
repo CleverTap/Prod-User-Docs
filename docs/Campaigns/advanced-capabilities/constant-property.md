@@ -238,7 +238,7 @@ Nautical White T-shirt is rated 4-star and is currently priced at $69.
 Nautical White T-shirt is rated 4-star and is currently priced at $69.
 ```
 
-#### Event Personalization in Inaction Campaigns
+#### Event Personalization in Triggered Campaigns
 
 The availability of trigger event personalization in inaction campaigns depends on the delay duration and whether the campaign is configured for single or multiple occurrences. Refer to the following table:
 

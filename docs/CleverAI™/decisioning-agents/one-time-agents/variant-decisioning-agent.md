@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to select the Best Variant for your campaign using Variant
   Decisioning Agent.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

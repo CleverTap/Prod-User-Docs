@@ -1,7 +1,7 @@
 ---
 title: Setup
 deprecated: false
-hidden: true
+hidden: false
 link:
   url: https://docs.clevertap.com/docs/holdout-and-exploration
 metadata:

@@ -61,7 +61,6 @@ Ensure the following are in place before you begin:
 
 - An active Google Cloud account with a project, and permissions in that project to create service accounts and keys, create buckets, and grant IAM roles on buckets. The **Service Account Admin**, **Service Account Key Admin**, and **Storage Admin** roles on the project together cover these actions. If you plan to create a custom role for export, you also need **Role Administrator** (`roles/iam.roleAdmin`) on the project.
 - Permission to create service account keys. If your organization enforces the _Disable service account key creation_ policy, an Organization Policy Administrator must exempt your project first. For more information, refer to [Create Service Account Key](doc:gcp-configuration#create-service-account-key).&#x20;
-- A CleverTap account with the Google Cloud partner enabled.&#x20;
 - A globally unique bucket name that follows the bucket naming rules in [Create Bucket](doc:gcp-configuration#create-bucket).
 - The CleverTap IP ranges to allow, if your organization restricts access to Cloud Storage by source IP. For more information, refer to the [FAQ](doc:gcp-configuration#how-do-i-whitelist-clevertaps-ip-addresses-for-my-bucket).
 

@@ -162,6 +162,10 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 # 2026
 
+## October
+
+<br />
+
 ## September
 
 <HTMLBlock>{`

@@ -1,5 +1,6 @@
 ---
 title: FirstConnectt
+excerpt: SMS Provider
 deprecated: false
 hidden: false
 metadata:

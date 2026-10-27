@@ -1,5 +1,8 @@
 ---
 title: FirstConnectt
+excerpt: >-
+  Understand how to integrate FirstConnectt with CleverTap for WhatsApp
+  communication
 deprecated: false
 hidden: false
 metadata:

@@ -1,6 +1,6 @@
 ---
-title: Copy of User Flow in Journeys
-excerpt: Understand how to nudge users to perform the desired action.
+title: Journey Approval Workflow
+excerpt: Learn about journey workflow management.
 deprecated: false
 hidden: true
 metadata:

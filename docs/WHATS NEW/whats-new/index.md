@@ -253,6 +253,34 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="max-price-for-whatsapp-marketing-templates">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#max-price-for-whatsapp-marketing-templates"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Max Price for WhatsApp Marketing Templates</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>WhatsApp Direct customers can now cap what Meta charges for each delivered WhatsApp marketing message, improve delivery priority, and adjust that cap for each campaign or journey node without editing the template.</p>
+    <p>With Max Price, you can:</p>
+    <p><ul>
+    <li>Set a max price per delivered message in the new <em>Pricing</em> step of Marketing template creation. Meta charges this amount or less.</li>
+    <li>Compare estimated delivery rates at different max prices for each target country with Price Trend, based on Meta's historical data.</li>
+    <li>Scale a template's max price for a single campaign or journey node with the Max Price Multiplier, from just above 0 up to 10x, without creating duplicate templates.</li>
+    </ul></p>
+    <p>Max pricing applies only to new Marketing templates. Delivery is not guaranteed at any price, and the max price is not your contract price. <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/marketing-messages/get-started#geographic-availability-of-features" target="_blank">Geographic restrictions</a> apply, for example in Europe.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-template-pricing" target="_blank">WhatsApp Template Pricing</a> and <a href="https://docs.clevertap.com/docs/create-message-whatsapp#maximum-price-multiplier" target="_blank">Create Message</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 ## August
 
 <HTMLBlock>{`

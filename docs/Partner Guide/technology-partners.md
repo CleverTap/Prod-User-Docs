@@ -4020,7 +4020,7 @@ next:
     </div>
  </a>
 
-<a href="https://staging.docs.user.clevertap.net/docs/alot-solutions-whatsapp">
+<a href="https://docs.clevertap.com/docs/alot-solutions-whatsapp">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/f75ea916040a6c8eb2e1a76291054b6174ebd1f1e352fd25ad6f881f006b9bf4-alot-logo.jpeg" alt="Alot Solutions" class="logo">

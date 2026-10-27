@@ -180,7 +180,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
   <div class="release-note-body">
     <p>You can now estimate how many users match your entry segment before you publish a Journey, without creating a separate segment first.</p>
     <p>Estimated Reach in Journeys helps you catch rules that are too narrow or too broad, so you launch Journeys to the right audience.</p>
-    <p>With this enhancement, you can:</p>
+    <p>With this feature, you can:</p>
     <p>
       <ul>
         <li>See the total count of users who match the rules in your Past behavior entry segment.</li>

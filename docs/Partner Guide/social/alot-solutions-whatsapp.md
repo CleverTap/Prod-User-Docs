@@ -1,5 +1,8 @@
 ---
 title: Alot Solutions
+excerpt: >-
+  Understand how to integrate Alot Solutions with CleverTap for WhatsApp
+  communication
 deprecated: false
 hidden: false
 metadata:

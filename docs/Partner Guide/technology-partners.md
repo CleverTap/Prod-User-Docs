@@ -3321,6 +3321,17 @@ next:
         </div>
     </div>
       </a>
+  <a href="https://docs.clevertap.com/docs/alot-solutions-sms">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/f75ea916040a6c8eb2e1a76291054b6174ebd1f1e352fd25ad6f881f006b9bf4-alot-logo.jpeg" alt="8x8" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Alot Solutions</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+      </a>
    <a href="https://docs.clevertap.com/docs/azmarq">
     <div class="integration-card">
         <div class="logo-container">
@@ -3331,7 +3342,19 @@ next:
             <div class="category">SMS</div>
         </div>
     </div>
-</a>      
+</a>
+   
+   <a href="https://docs.clevertap.com/docs/firstconnectt-sms">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">FirstConnectt</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+      </a>
    <a href="https://docs.clevertap.com/docs/generic-sms">
     <div class="integration-card">
         <div class="logo-container">
@@ -4417,5 +4440,3 @@ next:
 </body>
 </html>
 `}</HTMLBlock>
-
-<br />

@@ -164,7 +164,35 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 
 ## October
 
-<br />
+<HTMLBlock>{`
+<div class="release-note article" data-category="security-project-settings" id="notification-preference-management">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#notification-preference-management"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Estimated Reach in Journeys</h3>
+    <div class="badge enhancement">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now estimate how many users match your entry segment before you publish a Journey, without creating a separate segment first.</p>
+    <p>Estimated Reach in Journeys helps you catch rules that are too narrow or too broad, so you launch Journeys to the right audience.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>See the total count of users who match the rules in your Past behavior entry segment.</li>
+        <li>Estimate reach for Action and Inaction entry segments when you select Live behavior in Setup.</li>
+        <li>Select the filter on past behavior and user properties checkbox.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/define-entry-segment#estimate-reach-for-entry-segments" target="_blank">Define Entry Segment</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 ## September
 

@@ -1,5 +1,6 @@
 ---
 title: Alot Solutions
+excerpt: SMS Provider
 deprecated: false
 hidden: false
 metadata:

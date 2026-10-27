@@ -3344,17 +3344,6 @@ next:
     </div>
 </a>
    
-   <a href="https://docs.clevertap.com/docs/firstconnectt-sms">
-    <div class="integration-card">
-        <div class="logo-container">
-            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
-        </div>
-        <div class="content">
-            <div class="name">FirstConnectt</div>
-            <div class="category">SMS</div>
-        </div>
-    </div>
-      </a>
    <a href="https://docs.clevertap.com/docs/generic-sms">
     <div class="integration-card">
         <div class="logo-container">
@@ -3388,6 +3377,17 @@ next:
         </div>
     </div>
 </a>
+<a href="https://docs.clevertap.com/docs/firstconnectt-sms">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">FirstConnectt</div>
+            <div class="category">SMS</div>
+        </div>
+    </div>
+      </a>
 <a href="https://docs.clevertap.com/docs/ics-mobile">
     <div class="integration-card">
         <div class="logo-container">

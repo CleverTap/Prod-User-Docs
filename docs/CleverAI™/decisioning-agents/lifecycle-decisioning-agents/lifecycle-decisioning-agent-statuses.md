@@ -4,7 +4,7 @@ excerpt: >-
   Learn about status changes as the Lifecycle Agent moves through the defined
   lifecycle.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

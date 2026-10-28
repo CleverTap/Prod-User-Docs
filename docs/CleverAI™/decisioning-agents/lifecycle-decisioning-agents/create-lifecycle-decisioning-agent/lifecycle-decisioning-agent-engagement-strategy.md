@@ -2,7 +2,7 @@
 title: Engagement Strategy
 excerpt: Learn how to create a strategy tailored to your use case.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

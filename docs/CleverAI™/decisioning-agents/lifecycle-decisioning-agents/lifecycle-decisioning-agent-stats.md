@@ -2,7 +2,7 @@
 title: Stats
 excerpt: 'Learn to read how Lifecycle Agent is performing over a selected date range. '
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

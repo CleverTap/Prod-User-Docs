@@ -2,7 +2,7 @@
 title: Create Lifecycle Decisioning Agent
 excerpt: Learn how to create a Lifecycle Decisioning Agent
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

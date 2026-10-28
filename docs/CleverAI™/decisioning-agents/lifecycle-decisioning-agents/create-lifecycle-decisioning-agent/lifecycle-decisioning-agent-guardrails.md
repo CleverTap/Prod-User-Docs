@@ -2,7 +2,7 @@
 title: Guardrails
 excerpt: Learn how to set guardrails for your agent messaging
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

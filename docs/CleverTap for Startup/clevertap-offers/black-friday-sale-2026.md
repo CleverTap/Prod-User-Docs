@@ -27,7 +27,7 @@ You choose an offer by using its signup link. The offer is applied to your subsc
 
 The following are the terms and conditions to avail the Black Friday Sale 2026 offer:
 
-- The sale runs from October 26, 2026, to November 30, 2026.
+- The sale runs from November 1, 2026, to November 30, 2026.
 - The offers are available only to new CleverTap customers.
 - The offers apply to all monthly active user (MAU) tiers on the CleverTap Core plan monthly subscription.
 - You can choose only one offer. These two offers cannot be combined.

@@ -1,5 +1,5 @@
 ---
-title: Prod
+title: Staging
 hidden: false
 link:
   new_tab: false
@@ -8,21 +8,14 @@ link:
   **Template:**  Delete this callout and edit this page with your content and links.
 </Callout>
 
-<Cards>
-  {/* Edit the props below to customize these components */}
-  <Card title="Quick Start" href="#" icon="fa-duotone fa-rocket-launch">Learn how to get started with our product</Card>
-
-  <Card title="API Reference" href="#" icon="fa-duotone fa-code-simple">Explore endpoints and build your integration</Card>
-
-  <Card title="Build with AI" href="#" icon="fa-duotone fa-sparkles">Use LLM features to automate your workflow</Card>
-</Cards>
+<
 
 <br />
 
 ## Recent Releases
 
 <Cards>
-  <Card isNew kind="tile" title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass">Everything you need to upgrade</Card>
+  <Card isNew kind="tile" title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass">Everything you needbjj to upgrade</Card>
 
   <Card kind="tile" title="Webhooks" href="#" icon="fa-duotone fa-bullhorn">Real-time events are now available</Card>
 
@@ -46,5 +39,3 @@ link:
 
   <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
 </Cards>
-
-<br />

@@ -1,5 +1,5 @@
 ---
-title: Staging
+title: Prod
 hidden: false
 link:
   new_tab: false
@@ -12,15 +12,7 @@ link:
 
 <br />
 
-## Recent Releases
-
-<Cards>
-  <Card isNew kind="tile" title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass">Everything you needbjj to upgrade</Card>
-
-  <Card kind="tile" title="Webhooks" href="#" icon="fa-duotone fa-bullhorn">Real-time events are now available</Card>
-
-  <Card kind="tile" title="Android SDK" href="#" icon="fa-duotone fa-robot">Our native Android library is out of beta</Card>
-</Cards>
+## Hi, this is a test line 1
 
 <br />
 

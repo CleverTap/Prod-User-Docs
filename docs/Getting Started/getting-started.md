@@ -4,15 +4,11 @@ hidden: false
 link:
   new_tab: false
 ---
-<Callout icon="📘" theme="info">
-  **Template:**  Delete this callout and edit this page with your content and links.
-</Callout>
-
-<
+<br />
 
 <br />
 
-## Hi, this is a test line 1
+## Hi, this is a test line a&#x20;
 
 <br />
 

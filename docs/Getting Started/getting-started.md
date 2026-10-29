@@ -39,3 +39,8 @@ link:
 
   <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
 </Cards>
+
+## Suggested edit test 2
+
+This section was added in a second commit on the same Prod-User-Docs pull request (#35).
+It checks that updates to an open PR are forwarded to the existing staging PR.

@@ -5,9 +5,6 @@ deprecated: false
 hidden: false
 metadata:
   title: ''
-  description: >-
-    DOCS NOTE: COMPARE/REVIEW WITH THE EXISTING PAGE:
-    https://docs.clevertap.com/docs/handling-unsubscribes
   robots: index
 next:
   description: ''

@@ -3170,7 +3170,7 @@ next:
     </div>
 </a>
 
-<a href="https://staging.docs.user.clevertap.net/docs/infobip-rcs">
+<a href="https://docs.clevertap.com/docs/rcs-infobip">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/8b5e07d59e178c9e08e3b0d4024d19ccd9db02c96b24f521e9937b9e11dd24fb-Infobip_iddZIe6dUF_1.png" alt="Infobip" class="logo">

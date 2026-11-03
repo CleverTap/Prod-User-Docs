@@ -3158,7 +3158,7 @@ next:
     </div>
 </a>
 
-<a href="https://staging.docs.user.clevertap.net/docs/firstconnectt-rcs">
+<a href="https://docs.clevertap.com/docs/firstconnectt-rcs">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">

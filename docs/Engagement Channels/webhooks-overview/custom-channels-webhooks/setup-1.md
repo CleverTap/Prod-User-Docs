@@ -2,7 +2,7 @@
 title: 'Setup '
 excerpt: Learn how to create and configure a webhook in CleverTap.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

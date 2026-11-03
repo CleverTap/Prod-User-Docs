@@ -197,6 +197,60 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 `}</HTMLBlock>
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="iam-policy-with-sse-kms-encryption-for-amazon-s3-exports">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#iam-policy-with-sse-kms-encryption-for-amazon-s3-exports"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="Data & Integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">IAM Policy with SSE-KMS Encryption for Amazon S3 Exports</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now connect Amazon S3 for exports using IAM (Identity and Access Management) Policy with SSE-KMS (Server-Side Encryption with AWS Key Management Service) Encryption, a third authentication option alongside Access Key and IAM Role.</p>
+    <p>With this enhancement, you can:</p>
+    <p><ul>
+    <li>Authenticate through a bucket policy that you apply, without creating an IAM user or access key.</li>
+    <li>Encrypt every exported file with an AWS KMS key that you own.</li>
+    </ul></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/iam-policy-with-sse-kms-encryption" target="_blank">Authenticate with IAM Policy Using SSE-KMS Encryption</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="file-based-imports-from-cloud-storage">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#file-based-imports-from-cloud-storage"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="Data & Integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">File-based Imports from Cloud Storage</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now supports native imports directly from your cloud storage. Pull CSV and Parquet files from Amazon S3, Google Cloud Storage, or Microsoft Azure Blob Storage into CleverTap user profiles and events, ready for Segmentation, Journeys, and Campaigns.</p>
+    <p>With File-based Imports, you can:</p>
+    <p><ul>
+    <li>Read CSV files up to 5 GB and Parquet files up to 1 GB, using read-only access scoped to a single bucket or subfolder.</li>
+    <li>Match files by prefix and timestamp, so each run processes only files that are newer than the previous run.</li>
+    <li>Map columns visually to user properties or events, and validate the mapping with Preview, Dry Run, and Sample Sync before going live.</li>
+    <li>Schedule imports on repeat intervals or a custom schedule, or trigger them manually.</li>
+    <li>Monitor every import from the Import Center with per-file stats, record-level failure reasons, email and dashboard alerts.</li>
+    </ul></p>
+    <p>File-based Imports share the Import Center with Data Warehouse Imports, including role-based access and audit logs.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/cloud-storage-for-file-based-imports" target="_blank">Cloud Storage for File-based Imports</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="notification-preference-management">
   <div class="release-note-header">
     <div class="anchor-link-icon">

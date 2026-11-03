@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to personalize webhook message variable values in CleverTap
   campaigns.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -2,7 +2,7 @@
 title: Create Message
 excerpt: Learn how to create a webhook campaign message in CleverTap.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

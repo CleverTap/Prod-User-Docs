@@ -60,11 +60,11 @@ For each use case, you create one bulletin. Each time the business event occurs,
 
 Confirm the following before you create a bulletin.
 
-- Bulletins is enabled for your account. When enabled, the Bulletins item in the left navigation opens a page containing the Bulletins and Business Events sections.
+- Bulletins are enabled for your account. When enabled, the Bulletins item in the left navigation opens a page containing the Bulletins and Business Events sections.
 - You have write access to Bulletins. Users without write access see a limited-access message and cannot create or modify bulletins.
 - Your app already sends the user events and user properties that you want to use to find interested users. For example, to find users who watched a series, your app must send a viewing event with a series property.
 
 ## Next Steps
 
-- Create a business event, raise it, and monitor it. For more information, refer to [Create Business Events](doc:business-events).
-- Create a bulletin and add campaigns to it. For more information, refer to [Create Bulletins and Campaigns](doc:bulletins-and-campaigns).
+- Create a business event, raise it, and monitor it. For more information, refer to [Create Business Events](doc:create-business-events).
+- Create a bulletin and add campaigns to it. For more information, refer to [Create Bulletins](doc:create-bulletins).

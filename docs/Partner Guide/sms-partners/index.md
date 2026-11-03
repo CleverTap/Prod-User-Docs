@@ -17,6 +17,7 @@ The following providers are fully integrated and available across Journeys, Camp
 * [Alot Solutions](https://docs.clevertap.com/docs/alot-solutions-sms)
 * [BulkSMS](doc:generic-sms)
 * [Exotel](doc:exotel)
+* [FirstConnectt](https://docs.clevertap.com/docs/firstconnectt-sms)
 * [ICS Mobile](doc:ics-mobile)
 * [Infobip](https://docs.clevertap.com/docs/infobip-sms)
 * [Kaleyra](doc:kaleyra-sms)

@@ -30,6 +30,7 @@ CleverTap supports a wide range of WhatsApp Partners, giving you the flexibility
 - [CleverTap](doc:clevertap-bsp)
 - [Engati](doc:engati)
 - [Exotel](doc:exotel-whatsapp)
+- [FirstConnectt](https://docs.clevertap.com/docs/firstconnectt-whatsapp)
 - [Gupshup](doc:gupshup)
 - [Haptik](doc:haptik)
 - [Heltar](doc:heltar)

@@ -37,7 +37,7 @@ The following example shows the flow for a streaming app:
 1. You create a business event named _New Season Launched_ with the property `series name`.
 2. You create a bulletin that qualifies users who watched a series at least 10 times in the last 30 days, and you match the series name of the business event to the series name in their viewing events.
 3. You add a push campaign to the bulletin and publish it.
-4. Your content team launches a new season of a series. Your backend raises the New Season Launched business event with the series name. **(@Suvidhi, should we inform this point?)**
+4. Your content team launches a new season of a series. Your backend raises the New Season Launched business event with the series name.
 5. CleverTap identifies users whose viewing history matches the series name and sends each active campaign in the bulletin to them.
 6. The next time another series launches a season, your backend raises the same business event with a different series name. The same bulletin reaches a different audience, and you create no new campaign.
 

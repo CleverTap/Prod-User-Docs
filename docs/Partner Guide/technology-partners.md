@@ -3145,7 +3145,7 @@ next:
 <body>
     <div class="grid">
       <!-- use this card below for replication and change the link to the desired one -->
-      <a href="https://staging.docs.user.clevertap.net/docs/alot-solutions-rcs">
+      <a href="https://docs.clevertap.com/docs/alot-solutions-rcs">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/f75ea916040a6c8eb2e1a76291054b6174ebd1f1e352fd25ad6f881f006b9bf4-alot-logo.jpeg" alt=“Alot Solutions” class="logo">

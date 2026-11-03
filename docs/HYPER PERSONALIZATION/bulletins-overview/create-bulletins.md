@@ -12,8 +12,7 @@ metadata:
 
 A bulletin defines which business event starts the messages and which users qualify to receive them. Create the[ business event ](doc:create-business-events)first. The Bulletins list shows each bulletin's name, ID, creator, creation date, Business Event ID, and channel.
 
-The following image shows the Bulletins listing page.
-
+The following image shows the Bulletins listing page:
 
 <Image src="https://files.readme.io/d61558a74da800a5c4cde98bbc1dbf19e51e0d57afc8c643e34a493dd1c2c9ec-image.png" align="center" caption="Bulletins Listing" border={true} />
 

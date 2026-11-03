@@ -4,7 +4,7 @@ excerpt: >-
   Use webhooks to deliver campaigns through any messaging or communication
   provider.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

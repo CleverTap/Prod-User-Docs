@@ -3182,7 +3182,7 @@ next:
     </div>
 </a>
 
-<a href="https://staging.docs.user.clevertap.net/docs/jiocx">
+<a href="https://docs.clevertap.com/docs/jiocx">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/49a7360034c2fb5196978356f7a334ea9e3f881672828b52c61e1439b9d3ef68-id85eDdvJf_logos.png" alt="JioCX" class="logo">

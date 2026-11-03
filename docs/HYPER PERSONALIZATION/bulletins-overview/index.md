@@ -1,5 +1,5 @@
 ---
-title: Bulletins - Overview
+title: Bulletins
 excerpt: >-
   Learn how to use Bulletins to send personalized messages to interested users
   each time a business event occurs.

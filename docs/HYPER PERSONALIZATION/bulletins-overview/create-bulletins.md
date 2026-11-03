@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-A bulletin defines which business event starts the messages and which users qualify to receive them. Create the[ business event ]()first. The Bulletins list shows each bulletin's name, ID, creator, creation date, Business Event ID, and channel.
+A bulletin defines which business event starts the messages and which users qualify to receive them. Create the[ business event ](doc:create-business-events)first. The Bulletins list shows each bulletin's name, ID, creator, creation date, Business Event ID, and channel.
 
 The following image shows the Bulletins listing page.
 
@@ -26,7 +26,7 @@ To create a bulletin, follow these steps.
 4. In _Send the bulletin on the trigger of_, select the business event that starts the bulletin.
 5. In _Business event property unique ID_, select the business event property that CleverTap matches against user behavior. A message below the field confirms the match. For example, the bulletin is sent whenever a business event's Series ID matches the user behavior defined in the target segment.
 6. In _Segment_, select the segment that contains the users who can receive the bulletin. The default is All Users.
-7. In _Filter by_, select _Add Rule_, and then define who qualifies, as described in [Define Who Qualifies](#define-who-qualifies).
+7. In _Filter by_, select _Add Rule_, and then define who qualifies, as described in [Define Who Qualifies](doc:create-bulletins#define-who-qualifies).
 8. Click **Save**. Saving a bulletin does not publish its campaigns. You publish each campaign separately.
 
 The following image shows the _Create Bulletin_ page.
@@ -102,7 +102,7 @@ The following image shows how to create a campaign in a bulletin.
 
 #### Select a Channel
 
-The channel decides which settings and message editor the campaign uses. A campaign uses one channel. To send a message across multiple channels, create a separate campaign for each channel within the same bulletin. When your system raises the business event, CleverTap sends each active campaign.
+The channel decides which settings and message editor the campaign uses. A campaign uses one channel. To send a message across multiple channels, create a separate campaign for each channel within the same bulletin. When your system raises the business event, CleverTap sends it to each active campaign.
 
 To select the channel, follow these steps.
 
@@ -115,7 +115,7 @@ The following table shows how each channel changes the campaign.
 
 | Channel           | What changes in the campaign                                                                                                                            |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Push Notification | The Setup step includes Deliver to (operating systems and device types) and Channel Settings. The Delivery step includes the push time to live setting. |
+| Push Notification | The Setup step includes Deliver to (operating systems and device types) and Channel Settings. The Delivery step includes the push time-to-live setting. |
 | SMS               | The Setup step includes the SMS Service Provider.                                                                                                       |
 | Email             | The Setup step includes the Email Service Provider.                                                                                                     |
 | Web Push          | The Setup step includes Deliver to (devices) and Channel Settings.                                                                                      |
@@ -130,7 +130,7 @@ The Setup step opens with the heading _Start here_. The following table lists th
 
 | Setting                | Channels         | Description                                                                                                                                                                                                                                    |
 | ---------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bulletin Campaign Name | All              | Required. Enter a name, for example `New season push`. If you leave the field empty, CleverTap shows the message _Please enter a name for your bulletin campaign_.                                                                             |
+| Bulletin Campaign Name | All              | Required. Enter a name, for example `New season push`.                                                                                                                                                                                         |
 | Label                  | All              | Optional. Add an existing label or create a new one. The list shows the first two labels, followed by the number of additional labels.                                                                                                         |
 | Deliver to             | Push, Web Push   | Select the devices that receive the message. For Push, select the operating systems and device types. By default, CleverTap selects Android, iOS, and all device types. For Web Push, select the devices. You must select at least one option. |
 | Channel Settings       | Push, Web Push   | Set the channel settings for the campaign, the same as for a standard campaign.                                                                                                                                                                |
@@ -153,21 +153,21 @@ To personalize the message with a business event property, follow these steps.
 
 For example, the push message `A new episode of {{BusinessActionProperties.series_name | default: ""}} is out` shows the series name that your system sends in the trigger.
 
-Consider the following when you create the message.
+Consider the following when you create the message:
 
 - Your account settings determine profile and event personalization. Catalog and recommendation personalization are not available in bulletin campaigns.
-- Legacy business action personalization, the older format that uses `##ba:` blocks, blocks publishing. You can still save the campaign as a draft. Replace the legacy personalization with Liquid before you publish. If you publish with legacy personalization, CleverTap shows the message _Resolve error(s) inside What section to continue_.
+- Legacy business action personalization, the older format that uses `##ba:` blocks, blocks publishing. You can still save the campaign as a draft. Replace the legacy personalization with Liquid before you publish. If you publish with legacy personalization, CleverTap shows the message _Resolve error(s) in the What section to continue_.
 
 #### Set Delivery Preferences
 
 The Delivery step opens with the heading _Delivery_ and the subheading _Set delivery preferences_. The following table lists the settings in this step.
 
-| Setting                        | Channels | Description                                                                                                                                                                                                                                                   |
-| ------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Control group                  | All      | Select System control group, a custom control group, or a campaign control group. For a campaign control group, enter the group size from 1 to 6. The System control group option is disabled and shows a link when your account has no system control group. |
-| Preferences, push time to live | Push     | Set how long CleverTap tries to deliver the push notification.                                                                                                                                                                                                |
+| Setting                        | Channels | Description                                                                                                                                                                                                                                                     |
+| ------------------------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Control group                  | All      | Select System control group, a custom control group, or a campaign control group. For a campaign control group, enter a group size between 1 and 6. The System control group option is disabled and shows a link when your account has no system control group. |
+| Preferences, push time to live | Push     | Set how long CleverTap tries to wait before delivering the push notification.                                                                                                                                                                                   |
 
-A bulletin campaign does not include the following delivery settings that a standard campaign has: start and end dates, user time zone, Do Not Disturb, quiet hours, priority, delivery type, and conversion goals. Global frequency limits for your account still apply to bulletin messages.
+A bulletin campaign does not include the following delivery settings available in a standard campaign: start and end dates, user time zone, Do Not Disturb, quiet hours, priority, delivery type, and conversion goals. Global frequency limits for your account still apply to bulletin messages.
 
 #### Publish the Campaign
 
@@ -188,7 +188,7 @@ The following table lists the statuses that a campaign can have.
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Draft     | You saved the campaign but did not publish it. The campaign does not send.                                                                         |
 | Completed | You published the campaign, and it is active. The campaign sends each time your system raises a business event, as long as the bulletin is active. |
-| Stopped   | You stopped the campaign. The campaign does not send. The Archived tab also shows archived campaigns as Stopped.                                   |
+| Stopped   | You stopped the campaign. The campaign does not send. The _Archived_ tab also shows archived campaigns as Stopped.                                 |
 
 The following table lists the actions that you can take on a campaign from the list.
 
@@ -215,4 +215,4 @@ The following table lists what you can do from the Bulletins page and the Campai
 | Page          | What you can do                                                                                                                                                                                       |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Bulletins     | Search by bulletin name (up to 100 characters), filter by time period (the default is the last month), and switch between Active and Archived bulletins. Show 10, 20, 50, or 100 bulletins on a page. |
-| Campaigns tab | Edit, stop, clone, label, and archive campaigns. See [Manage a Campaign](#manage-a-campaign).                                                                                                         |
+| Campaigns tab | Edit, stop, clone, label, and archive campaigns. See [Manage a Campaign](doc:create-bulletins#manage-a-campaign).                                                                                     |

@@ -18,4 +18,5 @@ CleverTap partners with leading RCS service providers such as [Infobip](doc:rcs-
 
 - [Alot Solutions](https://docs.clevertap.com/docs/alot-solutions-rcs)
 - [FirstConnectt](https://docs.clevertap.com/docs/firstconnectt-rcs)
-- Infobip
+- [Infobip](https://docs.clevertap.com/docs/rcs-infobip)
+- JioCX

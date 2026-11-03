@@ -2,7 +2,7 @@
 title: Create Business Events
 excerpt: Learn how to create and raise business events, and monitor their performance.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

@@ -12,6 +12,8 @@ metadata:
 next:
   description: ''
 ---
+<br />
+
 Stay updated with CleverTap's latest feature releases, cutting-edge feature enhancements, and performance enhancements to help you optimize your experience.
 
 View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/release-notes-2025).
@@ -163,6 +165,36 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 # 2026
 
 ## October
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="event-personalization-beyond-24-hours-for-inaction-campaigns">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#event-personalization-beyond-24-hours-for-inaction-campaigns"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Event Personalization Beyond 24 Hours for Inaction Campaigns</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now extends Event Personalization for Live Behavior beyond 24 hours to Inaction campaigns (delay of more than 1 day), so you get a consistent, personalized experience across all trigger types.</p>
+    <p>With this update, these campaigns send a message each time inaction occurs, personalized with relevant user and event details, just like Action and Date/Time campaigns.</p>
+    <p>With Event Personalization for Inaction campaigns, you can:</p>
+    <p>
+      <ul>
+        <li>Get the same level of personalization in Inaction campaigns as in Action and Date/Time campaigns, even for longer delays.</li>
+        <li>Expect higher response rates on longer-delay journeys, since messages feel timely and relevant instead of generic.</li>
+        <li>Receive a separate, personalized message each time the inaction occurs, instead of one generic message for repeat triggers.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/personalize-message-all#event-personalization-by-campaign-type" target="_blank">Event Personalization by Campaign Type</a>.</p>
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="notification-preference-management">

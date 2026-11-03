@@ -24,6 +24,7 @@ CleverTap supports a wide range of WhatsApp Partners, giving you the flexibility
 
 - [8X8](doc:8x8-whatsapp)
 - [AiSensy](doc:aisensy)
+- [Alot Solutions](https://docs.clevertap.com/docs/alot-solutions-whatsapp)
 - [BIK](doc:bik)
 - [Chat360](doc:chat360)
 - [CleverTap](doc:clevertap-bsp)
@@ -43,4 +44,4 @@ CleverTap supports a wide range of WhatsApp Partners, giving you the flexibility
 - [Route Mobile](doc:route-mobile)
 - [Sinch](doc:sinch)
 
-If you don't see your provider listed, use our **[Generic WhatsApp](doc:generic-whatsapp)** option to configure any BSP with API access.
+If you don't see your provider listed, use our [Generic WhatsApp](doc:generic-whatsapp) option to configure any BSP with API access.

@@ -14,6 +14,7 @@ CleverTap supports sending SMS through a wide range of popular service providers
 The following providers are fully integrated and available across Journeys, Campaigns, and other messaging workflows.
 
 * [8x8](doc:8x8-sms)
+* [Alot Solutions](https://docs.clevertap.com/docs/alot-solutions-sms)
 * [BulkSMS](doc:generic-sms)
 * [Exotel](doc:exotel)
 * [ICS Mobile](doc:ics-mobile)

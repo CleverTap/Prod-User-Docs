@@ -17,5 +17,5 @@ CleverTap partners with leading RCS service providers such as [Infobip](doc:rcs-
 > If your RCS provider is not listed, configure RCS delivery using the Generic SMS (HTTP) route. Go to *Settings > Channels > SMS > SMS Connect* to add your provider’s RCS API and callbacks. After configuration, create your campaign using the RCS Message Editor. Refer to [Generic SMS ](doc:generic-sms)for configuration instructions.
 
 - [Alot Solutions](https://docs.clevertap.com/docs/alot-solutions-rcs)
-- FirstConnectt
+- [FirstConnectt](https://docs.clevertap.com/docs/firstconnectt-rcs)
 - Infobip

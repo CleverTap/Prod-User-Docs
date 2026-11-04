@@ -214,4 +214,4 @@ The following table lists what you can do from the Bulletins page and the Campai
 | Page          | What you can do                                                                                                                                                                                       |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Bulletins     | Search by bulletin name (up to 100 characters), filter by time period (the default is the last month), and switch between Active and Archived bulletins. Show 10, 20, 50, or 100 bulletins on a page. |
-| Campaigns tab | Edit, stop, clone, label, and archive campaigns. See [Manage a Campaign](doc:create-bulletins#manage-a-campaign).                                                                                     |
+| Campaigns tab | Edit, stop, clone, label, and archive campaigns. For more information, refer [Manage a Campaign](doc:create-bulletins#manage-a-campaign).                                                             |

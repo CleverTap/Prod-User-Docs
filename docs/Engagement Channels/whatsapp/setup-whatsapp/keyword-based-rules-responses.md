@@ -5,6 +5,8 @@ excerpt: >-
   and delivery errors.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
@@ -37,8 +39,7 @@ When an unsubscribe is triggered through any of these rules, CleverTap updates t
 | Channel  | Subscription property |
 | -------- | --------------------- |
 | WhatsApp | `MSG-whatsapp`        |
-| SMS      | `MSG-sms`             |
-| RCS      | `MSG-sms`             |
+| SMS/RCS  | `MSG-sms`             |
 
 A `Channel Unsubscribed` system event is logged on the user's timeline. For keyword-based subscribe actions, a `Channel Subscribed` event is logged instead. These events are available for analytics and audit.
 
@@ -295,3 +296,7 @@ Track how many users were unsubscribed through the segment rule and how many ret
 - **Unsubscription rate:** Total unsubscriptions as a percentage of active users.
 - **Reactivation rate:** Users who were unsubscribed through the segment rule and later subscribed again using a keyword.
 - **Trend:** A single trendline of unsubscriptions over time.
+
+<br />
+
+<br />

@@ -10,15 +10,29 @@ metadata:
 next:
   description: ''
 ---
-Welcome to the Events changelog document for CleverTap. This changelog provides insights into system event updates in CleverTap, ensuring you use CleverTap effectively and monitor your metrics with greater accuracy.
+Welcome to the Events changelog document for CleverTap. This changelog provides insights into system event updates in CleverTap, helping you use CleverTap effectively and monitor your metrics with greater accuracy.
 
-We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we regularly update this changelog to inform our customers about any changes to existing system events or the introduction of new ones.
+We are dedicated to empowering businesses with advanced mobile marketing and analytics capabilities and delivering continuous improvements to meet our users' evolving needs. Stay tuned as we update this changelog regularly to inform our customers of any changes to existing system events or the introduction of new ones.
+
+# October 2026
+
+| Change Release Date | Event Name           | Property Name | Update Type          | Description                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------- | -------------------- | ------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| October 23, 2026    | Notification Replied | CTWA Referral | Event Property Added | Captures the Click-to-WhatsApp (CTWA) ad click ID when a user starts a WhatsApp conversation by clicking a Facebook or Instagram ad. <br /><br />The value is the `ctwa_clid` string received from Meta. You can use it to segment, filter, and report on ad-originated replies.<br /><br />For more information, refer to _Notification Replied_ under [System Events](doc:events#system-events)​. |
 
 # September 2026
 
 | Change Release Date | Event Name           | Property Name    | Update Type          | Description                                                                                                                                      |
 | ------------------- | -------------------- | ---------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | September 22, 2026  | Notification Clicked | Delivery Channel | Event Property Added | Indicates the messaging channel through which the notification was sent to the user. <br /><br />It will be populated only for SMS/RCS campaigns |
+
+# June 2026
+
+| Change Release Date | Event Name                                | Property Name | Update Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :------------------ | :---------------------------------------- | :------------ | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| June 10, 2026       | Notification Clicked, Notification Viewed | User Agent    | Event Property Added | Indicates the user agent associated with the interaction.<br /><br />**Note**: For more information, refer to [Bot Activity Filter.](doc:bot-activity-filter) The feature is currently in Private Beta. To enable this feature for your account, contact your Customer Success Manager.                                                                                                                            |
+|                     | Notification Clicked                      | machine click | Event Property Added | When `true`, the click is flagged as suspected bot activity and excluded from campaign click metrics and journey evaluations. When `false`, the click is attributed to a human user.<br /><br />**Note**: For more information, refer to [Bot Activity Filter.](doc:bot-activity-filter) The feature is currently in Private Beta. To enable this feature for your account, contact your Customer Success Manager. |
+|                     | Notificated Viewed                        | machine open  | Event Property Added | When `true`, the open is flagged as suspected bot activity and excluded from Notification Viewed metrics. When false, the open is attributed to a human user.<br /><br />**Note**: For more information, refer to [Bot Activity Filter.](doc:bot-activity-filter) The feature is currently in Private Beta. To enable this feature for your account, contact your Customer Success Manager.                        |
 
 # February 2026
 
@@ -88,13 +102,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        This property enables automatic dismissal of a push notification from the notification tray after a specified duration.
-
-        On Android 8.0 or later, you can configure the dismissal time (in seconds). Once the set duration elapses, the notification is removed from the tray even if the user has not interacted with it.
-
-        For example, setting `wzrk_dismiss` = 10 removes the notification after 10 seconds.
-
-        This is useful for time-sensitive notifications, such as flash sale alerts, which may become irrelevant after a short period.
+        This property enables automatic dismissal of a push notification from the notification tray after a specified duration.On Android 8.0 or later, you can configure the dismissal time (in seconds). Once the set duration elapses, the notification is removed from the tray even if the user has not interacted with it.For example, setting `wzrk_dismiss` = 10 removes the notification after 10 seconds.This is useful for time-sensitive notifications, such as flash sale alerts, which may become irrelevant after a short period.
       </td>
     </tr>
 
@@ -116,11 +124,12 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        This property controls whether a push notification remains pinned in the notification tray and cannot be dismissed by swiping.
+        This property controls whether a push notification remains pinned in the notification tray and cannot be easily dismissed.You can configure a notification as sticky using `wzrk_sticky` with a value of true or false.Behavior by Android Version
 
-        For Android 14 and above, you can configure a notification as sticky using `wzrk_sticky` with a value of true or false. When set to true, the notification persists in the tray and cannot be swiped away by the user.
-
-        The notification remains visible until the user interacts with it (for example, by tapping it) or it is programmatically dismissed.
+        - **Android 14 and above**
+          When set to true, the notification can still be swiped away individually. However, it is not cleared when the user taps Dismiss all and remains in the notification tray.
+        - **Android 13 and below**
+          When set to true, the notification cannot be dismissed by swiping or by using Dismiss all. It remains in the tray until explicitly dismissed based on a user interaction (for example, tapping the notification) or through app logic.
 
         This is useful for critical or ongoing updates, such as OTPs, ride status updates, or delivery tracking notifications.
       </td>
@@ -176,7 +185,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
   <tbody>
     <tr>
       <td>
-        February 5th, 2025
+        February 5, 2025
       </td>
 
       <td>
@@ -184,7 +193,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        *
+
       </td>
 
       <td>
@@ -192,15 +201,15 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        This event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
+        Now, this event is raised for Email campaigns, indicating the successful delivery to the end user. For more information, refer to [Email Campaign Stats](doc:email-campaign-stats-delivered).
 
-        _Note_: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
+        - _Note_\*: Delivered is currently released in Private Beta. Contact your Customer Success Manager to enable this for email campaigns.
       </td>
     </tr>
   </tbody>
 </Table>
 
-# October
+# October 2024
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
@@ -230,7 +239,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
   <tbody>
     <tr>
       <td>
-        October 11th, 2024
+        October 11, 2024
       </td>
 
       <td>
@@ -246,15 +255,15 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        This event also captures errors that occur in email campaigns. For more information, refer to [Events](doc:events).
+        Now, this event also captures the errors that occur in email campaigns.
 
-        _Note_: This event is currently in Private Beta. Contact your account manager to enable this event.
+        - _Note_\*: This event is currently in Private Beta. Contact your account manager to enable this event.
       </td>
     </tr>
   </tbody>
 </Table>
 
-# June
+# June 2024
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
@@ -284,7 +293,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
   <tbody>
     <tr>
       <td>
-        June 19th, 2024
+        June 19, 2024
       </td>
 
       <td>
@@ -346,7 +355,7 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        The property indicates the type of campaign (for example, WhatsApp, SMS).
+        The property indicates the type of campaign (e.g., WhatsApp, SMS, Email).
       </td>
     </tr>
 
@@ -418,17 +427,17 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
   </tbody>
 </Table>
 
-# May
+# May 2024
 
 | Change Release Date | Event Name        | Property Name | Update Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :------------------ | :---------------- | :------------ | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | May 15, 2024        | Push Unregistered |               | Properties Added |                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                     |                   | Source        |                  | <ul><li> **CT_Push**: Indicating that the event is raised via silent Push. In this case, FCM returns a [404 Unregistered error]() for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app. </li> <li> **CT_SDK**: Indicating that the event is raised via OnUserLogin() method.</li> <li> **CT_Target**: Indicating that the event is raised via campaigns or journeys. </li></ul> |
-|                     |                   | Token Value   |                  | The property contains the actual token value.                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                     |                   | Token Value   |                  | The property contains the actual value of the token.                                                                                                                                                                                                                                                                                                                                                                                           |
 |                     |                   | Token Type    |                  | <ul><li> FCM </li> <li> Baidu </li> <li> Huawei </li></ul>                                                                                                                                                                                                                                                                                                                                                                                     |
 |                     |                   | targetId      |                  | The property denotes the ID of the campaign or journey.                                                                                                                                                                                                                                                                                                                                                                                        |
 
-# April
+# April 2024
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
@@ -438,11 +447,11 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </th>
 
       <th>
-        Event Name
+        Property Name
       </th>
 
       <th>
-        Property Name
+        Event Name
       </th>
 
       <th>
@@ -462,11 +471,11 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-        Notification Clicked
+
       </td>
 
       <td>
-
+        Notification Clicked
       </td>
 
       <td>
@@ -484,11 +493,11 @@ We are dedicated to empowering businesses with advanced mobile marketing and ana
       </td>
 
       <td>
-
+        button_id
       </td>
 
       <td>
-        button_id
+
       </td>
 
       <td>

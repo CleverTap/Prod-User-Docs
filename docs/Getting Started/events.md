@@ -1,14 +1,18 @@
 ---
 title: Events
-excerpt: ''
+excerpt: >-
+  Events track what individual actions users perform in your app or website.
+  Some examples of events include a user launching an app, viewing a product,
+  listening to a song, sharing a photo, making a purchase, or favoriting an
+  item.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -16,7 +20,8 @@ Events track what individual actions users perform in your app or website. Some 
 
 By tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregating metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them.
 
-<Image align="center" alt={898} border={true} width="80%" src="https://files.readme.io/40b874a-events1.png" title="events1.png" className="border" />
+<Image src="https://files.readme.io/40b874a-events1.png" alt="898" align="center" width="80%" border={true} />
+
 
 ## Event Categories
 
@@ -33,9 +38,11 @@ For example, while recording the _Product viewed_ event, you could also store ev
 
 # System Events
 
-> 📘 Events Changelog
->
-> You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
+<Callout icon="📘" theme="info">
+  ### Events Changelog
+
+  You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
+</Callout>
 
 System events are events recorded automatically after you integrate our SDK.
 
@@ -43,7 +50,7 @@ System events are events recorded automatically after you integrate our SDK.
   <thead>
     <tr>
       <th>
-        Event Type
+        Event Name
       </th>
 
       <th>
@@ -217,11 +224,20 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This event is recorded when a user replies to a SMS campaign.
+        This event is recorded when a user replies to an SMS, RCS, or WhatsApp campaign.
       </td>
 
       <td>
-        This event is raised when the brand receives a reply from the user.<br /><br />Properties:<br />Incoming Message Type: Represents the type of message received (text, image, document, etc.)<br />Channel: String value that represents the medium of the incoming message.<br />Incoming text: String value that represents the incoming message. In the case of an SMS campaign, it includes the reply message sent by the SMS recipient. The maximum length of the message is set to 512 characters.<br />Incoming Media URL: String value that represents the URL of the media included in the message.<br />Campaign ID: String value that represents the original campaign ID to which the user has replied<br />Lat: Float value that represents the latitude of the particular location.<br />Long: Float value that represents the longitude of the particular location.
+        This event is raised when the brand receives a reply from the user.<br /><br />Properties:
+
+        - Incoming Message Type: Represents the type of message received (text, image, document, etc.)
+        - Channel: String value that represents the medium of the incoming message.
+        - Incoming text: String value that represents the incoming message. In the case of an SMS campaign, it includes the reply message sent by the SMS recipient. The maximum length of the message is set to 512 characters.
+        - Incoming Media URL: String value that represents the URL of the media included in the message.
+        - Campaign ID: String value that represents the original campaign ID to which the user has replied
+        - Lat: Float value that represents the latitude of the particular location.
+        - Long: Float value that represents the longitude of the particular location.
+        - CTWA Referral: String value that represents the Click-to-WhatsApp ad click ID (`ctwa_clid`)  assigned by Meta when a user starts a WhatsApp conversation by clicking a Facebook or Instagram ad. The ID is stored as received, so every ad click has a different value. This property is present only on WhatsApp replies that carry a click ID.
       </td>
     </tr>
 
@@ -389,7 +405,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        Event is raised when you are using the _Product A/B Tests_ feature.
       </td>
     </tr>
 
@@ -403,7 +419,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        Event is raised when you are using the _Product A/B Tests_ feature.
       </td>
     </tr>
 
@@ -417,7 +433,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        Event is raised when you are using the _Product A/B Tests_ feature.
       </td>
     </tr>
 
@@ -431,7 +447,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        Event is raised when you are using the _Product A/B Tests_ feature.
       </td>
     </tr>
 
@@ -630,13 +646,13 @@ System events are events recorded automatically after you integrate our SDK.
 
 Debug events are events recorded automatically after you integrate our SDK. These events are raised at certain lifecycle stages in your integration and help you track and manage your integration. These events are available on any profile page and _Find People_ page by adding a parameter to the end of the URL `?showDebugEvents=true`.
 
-| Event Name        | Description                                                                                                                                                                                                                                                    | When is it raised                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identity Set      | This debug event is raised when a new user is identified on a customer’s app or an identified user pushes another identity.                                                                                                                                    | This event monitors the status and data points that are important for the identification and engagement of users. This event is for monitoring and debugging only.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Identity Reset    | This debug event is raised when a profile is demerged (after demerged, a new profile for every device is created and identities are dropped) either from the dashboard (click on the _Profile_ page to reset identities) or through the _Demerge Profile API_. | It monitors the reset of identities and handles unnecessary merges. This event is used for monitoring and debugging only.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Identity Error    | This debug event is raised when an existing identity is associated incorrectly with another identity. The former identity is now declared as invalid for the latter's profile.                                                                                 | This event is for monitoring and debugging when identity merges are invalid.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Reachable By      | This debug event is raised when a user becomes reachable by a communication channel such as SMS, email, mobile push, or when there are changes to the existing communication channel.                                                                          | Tracked for a profile when:<br />- Push token is added/changed.<br />- Email ID is added/changed.<br />- Phone number is added/changed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Push Unregistered | This event tracks the removal of a mobile push token. It is also raised when FCM returns a 404 Unregistered error for stale tokens from devices that have not connected to FCM for 270 days or for users who uninstall the app.                                | This event is raised when an existing mobile push token is removed for a profile.<br /><br />Tracked for a profile when:<br />- A user logs out of the device, and another user logs in. Applicable only if the `onUserLogin()` method is implemented.<br />- When a push token is removed using the `pushFcmRegisterationId("token",false)` method. Applicable only for Android.<br />- FCM returns a [404 Unregistered error](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app. |
+| Event Name        | Description                                                                                                                                                                                                                                                    | When is it raised                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identity Set      | This debug event is raised when a new user is identified on a customer’s app or an identified user pushes another identity.                                                                                                                                    | This event monitors the status and data points that are important for the identification and engagement of users. This event is for monitoring and debugging only.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Identity Reset    | This debug event is raised when a profile is demerged (after demerged, a new profile for every device is created and identities are dropped) either from the dashboard (click on the _Profile_ page to reset identities) or through the _Demerge Profile API_. | It monitors the reset of identities and handles unnecessary merges. This event is used for monitoring and debugging only.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Identity Error    | This debug event is raised when an existing identity is associated incorrectly with another identity. The former identity is now declared as invalid for the latter's profile.                                                                                 | This event is for monitoring and debugging when identity merges are invalid.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Reachable By      | This debug event is raised when a user becomes reachable by a communication channel such as SMS, email, mobile push, or when there are changes to the existing communication channel.                                                                          | Tracked for a profile when:<br />\- Push token is added/changed.<br />\- Email ID is added/changed.<br />\- Phone number is added/changed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Push Unregistered | This event tracks the removal of a mobile push token. It is also raised when FCM returns a 404 Unregistered error for stale tokens from devices that have not connected to FCM for 270 days or for users who uninstall the app.                                | This event is raised when an existing mobile push token is removed for a profile.<br /><br />Tracked for a profile when:<br />\- A user logs out of the device, and another user logs in. Applicable only if the `onUserLogin()` method is implemented.<br />\- When a push token is removed using the `pushFcmRegisterationId("token",false)` method. Applicable only for Android.<br />\- FCM returns a [404 Unregistered error](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app. |
 
 # Custom Events
 
@@ -682,11 +698,13 @@ You can personalize the message for any number of items in the `Event.items` arr
 
 In the case of manual indexing, you can ensure that the index is smaller than the size of the Items array using `Event.Items.size`. If the index value exceeds the size of the Items array, the message is NOT dispatched and is marked against errors.
 
-> 📘 Charged Event Personalization for App Inbox Campaigns
->
-> * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled.
-> * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in the case of App Inbox campaigns.
-> * If you use event personalization with `Charged.Items` when creating a combination of Push Notification and App Inbox campaigns, the personalized values for the items are displayed for Push and default values are displayed for App Inbox.
+<Callout icon="📘" theme="info">
+  ### Charged Event Personalization for App Inbox Campaigns
+
+  * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled.
+  * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in the case of App Inbox campaigns.
+  * If you use event personalization with `Charged.Items` when creating a combination of Push Notification and App Inbox campaigns, the personalized values for the items are displayed for Push and default values are displayed for App Inbox.
+</Callout>
 
 # Event Data Types
 
@@ -713,7 +731,7 @@ Multi-value arrays are beneficial in scenarios where a single purchase contains 
 Streaming platforms can capture multiple genres, tags, or content IDs associated with a user session. For example, a `Content Watched` event can include an array of genres such as Action, Thriller, Drama. This enables better audience segmentation and personalized content recommendations based on viewing preferences.
 
 <Callout icon="📘" theme="info">
-  **`Charged -> Items` is Reserved**
+  `Charged -> Items`**&#x20;is Reserved**
 
   Multi-value arrays do not apply to the `Charged` event’s `Items` key. The `Charged → Items` field is a reserved implementation and supports an array of objects by design.
 
@@ -760,11 +778,15 @@ You can use Multi-value arrays for event properties across platforms, including 
 
 The following image shows the Multi-value array in the NextGen Segment Builder:
 
-<Image align="center" border={true} caption="Multi-Value Array in Segment Builder" src="https://files.readme.io/503b9237448b8b0fec72d319a7ca0c37e37aa2a52f642534e8c37fb7362f2649-image.png" />
+
+<Image src="https://files.readme.io/503b9237448b8b0fec72d319a7ca0c37e37aa2a52f642534e8c37fb7362f2649-image.png" align="center" caption="Multi-Value Array in Segment Builder" border={true} />
+
 
 The following image shows the Multi-value array for Personalization:
 
-<Image align="center" border={true} caption="Using Multi-Value Array for Personalization" src="https://files.readme.io/5d22d18bed80e329e68567bb594016072fb40c0e3cb5e4146e72890921dad00d-image_7.png" />
+
+<Image src="https://files.readme.io/5d22d18bed80e329e68567bb594016072fb40c0e3cb5e4146e72890921dad00d-image_7.png" align="center" caption="Using Multi-Value Array for Personalization" border={true} />
+
 
 # Event Metadata Recorded Automatically
 
@@ -786,29 +808,31 @@ CleverTap tracks the following system properties automatically from the mobile S
 
 The following properties are tracked automatically on all events:
 
-| System Property | Description                                                                                                                                                                                                                                                                                                                                            |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CT App Version  | This is the current version of your application installed on the user device.                                                                                                                                                                                                                                                                          |
-| CT Latitude     | The user location identified by the latitude.                                                                                                                                                                                                                                                                                                          |
-| CT Longitude    | The user location identified by the longitude.                                                                                                                                                                                                                                                                                                         |
-| CT Source       | The source of the event.<br /><br />For example, the event may originate from a Mobile SDK or an API.<br /><br />All possible values:<br />- Mobile (Mobile SDK)<br />- MobileWeb (Web SDK)<br />- Web (Web SDK)<br />- API<br />- segment<br />- appsflyer<br />- apsalar<br />- branch<br />- tune<br />- System (for events generated by CleverTap) |
+| System Property | Description                                                                                                                                                                                                                                                                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CT App Version  | This is the current version of your application installed on the user device.                                                                                                                                                                                                                                                                                    |
+| CT Latitude     | The user location identified by the latitude.                                                                                                                                                                                                                                                                                                                    |
+| CT Longitude    | The user location identified by the longitude.                                                                                                                                                                                                                                                                                                                   |
+| CT Source       | The source of the event.<br /><br />For example, the event may originate from a Mobile SDK or an API.<br /><br />All possible values:<br />\- Mobile (Mobile SDK)<br />\- MobileWeb (Web SDK)<br />\- Web (Web SDK)<br />\- API<br />\- segment<br />\- appsflyer<br />\- apsalar<br />\- branch<br />\- tune<br />\- System (for events generated by CleverTap) |
 
 The following properties are available on the _App Launched_ event:
 
-| System Property      | Description                                                                                                                                                                                                                                                                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CT App Version       | This is the current version of your application installed on the user device.                                                                                                                                                                                                                                                                          |
-| CT Latitude          | The user location identified by the latitude.                                                                                                                                                                                                                                                                                                          |
-| CT Longitude         | The user location identified by the longitude.                                                                                                                                                                                                                                                                                                         |
-| CT OS Version        | The operating system of the device.<br />For example, 1.0.0.                                                                                                                                                                                                                                                                                           |
-| CT SDK Version       | The CleverTap SDK version. For example, 30501.                                                                                                                                                                                                                                                                                                         |
-| CT Network Carrier   | The network carrier of the device.<br />For example, AT&T, Vodafone.                                                                                                                                                                                                                                                                                   |
-| CT Network Type      | The network type of the device.<br />For example, 4G.                                                                                                                                                                                                                                                                                                  |
-| CT Connected To WiFi | Indicates if the device is connected to the Wi-FI.                                                                                                                                                                                                                                                                                                     |
-| CT Bluetooth Version | The Bluetooth version of the device.                                                                                                                                                                                                                                                                                                                   |
-| CT Bluetooth Enabled | Indicates if Bluetooth is enabled on the device.                                                                                                                                                                                                                                                                                                       |
-| CT Source            | The source of the event.<br /><br />For example, the event may originate from a Mobile SDK or an API.<br /><br />All possible values:<br />- Mobile (Mobile SDK)<br />- MobileWeb (Web SDK)<br />- Web (Web SDK)<br />- API<br />- segment<br />- appsflyer<br />- apsalar<br />- branch<br />- tune<br />- System (for events generated by CleverTap) |
+| System Property      | Description                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CT App Version       | This is the current version of your application installed on the user device.                                                                                                                                                                                                                                                                                    |
+| CT Latitude          | The user location identified by the latitude.                                                                                                                                                                                                                                                                                                                    |
+| CT Longitude         | The user location identified by the longitude.                                                                                                                                                                                                                                                                                                                   |
+| CT OS Version        | The operating system of the device.<br />For example, 1.0.0.                                                                                                                                                                                                                                                                                                     |
+| CT SDK Version       | The CleverTap SDK version. For example, 30501.                                                                                                                                                                                                                                                                                                                   |
+| CT Network Carrier   | The network carrier of the device.<br />For example, AT\&T, Vodafone.                                                                                                                                                                                                                                                                                            |
+| CT Network Type      | The network type of the device.<br />For example, 4G.                                                                                                                                                                                                                                                                                                            |
+| CT Connected To WiFi | Indicates if the device is connected to the Wi-FI.                                                                                                                                                                                                                                                                                                               |
+| CT Bluetooth Version | The Bluetooth version of the device.                                                                                                                                                                                                                                                                                                                             |
+| CT Bluetooth Enabled | Indicates if Bluetooth is enabled on the device.                                                                                                                                                                                                                                                                                                                 |
+| CT Source            | The source of the event.<br /><br />For example, the event may originate from a Mobile SDK or an API.<br /><br />All possible values:<br />\- Mobile (Mobile SDK)<br />\- MobileWeb (Web SDK)<br />\- Web (Web SDK)<br />\- API<br />\- segment<br />\- appsflyer<br />\- apsalar<br />\- branch<br />\- tune<br />\- System (for events generated by CleverTap) |
 
-> 📘 Latitude and Longitude
->
-> The system properties _latitude_ and _longitude_ are captured and sent from the SDK only if the user gives consent on your app.
+<Callout icon="📘" theme="info">
+  ### Latitude and Longitude
+
+  The system properties _latitude_ and _longitude_ are captured and sent from the SDK only if the user gives consent on your app.
+</Callout>

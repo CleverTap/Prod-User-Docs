@@ -38,7 +38,7 @@ When an unsubscribe is triggered through any of these rules, CleverTap updates t
 | -------- | --------------------- |
 | WhatsApp | `MSG-whatsapp`        |
 | SMS      | `MSG-sms`             |
-| RCS      | `MSG-rcs`             |
+| RCS      | `MSG-sms`             |
 
 A `Channel Unsubscribed` system event is logged on the user's timeline. For keyword-based subscribe actions, a `Channel Subscribed` event is logged instead. These events are available for analytics and audit.
 

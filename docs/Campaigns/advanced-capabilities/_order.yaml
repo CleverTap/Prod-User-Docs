@@ -1,12 +1,12 @@
-- ab-multivariate-testing
-- messaging-frequency-caps
 - recommended-delay
 - regex
 - time-in-user-property
 - constant-property
 - conversations
 - image-specifications
-- geofencing-campaign-1
-- geofencing-campaign
 - geofencing
 - branded-domain
+- ab-multivariate-testing
+- messaging-frequency-caps
+- geofencing-campaign-1
+- geofencing-campaign

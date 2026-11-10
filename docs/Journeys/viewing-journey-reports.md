@@ -27,22 +27,21 @@ You can export Journey reports as CSV files directly from the dashboard. You can
 To export journey reports, perform the following steps:
 
 1. Select the period and the required Journeys from the Journeys list page.
-2. Click the ![](https://files.readme.io/6ebe7ff9d9fd0298735dcf535f24dda429e4460884bfd033578853cee22270db-Email_Report_icon.png) icon. The *Email Report* popup opens.
+2. Click the ![](https://files.readme.io/6ebe7ff9d9fd0298735dcf535f24dda429e4460884bfd033578853cee22270db-Email_Report_icon.png) icon. The _Email Report_ pop-up opens.
 
-   <Image alt="Email Journey Reports" align="center" border={true} src="https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png">
-     Email Journey Reports
-   </Image>
-3. Choose *All versions* or *Selected versions* of the selected journeys.
+
+   <Image src="https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png" alt="Email Journey Reports" align="center" border={true} />
+
+3. Choose _All versions_ or _Selected versions_ of the selected journeys.
    * Choose to include only specific versions of the selected journeys when:
      * You only want to review performance for the most recent version.
      * You need data for a particular published version that was live during a specific campaign or test.
-   * Choose to include *All versions* of the selected journey when:
+   * Choose to include _All versions_ of the selected journey when:
      * You want to analyze how the journey evolved over time.
      * You are comparing performance trends across multiple published versions.
      * You need a comprehensive dataset for audit, reporting, or analytics.
-     * You are exporting reports for long-running journeys edited and republished multiple times.\
-       In this case, only active versions within the selected date range are available for export in the report.
-4. Select the report type: *Summary* or *Node wise*.
+     * You are exporting reports for long-running journeys edited and republished multiple times.<br />In this case, only active versions within the selected date range are available for export in the report.
+4. Select the report type: _Summary_ or _Node wise_.
 5. Enter a report name.
 
 Once configured, the report is emailed to your registered email address.

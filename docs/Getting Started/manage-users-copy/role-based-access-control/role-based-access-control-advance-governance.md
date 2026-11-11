@@ -24,14 +24,82 @@ The admin must invite new users to assign roles and can also reassign existing u
 
  The following table outlines the available components and their respective subcomponents that can be permissioned when setting up or modifying a role. There are two types of roles: System and Custom. System roles are pre-defined and cannot be changed. For custom roles, an *Admin* role can configure or assign access to these roles.
 
-| **Component**   | **Subcomponents**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Boards**      | • Daily Boards  <br /> • Custom Boards                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Segments**    | • _Manual Segmentation_: Segments, Find People <br /> • _Automated Segmentation_: Goals, IBM, RFM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Analytics**   | • _Core Analytics_: Events, Funnels, Cohorts, Trends, Attribution, Device Crossovers, [Annotations in analytics](https://docs.clevertap.com/docs/annotations-in-analytics) <br /> • _Advanced Analytics_: Pivots, Flows                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Engagement**  | • _Campaigns_ <br /> • _Journeys_ <br /> • _Recommendation_ <br /> • _Catalogs_ <br /> • _Global Campaign Limit (GCL)_: Define the maximum number of campaigns that can run concurrently <br /> • _Global Throttle Limit (GTL)_: Control the number of messages sent per user per day                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Real Impact** | • _Control Groups_: Custom Control Group, System Control Group <br /> • _Real Impact Dashboard_                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Settings**    | • _Billing_: Billing, app usage, plans, invoices <br /> • _Account Settings_: Role-Based Access Control, add new app, change account, timezone, privacy settings, uninstall <br /> • _User Settings_: Invite user, revoke access, account settings <br /> • _Event and User Properties_ <br /> • _CSV Uploads_: Profile uploads and external user list <br /> • _My Profile and Password_ <br /> • _Exports_: Events and profile exports to Amazon S3 <br /> • _Downloads_: Download profiles <br /> • _Email Reports_: Campaign and Journey reports <br /> • _Campaign Integration and Settings_: Push, Email, SMS, Web Push, Facebook, Google Ads <br /> • _Campaign Settings_: Campaign limits, Best Time settings |
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **Component**
+      </th>
+
+      <th>
+        **Subcomponents**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Boards**
+      </td>
+
+      <td>
+        • Daily Boards  <br /> • Custom Boards
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Segments**
+      </td>
+
+      <td>
+        • *Manual Segmentation*: Segments, Find People <br /> • *Automated Segmentation*: Goals, IBM, RFM
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Analytics**
+      </td>
+
+      <td>
+        • *Core Analytics*: Events, Funnels, Cohorts, Trends, Attribution, Device Crossovers <br /> • *Advanced Analytics*: Pivots, Flows
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Engagement**
+      </td>
+
+      <td>
+        • *Campaigns* <br /> • *Journeys* <br /> • *Recommendation* <br /> • *Catalogs* <br /> • *Global Campaign Limit (GCL)*: Define the maximum number of campaigns that can run concurrently <br /> • *Global Throttle Limit (GTL)*: Control the number of messages sent per user per day
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Real Impact**
+      </td>
+
+      <td>
+        • *Control Groups*: Custom Control Group, System Control Group <br /> • *Real Impact Dashboard*
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Settings**
+      </td>
+
+      <td>
+        • *Billing*: Billing, app usage, plans, invoices <br /> • *Account Settings*: Role-Based Access Control, add new app, change account, timezone, privacy settings, uninstall <br /> • *User Settings*: Invite user, revoke access, account settings <br /> • *Event and User Properties* <br /> • *CSV Uploads*: Profile uploads and external user list <br /> • *My Profile and Password* <br /> • *Exports*: Events and profile exports to Amazon S3 <br /> • *Downloads*: Download profiles <br /> • *Email Reports*: Campaign and Journey reports <br /> • *Campaign Integration and Settings*: Push, Email, SMS, Web Push, Facebook, Google Ads <br /> • *Campaign Settings*: Campaign limits, Best Time settings
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Types of Roles
 

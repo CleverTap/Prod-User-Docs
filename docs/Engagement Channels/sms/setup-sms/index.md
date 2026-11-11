@@ -4,11 +4,7 @@ excerpt: Understand how to set up SMS as a channel for your marketing campaigns.
 deprecated: false
 hidden: false
 metadata:
-  title: ''
-  description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -18,7 +14,7 @@ This document outlines the steps to configure and manage SMS providers within Cl
 
 **SMS Connect**: This option enables users with SMS providers that are not integrated with CleverTap to connect and configure external providers manually. To get started, navigate to *Settings > Channels > SMS > SMS Connect*.
 
-# Configure New Provider
+# Configure a New Provider
 
 To add a new SMS provider, perform the following steps:
 

@@ -23,6 +23,12 @@ For multiple journey versions, it also provides performance insights for each ve
 
 You can export performance data for one or more journeys as a CSV file, directly from the Journeys list. Reports can be delivered to one or more email addresses or to a pre-configured cloud storage bucket (Amazon S3, Google Cloud Platform, or Azure Blob Storage). You can generate a one-time export or set up a recurring subscription.
 
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  Journey Partner Exports  is currently released in Private Beta. If you want to enable this for your account, contact Customer Success Manager.
+</Callout>
+
 ## Before You Begin
 
 - You can select up to 20 journeys in a single report for both email and Partner Export delivery.

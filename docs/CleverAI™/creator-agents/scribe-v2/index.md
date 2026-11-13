@@ -5,32 +5,15 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-next:
-  pages:
-    - slug: generate-high-impact-copy-with-effective-prompts
-      title: Generate High-Impact Copy with Effective Prompts
-      type: basic
-    - slug: brand-context
-      title: Brand Context
-      type: basic
-    - slug: scribe-faqs-1
-      title: 'Scribe: FAQs'
-      type: basic
 ---
 # Overview
 
-Scribe helps you instantly create, edit, or refine message copy for your campaigns directly within CleverTap, using these brand-specific details as its foundation. It goes beyond standard AI copy generation by using your [Brand Context,](doc:brand-context) where you save your brand's voice, tone, and preferences, with insights from your past high-performing campaigns. This ensures that every message aligns with your brand voice and is inspired by what has already driven results for your audience.
-
-<Callout icon="📘" theme="info">
-  ### Availability
-
-  Scribe is available on Pro and Ultimate plans. To access this feature, contact your Customer Success Manager.
-</Callout>
+Scribe helps you instantly create, edit, or refine message copy for your campaigns directly within CleverTap, using these brand-specific details as its foundation. It goes beyond standard AI copy generation by combining your [Brand Kit,](doc:brand-kit) where you save your brand's voice, tone, and preferences, with insights from your past high-performing campaigns. This ensures that every message aligns with your brand voice and is inspired by what has already driven results for your audience.
 
 Scribe reduces manual effort, speeds up campaign creation, and helps you produce consistent, on-brand copy that is aligned with your engagement goals. With Scribe, you can do the following:
 
 - Save time creating campaigns by generating copy directly in the campaign builder, without switching tools or re-entering context.
-- Maintain brand consistency at scale by automatically applying your Brand Context across all messages.
+- Maintain brand consistency at scale by automatically applying your [Brand Kit](doc:brand-kit) across all messages.
 - Create effective copy by learning from your past high-performing campaigns, rather than relying on generic AI suggestions.
 - Generate multiple message variations quickly to test and optimize performance.
 - Improve team speed and consistency by reducing manual rewrites and reviews.
@@ -40,7 +23,7 @@ Scribe reduces manual effort, speeds up campaign creation, and helps you produce
 Scribe is embedded within the campaign's Message Editor and generates copy using three inputs:
 
 - _Campaign Intent_: The prompt you provide describes what you are trying to achieve in this campaign. For example, _Re-engage users who abandoned their cart with items still available_ or _Bring back dormant users who haven’t opened the app in 14 days_.
-- _Brand Kit and Brand Context_: Scribe draws from your Brand Kit and Brand Context, which acts as the foundational system prompt for all AI features and captures your brand name, industry, and voice at the account level.&#x20;
+- _Brand Kit and Brand Context_: Scribe draws from your Brand Kit and Brand Context, which acts as the foundational system prompt for all AI features and captures your brand name, industry, and voice at the account level. For more information, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit) and Brand Context.
 - _Past Campaign Look-back_: Set in Brand Kit, this determines how far back Scribe looks when identifying relevant past campaigns to use as inspiration for the current prompt.
 
 # Supported Channels
@@ -57,7 +40,7 @@ Scribe supports the following channels:
 
 # Generate Copy using a Prompt
 
-Use a prompt to quickly generate campaign copy tailored to your goals. Before generating content, set the [Brand Context](https://docs.clevertap.com/docs/brand-context), select the appropriate [Brand Kits,](https://docs.clevertap.com/docs/brand-kit) and configure [Content Settings](https://docs.clevertap.com/docs/scribe-1#content-settings) to guide tone, style, and language.
+Use a prompt to quickly generate campaign copy tailored to your goals. Before generating content, set the Brand Context, select the appropriate [Brand Kits,](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#brand-kits) and configure [Content Settings](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#content-settings) to guide tone, style, and language.
 
 <Callout icon="📘" theme="info">
   ### Steps may vary slightly by channel
@@ -104,7 +87,7 @@ To generate copy using Scribe, follow the given steps:
 
 # Brand Kits and Content Settings
 
-The Scribe provides controls to guide the style and tone of the generated copy, using [Brand Kit,](https://docs.clevertap.com/docs/brand-kit) and [Content Settings](https://docs.clevertap.com/docs/scribe-1#content-settings).
+The Scribe provides controls to guide the style and tone of the generated copy, using [Brand Kit,](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#brand-kits) and [Content Settings](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#content-settings).
 
 
 <Image src="https://files.readme.io/7546019ad6cb4f35ba28555e5fdd97af307e96611ef1b9c7585f383a629e1c3c-2026-08-11_16-44-55.jpg" align="center" caption="Core Brand and Content Settings" border={true} />
@@ -268,6 +251,6 @@ Refer to the table below for difference between vague and effective prompts:&#x2
 For more information, refer to the following resources:
 
 - [Generate High-Impact Copy with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
-- [Brand Context](https://docs.clevertap.com/docs/brand-context)
-- [Scribe: FAQs](https://docs.clevertap.com/docs/scribe-faqs-1)
-- [CleverTap Terms & Disclaimer](https://docs.clevertap.com/docs/clevertap-aienabled-feature-disclaimer-terms)&#x20;
+- [Brand Context](https://docs.clevertap.com/docs/brand-kit)
+- [Scribe: FAQs](doc:faqs-4)
+- [CleverTap Terms & Disclaimer](doc:clevertap-aienabled-feature-disclaimer-terms)&#x20;

@@ -1,6 +1,6 @@
 ---
 title: Technology Partners
-excerpt: Learn about CleverTap's third-party integration.
+excerpt: Learn about CleverTap's third-party integration
 deprecated: false
 hidden: false
 metadata:
@@ -3161,7 +3161,7 @@ next:
 <a href="https://docs.clevertap.com/docs/firstconnectt-rcs">
     <div class="integration-card">
         <div class="logo-container">
-            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
+            <img src="https://files.readme.io/ab5f2642809b4c942dd8bf0d245c99aa6629b5a16edb3bee08e1192f8b64bafb-FirstConnectt_Logo.svg" alt="FirstConnectt" class="logo">
         </div>
         <div class="content">
             <div class="name">FirstConnectt</div>
@@ -3549,7 +3549,7 @@ next:
 <a href="https://docs.clevertap.com/docs/firstconnectt-sms">
     <div class="integration-card">
         <div class="logo-container">
-            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
+            <img src="https://files.readme.io/ab5f2642809b4c942dd8bf0d245c99aa6629b5a16edb3bee08e1192f8b64bafb-FirstConnectt_Logo.svg" alt="FirstConnectt" class="logo">
         </div>
         <div class="content">
             <div class="name">FirstConnectt</div>
@@ -4248,7 +4248,7 @@ next:
 <a href="https://docs.clevertap.com/docs/firstconnectt-whatsapp">
     <div class="integration-card">
         <div class="logo-container">
-            <img src="https://files.readme.io/a4d52690e689d7acd92fff8c11cc73d5325229f8e3963525b9dc146010f289ae-FirstConnectt-logo.jpeg" alt="FirstConnectt" class="logo">
+            <img src="https://files.readme.io/ab5f2642809b4c942dd8bf0d245c99aa6629b5a16edb3bee08e1192f8b64bafb-FirstConnectt_Logo.svg" alt="FirstConnectt" class="logo">
         </div>
         <div class="content">
             <div class="name">FirstConnectt</div>
@@ -4322,7 +4322,7 @@ next:
         </div>
     </div>
       </a>
-<a href="https://staging.docs.user.clevertap.net/docs/karix-whatsapp">
+<a href="https://docs.clevertap.com/docs/karix-whatsapp">
     <div class="integration-card">
         <div class="logo-container">
             <img src="https://files.readme.io/5b09dfd1e86b876827c9823a313c51be91943e412118b37d0e9b1b78968ec41d-Karix.jpeg" alt="Karix" class="logo">

@@ -28,8 +28,6 @@ To create a webhook:
 
 2. Click **Add Webhook**.
 
-   {/* Screenshot: Webhooks listing page empty state */}
-
    <Callout icon="📘" theme="info">
      ### IP Whitelisting
 
@@ -46,7 +44,7 @@ To create a webhook:
      If you do not have an endpoint available during setup, use [requestcatcher.com](https://requestcatcher.com) to create a temporary test endpoint.
    </Callout>
 
-5. Under _Authentication Type_, select the authentication method and complete the configuration. For details on each method, refer to the tabs below.(@krishna, this table seems broken, refer to my comment on Client credentials with JWT tab)
+5. Under _Authentication Type_, select the authentication method and complete the configuration. For details on each method, refer to the tabs below.
 
 <Tabs>
   <Tab title="No Authentication">
@@ -192,18 +190,14 @@ To create a webhook:
    <Callout icon="📘" theme="info">
      ### Note
 
-     For security, header values are automatically stripped of carriage return and line feed characters after the variable resolves, to prevent header injection. This applies to header values only, not header names, and does not apply to the `Authorization` header set by Basic Authentication or OAuth 2.0. (@krishna, was this comment resolved by Jitendra ?)
+     For security, header values are automatically stripped of carriage return and line feed characters after the variable resolves, to prevent header injection. This applies to header values only, not header names, and does not apply to the `Authorization` header set by Basic Authentication or OAuth 2.0.&#x20;
    </Callout>
-
-   {/* (@Jithendra - please confirm the current rollout status/label for this capability before this goes live, and confirm whether templated JSON-body webhooks are covered by the same rollout gate as other webhook types — engineering's code suggests the templated-body path may bypass the usual flag check.) */}
 
 7. Under _Parameters_, select the format for the request payload:
 
    - _None_: No request body is sent.
    - _x-www-form-urlencoded_: Sends parameters as form-encoded key-value pairs. Click **Add Parameter** under _Key-value pairs_ to add each parameter.
    - _JSON_: Sends a JSON request body. Enter the payload structure in the _Request body_ editor. Use `$$variableName` syntax to define placeholders whose values will be supplied at campaign send time. `$$template` is a reserved variable that is replaced by the Body JSON of the Webhook Template selected in the campaign. For more information, refer to [Webhook Templates](doc:webhook-templates).
-
-   {/* Screenshot: Setup tab with JSON selected showing Request body editor */}
 
 8. Click **Next** to proceed to _Identity & Callbacks_.
 
@@ -213,17 +207,13 @@ The _Identity & Callbacks_ step defines how CleverTap identifies users on this c
 
 All fields on this step are optional. Enable each field by selecting its checkbox.
 
-{/* Screenshot: Identity & Callbacks tab with all checkboxes unchecked */}
-
-| Field           | Description                                                                                                                                                                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identity        | The CleverTap user property that identifies recipients on this channel. This can be any user property marked as an identity, such as phone number or email.                                                                                    |
-| Opt-in property | The user property that controls reachability on this channel. Only users with this property enabled on their profile receive messages. This can be managed through user properties on the user's profile.                                      |
-| Hashing         | The algorithm used to hash identity values before sending them to your provider. (@krishna, the whole purpose of hashing is to protect sensitive information, that shoudl be mentioned here rather than the techncial translation of the term) |
-| Encryption      | The encryption method applied to the payload before sending.                                                                                                                                                                                   |
-| Event tracking  | Maps delivery and engagement events from your provider to CleverTap properties. For configuration steps, refer to [Add Event Mapping](#add-event-mapping).                                                                                     |
-
-{/* Screenshot: Identity & Callbacks tab with all fields enabled and configured */}
+| Field           | Description                                                                                                                                                                                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identity        | The CleverTap user property that identifies recipients on this channel. This can be any user property marked as an identity, such as phone number or email.                                               |
+| Opt-in property | The user property that controls reachability on this channel. Only users with this property enabled on their profile receive messages. This can be managed through user properties on the user's profile. |
+| Hashing         | The algorithm used to hash identity values before sending them to your provider.                                                                                                                          |
+| Encryption      | The encryption method applied to the payload before sending.                                                                                                                                              |
+| Event tracking  | Maps delivery and engagement events from your provider to CleverTap properties. For configuration steps, refer to [Add Event Mapping](#add-event-mapping).                                                |
 
 ### Add Event Mapping
 
@@ -238,8 +228,6 @@ To add an event mapping:
 5. Click **Auto Fill Properties**. CleverTap parses the sample payload and pre-populates the property mapping fields.
 6. Review the generated mappings. Each row consists of an _Event_ property and a _Meta_ property that correspond to fields in your provider's payload.
 7. Click **Add Mapping**.
-
-{/* Screenshot: Add event mapping modal with sample payload pasted and fields auto-filled */}
 
 The following example shows a completed mapping for a _Notification Viewed_ event. The provider sends this callback payload when a user views a notification:
 
@@ -259,33 +247,25 @@ The following example shows a completed mapping for a _Notification Viewed_ even
 
 After pasting the payload and clicking **Auto Fill Properties**, CleverTap parses the payload and pre-populates the mapping fields. In this example, the _Event_ property maps to `messageId` and the _Meta_ property maps to `from`. Click **Add Mapping** to save it.
 
-{/* Screenshot: Add event mapping modal showing Notification Viewed with filled mapping fields */}
-
 Repeat these steps to add mappings for additional events.
 
 After the webhook is saved, CleverTap generates a callback URL for it. Your provider uses this URL to send delivery and engagement data back to CleverTap. To copy the callback URL, go to _Settings > Channels > Webhooks_ and click **Copy Callback URL** on the relevant webhook row.
 
 After the webhook is configured and a campaign has been published, the events mapped under _Event tracking_ are fired on user profiles each time your provider sends a callback. You can view these events on individual profiles by navigating to _Segments > Find People_, searching for a user, and opening the _Activity_ tab. The mapped events, such as _Notification Viewed_, _Notification Delivered_, and _Notification Replied_, appear in the activity feed alongside other CleverTap events. You can also use these events as segment filters, campaign qualification criteria, or analytics dimensions across the platform.
 
-{/* Screenshot: Find People Activity tab showing Notification Viewed, Notification Delivered, and Notification Replied events on a user profile */}
-
-{/* Screenshot: Identity & Callbacks tab showing a completed event mapping */}
-
 ## Manage Webhooks
 
 The Webhooks listing page displays all configured webhooks for your project.
 
-{/* Screenshot: Webhooks listing page with existing webhooks */}
-
-The table shows the following columns for each webhook: _Webhook Name_, _Webhook URL_, _Created By_, _Created On_, and _Updated By_. Use the search bar at the top to filter webhooks by name. (@krishna, are we not going to explain the table here?)
+The table shows the following columns for each webhook: _Webhook Name_, _Webhook URL_, _Created By_, _Created On_, and _Updated By_. Use the search bar at the top to filter webhooks by name.&#x20;
 
 To copy the callback URL for a webhook, hover over the webhook row and click **Copy Callback URL**.
 
 ## FAQs
 
-**Q. What are the timeouts and retry limits for webhooks?**
+**What are the timeouts and retry limits for webhooks?**
 
-A. The timeout for webhooks is 5 seconds with a retry limit of 2 attempts. If the endpoint fails to respond within 5 seconds, CleverTap retries the request. If the retry also fails, the campaign stats page records the error as "Webhook Dispatch Failed." For more information, refer to [Platform Considerations](https://docs.clevertap.com/docs/platform-considerations).
+The timeout for webhooks is 5 seconds with a retry limit of 2 attempts. If the endpoint fails to respond within 5 seconds, CleverTap retries the request. If the retry also fails, the campaign stats page records the error as "Webhook Dispatch Failed." For more information, refer to [Platform Considerations](https://docs.clevertap.com/docs/platform-considerations).
 
 ## Next Steps
 

@@ -3,6 +3,8 @@ title: Create Message
 excerpt: Learn how to create a webhook campaign message in CleverTap.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
@@ -29,8 +31,6 @@ To create a new webhook campaign:
 2. Click **+ Campaign**.
 3. From the messaging channels list, select **Webhook**.
 
-{/* Screenshot: New Webhook Campaign page */}
-
 Enter a _Name_ for the campaign. Optionally, assign one or more _Labels_ to organize the campaign.
 
 ## Start Campaign Setup
@@ -47,13 +47,11 @@ This section contains the following:
 
 - _Past behavior/Custom list_: Targets users based on historical events or a manually uploaded list.
 - _Live Behavior_: Targets users in real time as they perform events.
-- _External Trigger_: Triggers the campaign through an external API call. (@jithendra this will be there right?)
+- _External Trigger_: Triggers the campaign through an external API call.&#x20;
 
 **Webhook**: Select the webhook to use for this campaign. The webhook you select here also determines which templates are available to build the message.
 
 **Set a goal (optional)**: Track campaign conversions by defining a goal event and a conversion time window. The _Conversion Time_ field accepts numeric values with units, such as minutes, hours, days, weeks, or months, ranging from 1 minute to 5 months. For example, if you set a conversion window of 5 minutes, CleverTap counts any occurrence of the goal event within 5 minutes of message delivery as a conversion. Your campaign goal can be as broad or as specific as needed. For example, you can track how many users purchased a product at a specific price point after receiving the notification.
-
-{/* Screenshot: Setup section showing Qualification criteria, Webhook, and Goal */}
 
 ## Define the Audience
 
@@ -143,8 +141,6 @@ _Webhook URL_ displays the destination endpoint from the webhook configuration. 
   <Tab title="Template Library">
     The Template Library displays all Webhook Templates built against the webhook selected in _Setup_. For steps on creating Webhook Templates, refer to [Webhook Templates](doc:webhook-templates). Browse or search for a template by name, then select it.
 
-    {/* Screenshot: Template Library showing templates filtered to the selected webhook */}
-
     The editor loads with the selected template name displayed at the top left. To switch to a different template at any point before clicking **Done**, click **Change**.
 
     #### Message Payload
@@ -202,8 +198,6 @@ _Webhook URL_ displays the destination endpoint from the webhook configuration. 
         | Event Properties                      | Properties from the qualifying event. Not available for Batch or External Trigger delivery types. |
 
         Click **+ Key-Value Pair** under _Custom key-value pairs_ to append additional parameters to the payload.
-
-        {/* Screenshot: Webhook Content Editor with JSON format and Profile variables selected */}
       </Tab>
 
       <Tab title="Plain Text">
@@ -223,25 +217,16 @@ _URL key-value pairs_ lets you append additional query parameters to the destina
 
 1. Click **Preview & Test** in the top bar.
 2. In the _Preview and test template notification_ modal, select a profile from the _Select from test profiles_ dropdown, or search for a profile by email address, CleverTap ID, or identity in the _Search from all profiles_ field.
-3. Click **Send Test**.
-
-CleverTap sends the notification to the selected profile. The result appears as a notification in the editor.
-
-{/* Screenshot: Preview and test template notification modal */}
-
+3. Click **Send Test**. CleverTap sends the notification to the selected profile. The result appears as a notification in the editor.
 4. Click **Done** to return to the campaign builder.
 
 The _What_ section displays a summary of the configured message, including the webhook name, URL key-value pairs, and the template used. A full preview of the resolved JSON payload that CleverTap will send to the destination endpoint is shown on the right side of the summary panel.
-
-{/* Screenshot: What section summary showing Webhook URL and Content with JSON payload preview on the right */}
 
 ## Define the Campaign Schedule
 
 Each webhook campaign must be scheduled for a specific timeline.
 
 In the _When_ section, specify the _Start date and time_ and _End date and time_ for the campaign. You can also start a campaign immediately by selecting **Now**. You can additionally define a delay in seconds, minutes, hours, or days after a user qualifies for the target segment before the notification is sent.
-
-{/* Screenshot: Define the Campaign Schedule */}
 
 ## Delivery Preferences
 
@@ -257,13 +242,9 @@ For Past Behavior campaigns, check the _Timezone_ checkbox to adjust delivery ti
   Webhooks currently support the Do Not Disturb (DND) feature exclusively in campaigns, not in journeys.
 </Callout>
 
-{/* Screenshot: Delivery Preferences */}
-
 ## Publish Campaign
 
 After reviewing your campaign settings and previewing the overall campaign configuration, click **Publish Campaign** to make the campaign live.
-
-{/* Screenshot: Publish Campaign */}
 
 ## Next Steps
 

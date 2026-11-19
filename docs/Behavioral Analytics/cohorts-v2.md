@@ -6,6 +6,8 @@ excerpt: >-
 deprecated: false
 hidden: false
 metadata:
+  keywords:
+    - cohorts-v2
   robots: index
 ---
 # Overview
@@ -129,6 +131,7 @@ Splitting helps you understand how retention varies within a segment based on at
 * Geography (for example, country or city)
 * Device or OS
 * Campaign or source
+* Age (user property)
 
 
 <Image src="https://files.readme.io/8c4fcb235539726ee842b47fa8a8c0ac475495e6c2a81065f45f480d24aace34-image.png" align="center" width="55% " caption="Split By Properties" border={true} />
@@ -160,6 +163,27 @@ These age groups are fixed. After you split a cohort analysis by Age, you can cr
 
   Users who do not have a valid Date of Birth are grouped under _Unknown_.
 </Callout>
+
+#### Query Nested Properties
+
+If your events carry [Nested Objects](doc:nested-objects) in their [event properties](doc:nested-objects-in-custom-event-properties), the query builder lets you drill down into them. In Cohorts, you can use a nested property to filter the start and return events.
+
+To select a nested property in a Cohort's event filter:
+
+1. Go to _Analytics_ > _Cohorts_ and select an event to analyze and view a trend. For example, `Order Placed`.
+2. Click the option for the action you want, such as **+ Filter**, and then select **Event Property**.
+3. Select the parent property, such as `Order`. A dropdown for the next level appears.
+4. Keep selecting a property at each level until you reach the one you want, such as `Order ↳` `Shipping ↳` `Address ↳` `City`.
+5. (Optional) To change a level, click its pill and select a different property. After the pills are removed, you can select the remaining levels again.
+6. Click **View Analysis**.
+
+<Image src="https://files.readme.io/760c5d2100aaeb259d8454db0cd78eb46edf19c4940fa148bcd0bdb3877e43f1-image.png" alt="Using Nested Properties in a Query" align="center" caption="Using Nested Properties in a Query" border={true} />
+
+Each level you select appears as its own pill, and a `↳` marks a level that has more properties inside it. Arrays are shown with square brackets, such as `Items[]`. For example, the `Order Placed` event can carry the following nested properties:
+
+* `Order ↳` `Shipping ↳` `Address ↳` `City`
+* `Items[] ↳` `Attributes ↳` `Size`
+* `Items[] ↳` `Price`&#x20;
 
 ## Select Analysis Type
 

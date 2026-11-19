@@ -8,7 +8,7 @@ hidden: false
 metadata:
   title: ''
   description: ''
-  robots: index
+  robots: noindex
 next:
   description: ''
 ---
@@ -95,6 +95,30 @@ Here, the analysis shows that some products have higher overall conversion rates
 
 <Image src="https://files.readme.io/e14c46f7642db9bd7d37f3af5d4d2cbe8cfd24863870de4ac8b6ec50e1d5a89c-image.png" alt="Split Funnel by Event Property" align="center" caption="Split Funnel by Event Property" border={true} />
 
+
+#### Query Nested Properties
+
+If your events carry [Nested Objects](doc:nested-objects) in their [event properties](doc:nested-objects-in-custom-event-properties), the query builder lets you drill down into them. In Funnels, you can use a nested property in the following places in your query:
+
+* Filter
+* Split by (one property at a time, and the step must contain exactly one event)
+
+To select a nested property in a Funnel's event filter:
+
+1. Go to _Analytics_ > _Funnels_ and select an event to analyze and view a trend. For example, `Order Placed`.
+2. Click the option for the action you want, such as **+ Filter**, and then select **Event Property**.
+3. Select the parent property, such as `Order`. A dropdown for the next level appears.
+4. Keep selecting a property at each level until you reach the one you want, such as `Order ↳` `Shipping ↳` `Address ↳` `City`.
+5. (Optional) To change a level, click its pill and select a different property. After the pills are removed, you can select the remaining levels again.
+6. Click **View Analysis**.
+
+<Image src="https://files.readme.io/be05b306b2b85446823157504be9f0b6512e6fc34636dc654f6eda15e27253d2-image.png" alt="Using Nested Properties in a Query" align="center" caption="Using Nested Properties in a Query" border={true} />
+
+Each level you select appears as its own pill, and a `↳` marks a level that has more properties inside it. Arrays are shown with square brackets, such as `Items[]`. For example, the `Order Placed` event can carry the following nested properties:
+
+* `Order ↳` `Shipping ↳` `Address ↳` `City`
+* `Items[] ↳` `Attributes ↳` `Size`
+* `Items[] ↳` `Price`
 
 ### Split by User Property
 

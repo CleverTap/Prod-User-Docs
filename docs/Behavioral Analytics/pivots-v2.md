@@ -41,7 +41,9 @@ Start by selecting the event you want to analyze. The selected event serves as t
 
 For example, you can analyze events such as `App Launched`, `UTM Visited`, `Product Viewed`, `Video Watched`, or `Charged`. Choose an event that represents the user action you want to measure. For value-based analysis (for example, revenue or watch time), select an event that includes a numeric property you can aggregate.
 
-<Image align="center" border={true} caption="Select an Event" src="https://files.readme.io/b3cddc152ed699635284236f480f6ab6cfc94a7632f97bd04720cf16fa72aad4-image.png" />
+
+<Image src="https://files.readme.io/b3cddc152ed699635284236f480f6ab6cfc94a7632f97bd04720cf16fa72aad4-image.png" align="center" caption="Select an Event" border={true} />
+
 
 The selected event determines:
 
@@ -53,7 +55,9 @@ The selected event determines:
 
 After you select an event, choose who you want to analyze it for. By default, Pivots analyzes the event for All Users, but you can restrict the analysis to a specific segment. You can also create a new segment directly from the Query Builder.
 
-<Image align="center" border={true} caption="Select a Segment" src="https://files.readme.io/c3c3caf4dbbb5d3680c62c71aec1cf2f1b4fc0f67ec54f4b1958bd21e025de2b-image.png" />
+
+<Image src="https://files.readme.io/c3c3caf4dbbb5d3680c62c71aec1cf2f1b4fc0f67ec54f4b1958bd21e025de2b-image.png" align="center" caption="Select a Segment" border={true} />
+
 
 Segmenting is useful because user behavior often varies significantly across segments. For example, you can:
 
@@ -71,7 +75,9 @@ Segmenting is useful because user behavior often varies significantly across seg
 
 Properties define how you break down the selected event and compare results across dimensions. In Pivots, you can mix and match properties to explore different analytical angles. Selected properties can be used as rows, columns, or axes (depending on the visualization).
 
-<Image align="center" border={true} caption="Select Properties" src="https://files.readme.io/cc2b583f401c8525c7d35cb0d634f9070dea2f4d967e79402ada93494d778ff9-image.png" />
+
+<Image src="https://files.readme.io/cc2b583f401c8525c7d35cb0d634f9070dea2f4d967e79402ada93494d778ff9-image.png" align="center" caption="Select Properties" border={true} />
+
 
 You can pivot on:
 
@@ -87,11 +93,38 @@ You can pivot on:
   In a pivot analysis, you can select a maximum of seven properties at once. Using too many properties at once can make results harder to interpret, especially for properties with highly unique values (for example, user IDs or URLs). Therefore, we recommend that you start with one or two properties and expand gradually.
 </Callout>
 
+### Query Nested Properties
+
+If your events carry [Nested Objects](doc:nested-objects) in their [event properties](doc:nested-objects-in-custom-event-properties), the query builder lets you drill down into them. In Pivots, you can use a nested property in the following places in your query:
+
+* Filter
+* Properties (count toward the limit of seven properties)
+* Metric
+
+To select a nested property in a Pivot's event filter:
+
+1. Go to _Analytics_ > _Pivots_ and select an event to analyze and view a trend. For example, `Order Placed`.
+2. Click the option for the action you want, such as **+ Filter**, and then select **Event Property**.
+3. Select the parent property, such as `Order`. A dropdown for the next level appears.
+4. Keep selecting a property at each level until you reach the one you want, such as `Order ↳` `Shipping ↳` `Address ↳` `City`.
+5. (Optional) To change a level, click its pill and select a different property. After the pills are removed, you can select the remaining levels again.
+6. Click **View Analysis**.
+
+<Image src="https://files.readme.io/b8c496d95ec4acf8e1391b27f794d9f5912e1834c5fae2097f73c0ba10899876-image.png" alt="Using Nested Properties in a Query" align="center" caption="Using Nested Properties in a Query" border={true} />
+
+Each level you select appears as its own pill, and a `↳` marks a level that has more properties inside it. Arrays are shown with square brackets, such as `Items[]`. For example, the `Order Placed` event can carry the following nested properties:
+
+* `Order ↳` `Shipping ↳` `Address ↳` `City`
+* `Items[] ↳` `Attributes ↳` `Size`
+* `Items[] ↳` `Price`
+
 ## Select Metric
 
 The Metric setting defines what you want to measure for the selected event. It controls whether Pivots reports results as event frequency, property values, or aggregated totals.)
 
-<Image align="center" border={true} caption="Select a Metric" src="https://files.readme.io/39c790815dbde2684adf511253cca8e897f81af7c5b40c3ed35d2fb31fe098cc-image.png" />
+
+<Image src="https://files.readme.io/39c790815dbde2684adf511253cca8e897f81af7c5b40c3ed35d2fb31fe098cc-image.png" align="center" caption="Select a Metric" border={true} />
+
 
 Pivots 2.0 supports the following metric types:
 
@@ -125,7 +158,9 @@ If no event property is selected and the metric is set to Event Count, the follo
 
 These options are useful when your analysis focuses on frequency and distribution rather than numeric values.
 
-<Image align="center" border={true} caption="When Event Count is Selected" src="https://files.readme.io/5f80ff38e8f5f6d26635118b9f5daf0a1538083937139c6f4b53ab96034836c2-image.png" />
+
+<Image src="https://files.readme.io/5f80ff38e8f5f6d26635118b9f5daf0a1538083937139c6f4b53ab96034836c2-image.png" align="center" caption="When Event Count is Selected" border={true} />
+
 
 #### When an Event Property is Selected
 
@@ -140,7 +175,9 @@ For example, if the selected event property is _Duration_, the following options
 
 These additional options allow you to move beyond event frequency and analyze value-based performance, such as revenue contribution, average duration, or property-level impact.
 
-<Image align="center" border={true} caption="When Event Property is Selected" src="https://files.readme.io/e333fd745e2679f0e82e23c9441c4495985b23007872b662516c60151945ecb4-image.png" />
+
+<Image src="https://files.readme.io/e333fd745e2679f0e82e23c9441c4495985b23007872b662516c60151945ecb4-image.png" align="center" caption="When Event Property is Selected" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Dynamic Metric Options
@@ -171,7 +208,9 @@ To do this, the team builds the following pivot query:
 * **Columns:** Title (Video name)
 * **Metric:** Duration (Event Property)
 
-<Image align="center" border={true} caption="Pivot Query" src="https://files.readme.io/b619008fe450e12c37eff89d0a9da80c8d12863db69d81d523c071f4860b585b-image.png" width="50% " />
+
+<Image src="https://files.readme.io/b619008fe450e12c37eff89d0a9da80c8d12863db69d81d523c071f4860b585b-image.png" align="center" width="50% " caption="Pivot Query" border={true} />
+
 
 Using the `Duration` event property measures performance by total consumption time, not just the number of views. This is useful when some videos have fewer views but generate more watch time due to longer duration or stronger retention.
 
@@ -200,7 +239,9 @@ Depending on the view you choose, these properties can be applied as Rows and Co
 * **Rows**: Represent the primary dimension used to group results in the table view. For example, a row can represent the video Title in your analysis table.
 * **Columns**: Represent the secondary dimension used to group results in the table view. For example, a column can represent Day of the Week in your analysis table.
 
-<Image align="center" border={true} caption="Arranging Rows and Columns" src="https://files.readme.io/08676d8e03979c5db30f85ee04c70cff275024bd605321a6d1380b81229e6049-image.png" />
+
+<Image src="https://files.readme.io/08676d8e03979c5db30f85ee04c70cff275024bd605321a6d1380b81229e6049-image.png" align="center" caption="Arranging Rows and Columns" border={true} />
+
 
 Using rows and columns together creates a matrix that makes it easy to compare values across multiple dimensions.
 
@@ -225,7 +266,9 @@ Tables are best for getting a quick, precise overview of the selected breakdown.
 
 For example, if the rows are _Day of the Week_ and the columns are _Title_, this view helps you quickly identify which video contributes the most watch time and which day it peaks.
 
-<Image align="center" border={true} caption="Table View" src="https://files.readme.io/61e3e6f03da0ea9a3c59c556c51cd27e6873ddc2abb5a66de6ba367c6564b3d1-image.png" />
+
+<Image src="https://files.readme.io/61e3e6f03da0ea9a3c59c556c51cd27e6873ddc2abb5a66de6ba367c6564b3d1-image.png" align="center" caption="Table View" border={true} />
+
 
 ### Heatmaps
 
@@ -233,7 +276,9 @@ Heatmaps use color intensity to represent magnitude, making it easy to identify 
 
 For example, if rows represent _Day of the Week_ and columns represent _Title_, the heatmap helps you quickly identify which videos and days contribute the most watch time.
 
-<Image align="center" border={true} caption="Row Heatmap View" src="https://files.readme.io/5e88518dc17a179a242102a0068e22779a157683e063b090a8ff79f83a93682e-image.png" />
+
+<Image src="https://files.readme.io/5e88518dc17a179a242102a0068e22779a157683e063b090a8ff79f83a93682e-image.png" align="center" caption="Row Heatmap View" border={true} />
+
 
 ### Row Heatmap
 
@@ -247,7 +292,9 @@ Use this view when you want to:
 
 For example, if each row represents a _Day of the Week_ and columns represent _Title_, this view helps you identify which videos perform best on each day. This is useful for spotting day-specific engagement patterns, such as certain videos peaking on weekends.
 
-<Image align="center" border={true} caption="Row Heatmap View" src="https://files.readme.io/ea1cb25a8b52f3c1bf178996a119110ef7d834229dc6b38170af70a323a5e497-image.png" />
+
+<Image src="https://files.readme.io/ea1cb25a8b52f3c1bf178996a119110ef7d834229dc6b38170af70a323a5e497-image.png" align="center" caption="Row Heatmap View" border={true} />
+
 
 ### Column Heatmap
 
@@ -264,7 +311,9 @@ For example, if each rows represent _Day of the Week_, and column represents a _
 * The best-performing day for each video
 * Days where a specific video significantly outperforms or underperforms its usual behavior
 
-<Image align="center" border={true} caption="Column Heatmap View" src="https://files.readme.io/3734b7e3b73e69abfbd1ba70d622d54e3bfc2ac0ba7a40f58b355f8c7d413c98-image.png" />
+
+<Image src="https://files.readme.io/3734b7e3b73e69abfbd1ba70d622d54e3bfc2ac0ba7a40f58b355f8c7d413c98-image.png" align="center" caption="Column Heatmap View" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Zero Event Occurrences in Heatmap Views
@@ -284,7 +333,9 @@ Use this view when you want to:
 
 For example, you can compare watch time for a specific video across different days of the week to quickly see which days perform better or worse.
 
-<Image align="center" border={true} caption="Bar Chart View" src="https://files.readme.io/397ef8bd21836ac91c452c1e64302bd322a6538b705139a666159613db0b4963-image.png" />
+
+<Image src="https://files.readme.io/397ef8bd21836ac91c452c1e64302bd322a6538b705139a666159613db0b4963-image.png" align="center" caption="Bar Chart View" border={true} />
+
 
 ### Stacked Bar Chart
 
@@ -298,7 +349,9 @@ Use this view when you want to:
 
 For example, if the x-axis represents _Day of Week_ and each stacked segment represents a _Title_, this view shows how different videos contribute to total watch time on each day. This helps you identify which titles dominate consumption on specific days, which remain consistent across the week, and where spikes or drop-offs occur.
 
-<Image align="center" border={true} caption="Stacked Bar Chart View" src="https://files.readme.io/9fd68ad09905e77103a287e300fd0d04e9128a2c94266b4ba079624429a097b4-image.png" />
+
+<Image src="https://files.readme.io/9fd68ad09905e77103a287e300fd0d04e9128a2c94266b4ba079624429a097b4-image.png" align="center" caption="Stacked Bar Chart View" border={true} />
+
 
 ### Line Chart
 
@@ -312,7 +365,9 @@ Use this view when you want to:
 
 For example, you can identify videos that follow similar engagement trends across the week, which may indicate comparable audience interest or content affinity.
 
-<Image align="center" border={true} caption="Line Chart View" src="https://files.readme.io/bbc62357a79d5e1be9fd5be269d018816eccd9feb9608a672272239dc3b4c2e8-image.png" />
+
+<Image src="https://files.readme.io/bbc62357a79d5e1be9fd5be269d018816eccd9feb9608a672272239dc3b4c2e8-image.png" align="center" caption="Line Chart View" border={true} />
+
 
 ### Area Chart
 
@@ -326,7 +381,9 @@ Use this view when you want to:
 
 For example, you can track how a single video contributes to total watch time across the week compared to all other videos combined.
 
-<Image align="center" border={true} caption="Area Chart View" src="https://files.readme.io/e55a4167664485b1d8c5423e1d5d1cc64df8be6abac5a6cad3a50945f4a36530-image.png" />
+
+<Image src="https://files.readme.io/e55a4167664485b1d8c5423e1d5d1cc64df8be6abac5a6cad3a50945f4a36530-image.png" align="center" caption="Area Chart View" border={true} />
+
 
 # Bookmark a Pivot Analysis
 
@@ -340,10 +397,16 @@ To bookmark a Pivot analysis:
 2. Enter a descriptive name to help you easily identify the analysis later.
 3. Click **Bookmark**.
 
-<Image align="center" border={true} src="https://files.readme.io/f2e2c814ca8f6c6f7fd89089fc35238d80667d923bda5b8e3716c103f9959f66-2026-01-27_16-12-26_1.gif" className="border" />
+
+<Image src="https://files.readme.io/f2e2c814ca8f6c6f7fd89089fc35238d80667d923bda5b8e3716c103f9959f66-2026-01-27_16-12-26_1.gif" align="center" border={true} />
+
 
 <Callout icon="📘" theme="info">
   #### Bookmarking a Pivot Analysis
 
   You can add up to 50 bookmarks. Pivot analyses are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Pivots_ section.
 </Callout>
+
+<br />
+
+<br />

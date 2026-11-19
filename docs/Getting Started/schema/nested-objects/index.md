@@ -1,29 +1,30 @@
 ---
 title: Nested Objects
 excerpt: >-
-  Learn how to view and use Nested Objects in CleverTap to model complex user
-  and custom event properties to build precise segments.
+  Learn how nested objects organize structured data within CleverTap user
+  properties and custom event properties by grouping related attributes inside a
+  single object.
 deprecated: false
 hidden: false
 metadata:
-  title: ''
-  description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
-Nested Objects allow you to group related information in a clean, structured way instead of spreading it across many separate properties. This keeps your data organized, easier to manage, and simpler to understand.
+Nested Objects allow you to group related information together in a clean, structured way, instead of spreading it across many separate properties. This keeps your data organized, easier to manage, and simpler to understand.
 
 With Nested Objects, you can send rich, structured [user](doc:nested-objects-in-user-properties) and [event](doc:nested-objects-in-custom-event-properties) properties to CleverTap in JSON format. Instead of creating multiple flat properties for related information, you bundle them into a single logical structure.
 
 This approach helps you do the following:
 
-- Reduce the number of separate properties in your account.
-- Keep related data in one place to make it easier to maintain.
-- Build more scalable segmentation, especially when tracking repeating entities such as subscriptions, policies, cart items, or user preferences.
-- Enable more precise targeting and personalization based on structured data.
+- Reduce the number of separate properties in your account
+- Keep related data in one place, making it easier to maintain
+- Build more scalable segmentation, especially when tracking repeating entities such as subscriptions, policies, cart items, or user preferences
+- Enable more precise targeting and personalization based on structured data
+
+# Nested Objects in Analytics
+
+After ingestion, you can filter and split by nested event properties in [Trends](doc:trends-v2#query-nested-properties), [Funnels](doc:funnels-v2#query-nested-properties), [Flows](doc:flows-v2#query-nested-properties), [Pivots](doc:pivots-v2#query-nested-properties), and [Cohorts](doc:cohorts-v2#query-nested-properties) using the nested property picker.
 
 # Advantages
 
@@ -77,12 +78,12 @@ The following example shows nesting depth for a user property:
 
 The table below describes the nesting depth for each key in the example above:
 
-| Level | Key                                                          |
-| ----- | ------------------------------------------------------------ |
-| 0     | `InsuranceDetails`  (Root)                                   |
-| 1     | `Policy`                                                     |
-| 2     | `Beneficiary`                                                |
-| 3     | `Name` inside `Beneficiary`  (Terminal; cannot nest further) |
+| Level | Key                         | Notes                         |
+| ----- | --------------------------- | ----------------------------- |
+| 0     | `InsuranceDetails`          | Root                          |
+| 1     | `Policy`                    |                               |
+| 2     | `Beneficiary`               |                               |
+| 3     | `Name` inside `Beneficiary` | Terminal; cannot nest further |
 
 <br />**Event Properties**
 
@@ -90,15 +91,15 @@ The following example shows nesting depth for an event property:
 
 ```json
 {
-  "Courses_In_Cart": [
+  "courses_in_cart": [
     {
-      "Id": 10,
-      "Courses": [
+      "id": 10,
+      "courses": [
         {
-          "Name": "B.Tech CSE",
-          "Sub_Courses": [
+          "name": "B.Tech CSE",
+          "sub_courses": [
             {
-              "Name": "Data Structures"
+              "name": "Data Structures"
             }
           ]
         }
@@ -110,16 +111,18 @@ The following example shows nesting depth for an event property:
 
 The table below describes the nesting depth for each key in the example above:
 
-| Level | Key                                                        |
-| ----- | ---------------------------------------------------------- |
-| 0     | `Courses_In_Cart`(Root)<br />                              |
-| 1     | `Courses`                                                  |
-| 2     | `Name`, `Sub_Courses`                                      |
-| 3     | `Name` inside `Sub_Courses`(Terminal; cannot nest further) |
+| Level | Key                         | Notes                         |
+| ----- | --------------------------- | ----------------------------- |
+| 0     | `courses_in_cart`           | Root                          |
+| 1     | `courses`                   |                               |
+| 2     | `name`, `sub_courses`       |                               |
+| 3     | `name` inside `sub_courses` | Terminal; cannot nest further |
 
-> 📘 Note
->
-> At each level (1, 2, and 3), a maximum of 5 keys can be objects or arrays. The remaining keys must be primitive values such as strings, numbers, or booleans.&#x20;
+<Callout icon="📘" theme="info">
+  ### Note
+
+  At each level (1, 2, and 3), a maximum of 5 keys can be objects or arrays. The remaining keys must be primitive values such as strings, numbers, or booleans.&#x20;
+</Callout>
 
 # Best Practices
 
@@ -134,10 +137,10 @@ Follow these practices to maintain data quality:
 
 ## References
 
-- To learn how to use nested objects within user properties, refer to [Nested Objects in User Properties](doc:nested-objects-in-user-properties).
-- To understand how to implement nested objects in custom event properties, refer to [Nested Objects in Custom Event Properties](doc:nested-objects-in-custom-event-properties).
-- To view SDK-specific implementation details and platform limits for nested objects, refer to [Ingesting Nested Objects using CleverTap SDKs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-sdks).
-- To learn how to send nested objects using the CleverTap API, refer to [Ingesting Nested Objects using CleverTap APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
+- To learn how to use nested objects within user properties, refer to [Nested Objects for User Properties]().
+- To understand how to implement nested objects in custom event properties, refer to [Nested Objects for Custom Event Properties]().
+- To view SDK-specific implementation details and platform limits for nested objects, refer to [Ingesting Nested Objects using SDK](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-sdks).
+- To learn how to send nested objects using the CleverTap API, refer to [Ingesting Nested Objects using API](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 
 # FAQs
 
@@ -151,7 +154,7 @@ Yes, you can query up to three levels in supported segmentation workflows.
 
 ### What happens if I exceed the payload size or nesting limits?
 
-CleverTap drops extra elements or returns an error if a payload exceeds the size limit or the maximum nesting limit.
+CleverTap drops extra elements or returns an error if a payload exceeds size or maximum nesting limits.(@meenakshi, can we mention the error number here?)
 
 ### Are Nested Objects included in exports?
 
@@ -160,7 +163,3 @@ No. Nested Objects are not included in API-based exports.
 ### Does this feature affect performance?
 
 Queries on Nested Objects may take longer when segmentation conditions include multiple nested filters or when nested arrays contain many elements. To maintain performance, avoid using large arrays in frequently queried fields and limit segmentation rules to essential nested attributes.
-
-#
-
-<br />

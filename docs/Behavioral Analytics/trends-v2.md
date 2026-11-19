@@ -2,15 +2,13 @@
 title: Trends 2.0
 excerpt: >-
   Learn to use the new and improved visualization of your data using Trends to
-  gain deeper insights and make informed decisions.
+  gain deeper insights and make more informed decisions.
 deprecated: false
 hidden: false
 metadata:
-  title: Trends Vnext
+  title: ''
   description: ''
-  keywords:
-    - New Trends
-  robots: index
+  robots: noindex
 next:
   description: ''
 ---
@@ -355,10 +353,36 @@ All the split event properties are listed at the bottom of the right pane. You c
 * Sort the event properties from highest to lowest values, or vice versa, by clicking the arrows.
 
 <Callout icon="📘" theme="info">
-  ### Maximum Split
+  #### Maximum Split
 
   You can split an event by up to two event properties at a time.
 </Callout>
+
+## Query Nested Properties
+
+If your events carry [Nested Objects](doc:nested-objects) in their [event properties](doc:nested-objects-in-custom-event-properties), the query builder lets you drill down into them. In Trends, you can use a nested property in the following places in your query:
+
+* Filter
+* Split by (up to two properties at a time, including nested ones)
+* Summarize by
+* Save as Segment
+
+To select a nested property in a Trend's event filter:
+
+1. Go to _Analytics_ > _Trends_ and select an event to analyze and view a trend. For example, `Order Placed`.
+2. Click the option for the action you want, such as **+ Filter**, and then select **Event Property**.
+3. Select the parent property, such as `Order`. A dropdown for the next level appears.
+4. Keep selecting a property at each level until you reach the one you want, such as `Order ↳` `Shipping ↳` `Address ↳` `City`.
+5. (Optional) To change a level, click its pill and select a different property. After the pills are removed, you can select the remaining levels again.
+6. Click **View Analysis**.
+
+<Image src="https://files.readme.io/b4eba7fa927c7ba47645cc21fab7975e9810fb8a7c54c03a74f09ca98082ae75-image.png" alt="Using Nested Properties in a Query" align="center" caption="Using Nested Properties in a Query" border={true} />
+
+Each level you select appears as its own pill, and a `↳` marks a level that has more properties inside it. Arrays are shown with square brackets, such as `Items[]`. For example, the `Order Placed` event can carry the following nested properties:
+
+* `Order ↳`  `Shipping ↳`  `Address ↳`  `City`&#x20;
+* `Items[] ↳` `Attributes ↳`  `Size`&#x20;
+* `Items[] ↳`  `Price`
 
 # Compare Trends for Segments
 
@@ -405,7 +429,7 @@ For information about creating segments, refer to [Segmentation](https://docs.cl
 
 ## Split by User Property
 
-You can analyze a trend based on the specific user properties. For example, consider the event `Charged`, which indicates that the user has started watching content. Here, you can split this trend based on the underlying user property, such as `Customer_Type`.
+You can analyze a trend based on the specific user properties. For example, consider the event `Charged`, which indicates that the user has made a purchase. Here, you can split this trend based on the underlying user property, such as `Customer_Type`.
 
 This splits your single `Charged` trend line into multiple trend lines, each referencing the user property value. For example, the user property `Customer_Type` is split by user property values such as _Platinum_, _Silver_, and so on.
 
@@ -419,14 +443,14 @@ To split a trend by user property:
 <Image src="https://files.readme.io/1729dee2d0d09682ba1fcef09cfdad337364111ec2c738a9271690c1cb046d75-image.png" alt="Split Segment by User Property" align="center" caption="Split Segment by User Property" border={true} />
 
 
-The trend for each user property displays.  All the split user properties are listed at the bottom. You can do the following:
+The trend for each user property displays. All the split user properties are listed at the bottom. You can do the following:
 
 * Search through the listed user properties using the search box.
 * Select or clear the user properties from the trend by selecting the specific checkbox.
 * Sort the user properties from highest to lowest value and vice versa using the arrows.
 
 <Callout icon="📘" theme="info">
-  ### Maximum Split
+  #### Maximum Split
 
   You can split by a maximum of two user properties. Split by properties is not available when comparing two or more segments.
 </Callout>
@@ -451,7 +475,7 @@ Users are then grouped into the following fixed age groups:
 These age groups are fixed. After you split a trend by Age, you can create a segment from any data point in the trend. For more information, refer to [Save as Segment](doc:trends-v2#save-as-segment).
 
 <Callout icon="far fa-circle-info" theme="info">
-  #### Note
+  #### Age Property Availability
 
   Age is available only when a Date of Birth (DOB) property is set for your users. The dashboard shows this property as _Birthday_. Users who do not have a valid Date of Birth are grouped under _Unknown_.
 
@@ -672,7 +696,7 @@ Use exports when you want to:
 When you split a trend by an event property or a user property, you can download the complete split data as a CSV file. The export contains up to 10,000 rows, not only the values currently displayed on the chart. For example, you can export every `CustomerID` value for the `Charged` event for offline analysis.
 
 
-<Image src="https://files.readme.io/26be10959fa0c8411e5e591af87560113c25ce66c7a9219175c9b2ef68313529-image.png" alt="View Split Property Trend Data in Others Row" align="center" caption="View Split Property Trend Data in Others Row" border={true} />
+<Image src="https://files.readme.io/26be10959fa0c8411e5e591af87560113c25ce66c7a9219175c9b2ef68313529-image.png" alt="View Split Property Trend Data in Other Row" align="center" caption="View Split Property Trend Data in Other Row" border={true} />
 
 
 <Callout icon="📘" theme="info">

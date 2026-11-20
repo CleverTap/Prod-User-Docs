@@ -215,7 +215,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
     <li>Authenticate through a bucket policy that you apply, without creating an IAM user or access key.</li>
     <li>Encrypt every exported file with an AWS KMS key that you own.</li>
     </ul></p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/iam-policy-with-sse-kms-encryption" target="_blank">Authenticate with IAM Policy Using SSE-KMS Encryption</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/authenticate-with-iam-policy-using-sse-kms-encryption" target="_blank">Authenticate with IAM Policy Using SSE-KMS Encryption</a>.</p>
   </div>
   <hr/>
 </div>
@@ -716,7 +716,7 @@ View previous updates in [What's New: 2025](https://docs.clevertap.com/docs/rele
 <li>Run one-time exports for up to the last 365 days, or schedule recurring exports every 4, 8, 12, or 24 hours with optional historical backfill. </li>
       </ul><p><img src="https://files.readme.io/642b9884fa1d56e89395d2bd96665f1092b58d6b9500be045f8d2fa990725d9b-event_export_2.png" alt="Event Export Enahncements."> </p>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/event-exports" target="_blank">Event Exports</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/event-export" target="_blank">Event Exports</a>.</p>
 </div>
   <hr/>
 </div>

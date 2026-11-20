@@ -226,4 +226,4 @@ You can do the following:
 
 Both Journey Qualified and Journey Exited are available in Partner Exports. You can export them to S3, GCP, or other configured destinations to use in BI tools, data warehouses, or CRMs.
 
-For more information on creating an export, refer to [Profile and Events Export](https://docs.clevertap.com/docs/profile-and-events-legacy).
+For more information on creating an export, refer to [Profile and Events Export](https://docs.clevertap.com/docs/event-and-profile-exports).

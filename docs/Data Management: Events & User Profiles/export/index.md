@@ -1,5 +1,5 @@
 ---
-title: Data Warehouse
+title: Exports
 excerpt: ''
 deprecated: false
 hidden: false
@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-The Data Warehouse Exports section introduces the workflow that delivers CleverTap data directly to your connected warehouse. This page provides an overview of the available warehouse destinations so you can automate the movement of events and profile information into your analytics environment.
+The Exports section provides an overview of all available methods to retrieve data from CleverTap. This page introduces the supported export mechanisms so you can choose the correct approach for accessing events, user profiles, message reports, and partner destinations used in your analytics or data ecosystem.
 
 <HTMLBlock>{`
 <style>
@@ -58,11 +58,17 @@ The Data Warehouse Exports section introduces the workflow that delivers CleverT
 </style>
 
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
-    <div class="name">BigQuery</div>
+  <a href="https://staging.docs.user.clevertap.net/docs/exports-via-api" class="integration-card">
+    <div class="name">API</div>
   </a>
-	<a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">
-    <div class="name">Snowflake</div>
+  <a href="https://staging.docs.user.clevertap.net/docs/cloud-storage" class="integration-card">
+    <div class="name">Cloud Storage</div>
+  </a>
+<a href="https://staging.docs.user.clevertap.net/docs/snowflake-export" class="integration-card">
+    <div class="name">Data Warehouse</div>
+  </a>
+<a href="https://staging.docs.user.clevertap.net/docs/data-warehouse-imports" class="integration-card">
+    <div class="name">Partners</div>
   </a>
 </div>
 `}</HTMLBlock>

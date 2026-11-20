@@ -25,9 +25,9 @@ The generated policy differs by connection type:
 
 Ensure the following before proceeding further:
 
-- An S3 bucket already created on AWS. For more information, refer to [Create S3 Bucket on AWS.](doc:amazon-s3#create-an-s3-bucket-on-aws)
+- An S3 bucket already created on AWS. For more information, refer to [Create S3 Bucket on AWS.](doc:aws-s3-configuration#create-s3-bucket-on-aws)
 
-- The bucket is added to the CleverTap dashboard with the correct _Folder_ value and _Configure with_ set to **IAM Role**. For more information, refer to [Add Bucket on CleverTap Dashboard](doc:amazon-s3#add-the-bucket-on-the-clevertap-dashboard). The _Folder_ value is inserted into the generated policy.
+- The bucket is added to the CleverTap dashboard with the correct _Folder_ value and _Configure with_ set to **IAM Role**. For more information, refer to [Add Bucket on CleverTap Dashboard](doc:aws-s3-configuration#add-bucket-on-clevertap-dashboard). The _Folder_ value is inserted into the generated policy.
 
 - AWS console access with permission to edit the bucket policy (`s3:PutBucketPolicy`) on the bucket.
 
@@ -39,9 +39,9 @@ The setup involves the following three steps:
 
 1. [Copy IAM Policy from CleverTap Dashboard](doc:authenticate-with-iam-role#copy-iam-policy-from-clevertap-dashboard)
 2. [Apply IAM Policy to S3 Bucket on AWS](doc:authenticate-with-iam-role#apply-iam-policy-to-s3-bucket-on-aws)
-3. [Configure Connection on CleverTap](doc:authenticate-with-iam-role#configure-connection)
+3. [Configure Connection on CleverTap](doc:authenticate-with-iam-role#configure-connection-on-clevertap)
 
-If you already have a bucket policy on the bucket, add the CleverTap statements to it instead of replacing it. For more information, refer to [Apply Bucket Policy to Your S3 Bucket](doc:iam-role#apply-iam-policy-to-s3-bucket-on-aws).
+If you already have a bucket policy on the bucket, add the CleverTap statements to it instead of replacing it. For more information, refer to [Apply Bucket Policy to Your S3 Bucket](doc:authenticate-with-iam-role#apply-iam-policy-to-s3-bucket-on-aws).
 
 ## Copy IAM Policy from CleverTap
 
@@ -54,7 +54,6 @@ To copy the policy, perform the following steps:
 3. Click **Edit** to open the _Edit Amazon S3 Connection_ page.
 4. Under _Configure with_, select _IAM Role_.
 5. Copy the generated IAM policy using the copy icon.&#x20;
-
 
 <Image src="https://files.readme.io/c5c322599a4c8ca50b1af6ce46447d9a022be687ca1bcbc2cb0e9a5f9cfc78fb-IAM_Policy.png" align="center" caption="IAM Policy" border={true} />
 
@@ -85,7 +84,6 @@ Applying the policy to your bucket grants CleverTap access to it. The CleverTap 
 
    <Image src="https://files.readme.io/a8e949397872f4f74e2ba4b814f110191d59518694b7e21bca84e9aee113f7ca-edit_bucket_policy.png" align="center" caption="Paste IAM Policy and Save Changes" border={true} />
 
-
 ## Configure Connection on CleverTap
 
 Return to the CleverTap dashboard to complete the connection.
@@ -93,7 +91,7 @@ Return to the CleverTap dashboard to complete the connection.
 1. Confirm that you saved the bucket policy on AWS, and then return to the Amazon S3 connection page that you left open on the CleverTap dashboard.
 2. Verify and save:
    - For **import**, click **Test Connection**. When the test succeeds, click **Save**.
-   - For **export**, click **Save**. When you click **Save**, CleverTap uploads a test file to the specified bucket and region. The connection is saved only if the upload succeeds. Ensure the bucket policy was saved on AWS before clicking **Save**.
+   - For **export**, click **Save**. When you click **Save**, CleverTap uploads a test file to the specified bucket and region. The connection is saved only if the upload succeeds. Ensure the bucket policy was saved on AWS before clicking **Save**. 
 
 The Amazon S3 bucket is now configured on both the AWS console and the CleverTap dashboard.
 

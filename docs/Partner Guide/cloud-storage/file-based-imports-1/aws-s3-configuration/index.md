@@ -3,7 +3,11 @@ title: Amazon S3
 excerpt: Understand how to connect your S3 bucket into CleverTap
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
+  title: ''
+  description: ''
   robots: index
 ---
 # Overview
@@ -39,21 +43,22 @@ Ensure the following before you begin:
 
 - An active AWS account with permissions to create S3 buckets. Depending on your method, you also need permissions to create IAM policies and users (Access Key) or KMS keys (SSE-KMS).
 - A CleverTap account with the Amazon S3 partner enabled.
-- A globally unique bucket name. Refer to the bucket naming rules in [Create S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws).
+- A globally unique bucket name. Refer to the bucket naming rules in [Create an S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws).
 
 # Set Up Amazon S3 Bucket with CleverTap
 
 The following are the major steps to add an Amazon S3 bucket:
 
-1. [Create S3 Bucket on AWS](doc:aws-s3-configuration#create-s3-bucket-on-aws)​.
-2. [Add Bucket on CleverTap Dashboard](doc:aws-s3-configuration#add-bucket-on-clevertap-dashboard)​.
-3. [Verify Connection](doc:aws-s3-configuration#verify-connection)​.
+1. [Create S3 Bucket on AWS](doc:aws-s3-configuration#set-up-amazon-s3-bucket-with-clevertap)
+2. [Add Bucket on CleverTap Dashboard](doc:aws-s3-configuration#add-bucket-on-clevertap-dashboard)
+3. [Complete Configuration for Method](doc:aws-s3-configuration#complete-configuration)
+4. [Verify Connection](doc:aws-s3-configuration#verify-connection)
 
 ## Create S3 Bucket on AWS
 
 This section covers how to create a general-purpose S3 bucket.&#x20;
 
-If you are using IAM Policy with SSE-KMS Encryption, complete steps 1 to 8, create a KMS key as described in [IAM Policy with SSE-KMS Encryption](doc:doc:authenticate-with-iam-policy-using-sse-kms-encryption), and then complete steps 9 and 10.
+If you are using an **IAM Policy with SSE-KMS** Encryption, complete steps _1 through 8_ below, then create a KMS key on AWS by referring to the [IAM Policy with SSE-KMS Encryption](doc:authenticate-with-iam-policy-using-sse-kms-encryption) document, and then move forward with the remaining steps.
 
 To create an S3 bucket, perform the following steps:
 
@@ -67,20 +72,18 @@ To create an S3 bucket, perform the following steps:
 
 3. Click **Create bucket**.
 
-4. Under _General configuration_, verify that the AWS Region matches the region you will select on the CleverTap dashboard. AWS pre-selects the region based on your current console region. If the regions do not match, the export connection cannot be saved.
+4. Under _General configuration_, the _AWS Region_ is pre-selected based on your current console region. Ensure this matches the region you will select on the CleverTap dashboard.&#x20;
 
 
    <Image src="https://files.readme.io/da8eaa27c10edb81c723875682279f624ce530e54b0f804cabcc0434b698f17f-region_s3.png" align="center" caption="Create Bucket and Select Region" border={true} />
 
 
-5. Under Bucket name, enter a name for the bucket. You must enter the same name in the Folder field on the CleverTap dashboard.
-
+5. Under _Bucket name_, enter the bucket name that you will specify under _Folder_ on the CleverTap dashboard.
    <Callout icon="📘" theme="info">
      #### Note
 
-     Bucket names must be 3 to 63 characters, begin and end with a letter or number, and contain only lowercase letters, numbers, periods (.), and hyphens (-). Bucket names must be unique across all AWS accounts.
+     Bucket names must be 3 to 63 characters, begin and end with a letter or number, and contain only lowercase letters, numbers, periods (.), and hyphens (-). Bucket names must be unique within the global namespace.
    </Callout>
-
 
    <Image src="https://files.readme.io/2d3c20f4a84d5e80927a9e2be9bf8106317576874d772af4c15fba4c2d604d92-Create_bucket.png" align="center" caption="General Configuration - AWS S3" border={true} />
 
@@ -104,14 +107,18 @@ To create an S3 bucket, perform the following steps:
 
 
 9. Under _Default encryption_, select the encryption type that matches your configuration method:
-   - [**Access Key**](doc:authenticate-with-access-key) or [**IAM Role**](doc:authenticate-with-iam-role): Keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
+   - **Access Key** or **IAM Role**: Keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
 
-   - **IAM Policy with SSE-KMS Encryption**: Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN that you copied in [Create KMS Key on AWS](doc:doc:authenticate-with-iam-policy-using-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
-     <Callout icon="📘" theme="info">
-       #### Note
+   - **IAM Policy with SSE-KMS Encryption**: Select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN that you copied in [Create KMS Key on AWS](doc:authenticate-with-iam-policy-using-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
 
-       The integration works with the default settings. Check your organization's internal policies to determine whether any setting requires a change.
-     </Callout>
+   - **Access Key** or **IAM Role**: keep the default selection of **Server-side encryption with Amazon S3 managed keys (SSE-S3)**
+
+   - **IAM Policy with SSE-KMS**: select **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** and paste the KMS key ARN you copied in [Create KMS Key on AWS](doc:authenticate-with-iam-policy-using-sse-kms-encryption#create-kms-key-on-aws) into the _AWS KMS key ARN_ field.
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     The integration works with the default settings. Check your organization's internal policies to determine whether any setting requires a change.
+   </Callout>
 
 10. Click **Create bucket**.
 
@@ -128,33 +135,43 @@ To add the bucket, perform the following steps:
 
 
 2. Select the **connection type**:
-   1. For **import**, select the _Import Connections_ tab.
-   2. For **export**, select the _Export Connections_ tab.
+   1. For **import**, select the Import Connections tab.
+   2. For **export**, select the Export Connections tab.
 
-3. Click **Add Amazon S3 Bucket**, then add the bucket details.
-
-
-   <Image src="https://files.readme.io/f128dc0ca113133a6aa8cd9a0e606f17dcfaa4cca28272c4b549982c45efe285-Create_and_Add_Bucket_details.gif" align="center" caption="Add Amazon S3 Bucket" border={true} />
+3. Click **Add Amazon S3 Bucket**.
 
 
-4. Under Configure with, select one of the following methods and refer to the corresponding document to complete the configuration:
-   - [Access Key](doc:authenticate-with-access-key#configure-connection-on-clevertap)
-   - [IAM Role](doc:iam-role#configure-connection-on-clevertap)
-   - [IAM Policy with SSE-KMS Encryption](doc:iam-policy-with-sse-kms-encryption#configure-amazon-s3-in-clevertap)
+   <Image src="https://files.readme.io/8a603048aa4f23718a02d8ed7a96cd8d193be866355af72b557bf9462641b39d-add_amazon_s3_bucket.png" alt="The Connect to Amazon S3 for import or Connect to Amazon S3 for export page displays" border={true} />
+
+
+   Add Bucket Details:
+
+
+   <Image src="https://files.readme.io/55f170b5faa1381627916560866e752bf86c0a6412901154da3b88b422d19442-Bucket_details.png" align="center" caption="Bucket Details" border={true} />
+
+
+4. Under Configure with, select your method and open the corresponding document to complete the AWS steps:
+   - **Access Key**: refer to [Access Key](doc:authenticate-with-access-key)
+   - **IAM Role**: refer to [IAM Role](doc:authenticate-with-iam-role)
+   - **IAM Policy with SSE-KMS Encryption**: refer to [IAM Policy with SSE-KMS Encryption](doc:authenticate-with-iam-policy-using-sse-kms-encryption)
 
 <Callout icon="📘" theme="info">
   #### Caution
 
   Do not click **Save** or **Test Connection** yet. Both actions contact your bucket and fail until the AWS-side permissions are in place. Keep this page open; you return to it at the end of the method-specific steps.
 
-  Clicking Discard shows a Discard edits? confirmation and removes everything you entered.
+  **Note**: Clicking Discard shows a Discard edits? confirmation and removes everything you entered.
 </Callout>
+
+## Complete Configuration
+
+Follow the document for the method you selected. Each document returns you to the CleverTap page you left open.
 
 ## **Verify Connection**
 
-After you complete the steps on AWS, return to the CleverTap dashboard.
+After the AWS-side steps are complete, return to the CleverTap dashboard.
 
-- **Import**: Click **Test Connection**. CleverTap checks access by listing the bucket (and the subfolder, if specified) using the configured method. When the test succeeds, click **Save**.
+- **Import**: Click **Test Connection**. CleverTap attempts to list the bucket (and the subfolder, if specified) using the configured method. When the test succeeds, click **Save**.
 - **Export**: Click **Save**. CleverTap uploads a test file to the bucket and region you specified. The connection is saved only if the upload succeeds.
 
 If the test or save fails, refer to [Troubleshooting](doc:aws-s3-configuration#troubleshooting).
@@ -183,9 +200,9 @@ No. Import and export connections are configured separately under _Import Connec
 
 No. Any AWS region works.
 
-## Next Steps
+# Next Steps
 
-After you configure the connection, you can create imports and exports that use it.
+- **Import**: Create an import that reads from this connection. Refer to Create Import, Map Data for Import, Schedule Import, and Import Listing and Stats.
+- **Export**: Create an export that writes to this connection. Refer to [Events Exports](doc:event-export) or [Profile Exports](doc:profile-exports).
 
-- Create an import that reads from this connection. For more information, refer to [Create Import](doc:create-file-based-import), [Map Data for Import](doc:map-data-for-file-based-import), [Schedule Import](doc:schedule-file-based-import), and [Import Listing and Stats](doc:import-listing-and-stats-for-file-based-import).
-- Create an export that writes to this connection. For more information, refer to [Cloud Storage](doc:cloud-storage), [Event Exports](doc:event-exports), or [Profile Exports](doc:profile-exports).
+#

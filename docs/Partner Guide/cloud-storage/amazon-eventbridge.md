@@ -45,13 +45,19 @@ To find the event source details:
 
 To configure CleverTap Event Source:
 
-1. Log in to your CleverTap account and navigate to the *Settings* > *Partners* page. Select *Amazon Eventbridge* from the list.
+1. Log in to your CleverTap account and navigate to the *Settings* > *Partners* page.
 
-<Image alt="Partners Page" align="center" border={true} src="https://files.readme.io/d68579c40857f395a42742c0aaa22f480b47ea6ff49126bf706c4ef73117f836-Amplitude_Partner_Page.png">
-  Partners Page
+<Image title="Navigate to Partners page from the CleverTap dashboard" alt={2854} align="center" border={true} src="https://files.readme.io/2685d0f-Navigate_to_Partners_page.png">
+  Navigating to Partners Page
 </Image>
 
-2. A popup opens on the right side of the screen. Enter the following details and click **Integrate**.
+2. Hover on the *Amazon EventBridge* icon and click **Integrate**. The *Integrate raw data partner - Amazon EventBridge* popup opens on the right side of the screen.
+
+<Image title="Hover on Amazon EventBridge icon and click Integrate" alt={2400} align="center" border={true} src="https://files.readme.io/a1bb7e6-Click_Integrate.png">
+  Integrate Amazon EventBridge
+</Image>
+
+3. Enter the following Amazon service details and click **Integrate**:
 
 <Table align={["left","left"]}>
   <thead>
@@ -99,8 +105,14 @@ To configure CleverTap Event Source:
   </tbody>
 </Table>
 
-<Image alt="Enter Amazon EventBridge Project Details to Integrate" align="center" border={true} src="https://files.readme.io/008bb61147e413f86a3d0a7c22d0eb02d8df2ee176732dc7114e7ef1779bdfaf-image.png">
+<Image title="Enter Amazon EventBridge Project Details and click Integrate" alt={2394} align="center" border={true} src="https://files.readme.io/d374259-Integrate_raw_data_partner_-_Amazon_EventBridge.png">
   Enter Amazon EventBridge Project Details to Integrate
+</Image>
+
+After successful integration, the *Integrated* tag displays against *Amazon EventBridge* on the *Partners List* page.
+
+<Image title="Integrated tag denotes that the Amazon Eventbridge integration is successful" alt={2852} align="center" border={true} src="https://files.readme.io/32b704a-Integrated_tag.png">
+  Amazon EventBridge Integration Successful
 </Image>
 
 ## Associate Event Source with Designated Event Bus in AWS Console

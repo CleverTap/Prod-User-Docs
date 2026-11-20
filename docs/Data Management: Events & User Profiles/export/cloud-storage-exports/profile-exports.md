@@ -30,7 +30,7 @@ With Profile Exports, you can:
 
 Profile Exports support a variety of use cases across marketing, data science, and compliance functions:
 
-* **Data Warehousing & Business Intelligence**: Export user profiles to your data warehouse (for example, BigQuery, Snowflake, Redshift) for advanced analytics and reporting. Use daily incremental exports to sync updates efficiently, without reprocessing the full dataset.
+* **Data Warehousing and Business Intelligence**: Export user profiles to your data warehouse (for example, BigQuery, Snowflake, Redshift) for advanced analytics and reporting. Use daily incremental exports to sync updates efficiently, without reprocessing the full dataset.
 * **Custom Identity Reconciliation**: Export all identity fields along with the CleverTap ID to map CleverTap profiles to identifiers in your internal systems. Fallback logic ensures that each record has a usable, prioritized identifier, even if one or more fields are missing.
 * **Privacy & Compliance**: Include only the properties necessary to comply with data privacy regulations.
   * Exclude Personally Identifiable Information (PII) by deselecting sensitive fields.
@@ -42,9 +42,9 @@ Profile Exports support a variety of use cases across marketing, data science, a
 
 Before creating a profile export, ensure your cloud storage environment is ready and your CleverTap account has the necessary permissions. Depending on the cloud platform you are using:
 
-* [Configure Amazon S3 Integration](doc:data-export-to-aws-s3#create-an-aws-s3-bucket)
-* [Configure Google Cloud Storage Integration](doc:data-export-to-gcp#integrate-gcp-with-clevertap)
-* [Configure Microsoft Azure Integration](doc:microsoft-azure#setup)
+* [Configure Amazon S3 Integration](doc:aws-s3-configuration#create-s3-bucket-on-aws)
+* [Configure Google Cloud Storage Integration](doc:gcp-configuration#set-up-google-cloud-storage-for-integration)
+* [Configure Microsoft Azure Integration](doc:microsoft-azure-configuration#set-up-microsoft-azure-for-integration)
 
 You must have **write** access permissions on the cloud storage platform you use to create and manage exports.
 
@@ -133,11 +133,33 @@ In this section, you will define the destination, folder organization, file form
   * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
 </Callout>
 
-4. **Define File Name Convention**  
-   Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
+### Configure Data Visibility Access
+
+Data Visibility Access lets you protect exported files with PGP encryption before CleverTap delivers them to your destination. You can use either a passphrase or your own PGP public key.
+
+<Callout icon="📘" theme="info">
+  ### Supported Destinations
+
+  Data Visibility Access is available for Amazon S3, Google Cloud Storage, Microsoft Azure and SFTP destinations in the new profile export flow.
+</Callout>
+
+a. **Enable Password Protection**: Toggle _Password protection_ to **Yes** and enter a passphrase. CleverTap delivers the exported file as a PGP-encrypted (`.pgp`) file, and you decrypt it with that passphrase using PGP-compatible software. Password protection is available at no additional cost.
+
+Your passphrase must be at least 12 characters long and include an uppercase letter, a lowercase letter, a digit, and a special character.
+
+b. **Enable Encryption**: Toggle _Encryption_ to **Yes** to encrypt the exported file using your own PGP public key.
+
+<Callout icon="📘" theme="info">
+  ### Encryption Add-On
+
+  Encryption with a PGP public key is a paid add-on. Contact your Customer Success Manager to enable it for your account.
+</Callout>
+
+c. **Add Your PGP Key**: Paste your PGP public key into the _PGP key_ field. CleverTap uses this key to encrypt the exported file, and you decrypt it with the corresponding private key. Provide your public key only, because CleverTap rejects private keys, and expired or revoked keys. Refer to [File Upload Encryption](doc:file-upload-encryption) if you need help generating a key pair or locating your public key.
+
+3. **Define File Name Convention**<br />Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
    * **Default file name**: The default format is `<account‑id>-<export request id>-<timestamp>-<database id>.<format>.gz`. For example, `100000000-1761651721-1761651721-0.csv.gz`.
-   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-2025-10-03-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
-     The following are the supported variables:
+   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ \}\}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-2025-10-03-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.<br />The following are the supported variables:
      * `{{Account-id}}`: Your unique CleverTap account identifier.
      * `{{Export-id}}`: Unique export ID assigned to each export run.
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
@@ -147,7 +169,7 @@ In this section, you will define the destination, folder organization, file form
        <Callout icon="📘" theme="info">
          #### Note
 
-         Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+         Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (\_).
        </Callout>
 
 <Image align="center" alt="Select File Format and Define File Name" border={true} caption="Select File Format and Define File Name" src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />

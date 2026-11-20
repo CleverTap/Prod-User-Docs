@@ -1,6 +1,6 @@
 ---
-title: Exports
-excerpt: Learn how to export data from CleverTap to different Data Warehouse platforms.
+title: Partners
+excerpt: ''
 deprecated: false
 hidden: false
 metadata:
@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-The Exports section provides an overview of all available methods to retrieve data from CleverTap. This page introduces the supported export mechanisms so you can choose the correct approach for accessing events, user profiles, message reports, and partner destinations used in your analytics or data ecosystem.
+The Partners section provides an overview of the integrations that allow you to export CleverTap data to leading analytics and customer data platforms. This page highlights the purpose of each partner so you can select the right destination for product analytics, customer data management, or multi-system distribution.
 
 <HTMLBlock>{`
 <style>
@@ -58,17 +58,17 @@ The Exports section provides an overview of all available methods to retrieve da
 </style>
 
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/export-via-api" class="integration-card">
-    <div class="name">API</div>
+  <a href="https://staging.docs.user.clevertap.net/docs/amplitude-export" class="integration-card">
+    <div class="name">Amplitude</div>
   </a>
-  <a href="https://docs.clevertap.com/docs/cloud-storage" class="integration-card">
-    <div class="name">Cloud Storage</div>
+  <a href="https://staging.docs.user.clevertap.net/docs/setup-for-data-export" class="integration-card">
+    <div class="name">mParticle</div>
   </a>
-<a href="https://docs.clevertap.com/docs/data-warehouse-exports" class="integration-card" style="display: none;">
-    <div class="name">Data Warehouse</div>
+<a href="https://staging.docs.user.clevertap.net/docs/mixpanel-export" class="integration-card">
+    <div class="name">Mixpanel</div>
   </a>
-<a href="https://docs.clevertap.com/docs/export-partners" class="integration-card">
-    <div class="name">Partners</div>
+<a href="https://staging.docs.user.clevertap.net/docs/setup-segment" class="integration-card">
+    <div class="name">Segment</div>
   </a>
 </div>
 `}</HTMLBlock>

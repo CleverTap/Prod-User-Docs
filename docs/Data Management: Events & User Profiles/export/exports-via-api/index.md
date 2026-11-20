@@ -60,10 +60,10 @@ These API resources help you access CleverTap data programmatically and integrat
 </style>
 
 <div class="grid">
-  <a href="https://developer.clevertap.com/docs/get-events-api" class="integration-card">
+  <a href="https://staging.docs.user.clevertap.net/docs/imports-via-api" class="integration-card">
     <div class="name">Get Events</div>
   </a>
-  <a href="https://developer.clevertap.com/docs/get-user-profiles-api" class="integration-card">
+  <a href="https://staging.docs.user.clevertap.net/docs/csv-upload" class="integration-card">
     <div class="name">Get User Profiles</div>
   </a>
 </div>

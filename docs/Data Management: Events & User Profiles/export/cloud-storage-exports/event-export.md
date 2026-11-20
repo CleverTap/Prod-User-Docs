@@ -19,7 +19,7 @@ CleverTap supports event exports to the following destinations:
 <Callout icon="📘" theme="info">
   ### Note
 
-  This document covers event exports to [Amazon S3](doc:data-export-to-aws-s3), [Google Cloud Storage](doc:data-export-to-gcp), and [Microsoft Azure](doc:microsoft-azure) only. For exports to analytics partners or data warehouses, refer to their respective documentation linked above.
+  This document covers event exports to [Amazon S3](doc:aws-s3-configuration), [Google Cloud Storage](doc:gcp-configuration), and [Microsoft Azure](doc:microsoft-azure-configuration) only. For exports to analytics partners or data warehouses, refer to their respective documentation linked above.
 </Callout>
 
 With Event Exports, you can:
@@ -56,9 +56,9 @@ The following steps provide a high-level flow for setting up an event export fro
 
 Before creating an event export, ensure your cloud storage environment is ready, and your CleverTap account has the necessary permissions. Depending on the cloud platform you are using:
 
-- [Configure Amazon S3 Integration](doc:data-export-to-aws-s3#create-an-aws-s3-bucket)
-- [Configure Google Cloud Storage Integration](doc:data-export-to-gcp#integrate-gcp-with-clevertap)
-- [Configure Microsoft Azure Integration](doc:microsoft-azure#setup)
+- [Configure Amazon S3 Integration](doc:aws-s3-configuration#create-s3-bucket-on-aws)
+- [Configure Google Cloud Storage Integration](doc:gcp-configuration#set-up-google-cloud-storage-for-integration)
+- [Configure Microsoft Azure Integration](doc:microsoft-azure-configuration#set-up-microsoft-azure-for-integration)
 
 You must have **write** access permissions on the cloud storage platform you use to create and manage exports.
 
@@ -76,11 +76,11 @@ To create an export, perform the following steps:
    <Image src="https://files.readme.io/20bbd834568b6910208a83bc3999cf8f83958fa77c67e97e428bab06d9d1a524-2026-05-13_14-49-36_1.gif" align="center" caption="Create Export" border={true} />
 
 
-   1. [Configure Storage & File Details](doc:event-exports#configure-storage--file-details): Configure the destination, folder structure, file format, and naming conventions.
-   2. [Select User Identifiers](doc:event-exports#select-user-identifiers): Define which user identifiers to include alongside each event record and their order.
-   3. [Select Data Fields & Events](doc:event-exports#select-data-fields--event): Choose the timestamp format, user properties, device attributes, and communication preferences to include alongside each event record.
-   4. [Edit Properties & Order](doc:event-exports#edit-properties--order): Select, rename, and reorder event properties for each selected event individually.
-   5. [Define Schedule](doc:event-exports#define-schedule-for-export): Set up one-time or recurring export schedules.
+   1. [Configure Storage & File Details](doc:event-export#configure-storage--file-details): Configure the destination, folder structure, file format, and naming conventions.
+   2. [Select User Identifiers](doc:event-export#select-user-identifiers): Define which user identifiers to include alongside each event record and their order.
+   3. [Select Data Fields & Events](doc:event-export#select-data-fields--event): Choose the timestamp format, user properties, device attributes, and communication preferences to include alongside each event record.
+   4. [Edit Properties & Order](doc:event-export#edit-properties--order): Select, rename, and reorder event properties for each selected event individually.
+   5. [Define Schedule](doc:event-export#define-schedule-for-export): Set up one-time or recurring export schedules.
 
 <Callout icon="📘" theme="info">
   ### Legacy Exports Migration
@@ -143,6 +143,30 @@ In this section, you will define the destination, folder organization, file form
      - CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
    </Callout>
 
+   ### Configure Data Visibility Access
+
+   Data Visibility Access lets you protect exported files with PGP encryption before CleverTap delivers them to your destination. You can use either a passphrase or your own PGP public key.
+
+   <Callout icon="📘" theme="info">
+     ### Supported Destinations
+
+     Data Visibility Access is available for Amazon S3, Google Cloud Storage, Microsoft Azure and SFTP destinations in the new event export flow.
+   </Callout>
+
+   1. **Enable Password Protection**: Toggle _Password protection_ to **Yes** and enter a passphrase. CleverTap delivers the exported file as a PGP-encrypted (`.pgp`) file, and you decrypt it with that passphrase using PGP-compatible software. Password protection is available at no additional cost.
+
+      Your passphrase must be at least 12 characters long and include an uppercase letter, a lowercase letter, a digit, and a special character.
+
+   2. **Enable Encryption**: Toggle _Encryption_ to **Yes** to encrypt the exported file using your own PGP public key.
+
+   <Callout icon="📘" theme="info">
+     ### Encryption Add-On
+
+     Encryption with a PGP public key is a paid add-on. Contact your Customer Success Manager to enable it for your account.
+   </Callout>
+
+   3. **Add Your PGP Key**: Paste your PGP public key into the _PGP key_ field. CleverTap uses this key to encrypt the exported file, and you decrypt it with the corresponding private key. Provide your public key only, because CleverTap rejects private keys, and expired or revoked keys. Refer to [File Upload Encryption](doc:file-upload-encryption) if you need help generating a key pair or locating your public key.
+
 4. **Define File Name Convention** Define how each file is named inside the innermost folder created by _Sub-folder structure_. If you select _Default_, CleverTap applies a standard naming structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
 
    - **Default file name**: The default format is `<event-name>-<date>-<account-id>-<export-request-id>-<timestamp>-<database-id>-<file-index>.<format>.gz`. For example, `App-Launched-2026-04-14-1517477760-1776150812-1776150812-0-0.csv.gz`.
@@ -167,7 +191,6 @@ In this section, you will define the destination, folder organization, file form
 
      Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscores (\_).
    </Callout>
-
 
 <Image src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" alt="Select File Format and Define File Name" align="center" caption="Select File Format and Define File Name" border={true} />
 
@@ -668,7 +691,7 @@ The following is a sample of the exported CSV file with all fields included:
 
 | eventName           | eventTime  | identity | all_identities | clevertapId | Email | Phone | Name | Gender  | DOB | platform | token | make | model | appVersion | sdkVersion | osVersion | browser   | dpi | dimensions | subscriptionGroups | MSG-webpush | MSG-push | MSG-email | MSG-sms | MSG-whatsapp | wzrk_id | Campaign type | Campaign id | wzrk_pivot   | User Agent | Client Name | Campaign name | Campaign labels | Journey id | Journey labels | Journey Version ID | Journey name |
 | ------------------- | ---------- | -------- | -------------- | ----------- | ----- | ----- | ---- | ------- | --- | -------- | ----- | ---- | ----- | ---------- | ---------- | --------- | --------- | --- | ---------- | ------------------ | ----------- | -------- | --------- | ------- | ------------ | ------- | ------------- | ----------- | ------------ | ---------- | ----------- | ------------- | --------------- | ---------- | -------------- | ------------------ | ------------ |
-| Notification Viewed | 1780914785 | \[...]   | \[...]         | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | `{...}`    | `{...}`            | false       | true     | true      | false   | false        | ...     | Email         | ...         | wzrk_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
+| Notification Viewed | 1780914785 | \[...]   | \[...]         | ...         | ...   |       | ...  | Unknown |     | Android  | ...   | ...  | ...   | ...        | ...        | ...       | MobileApp | ... | {...}      | {...}              | false       | true     | true      | false   | false        | ...     | Email         | ...         | wzrk_default | ...        | ...         | ...           | \[...]          |            |                |                    |              |
 
 # Manage Export
 
@@ -731,10 +754,10 @@ Follow these best practices to ensure your event exports are reliable, organized
         | Access Disabled  | The storage account has been locked or disabled      |
         | Bucket Not Found | The destination bucket or container no longer exists |
 
-- **Validate Exported Data**
+* **Validate Exported Data**
   Run data quality checks to confirm exported files match your expectations before loading them into downstream systems.
 
-- **Monitoring & Error Handling**: If your export fails:
+* **Monitoring & Error Handling**: If your export fails:
   - Check that your storage credentials (IAM policy, service account key, or SAS token) are valid.
   - Ensure the bucket or container exists and is accessible.
   - For GCP exports, a 403 error often indicates that the service account key is invalid.
@@ -744,6 +767,26 @@ Follow these best practices to ensure your event exports are reliable, organized
 ### Can I run a one-time Event Export if a recurring Event Export is already active?
 
 Yes. You can create multiple event exports, but they run sequentially. A new export will start only after the currently running export has completed.
+
+### Is encryption available for all file formats?
+
+Yes, with one restriction for Parquet. If you export in Parquet format without turning on _Gzip after Parquet_, only PGP encryption with your public key is available, and Password protection is hidden. Turn on _Gzip after Parquet_ to use Password protection with Parquet. All other file formats support both options.
+
+### Can I use password protection or PGP encryption together with SSE-KMS?
+
+No. Choose one visibility access method per export: SSE-KMS, password protection, or PGP encryption. CleverTap doesn't support combining SSE-KMS with password protection or PGP encryption on the same export.
+
+### Is PGP encryption included in my plan?
+
+Password protection is included at no additional cost. PGP encryption with your own public key is a paid add-on. Contact your CSM or TAM to enable it for your account.
+
+### What are the passphrase requirements for password protection?
+
+Your passphrase must be at least 12 characters long and include an uppercase letter, a lowercase letter, a digit, and a special character.
+
+### Which destinations support Data Visibility Access?
+
+Amazon S3, Google Cloud Storage, and Microsoft Azure support Data Visibility Access in the new event export flow. Legacy exports and profile exports don't support this feature.
 
 ### How long are exported event files retained in my cloud storage?
 
@@ -797,15 +840,14 @@ Check that the bucket or container name matches exactly and that the IAM policy,
 
 If your export fails, follow these steps to troubleshoot the issue:
 
-- _Verify your storage credentials_ — Make sure your IAM policy (AWS), service account key (GCP), or SAS token (Azure) is valid and has the required write permissions.
-- _Check bucket or container access_ — Ensure the target bucket or container exists and is reachable from CleverTap.
-- _Check for the following error codes_ — A 403 error in GCP usually indicates an invalid or expired service account key.
-- For other platforms, refer to your cloud provider's error documentation for further guidance.
+_Verify your storage credentials  -  Make sure your IAM policy (AWS), service account key (GCP), or SAS token (Azure) is valid and has the required write permissions._ Check bucket or container access  -  Ensure the target bucket or container exists and is reachable from CleverTap.
+_Check for the following error codes:_ A 403 error in GCP usually indicates an invalid or expired service account key.
+\* For other platforms, refer to your cloud provider's error documentation for further guidance.
 
 ### What other ways can I export event data from CleverTap?
 
-- [**Export via API**](https://developer.clevertap.com/docs/): Use the CleverTap Events API to programmatically query and download event data.
-- [**Find People**](doc:find-people): Download user-level data directly from the CleverTap dashboard through _Segments_ > _Find People_.
+\* [**Export via API**](https://developer.clevertap.com/docs/): Use the CleverTap Events API to programmatically query and download event data.
+\* [**Find People**](doc:find-people): Download user-level data directly from the CleverTap dashboard through _Segments_ > _Find People_.
 
 ### What are the Campaign Type values in the new export?
 

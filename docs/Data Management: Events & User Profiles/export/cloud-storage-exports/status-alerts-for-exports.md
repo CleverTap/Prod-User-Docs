@@ -16,9 +16,11 @@ CleverTap allows you to export data to third-party partners, such as Amazon Web 
 
 This feature allows you to monitor the status of your data exports via Webhook on your preferred systems. It provides alerts when an export is initiated or completed successfully. Status tracking allows for keeping track of your recurring exports and taking necessary decisions whenever required.
 
-> 📘 Supported Partners for Export Status
->
-> Currently, we provide events export status for Amazon S3, Microsoft Azure, and Google Cloud Platform (GCP) partners only.
+<Callout icon="📘" theme="info">
+  ### Supported Partners for Export Status
+
+  Currently, we provide events export status for Amazon S3 and Google Cloud Platform (GCP) partners only.
+</Callout>
 
 This document further explains the prerequisites, how to enable and disable export status alerts, and track and monitor them.
 
@@ -26,37 +28,42 @@ This document further explains the prerequisites, how to enable and disable expo
 
 Ensure you integrate with the preferred technology partners:
 
-* [Amazon S3](https://docs.clevertap.com/docs/aws-s3-export)
-* [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/data-export-to-gcp)
-* [Microsoft Azure](doc:microsoft-azure)
+* [Amazon S3](https://docs.clevertap.com/docs/aws-s3-configuration)
+* [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/gcp-configuration)
+* [Microsoft Azure](https://staging.docs.user.clevertap.net/docs/microsoft-azure-export)
 
 # Setup
 
 This procedure involves the following major steps:
 
 1. [Set up a Webhook](https://docs.clevertap.com/docs/setup-webhooks)
-2. [Enable Status Alerts for Exports on CleverTap Dashboard](doc:status-alerts-for-exports#enable-status-alerts-for-exports)  
-   OR
-3. [Add or Modify the Webhook](doc:status-alerts-for-exports#add-or-modify-the-webhook)
+2. [Enable Status Alerts for Exports on CleverTap Dashboard](https://staging.docs.user.clevertap.net/docs/status-alerts-for-exports#enable-status-alerts-for-exports)<br />OR
+3. [Add or Modify the Webhook](https://staging.docs.user.clevertap.net/docs/status-alerts-for-exports#modify-the-webhook)
 
 ## Enable Status Alerts for Exports
 
 To enable status alerts for exports:
 
-1. On the CleverTap dashboard, go to _Settings_ > _Partners_ > _Exports center_.
+1. On the CleverTap dashboard, go to _Settings_ > _Partners_ > _Exports_.
 
-<Image align="center" alt="Exports center" border={true} caption="Exports center" src="https://files.readme.io/fa86e8d47bcd6a79e7e231bf6fd4833202cc60b759573e456f07a8aa63ba557b-image.png" />
+
+<Image src="https://files.readme.io/805c5d9-image.png" align="center" width="90% " border={true} />
+
 
 2. Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts** window appears.
 
-<Image align="center" border={true} width="90% " src="https://files.readme.io/8037095-image.png" className="border" />
+
+<Image src="https://files.readme.io/8037095-image.png" align="center" width="90% " border={true} />
+
 
 2. Toggle on the **Enable the status to get notified about exports** switch to enable the status alerts.
 3. Click **Save**.
 
-> 📘 Note
->
-> Once enabled, the export status tracking is applied to both existing and new export creations.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  Once enabled, the export status tracking is applied to both existing and new export creations.
+</Callout>
 
 ## Disable Status Alerts for Exports
 
@@ -73,14 +80,15 @@ If required, edit the Webhook as follows:
 2. On the **Enable export status alerts** pane, you can either create a new URL or use the existing one.
 
 * To use an existing Webhook URL, select one of the preferred Webhook URLs from the **Webhook name** drop-down list.
-* If required, to create a new Webhook URL, click the **Add webhook** link.  
-  For more information about creating Webhook URLs, refer to the [Webhooks](https://docs.clevertap.com/docs/setup-webhooks) documentation. Once you create a new Webhook, click the **Refresh** icon for the new Webhook to appear here.
+* If required, to create a new Webhook URL, click the **Add webhook** link.<br />For more information about creating Webhook URLs, refer to the [Webhooks](https://docs.clevertap.com/docs/setup-webhooks) documentation. Once you create a new Webhook, click the **Refresh** icon for the new Webhook to appear here.
 
 3. Click **Save**.
 
-> 📘 Note
->
-> We only support a POST Webhook.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  We only support a POST Webhook.
+</Callout>
 
 ## Sample Payload for Export Status
 
@@ -149,9 +157,9 @@ The JSON payload contains the following parameters:
       </td>
 
       <td>
-        Status of the export process. For example, Initiated or Completed.
+        Status of the export process. For example, Initiated, Completed, or Awaiting Next Run.
 
-        <li>**One-time**: a one-time export is initiated and completed just once.</li><li>**Recurring**: a recurring export is initiated and completed repeatedly at set intervals or schedules.</li>
+        <li>**One-time**: a one-time export is initiated and completed just once.</li><li>**Recurring**: a recurring export is initiated and completed repeatedly at set intervals or schedules. Between two scheduled runs, a recurring export shows **Awaiting Next Run**, this means the export last succeeded and is waiting for its next scheduled run. This is distinct from **Pending**, which means the export has not run yet at all.</li>
       </td>
     </tr>
 

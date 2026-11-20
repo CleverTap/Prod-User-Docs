@@ -1,0 +1,3 @@
+- authenticate-with-access-key
+- authenticate-with-iam-role
+- authenticate-with-iam-policy-using-sse-kms-encryption

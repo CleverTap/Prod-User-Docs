@@ -1,4 +1,4 @@
-- export-via-api
-- cloud-storage
+- exports-via-api
+- cloud-storage-exports
 - data-warehouse-exports
 - export-partners

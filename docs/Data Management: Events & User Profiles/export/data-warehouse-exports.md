@@ -1,5 +1,5 @@
 ---
-title: Partners
+title: Data Warehouse
 excerpt: ''
 deprecated: false
 hidden: false
@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-The Partners section provides an overview of the integrations that allow you to export CleverTap data to leading analytics and customer data platforms. This page highlights the purpose of each partner so you can select the right destination for product analytics, customer data management, or multi-system distribution.
+The Data Warehouse Exports section introduces the workflow that delivers CleverTap data directly to your connected warehouse. This page provides an overview of the available warehouse destination so you can automate the movement of events and profile information into your analytics environment.
 
 <HTMLBlock>{`
 <style>
@@ -58,17 +58,11 @@ The Partners section provides an overview of the integrations that allow you to 
 </style>
 
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/amplitude-export" class="integration-card">
-    <div class="name">Amplitude</div>
+	<a href="https://staging.docs.user.clevertap.net/docs/bigquery-export" class="integration-card">
+    <div class="name">BigQuery</div>
   </a>
-  <a href="https://docs.clevertap.com/docs/mparticle-export" class="integration-card">
-    <div class="name">mParticle</div>
-  </a>
-<a href="https://docs.clevertap.com/docs/mixpanel-export" class="integration-card">
-    <div class="name">Mixpanel</div>
-  </a>
-<a href="https://docs.clevertap.com/docs/segmentcom" class="integration-card">
-    <div class="name">Segment</div>
+  <a href="https://staging.docs.user.clevertap.net/docs/snowflake-export" class="integration-card">
+    <div class="name">Snowflake</div>
   </a>
 </div>
 `}</HTMLBlock>

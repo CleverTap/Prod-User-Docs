@@ -26,13 +26,17 @@ Exports can be scheduled or triggered as one-time deliveries and are available i
 
 To begin, you first create a new export from the CleverTap dashboard. This step connects your CleverTap account with a partner destination and sets the context for the following configuration.
 
-1. Go to *Settings* > *Partners* and click **Create Export**.
+1. Go to *Settings* > *Partners* and click **Create Export**. 
 
-<Image align="center" alt="Create Export" border={true} caption="Create Export" src="https://files.readme.io/6d308e01cc3dc940760f1c76ee5cecffda32a57b8db946c62d3e125af9c15d75-export_center_profile_1.png" />
+<Image alt="Create Export" align="center" border={true} src="https://files.readme.io/6d308e01cc3dc940760f1c76ee5cecffda32a57b8db946c62d3e125af9c15d75-export_center_profile_1.png">
+  Create Export
+</Image>
 
 2. Under *Data type*, select **Events** or **Profiles**. Click **Next**.
 
-<Image align="center" alt="Data Type - Profiles" border={true} caption="Data Type" src="https://files.readme.io/5c7972185b625c21e9b8e3dd538630e7c917584f95c90cccca70fb876021f7fa-data_type_profiles_.png" width="65% " />
+<Image alt="Data Type - Profiles" align="center" width="65% " border={true} src="https://files.readme.io/5c7972185b625c21e9b8e3dd538630e7c917584f95c90cccca70fb876021f7fa-data_type_profiles_.png">
+  Data Type
+</Image>
 
 3. Under *Partner*, select where you want to send the export and click **Start**. Selecting a partner affects the first field you’ll see in **Storage & file details**: it appears as **Storage bucket** for Amazon S3 and Google Cloud, and as **Storage blob** for Microsoft Azure.
 
@@ -40,11 +44,15 @@ To begin, you first create a new export from the CleverTap dashboard. This step 
    * **Google Cloud**
    * **Microsoft Azure**
 
-<Image align="center" alt="Select Partner" border={true} caption="Select Partner" src="https://files.readme.io/353438c2d86d5c956db69fb1e54c319b25ace89c7951fe05772d9768e3692f2c-partner_export_profile.png" width="65% " />
+<Image alt="Select Partner" align="center" width="65% " border={true} src="https://files.readme.io/353438c2d86d5c956db69fb1e54c319b25ace89c7951fe05772d9768e3692f2c-partner_export_profile.png">
+  Select Partner
+</Image>
 
 The partner export window displays. If you are exporting user profiles and using enhanced export flow, refer to [Profile Exports](doc:profile-exports).
 
-<Image align="center" alt={1008} border={true} caption="Enter Export Details" title="Enter export details and click Export" src="https://files.readme.io/13a408d-CreateAmazonS3Export.jpg" width="90% " />
+<Image title="Enter export details and click Export" alt={1008} align="center" width="90% " border={true} src="https://files.readme.io/13a408d-CreateAmazonS3Export.jpg">
+  Enter Export Details
+</Image>
 
 4. Configure the following *Export details*:
    * **Partner Bucket name**: Name of the partner bucket. Choose the required partner bucket from the drop-down list.
@@ -76,17 +84,23 @@ You can verify if the export is created on your cloud platform using **Request I
   b. Search your *Bucket* from the *Buckets* page and then click the bucket name.\
   c. Copy the *Request ID* from the activity log and search with that ID. You should see your respective file there.
 
-<Image align="center" alt={2842} border={true} caption="New Amazon S3 Export Displays on Amazon S3 Dashboard" title="Search for new Amazon S3 export on Amazon S3 Dashboard" src="https://files.readme.io/217fe0e-Search_for_export_files.png" />
+<Image title="Search for new Amazon S3 export on Amazon S3 Dashboard" alt={2842} align="center" border={true} src="https://files.readme.io/217fe0e-Search_for_export_files.png">
+  New Amazon S3 Export Displays on Amazon S3 Dashboard
+</Image>
 
 * **Google Cloud**\
   Select *Storage* from the left panel of Google Cloud. Navigate to the *Bucket details* page and search with the `requestid`. All the exported files are displayed.
 
-<Image align="center" alt={2862} border={true} caption="New Google Export Displays on Google Cloud" title="New Google Cloud export displays on Export page" src="https://files.readme.io/2dd4777-Screenshot_2020-04-06_at_8.23.50_PM.png" />
+<Image title="New Google Cloud export displays on Export page" alt={2862} align="center" border={true} src="https://files.readme.io/2dd4777-Screenshot_2020-04-06_at_8.23.50_PM.png">
+  New Google Export Displays on Google Cloud
+</Image>
 
 * **Microsoft Azure**\
   Log in to your Microsoft Azure account and select the *Storage account* under *Resources*. Click the *Blob service* link under the *Properties* tab and select the *Container* where you exported the data. (Optional) Click **Switch to Access Key** if you encounter any authorization error after selecting the *Container*.
 
-<Image align="center" alt="New Export Displays on Microsoft Azure Dashboard" border={true} caption="New Export Displays on Microsoft Azure Dashboard" src="https://files.readme.io/7c9e1a4-New_Export_Displays_on_Microsoft_Azure_Dashboard.gif" width="90% " />
+<Image alt="New Export Displays on Microsoft Azure Dashboard" align="center" width="90% " border={true} src="https://files.readme.io/7c9e1a4-New_Export_Displays_on_Microsoft_Azure_Dashboard.gif">
+  New Export Displays on Microsoft Azure Dashboard
+</Image>
 
 # Export Format
 
@@ -145,7 +159,9 @@ The first line of the file contains the event name. After the first line, each l
 
 CSV files are comma-delimited and have each event in separate rows.
 
-<Image align="center" alt={2032} border={false} caption="Sample CSV File" title="Sample CSV File" src="https://files.readme.io/aa71f9f-Screenshot_2020-02-28_at_12.53.22_PM.png" />
+<Image title="Sample CSV File" alt={2032} align="center" src="https://files.readme.io/aa71f9f-Screenshot_2020-02-28_at_12.53.22_PM.png">
+  Sample CSV File
+</Image>
 
 ### XML
 
@@ -198,7 +214,7 @@ Parquet has a timestamp, eventName, and eventProperties for each event.
 
 # Prioritize User Identity for Exports
 
-The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the *Settings* > *User Identity* page. This feature lets you prioritize the identifier you want to export in the identity column.
+The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the *Settings* > *User Identity* page. This feature lets you prioritize the identifier you want to export in the identity column. 
 
 Let us understand how the prioritization works based on the identities selected in the *User Identity* page:
 
@@ -213,13 +229,15 @@ Let us understand how the prioritization works based on the identities selected 
 > * This feature applies only to the following export types: *All events* and *All user profiles*.
 > * For the old running export, this configuration or prirotization is not applicable. You can add the prioritization by editing the running exports.
 
-To prioritize user identity for exports:
+To prioritize user identity for exports: 
 
-1. Go to **Partners** > **Exports**.
+1. Go to **Partners** > **Exports**. 
 2. Hover over the required AWS S3 export. Click the **Edit** button.
 3. Under **Fallback priority order for identifiers**, set up the priority 1, 2, and 3 for the required identities from the drop-down list.
 
-<Image align="center" alt={1008} border={true} caption="Edit Export Priority" title="Enter export details and click Export" src="https://files.readme.io/47d17d5-AWS3Priority.jpg" width="90% " />
+<Image title="Enter export details and click Export" alt={1008} align="center" width="90% " border={true} src="https://files.readme.io/47d17d5-AWS3Priority.jpg">
+  Edit Export Priority
+</Image>
 
 # FAQs
 

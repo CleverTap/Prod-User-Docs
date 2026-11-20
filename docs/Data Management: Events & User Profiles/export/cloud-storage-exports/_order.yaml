@@ -1,6 +1,5 @@
-- sftp-exports
-- profile-and-events-legacy
-- event-exports
+- event-and-profile-exports
+- event-export
 - profile-exports
 - status-alerts-for-exports
 - export-format

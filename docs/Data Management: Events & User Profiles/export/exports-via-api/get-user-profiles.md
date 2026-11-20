@@ -5,7 +5,7 @@ deprecated: false
 hidden: false
 link:
   new_tab: false
-  url: https://developer.clevertap.com/docs/get-user-profiles-api
+  url: https://staging.docs.dev.clevertap.net/docs/get-user-profiles-api
 metadata:
   title: ''
   description: ''

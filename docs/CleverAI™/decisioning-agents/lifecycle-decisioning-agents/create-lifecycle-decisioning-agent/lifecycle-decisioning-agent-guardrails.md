@@ -32,7 +32,7 @@ Adjust the slider to change the balance.
   Messages that fall within a DND window are dropped, not rescheduled. If a large portion of your audience is in the same timezone, a wide DND window can significantly reduce message delivery.
 </Callout>
 
-The following image shows the _Guardrails_ tab with limits, user distribution, and the DND option:
+The following image shows the _Guardrails_ tab with limits, user distribution, and the DND option: @sunil we need to change the following screenshot. Channel wise limits are incorrect in the following screenshot. 
 
 
 <Image src="https://files.readme.io/7ce0550d2073f7d8753f1ca589b84758db35c45f29241d29c31dcdc739269d1c-image.png" alt="Agent Guardrails" align="center" caption="Agent Guardrails" border={true} />

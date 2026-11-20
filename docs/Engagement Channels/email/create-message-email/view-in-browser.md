@@ -12,10 +12,7 @@ metadata:
 
 The View in Browser feature lets your email recipients open the email in a web browser. This is useful when a recipient's email client does not render the email correctly, or when they want a full-page view of the content.
 
-You can use this option for the following:
-
-- **Broken rendering or clipped content:** Some email clients strip certain styles or clip long emails such as newsletters and product announcements. The View in Browser link lets recipients open the full, correctly rendered version in a browser instead.
-- **AMP not supported:** Email clients such as Apple Mail and Outlook do not support AMP content. Adding a View in Browser AMP link gives those recipients a way to see the AMP experience in a browser.
+You can use this option when th&#x65;**&#x20;rendering breaks and content is clipped.** Some email clients strip certain styles or clip long emails such as newsletters and product announcements. The View in Browser link lets recipients open the full, correctly rendered version in a browser instead.
 
 ## Add View in Browser Link
 
@@ -87,22 +84,11 @@ Add the link to the body of your email in the campaign template you use.
   </Tab>
 </Tabs>
 
-## Send Test for View in Browser Link
+<Callout icon="far fa-circle-info" theme="info">
+  #### Send Test Personalization for View in Browser in Web Version
 
-You can send a test email to preview the View in Browser link using **Preview & Test**. The values that personalization shows depend on how you add the recipient in _Select Test Profiles_, and on whether you view the test email or its web version:
-
-| Personalization    | Test Email to Profile <br />(_Test Profiles_ or _All Profiles_) | Test Email to _Email Address_             | Web Version of Test Email |
-| ------------------ | --------------------------------------------------------------- | ----------------------------------------- | ------------------------- |
-| Profile properties | Values from the profile                                         | Default values                            | Values from the profile   |
-| Event properties   | Values you set in _Event Personalization_                       | Values you set in _Event Personalization_ | Default values            |
-| Recommendations    | Default values                                                  | Default values                            | Default values            |
-| Linked content     | Linked content values                                           | Linked content values                     | Default values            |
-
-If a profile does not have a value for a property, the default value set in your personalization tag is used. For more information, refer to [FAQs](doc:view-in-browser#does-the-web-version-show-the-same-personalization-as-the-email).
-
-In a test email and its web version, the unsubscribe and email preference center links do not unsubscribe the recipient.
-
-Clicks on the View in Browser link in a test email are not tracked, and the link expires after 7 days.
+  If the test email uses profile property personalization, the web version shows the same values. In the case of event properties and linked content, it displays the default values set in your personalization tags.
+</Callout>
 
 # Tracking and Reporting
 
@@ -151,14 +137,22 @@ To analyze these clicks, filter **Notification Clicked** events for the campaign
 
 The funnel counts recipients who clicked View in Browser and then clicked the link.
 
-### What do recipients see in the web version if the campaign is deleted?
-
-Once the campaign is deleted, the respective web version is also removed, and you will see a 404 page.
-
 ### Does the web version show the same personalization as the email?
 
-Yes, for profile properties, the web version shows the recipient's values for profile properties, Liquid logic based on those properties, and content blocks. The unsubscribe and email preference center links also work in the web version, the same as in the email.
+Yes, for profile properties, the web version shows the recipient's values for profile properties, Liquid logic based on those properties, and content blocks.&#x20;
 
-Event properties from the triggering event, recommendations, and linked content are not available in the web version. They show the default values set in your personalization tags instead.
+Event properties from the triggering event and linked content instead show the default values set in your personalization tags in the web version.
+
+### Why does the web version show different values from the email?
 
 CleverTap renders the web version each time the recipient opens it. If a profile property changes after the email is sent, the web version shows the updated value.
+
+### Do the unsubscribe and email preference center links work in the web version?
+
+Yes, in a campaign send, they work the same as in the email. In a test email and its web version, these links do not unsubscribe the recipient.
+
+### How does the View in Browser link work in a test email?
+
+The web version of a test email shows the same profile property values as the test email. Event properties and linked content display the default values. Clicks on the link are not tracked, and the link expires after 7 days.
+
+<br />

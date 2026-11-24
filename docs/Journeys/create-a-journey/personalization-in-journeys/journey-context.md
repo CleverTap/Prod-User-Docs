@@ -5,7 +5,7 @@ excerpt: >-
   earlier in a Journey and reuse them later for personalization and for goal or
   exit evaluation.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
@@ -20,25 +20,19 @@ Journey Context fixes this. It saves the details you choose, for example, the it
 This feature helps with the following:
 
 - **Personalize messages sent well after the event**. Mention details from an event, even if your message goes out days or weeks later.
-- **Use details from more than one event in the same message**. For example, mention something from an earlier event and something from a later one, in the same message.
+- **Use details from more than one event in the same message**. For example, mention something from an earlier event and something from a later one in the same message.
 - **Keep using saved details, even with other steps in between**. Adding a wait, a branch, or another step between saving the details and using them does not cause you to lose them.
 - **End a Journey for the right customer, and the right reason**. Instead of ending a Journey for anyone who does something similar, end it only for the customer who does that one specific thing, for example, completing that exact order.
-
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  Journey Context is currently released in Private Beta. To access the feature, contact your Customer Success Manager.
-</Callout>
 
 # Use Cases
 
 ## Personalize Message with Details from Earlier Event
 
-A customer places an order. A day later, you want to send them a push about that same order, and a few days after that, a follow-up email that mentions it again. Journey Context saves the order's details when the order is placed, so you can still use them in later messages, even though normal personalization would have already expired by then.
+A customer places an order. A day later, you want to send them a push about that same order, and a few days after that, a follow-up email that mentions it again. Journey Context saves the order's details when the order is placed, so you can still use them in later messages, even though standard personalization would already have expired by then.
 
 ## **Combine Details from Different Events in Single Message**
 
-A message does not have to be limited to just one saved event. For example, a win-back email could mention the item a customer added to their cart on one line and a discount code from a separate promotion they viewed on another, in the same message, by referencing both saved contexts at once.
+A message does not have to be limited to just one saved event. For example, a win-back email could mention the item a customer added to their cart on one line and a discount code from a separate promotion they viewed on another, in the same message, by referencing both saved contexts.
 
 ## Exit Journey Based on Specific Transaction, Not Any Matching Event
 

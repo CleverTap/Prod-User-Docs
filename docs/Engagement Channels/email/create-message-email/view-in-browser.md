@@ -155,4 +155,8 @@ Yes, in a campaign send, they work the same as in the email. In a test email and
 
 The web version of a test email shows the same profile property values as the test email. Event properties and linked content display the default values. Clicks on the link are not tracked, and the link expires after 7 days.
 
-<br />
+### How long is the View in Browser link available?
+
+The View in Browser link is available until the campaign is archived. This applies to running, stopped, and completed campaigns. After a campaign is archived, the link displays a 404 page, including in emails that are already sent.
+
+The View in Browser link in a test email expires after 7 days.

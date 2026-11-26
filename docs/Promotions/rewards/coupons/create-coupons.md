@@ -251,23 +251,6 @@ It supports the following two modes:
 
 <Image src="https://files.readme.io/ad4990fd2d3aac2bbc28a5085015587940e2deeb555061b88b5aabe28537f088-image.png" alt="Add Qualifying Rules for Product" align="center" border={true} />
 
-
-#### User Property
-
-Restrict coupon applicability to users who match specific profile attributes. You can configure multiple user properties combined using **AND/OR** conditions to target the right audience precisely. These conditions ensure that the coupon is visible and redeemable only for eligible users based on attributes available in their user profile.
-
-For example, A food delivery app wants to offer a $50 OFF coupon exclusively to users located in India.
-
-
-<Image src="https://files.readme.io/8c6474ada9e3b2a4020fdd8d1b9f34cf3fe90c270fc52e3b78ab6aed30b1e567-image.png" alt="Add Qualifying Rules for User Property" align="center" border={true} />
-
-
-<Callout icon="📘" theme="info">
-  ### Note
-
-  The User Property rule is available only for All Users coupons.
-</Callout>
-
 ### Validity
 
 Configure when the coupon will become active and remain available to users. Validity settings vary based on the coupon type.
@@ -366,5 +349,3 @@ The following are the best practices when creating coupons:
 - Use cart-based conditions to increase order value.
 - Track coupon performance regularly and adjust campaigns accordingly.
 - Avoid excessive stacking to prevent revenue loss.
-
-<br />

@@ -52,4 +52,4 @@ To close this loop, the marketer can create a [report](doc:intro-to-reports) in 
 
 # Getting Started
 
-The best place to get started with CleverTap is the [Quick Start Guide](doc:quickstart-guide) which shows how to create a segment, build a campaign, and run a report in ten minutes.
+The best place to get started with CleverTap is the [Quick Start Guide](doc:quickstart-guide) which shows how to create a segment, build a campaign, and run a report in ten minutes. [@sunil, this is a test commit, please ignore and delete.]
